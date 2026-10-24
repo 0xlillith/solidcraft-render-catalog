@@ -1,0 +1,228 @@
+{
+  "entry": {
+    "domains": null,
+    "family": null,
+    "id": "NATIVE-STUDIO-004",
+    "name": "Three-light product studio",
+    "projection": {
+      "executor": "gpu-path",
+      "preserves": [
+        "camera",
+        "materials",
+        "geometry",
+        "engineering_properties"
+      ],
+      "requires_subject_and_explicit_replacement_consent": true,
+      "status": "native_composition",
+      "variants": [
+        "review_then_apply"
+      ]
+    },
+    "source_status": null
+  },
+  "resolved_plan": {
+    "clearance": "conservative subject/stage/emitter AABB separation; not exact contact certification",
+    "document_changed": false,
+    "executor": "gpu-path",
+    "id": "NATIVE-STUDIO-004",
+    "limitations": [
+      "Authored relative RGB radiance, not measured photometric calibration.",
+      "No automatic material or semantic-role assignment.",
+      "This composition preserves existing sampling, master retention and medium intent; it does not certify convergence or add terrain, motion or nested-media support."
+    ],
+    "name": "Studio",
+    "preserves": [
+      "camera",
+      "output_dimensions",
+      "sampling",
+      "optical_bindings",
+      "geometry",
+      "engineering_materials",
+      "pose",
+      "visibility"
+    ],
+    "replaces": [
+      "lighting",
+      "environment",
+      "passive_stage",
+      "exposure"
+    ],
+    "requires_lighting_consent": true,
+    "requires_stage_consent": false,
+    "resource_sha256": "36bb4ee24d9c5dd98806469b04b226fbe9e46a9d5a86d0f90e9a001ae5ff2854",
+    "revision": 5,
+    "rig_projection": {
+      "id": "RIG-002",
+      "passive_cards_included": 0,
+      "passive_cards_omitted": 0,
+      "physical_units": "world millimetres; authored relative linear-sRGB radiance",
+      "reference_calibration_not_remeasured": true,
+      "scale": 0.08,
+      "variant": "complete"
+    },
+    "setup": {
+      "backend": "builtin",
+      "background": [
+        236,
+        240,
+        245
+      ],
+      "camera": {
+        "distance": 200.0,
+        "fov": 0.7,
+        "pitch": 0.4,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": -0.7
+      },
+      "environment_intensity": 1.0,
+      "environment_rotation": 0.0,
+      "exposure_ev": -1.1,
+      "format": "png",
+      "height": 480,
+      "job": {
+        "method": "gpu_path",
+        "options": {
+          "denoise": false,
+          "hdr": {
+            "assume_linear_srgb": false,
+            "intensity": 0.12,
+            "resource": "36bb4ee24d9c5dd98806469b04b226fbe9e46a9d5a86d0f90e9a001ae5ff2854",
+            "rotation_rad": 3.491592653589793
+          },
+          "lighting": {
+            "area_lights": [
+              {
+                "center": [
+                  -96.0,
+                  -96.0,
+                  80.0
+                ],
+                "radiance": [
+                  22.330605321625,
+                  22.330605321625,
+                  22.330605321625
+                ],
+                "u": [
+                  -22.627416997984,
+                  22.627416997984,
+                  0.0
+                ],
+                "v": [
+                  14.35916317236,
+                  14.35916317236,
+                  34.46199161364
+                ]
+              },
+              {
+                "center": [
+                  96.0,
+                  -80.0,
+                  48.0
+                ],
+                "radiance": [
+                  2.82126149636875,
+                  2.82126149636875,
+                  2.82126149636875
+                ],
+                "u": [
+                  -30.728851183872,
+                  -36.874621420656,
+                  -1.3322676295488e-15
+                ],
+                "v": [
+                  -11.01840062008,
+                  9.18200051676,
+                  37.34013543476
+                ]
+              },
+              {
+                "center": [
+                  56.0,
+                  88.0,
+                  80.0
+                ],
+                "radiance": [
+                  29.691586369625,
+                  29.691586369625,
+                  29.691586369625
+                ],
+                "u": [
+                  8.43661487732,
+                  -5.36875492193,
+                  2.77555756156e-16
+                ],
+                "v": [
+                  -15.683136941135999,
+                  -24.64492947888,
+                  38.087618285568
+                ]
+              }
+            ],
+            "environment": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "sun": null
+          },
+          "linear_exr": false,
+          "max_depth": 8,
+          "nested_media": false,
+          "samples": 128,
+          "seed": 21026,
+          "tone_map": "aces_fitted",
+          "transmission_samples": 1
+        },
+        "transparent_background": false
+      },
+      "mode": "preview",
+      "stage": [
+        {
+          "center_mm": [
+            0.0,
+            0.0,
+            -4.1
+          ],
+          "half_u_mm": [
+            120.0,
+            0.0,
+            0.0
+          ],
+          "half_v_mm": [
+            0.0,
+            120.0,
+            0.0
+          ],
+          "id": "studio_ground",
+          "reflectance_linear": [
+            0.32,
+            0.34,
+            0.38
+          ]
+        }
+      ],
+      "width": 640
+    },
+    "source": {
+      "description": "Original RIG-002 with an explicit 1/16 creative radiance gain, HDR-002 fill and passive ground. This is not the unmodified reference calibration.",
+      "exposure_ev": -1.1,
+      "ground": [
+        0.32,
+        0.34,
+        0.38
+      ],
+      "hdr": "HDR-002",
+      "id": "NATIVE-STUDIO-004",
+      "intensity": 0.12,
+      "name": "Three-light product studio",
+      "rig": "RIG-002"
+    },
+    "status": "resolved_native_projection"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-011",
+  "name": "Machined brass printer nozzle",
+  "original_specification": {
+    "id": "SELENE-AP-011",
+    "name": "Machined brass printer nozzle",
+    "source_catalog_ids": [
+      "MAT-391"
+    ],
+    "family": "Additive hardware",
+    "domains": [
+      "additive manufacturing",
+      "3D printers",
+      "industrial"
+    ],
+    "purpose": "A brass-like conductor preview for a printer nozzle and exposed metal fittings.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-011 Machined brass printer nozzle",
+        "color": "#b4a06b",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.3,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Concentric finish",
+        "Residue layers",
+        "Temperature-dependent change"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Conductor response with turning marks and a separate local discoloration layer if desired.",
+      "structure": [
+        "Optional oxide or residue layer",
+        "Brass-like conductor substrate"
+      ],
+      "authoring_controls": [
+        {
+          "id": "turning_pitch",
+          "value": 0.22,
+          "unit": "mm",
+          "meaning": "Illustrative turning mark spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "turning_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Shallow render-only toolmarks.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep nozzle orifice and hex flats as CAD geometry",
+        "Use the nozzle axis as the texture frame"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-020",
+        "CAP-033",
+        "CAP-035",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Complex conductor optical constants",
+        "Evidence for any heat-discoloration state"
+      ],
+      "validation_criteria": [
+        "The nozzle opening must remain visible at close inspection",
+        "A warm color must not imply current temperature"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#b4a06b",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.3,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-011 Machined brass printer nozzle",
+    "bodies": [
+      "SELENE-AP-011"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

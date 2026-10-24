@@ -1,0 +1,181 @@
+{
+  "id": "MAT-316",
+  "name": "Silver-plated electrical contact",
+  "family": "Electronic bonding and contact finishes",
+  "version": "1.0.0-local",
+  "seed": 8702404,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.3869788950878659,
+    0.39571462341595576,
+    0.4045643170330763
+  ],
+  "base_linear_high": [
+    0.7126481373241738,
+    0.7285549859215911,
+    0.7446693534035121
+  ],
+  "roughness": 0.368,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.018,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-316",
+    "name": "Silver-plated electrical contact",
+    "family": "Electronic bonding and contact finishes",
+    "domains": [
+      "electronics",
+      "industrial"
+    ],
+    "description": "A reflective deposited layer covers a contact substrate.",
+    "use_cases": [
+      "Switches",
+      "connectors"
+    ],
+    "optical_model": "Conductive interfaces and compound process materials with explicit binder, residue or coating components.",
+    "controls": [
+      "conductor roughness",
+      "coverage masks",
+      "process state",
+      "plating coverage",
+      "contact polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep wear local to the intended contact patch.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Exposed substrate must differ from the remaining silver finish.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "3f8bd424f9dda6cb1f592c9b9c0d2e79f9bc3763fb86d0ae784e5530d470193a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "752360bb2bb1461650374d067c22e480ee5b7ce07dc0d567a6834fc483d906a9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "e50f395e97341219ae29b42674ef1c8cb36095241a7dba77fde4878813fa4303",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "293f1ff036d46b272de3e56a5e9581704f5bc2f85c524171643f6ff24f9f65b5",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "0967459bf42cfc9a237c8aaa6a462bf00008071fddebc7dbb1d72a5b769865dd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "7f82e440585159de4f993e547724a6c6ca479ec1677b4e09f6bd846a54aa1ddf",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d9a18aebbfdf9264fdc6522c4a586eb365ad065ff07f691dc0d20983ecd56199",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ce2e8e058d455ddd7c045650b351575b331a79d881cd68622e64ce78fe5fd0c5",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

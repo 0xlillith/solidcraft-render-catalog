@@ -1,0 +1,182 @@
+{
+  "id": "MAT-437",
+  "name": "Edge-banding adhesive seam",
+  "family": "DIY panels adhesives and joint surfaces",
+  "version": "1.0.0-local",
+  "seed": 9660603,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.2693251124875712,
+    0.19841264143487516,
+    0.11486553749099114
+  ],
+  "base_linear_high": [
+    0.4984128913952789,
+    0.36928869037395173,
+    0.21715814289404356
+  ],
+  "roughness": 0.686,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-437",
+    "name": "Edge-banding adhesive seam",
+    "family": "DIY panels adhesives and joint surfaces",
+    "domains": [
+      "DIY",
+      "woodworking",
+      "industrial"
+    ],
+    "description": "A thin joining region lies between panel and separate edge band.",
+    "use_cases": [
+      "Cabinet construction"
+    ],
+    "optical_model": "Construction-specific dielectric or layered adhesive surface with explicit host interfaces.",
+    "controls": [
+      "coverage",
+      "surface finish",
+      "joint geometry",
+      "seam width",
+      "squeeze-out"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use actual band and panel geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The seam should not be confused with a printed decorative stripe.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "33ed03b37cb5bb1dd6b7c1b1e5b05b31fcd7303c0714848a747f9b55a6c0ea6b",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "5d95084a5ad88a21024986e7462c9860fb515485734f1a2c4b41e968d777548f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "a57cff6bb2e7081686cd9304f9fe4058004eef1b4a7cbe6bfec5868ac06937ae",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "83fe1cef7f5fb90873015ce5cd818e317dd326535c0e508e05a5d0d3cdddc1af",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "08985e7696e347f98c2a67d4c6704f23e5ddd7cdd0f8452622f754e9314a088e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1b147cfc0cdedfa675897c7197a1823bce187cf3a059e6b0a819bec4fd406bf7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d553a4bc0bea6ec239d9ca56de04be8bfbac606fbf6109ac4bb98cd51362f301",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "5401f3e985ff7bc969f62a39c6cb7a1343b66a1665284495d6902d2a72030233",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

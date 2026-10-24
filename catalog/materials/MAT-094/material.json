@@ -1,0 +1,181 @@
+{
+  "id": "MAT-094",
+  "name": "Washed-aggregate concrete",
+  "family": "Concrete and mineral composites",
+  "version": "1.0.0-local",
+  "seed": 6944386,
+  "pattern": "aggregate",
+  "base_linear_low": [
+    0.21961132569788328,
+    0.2043415004268238,
+    0.16495488889424978
+  ],
+  "base_linear_high": [
+    0.40788927962898147,
+    0.38008452316526126,
+    0.30836561858355926
+  ],
+  "roughness": 0.8019999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.0,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-094",
+    "name": "Washed-aggregate concrete",
+    "family": "Concrete and mineral composites",
+    "domains": [
+      "architecture",
+      "DIY",
+      "industrial"
+    ],
+    "description": "Exposed stones sit above a recessed matrix.",
+    "use_cases": [
+      "Exterior paving",
+      "precast panels"
+    ],
+    "optical_model": "Rough dielectric mixture with separate aggregate, matrix and pore appearance.",
+    "controls": [
+      "matrix colour",
+      "aggregate distribution",
+      "porosity",
+      "matrix recession",
+      "aggregate height"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use sufficient geometry for close-view contact shadows.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Aggregate must remain embedded rather than float above the surface.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c7dff804138b5fe4b7546a4de14c7fa0492db2a596aa108d502784f0ce90347a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "439b2bba45978d649b8787ffce2fbcbfa12679e45b707d28b6562c506b18d2fc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "54ff362e21a78d2115c789c9c001e9c5520c388bec7110f1c6d693723f6a8b2a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "f6536c2be6664a0289ad53a0b4b24034052b8f08645c1b9d0369018945defef4",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "478afd1642b1195e7cc45e9cad8880436fa2b24b238d8e8c56afcde69209184b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "f030a5b613350156d4941644495178791c372ad84863fc1d1acc320729d4232b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "85c9eb8d7f0878ee902bdaf8893a8501d165fc70b9fe39ce03f529db9a19e013",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "06e418e2918d016d2ad42284bfbf5f1efd7f76ededb4f2af9f1e0a5a8305d9b6",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "SELENE-AP-024",
+  "name": "Elastomer seal candidate",
+  "original_specification": {
+    "id": "SELENE-AP-024",
+    "name": "Elastomer seal candidate",
+    "source_catalog_ids": [
+      "MAT-599"
+    ],
+    "family": "Sample seals",
+    "domains": [
+      "SELENE",
+      "industrial",
+      "automotive"
+    ],
+    "purpose": "A dark visual candidate for an elastomer ring or protected boot.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-024 Elastomer seal candidate",
+        "color": "#26292b",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.86,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Mold seam detail",
+        "Elastic deformation",
+        "Friction, outgassing or sealing qualification"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque absorbing elastomer surface with separate mold seams and contact regions.",
+      "structure": [
+        "Elastomer surface",
+        "Mold seam or trim line",
+        "Optional contact-polished region"
+      ],
+      "authoring_controls": [
+        {
+          "id": "mold_line_width",
+          "value": 0.12,
+          "unit": "mm",
+          "meaning": "Illustrative visible mold-parting line width.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "surface_grain_pitch",
+          "value": 0.25,
+          "unit": "mm",
+          "meaning": "Illustrative elastomer grain scale.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use the ring or boot local frame",
+        "Model large folds and seam ridges geometrically"
+      ],
+      "capability_requirements": [
+        "CAP-033",
+        "CAP-035",
+        "CAP-036",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Optical data for a selected compound"
+      ],
+      "validation_criteria": [
+        "Mold lines should stay continuous around the ring",
+        "Dark rubber appearance must not imply suitability for a lunar vacuum"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#26292b",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.86,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-024 Elastomer seal candidate",
+    "bodies": [
+      "SELENE-AP-024"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

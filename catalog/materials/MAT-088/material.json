@@ -1,0 +1,181 @@
+{
+  "id": "MAT-088",
+  "name": "Rough fired brick",
+  "family": "Ceramics and porcelain",
+  "version": "1.0.0-local",
+  "seed": 6896872,
+  "pattern": "ceramic",
+  "base_linear_low": [
+    0.20734417828773075,
+    0.030274756938402612,
+    0.021370342158917727
+  ],
+  "base_linear_high": [
+    0.3855520858373604,
+    0.06312716935052416,
+    0.04691316034907407
+  ],
+  "roughness": 0.72,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.05,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-088",
+    "name": "Rough fired brick",
+    "family": "Ceramics and porcelain",
+    "domains": [
+      "industrial",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Pores, inclusions and irregular edges structure the surface.",
+    "use_cases": [
+      "Facades",
+      "construction"
+    ],
+    "optical_model": "Dielectric ceramic body with optional glaze; metallic coating is a separate conductor layer where specified.",
+    "controls": [
+      "body colour",
+      "porosity",
+      "glaze roughness",
+      "firing variation",
+      "grain"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use real brick dimensions and separate mortar geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-028"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Adjacent bricks should not repeat identical stains.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "2e8a154239dd4729fb4d55f2663d8dd1ddc8ce6409376b19be84b3681fd74e6b",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "01d5308ffc1e623f2dad127f24574956b932ec6c26c713579a2e36c9f10768d5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "921729b36ef1952110fa0e6651d47bafa40b7ea9b6d67e75c1a1d5dfef6d8dc1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "035753d7fa3b99aded12f404563c8055a9c9cdc6a381d7dd6a64b57a321b43eb",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b59ee5bce547bdac41492fb5b63e5447ebf652a8b771de5a1faa1e946b40954f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b92d8d98a6a14baf8c0c9aa65284a814859fd09a2f6703800d31a840084dd036",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "8ad70120454b21129b99f16195d2e5a1634b8c8ad17f0ca5af3a6815e3a4d3dd",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "9dcb0e0627090986f3ad6b51f59f3d7a7b6ce1d09935267d96c639d00631aaf7",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

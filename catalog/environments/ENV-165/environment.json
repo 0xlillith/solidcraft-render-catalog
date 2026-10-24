@@ -1,0 +1,467 @@
+{
+  "id": "ENV-165",
+  "name": "Compacted snow clearing",
+  "family": "Mountains and cold regions",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-165",
+    "name": "Compacted snow clearing",
+    "family": "Mountains and cold regions",
+    "domains": [
+      "outdoor_products",
+      "automotive",
+      "landscape"
+    ],
+    "description": "Compacted snow clearing is a conceptual setting for vehicles; winter equipment. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Vehicles",
+      "winter equipment"
+    ],
+    "representation": "Procedural 3D terrain with sky or a candidate landscape HDRI",
+    "geometry": "Compacted support snow with loose peripheral snow",
+    "ambient_lighting": "Soft sky with strong ground interreflection",
+    "scale_policy": "Clear area from 10 to 100 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Compacted-region extent",
+      "snow depth and detail",
+      "surrounding relief",
+      "sky orientation",
+      "exposure"
+    ],
+    "authoring_method": "Original procedural terrain; licensed HDRI is optional; AI imagery is limited to declared distant backplates",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-042",
+      "CAP-084"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Distinguish snow, ice and rock at appropriate physical scale.",
+      "Preserve contact and exposure; atmosphere should not hide geometry under engineering review."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Terrain",
+      "width_mm": 24000,
+      "depth_mm": 24000,
+      "amplitude_mm": 600,
+      "seed": 840165,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 0",
+      "center_mm": [
+        9761.429299681575,
+        -8901.892144725874,
+        294.2167537493426
+      ],
+      "radii_mm": [
+        840.6192964266933,
+        588.4335074986852,
+        420.30964821334663
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 1",
+      "center_mm": [
+        -8174.658109836815,
+        573.9910235335446,
+        329.935198028152
+      ],
+      "radii_mm": [
+        942.6719943661486,
+        659.870396056304,
+        471.3359971830743
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 2",
+      "center_mm": [
+        10752.334421696098,
+        3169.8821002971054,
+        73.37103392594588
+      ],
+      "radii_mm": [
+        209.63152550270252,
+        146.74206785189176,
+        104.81576275135126
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 3",
+      "center_mm": [
+        -10846.685518507265,
+        -975.8901259278737,
+        179.96114105938693
+      ],
+      "radii_mm": [
+        514.1746887411056,
+        359.92228211877386,
+        257.0873443705528
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 4",
+      "center_mm": [
+        5376.876047901767,
+        4572.077659607405,
+        110.91922935900071
+      ],
+      "radii_mm": [
+        316.9120838828592,
+        221.83845871800142,
+        158.4560419414296
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 5",
+      "center_mm": [
+        -4827.1524238964985,
+        9920.290249028363,
+        234.51891730653605
+      ],
+      "radii_mm": [
+        670.0540494472459,
+        469.0378346130721,
+        335.02702472362296
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 6",
+      "center_mm": [
+        -9158.940184692725,
+        4552.551764120879,
+        269.64031597244895
+      ],
+      "radii_mm": [
+        770.4009027784256,
+        539.2806319448979,
+        385.2004513892128
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 7",
+      "center_mm": [
+        484.8206855652279,
+        -4707.494866484843,
+        93.77815465472035
+      ],
+      "radii_mm": [
+        267.93758472777245,
+        187.5563093094407,
+        133.96879236388622
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 8",
+      "center_mm": [
+        9629.8694920151,
+        -1565.8815101868531,
+        301.2019337740383
+      ],
+      "radii_mm": [
+        860.5769536401095,
+        602.4038675480766,
+        430.28847682005477
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 9",
+      "center_mm": [
+        -9200.165727955327,
+        -9185.076734081173,
+        307.48144359689496
+      ],
+      "radii_mm": [
+        878.5184102768428,
+        614.9628871937899,
+        439.2592051384214
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 10",
+      "center_mm": [
+        -4068.6878833776136,
+        2070.9077741369983,
+        104.7415857782889
+      ],
+      "radii_mm": [
+        299.261673652254,
+        209.4831715565778,
+        149.630836826127
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 11",
+      "center_mm": [
+        7271.994875074772,
+        1709.5580485513328,
+        211.67143710938456
+      ],
+      "radii_mm": [
+        604.7755345982416,
+        423.3428742187691,
+        302.3877672991208
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 12",
+      "center_mm": [
+        -9704.365413764379,
+        10062.369283624314,
+        86.78640001374305
+      ],
+      "radii_mm": [
+        247.96114289640872,
+        173.5728000274861,
+        123.98057144820436
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 13",
+      "center_mm": [
+        7859.6684192184075,
+        10727.767754270066,
+        277.44306983661374
+      ],
+      "radii_mm": [
+        792.6944852474679,
+        554.8861396732275,
+        396.34724262373396
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 14",
+      "center_mm": [
+        6893.510585755575,
+        -7583.176886122169,
+        251.70553090401248
+      ],
+      "radii_mm": [
+        719.15865972575,
+        503.41106180802495,
+        359.579329862875
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 15",
+      "center_mm": [
+        1993.761907744767,
+        -9868.440333993927,
+        261.2250823753447
+      ],
+      "radii_mm": [
+        746.3573782152706,
+        522.4501647506894,
+        373.1786891076353
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 16",
+      "center_mm": [
+        -2055.9367053776623,
+        -1669.0891716702718,
+        152.76275239236287
+      ],
+      "radii_mm": [
+        436.4650068353225,
+        305.52550478472574,
+        218.23250341766126
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 17",
+      "center_mm": [
+        7138.022246014658,
+        -8755.088036856121,
+        93.54267528768042
+      ],
+      "radii_mm": [
+        267.2647865362298,
+        187.08535057536085,
+        133.6323932681149
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 18",
+      "center_mm": [
+        4053.884474767954,
+        1978.9077954585173,
+        326.3723096346895
+      ],
+      "radii_mm": [
+        932.49231324197,
+        652.744619269379,
+        466.246156620985
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 19",
+      "center_mm": [
+        9858.715963125618,
+        5110.7829779563945,
+        182.97869429764015
+      ],
+      "radii_mm": [
+        522.796269421829,
+        365.9573885952803,
+        261.3981347109145
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 20",
+      "center_mm": [
+        7916.99274621479,
+        -4812.200962626249,
+        66.44057742318796
+      ],
+      "radii_mm": [
+        189.8302212091085,
+        132.88115484637592,
+        94.91511060455424
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 21",
+      "center_mm": [
+        4125.175176332004,
+        1288.0774533085496,
+        318.4052856038801
+      ],
+      "radii_mm": [
+        909.7293874396574,
+        636.8105712077602,
+        454.8646937198287
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 22",
+      "center_mm": [
+        8165.227737644884,
+        7319.181361715964,
+        191.1756443059532
+      ],
+      "radii_mm": [
+        546.2161265884378,
+        382.3512886119064,
+        273.1080632942189
+      ],
+      "color": "d3d9dc"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 23",
+      "center_mm": [
+        6484.711096013103,
+        -2650.941190474612,
+        165.74516818718317
+      ],
+      "radii_mm": [
+        473.55762339195195,
+        331.49033637436634,
+        236.77881169597597
+      ],
+      "color": "d3d9dc"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 25,
+    "triangles": 5954,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 24000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        -0.35281688341242073,
+        0.6924421219048029,
+        0.6293203910498374
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

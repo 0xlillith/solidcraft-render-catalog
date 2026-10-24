@@ -1,0 +1,184 @@
+{
+  "id": "MAT-167",
+  "name": "Laminated display switched off",
+  "family": "Electronic component foundations",
+  "version": "1.0.0-local",
+  "seed": 7522473,
+  "pattern": "pcb",
+  "base_linear_low": [
+    0.012986181841146935,
+    0.11918523870903151,
+    0.049723090814700256
+  ],
+  "base_linear_high": [
+    0.03164648036746158,
+    0.22502386750002754,
+    0.09854055342378254
+  ],
+  "roughness": 0.376,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-167",
+    "name": "Laminated display switched off",
+    "family": "Electronic component foundations",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "Cover glass sits above an absorbing dark display stack.",
+    "use_cases": [
+      "Devices",
+      "interfaces"
+    ],
+    "optical_model": "Layered functional surface with separate conductors, dielectrics and emitters as required by the component.",
+    "controls": [
+      "layer masks",
+      "roughness",
+      "orientation",
+      "cover reflection",
+      "panel absorption"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve the actual layered cover structure.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-090",
+      "CAP-025",
+      "CAP-026"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "An off display must not become a reflection-free black plane.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "ee596f7400c5180cc3155531bc3cdeb595b4ca0ebcb46c31d77418bf4aa3f95f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "c830ba04ebd887b7e7ea28139d397c6224a1c6ef7d5ae219cf936aa8847faa92",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "878ffaa348115e3f3fb6c61cc6135e42b2523b608777fc1ba067efb05e19ac3f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "3158f89185393788bfd677b3a14c03794d3a3f78266897356fad477492e8888d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "7cbeba4f792df98f2273d220e96ab3e87a6be1de59dde70ffc6716ae001f799e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "19293309bdf3df311190bbe13fb58c2886370c8f95b3a0ba62421f61e2797d94",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "61a27e39cfe8f363edb50f9553bdeb0e202d179c098117dfdb86536b48112305",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "38c5f9028008392aecc5cff293ce23e733a3daa06ddb59cfd166360dd3415366",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "profile_id": "ptfe",
+  "card": {
+    "schema_version": 1,
+    "designation": "TECAFLON PTFE natural - stock reference",
+    "family": "polymer",
+    "sources": [
+      {
+        "id": "ensinger-ptfe",
+        "title": "Ensinger TECAFLON PTFE natural",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.ensingerplastics.com/en/shapes/tecaflon-ptfe-natural"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 2150.0
+        },
+        "source_id": "ensinger-ptfe",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Unfilled PTFE stock; not porous film, filled bearing grade or installed seal. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "tensile_strength",
+          "pa": 22000000.0
+        },
+        "source_id": "ensinger-ptfe",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Unfilled PTFE stock; not porous film, filled bearing grade or installed seal. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density",
+    "tensile_strength"
+  ],
+  "not_projected": [
+    {
+      "id": "elongation_break",
+      "quantity": "elongation_break",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hardness_shore_d",
+      "quantity": "hardness_shore_d",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "thermal_conductivity",
+      "quantity": "thermal_conductivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "volume_resistivity",
+      "quantity": "volume_resistivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "thermal_expansion",
+      "quantity": "thermal_expansion",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "dielectric_strength",
+      "quantity": "dielectric_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

@@ -1,0 +1,182 @@
+{
+  "id": "MAT-025",
+  "name": "Sealed aged brass",
+  "family": "Copper and other metals",
+  "version": "1.0.0-local",
+  "seed": 6397975,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.3614512576381118,
+    0.24538923905122248,
+    0.049723090814700256
+  ],
+  "base_linear_high": [
+    0.6661649765947708,
+    0.4548281666305842,
+    0.09854055342378254
+  ],
+  "roughness": 0.26,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.018,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-025",
+    "name": "Sealed aged brass",
+    "family": "Copper and other metals",
+    "domains": [
+      "industrial",
+      "electronics",
+      "CAD product"
+    ],
+    "description": "A transparent finish covers uneven darkening and contact wear.",
+    "use_cases": [
+      "Hardware",
+      "furniture"
+    ],
+    "optical_model": "Conductor microfacet response with independent absorbing patina and clearcoat layers when specified.",
+    "controls": [
+      "conductor response",
+      "surface roughness",
+      "layer coverage",
+      "tarnish pattern",
+      "clearcoat roughness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep patina below a separate surface layer.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Low",
+    "validation": [
+      "Coating highlights should not erase the underlying aged pattern.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "1c1723874a9fa456582db9422780722c90fe740af9dd140c250f34a6229302fc",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3abb804dc4323ece362520d2aa83ba906e940ebe39eb14be77fe6ee85a7237cd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "8fdc083662de600506db85ae4795ef3881a039ae46fd5b40caa864da43cafb10",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0c00644af3d123c48fc05999e1f0ff6baeaed2584d2aa4761a5beda22c5393e8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "6577bd272b350250a08f46f3e6b51cf4e73db45247e4631b3a9bd6b877ffb44d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "a815a4e4184bc1353282b2d6fa1ae11058daf87cc2884d64ed6422842e9f1d1d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4f62deb1f0a92939c74d5b33920eaa26cbbcb859aedbf2ef39a8440c830c9c0a",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "89ceb543f256f2fb1aa716392b223bcf95dc8cbd627b096018e19a07ad06a91e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-159 Small-source caustic reference",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 975337,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    -1400.0,
+                    -1200.0,
+                    1500.0
+                  ],
+                  "u": [
+                    -9.761870601839528,
+                    11.38884903547945,
+                    0.0
+                  ],
+                  "v": [
+                    7.186987199641337,
+                    6.160274742549718,
+                    11.636074513705022
+                  ],
+                  "radiance": [
+                    80,
+                    80,
+                    80
+                  ]
+                },
+                {
+                  "center": [
+                    1200.0,
+                    0.0,
+                    1200.0
+                  ],
+                  "u": [
+                    -0.0,
+                    -300.0,
+                    0.0
+                  ],
+                  "v": [
+                    -424.2640687119285,
+                    0.0,
+                    424.2640687119285
+                  ],
+                  "radiance": [
+                    4,
+                    4,
+                    4
+                  ]
+                }
+              ]
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

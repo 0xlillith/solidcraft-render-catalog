@@ -1,0 +1,100 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-151 Gray card and reference sphere",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 962993,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    -1200.0,
+                    -1200.0,
+                    1200.0
+                  ],
+                  "u": [
+                    -424.2640687119285,
+                    424.2640687119285,
+                    0.0
+                  ],
+                  "v": [
+                    244.94897427831776,
+                    244.94897427831776,
+                    489.8979485566355
+                  ],
+                  "radiance": [
+                    8,
+                    8,
+                    8
+                  ]
+                },
+                {
+                  "center": [
+                    1200.0,
+                    0.0,
+                    1200.0
+                  ],
+                  "u": [
+                    -0.0,
+                    -300.0,
+                    0.0
+                  ],
+                  "v": [
+                    -424.2640687119285,
+                    0.0,
+                    424.2640687119285
+                  ],
+                  "radiance": [
+                    4,
+                    4,
+                    4
+                  ]
+                }
+              ]
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": [
+          {
+            "id": "passive-fill",
+            "center_mm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "half_u_mm": [
+              0.0,
+              -400.0,
+              0.0
+            ],
+            "half_v_mm": [
+              0.0,
+              0.0,
+              750.0
+            ],
+            "reflectance_linear": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,1024 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-121 Exposed-edge birch plywood"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-121",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        177,
+        150,
+        110
+      ],
+      "name": "MAT-121 Exposed-edge birch plywood",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.7,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7158199,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-121\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-122 Oriented-strand board"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-122",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        186,
+        156,
+        108
+      ],
+      "name": "MAT-122 Oriented-strand board",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.5660000000000001,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7166118,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-122\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-123 Uncoated MDF"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-123",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        157,
+        128,
+        88
+      ],
+      "name": "MAT-123 Uncoated MDF",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.88,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7174037,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-123\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-124 Cut particleboard"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-124",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        184,
+        155,
+        107
+      ],
+      "name": "MAT-124 Cut particleboard",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.602,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7181956,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-124\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-125 Melamine-faced panel"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-125",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        186,
+        156,
+        108
+      ],
+      "name": "MAT-125 Melamine-faced panel",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.62,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7189875,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-125\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-126 Textured high-pressure laminate"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-126",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        147,
+        60,
+        51
+      ],
+      "name": "MAT-126 Textured high-pressure laminate",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.638,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7197794,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-126\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-127 Wood veneer over board"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-127",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        186,
+        156,
+        108
+      ],
+      "name": "MAT-127 Wood veneer over board",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.656,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7205713,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-127\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-128 Corrugated-cardboard cut edge"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-128",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        186,
+        156,
+        108
+      ],
+      "name": "MAT-128 Corrugated-cardboard cut edge",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.6739999999999999,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7213632,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-128\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-129 Printed coated paper"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-129",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        186,
+        156,
+        108
+      ],
+      "name": "MAT-129 Printed coated paper",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.692,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7221551,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-129\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-130 Fibrous kraft paper"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-130",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        186,
+        156,
+        108
+      ],
+      "name": "MAT-130 Fibrous kraft paper",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.71,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 7229470,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-130\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "id": "LUZ-141",
+  "name": "Symmetric downlight",
+  "family": "15 Functional photometry",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-141",
+    "name": "Symmetric downlight",
+    "family": "15 Functional photometry",
+    "domains": [
+      "lighting_design",
+      "architecture"
+    ],
+    "description": "A proposed lighting arrangement for ceiling-luminaire visualization.",
+    "use_cases": [
+      "Ceiling-luminaire visualization"
+    ],
+    "sources": "One imported downlight profile",
+    "geometry": "Real mounting height and receiving plane",
+    "contribution_policy": "Use documented profile distribution and flux; no artistic normalization by default",
+    "controls": [
+      "Height",
+      "tilt",
+      "documented flux",
+      "profile"
+    ],
+    "authoring_method": "Original authoring specification requiring a separately sourced and licensed IES/LDT profile or a clearly labeled analytic distribution. No profile asset or absolute measurement is included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-012"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Preserve orientation, profile integral and provenance"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 947563,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          0.0,
+          1500.0
+        ],
+        "u": [
+          -125.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          125.0,
+          0.0
+        ],
+        "radiance": [
+          20,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Original luminaire-shaped area source, not measured IES/LDT intensity distribution or lux validation.",
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

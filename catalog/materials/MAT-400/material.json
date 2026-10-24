@@ -1,0 +1,182 @@
+{
+  "id": "MAT-400",
+  "name": "Ground printer guide rail",
+  "family": "Printer hotends motion parts and build plates",
+  "version": "1.0.0-local",
+  "seed": 9367600,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.25548842765979524,
+    0.2227425293519402,
+    0.11918523870903151
+  ],
+  "base_linear_high": [
+    0.4732177339476868,
+    0.4135908743423388,
+    0.22502386750002754
+  ],
+  "roughness": 0.39,
+  "roughness_variation": 0.06,
+  "metallic": 0.7,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-400",
+    "name": "Ground printer guide rail",
+    "family": "Printer hotends motion parts and build plates",
+    "domains": [
+      "additive manufacturing",
+      "electronics",
+      "DIY"
+    ],
+    "description": "Fine directional metal finish follows carriage travel surfaces.",
+    "use_cases": [
+      "Printer motion assemblies"
+    ],
+    "optical_model": "Component-specific conductor, ceramic, polymer or layered finish, with independent service-state overlays.",
+    "controls": [
+      "manufacturing direction",
+      "surface roughness",
+      "region masks",
+      "ground-track mask",
+      "contact polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Derive contact regions from the rail geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Visual polish must not imply a precision or load rating.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "56909cf6bfec2af55547135eadb1e0e5bee33314993f9f8fdab8f01afd56908d",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "b7d016e208cbf57c53def6616fd189c4f40c7d94bca8f1387ff50c9a831edfec",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "2decba47c9441707d8d54d0799ead4961c2a30ee083e5508faf2032a140741f3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "d1bab6b04370b8611d0e71a2b76178483981d38ee22d76a7671254fb811b92af",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "1d00365cc4aee670cba228718f0346a9d60b74a768228db2f12680d31aed4158",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c58235449b0ff32ada159810c47f3aa48796562b7f43b111aea050a1ef971872",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "ec41dd3fe706f022d564cf5482f687ea137d7ea8952c4551c0639230319be09f",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "5a455eb26b48703269d668ffeef906b3dadeb300b183468ca35a1a0777c269df",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

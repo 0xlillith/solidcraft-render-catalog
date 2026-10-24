@@ -1,0 +1,1026 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-521 Silver-coated fibre harness braid appearance"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-521",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        196,
+        198,
+        200
+      ],
+      "name": "MAT-521 Silver-coated fibre harness braid appearance",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.2,
+        "roughness": 0.428,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10325799,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-521\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-522 Polyimide ribbon with stripped contact regions"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-522",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-522 Polyimide ribbon with stripped contact regions",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.446,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10333718,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-522\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-523 Opaque multilayer wire-insulation section"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-523",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-523 Opaque multilayer wire-insulation section",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.3,
+        "roughness": 0.464,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10341637,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-523\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-524 Folded polyimide sleeve joint"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-524",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-524 Folded polyimide sleeve joint",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.482,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10349556,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-524\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-525 Polished metal-bellows surface"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-525",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-525 Polished metal-bellows surface",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.3,
+        "roughness": 0.055,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10357475,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-525\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-526 Dry solid-lubricant coating appearance"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-526",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        179,
+        183,
+        188
+      ],
+      "name": "MAT-526 Dry solid-lubricant coating appearance",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.3,
+        "roughness": 0.518,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10365394,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-526\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-527 Plated spring-contact wear region"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-527",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-527 Plated spring-contact wear region",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.3,
+        "roughness": 0.536,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10373313,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-527\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-528 Ceramic-to-metal braze-region appearance"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-528",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-528 Ceramic-to-metal braze-region appearance",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.554,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10381232,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-528\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-529 Woven harness-lacing cord"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-529",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-529 Woven harness-lacing cord",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.3,
+        "roughness": 0.572,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10389151,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-529\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-530 Wrapped cable-identification sleeve"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-530",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        164,
+        142,
+        82
+      ],
+      "name": "MAT-530 Wrapped cable-identification sleeve",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.3,
+        "roughness": 0.59,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 10397070,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-530\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  }
+]

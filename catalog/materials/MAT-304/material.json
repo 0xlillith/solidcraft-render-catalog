@@ -1,0 +1,182 @@
+{
+  "id": "MAT-304",
+  "name": "Rigid-flex board transition",
+  "family": "PCB constructions and fabrication regions",
+  "version": "1.0.0-local",
+  "seed": 8607376,
+  "pattern": "pcb",
+  "base_linear_low": [
+    0.010189704663351515,
+    0.0717054789954393,
+    0.028348645115942483
+  ],
+  "base_linear_high": [
+    0.026554387595953504,
+    0.1385681856334865,
+    0.0596199209573878
+  ],
+  "roughness": 0.33199999999999996,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.055,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-304",
+    "name": "Rigid-flex board transition",
+    "family": "PCB constructions and fabrication regions",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "Flexible layers emerge from a thicker rigid multilayer body.",
+    "use_cases": [
+      "Compact electronic assemblies"
+    ],
+    "optical_model": "Region-aware PCB assembly appearance with independent dielectric, conductor, coating and printed layers.",
+    "controls": [
+      "layer masks",
+      "surface roughness",
+      "stack orientation",
+      "transition masks",
+      "exposed plies"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use the authored stack geometry at the transition.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Flexible and rigid regions must share a coherent layer layout.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "912d6afce665ace624c448ff46b1b06126624b85be356fb8de7b2ceb4c91e888",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "32660c2dc8c7ff1e212fcf35d0ba363161e74e8af7122a9c8b9c125193df45e9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "ec15ff9e52161916513840ef4f5aba36c457b0e48f8dad9fb54a87054bfb7430",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0c6f8f69513ef907a209c99c8c8c974634cf305dcd10e0c2452c59618968bbe8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "46f3fa961293e0ada039d13d2a40e0ed61233861eaccf6b7cd21e4bc659d17c6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4ec218b837d5db3df5fe540e56fedaf3eb6c10f0b412254c05e0a160f9353e14",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "0ac25b8311d65ca7685d3e6e5bf1894981a0816f1845e88e8727a2bbb7c14eb8",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "70096c42d4b728daa14a65a6c324e7b174157039ad87b3681e371aaa60fc4678",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "SELENE-AP-042",
+  "name": "Highland-style regolith surface",
+  "original_specification": {
+    "id": "SELENE-AP-042",
+    "name": "Highland-style regolith surface",
+    "source_catalog_ids": [
+      "MAT-546"
+    ],
+    "family": "Lunar particulate surfaces",
+    "domains": [
+      "SELENE",
+      "lunar",
+      "space"
+    ],
+    "purpose": "A lighter particulate terrain target with its own illustrative fragment structure.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-042 Highland-style regolith surface",
+        "color": "#8b8881",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.96,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Angular fragment geometry",
+        "Particulate phase response",
+        "Terrain self-shadowing",
+        "Composition variation"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Vacuum-exposed mixed particulate dielectric surface with independently controlled fine and coarse populations.",
+      "structure": [
+        "Fine granular matrix",
+        "Angular light-toned fragments",
+        "Underlying terrain"
+      ],
+      "authoring_controls": [
+        {
+          "id": "fine_detail_extent",
+          "value": 0.45,
+          "unit": "mm",
+          "meaning": "Illustrative visible-detail scale, not a measured distribution.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "fragment_extent",
+          "value": 11.0,
+          "unit": "mm",
+          "meaning": "Authored angular fragment extent.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "detail_seed",
+          "value": 4201,
+          "unit": "integer",
+          "meaning": "Deterministic procedural authoring seed.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep fine texture and larger angular fragments separate",
+        "Use a terrestrial lab environment only when intentionally showing a simulant test"
+      ],
+      "capability_requirements": [
+        "CAP-033",
+        "CAP-035",
+        "CAP-036",
+        "CAP-043",
+        "CAP-108",
+        "CAP-109"
+      ],
+      "unknown_optical_inputs": [
+        "Measured reflectance or phase data for a specified reference",
+        "Mission-specific surface evidence"
+      ],
+      "validation_criteria": [
+        "This target must differ by fragment structure as well as color",
+        "A visual label must not imply a measured lunar sample composition"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#8b8881",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.96,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-042 Highland-style regolith surface",
+    "bodies": [
+      "SELENE-AP-042"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

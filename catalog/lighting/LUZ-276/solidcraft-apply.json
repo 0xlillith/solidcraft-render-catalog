@@ -1,0 +1,54 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-276 SELENE onboard LED inspection",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 1155868,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    -600.0,
+                    -500.0,
+                    500.0
+                  ],
+                  "u": [
+                    -19.205531989934393,
+                    23.046638387921274,
+                    0.0
+                  ],
+                  "v": [
+                    8.283943101287907,
+                    6.9032859177399235,
+                    16.84401763928541
+                  ],
+                  "radiance": [
+                    35,
+                    35,
+                    35
+                  ]
+                }
+              ]
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

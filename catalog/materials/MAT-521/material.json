@@ -1,0 +1,192 @@
+{
+  "id": "MAT-521",
+  "name": "Silver-coated fibre harness braid appearance",
+  "family": "Space harness and mechanism interfaces",
+  "version": "1.0.0-local",
+  "seed": 10325799,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.3869788950878659,
+    0.39571462341595576,
+    0.4045643170330763
+  ],
+  "base_linear_high": [
+    0.7126481373241738,
+    0.7285549859215911,
+    0.7446693534035121
+  ],
+  "roughness": 0.428,
+  "roughness_variation": 0.06,
+  "metallic": 0.2,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-521",
+    "name": "Silver-coated fibre harness braid appearance",
+    "family": "Space harness and mechanism interfaces",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "Thin conductive-looking surfaces follow a flexible braided fibre structure.",
+    "use_cases": [
+      "Harness concepts"
+    ],
+    "optical_model": "Explicit insulating, conductive and joining regions for mechanism illustrations; no vacuum, contamination or flight qualification is asserted.",
+    "controls": [
+      "region masks",
+      "construction orientation",
+      "surface roughness",
+      "fibre coating",
+      "braid pitch"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep individual strand dimensions and coating masks distinct.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Optical metallic response does not certify shielding performance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c954632d54d2cae734480944aaf094d721b6ce5a3ded54c059c5e36d103b5580",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "96519cad97f55d8a6b843c2401d5d59b1e77c1429642513f78f982d034c4ad48",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "54f35a8a854a426671055fe45b53b2e4d8a73d6f9466954dbaab210781cf7eb5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "3720b37e4e0be4d9e8e7eb0bd5739b90f522b790108961aa53975ff1a885cb83",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "1134bb305fbd7a57f8da1c66cdb2bde42673c3262da57b5ec8f0ac754f1ebcc5",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "46851f80fcaa464b349f8f642afc229c59f89a35a84551353864ef1f31a84768",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "17a7ed61f18901b515d4444af8929159876fcf5cd486d3433fb4fc0bf308d16f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "56a82284f1660b4da21b8bb2aa6225361518a9c593eff2a946d019d4700ed92e",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "3a6525081b495ecd3d9bea640a92ee468512693c668f21319f98a7b86e9cabff",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

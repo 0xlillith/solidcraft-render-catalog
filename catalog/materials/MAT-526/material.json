@@ -1,0 +1,191 @@
+{
+  "id": "MAT-526",
+  "name": "Dry solid-lubricant coating appearance",
+  "family": "Space harness and mechanism interfaces",
+  "version": "1.0.0-local",
+  "seed": 10365394,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.3172661024191664,
+    0.3329451066907832,
+    0.3531671342228948
+  ],
+  "base_linear_high": [
+    0.5857084253005717,
+    0.6142582539742619,
+    0.651080453361092
+  ],
+  "roughness": 0.518,
+  "roughness_variation": 0.06,
+  "metallic": 0.3,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-526",
+    "name": "Dry solid-lubricant coating appearance",
+    "family": "Space harness and mechanism interfaces",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "A fine dark surface layer covers selected sliding regions.",
+    "use_cases": [
+      "Mechanism illustrations"
+    ],
+    "optical_model": "Explicit insulating, conductive and joining regions for mechanism illustrations; no vacuum, contamination or flight qualification is asserted.",
+    "controls": [
+      "region masks",
+      "construction orientation",
+      "surface roughness",
+      "coating coverage",
+      "wear mask"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep the layer separate from the substrate and contact path.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not infer vacuum suitability or friction coefficients.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "39ed17dfe7f38c7fda48973f16535fd8215031020a03876bd20edc18a0fc9ee8",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "d8d35aaa20fe545403c8291618fcaafeb1c96d923bb476c7b5526c03c9200881",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "de896e4ae3e677560255fee9a47297ec2fa23137359fe9cb74912c2a713c2907",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "cb16feea347231620c8b1203362bf05c14c620ed03d802623c73ce9b4d0578eb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "792e8e6b2a7b1aa5ac98c69f8083469cfa66209127e3a073361d130f97b35e7b",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "e18913d2561f433e9fa5db9cfeb2bd42be694018f183f4d237bea40b89d7ce29",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ab63e8ba712c931c787c4dd12466a7e2b539b9db2f32f080bfa93f52b85e39cd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d825be122dfdae80e6aaceac7775a6067322de61f80df919dc9470f1d24d79a3",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "efa0409f235605dd4a526ff835ceb3607e55ebe063d221535829ba477567423c",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

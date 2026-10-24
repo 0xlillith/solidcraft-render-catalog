@@ -1,0 +1,181 @@
+{
+  "id": "MAT-108",
+  "name": "Stratified sandstone",
+  "family": "Natural stone appearances",
+  "version": "1.0.0-local",
+  "seed": 7055252,
+  "pattern": "marble",
+  "base_linear_low": [
+    0.36984763901304013,
+    0.3531671342228948,
+    0.30959158976845275
+  ],
+  "base_linear_high": [
+    0.6814539098446402,
+    0.651080453361092,
+    0.5717339395783766
+  ],
+  "roughness": 0.354,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.1,
+  "tile_mm": [
+    300,
+    300
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-108",
+    "name": "Stratified sandstone",
+    "family": "Natural stone appearances",
+    "domains": [
+      "architecture",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Grain texture and sediment-like bands follow a shared volume.",
+    "use_cases": [
+      "Facades",
+      "landscaping"
+    ],
+    "optical_model": "Dielectric mineral structure with independently controlled cut orientation and surface finish.",
+    "controls": [
+      "mineral pattern",
+      "finish roughness",
+      "vein direction",
+      "grain distribution",
+      "band direction"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Carry bands consistently through all cut faces.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Bands must not independently restart on each face.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d99f9bb6b784bda5e0666b85fa3635b834f71c4b825394b41488f0c7c2dbd094",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "7a2ff6c0b613ccf878fdd0e24730dcf4851743cac5f3574da881833f7babe675",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "4e755e790d7db948026c329080f3fdc724d3c7a84360ae0f297311e08e3737cb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "68b9a4e774762bd649c43ef5c3f4838e4bc13cb80bacacec7d921a6c8247a787",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f94321ebdc70949b9d77829e5182f929546e73a833a3ff4da062f6d28f838187",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "cad0ed9047fd9f89440adc19d5136d0ae028b15d453bb1e3d0651be9a6a5ef8e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "668bbf2a2ba02daf3449b56313972962a6bc5544c1b21fbd6dda89d822d9cf57",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "941f445bd78357a3880e5e8b2281e7c5256363d43789a4616fb5c2d166c23e81",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

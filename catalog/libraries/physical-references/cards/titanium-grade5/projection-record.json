@@ -1,0 +1,106 @@
+{
+  "profile_id": "titanium-grade5",
+  "card": {
+    "schema_version": 1,
+    "designation": "Ti-6Al-4V Grade 5 - Metalcor reference",
+    "family": "metal",
+    "sources": [
+      {
+        "id": "metalcor-ti5",
+        "title": "Metalcor titanium grade 5 3.7164/65",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.metalcor.de/en/datenblatt/125/"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 4430.0
+        },
+        "source_id": "metalcor-ti5",
+        "conditions": {
+          "temperature_k": 293.15,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Grade 5 supplier reference; product form and anneal must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "specific_heat",
+          "j_kg_k": 560.0
+        },
+        "source_id": "metalcor-ti5",
+        "conditions": {
+          "temperature_k": 293.15,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Grade 5 supplier reference; product form and anneal must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_conductivity",
+          "w_m_k": [
+            7.1,
+            7.1,
+            7.1
+          ],
+          "axes": "material123"
+        },
+        "source_id": "metalcor-ti5",
+        "conditions": {
+          "temperature_k": 293.15,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Grade 5 supplier reference; product form and anneal must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density",
+    "specific_heat",
+    "thermal_conductivity"
+  ],
+  "not_projected": [
+    {
+      "id": "young_modulus",
+      "quantity": "young_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "volume_resistivity",
+      "quantity": "volume_resistivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "tensile_strength",
+      "quantity": "tensile_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "yield_strength",
+      "quantity": "yield_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hardness_brinell",
+      "quantity": "hardness_brinell",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "tensile_strength",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

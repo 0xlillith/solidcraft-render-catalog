@@ -1,0 +1,181 @@
+{
+  "id": "MAT-165",
+  "name": "Solidified electronics solder",
+  "family": "Electronic component foundations",
+  "version": "1.0.0-local",
+  "seed": 7506635,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.49,
+    0.51,
+    0.54
+  ],
+  "base_linear_high": [
+    0.7,
+    0.72,
+    0.74
+  ],
+  "roughness": 0.38,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.018,
+  "tile_mm": [
+    20,
+    20
+  ],
+  "cycles_u": 12,
+  "cycles_v": 12,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-165",
+    "name": "Solidified electronics solder",
+    "family": "Electronic component foundations",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "A conductor meniscus carries restrained solidification texture.",
+    "use_cases": [
+      "Assembly illustrations"
+    ],
+    "optical_model": "Layered functional surface with separate conductors, dielectrics and emitters as required by the component.",
+    "controls": [
+      "layer masks",
+      "roughness",
+      "orientation",
+      "meniscus roughness",
+      "oxide"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use joint geometry for the meniscus and fillet.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Brightness alone must not be presented as solder-joint quality evidence.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-012",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "99f4ca38e7e92a3fcf49621e838d235b3283c1170701266fe06ff418b170a900",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "32c74c00fa5ab1f24174e7d0994e0b7d1228767c52d7ee7e7c4958d0f6672948",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "396501d928b87074d4ac3be4f6e4802ca0b3a0286eb5bb2310f69aba110964d2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "db85881626382ff5f355359a3ec91ebfb60dc39576ed65ed369ea9492ab32418",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "210e1d8ca7efc6e4ddfdc949159a45d4e81eae098ba7f5068c8e58a4531aa00f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "2cd4fb713991918222659e758bb79b3162d0cd2737da6ed08eb7a223e1294ca0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "bd4eea18b6995b58aaad47543400e8b253945f79a173b9766226b931aebaf681",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "a6b673494a817fa2c60d4954ce2b73217a9f4ee70359cd134ab15d9492103bc4",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

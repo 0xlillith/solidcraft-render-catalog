@@ -1,0 +1,97 @@
+{
+  "id": "SELENE-AP-036",
+  "name": "Molded epoxy component body",
+  "original_specification": {
+    "id": "SELENE-AP-036",
+    "name": "Molded epoxy component body",
+    "source_catalog_ids": [
+      "MAT-166"
+    ],
+    "family": "Electronic packages",
+    "domains": [
+      "electronics",
+      "3D printers",
+      "LED lighting"
+    ],
+    "purpose": "A dark molded package appearance for integrated circuits and sensors.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-036 Molded epoxy component body",
+        "color": "#252727",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.8,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Fine grain",
+        "Package legends",
+        "Filled-resin microstructure"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque filled dielectric encapsulant with restrained grain and independently authored markings.",
+      "structure": [
+        "Filled epoxy surface",
+        "Optional legend decal",
+        "Independent metal leads"
+      ],
+      "authoring_controls": [
+        {
+          "id": "mold_grain_pitch",
+          "value": 0.18,
+          "unit": "mm",
+          "meaning": "Illustrative fine package texture.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "mold_grain_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Render-only grain amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Assign leads separately as conductors",
+        "Keep package markings as original authored decals if added"
+      ],
+      "capability_requirements": [
+        "CAP-028",
+        "CAP-033",
+        "CAP-035",
+        "CAP-038"
+      ],
+      "unknown_optical_inputs": [
+        "Encapsulant optical data"
+      ],
+      "validation_criteria": [
+        "Metal leads and dark package body should remain visually distinct",
+        "Do not copy commercial package markings or logos"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#252727",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.8,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-036 Molded epoxy component body",
+    "bodies": [
+      "SELENE-AP-036"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

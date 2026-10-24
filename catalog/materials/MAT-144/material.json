@@ -1,0 +1,181 @@
+{
+  "id": "MAT-144",
+  "name": "Marbled linoleum appearance",
+  "family": "Flooring and insulation",
+  "version": "1.0.0-local",
+  "seed": 7340336,
+  "pattern": "marble",
+  "base_linear_low": [
+    0.0908743308689878,
+    0.08902177544105805,
+    0.07333934622146056
+  ],
+  "base_linear_high": [
+    0.17347266217935092,
+    0.17009935229565792,
+    0.1415432871495252
+  ],
+  "roughness": 0.8019999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.2,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-144",
+    "name": "Marbled linoleum appearance",
+    "family": "Flooring and insulation",
+    "domains": [
+      "DIY",
+      "architecture",
+      "industrial"
+    ],
+    "description": "Soft mixed patterns lie below a restrained finish.",
+    "use_cases": [
+      "Interiors",
+      "furniture"
+    ],
+    "optical_model": "Heterogeneous dielectric surface or layered porous construction according to the specified recipe.",
+    "controls": [
+      "grain distribution",
+      "roughness",
+      "layer coverage",
+      "marbling scale",
+      "seam layout"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Treat installation seams as layout geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Seams must not repeat inside each arbitrary texture tile.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "750a0e0fd534d906653bfbe99458115fdd2e387bb0934c5489505a2512ff9254",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "cd0f7f1ae1afcfc8260f555c592ad51a1a46eebbbaa3837f076a4549d705eae1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "db4c3b49e6e334b5dd3b051e331f3c26cb2f12186b77b03298ab89c95ab397aa",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "4aa3e08ea559a0f1c88e227eea39996e7cd19df45e2d395061f0d26ad6e3f30a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f4bc237a2c9bf9e96bb6e2403950236e8af136f26b59980e7e412550ada2128e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "9c0e8e293f87e472cf6f0c2ed94c12854e6283bc33a86aad9e23d60ac186d3e2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2caea1d9119f53cf057cdb862cb23f7bd6445d8f6ae4cac52e290792107da841",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "455d1cd850ea5fd404e6efffc852039c1e2dc762ab53b1e06f02ddf54a27f4d5",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

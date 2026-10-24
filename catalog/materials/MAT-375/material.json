@@ -1,0 +1,182 @@
+{
+  "id": "MAT-375",
+  "name": "Removed resin-support contact points",
+  "family": "Resin-printing process appearances",
+  "version": "1.0.0-local",
+  "seed": 9169625,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.18970965608809473,
+    0.2227425293519402,
+    0.25209562240390737
+  ],
+  "base_linear_high": [
+    0.35344146332459037,
+    0.4135908743423388,
+    0.46703979004890595
+  ],
+  "roughness": 0.45,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.065,
+  "tile_mm": [
+    35,
+    35
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-375",
+    "name": "Removed resin-support contact points",
+    "family": "Resin-printing process appearances",
+    "domains": [
+      "additive manufacturing",
+      "industrial",
+      "DIY"
+    ],
+    "description": "Local attachment remnants interrupt an otherwise smooth surface.",
+    "use_cases": [
+      "Finished resin prints"
+    ],
+    "optical_model": "Photopolymer appearance with explicit liquid, cured, support and post-processing states; curing mechanics are outside scope.",
+    "controls": [
+      "build direction",
+      "surface state",
+      "local masks",
+      "contact diameter",
+      "scar shape"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Attach marks only at authored support locations.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-028",
+      "CAP-034",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Surface elsewhere should retain the underlying resin finish.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "f18d5f253f5ec09a0e0cd0652227263dad634edb0f886d0d431eeaf409faab9d",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e4f46b6214e63ed9ea3db6fca446ea9c7dabc4f2924a9ac8153416da1b858a89",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "a2d60b637aeb050c87b29c15ed43fe636f1f826511050468bbe730f4d29d6ded",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "ec9bdfb6b919d0cff452511cdbb483fa139266b2d162f9a5d28f711284865c58",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "68328f7fa50205d5c0289d686b74810d5cba5d6544b930f5ebccbb7c39489f22",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "fb4bc08dc95013cd379c92c678810b3ae02c3020e25e3b6e6c268448a51b948b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "bfa099c2e1c190071d9256db2cf9d71785f92b0bbc14570be30ca01abad618d2",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e268d4b1c07c3d778b4c79fa27616acb333a210b8b75c6376e40ec163335b996",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

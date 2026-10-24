@@ -1,0 +1,182 @@
+{
+  "id": "MAT-481",
+  "name": "Aluminium honeycomb core section",
+  "family": "Aerospace cores and lightweight sections",
+  "version": "1.0.0-local",
+  "seed": 10009039,
+  "pattern": "honeycomb",
+  "base_linear_low": [
+    0.3531671342228948,
+    0.3783567088223026,
+    0.4090320324412694
+  ],
+  "base_linear_high": [
+    0.651080453361092,
+    0.6969480369600136,
+    0.752804596385595
+  ],
+  "roughness": 0.6080000000000001,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 1.0,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-481",
+    "name": "Aluminium honeycomb core section",
+    "family": "Aerospace cores and lightweight sections",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Thin conductive cell walls meet at authored bonded nodes.",
+    "use_cases": [
+      "Sandwich-panel sections"
+    ],
+    "optical_model": "Explicit lightweight-core geometry with separate wall, skin and bond-line appearances.",
+    "controls": [
+      "cell geometry",
+      "wall finish",
+      "skin masks",
+      "cell pitch",
+      "node masks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use real open cells and explicit wall thickness.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "The core must not collapse into a flat hexagonal texture.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b5945c8d15f5a969bae84c924eaa0731258955ee7f29539cd83bde9bbc202380",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "c2fbdd6ddff4b5551a242556c74fac0ed09fcc308cc9edf3926aafc176139366",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "580dec9bb4e7c48c49b50317ecced228096157e6b87059ce748119b6ce6961f0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "002216cee7d083a84d7dbb43350c80835649a1e2b043b2e468786164de41d99e",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "0148c726c7e45a3348ebbfa492e35a91aeca2392bc62a2c8bc664509790b615b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "f817517228557cfc5388a3980839a4c6b6b7a1e7f3e09cadf6f30739035a1adf",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cb85bc8c6b092df18f96079e1dc3861bf6d264870775072e79e572158c797a5b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "446af37176560a16f4817f7021a14aef1f69e819f5e80cb9ea1eae8acc82378a",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

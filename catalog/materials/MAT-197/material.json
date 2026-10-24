@@ -1,0 +1,192 @@
+{
+  "id": "MAT-197",
+  "name": "Phosphorescent coating",
+  "family": "Specialized optical appearances",
+  "version": "1.0.0-local",
+  "seed": 7760043,
+  "pattern": "iridescent",
+  "base_linear_low": [
+    0.3172661024191664,
+    0.3329451066907832,
+    0.3531671342228948
+  ],
+  "base_linear_high": [
+    0.5857084253005717,
+    0.6142582539742619,
+    0.651080453361092
+  ],
+  "roughness": 0.256,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-197",
+    "name": "Phosphorescent coating",
+    "family": "Specialized optical appearances",
+    "domains": [
+      "LED lighting",
+      "CAD product",
+      "space"
+    ],
+    "description": "Stored excitation produces time-varying visible emission.",
+    "use_cases": [
+      "Signs",
+      "product concepts"
+    ],
+    "optical_model": "State-dependent emission driven by saved excitation and decay parameters; temporal material state is separate from geometry.",
+    "controls": [
+      "physical or approximate mode",
+      "model-specific dataset",
+      "declared scope",
+      "charge state",
+      "decay curve"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Save temporal state separately from film geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-013",
+      "CAP-102"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "A static render must record the excitation state it represents.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Wave/spectral/time-dependent phenomenon is not simulated; static RGB authoring fallback and intended-model metadata are explicit."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "6a1f86b2e3026aeb6c2baf1a79c226fe551cb3281920fd8843552af1f7efc6a0",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "966efcf9e66cda23b30e17eae302edf48e62e52d1b48c2d09dc0a758fb9f942d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "f223e09df120aee36b58b1c6b00b9932077507f4714ae3cd9b79df42b60999fe",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "dbc134467a6e8b44208c17f73dda850cdb18f303bbed5c4261d89bd051490ae4",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d2648f72575ab07f20df80c4222af98242625e20ed368f399bf9919ef40e6cc6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "a5eb9ef02620b2baab51317ceb4134bede8b80559088b0fc9f0391a747200af4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "7f5a135e401a2da2a88c87323246ed9454f2b48519e5fa5f2be430fc81976762",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "fd69b43c4d17f6b92e76a9ddae08159d31010cb4ef597b7937ac66ce6ead19b1",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

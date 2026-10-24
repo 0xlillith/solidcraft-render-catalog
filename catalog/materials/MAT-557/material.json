@@ -1,0 +1,202 @@
+{
+  "id": "MAT-557",
+  "name": "Dust on solar coverglass",
+  "family": "Lunar dust deposition overlays",
+  "version": "1.0.0-local",
+  "seed": 10610883,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.11918523870903151,
+    0.1106385703161173,
+    0.09656607547489872
+  ],
+  "base_linear_high": [
+    0.22502386750002754,
+    0.20946127729203448,
+    0.1838367344468305
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.08,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-557",
+    "name": "Dust on solar coverglass",
+    "family": "Lunar dust deposition overlays",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Particulate coverage overlays an unchanged optical cover and cell stack.",
+    "use_cases": [
+      "SELENE array concepts"
+    ],
+    "optical_model": "Granular particulate layer attached to a host surface in vacuum; no terrestrial airborne-fog model and no inferred electrostatic or friction constants.",
+    "controls": [
+      "coverage mask",
+      "particle distribution",
+      "host preservation",
+      "coverage",
+      "grain orientation"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep solar-cell and coverglass layers independent of dust.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039",
+      "CAP-097",
+      "CAP-025"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "The render must not claim an electrical power-loss percentage.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "7cb7eb0f9739f6860cba354977cd6b7ae3459ed8b0f6b5725385353f2559df08",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ca89fe41dbd83558415203e8e6db1591f8799805e28992634396183a989605d3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "4b7449a3728a610738b6f0885df7e63b0e634e4f927556fecce8c472ee9f4e6b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b1472b559ff19635b422b556af2b6193a57e80f2bf27fce62c38d06f43649695",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "51922403bb54cf687f2ad8db1e4c2f95bfb4d6ebd2c2d9441897f2d031a2a573",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "bec4799e37a093b7e713321bfe2a9c075a9874ada2f7be2635358d8626789574",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "e2821779845039f15d48ea9084859f8d2060f30879bcdfe26a1510a018b8228c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "c509953f47a6f2459312ff647c88abeb125794f2b05de234e3e9294433eb48d9",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "c24143836e84cf928e1fe431fef75f4d09918671df6130b4316346dc379821c1",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

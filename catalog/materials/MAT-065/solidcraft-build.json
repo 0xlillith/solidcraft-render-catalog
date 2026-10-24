@@ -1,0 +1,96 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-065 Moulded TPU grip"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-065",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        49,
+        54,
+        58
+      ],
+      "name": "MAT-065 Moulded TPU grip",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.63,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6714735,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  }
+]

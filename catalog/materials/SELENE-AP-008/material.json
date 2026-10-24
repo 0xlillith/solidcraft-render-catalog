@@ -1,0 +1,96 @@
+{
+  "id": "SELENE-AP-008",
+  "name": "Polished stainless sample cup",
+  "original_specification": {
+    "id": "SELENE-AP-008",
+    "name": "Polished stainless sample cup",
+    "source_catalog_ids": [
+      "MAT-593"
+    ],
+    "family": "Sample containment metals",
+    "domains": [
+      "SELENE",
+      "laboratory",
+      "industrial"
+    ],
+    "purpose": "A smooth metal preview for a visible sample cup with modeled wall thickness.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-008 Polished stainless sample cup",
+        "color": "#c9ced3",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.16,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "True interior reflections",
+        "Polishing anisotropy",
+        "Fine machining marks"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Smooth opaque conductor with restrained polishing marks and explicit cup geometry.",
+      "structure": [
+        "Polished conductor surface",
+        "Cup walls and interior geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "polish_line_pitch",
+          "value": 0.15,
+          "unit": "mm",
+          "meaning": "Illustrative polishing texture spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "polish_line_relief",
+          "value": 0.001,
+          "unit": "mm",
+          "meaning": "Subtle render-only polishing relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Model the interior and rim explicitly",
+        "Use real wall geometry for occlusion and interior reflections"
+      ],
+      "capability_requirements": [
+        "CAP-001",
+        "CAP-020",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Complex conductor optical constants"
+      ],
+      "validation_criteria": [
+        "The sample-cup interior must remain hollow after styling",
+        "Polish must not erase the rim profile"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#c9ced3",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.16,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-008 Polished stainless sample cup",
+    "bodies": [
+      "SELENE-AP-008"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

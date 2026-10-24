@@ -1,0 +1,183 @@
+{
+  "id": "MAT-135",
+  "name": "Polyester mesh",
+  "family": "Textiles and leather",
+  "version": "1.0.0-local",
+  "seed": 7269065,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.09850826855338865,
+    0.0908743308689878,
+    0.10855968167820437
+  ],
+  "base_linear_high": [
+    0.18737326512706587,
+    0.17347266217935092,
+    0.20567583827971542
+  ],
+  "roughness": 0.87,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.45,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-135",
+    "name": "Polyester mesh",
+    "family": "Textiles and leather",
+    "domains": [
+      "automotive",
+      "CAD product",
+      "DIY"
+    ],
+    "description": "Open weave creates visible holes between strands.",
+    "use_cases": [
+      "Chairs",
+      "ventilation panels"
+    ],
+    "optical_model": "Dielectric fibre or leather response with appropriate sheen, anisotropy and optional geometric fibres.",
+    "controls": [
+      "weave orientation",
+      "surface roughness",
+      "fibre sheen",
+      "aperture size",
+      "yarn diameter"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use geometry or correct coverage for close silhouettes.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-022",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Openings must remain open without transparency halos.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "664e9307f9a837e7465cc4e1078576192f28e7aeab89cd79d46130a3975c3287",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "44ed9c64bfcf8b3918396bdca5e7b6ce130d662fcacbd5b91815cb47944de2ea",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "63d2ed77d3b16d71e20d56cd6a41ce3590cd722035830bf2ecadf48788c40e90",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "39037ca979d5ef8e3d702f258bdba61d9d31fe16e66e4e6aba4904738e3b8c7a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "a7fff46cfd0a9fa33808bc4d7df8d2cd85c6c072abd623523855323654ec5ce4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "7c8dd9a00130cb38fac925d243d8f3b9dfb0eb91c5c1ebf52b857870568464e6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "5a7367d997568ae97b18b5d2f7ca9bd4b5ccc3565b9136e690a9efbd78c480df",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f56b247548e0ed2e2e64b8c2c813a74a85ad91fb58a7329f605a7c689ffeed3a",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

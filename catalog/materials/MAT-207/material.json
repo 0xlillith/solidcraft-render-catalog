@@ -1,0 +1,200 @@
+{
+  "id": "MAT-207",
+  "name": "Transparent candy coat over metal",
+  "family": "Automotive paint stacks and correction states",
+  "version": "1.0.0-local",
+  "seed": 7839233,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.03227512223201591,
+    0.0766717004640724,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.06676962555680509,
+    0.14761115606890796,
+    0.2496445698631376
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-207",
+    "name": "Transparent candy coat over metal",
+    "family": "Automotive paint stacks and correction states",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "An absorbing coloured film overlays a reflective effect base.",
+    "use_cases": [
+      "Custom automotive paint"
+    ],
+    "optical_model": "Layered pigmented coating with distinct substrate, preparation, effect and finish regions.",
+    "controls": [
+      "layer coverage",
+      "coat roughness",
+      "process masks",
+      "absorption distance",
+      "base reflection"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use layer absorption rather than a painted coloured highlight.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039",
+      "CAP-026"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Oblique paths should change colour depth coherently.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "8e468bdf0c20f473ff0b12a4359bf09bd06d873b7870ad66352df4ef78cb7e05",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "020fdcec9a6bb8f579a5903ea5c61358a63e92590f60e24396d923fd1f05a1b4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "496ad0493eff36276c5bef5d7ff478d3dd64c6b886440aafdb55701107c21d0e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "04ba279e3cca36f5278bb6c74f5b5265bb6b65dbbb52e89d84d51d25245fd296",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "5d8b1a5b1d69a8d20617c1eaa98430d364f23f2732354b233ca3692029c7e735",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "83bd5a48aa6f9a61a33d3b0302af6770c8d3e6112e2e8b06238bd38b38a4da1b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fb7d717ce3739212cc885453eacf625caf4e615b6c4648e369726c3033d111be",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "abca1e2efce1774f0817e1f4383b7cbbbae3cc426299e03f620296276cbfe248",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

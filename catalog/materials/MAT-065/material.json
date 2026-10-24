@@ -1,0 +1,181 @@
+{
+  "id": "MAT-065",
+  "name": "Moulded TPU grip",
+  "family": "Elastomers and foams",
+  "version": "1.0.0-local",
+  "seed": 6714735,
+  "pattern": "grip",
+  "base_linear_low": [
+    0.022,
+    0.027,
+    0.032
+  ],
+  "base_linear_high": [
+    0.04,
+    0.046,
+    0.053
+  ],
+  "roughness": 0.63,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.6,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 8,
+  "cycles_v": 8,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-065",
+    "name": "Moulded TPU grip",
+    "family": "Elastomers and foams",
+    "domains": [
+      "industrial",
+      "automotive",
+      "electronics"
+    ],
+    "description": "Controlled gloss emphasizes functional grip texture.",
+    "use_cases": [
+      "Handles",
+      "device grips"
+    ],
+    "optical_model": "Dielectric surface with optional subsurface scattering or explicit pore geometry; no mechanical certification.",
+    "controls": [
+      "roughness",
+      "surface texture",
+      "wear coverage",
+      "polished contact zones",
+      "relief"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use geometry where grip ribs affect silhouette.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-028",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Appearance should not alter the engineering stiffness automatically.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-025",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "799b9e620fc625d063d9c8ddb86480e1c6d122bca46a533d94379f27eddb0eee",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "f445954bac9ec6497c71b2f235a19291284a9a635d9b37b972644a9682e1e4c7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "b2c1fd64f78f68818552d21bdb2d7d96bf50f3a010623763be29b846384dbba7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e4e61cdf2b1612cd61efc226dbc1623222af6d85de96aaa89038373b29293c51",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "dc1a42b2898bba1ecd75a9b129cbb7320cacbd021358d2ce2d194563f6c70971",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "dba2858f1ecec76f383e6cc47479788775200bab9f676f75879414616044443c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "0893c6a4644e41a6fa0b0443961d38cbde06833d1f374c621526ab6cd16ac1db",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "3d5dd06223a7eafcc462f08e5c8f3e1a7aed6cc96b4be4191c334be1d6a85070",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

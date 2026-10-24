@@ -1,0 +1,183 @@
+{
+  "id": "MAT-267",
+  "name": "Vibratory-tumbled metal",
+  "family": "Industrial machining signatures",
+  "version": "1.0.0-local",
+  "seed": 8314373,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.25209562240390737,
+    0.2799829974682521,
+    0.30579538553087116
+  ],
+  "base_linear_high": [
+    0.46703979004890595,
+    0.5178197864347277,
+    0.5648214482800937
+  ],
+  "roughness": 0.306,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-267",
+    "name": "Vibratory-tumbled metal",
+    "family": "Industrial machining signatures",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Distributed rounded impact marks soften a previously machined finish.",
+    "use_cases": [
+      "Small parts",
+      "hardware"
+    ],
+    "optical_model": "Conductor or dielectric base with operation-specific directional microgeometry and filtered roughness.",
+    "controls": [
+      "operation axis",
+      "surface roughness",
+      "feature pitch",
+      "impact density",
+      "residual marks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep tumble features at fixed physical scale.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-035",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Original manufacturing marks should remain controllably visible.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "f0817ce1c156109f115f1d0412af10fdea6afbee15de1c427b45a0ea23872f54",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ac6618b6eb67deda4c8ee9de899eb6dddac169e7fd3b4f6d4407795cb38ab73d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "52b405961a93f30e69a8ddb8f32809cfde55df552f2611c5b061be57d695ad76",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "f7d26c98529b260900839baca1a887dfc521ff9577e28cabeefafd5edc3c7094",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "499e3b43753fb65d4c13a100ce30e8cc8f7d482ea493cc857b3b6a78ce490f89",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ef52b2163fe20d02b759d4f3f4056e5d1bd7172879b1054016e181c5aea8398c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "373bc20aaf23a7b8d508c3e521c505f79ff4adbfb8c3a7a6e40e58a53c7e0648",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "0d4c8a42719a29a9537dfd2032ccbaae17ad88cb31c09daf612d4ec90e29ca08",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

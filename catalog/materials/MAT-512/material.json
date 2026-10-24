@@ -1,0 +1,182 @@
+{
+  "id": "MAT-512",
+  "name": "Multijunction solar-cell appearance",
+  "family": "Space solar-array and optical-device appearances",
+  "version": "1.0.0-local",
+  "seed": 10254528,
+  "pattern": "solar",
+  "base_linear_low": [
+    0.011820109507217333,
+    0.026495977635411002,
+    0.09656607547489872
+  ],
+  "base_linear_high": [
+    0.029523184475828575,
+    0.05624640703761406,
+    0.1838367344468305
+  ],
+  "roughness": 0.126,
+  "roughness_variation": 0.06,
+  "metallic": 0.15,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    120,
+    120
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-512",
+    "name": "Multijunction solar-cell appearance",
+    "family": "Space solar-array and optical-device appearances",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "A layered optical face supports explicit contact and edge regions.",
+    "use_cases": [
+      "Space-array concepts"
+    ],
+    "optical_model": "Layered semiconductor-like, dielectric and conductor appearance with explicit optical coatings; no photovoltaic or sensor performance model.",
+    "controls": [
+      "layer masks",
+      "optical coating state",
+      "surface roughness",
+      "coating response",
+      "contact masks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Treat the layer structure as a visual concept unless real data is supplied.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-025",
+      "CAP-026",
+      "CAP-098"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Do not infer semiconductor composition from the visible colour.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "25c177afda0a8325b950e62630f99fb91e12c2553f8a9a1de2747c54b8e9ddd5",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e88f9567ec62b20d3fe415dc756d4a9e76ebd2bc7f4612016974dbda51e8d3c9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "15e4d637a18bba7662979d1f293d7d6c4cba1f148378e125f8e7cc39798e8588",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "fdcc49ad7ca61300d2973774cc9fe6689943a288a11619712379e3201a996a63",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "d375374fd5e4401a88d81a827f291f88cfbd39cf887490e2790a2a49fce9561f",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "07e50d83c728beb8ccb8d3f4008a3a9c0ef3e05438c8dd9c64025f2879928bcb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "d42f2d8c7cbf7b6ebd5164a04dc5401cdf2426c1861a96eddfdb5b4560931903",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "62e0db6af252a565a63cc6848cb0af3446a2aa00a83e1fc1ff0d59169b82c1bd",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "28ff61d89c2247f725561d1f53d5d0d302bc6dc8c5f21bb4693b289f54986ea0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

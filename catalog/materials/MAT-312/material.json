@@ -1,0 +1,192 @@
+{
+  "id": "MAT-312",
+  "name": "Clear flux-residue film",
+  "family": "Electronic bonding and contact finishes",
+  "version": "1.0.0-local",
+  "seed": 8670728,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.24538923905122248,
+    0.26582600458617,
+    0.27640355103421554
+  ],
+  "base_linear_high": [
+    0.4548281666305842,
+    0.4920413814852648,
+    0.5113019884503626
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.018,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-312",
+    "name": "Clear flux-residue film",
+    "family": "Electronic bonding and contact finishes",
+    "domains": [
+      "electronics",
+      "industrial"
+    ],
+    "description": "A thin transparent residue changes local reflection around a joint.",
+    "use_cases": [
+      "PCB service illustrations"
+    ],
+    "optical_model": "Conductive interfaces and compound process materials with explicit binder, residue or coating components.",
+    "controls": [
+      "conductor roughness",
+      "coverage masks",
+      "process state",
+      "film coverage",
+      "meniscus"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep residue attached to the board and joint geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039",
+      "CAP-025",
+      "CAP-026"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Residue appearance must not identify chemical cleanliness.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "f764e042a2e564be970a509a8902bb3bba9b5d2cff39a401f1ff79482b62261c",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "5f878b017abc0be14c34eaf2b65acd6d7448ec99ffab62334719989a3cde6fbc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "9b5d3253707519fc0d1e0e3c409fd170bcbc92bb2c0cfd43695ad6e64f61603b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b623df069c97147e3ebefeee77b7a44caf88d8b18d5cd492e372eeabac1d57f5",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "049e8f347991e778e2f7ff25a3ca0676c1de67cc37aef871d0c05aece2a134cc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "07ffb295d4c9079bd872b31bffc56a0a705020f2b27b93bb882c12ebe7740dc2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "9c16e32a4b7dfcb10528511c633ad951507b4d24466e212897bc1b28728402d1",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "d0e6afdb2d3eded57dc827e4c7113c84be8a28459fd55ec47383f3a4b644db6e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

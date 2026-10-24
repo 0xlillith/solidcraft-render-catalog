@@ -1,0 +1,182 @@
+{
+  "id": "MAT-349",
+  "name": "Graphite thermal-sheet appearance",
+  "family": "Battery and thermal-management surfaces",
+  "version": "1.0.0-local",
+  "seed": 8963731,
+  "pattern": "foil",
+  "base_linear_low": [
+    0.11486553749099114,
+    0.12359824631529548,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.21715814289404356,
+    0.23305949329053802,
+    0.2496445698631376
+  ],
+  "roughness": 0.432,
+  "roughness_variation": 0.06,
+  "metallic": 0.6,
+  "height_span_mm": 0.1,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 14,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-349",
+    "name": "Graphite thermal-sheet appearance",
+    "family": "Battery and thermal-management surfaces",
+    "domains": [
+      "electronics",
+      "automotive",
+      "aerospace",
+      "space"
+    ],
+    "description": "Thin dark sheet shows directional surface structure and cut edges.",
+    "use_cases": [
+      "Device cooling concepts"
+    ],
+    "optical_model": "Visual construction recipes for conductive shells, films, porous layers and thermal-interface materials; no electrical or thermal values inferred.",
+    "controls": [
+      "surface roughness",
+      "layer masks",
+      "section orientation",
+      "orientation",
+      "edge layering"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep sheet thickness explicit in sections.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Directional appearance does not supply thermal anisotropy data.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "308212e088f032f508abd4572d0c2cd58cfabf1ad15f4e1ae9addf396f318bfc",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "03a1d9ad16b1c9c493f6fbbd19aaae5d47939ae458d3593a79d9b526e32ccf70",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "a97ee426e56813074221c79a17334f80d73f541bc227f216e3291f73c824a090",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "04fac23fd3da0de500dc84d56e66f0f2c9089a024ef5eb42be7d1b5aa6d8501c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "9ac47082852ec04b5cf6c4441623e687ee9cdf2e26db4d7e8578f4becc12b58b",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "5264e9ffc665b136bc7b8f3ef10e5f0e34af6f62a7d32261f2c31df0d86dfee4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "188e2c876cd25028c55b420919144e1c35e02eb6d919c8c6d902ed77cc6d6f66",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4e1c8ea7b43ee4eb0948455986eab46915f7167e6255610354cab2d233f713db",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ca3721110a1d43bd28237331cc313c342d628b6aa1e68dedf00ec98e942cd639",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

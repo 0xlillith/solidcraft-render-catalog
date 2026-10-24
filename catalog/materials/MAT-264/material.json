@@ -1,0 +1,183 @@
+{
+  "id": "MAT-264",
+  "name": "Sinker-EDM metal surface",
+  "family": "Industrial machining signatures",
+  "version": "1.0.0-local",
+  "seed": 8290616,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.25209562240390737,
+    0.2799829974682521,
+    0.30579538553087116
+  ],
+  "base_linear_high": [
+    0.46703979004890595,
+    0.5178197864347277,
+    0.5648214482800937
+  ],
+  "roughness": 0.252,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-264",
+    "name": "Sinker-EDM metal surface",
+    "family": "Industrial machining signatures",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Fine crater-like process texture covers an electrically machined cavity.",
+    "use_cases": [
+      "Mould cavities",
+      "tooling"
+    ],
+    "optical_model": "Conductor or dielectric base with operation-specific directional microgeometry and filtered roughness.",
+    "controls": [
+      "operation axis",
+      "surface roughness",
+      "feature pitch",
+      "crater distribution",
+      "recast appearance"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep craters fine and independent of cavity dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-035",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Texture must read as metal with process relief, not porous stone.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "90f8c116f948ea262dcccf3298ed8feb7d2368e700744431fde95fa2ff423e20",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "49ab53b65572c63a7084e037b59c3dc2a396372d98e98ff4f49ea97c6898007e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "fef6dc4afc3724007d577f8c875bac44140a396c96f5c92cc6ffc9fe589bd6d4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "2f3c128d0fb57416b08a30f30b6312c0b088028613e179af91823f60f1a38a4b",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c331cc97a890cdecab43be2f50a9a7753603ab8d410c99c364debff0a3ffff95",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "d0fa034cd08671b99638aa8f5cdfe30803e9638af79fd5ebf9d0059824ce1d1f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "c4b8df4cf0d10352ce73d66a21bd38fc987bb22d72d1d113ed9ea20d3e681203",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "4d98c0f8271b1714c6b8b8cfdf7e9913ec60be866c293198df5909d98b19da84",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

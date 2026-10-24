@@ -1,0 +1,180 @@
+{
+  "id": "MAT-224",
+  "name": "Carbon-ceramic rotor appearance",
+  "family": "Automotive brakes and contact surfaces",
+  "version": "1.0.0-local",
+  "seed": 7973856,
+  "pattern": "turned",
+  "base_linear_low": [
+    0.012395147486014398,
+    0.01618561374049819,
+    0.020578007301105736
+  ],
+  "base_linear_high": [
+    0.03057026855662323,
+    0.0374723115871758,
+    0.04547040135425223
+  ],
+  "roughness": 0.362,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.055,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-224",
+    "name": "Carbon-ceramic rotor appearance",
+    "family": "Automotive brakes and contact surfaces",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "A heterogeneous dark friction surface contains restrained structural variation.",
+    "use_cases": [
+      "Brake concepts"
+    ],
+    "optical_model": "Separate conductor, ceramic or friction-composite surfaces with localized use-state overlays.",
+    "controls": [
+      "contact-region masks",
+      "roughness",
+      "process direction",
+      "inclusion pattern",
+      "track roughness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep visual phases at explicit physical dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No composition or operating-temperature certification follows from appearance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "0f737510f4d013333cfa9b5933125bf7ef5f4a0e0534c547001940cd9dbb6898",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "696c1bfe3b58660d2d25772cdb04bf4e76c82c637c3b41cf9a03998f9034ec91",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "b778ec2a8c44a37abbf1f16fb2ac1b90fb34d6570b84f6b56ac7e6929e915e4d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "85139d9f3ed0553e0f4ce08bf030946b91650fbdfc2793f39c9f0d718db63e8d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "69528ec0ed393a2a68b78736cf3e10874c312543cd63f42bf56af8d15fa96d60",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "bcce526e33c6a9a48729c4708420d616a549c1d05ff3a02c2c55df965249e5b9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "b93fb7160f3aa747427d392f2a6b6d947b1b9b52475e5d39ed418b8975a0ed18",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "a4b37e88d1c2982c9b8863712ac785223b5c2dca3fd647115b8783f7b7952bd7",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

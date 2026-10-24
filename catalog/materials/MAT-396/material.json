@@ -1,0 +1,181 @@
+{
+  "id": "MAT-396",
+  "name": "Smooth PEI build-sheet appearance",
+  "family": "Printer hotends motion parts and build plates",
+  "version": "1.0.0-local",
+  "seed": 9335924,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.25548842765979524,
+    0.2227425293519402,
+    0.11918523870903151
+  ],
+  "base_linear_high": [
+    0.4732177339476868,
+    0.4135908743423388,
+    0.22502386750002754
+  ],
+  "roughness": 0.318,
+  "roughness_variation": 0.06,
+  "metallic": 0.7,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-396",
+    "name": "Smooth PEI build-sheet appearance",
+    "family": "Printer hotends motion parts and build plates",
+    "domains": [
+      "additive manufacturing",
+      "electronics",
+      "DIY"
+    ],
+    "description": "A thin polymer surface lies over a separate supporting plate.",
+    "use_cases": [
+      "Printer beds"
+    ],
+    "optical_model": "Component-specific conductor, ceramic, polymer or layered finish, with independent service-state overlays.",
+    "controls": [
+      "manufacturing direction",
+      "surface roughness",
+      "region masks",
+      "sheet gloss",
+      "local adhesion marks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep sheet edge and substrate distinct.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not infer first-layer adhesion or temperature capability.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c48d62996471c1673d7fcabdcce100a3b4bad9438aec3d83c8b862670a008591",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "7df169e363f546c557bde846720d3cc5a1d7372d1eb499b963ae7cdff6a601e8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "a697add7fb845a9ce2accff8830d523ab362def381f0a75741e9d62bbb948423",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "3cd5352c345ff7c5a9d5f18716af30105acbd2168f2dd3e1ad0320eab299dbb4",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "82432b1eb8e3fadbb461d6d06b62610ab6305ab8b01d02181eb2653dc0e22984",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "9d4299ec4408be0f3aea8318deb5ae385e179557f700c06f07e0ae239b28b18e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "34f0e1ca9199595357e66406493a0382a702cdab0e62abc28b62b02cfb7bbf9f",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "22e332c93e88da36c6241e1b2003e35007c1801992afe2aa4cb1aa4f5036a5ed",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

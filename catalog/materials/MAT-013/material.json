@@ -1,0 +1,180 @@
+{
+  "id": "MAT-013",
+  "name": "Polished aluminium",
+  "family": "Aluminium and titanium finishes",
+  "version": "1.0.0-local",
+  "seed": 6302947,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.3531671342228948,
+    0.3783567088223026,
+    0.4090320324412694
+  ],
+  "base_linear_high": [
+    0.651080453361092,
+    0.6969480369600136,
+    0.752804596385595
+  ],
+  "roughness": 0.055,
+  "roughness_variation": 0.008,
+  "metallic": 1.0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-013",
+    "name": "Polished aluminium",
+    "family": "Aluminium and titanium finishes",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Clear broad reflection retains subtle cleaning scratches.",
+    "use_cases": [
+      "Trim",
+      "reflectors"
+    ],
+    "optical_model": "Conductor microfacet substrate with process-oriented anisotropy and explicit coating layers where present.",
+    "controls": [
+      "surface roughness",
+      "manufacturing direction",
+      "polish amount",
+      "cleaning scratches"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep microdetail independent of part size.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Distinguish the finish from mirror steel through reference-based response.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "50b14817b1ac3110b7d80f75cbddb9a3591af2808e65dd14823e5bf058a441e7",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "88998477bff25ca5cb7d95ea027030e94431af33a0f3029eab260e65b0a2eb6f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "9f5b306a39015edb55f265510e17103d4b4e4e995d21bca8508ec7853327db85",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "3e4b72ba6087ef6601315f80a90e1b9c5c99604447b082a22ee3a9ae7d105f03",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d46dfebd2ca2d0eaaade26faa8783720748fcaf408e41a2d439bdbb5dba22108",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "dbda6174579a878db0d95bd06c4a24f9712e93223c5677e6e9a5170055b3f79c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "639f7639e8f2c8cdb5d28a3622c54814a17a25c3a54168fa9b604ee7dd8d0634",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "7309eee3710e9c6fd51090358d79723419fea4dc79c72c4b5f320203031b1929",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

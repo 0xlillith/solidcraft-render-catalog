@@ -1,0 +1,192 @@
+{
+  "id": "MAT-113",
+  "name": "Varnished walnut",
+  "family": "Solid timber foundations",
+  "version": "1.0.0-local",
+  "seed": 7094847,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.055,
+    0.022,
+    0.012
+  ],
+  "base_linear_high": [
+    0.25,
+    0.12,
+    0.047
+  ],
+  "roughness": 0.3,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    240,
+    480
+  ],
+  "cycles_u": 22,
+  "cycles_v": 8,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-113",
+    "name": "Varnished walnut",
+    "family": "Solid timber foundations",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Contrasting grain remains legible below a clear coating.",
+    "use_cases": [
+      "Furniture",
+      "objects"
+    ],
+    "optical_model": "Anisotropic dielectric wood structure with volumetric grain and a separate optional finish.",
+    "controls": [
+      "grain orientation",
+      "growth structure",
+      "surface finish",
+      "grain contrast",
+      "varnish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve board-scale grain and fine pore scale separately.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-034"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Highlights must not erase the wood structure.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-028",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d8e6f4e9d00e5c1bbce8f2e11a7f3d881029679fdbe1d94d95c8ca05b71fc101",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "5b478e8d7dbe07652159532b78546e13c9aeb2e33bf11d6343ff87a6d05fd24f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "944c44b85b1440e92298862f57b5aee4802cc8335219a8eb2b3ce95630e51e5d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "c7f4c8a50da7ccf9885f61788f015d40e0fdc1b9eec1b17a1faf134206cb83cd",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d47da5d31743060c2781430b19a7c9490573be5d24a67eb82e22e67f48b90da7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1b76164b50e2b2a071b70db2667629be0c92112cf3385755203ed6ee1b4c1e2c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f2f2d1fbd3f4adc7a5bdc696737145578504c667e6529afed69f56f5d30c319f",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "59f65b6d672130a2618bb48333235e32da375b104d91c9dfebb8b84de9611da4",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

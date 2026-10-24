@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "count": 6,
+  "tests": [
+    "verify-only: checks bytes without writing",
+    "restore: exact original bytes",
+    "idempotent: preserves equal existing files",
+    "refuses overwrite of different files",
+    "rejects traversal/absolute/drive/backslash paths",
+    "rejects corrupted archive before extraction"
+  ]
+}

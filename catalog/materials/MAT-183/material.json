@@ -1,0 +1,193 @@
+{
+  "id": "MAT-183",
+  "name": "Transparent dyed liquid",
+  "family": "Liquids and gels",
+  "version": "1.0.0-local",
+  "seed": 7649177,
+  "pattern": "water",
+  "base_linear_low": [
+    0.36984763901304013,
+    0.4943999738777297,
+    0.4994208203920596
+  ],
+  "base_linear_high": [
+    0.6814539098446402,
+    0.9082506987027316,
+    0.9173931356392727
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-183",
+    "name": "Transparent dyed liquid",
+    "family": "Liquids and gels",
+    "domains": [
+      "laboratory",
+      "industrial",
+      "CAD product"
+    ],
+    "description": "Coloured absorption grows through longer paths.",
+    "use_cases": [
+      "Packaging",
+      "flow illustrations"
+    ],
+    "optical_model": "Absorbing or scattering volume bounded by explicit refractive interfaces; geometry determines menisci and shape.",
+    "controls": [
+      "editable refractive index",
+      "absorption distance",
+      "scattering",
+      "absorption colour",
+      "optical density"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use actual vessel depth and wall geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-028"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Thin regions must not appear as opaque painted surfaces.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "544132e4262861b17122f9f872caacc8a0b269915a3c11ae05f68290bca8b013",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "61c7942c10b34a64f0261e8def9aaf6f7841ccd869d069ba7ce79786bb06a15c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "4c6d1bbba0122c86b28dea28f1d1801f749f02c33c7e512c51e6e289d1f27599",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "fae0e560fc86a3c1d4c652a9806df466ca0445c164634aa8debb4f330ce4770b",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "ad3b660b607fac94212be5cd28eccfcbc770eef3b1793bb6d552c4b2c9666f36",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "e294f21bb04cf55fa7d0790beec05ccd4728ffe41f63c14a4de6f8067ceffd17",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4168310f248a6b77b0cc14b375ca0fb82e3fee205819a5422941f32f1bb25694",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "bd1b4ba286af8b0ee8c9dd2a9e8d8f4ca91e247eeb3697cab6034ba163c7c422",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

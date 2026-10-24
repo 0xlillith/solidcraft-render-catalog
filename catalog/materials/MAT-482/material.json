@@ -1,0 +1,191 @@
+{
+  "id": "MAT-482",
+  "name": "Resin-coated aramid-paper honeycomb",
+  "family": "Aerospace cores and lightweight sections",
+  "version": "1.0.0-local",
+  "seed": 10016958,
+  "pattern": "honeycomb",
+  "base_linear_low": [
+    0.3572951906870385,
+    0.24872924591767992,
+    0.03760608833323206
+  ],
+  "base_linear_high": [
+    0.6585972128928164,
+    0.4609099701784619,
+    0.07647675786051211
+  ],
+  "roughness": 0.6260000000000001,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 1.0,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-482",
+    "name": "Resin-coated aramid-paper honeycomb",
+    "family": "Aerospace cores and lightweight sections",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Coated fibrous cell walls form a lightweight-looking core.",
+    "use_cases": [
+      "Aerospace panel concepts"
+    ],
+    "optical_model": "Explicit lightweight-core geometry with separate wall, skin and bond-line appearances.",
+    "controls": [
+      "cell geometry",
+      "wall finish",
+      "skin masks",
+      "wall texture",
+      "resin coverage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve cell walls and cut-edge fibres separately.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Appearance does not certify core grade or compressive strength.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a95afba59167c64463ddae35a7dc028b49ad33dcecefd2d8bb7bd4980a0d5d50",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "c2fbdd6ddff4b5551a242556c74fac0ed09fcc308cc9edf3926aafc176139366",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "a11e29107212c142d1cd4baad6857935598cac0106481c6d0bf741418c5d7395",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "002216cee7d083a84d7dbb43350c80835649a1e2b043b2e468786164de41d99e",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "0148c726c7e45a3348ebbfa492e35a91aeca2392bc62a2c8bc664509790b615b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "57dc97b458ffa94400f7778734cb5254a0f68cef01e53141fbc060e16b5655bd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cb85bc8c6b092df18f96079e1dc3861bf6d264870775072e79e572158c797a5b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "1d98436b8ff2fe92ed0da37e5eb5099814ca909c1aa0ec0a84183df216cd602d",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

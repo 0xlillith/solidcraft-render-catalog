@@ -1,0 +1,110 @@
+{
+  "id": "LUZ-271",
+  "name": "SELENE sunlit arm pose",
+  "family": "28 SELENE arm and sample-handling studies",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-271",
+    "name": "SELENE sunlit arm pose",
+    "family": "28 SELENE arm and sample-handling studies",
+    "domains": [
+      "selene",
+      "robotics",
+      "lunar",
+      "macro"
+    ],
+    "description": "A proposed lighting arrangement for robotic-arm pose studies on a lunar surface.",
+    "use_cases": [
+      "Robotic-arm pose studies on a lunar surface"
+    ],
+    "sources": "Environment-owned sun; rig adds no source",
+    "geometry": "Actual arm snapshot and terrain remain scene-owned",
+    "contribution_policy": "Preserve single solar source and passive reflections",
+    "controls": [
+      "Arm-region target",
+      "emitter-ownership audit",
+      "fixed-lighting comparison"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-011",
+      "CAP-078"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Joint shadows and occlusion follow pose without hidden fill"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1148153,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        0.6916548014802256,
+        0.6916548014802256,
+        0.20791169081775934
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    }
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

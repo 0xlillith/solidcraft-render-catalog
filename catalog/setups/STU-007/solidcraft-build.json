@@ -1,0 +1,322 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "STU-007 Clear-glass bright-field panel"
+    }
+  },
+  {
+    "command": "file.insert_mesh",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-001\\environment.glb",
+      "up": "y",
+      "name": "ENV-001 Context"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "project": "Original local Render composition",
+        "org.solidcraft.local_catalog": {
+          "id": "STU-007",
+          "source_kind": "studio",
+          "environment": "ENV-001",
+          "lighting": "LUZ-031",
+          "quality": "Q-002",
+          "original_role_assignments_preserved": true,
+          "demo_subjects_are_not_user_geometry": true
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "length": 312.0,
+      "width": 312.0,
+      "height": 312.0,
+      "corner": [
+        -432.0,
+        -240.0,
+        1.0
+      ],
+      "body_name": "Demo product_finish"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Demo product_finish"
+      ],
+      "color": [
+        221,
+        221,
+        219
+      ],
+      "name": "MAT-031 Matte industrial paint",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.67,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "length": 312.0,
+      "width": 312.0,
+      "height": 312.0,
+      "corner": [
+        0.0,
+        -240.0,
+        1.0
+      ],
+      "body_name": "Demo reference_metal"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Demo reference_metal"
+      ],
+      "color": [
+        155,
+        162,
+        169
+      ],
+      "name": "MAT-001 Mirror-polished stainless steel",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 1.0,
+        "roughness": 0.055,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "length": 312.0,
+      "width": 312.0,
+      "height": 312.0,
+      "corner": [
+        432.0,
+        -240.0,
+        1.0
+      ],
+      "body_name": "Demo reference_polymer"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Demo reference_polymer"
+      ],
+      "color": [
+        207,
+        225,
+        227
+      ],
+      "name": "MAT-051 Clear cast acrylic [uniform fallback]",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.045,
+        "dielectric_ior": 1.49
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "STU-007 Authoring Preview",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "background": [
+          28,
+          33,
+          41
+        ],
+        "exposure_ev": -1,
+        "camera": {
+          "target": [
+            0,
+            0,
+            192.0
+          ],
+          "yaw": -0.6,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 2160.0,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 910007,
+            "tone_map": "aces_fitted",
+            "linear_exr": true,
+            "lighting": {
+              "environment": [
+                0,
+                0,
+                0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    1600.0,
+                    200.0
+                  ],
+                  "u": [
+                    1200.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    -148.84168150705017,
+                    1190.7334520564013
+                  ],
+                  "radiance": [
+                    7,
+                    7,
+                    7
+                  ]
+                },
+                {
+                  "center": [
+                    -1400.0,
+                    -1000.0,
+                    800.0
+                  ],
+                  "u": [
+                    -72.65477421488706,
+                    101.71668390084186,
+                    0.0
+                  ],
+                  "v": [
+                    308.7901412793992,
+                    220.56438662814233,
+                    816.0882305241266
+                  ],
+                  "radiance": [
+                    3,
+                    3,
+                    3
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "STU-007 Bounded Quality",
+      "set": {
+        "width": 1600,
+        "height": 900,
+        "background": [
+          28,
+          33,
+          41
+        ],
+        "exposure_ev": -1,
+        "camera": {
+          "target": [
+            0,
+            0,
+            192.0
+          ],
+          "yaw": -0.6,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 2160.0,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 512,
+            "max_depth": 8,
+            "seed": 21026,
+            "tone_map": "aces_fitted",
+            "denoise": false,
+            "linear_exr": false,
+            "lighting": {
+              "environment": [
+                0,
+                0,
+                0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    1600.0,
+                    200.0
+                  ],
+                  "u": [
+                    1200.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    -148.84168150705017,
+                    1190.7334520564013
+                  ],
+                  "radiance": [
+                    7,
+                    7,
+                    7
+                  ]
+                },
+                {
+                  "center": [
+                    -1400.0,
+                    -1000.0,
+                    800.0
+                  ],
+                  "u": [
+                    -72.65477421488706,
+                    101.71668390084186,
+                    0.0
+                  ],
+                  "v": [
+                    308.7901412793992,
+                    220.56438662814233,
+                    816.0882305241266
+                  ],
+                  "radiance": [
+                    3,
+                    3,
+                    3
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "format": "png"
+      }
+    }
+  }
+]

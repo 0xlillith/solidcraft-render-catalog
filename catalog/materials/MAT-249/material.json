@@ -1,0 +1,182 @@
+{
+  "id": "MAT-249",
+  "name": "Variable-dimming automotive mirror",
+  "family": "Automotive glazing and optical covers",
+  "version": "1.0.0-local",
+  "seed": 8171831,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.36563538911802507,
+    0.4458094898491223,
+    0.47461177252743014
+  ],
+  "base_linear_high": [
+    0.6737838428716276,
+    0.819772503904372,
+    0.8722184514678578
+  ],
+  "roughness": 0.055,
+  "roughness_variation": 0.008,
+  "metallic": 0,
+  "height_span_mm": 0.01,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-249",
+    "name": "Variable-dimming automotive mirror",
+    "family": "Automotive glazing and optical covers",
+    "domains": [
+      "automotive",
+      "LED lighting"
+    ],
+    "description": "A layered mirror uses explicitly saved optical states.",
+    "use_cases": [
+      "Mirror concepts"
+    ],
+    "optical_model": "Refractive layered glazing with separately represented printed, coated and structured optical regions.",
+    "controls": [
+      "transmission",
+      "layer absorption",
+      "face roughness",
+      "dimming state",
+      "cover reflection"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve stack geometry across state changes.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Do not infer electronics or switching kinetics from the optical states.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Wave/spectral/time-dependent phenomenon is not simulated; static RGB authoring fallback and intended-model metadata are explicit."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "3c99195604b1bd96e42fc3aa1d9b14fa90fdafa45dd98d7e9084125ac89bb9b1",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "1bd05c73ac3740c5180b42755e4cc560b8ecafe130488b7a645e8ab5b1c6c652",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "1579cfde497475d21d985ba6a6a9d3664a8f34c5d06973b3ecf1c69f983050b3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "477dfeedc2767e46e4710997914c4cbdfdd58a56a2a8a147d7ead8920e961194",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "480b7c0f0787d374c1e7c47a51d52ebc0517ef2de11da14be63e112c09223532",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4ec2f3f76bc28fb09162f4eab64b82981b47556a27f517ca96063d6ccb1c9e0a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "7c3c643fce7be843b37a31255b31aacd733b53e92f4104c0f161ed102f8e95ea",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "3b7c51af4de59d3ef79cc689b4998429a3d5a11c7aa0122e1acbf65b8d4af828",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

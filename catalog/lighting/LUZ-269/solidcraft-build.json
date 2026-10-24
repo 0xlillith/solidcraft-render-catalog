@@ -1,0 +1,103 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "LUZ-269 Lunar Earthshine conditional study"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "description": "Original relative lighting rig on neutral calibration geometry; no photometric certification.",
+        "org.solidcraft.local_catalog": {
+          "id": "LUZ-269",
+          "unresolved_external_inputs": [
+            "Earth position, angular extent, phase and radiance are unspecified; Earth source remains disabled, not invented."
+          ],
+          "limitations": [
+            "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+            "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.sphere",
+    "params": {
+      "radius": 160,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "body_name": "Reference subject"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Reference subject"
+      ],
+      "color": [
+        155,
+        155,
+        155
+      ],
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.4,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-269 Lunar Earthshine conditional study",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.7,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 1150,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "background": [
+          30,
+          35,
+          42
+        ],
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 1145067,
+            "tone_map": "aces_fitted",
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": []
+            }
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

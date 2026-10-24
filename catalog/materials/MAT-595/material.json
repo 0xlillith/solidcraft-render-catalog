@@ -1,0 +1,184 @@
+{
+  "id": "MAT-595",
+  "name": "SELENE opaque polymer cassette body",
+  "family": "SELENE opaque sample cassettes caps and seals",
+  "version": "1.0.0-local",
+  "seed": 10911805,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.2227425293519402,
+    0.23229171775786986,
+    0.24872924591767992
+  ],
+  "base_linear_high": [
+    0.4135908743423388,
+    0.4309789487531361,
+    0.4609099701784619
+  ],
+  "roughness": 0.32,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.045,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-595",
+    "name": "SELENE opaque polymer cassette body",
+    "family": "SELENE opaque sample cassettes caps and seals",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE",
+      "laboratory"
+    ],
+    "description": "A moulded or machined dielectric body contains separate sample cells.",
+    "use_cases": [
+      "Sample-cassette concepts"
+    ],
+    "optical_model": "Region-aware candidate containment assembly using distinct body, cap, liner and sealing appearances; engineering selection remains a separate decision.",
+    "controls": [
+      "surface finish",
+      "contact-region masks",
+      "part identity",
+      "body grain",
+      "cell-wall finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep cavities, dividers and closures in actual geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-038",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Appearance does not establish vacuum compatibility or sample preservation.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "6a2e704b9a6d0c4114d4c4cf75336921981f2613788ed7afb446c065c0d74e7e",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e10dd5471aa586f39f6e8265db6f97a21ad68fbfe3959963db4caf1cffeda779",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "b00398076521a30ef4f26ea5040078243766a81258d9a2fe86a2d8f7aaf760cd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "30d8fb5d2312390acea2de060a18ade5232207019e24c24d01ae59129ff51d58",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "e3232b79a1214e8e058c14d34b4e82091b67cd10680c119eedca383a02ba3917",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "11fece4f1ae611dbd07e1629869feb69ede26bd5e6db084ebcd7c8040baa703a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f77b7f561826688abc8b8a997a6290a9ae8cf788b866d4c5ef0b93519c4ad487",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "79803ba46fa4daf87bcdf253b7d33613ae4d868c7bba306153e94cdeb76fdcdd",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

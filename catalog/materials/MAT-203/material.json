@@ -1,0 +1,190 @@
+{
+  "id": "MAT-203",
+  "name": "Uncleared metallic basecoat",
+  "family": "Automotive paint stacks and correction states",
+  "version": "1.0.0-local",
+  "seed": 7807557,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.20734417828773075,
+    0.030274756938402612,
+    0.021370342158917727
+  ],
+  "base_linear_high": [
+    0.3855520858373604,
+    0.06312716935052416,
+    0.04691316034907407
+  ],
+  "roughness": 0.184,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-203",
+    "name": "Uncleared metallic basecoat",
+    "family": "Automotive paint stacks and correction states",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Effect particles remain visible beneath a comparatively rough exposed binder.",
+    "use_cases": [
+      "Paint-stack studies"
+    ],
+    "optical_model": "Layered pigmented coating with distinct substrate, preparation, effect and finish regions.",
+    "controls": [
+      "layer coverage",
+      "coat roughness",
+      "process masks",
+      "flake density",
+      "binder roughness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve particle scale separately from surface roughness.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039",
+      "CAP-023"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The absence of clearcoat should change reflection, not just brightness.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "171061b83d858eaad864967377420978a8d6944143cb65d56248bb3028b9928d",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "f5e8bed9411bd627585386187847c96a24c64d83af5b7374459c8f98273ec498",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "093350ae2582e9f564b19e606634104e425d2ded3193f5962d890d9f2dd907a2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "19f2fbb03b6a62192f84f598905898327c573a286f8a7c8de9aa3c938be596db",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "4e1876b71a72eb7436e7b3dd6242f70a1332602fd677eafd39a4a23fdb3b5e2f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "f777010b213e1e213f7bad6b14384dbe542e3a26e714b7c0b39eadbd2519b314",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d8e634aed74cdaf3213dcdad02c4985eed68b3675fb20349612cadb85e4e5a89",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "34545026b5df6e6ac1f919ea8ee2687ca7a2db734f9cf67846b8a871bdc49985",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

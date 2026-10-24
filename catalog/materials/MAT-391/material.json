@@ -1,0 +1,181 @@
+{
+  "id": "MAT-391",
+  "name": "Machined brass printer nozzle",
+  "family": "Printer hotends motion parts and build plates",
+  "version": "1.0.0-local",
+  "seed": 9296329,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.3614512576381118,
+    0.24538923905122248,
+    0.049723090814700256
+  ],
+  "base_linear_high": [
+    0.6661649765947708,
+    0.4548281666305842,
+    0.09854055342378254
+  ],
+  "roughness": 0.22799999999999998,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-391",
+    "name": "Machined brass printer nozzle",
+    "family": "Printer hotends motion parts and build plates",
+    "domains": [
+      "additive manufacturing",
+      "electronics",
+      "DIY"
+    ],
+    "description": "Turning marks follow the nozzle while the tip has a distinct finish.",
+    "use_cases": [
+      "Hotend models"
+    ],
+    "optical_model": "Component-specific conductor, ceramic, polymer or layered finish, with independent service-state overlays.",
+    "controls": [
+      "manufacturing direction",
+      "surface roughness",
+      "region masks",
+      "turning pitch",
+      "tip residue"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve bore and tip dimensions from CAD geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Surface detail must not alter the specified nozzle opening.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "f81c372c9af5552ba6edc8a8f9279478dff0b50edf9c6e2cd2cca5de8e4c1708",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "9b4ac9442e84fa02565fb57f1807bcd010efaebeae339a615c7d88ff47369823",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "9f60411ce8e173e0c2c90bb0c04c9e7174991185b02898ab7eb2c58893f237f7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e6f8de22b525b320ecdacf68afdedef93d357175c0b0cebc046af346a6ae2913",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "00dfabbda688608118beb82b8c83d12259a4a732e7a95160a5b30d146dcbebb5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "dced63dddb5394aba0e504a3dfd08c99826310676fdda0cedc55e681897919e3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "c6fea705d0ad1ed74bec08082f520d3f0b98632ac8455138cc23032005890e45",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "a31ae449995e508494da4e6ced996606dfc9c0a3f35436219838e07bb13b8e36",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

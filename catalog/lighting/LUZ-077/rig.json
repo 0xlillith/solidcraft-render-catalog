@@ -1,0 +1,112 @@
+{
+  "id": "LUZ-077",
+  "name": "Finned heat sink",
+  "family": "08 Electronics and small mechanisms",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-077",
+    "name": "Finned heat sink",
+    "family": "08 Electronics and small mechanisms",
+    "domains": [
+      "electronics",
+      "manufacturing"
+    ],
+    "description": "A proposed lighting arrangement for power electronics and cooling parts.",
+    "use_cases": [
+      "Power electronics and cooling parts"
+    ],
+    "sources": "High transverse strip and front fill",
+    "geometry": "K perpendicular to fin direction",
+    "contribution_policy": "K 0 and F -2 reference EV",
+    "controls": [
+      "Strip-to-fin angle",
+      "source size",
+      "front fill"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-018"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Fin separation comes from real transport and occlusion"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 848811,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          -200.0,
+          1800.0
+        ],
+        "u": [
+          -850.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          596.3302408041714,
+          66.25891564490792
+        ],
+        "radiance": [
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "center": [
+          -1300.0,
+          -1000.0,
+          450.0
+        ],
+        "u": [
+          -76.21384510621155,
+          99.07799863807502,
+          0.0
+        ],
+        "v": [
+          146.80507940648047,
+          112.92698415883116,
+          675.0524164161241
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

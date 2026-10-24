@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "designation": "C45 steel - Ovako physical reference",
+  "family": "metal",
+  "sources": [
+    {
+      "id": "ovako-c45",
+      "title": "Ovako C45 steel navigator",
+      "kind": "public_reference",
+      "license": null,
+      "reference": "https://steelnavigator.ovako.com/steel-grades/c45/"
+    }
+  ],
+  "properties": [
+    {
+      "data": {
+        "kind": "density",
+        "kg_m3": 7800.0
+      },
+      "source_id": "ovako-c45",
+      "conditions": {
+        "temperature_k": null,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General C45 physical constants; heat treatment, section and product variant must be specified for strength. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+      }
+    },
+    {
+      "data": {
+        "kind": "elasticity",
+        "model": {
+          "symmetry": "isotropic",
+          "young_modulus_pa": 210000000000.0,
+          "poisson_ratio": 0.3
+        }
+      },
+      "source_id": "ovako-c45",
+      "conditions": {
+        "temperature_k": null,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General C45 physical constants; heat treatment, section and product variant must be specified for strength. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior."
+      }
+    },
+    {
+      "data": {
+        "kind": "thermal_expansion",
+        "per_k": [
+          1.2e-05,
+          1.2e-05,
+          1.2e-05
+        ],
+        "axes": "material123"
+      },
+      "source_id": "ovako-c45",
+      "conditions": {
+        "temperature_k": null,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General C45 physical constants; heat treatment, section and product variant must be specified for strength. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,573.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+      }
+    }
+  ]
+}

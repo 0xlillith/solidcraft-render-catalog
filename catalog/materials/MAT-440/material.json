@@ -1,0 +1,182 @@
+{
+  "id": "MAT-440",
+  "name": "Textured protective workshop mat",
+  "family": "DIY panels adhesives and joint surfaces",
+  "version": "1.0.0-local",
+  "seed": 9684360,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.20734417828773075,
+    0.030274756938402612,
+    0.021370342158917727
+  ],
+  "base_linear_high": [
+    0.3855520858373604,
+    0.06312716935052416,
+    0.04691316034907407
+  ],
+  "roughness": 0.74,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-440",
+    "name": "Textured protective workshop mat",
+    "family": "DIY panels adhesives and joint surfaces",
+    "domains": [
+      "DIY",
+      "woodworking",
+      "industrial"
+    ],
+    "description": "Surface ribs or dimples cover a distinct resilient sheet.",
+    "use_cases": [
+      "Workbenches",
+      "tool presentation"
+    ],
+    "optical_model": "Construction-specific dielectric or layered adhesive surface with explicit host interfaces.",
+    "controls": [
+      "coverage",
+      "surface finish",
+      "joint geometry",
+      "relief pattern",
+      "contact wear"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use real relief dimensions where tools contact the mat.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Pattern geometry must not be replaced by a simple dark decal.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "837e0f9146d1b559b92c11c8b5c6fda9354b5ca79947f95c69a6431c9fd2f9f6",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3df92bc47fef42532982060d15d71280a9cec35d2e7fe7024ebd97fa5c7ffba9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "0c31c2706545c354c70c4686b33b9a7371c6855a604cb1796f6b3197d3f69b8e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "fa1e44332e68c461e8dffd6eeeea5595d25832325d8fde9b5d820980a7519e83",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f730a78e3c37cd615877b7f83f490dcfbfadb55d225eb33e83a1fae9903cae52",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b9f730f72a5e972751b215f3a6d6736dff020172bcecaee8ea44449bf42f65c3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fc46c89b0c57d47059ac98e06be2c52400d104dd9fedddd0edb0707e05faffcb",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e8ea28b17df5cc80352337c00a2acc436f2834b4e1490c0c61e218efb532e17e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

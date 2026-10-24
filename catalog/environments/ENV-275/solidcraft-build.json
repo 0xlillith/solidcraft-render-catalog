@@ -1,0 +1,88 @@
+[
+  {
+    "command": "file.insert_mesh",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-275\\environment.glb",
+      "up": "y",
+      "name": "ENV-275 Context"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "ENV-275 SELENE sample-tray handoff",
+        "license": "MIT OR Apache-2.0",
+        "org.solidcraft.local_catalog": {
+          "id": "ENV-275",
+          "scope": "Finite procedural environment authoring scene",
+          "source_recipe": "environment.json",
+          "not_measured": true
+        }
+      }
+    }
+  },
+  {
+    "command": "render.settings.capture_hdr",
+    "params": {
+      "name": "ENV-275 SELENE sample-tray handoff",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "background": [
+          0,
+          0,
+          0
+        ],
+        "camera": {
+          "target": [
+            0,
+            0,
+            360.0
+          ],
+          "yaw": -0.8,
+          "pitch": 0.5,
+          "roll": 0,
+          "distance": 5175.0,
+          "fov": 0.65,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 840275,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [],
+              "sun": {
+                "direction": [
+                  -0.24337333982061887,
+                  0.8487437005362285,
+                  0.4694715627858908
+                ],
+                "angular_radius_rad": 0.00465,
+                "radiance": [
+                  14000.0,
+                  14000.0,
+                  14000.0
+                ]
+              }
+            },
+            "tone_map": "aces_fitted"
+          }
+        }
+      },
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-275\\illumination.hdr",
+      "expected_sha256": "6422f75ffe1fd6352fb66094992952bffcd80485e5f4a7801e2806ddbea01208",
+      "rotation_rad": 3.141592653589793,
+      "intensity": 1,
+      "assume_linear_srgb": false
+    }
+  }
+]

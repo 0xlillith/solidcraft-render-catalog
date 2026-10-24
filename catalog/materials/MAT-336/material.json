@@ -1,0 +1,182 @@
+{
+  "id": "MAT-336",
+  "name": "Braided copper cable shield",
+  "family": "Electrical insulation and cable constructions",
+  "version": "1.0.0-local",
+  "seed": 8860784,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.3250504598375672,
+    0.12583991744145417,
+    0.04341818868424687
+  ],
+  "base_linear_high": [
+    0.5998829268684058,
+    0.237141342206827,
+    0.08705998536534504
+  ],
+  "roughness": 0.498,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.12,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-336",
+    "name": "Braided copper cable shield",
+    "family": "Electrical insulation and cable constructions",
+    "domains": [
+      "electronics",
+      "industrial",
+      "aerospace",
+      "space"
+    ],
+    "description": "Interwoven conductive strands surround an inner assembly.",
+    "use_cases": [
+      "Shielded-cable sections"
+    ],
+    "optical_model": "Separate dielectric jackets, films, fibre sleeves and metallic conductors with explicit cut-section interfaces.",
+    "controls": [
+      "jacket roughness",
+      "construction pitch",
+      "region masks",
+      "braid pitch",
+      "conductor tarnish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep strand diameter and crossing geometry explicit.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-038",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Optical coverage must not be labelled an electrical shielding measurement.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a2c7028d86af2763010b5507e9db0fb3cc65bb958d3eefb64fade0d66a16620e",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a6934c3434fad5c4ad61e0925c0705553ae407fb0567eb9cefe1b5e3fae5c8c7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "915824d0d7ce11d4655f86091a19e26a9d9d88c7a91bfe0c16538f292e0cf595",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "8698fbeffbc4b489c7aa395b7d7125adf5ee4b9a621e27f2d8e50794d95b4f90",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "4aaa79a4e532683a6ed8cb773a0aa5de4faa88fd9e351aa5c5b2a51aaa2fd5e8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1c0318c6999ade5fa7dd640b2a6bf2f95f4bbaa1620cf29743366f185edcc982",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d75a70865a3f72fa5aef02e89168f8c924abbebebeb70bc5412af808fbb4cfa7",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "412ae3df7b5f524da0787465f3c4dd2775b62b6b03574ba409b485e160ec45ba",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

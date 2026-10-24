@@ -1,0 +1,179 @@
+{
+  "id": "MAT-427",
+  "name": "Limed open-grain wood",
+  "family": "Woodworking and DIY finishes",
+  "version": "1.0.0-local",
+  "seed": 9581413,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.24538923905122248,
+    0.13504269004224603,
+    0.03760608833323206
+  ],
+  "base_linear_high": [
+    0.4548281666305842,
+    0.25389862962916443,
+    0.07647675786051211
+  ],
+  "roughness": 0.356,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.2,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 14,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-427",
+    "name": "Limed open-grain wood",
+    "family": "Woodworking and DIY finishes",
+    "domains": [
+      "woodworking",
+      "DIY"
+    ],
+    "description": "Pale filler-like regions accentuate selected open pores.",
+    "use_cases": [
+      "Furniture finishes"
+    ],
+    "optical_model": "Editable finish layer over a host wood volume; preparation and wear remain separate masks.",
+    "controls": [
+      "finish coverage",
+      "surface roughness",
+      "host-grain preservation",
+      "pore fill",
+      "wipeback mask"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Apply filler according to the host's actual pore pattern.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Filler must not appear uniformly over closed grain areas.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d13a6d8f8260193e2d397af443186577777ab6d44906f7d569bd18a6d6300b00",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4f4960ede0c936ce115edb8fc79a1d3af023c478351c3c13586e4842c447c9bc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "b95bbf55e7d9a72c234ad038e569d68220b849dda2c809530c4f9bebf7a9cd8a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "c33cb52b409b31681394a1a41c1e5c3f5870df7ed7d9ae99f7c47045f0454853",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d4b42f2e1d241b18801991620be6245649954cd49d0e7bb031f93878e5694b40",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "6d8dd124b26b72df5f4c56c4548ac942bc2297355e384dd271ee56f4fa87bad9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "04c57e87b49ce250835ff2fd0692cae6bc3aae65a5a4eb883c8014ce5c017e7d",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "5aa53691c657480ce19810428cfdb6d0bb7cc37963c98d2f61a39c0d08ce4ce3",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

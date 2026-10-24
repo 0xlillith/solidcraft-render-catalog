@@ -1,0 +1,366 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "SCENE-004 Automotive Paint Review"
+    }
+  },
+  {
+    "command": "file.insert_mesh",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-201\\environment.glb",
+      "up": "y",
+      "name": "ENV-201 Context"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "project": "Original local Render composition",
+        "org.solidcraft.local_catalog": {
+          "id": "SCENE-004",
+          "source_kind": "scene",
+          "environment": "ENV-201",
+          "lighting": "LUZ-101",
+          "quality": "Q-003",
+          "original_role_assignments_preserved": true,
+          "demo_subjects_are_not_user_geometry": true
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "length": 325.0,
+      "width": 325.0,
+      "height": 325.0,
+      "corner": [
+        -450.0,
+        -250.0,
+        1.0
+      ],
+      "body_name": "Demo paint_stack"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Demo paint_stack"
+      ],
+      "color": [
+        159,
+        29,
+        35
+      ],
+      "name": "MAT-204 Orange-peel automotive clearcoat",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.16,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "length": 325.0,
+      "width": 325.0,
+      "height": 325.0,
+      "corner": [
+        0.0,
+        -250.0,
+        1.0
+      ],
+      "body_name": "Demo trim"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Demo trim"
+      ],
+      "color": [
+        46,
+        50,
+        57
+      ],
+      "name": "MAT-211 Chromium-plated polymer trim",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 1.0,
+        "roughness": 0.20800000000000002,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "length": 325.0,
+      "width": 325.0,
+      "height": 325.0,
+      "corner": [
+        450.0,
+        -250.0,
+        1.0
+      ],
+      "body_name": "Demo neutral_satin_floor"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Demo neutral_satin_floor"
+      ],
+      "color": [
+        102,
+        101,
+        92
+      ],
+      "name": "MAT-145 Homogeneous vinyl flooring",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.82,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "SCENE-004 Authoring Preview",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "background": [
+          28,
+          33,
+          41
+        ],
+        "exposure_ev": -1,
+        "camera": {
+          "target": [
+            0,
+            0,
+            200.0
+          ],
+          "yaw": -0.6,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 2250.0,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 910004,
+            "tone_map": "aces_fitted",
+            "linear_exr": true,
+            "lighting": {
+              "environment": [
+                0,
+                0,
+                0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    2000.0
+                  ],
+                  "u": [
+                    -1500.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    500.0,
+                    0.0
+                  ],
+                  "radiance": [
+                    7,
+                    7,
+                    7
+                  ]
+                },
+                {
+                  "center": [
+                    -1400.0,
+                    -1200.0,
+                    450.0
+                  ],
+                  "u": [
+                    -81.34892168199607,
+                    94.90707529566207,
+                    0.0
+                  ],
+                  "v": [
+                    270.01653213051725,
+                    231.44274182615771,
+                    1457.2320781646965
+                  ],
+                  "radiance": [
+                    8,
+                    8,
+                    8
+                  ]
+                },
+                {
+                  "center": [
+                    1400.0,
+                    100.0,
+                    500.0
+                  ],
+                  "u": [
+                    10.687057498186446,
+                    -149.61880497461027,
+                    0.0
+                  ],
+                  "v": [
+                    -468.615312352114,
+                    -33.47252231086528,
+                    1318.8173790480926
+                  ],
+                  "radiance": [
+                    5,
+                    5,
+                    5
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "SCENE-004 Bounded Quality",
+      "set": {
+        "width": 2560,
+        "height": 1440,
+        "background": [
+          28,
+          33,
+          41
+        ],
+        "exposure_ev": -1,
+        "camera": {
+          "target": [
+            0,
+            0,
+            200.0
+          ],
+          "yaw": -0.6,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 2250.0,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 2048,
+            "max_depth": 12,
+            "seed": 21026,
+            "tone_map": "aces_fitted",
+            "denoise": false,
+            "linear_exr": false,
+            "lighting": {
+              "environment": [
+                0,
+                0,
+                0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    2000.0
+                  ],
+                  "u": [
+                    -1500.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    500.0,
+                    0.0
+                  ],
+                  "radiance": [
+                    7,
+                    7,
+                    7
+                  ]
+                },
+                {
+                  "center": [
+                    -1400.0,
+                    -1200.0,
+                    450.0
+                  ],
+                  "u": [
+                    -81.34892168199607,
+                    94.90707529566207,
+                    0.0
+                  ],
+                  "v": [
+                    270.01653213051725,
+                    231.44274182615771,
+                    1457.2320781646965
+                  ],
+                  "radiance": [
+                    8,
+                    8,
+                    8
+                  ]
+                },
+                {
+                  "center": [
+                    1400.0,
+                    100.0,
+                    500.0
+                  ],
+                  "u": [
+                    10.687057498186446,
+                    -149.61880497461027,
+                    0.0
+                  ],
+                  "v": [
+                    -468.615312352114,
+                    -33.47252231086528,
+                    1318.8173790480926
+                  ],
+                  "radiance": [
+                    5,
+                    5,
+                    5
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "format": "png"
+      }
+    }
+  }
+]

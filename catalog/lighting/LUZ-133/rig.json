@@ -1,0 +1,67 @@
+{
+  "id": "LUZ-133",
+  "name": "Uniform overcast exterior",
+  "family": "14 Solar and sky exteriors",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-133",
+    "name": "Uniform overcast exterior",
+    "family": "14 Solar and sky exteriors",
+    "domains": [
+      "exterior",
+      "daylight"
+    ],
+    "description": "A proposed lighting arrangement for outdoor shape and color comparison.",
+    "use_cases": [
+      "Outdoor shape and color comparison"
+    ],
+    "sources": "Overcast sky without direct sun disk",
+    "geometry": "Upper-hemisphere distribution; ground is separate",
+    "contribution_policy": "Sky normalized against reference illuminance if calibrated",
+    "controls": [
+      "Sky distribution",
+      "intensity",
+      "orientation"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011",
+      "CAP-042"
+    ],
+    "priority": "P0",
+    "cost": "Medium",
+    "validation": [
+      "Soft shadows retain contact without free lower-hemisphere light"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 935219,
+  "lights": {
+    "environment": [
+      0.4,
+      0.43,
+      0.48
+    ],
+    "area_lights": []
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

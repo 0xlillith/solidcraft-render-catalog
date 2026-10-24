@@ -1,0 +1,91 @@
+{
+  "id": "LUZ-146",
+  "name": "Shielded path bollard",
+  "family": "15 Functional photometry",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-146",
+    "name": "Shielded path bollard",
+    "family": "15 Functional photometry",
+    "domains": [
+      "lighting_design",
+      "architecture"
+    ],
+    "description": "A proposed lighting arrangement for paths and gardens.",
+    "use_cases": [
+      "Paths and gardens"
+    ],
+    "sources": "Low fixture with opaque housing",
+    "geometry": "Real mounting position and spacing",
+    "contribution_policy": "Documented output; avoid repeating shielding already in profile",
+    "controls": [
+      "Spacing",
+      "height",
+      "orientation"
+    ],
+    "authoring_method": "Original authoring specification requiring a separately sourced and licensed IES/LDT profile or a clearly labeled analytic distribution. No profile asset or absolute measurement is included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-012"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Do not apply the measured fixture shield twice"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 955278,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          0.0,
+          1500.0
+        ],
+        "u": [
+          -125.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          125.0,
+          0.0
+        ],
+        "radiance": [
+          20,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Original luminaire-shaped area source, not measured IES/LDT intensity distribution or lux validation."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

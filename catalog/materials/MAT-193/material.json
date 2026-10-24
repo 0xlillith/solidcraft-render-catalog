@@ -1,0 +1,192 @@
+{
+  "id": "MAT-193",
+  "name": "Multilayer antireflection coating",
+  "family": "Specialized optical appearances",
+  "version": "1.0.0-local",
+  "seed": 7728367,
+  "pattern": "iridescent",
+  "base_linear_low": [
+    0.3172661024191664,
+    0.3329451066907832,
+    0.3531671342228948
+  ],
+  "base_linear_high": [
+    0.5857084253005717,
+    0.6142582539742619,
+    0.651080453361092
+  ],
+  "roughness": 0.184,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 1.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-193",
+    "name": "Multilayer antireflection coating",
+    "family": "Specialized optical appearances",
+    "domains": [
+      "LED lighting",
+      "CAD product",
+      "space"
+    ],
+    "description": "An optical stack reduces reflection with angle-dependent residual colour.",
+    "use_cases": [
+      "Lenses",
+      "screens",
+      "sensors"
+    ],
+    "optical_model": "Multilayer dielectric interference stack with traceable optical thickness and wavelength-dependent material data.",
+    "controls": [
+      "physical or approximate mode",
+      "model-specific dataset",
+      "declared scope",
+      "layer sequence",
+      "optical thickness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep each layer's optical data and thickness traceable.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-098"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Validate reflected and transmitted energy together.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d5e310b6cdab50748f5441df973ea823f5d3052b088e4a2152400baa97c51b28",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e5440a24cf22532cf75cafe5c9fa5d0fae152c63edf48ffd3b35c771242498f0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "8d64a95d94df497ce0f3b174eb95fcc2457ff97784700841813be0b8999f210e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "eb0275d8f694756d71d75ccbacfd930a7bda8d7ba4a996d705cfe3072fe6890c",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "57b4487a304a3365e2e5052c476d8b69298b95f072d01724bab2b53b8b2d09c9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "55b3828c6d54663a65b94304f98e7581c5ef24241caf2f0235493516e577563c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a73d8159bf86662dea14a0930cf31039c4b6db56dcd6cb910c306a65c6003555",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "549e6cff95da51b2ea9c15f30975af5505c27ee7bdc64e31b52460cb888e870e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

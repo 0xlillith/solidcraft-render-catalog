@@ -1,0 +1,95 @@
+{
+  "id": "SELENE-AP-031",
+  "name": "Matte ceramic sample insert",
+  "original_specification": {
+    "id": "SELENE-AP-031",
+    "name": "Matte ceramic sample insert",
+    "source_catalog_ids": [
+      "MAT-594"
+    ],
+    "family": "Sample containment ceramics",
+    "domains": [
+      "SELENE",
+      "laboratory",
+      "industrial"
+    ],
+    "purpose": "A light matte ceramic insert that is visually distinct from metal and polymer containment.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-031 Matte ceramic sample insert",
+        "color": "#c9c5bb",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.59,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Ceramic grain",
+        "Subsurface response",
+        "Chemical cleanliness or contamination behavior"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque scattering ceramic with a deliberately unglazed finish.",
+      "structure": [
+        "Ceramic body",
+        "Fine open-surface texture only where authored"
+      ],
+      "authoring_controls": [
+        {
+          "id": "ceramic_grain_pitch",
+          "value": 0.2,
+          "unit": "mm",
+          "meaning": "Illustrative visual grain spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "ceramic_grain_relief",
+          "value": 0.006,
+          "unit": "mm",
+          "meaning": "Render-only unglazed surface relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep insert wall thickness and sample interfaces in CAD",
+        "Use a local texture frame"
+      ],
+      "capability_requirements": [
+        "CAP-028",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Composition-specific scattering and absorption"
+      ],
+      "validation_criteria": [
+        "The matte finish should remain distinct from the polished contact pad",
+        "Appearance must not certify sample compatibility"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#c9c5bb",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.59,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-031 Matte ceramic sample insert",
+    "bodies": [
+      "SELENE-AP-031"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

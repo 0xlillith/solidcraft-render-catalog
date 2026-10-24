@@ -1,0 +1,1022 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-031 Matte industrial paint"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-031",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        221,
+        221,
+        219
+      ],
+      "name": "MAT-031 Matte industrial paint",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.67,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6445489,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-031\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-032 Textured powder coating"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-032",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        38,
+        41,
+        46
+      ],
+      "name": "MAT-032 Textured powder coating",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.62,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6453408,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-032\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-033 Smooth satin paint"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-033",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        165,
+        34,
+        29
+      ],
+      "name": "MAT-033 Smooth satin paint",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.32,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6461327,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-033\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-034 High-gloss lacquer over pigment"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-034",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        53,
+        85,
+        114
+      ],
+      "name": "MAT-034 High-gloss lacquer over pigment",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.13,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6469246,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-034\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-035 Automotive metallic paint"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-035",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        53,
+        85,
+        114
+      ],
+      "name": "MAT-035 Automotive metallic paint",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.2,
+        "roughness": 0.48,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6477165,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-035\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-036 Multilayer pearlescent paint"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-036",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        93,
+        104,
+        119
+      ],
+      "name": "MAT-036 Multilayer pearlescent paint",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.498,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6485084,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-036\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-037 Hammer-finish enamel"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-037",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        99,
+        108,
+        111
+      ],
+      "name": "MAT-037 Hammer-finish enamel",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.39,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6493003,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-037\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-038 Matte ceramic-coating appearance"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-038",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        179,
+        183,
+        188
+      ],
+      "name": "MAT-038 Matte ceramic-coating appearance",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.61,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6500922,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-038\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-039 Applied vinyl laminate"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-039",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        53,
+        85,
+        114
+      ],
+      "name": "MAT-039 Applied vinyl laminate",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.5519999999999999,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6508841,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-039\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-040 Chipped paint over metal"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-040",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        53,
+        85,
+        114
+      ],
+      "name": "MAT-040 Chipped paint over metal",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.57,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 6516760,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-040\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  }
+]

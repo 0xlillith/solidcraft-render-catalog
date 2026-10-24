@@ -1,0 +1,906 @@
+{
+  "id": "ENV-193",
+  "name": "Illuminated residential street",
+  "family": "Night and low illumination",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-193",
+    "name": "Illuminated residential street",
+    "family": "Night and low illumination",
+    "domains": [
+      "automotive",
+      "architecture",
+      "emissive_products"
+    ],
+    "description": "Illuminated residential street is a conceptual setting for vehicles; urban furniture. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Vehicles",
+      "urban furniture"
+    ],
+    "representation": "3D night setting or candidate captured HDRI with separately represented physical emitters",
+    "geometry": "Roadway, sidewalk and simple facades",
+    "ambient_lighting": "Separate streetlight rig and night sky",
+    "scale_policy": "Street length from 20 to 200 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Street width and length",
+      "facades",
+      "active fixtures and spacing",
+      "pavement",
+      "night sky",
+      "exposure"
+    ],
+    "authoring_method": "Original procedural sky and geometry; calibrated night HDRI requires selection and verification; AI LDR backplates do not duplicate emitters",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-013",
+      "CAP-042"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Do not infer lamp power from bright LDR pixels.",
+      "Check small-source noise and dynamic range; reflections and shadows must match actual emitters."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Terrain",
+      "width_mm": 24000,
+      "depth_mm": 24000,
+      "amplitude_mm": 10,
+      "seed": 840193,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 0/crown0",
+      "center_mm": [
+        8139.470701209573,
+        -9.34872547376528,
+        2325.941298399314
+      ],
+      "radii_mm": [
+        957.7405346350116,
+        923.535515540904,
+        957.7405346350116
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 0/crown1",
+      "center_mm": [
+        8236.536486609037,
+        -165.99210592510394,
+        2496.966393869852
+      ],
+      "radii_mm": [
+        957.7405346350116,
+        923.535515540904,
+        957.7405346350116
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 0/crown2",
+      "center_mm": [
+        8461.817899357275,
+        13.968299423815537,
+        2667.9914893403893
+      ],
+      "radii_mm": [
+        957.7405346350116,
+        923.535515540904,
+        957.7405346350116
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 1/crown0",
+      "center_mm": [
+        6812.31987652535,
+        2406.9737116804017,
+        3757.32094531657
+      ],
+      "radii_mm": [
+        1547.1321539538817,
+        1491.8774341698145,
+        1547.1321539538817
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 1/crown1",
+      "center_mm": [
+        7032.764252015402,
+        2091.145494148958,
+        4033.594544236906
+      ],
+      "radii_mm": [
+        1547.1321539538817,
+        1491.8774341698145,
+        1547.1321539538817
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 1/crown2",
+      "center_mm": [
+        6792.965129786529,
+        3349.512426898582,
+        4309.868143157242
+      ],
+      "radii_mm": [
+        1547.1321539538817,
+        1491.8774341698145,
+        1547.1321539538817
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 2/crown0",
+      "center_mm": [
+        4395.05125874343,
+        4006.172971557118,
+        3615.1134901860755
+      ],
+      "radii_mm": [
+        1488.5761430177959,
+        1435.412709338589,
+        1488.5761430177959
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 2/crown1",
+      "center_mm": [
+        4730.193529265721,
+        4289.556113620548,
+        3880.930658582111
+      ],
+      "radii_mm": [
+        1488.5761430177959,
+        1435.412709338589,
+        1488.5761430177959
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 2/crown2",
+      "center_mm": [
+        4714.931964932272,
+        4237.578715019487,
+        4146.747826978146
+      ],
+      "radii_mm": [
+        1488.5761430177959,
+        1435.412709338589,
+        1488.5761430177959
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 3/crown0",
+      "center_mm": [
+        2278.2768572858745,
+        6540.3573570816125,
+        2968.3692258035144
+      ],
+      "radii_mm": [
+        1222.2696812132117,
+        1178.617192598454,
+        1222.2696812132117
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 3/crown1",
+      "center_mm": [
+        3107.1092489224066,
+        6646.550994167984,
+        3186.631668877302
+      ],
+      "radii_mm": [
+        1222.2696812132117,
+        1178.617192598454,
+        1222.2696812132117
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 3/crown2",
+      "center_mm": [
+        2981.660758874768,
+        6726.163152839905,
+        3404.8941119510896
+      ],
+      "radii_mm": [
+        1222.2696812132117,
+        1178.617192598454,
+        1222.2696812132117
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 4/crown0",
+      "center_mm": [
+        236.34151624336383,
+        8723.117290730223,
+        3294.35155692888
+      ],
+      "radii_mm": [
+        1356.497699911892,
+        1308.0513534864672,
+        1356.497699911892
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 4/crown1",
+      "center_mm": [
+        -163.6039372941559,
+        8866.11225999026,
+        3536.583289056004
+      ],
+      "radii_mm": [
+        1356.497699911892,
+        1308.0513534864672,
+        1356.497699911892
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 4/crown2",
+      "center_mm": [
+        83.53650969963721,
+        8507.796656505254,
+        3778.8150211831276
+      ],
+      "radii_mm": [
+        1356.497699911892,
+        1308.0513534864672,
+        1356.497699911892
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 5/crown0",
+      "center_mm": [
+        -2024.514526047503,
+        5321.233959644022,
+        1952.9353876543257
+      ],
+      "radii_mm": [
+        804.1498655047224,
+        775.4302274509822,
+        804.1498655047224
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 5/crown1",
+      "center_mm": [
+        -2310.661189894098,
+        5273.888997164433,
+        2096.5335779230263
+      ],
+      "radii_mm": [
+        804.1498655047224,
+        775.4302274509822,
+        804.1498655047224
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 5/crown2",
+      "center_mm": [
+        -2200.333897109608,
+        5536.427334188753,
+        2240.1317681917267
+      ],
+      "radii_mm": [
+        804.1498655047224,
+        775.4302274509822,
+        804.1498655047224
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 6/crown0",
+      "center_mm": [
+        -6069.677055661421,
+        5883.324727188955,
+        3261.283029742402
+      ],
+      "radii_mm": [
+        1342.881247540989,
+        1294.9212029859536,
+        1342.881247540989
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 6/crown1",
+      "center_mm": [
+        -5416.260952211323,
+        5893.660207143983,
+        3501.083252517579
+      ],
+      "radii_mm": [
+        1342.881247540989,
+        1294.9212029859536,
+        1342.881247540989
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 6/crown2",
+      "center_mm": [
+        -6189.192172949439,
+        6296.916063203113,
+        3740.883475292755
+      ],
+      "radii_mm": [
+        1342.881247540989,
+        1294.9212029859536,
+        1342.881247540989
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 7/crown0",
+      "center_mm": [
+        -7507.84689908987,
+        3041.244923443588,
+        1788.2808174682837
+      ],
+      "radii_mm": [
+        736.3509248398815,
+        710.0526775241714,
+        736.3509248398815
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 7/crown1",
+      "center_mm": [
+        -7534.061053108527,
+        3405.4211888000173,
+        1919.772054046834
+      ],
+      "radii_mm": [
+        736.3509248398815,
+        710.0526775241714,
+        736.3509248398815
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 7/crown2",
+      "center_mm": [
+        -7518.124039444847,
+        2961.546149297659,
+        2051.263290625384
+      ],
+      "radii_mm": [
+        736.3509248398815,
+        710.0526775241714,
+        736.3509248398815
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 8/crown0",
+      "center_mm": [
+        -5890.883452969392,
+        111.46710084101367,
+        1970.633039474096
+      ],
+      "radii_mm": [
+        811.4371339010984,
+        782.4572362617735,
+        811.4371339010984
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 8/crown1",
+      "center_mm": [
+        -6486.688276480268,
+        277.82750756135283,
+        2115.532527670721
+      ],
+      "radii_mm": [
+        811.4371339010984,
+        782.4572362617735,
+        811.4371339010984
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 8/crown2",
+      "center_mm": [
+        -6495.357935098682,
+        32.03663950959689,
+        2260.4320158673454
+      ],
+      "radii_mm": [
+        811.4371339010984,
+        782.4572362617735,
+        811.4371339010984
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 9/crown0",
+      "center_mm": [
+        -5581.5257848674555,
+        -2002.3089725682248,
+        2186.3069958605893
+      ],
+      "radii_mm": [
+        900.2440571190662,
+        868.092483650528,
+        900.2440571190662
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 9/crown1",
+      "center_mm": [
+        -5785.495552582899,
+        -2460.660052868358,
+        2347.0648632032794
+      ],
+      "radii_mm": [
+        900.2440571190662,
+        868.092483650528,
+        900.2440571190662
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 9/crown2",
+      "center_mm": [
+        -5454.917127989348,
+        -2699.992778782714,
+        2507.8227305459695
+      ],
+      "radii_mm": [
+        900.2440571190662,
+        868.092483650528,
+        900.2440571190662
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 10/crown0",
+      "center_mm": [
+        -4104.898010906301,
+        -4181.727272740849,
+        2247.7502678374
+      ],
+      "radii_mm": [
+        925.544227933047,
+        892.4890769354381,
+        925.544227933047
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 10/crown1",
+      "center_mm": [
+        -4406.69061890623,
+        -4582.602081892226,
+        2413.0260228254438
+      ],
+      "radii_mm": [
+        925.544227933047,
+        892.4890769354381,
+        925.544227933047
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 10/crown2",
+      "center_mm": [
+        -4726.487354365292,
+        -4454.140374828143,
+        2578.3017778134877
+      ],
+      "radii_mm": [
+        925.544227933047,
+        892.4890769354381,
+        925.544227933047
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 11/crown0",
+      "center_mm": [
+        -2904.84825204004,
+        -7730.470790317066,
+        3493.809445929113
+      ],
+      "radii_mm": [
+        1438.6274189119877,
+        1387.2478682365595,
+        1438.6274189119877
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 11/crown1",
+      "center_mm": [
+        -2894.25138524466,
+        -7448.33432773875,
+        3750.7071993062536
+      ],
+      "radii_mm": [
+        1438.6274189119877,
+        1387.2478682365595,
+        1438.6274189119877
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 11/crown2",
+      "center_mm": [
+        -2873.6396593075815,
+        -7523.804413156847,
+        4007.604952683394
+      ],
+      "radii_mm": [
+        1438.6274189119877,
+        1387.2478682365595,
+        1438.6274189119877
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 12/crown0",
+      "center_mm": [
+        -395.4378931683932,
+        -7681.7310573785935,
+        3006.997409154391
+      ],
+      "radii_mm": [
+        1238.175403769455,
+        1193.9548536348316,
+        1238.175403769455
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 12/crown1",
+      "center_mm": [
+        -222.86794239954355,
+        -7563.555138002947,
+        3228.100159827508
+      ],
+      "radii_mm": [
+        1238.175403769455,
+        1193.9548536348316,
+        1238.175403769455
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 12/crown2",
+      "center_mm": [
+        -528.0643779563961,
+        -7572.0512356931595,
+        3449.2029105006245
+      ],
+      "radii_mm": [
+        1238.175403769455,
+        1193.9548536348316,
+        1238.175403769455
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 13/crown0",
+      "center_mm": [
+        2756.032308917874,
+        -6890.796843010286,
+        2787.391229822521
+      ],
+      "radii_mm": [
+        1147.7493299269204,
+        1106.7582824295303,
+        1147.7493299269204
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 13/crown1",
+      "center_mm": [
+        3040.8546436809997,
+        -7395.043138687108,
+        2992.346467309471
+      ],
+      "radii_mm": [
+        1147.7493299269204,
+        1106.7582824295303,
+        1147.7493299269204
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 13/crown2",
+      "center_mm": [
+        2531.0005946004585,
+        -7444.3906943933725,
+        3197.301704796421
+      ],
+      "radii_mm": [
+        1147.7493299269204,
+        1106.7582824295303,
+        1147.7493299269204
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 14/crown0",
+      "center_mm": [
+        5927.109245764121,
+        -5870.83862365558,
+        2006.6897611439786
+      ],
+      "radii_mm": [
+        826.2840192945794,
+        796.7738757483444,
+        826.2840192945794
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 14/crown1",
+      "center_mm": [
+        6161.24416874688,
+        -5916.556651294841,
+        2154.2404788751537
+      ],
+      "radii_mm": [
+        826.2840192945794,
+        796.7738757483444,
+        826.2840192945794
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 14/crown2",
+      "center_mm": [
+        6421.549424232942,
+        -6058.023177373226,
+        2301.7911966063284
+      ],
+      "radii_mm": [
+        826.2840192945794,
+        796.7738757483444,
+        826.2840192945794
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 15/crown0",
+      "center_mm": [
+        6448.148199292597,
+        -1959.826442626481,
+        3938.6573379198667
+      ],
+      "radii_mm": [
+        1621.800080319945,
+        1563.878648879947,
+        1621.800080319945
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 15/crown1",
+      "center_mm": [
+        6795.7872883107375,
+        -2906.7373918995913,
+        4228.264495119857
+      ],
+      "radii_mm": [
+        1621.800080319945,
+        1563.878648879947,
+        1621.800080319945
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 15/crown2",
+      "center_mm": [
+        5921.176286587858,
+        -2271.0010923295877,
+        4517.871652319846
+      ],
+      "radii_mm": [
+        1621.800080319945,
+        1563.878648879947,
+        1621.800080319945
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        4000.0,
+        -6000.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        -4000.0,
+        -3800.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        4000.0,
+        -1600.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        -4000.0,
+        600.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        4000.0,
+        2800.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        -4000.0,
+        5000.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 77,
+    "triangles": 9994,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 24000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

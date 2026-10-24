@@ -1,0 +1,183 @@
+{
+  "id": "MAT-475",
+  "name": "Unidirectional laminate edge",
+  "family": "Aerospace composite constructions",
+  "version": "1.0.0-local",
+  "seed": 9961525,
+  "pattern": "plywood",
+  "base_linear_low": [
+    0.020578007301105736,
+    0.02471593176873703,
+    0.03126560784570966
+  ],
+  "base_linear_high": [
+    0.04547040135425223,
+    0.053005129489342044,
+    0.06493140533099372
+  ],
+  "roughness": 0.4,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.18,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-475",
+    "name": "Unidirectional laminate edge",
+    "family": "Aerospace composite constructions",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Alternating authored ply directions appear in a cut edge.",
+    "use_cases": [
+      "Composite sections"
+    ],
+    "optical_model": "Region- and ply-aware composite appearance with separate reinforcement, resin and surface-process structure.",
+    "controls": [
+      "ply direction",
+      "matrix finish",
+      "process-region masks",
+      "ply order",
+      "cut roughness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep each ply's visual orientation explicit.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-036",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "A generic visual stack is not a certified laminate schedule.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "78fc06c2442f614a9692e1d81b4bbf0b75524fceb65920401708438715719401",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3391a28e9fd294b3d110021b70a0715e4680fc405875c45ca30e6ba8bc0b77c1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "345895a8bb93f56d3840ef17a9637f1a53d020e86d11dc298136e8738eea3947",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "becaa81db81f6b172bc1adceb9fbda4a5a3236cc4fe5734bd011ff14546bc9b9",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c50a2698577902c29cd2e64b286b3dff5a552f821761a9bc7aa08c4e825b65ad",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "d6c4d26c9d5ec6e7ad3c13db2be10ef91b4c71d43efb96b907515c9e58ba410b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "7172ce178731889a80c7d5312e7a2861166a2414cb25409e7f81b59fb5253b15",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "417f2e2c89cd62cba66a1b796375412cf9136c4a9acc1d5cb49fb9afbe14f10c",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

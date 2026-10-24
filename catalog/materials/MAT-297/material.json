@@ -1,0 +1,180 @@
+{
+  "id": "MAT-297",
+  "name": "Graphite-filled packing appearance",
+  "family": "Industrial belts meshes and packing",
+  "version": "1.0.0-local",
+  "seed": 8551943,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.029302469602172223,
+    0.03227512223201591,
+    0.034350537110608974
+  ],
+  "base_linear_high": [
+    0.06135673569350763,
+    0.06676962555680509,
+    0.07054873921633276
+  ],
+  "roughness": 0.736,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-297",
+    "name": "Graphite-filled packing appearance",
+    "family": "Industrial belts meshes and packing",
+    "domains": [
+      "industrial",
+      "automotive",
+      "DIY"
+    ],
+    "description": "Dark composite strands form a braided compressible-looking section.",
+    "use_cases": [
+      "Valve illustrations"
+    ],
+    "optical_model": "Multi-material construction using dielectric bodies, metallic strands and explicit openings as required.",
+    "controls": [
+      "construction pitch",
+      "surface roughness",
+      "orientation",
+      "strand texture",
+      "graphite-like sheen"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve braid architecture across cuts.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Dark sheen must not become a polished-metal response.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "64066cc224fac8302152adab5e734ea17098baf67a155a89ba7283e554a9cff3",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a9a5f1e24e01d922fbb86626c9345b51fff589ba5cd6f01f4a4d82976be70488",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "d2d2f3330716c56b5ef1538822101bed7e85f5c4fcb533c6ae5963e2df4ce271",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "7d81bed4208755769b5ac4348b1b6c710a641a232d169a460b361cd892f1bd8c",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3d518ae80c390fe1dd8c1403d3f147f182c639eacf1c8a977d5b590dbc889f73",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "2ae9d638054eec596262422a1f810c139fb980f99fd56e0d0be3d3377f064abc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "27d24951b05c3e5b52dec7e7f023dd0052114ec3723985923628dbfd73b223e3",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "838015c8d3bce4009db050715016a0a11529798bc863633f3b4962b18521967b",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

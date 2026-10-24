@@ -1,0 +1,95 @@
+{
+  "id": "SELENE-AP-023",
+  "name": "Fluoropolymer sealing ring",
+  "original_specification": {
+    "id": "SELENE-AP-023",
+    "name": "Fluoropolymer sealing ring",
+    "source_catalog_ids": [
+      "MAT-598"
+    ],
+    "family": "Sample seals",
+    "domains": [
+      "SELENE",
+      "laboratory",
+      "industrial"
+    ],
+    "purpose": "A pale dielectric appearance for a separately modeled sealing ring.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-023 Fluoropolymer sealing ring",
+        "color": "#dbddd7",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.49,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Fine finish marks",
+        "Subsurface scattering",
+        "Compression and leakage behavior"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque or weakly scattering polymer; the visual material does not represent sealing mechanics.",
+      "structure": [
+        "Polymer seal surface",
+        "Explicit seal cross-section geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "finish_mark_pitch",
+          "value": 0.18,
+          "unit": "mm",
+          "meaning": "Illustrative surface finish spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "finish_mark_relief",
+          "value": 0.002,
+          "unit": "mm",
+          "meaning": "Render-only finish amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep seal cross-section and compression as engineering geometry",
+        "Use independent body assignment for the ring"
+      ],
+      "capability_requirements": [
+        "CAP-028",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Polymer optical response and scattering if needed"
+      ],
+      "validation_criteria": [
+        "The ring must remain geometrically distinct from its metal cap",
+        "Appearance must not certify leak tightness or vacuum suitability"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#dbddd7",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.49,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-023 Fluoropolymer sealing ring",
+    "bodies": [
+      "SELENE-AP-023"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

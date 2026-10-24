@@ -1,0 +1,184 @@
+{
+  "id": "MAT-505",
+  "name": "Open spacer mesh between blanket layers",
+  "family": "Space thermal blankets and films",
+  "version": "1.0.0-local",
+  "seed": 10199095,
+  "pattern": "foil",
+  "base_linear_low": [
+    0.3250504598375672,
+    0.25548842765979524,
+    0.12138004364740636
+  ],
+  "base_linear_high": [
+    0.5998829268684058,
+    0.4732177339476868,
+    0.22902037798482947
+  ],
+  "roughness": 0.25,
+  "roughness_variation": 0.06,
+  "metallic": 0.85,
+  "height_span_mm": 1.2,
+  "tile_mm": [
+    120,
+    120
+  ],
+  "cycles_u": 10,
+  "cycles_v": 12,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-505",
+    "name": "Open spacer mesh between blanket layers",
+    "family": "Space thermal blankets and films",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "Fine dielectric strands separate adjacent reflective films.",
+    "use_cases": [
+      "MLI section concepts"
+    ],
+    "optical_model": "Thin dielectric and conductor film layers with explicit folds, perforations and stack structure; optical appearance is not thermal qualification.",
+    "controls": [
+      "film-layer order",
+      "crease geometry",
+      "surface roughness",
+      "mesh pitch",
+      "strand size"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep gaps and strand geometry explicit in macro views.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-025",
+      "CAP-026",
+      "CAP-036",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Spacer material must not emit or create atmospheric glow.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "61b78075c9720f0fc6fba69ed35d8674ee4b40dd782a48fb53121bcf8e9fcb97",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "94e9b94ea35fcf438897193cb88606f5518a3b4fcf43e02c4e50fd318e64aa76",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "6331eee93ff966ceb9ef9543324b3625b27736f700b6814cdad77110517ee7ab",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "4c6ba3eb82fdec74753a56169b4173840c436223bc457145909bd3be0c525138",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "65681618ce73f0ed76ad7e6939d52294b4f7598c5bb00fe72bdcf9839d393fe1",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "27d3f485715ef779fdbc8e6a49f6e96c9cc785e7aa038c96b005b5cfb540e345",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "35b343c468d6f79d906a6411e55b01c9025f156eb9b0a0d9ad45c209ae5a6f5f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d5d11343d7d67faf417bb1d12653b8bf38a92dd2260033fcb138116fb518683b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "528f15017eb0b3149283a0e70dd7b8548a42f487dc65184bb5a64e17e909e4c4",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

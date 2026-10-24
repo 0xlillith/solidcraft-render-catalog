@@ -1,0 +1,183 @@
+{
+  "id": "MAT-499",
+  "name": "Embedded lightning-mesh appearance",
+  "family": "Aerospace protective and functional skins",
+  "version": "1.0.0-local",
+  "seed": 10151581,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.2227425293519402,
+    0.21650595010567703,
+    0.18970965608809473
+  ],
+  "base_linear_high": [
+    0.4135908743423388,
+    0.4022347151177999,
+    0.35344146332459037
+  ],
+  "roughness": 0.6719999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.3,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-499",
+    "name": "Embedded lightning-mesh appearance",
+    "family": "Aerospace protective and functional skins",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "A fine conductive mesh lies within or below a resin-rich skin.",
+    "use_cases": [
+      "Composite skin sections"
+    ],
+    "optical_model": "Layered functional-coating appearance; optical colour and gloss do not supply thermal, electrical or flight-qualification data.",
+    "controls": [
+      "coating texture",
+      "coverage masks",
+      "substrate exposure",
+      "mesh pitch",
+      "resin coverage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve mesh depth and physical strand scale.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-039",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Optical mesh appearance is not electrical-protection validation.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "00acab10b94f4bf8017fe3a3f89ad4a5888be7171e6dd76b5d71bc7cf4c8de82",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4dbecbf45888b8769a25fbcc42078d74b0767e473202841863a5ad692f9b35bc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "18e784d91fdee957e2b1cb81010e13e95a821a99415a8d6033a7e698269d59be",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "7d7e5d523c0bac90ff72cbf31ea643226284313fd1a5bbb4a0ff2dc74e0a3791",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "941a4dd48fcbb3ae2e29cb2780efa56b635029722c62dbe8326c5d269e717e22",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4140695508423d6d5bd2f6f6e649d1c6adbbe0b097fc54498e380b0ad2449a09",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fe62f1ab9eb3c9ce2d75691aab8f2db344543ba97a31c6cac93792d0e52b65e4",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "efface601ec8e055b0369ed1dc77c7265d3df91243f9a2b8274bd259d942a260",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

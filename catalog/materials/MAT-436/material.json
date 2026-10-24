@@ -1,0 +1,181 @@
+{
+  "id": "MAT-436",
+  "name": "Wood-filled repair patch",
+  "family": "DIY panels adhesives and joint surfaces",
+  "version": "1.0.0-local",
+  "seed": 9652684,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.2693251124875712,
+    0.19841264143487516,
+    0.11486553749099114
+  ],
+  "base_linear_high": [
+    0.4984128913952789,
+    0.36928869037395173,
+    0.21715814289404356
+  ],
+  "roughness": 0.668,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 13,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-436",
+    "name": "Wood-filled repair patch",
+    "family": "DIY panels adhesives and joint surfaces",
+    "domains": [
+      "DIY",
+      "woodworking",
+      "industrial"
+    ],
+    "description": "A filled defect region has structure distinct from surrounding grain.",
+    "use_cases": [
+      "Furniture repair concepts"
+    ],
+    "optical_model": "Construction-specific dielectric or layered adhesive surface with explicit host interfaces.",
+    "controls": [
+      "coverage",
+      "surface finish",
+      "joint geometry",
+      "filler grain",
+      "patch boundary"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve the original board around the authored repair.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "A repair appearance must not imply restored structural capacity.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "81ab887fe43e6cf0e3fc55c4a709471acfd2742416a4803a1f72287f14a2537f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "0ede56670dc5bc0d07a5863b8ec0c3785f8fa39bd998db2869bd729aa4ae9fa0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "cce2950c94a0dbd2a9b31df2b5abe3829c8cd63d08ad9fde1213a9d25b9378dd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "ca7330f1834c41d257e665bf3700ca97e5b4c27d8f98e160d17aebc1adee485a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d6610eb1ed9489a1a98c55c0b202a8811c214a604d0d789878e392cc27b18fb5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b66706d6d27b46cd41f5335778c3a92e1f77cdb30d8915a3059101f808413180",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "49e226c186c3d63c9c63d1914499ae2fad8ef52e306c2f3bc7af7f464d7f9221",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "040769b8dc6dd42d416ab83288b3d1fd50545929875ef1e15a489306f8afdb47",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

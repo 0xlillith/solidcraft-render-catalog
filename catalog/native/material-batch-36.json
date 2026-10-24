@@ -1,0 +1,1025 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-351 Extruded PLA filament strand"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-351",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-351 Extruded PLA filament strand",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.378,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 8979569,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-351\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-352 Clear PETG feedstock strand"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-352",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-352 Clear PETG feedstock strand [uniform fallback]",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.045,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 8987488,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-352\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-353 Flexible TPU feedstock strand"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-353",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-353 Flexible TPU feedstock strand",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.41400000000000003,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 8995407,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-353\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-354 Short-fibre-filled filament section"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-354",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them.",
+            "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-354 Short-fibre-filled filament section",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.432,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 9003326,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-354\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-355 Wood-particle-filled filament"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-355",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-355 Wood-particle-filled filament",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.45,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 9011245,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-355\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-356 Metal-filled polymer filament"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-356",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-356 Metal-filled polymer filament",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.468,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 9019164,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-356\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-357 Water-soluble support-filament appearance"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-357",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-357 Water-soluble support-filament appearance [uniform fallback]",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.045,
+        "dielectric_ior": 1.333
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 9027083,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-357\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-358 Coextruded dual-region filament"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-358",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-358 Coextruded dual-region filament",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.504,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 9035002,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-358\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-359 Pellet-extrusion feedstock"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-359",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-359 Pellet-extrusion feedstock",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.522,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 9042921,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-359\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  },
+  {
+    "command": "file.new",
+    "params": {
+      "name": "MAT-360 Ceramic-filled filament section"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "Local render resource catalog",
+        "license": "MIT OR Apache-2.0",
+        "description": "Uniform native appearance specimen; richer authored maps/optics stored beside it.",
+        "org.solidcraft.local_catalog": {
+          "id": "MAT-360",
+          "recipe": "material.json",
+          "limitations": [
+            "Illustrative authored RGB material; no measured optical/engineering certification.",
+            "Bump/height is not automatically geometric displacement.",
+            "Full original specification retained; generated realization is not every required physical capability.",
+            "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them.",
+            "This native sample stores the uniform PBR approximation only. Use the portable glTF and external runtime-map request for richer fields.",
+            "The displayed Default material is not a measured density assigned by this catalogue."
+          ],
+          "physical_material_assigned": false
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "body_name": "Specimen",
+      "length": 80,
+      "width": 80,
+      "height": 8,
+      "corner": [
+        -40,
+        -40,
+        -4
+      ]
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Specimen"
+      ],
+      "color": [
+        92,
+        139,
+        159
+      ],
+      "name": "MAT-360 Ceramic-filled filament section",
+      "opacity": 1.0,
+      "pbr": {
+        "metallic": 0.0,
+        "roughness": 0.54,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "Uniform material preview",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.75,
+          "pitch": 0.55,
+          "roll": 0,
+          "distance": 180,
+          "fov": 0.6,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 64,
+            "max_depth": 8,
+            "seed": 9050840,
+            "tone_map": "aces_fitted"
+          }
+        }
+      }
+    }
+  },
+  {
+    "command": "file.save",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-360\\material.solidcraft",
+      "cache": false,
+      "preview": false
+    }
+  }
+]

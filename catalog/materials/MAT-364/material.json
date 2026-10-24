@@ -1,0 +1,181 @@
+{
+  "id": "MAT-364",
+  "name": "Ironed FDM top surface",
+  "family": "FDM surface pathways and post-processing",
+  "version": "1.0.0-local",
+  "seed": 9082516,
+  "pattern": "fdm",
+  "base_linear_low": [
+    0.07837034739820227,
+    0.1757079405448965,
+    0.29088293623708183
+  ],
+  "base_linear_high": [
+    0.15070421466538322,
+    0.3279458021862294,
+    0.5376674361331937
+  ],
+  "roughness": 0.46199999999999997,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.16,
+  "tile_mm": [
+    12.8,
+    12.8
+  ],
+  "cycles_u": 12,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-364",
+    "name": "Ironed FDM top surface",
+    "family": "FDM surface pathways and post-processing",
+    "domains": [
+      "additive manufacturing",
+      "DIY"
+    ],
+    "description": "Fine finishing passes flatten a previous deposited skin.",
+    "use_cases": [
+      "Presentation prints"
+    ],
+    "optical_model": "Host-preserving deposition or finishing modifier with geometry-aware toolpath coordinates.",
+    "controls": [
+      "layer height",
+      "path orientation",
+      "host material",
+      "ironing direction",
+      "residual grooves"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Retain underlying deposition as a separate editable state.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-035",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Ironing should reduce relief without changing the part silhouette arbitrarily.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a2d70a97036079d06f8ed07e80e26d9e665fe7559c31ccf06bc86d6fd8b9e05e",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "7edca65adfa446995e0b5a9706669d99e6ecf6294f52e62a154ca61303315468",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "36e2d19f35d42a0a944ffc8f5cdd14b6d9b0861f11c4aa8f9c927eb35fbccc68",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "af87324cd890a2825a3b3d6bfb87398e012e7a50a2c23ebdb784a9e280bd5a7f",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d0e228c376a7c605ed63c46fa8f72b5cbe56620c2f15877da56069f1da5d839d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "24d55659a8644ee22bbc482190ddf6953a06e99b57e4255b802a56ed53eba155",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f42f83a54e2bbfd4d8e20c77244df7dfff57d90dc2762f184e007a048cf5795b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "128318acf7691157ca8054505162bf9b706c6de6e105aedb069d62b4bb095902",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

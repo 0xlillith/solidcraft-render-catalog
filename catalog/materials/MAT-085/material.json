@@ -1,0 +1,180 @@
+{
+  "id": "MAT-085",
+  "name": "Crackle-glazed tile",
+  "family": "Ceramics and porcelain",
+  "version": "1.0.0-local",
+  "seed": 6873115,
+  "pattern": "ceramic",
+  "base_linear_low": [
+    0.46489408006563326,
+    0.4411111275772305,
+    0.3740880610549595
+  ],
+  "base_linear_high": [
+    0.8545235487762277,
+    0.8112172770809272,
+    0.6891752753538068
+  ],
+  "roughness": 0.22,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.05,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-085",
+    "name": "Crackle-glazed tile",
+    "family": "Ceramics and porcelain",
+    "domains": [
+      "industrial",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "A fine crack network interrupts the surface glaze.",
+    "use_cases": [
+      "Decorative wall finishes"
+    ],
+    "optical_model": "Dielectric ceramic body with optional glaze; metallic coating is a separate conductor layer where specified.",
+    "controls": [
+      "body colour",
+      "porosity",
+      "glaze roughness",
+      "crack density",
+      "crack width"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep crack cells at authored physical size.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-028"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Cracks in glaze must not automatically fracture the whole tile.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "e38662c6653fd0d69e127d214aa9cd8c9f722493d571cfe749f95fa26b13ffa1",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "722b0b3337fa5ac99616e6eb6d8a0c0dc4569de9d694a16415744c896a43aca3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "e5d86f527df0ddf29a7c4b4a9dce4bd821973555e0964a3afd2dc469eaa9ae00",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "fb0f24e0082f220650128f1491ad664b97c457b62adc0ad835eb7d332294f41d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "df7f3fc381d995fa4e4ddfa3e117d6b7cd426aa087410ca2c3c795d999c78479",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "333dde8f110186aea46103741a04a845abfe86e22326bf87c9f12c41e5e27229",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "75cc3bf154b9430cb5352f299e9c24d3f7720c411c58781a8c42e1ae263ea727",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "0ce4fa656894c4cb19e16cf78795c02a59d643be842f8b8ea6627f9d5e92502f",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

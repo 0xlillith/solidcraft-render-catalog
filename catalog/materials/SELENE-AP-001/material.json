@@ -1,0 +1,97 @@
+{
+  "id": "SELENE-AP-001",
+  "name": "Neutral matte enclosure",
+  "original_specification": {
+    "id": "SELENE-AP-001",
+    "name": "Neutral matte enclosure",
+    "source_catalog_ids": [
+      "MAT-031"
+    ],
+    "family": "Painted housings",
+    "domains": [
+      "SELENE",
+      "industrial",
+      "electronics"
+    ],
+    "purpose": "A readable neutral finish for instrument housings and first assembly reviews.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-001 Neutral matte enclosure",
+        "color": "#717882",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.68,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Fine paint texture",
+        "Localized wear",
+        "Layer thickness"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque pigmented dielectric coat with a separate structural substrate.",
+      "structure": [
+        "Pigmented dielectric coat",
+        "Structural substrate without an inferred engineering material"
+      ],
+      "authoring_controls": [
+        {
+          "id": "texture_pitch",
+          "value": 0.65,
+          "unit": "mm",
+          "meaning": "Illustrative fine surface texture spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "texture_relief",
+          "value": 0.008,
+          "unit": "mm",
+          "meaning": "Render detail only; does not alter CAD dimensions.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Map texture in object-local millimetres",
+        "Keep part edges and machining datums geometrically unchanged"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-033",
+        "CAP-035",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Measured spectral reflectance",
+        "Coating optical constants"
+      ],
+      "validation_criteria": [
+        "Fine texture should remain attached while the enclosure moves",
+        "A material change must leave mass and dimensions unchanged"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#717882",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.68,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-001 Neutral matte enclosure",
+    "bodies": [
+      "SELENE-AP-001"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

@@ -1,0 +1,182 @@
+{
+  "id": "MAT-343",
+  "name": "Prismatic cell-can weld appearance",
+  "family": "Battery and thermal-management surfaces",
+  "version": "1.0.0-local",
+  "seed": 8916217,
+  "pattern": "prism",
+  "base_linear_low": [
+    0.11486553749099114,
+    0.12359824631529548,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.21715814289404356,
+    0.23305949329053802,
+    0.2496445698631376
+  ],
+  "roughness": 0.324,
+  "roughness_variation": 0.06,
+  "metallic": 0.6,
+  "height_span_mm": 0.1,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-343",
+    "name": "Prismatic cell-can weld appearance",
+    "family": "Battery and thermal-management surfaces",
+    "domains": [
+      "electronics",
+      "automotive",
+      "aerospace",
+      "space"
+    ],
+    "description": "Formed metal shell includes localized joining marks and terminals.",
+    "use_cases": [
+      "Battery-module illustrations"
+    ],
+    "optical_model": "Visual construction recipes for conductive shells, films, porous layers and thermal-interface materials; no electrical or thermal values inferred.",
+    "controls": [
+      "surface roughness",
+      "layer masks",
+      "section orientation",
+      "weld texture",
+      "shell finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep joining marks attached to actual boundaries.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Visual welds are not proof of integrity or cell specification.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "96d5e0ed26f67eabd6031a555155ff413bf568f19f35f0e7ede766e4e232c80c",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3ba1fd6eea595bdef6c0823b07540f9d5c181f829f7f4aaa0c808135ee20daa7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "97bb8f74336f15230fd0ffb5692c25a007194906defcb8ae1f62b0df837f62ab",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "04fac23fd3da0de500dc84d56e66f0f2c9089a024ef5eb42be7d1b5aa6d8501c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e7cff285538a9388058c9c3f3bc8158e585ef37e31bed0f36b459b3d503e0099",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "7205a6ae5ba4e2340afdbe7a1b69e0efa9b90412d06d47ed0f4a63c5c51e5c98",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1eb2e454d1eeae07c14b525f513faff63e2a5ca74c2c287db74af266464ab479",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "ea5b6dd725ced6da8382ddce5a8d8d5d1f6f8203d7a9961a7e3e03ceaa449bfc",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f9b15ea6f4335544b5bad92c3f86cf88ec6bfee28c6c240dbf271d4c3c24e015",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

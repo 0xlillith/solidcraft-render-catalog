@@ -1,0 +1,182 @@
+{
+  "id": "MAT-435",
+  "name": "Acrylic filler sanded joint",
+  "family": "DIY panels adhesives and joint surfaces",
+  "version": "1.0.0-local",
+  "seed": 9644765,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.2693251124875712,
+    0.19841264143487516,
+    0.11486553749099114
+  ],
+  "base_linear_high": [
+    0.4984128913952789,
+    0.36928869037395173,
+    0.21715814289404356
+  ],
+  "roughness": 0.65,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.49,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-435",
+    "name": "Acrylic filler sanded joint",
+    "family": "DIY panels adhesives and joint surfaces",
+    "domains": [
+      "DIY",
+      "woodworking",
+      "industrial"
+    ],
+    "description": "Matte filled regions blend into prepared panel surfaces.",
+    "use_cases": [
+      "Interior DIY"
+    ],
+    "optical_model": "Construction-specific dielectric or layered adhesive surface with explicit host interfaces.",
+    "controls": [
+      "coverage",
+      "surface finish",
+      "joint geometry",
+      "fill boundary",
+      "sanding texture"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep the filler mask independent of the host substrate.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Filling must not erase CAD gaps without explicit geometry changes.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "5f58fd7db0b028b2d2f5e73edc3daa03fbf163e245206d6b32ff6440878e7ef3",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a6c433ce270af1fd2dfbe4369bbb64e7e057dd928267f789f2c272a4669e66a8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "2a38e4e98133944bd4055a6d75026c0a182102e539601081ae068638d4b2cd94",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "41d18d733a1e32fe8e247a96598e394d7c83bb0ece3c1bd70ce909694c393d16",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "9e8d72ff96684ecfec2881d2c14d13a5d84467fd4acc2e23f40f6c9f6b43ee85",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "8d2b37a9fa30a8886e1e0b2f3e91de42a362dbd06d2b61bd515a768fa9e767fa",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f304e1f9d692ac8922507ae1748b1c7ff475d4ea106c0e8196d4f4935202c426",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "5c51a975918a56a7aa3baa5c30624f45a8aefff41eb4edf5b567884825796d4f",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

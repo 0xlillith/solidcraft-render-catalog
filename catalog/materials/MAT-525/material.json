@@ -1,0 +1,181 @@
+{
+  "id": "MAT-525",
+  "name": "Polished metal-bellows surface",
+  "family": "Space harness and mechanism interfaces",
+  "version": "1.0.0-local",
+  "seed": 10357475,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.25890772063732287,
+    0.18970965608809473,
+    0.05653206173457971
+  ],
+  "base_linear_high": [
+    0.4794439092201998,
+    0.35344146332459037,
+    0.11093897808386155
+  ],
+  "roughness": 0.055,
+  "roughness_variation": 0.008,
+  "metallic": 0.3,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-525",
+    "name": "Polished metal-bellows surface",
+    "family": "Space harness and mechanism interfaces",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "Thin formed folds alternate bright and shaded metallic regions.",
+    "use_cases": [
+      "Space mechanism concepts"
+    ],
+    "optical_model": "Explicit insulating, conductive and joining regions for mechanism illustrations; no vacuum, contamination or flight qualification is asserted.",
+    "controls": [
+      "region masks",
+      "construction orientation",
+      "surface roughness",
+      "forming grain",
+      "polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use real bellows geometry rather than a ribbed colour pattern.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The material does not establish fatigue life or pressure rating.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "7f68736c9152d7ba6ab8317e01c0e2f2a97273857996d633f292b7a114ae4872",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "f9e1659760935ba8446030f8664c9eb4a456196872db65a3848fbc4939ce9004",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "b54efd718565c37a377080d3c6a6dc4366a8af45b5a2eff706401b461b15b2f9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "cb16feea347231620c8b1203362bf05c14c620ed03d802623c73ce9b4d0578eb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0ec5d2acb859ed6454037990941ab7b9a6ca23cf4fedab57dc9cdca658e779e3",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "63c9596efa5d24860642c2d0dbda1f6948602298dde8e5935844a9f428674a78",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "0a963e1495a18c62953ae9fb404ab2bd754eb2d358a0d97346798569e862c099",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "87d34f9e4e0b0961201888b4156fd5224a3fdf7dbd77874d01b82f0c537e9a90",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e0beabf11d6c7110b2132fb4e996dc4ec75d74c8e6386c263e9c5fdc8fd64edd",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

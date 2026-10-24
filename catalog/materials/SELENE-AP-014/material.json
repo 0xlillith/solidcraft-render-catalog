@@ -1,0 +1,99 @@
+{
+  "id": "SELENE-AP-014",
+  "name": "Gold-finished contact pad",
+  "original_specification": {
+    "id": "SELENE-AP-014",
+    "name": "Gold-finished contact pad",
+    "source_catalog_ids": [
+      "MAT-163"
+    ],
+    "family": "Electronics contacts",
+    "domains": [
+      "electronics",
+      "aerospace",
+      "LED lighting"
+    ],
+    "purpose": "An original gold-like conductor preview for electrical contact surfaces.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-014 Gold-finished contact pad",
+        "color": "#bf9c49",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.21,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Plating thickness",
+        "Substrate exposure",
+        "Directional contact wear"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Conductive plated surface with separate underlying substrate and wear-through regions.",
+      "structure": [
+        "Conductor plating",
+        "Independent substrate",
+        "Optional exposed-substrate wear mask"
+      ],
+      "authoring_controls": [
+        {
+          "id": "contact_polish_extent",
+          "value": 0.8,
+          "unit": "mm",
+          "meaning": "Illustrative contact-mark width.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "scratch_pitch",
+          "value": 0.12,
+          "unit": "mm",
+          "meaning": "Authored sparse fine-scratch spacing.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Constrain plating to intended pads or pins",
+        "Use geometry or masks for exposed substrate"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-018",
+        "CAP-020",
+        "CAP-033",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Plating complex optical constants",
+        "Actual layer thickness if optical coupling matters"
+      ],
+      "validation_criteria": [
+        "A worn patch should reveal the chosen substrate, not merely darken the plating",
+        "Color must not certify plating composition or thickness"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#bf9c49",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.21,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-014 Gold-finished contact pad",
+    "bodies": [
+      "SELENE-AP-014"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

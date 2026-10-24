@@ -1,0 +1,105 @@
+{
+  "id": "SELENE-AP-007",
+  "name": "Linear-brushed stainless housing",
+  "original_specification": {
+    "id": "SELENE-AP-007",
+    "name": "Linear-brushed stainless housing",
+    "source_catalog_ids": [
+      "MAT-002"
+    ],
+    "family": "Brushed metals",
+    "domains": [
+      "industrial",
+      "automotive",
+      "electronics"
+    ],
+    "purpose": "A stainless-like conductor preview for industrial covers and product panels.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-007 Linear-brushed stainless housing",
+        "color": "#b8bdc2",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.34,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Anisotropic highlights",
+        "Brushed lines",
+        "Layered passivation response"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Conductor with a coherent brushed tangent field; any passive surface layer is separate.",
+      "structure": [
+        "Fine surface layer if required",
+        "Brushed conductor substrate"
+      ],
+      "authoring_controls": [
+        {
+          "id": "brush_line_pitch",
+          "value": 0.1,
+          "unit": "mm",
+          "meaning": "Illustrative brush-line spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "brush_line_relief",
+          "value": 0.002,
+          "unit": "mm",
+          "meaning": "Small render-only brush relief.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "brush_angle",
+          "value": 0.0,
+          "unit": "rad",
+          "meaning": "Direction in the part local texture frame.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use a continuous local tangent field",
+        "Define deliberate seam direction at panel boundaries"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-020",
+        "CAP-033",
+        "CAP-035",
+        "CAP-040"
+      ],
+      "unknown_optical_inputs": [
+        "Complex substrate optical constants",
+        "Measured directional finish response"
+      ],
+      "validation_criteria": [
+        "Rotating the brush direction should rotate the extended highlight",
+        "Cross-part seams must follow manufacturing intent"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#b8bdc2",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.34,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-007 Linear-brushed stainless housing",
+    "bodies": [
+      "SELENE-AP-007"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

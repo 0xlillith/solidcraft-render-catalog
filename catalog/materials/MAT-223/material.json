@@ -1,0 +1,180 @@
+{
+  "id": "MAT-223",
+  "name": "Drilled rotor surface finish",
+  "family": "Automotive brakes and contact surfaces",
+  "version": "1.0.0-local",
+  "seed": 7965937,
+  "pattern": "turned",
+  "base_linear_low": [
+    0.1127404981270928,
+    0.12138004364740636,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.21328866823142273,
+    0.22902037798482947,
+    0.2496445698631376
+  ],
+  "roughness": 0.34400000000000003,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.055,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-223",
+    "name": "Drilled rotor surface finish",
+    "family": "Automotive brakes and contact surfaces",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Machined track meets clean bores and bore-edge treatments.",
+    "use_cases": [
+      "Performance-brake concepts"
+    ],
+    "optical_model": "Separate conductor, ceramic or friction-composite surfaces with localized use-state overlays.",
+    "controls": [
+      "contact-region masks",
+      "roughness",
+      "process direction",
+      "bore-edge finish",
+      "track polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Holes and chamfers remain CAD geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not replace real through-holes with dark circular decals.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "5919342715861cde1164bc5dd9b1bb983e3d5bb76f866ea357d26e2aa4cdcc81",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "432a60d8b3faac593f8fa5219ea9dec0f0d5f57c623da262eaeb063056bc9766",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "b0ba9d0d9489712b091b752753a5738ecc66d5d1b1a74ca571f3d040975080b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "27862a28f1e12ee83c75d328266d317158b295aa267bf905fadde794900c2952",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "fde0432509f7028427cde941699646784acab93a198f0a2f52e8ae93e7480cee",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "380e2d2973a1672e188033c13876abdaa7d54277461b8f48246f7614cec405c3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2acba0ab0c95abc65dd482636a15fc8f1f1143960f54fed7c56dd925f8111749",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "28fcb447613b4dd3f6cc232bfe1c9a55327af16a2fc25c818514d474dffca56b",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

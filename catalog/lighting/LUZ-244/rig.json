@@ -1,0 +1,141 @@
+{
+  "id": "LUZ-244",
+  "name": "Reflector-cup LED study",
+  "family": "25 LED optics and luminaires",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-244",
+    "name": "Reflector-cup LED study",
+    "family": "25 LED optics and luminaires",
+    "domains": [
+      "led_optics",
+      "lighting_design",
+      "electronics"
+    ],
+    "description": "A proposed lighting arrangement for lED reflectors and optical cups.",
+    "use_cases": [
+      "LED reflectors and optical cups"
+    ],
+    "sources": "Finite emitter at cup focus region",
+    "geometry": "Cup remains a passive surface and physically occludes source",
+    "contribution_policy": "Single emitter contribution with no exit proxy light",
+    "controls": [
+      "Emitter position",
+      "emitter extent",
+      "source contribution"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-018",
+      "CAP-025",
+      "CAP-029"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Beam forms through real reflector paths"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1106492,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          700.0,
+          0.0
+        ],
+        "u": [
+          400.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          20.0
+        ],
+        "radiance": [
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "center": [
+          -1400.0,
+          -1400.0,
+          1000.0
+        ],
+        "u": [
+          -353.5533905932737,
+          353.5533905932737,
+          0.0
+        ],
+        "v": [
+          159.39417826583457,
+          159.39417826583457,
+          446.30369914433675
+        ],
+        "radiance": [
+          0.75,
+          0.75,
+          0.75
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [
+    "Fixture reference position is illustrative; bind the aperture and calibrate real output before optical/photometric use."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

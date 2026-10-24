@@ -1,0 +1,182 @@
+{
+  "id": "MAT-027",
+  "name": "Satin nickel",
+  "family": "Copper and other metals",
+  "version": "1.0.0-local",
+  "seed": 6413813,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.5,
+    0.49,
+    0.45
+  ],
+  "base_linear_high": [
+    0.67,
+    0.66,
+    0.61
+  ],
+  "roughness": 0.35,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 48,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-027",
+    "name": "Satin nickel",
+    "family": "Copper and other metals",
+    "domains": [
+      "industrial",
+      "electronics",
+      "CAD product"
+    ],
+    "description": "Fine directional texture produces soft metallic reflection.",
+    "use_cases": [
+      "Controls",
+      "accessories"
+    ],
+    "optical_model": "Conductor microfacet response with independent absorbing patina and clearcoat layers when specified.",
+    "controls": [
+      "conductor response",
+      "surface roughness",
+      "layer coverage",
+      "satin grain",
+      "handling marks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep microtexture at fixed physical size.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Low",
+    "validation": [
+      "Differentiate from brushed steel using controlled reference comparison.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-011",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "cceac58550597772e0d7225562b1aac3ee67901ca2a776ecc8efbf32383fccf1",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "32941e6a14da9dfd22baf21a411330fdc26b5dbb04570a4ddda9c2e7d316b587",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "ceae24a85c25946884a9f56a3d9e087c29f3b20481e19ff99a4c5b779ea5561f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "132970cbda83941bafc89a00b47907f20f404f1b7a067c9bf1496a6f7b65996f",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c0dc7636c92e18b42949c4dff850185dc0b2f3919529be77c5b90b1b8e1f4f0c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "38debafce974386b08f73a4772d12b51403398b4c636a059b7c2111c65f9a4d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "5a1fe7cc2ffbd46ad5bdfcbcaca13d05479ac2f782ad644f91e8e8d0ab7193c2",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "dc94f7c16792b039e6f43c82692fc99abcc483ab09c4cd21adfdc51e8b85dec0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

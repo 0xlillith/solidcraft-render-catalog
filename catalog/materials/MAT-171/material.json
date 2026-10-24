@@ -1,0 +1,182 @@
+{
+  "id": "MAT-171",
+  "name": "Satin PLA FDM print",
+  "family": "Additive-manufacturing foundations",
+  "version": "1.0.0-local",
+  "seed": 7554149,
+  "pattern": "fdm",
+  "base_linear_low": [
+    0.66,
+    0.11,
+    0.008
+  ],
+  "base_linear_high": [
+    0.76,
+    0.17,
+    0.015
+  ],
+  "roughness": 0.45,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.1,
+  "tile_mm": [
+    10,
+    12.8
+  ],
+  "cycles_u": 8,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-171",
+    "name": "Satin PLA FDM print",
+    "family": "Additive-manufacturing foundations",
+    "domains": [
+      "additive manufacturing",
+      "industrial",
+      "DIY"
+    ],
+    "description": "Regular deposited layers retain an optional visible seam.",
+    "use_cases": [
+      "Prototypes",
+      "printed parts"
+    ],
+    "optical_model": "Process-specific polymer or metal surface linked to build direction and optional post-processing layers.",
+    "controls": [
+      "build orientation",
+      "layer height",
+      "seam placement",
+      "extrusion width",
+      "seam amount"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use authored layer height and actual build direction.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Layers must follow deposition order rather than global planar stripes.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-040",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "5c7ba3fd964f59e7e876f3cc0254cdf933a84da85339d2a47576bede0a7b2272",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "7ee0093f63535628d2283802cfb39d0a5ae4912bb9386cf2402885a20ae90a0f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "92367bea8930f5d28385a5de11a12f24a2f2b22503e990887f9b3a0517304303",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "8185406dc09e283fd968e58a3b01890cc798ca7eb06e71d8f21f54a406ba7189",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "0734f7093e3b8266ec1165ff0a309daf4ce1484217f113ce1b13dc2470a0defd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b8cc97f336c0e87f2380b2d44bca264ddffb97f592cf2cb22abb692a4067d749",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "5a3ff5b4691e72b661bf893c9f5bce1007ed4ece23d59d19520404c296873b11",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "d6a9c449ce325fcbe152d67ba9046cf11b92dcc7360d43717a59c29656afa918",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

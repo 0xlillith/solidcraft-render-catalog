@@ -1,0 +1,2657 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "Physical references - choose identity and conditions"
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECARAN ABS grey - stock-shape reference",
+      "density_g_cm3": 1.04,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECARAN ABS grey - stock-shape reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-abs-stock",
+            "title": "Ensinger TECARAN ABS grey",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en/shapes/tecaran-abs-grey"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1040.0
+            },
+            "source_id": "ensinger-abs-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 32000000.0
+            },
+            "source_id": "ensinger-abs-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 32000000.0
+            },
+            "source_id": "ensinger-abs-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF AD-96 alumina - CoorsTek reference",
+      "density_g_cm3": 3.72,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "AD-96 alumina - CoorsTek reference",
+        "family": "other",
+        "sources": [
+          {
+            "id": "coorstek-ad96",
+            "title": "CoorsTek alumina AD-96",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www2.coorstek.com/en/materials/alumina/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "compressive_strength",
+              "pa": 2068000000.0
+            },
+            "source_id": "coorstek-ad96",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Dense AD-96 technical ceramic; supplier typical properties, not a fired-porcelain or fracture-safe design value. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 3720.0
+            },
+            "source_id": "coorstek-ad96",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Dense AD-96 technical ceramic; supplier typical properties, not a fired-porcelain or fracture-safe design value. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "elasticity",
+              "model": {
+                "symmetry": "isotropic",
+                "young_modulus_pa": 303000000000.0,
+                "poisson_ratio": 0.21
+              }
+            },
+            "source_id": "coorstek-ad96",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Dense AD-96 technical ceramic; supplier typical properties, not a fired-porcelain or fracture-safe design value. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior."
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 880.0
+            },
+            "source_id": "coorstek-ad96",
+            "conditions": {
+              "temperature_k": 373.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Dense AD-96 technical ceramic; supplier typical properties, not a fired-porcelain or fracture-safe design value. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                24.7,
+                24.7,
+                24.7
+              ],
+              "axes": "material123"
+            },
+            "source_id": "coorstek-ad96",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Dense AD-96 technical ceramic; supplier typical properties, not a fired-porcelain or fracture-safe design value. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                8.2e-06,
+                8.2e-06,
+                8.2e-06
+              ],
+              "axes": "material123"
+            },
+            "source_id": "coorstek-ad96",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Dense AD-96 technical ceramic; supplier typical properties, not a fired-porcelain or fracture-safe design value. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[298.15,1273.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF 6061-T6 aluminium sheet - supplier reference",
+      "density_g_cm3": 2.7,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "6061-T6 aluminium sheet - supplier reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "alfa-6061",
+            "title": "Alfa Chemistry aluminium alloy 6061",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://alloys.alfa-chemistry.com/aluminum-alloy-6061.html"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 2700.0
+            },
+            "source_id": "alfa-6061",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "6061-T6 sheet, 0.020-0.500 in; physical constants are general supplier 6061 values. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "elasticity",
+              "model": {
+                "symmetry": "isotropic",
+                "young_modulus_pa": 70000000000.0,
+                "poisson_ratio": 0.33
+              }
+            },
+            "source_id": "alfa-6061",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "6061-T6 sheet, 0.020-0.500 in; physical constants are general supplier 6061 values. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior."
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 289579806.313
+            },
+            "source_id": "alfa-6061",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "6061-T6 sheet, 0.020-0.500 in; physical constants are general supplier 6061 values. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                166.0,
+                166.0,
+                166.0
+              ],
+              "axes": "material123"
+            },
+            "source_id": "alfa-6061",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "6061-T6 sheet, 0.020-0.500 in; physical constants are general supplier 6061 values. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                2.34e-05,
+                2.34e-05,
+                2.34e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "alfa-6061",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "6061-T6 sheet, 0.020-0.500 in; physical constants are general supplier 6061 values. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 241316505.261
+            },
+            "source_id": "alfa-6061",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "6061-T6 sheet, 0.020-0.500 in; physical constants are general supplier 6061 values. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF MLP-300-AZ primer - layer reference",
+      "density_g_cm3": 1.0,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "MLP-300-AZ primer - layer reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "az-primer",
+            "title": "AZ Technology MLP-300-AZ primer",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.aztechnology.com/product/29/mlp-300-az"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1000.0
+            },
+            "source_id": "az-primer",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Cured primer after 7 days; not a whole spacecraft material. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF BOROFLOAT 33 borosilicate - SCHOTT reference",
+      "density_g_cm3": 2.23,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "BOROFLOAT 33 borosilicate - SCHOTT reference",
+        "family": "glass",
+        "sources": [
+          {
+            "id": "schott-borofloat",
+            "title": "SCHOTT BOROFLOAT 33 technical details",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.schott.com/en-us/products/borofloat-p1000314/technical-details"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 2230.0
+            },
+            "source_id": "schott-borofloat",
+            "conditions": {
+              "temperature_k": 298.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Annealed borosilicate float glass; not proof-tested pressure glass or a generic optical-lens grade. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "elasticity",
+              "model": {
+                "symmetry": "isotropic",
+                "young_modulus_pa": 64000000000.0,
+                "poisson_ratio": 0.2
+              }
+            },
+            "source_id": "schott-borofloat",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Annealed borosilicate float glass; not proof-tested pressure glass or a generic optical-lens grade. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"DIN 13316\"} | Isotropic reference model; not validated part behavior."
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 830.0
+            },
+            "source_id": "schott-borofloat",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Annealed borosilicate float glass; not proof-tested pressure glass or a generic optical-lens grade. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,373.15],\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                1.2,
+                1.2,
+                1.2
+              ],
+              "axes": "material123"
+            },
+            "source_id": "schott-borofloat",
+            "conditions": {
+              "temperature_k": 363.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Annealed borosilicate float glass; not proof-tested pressure glass or a generic optical-lens grade. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF C11000 ETP copper - CDA reference",
+      "density_g_cm3": 8.91292931669,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "C11000 ETP copper - CDA reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "cda-c11000",
+            "title": "Copper Development Association C11000",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://alloys.copper.org/alloy/C11000"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 8912.92931669
+            },
+            "source_id": "cda-c11000",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "elasticity",
+              "model": {
+                "symmetry": "isotropic",
+                "young_modulus_pa": 117210873984.0,
+                "poisson_ratio": 0.328125
+              }
+            },
+            "source_id": "cda-c11000",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior. Poisson ratio derived from same-source E and G, not independently measured."
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 385.1856
+            },
+            "source_id": "cda-c11000",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                391.1460346,
+                391.1460346,
+                391.1460346
+              ],
+              "axes": "material123"
+            },
+            "source_id": "cda-c11000",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                1.692e-05,
+                1.692e-05,
+                1.692e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "cda-c11000",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,373.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF C36000 Free-cutting brass - CDA reference",
+      "density_g_cm3": 8.49773074603,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "C36000 Free-cutting brass - CDA reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "cda-c36000",
+            "title": "Copper Development Association C36000",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://alloys.copper.org/alloy/C36000"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 8497.73074603
+            },
+            "source_id": "cda-c36000",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "elasticity",
+              "model": {
+                "symmetry": "isotropic",
+                "young_modulus_pa": 96526602104.4,
+                "poisson_ratio": 0.320754716981
+              }
+            },
+            "source_id": "cda-c36000",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior. Poisson ratio derived from same-source E and G, not independently measured."
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 376.812
+            },
+            "source_id": "cda-c36000",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                115.959222647,
+                115.959222647,
+                115.959222647
+              ],
+              "axes": "material123"
+            },
+            "source_id": "cda-c36000",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                2.052e-05,
+                2.052e-05,
+                2.052e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "cda-c36000",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,573.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF C93200 Bearing bronze - CDA reference",
+      "density_g_cm3": 8.91292931669,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "C93200 Bearing bronze - CDA reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "cda-c93200",
+            "title": "Copper Development Association C93200",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://alloys.copper.org/alloy/C93200"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 8912.92931669
+            },
+            "source_id": "cda-c93200",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 376.812
+            },
+            "source_id": "cda-c93200",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                58.1526847901,
+                58.1526847901,
+                58.1526847901
+              ],
+              "axes": "material123"
+            },
+            "source_id": "cda-c93200",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                1.8e-05,
+                1.8e-05,
+                1.8e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "cda-c93200",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,373.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF HexTow AS4 12K - fibre constituent only",
+      "density_g_cm3": 1.79,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "HexTow AS4 12K - fibre constituent only",
+        "family": "other",
+        "sources": [
+          {
+            "id": "hexcel-as4",
+            "title": "Hexcel HexTow AS4 continuous fibre and laminate data",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.hexcel.com/Products/Carbon-Fiber/HexTow-Continuous-Carbon-Fiber/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1790.0
+            },
+            "source_id": "hexcel-as4",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Continuous fibre constituent, not a cured woven-carbon part or a homogenized laminate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF MDFACADE decorative cork - specific board reference",
+      "density_g_cm3": 0.14,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "MDFACADE decorative cork - specific board reference",
+        "family": "other",
+        "sources": [
+          {
+            "id": "amorim-md-facade",
+            "title": "Amorim MDFACADE decorative cork board",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.amorimcorkinsulation.com/en/applications/Decorative-board-Cork-at-sight/162/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 140.0
+            },
+            "source_id": "amorim-md-facade",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Expanded agglomerated cork board; not a universal cork/binder recipe and not MDF wood-fibre board despite the product name. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Reported uncertainty retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF EpoxAcast 690 cured epoxy - reference",
+      "density_g_cm3": 1.1,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "EpoxAcast 690 cured epoxy - reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "smoothon-ep690",
+            "title": "Smooth-On EpoxAcast 690",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.smooth-on.com/products/epoxacast-690/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "compressive_strength",
+              "pa": 66258617.5873
+            },
+            "source_id": "smoothon-ep690",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Casting epoxy, 100A:30B by mass; actual cure schedule and test conditioning must match the supplier reference. Not filled IC mould compound. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1100.0
+            },
+            "source_id": "smoothon-ep690",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Casting epoxy, 100A:30B by mass; actual cure schedule and test conditioning must match the supplier reference. Not filled IC mould compound. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 45712240.8537
+            },
+            "source_id": "smoothon-ep690",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Casting epoxy, 100A:30B by mass; actual cure schedule and test conditioning must match the supplier reference. Not filled IC mould compound. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Fused silica - Crystran reference",
+      "density_g_cm3": 2.203,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Fused silica - Crystran reference",
+        "family": "glass",
+        "sources": [
+          {
+            "id": "crystran-silica",
+            "title": "Crystran fused silica SiO2",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.crystran.com/optical-materials/fused-silica-sio2/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 2203.0
+            },
+            "source_id": "crystran-silica",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "elasticity",
+              "model": {
+                "symmetry": "isotropic",
+                "young_modulus_pa": 73100000000.0,
+                "poisson_ratio": 0.17
+              }
+            },
+            "source_id": "crystran-silica",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior."
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 703.0
+            },
+            "source_id": "crystran-silica",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                1.38,
+                1.38,
+                1.38
+              ],
+              "axes": "material123"
+            },
+            "source_id": "crystran-silica",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                5.5e-07,
+                5.5e-07,
+                5.5e-07
+              ],
+              "axes": "material123"
+            },
+            "source_id": "crystran-silica",
+            "conditions": {
+              "temperature_k": 300.0,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECAFINE PE 300 black - stock reference",
+      "density_g_cm3": 0.96,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECAFINE PE 300 black - stock reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-hdpe",
+            "title": "Ensinger TECAFINE PE 300 black",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en-gb/shapes/polyethylene-tecafine-pe-300-black"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 960.0
+            },
+            "source_id": "ensinger-hdpe",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; not foam, film or a moulded/printed part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 23000000.0
+            },
+            "source_id": "ensinger-hdpe",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; not foam, film or a moulded/printed part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-1\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Kevlar 49 fibre - Goodfellow constituent reference",
+      "density_g_cm3": 1.44,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Kevlar 49 fibre - Goodfellow constituent reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "goodfellow-kevlar49",
+            "title": "Goodfellow Kevlar 49 polyaramid fibre",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.goodfellow.com/global/kevlar-49-polyaramid-fibre-group"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1440.0
+            },
+            "source_id": "goodfellow-kevlar49",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplied Kevlar 49 yarn/fibre. Axial measurements are constituent data, not effective properties of fabric or cured composite. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 1400.0
+            },
+            "source_id": "goodfellow-kevlar49",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplied Kevlar 49 yarn/fibre. Axial measurements are constituent data, not effective properties of fabric or cured composite. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF LHS-1 highlands simulant - terrestrial laboratory analogue",
+      "density_g_cm3": 1.3,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "LHS-1 highlands simulant - terrestrial laboratory analogue",
+        "family": "other",
+        "sources": [
+          {
+            "id": "exolith-lhs-1",
+            "title": "Exolith Lab LHS-1 highlands simulant",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://exolithsimulants.com/collections/regolith-simulants/products/lhs-1-lunar-highlands-simulant"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1300.0
+            },
+            "source_id": "exolith-lhs-1",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Terrestrial manufactured simulant; loose packing and test method matter. NOT measured lunar soil, vacuum calibration or a mare/highland universal constant. | typical reference; source review required; not design allowables. | {\"density_basis\":\"supplier_bulk_packing\",\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF LHS-1D highlands dust simulant - terrestrial laboratory analogue",
+      "density_g_cm3": 0.7,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "LHS-1D highlands dust simulant - terrestrial laboratory analogue",
+        "family": "other",
+        "sources": [
+          {
+            "id": "exolith-lhs-1d",
+            "title": "Exolith Lab LHS-1D highlands dust simulant",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://exolithsimulants.com/collections/regolith-simulants/products/lhs-1d-lunar-highland-dust-simulant"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 700.0
+            },
+            "source_id": "exolith-lhs-1d",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Terrestrial manufactured simulant; loose packing and test method matter. NOT measured lunar soil, vacuum calibration or a mare/highland universal constant. | typical reference; source review required; not design allowables. | {\"density_basis\":\"supplier_bulk_packing\",\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF LMS-1 mare simulant - terrestrial laboratory analogue",
+      "density_g_cm3": 1.56,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "LMS-1 mare simulant - terrestrial laboratory analogue",
+        "family": "other",
+        "sources": [
+          {
+            "id": "exolith-lms-1",
+            "title": "Exolith Lab LMS-1 mare simulant",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://exolithsimulants.com/collections/regolith-simulants/products/lms-1-lunar-mare-simulant"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1560.0
+            },
+            "source_id": "exolith-lms-1",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Terrestrial manufactured simulant; loose packing and test method matter. NOT measured lunar soil, vacuum calibration or a mare/highland universal constant. | typical reference; source review required; not design allowables. | {\"density_basis\":\"supplier_bulk_packing\",\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF LMS-1D mare dust simulant - terrestrial laboratory analogue",
+      "density_g_cm3": 0.7,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "LMS-1D mare dust simulant - terrestrial laboratory analogue",
+        "family": "other",
+        "sources": [
+          {
+            "id": "exolith-lms-1d",
+            "title": "Exolith Lab LMS-1D mare dust simulant",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://exolithsimulants.com/collections/regolith-simulants/products/lms-1d"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 700.0
+            },
+            "source_id": "exolith-lms-1d",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Terrestrial manufactured simulant; loose packing and test method matter. NOT measured lunar soil, vacuum calibration or a mare/highland universal constant. | typical reference; source review required; not design allowables. | {\"density_basis\":\"supplier_bulk_packing\",\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Nickel 200 - strip reference",
+      "density_g_cm3": 8.9,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Nickel 200 - strip reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "elgiloy-ni200",
+            "title": "Elgiloy Nickel 200 and 201 strip",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.elgiloy.com/strip-nickel-200-and-201-alloys"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 8900.0
+            },
+            "source_id": "elgiloy-ni200",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Nickel 200 strip; anneal and strength grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                70.2,
+                70.2,
+                70.2
+              ],
+              "axes": "material123"
+            },
+            "source_id": "elgiloy-ni200",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Nickel 200 strip; anneal and strength grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                1.52e-05,
+                1.52e-05,
+                1.52e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "elgiloy-ni200",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Nickel 200 strip; anneal and strength grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,773.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF EOS PA 2200 - laser-sintered part reference",
+      "density_g_cm3": 0.93,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "EOS PA 2200 - laser-sintered part reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "eos-pa2200",
+            "title": "EOS PA 2200 PA12 reference",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.eos.info/polymer-solutions/polymer-materials/biocompatible"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 930.0
+            },
+            "source_id": "eos-pa2200",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Manufacturer process-specific PA12 reference; machine/process set, moisture, build direction and porosity must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 48000000.0
+            },
+            "source_id": "eos-pa2200",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Manufacturer process-specific PA12 reference; machine/process set, moisture, build direction and porosity must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECAMID 6 natural PA6 - stock-shape reference",
+      "density_g_cm3": 1.14,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECAMID 6 natural PA6 - stock-shape reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-pa6-stock",
+            "title": "Ensinger TECAMID 6 natural PA6",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en/shapes/pa6-tecamid-6-natural"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1140.0
+            },
+            "source_id": "ensinger-pa6-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 1600.0
+            },
+            "source_id": "ensinger-pa6-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"ISO 22007-4:2008\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 79000000.0
+            },
+            "source_id": "ensinger-pa6-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 78000000.0
+            },
+            "source_id": "ensinger-pa6-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECANAT natural PC - stock-shape reference",
+      "density_g_cm3": 1.19,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECANAT natural PC - stock-shape reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-pc",
+            "title": "Ensinger TECANAT natural PC",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en-gb/shapes/polycarbonate-tecanat-natural"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1190.0
+            },
+            "source_id": "ensinger-pc",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 1300.0
+            },
+            "source_id": "ensinger-pc",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"ISO 22007-4:2008\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 69000000.0
+            },
+            "source_id": "ensinger-pc",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 69000000.0
+            },
+            "source_id": "ensinger-pc",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECAPEEK natural PEEK - stock-shape reference",
+      "density_g_cm3": 1.31,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECAPEEK natural PEEK - stock-shape reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-peek",
+            "title": "Ensinger TECAPEEK natural PEEK",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en/shapes/peek-tecapeek-natural"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1310.0
+            },
+            "source_id": "ensinger-peek",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 1100.0
+            },
+            "source_id": "ensinger-peek",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"ISO 22007-4:2008\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 116000000.0
+            },
+            "source_id": "ensinger-peek",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 116000000.0
+            },
+            "source_id": "ensinger-peek",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF PolyLite PLA - directional coupon reference",
+      "density_g_cm3": 1.17,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "PolyLite PLA - directional coupon reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "polymaker-pla",
+            "title": "Polymaker PolyLite PLA technical sheet",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://wiki.polymaker.com/polymaker-products/more-about-our-products/documents/technical-data-sheets/pla/polylite-tm-pla"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1170.0
+            },
+            "source_id": "polymaker-pla",
+            "conditions": {
+              "temperature_k": 296.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Manufacturer printed coupon conditions; actual layer height, raster, infill and machine must be confirmed. Solid-feedstock density is not an infilled-part density. | typical reference; source review required; not design allowables. | {\"density_basis\":\"solid_feedstock_not_part_envelope\",\"direction\":\"not_reported\",\"test_method\":\"ISO 1183\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF PMMA sheet - Goodfellow stock reference",
+      "density_g_cm3": 1.19,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "PMMA sheet - Goodfellow stock reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "goodfellow-pmma-sheet",
+            "title": "Goodfellow PMMA film and sheet reference",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.goodfellow.com/eu/pmma-film-group"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1190.0
+            },
+            "source_id": "goodfellow-pmma-sheet",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier PMMA film/sheet property ranges; exact stock thickness, grade, processing and conditioning must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 80000000.0
+            },
+            "source_id": "goodfellow-pmma-sheet",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier PMMA film/sheet property ranges; exact stock thickness, grade, processing and conditioning must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Kapton HN film - Goodfellow reference",
+      "density_g_cm3": 1.42,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Kapton HN film - Goodfellow reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "goodfellow-kapton",
+            "title": "Goodfellow Kapton HN PI coil",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.goodfellow.com/global/kapton-hn-pi-coil-group"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1420.0
+            },
+            "source_id": "goodfellow-kapton",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Polyimide film; coating, film thickness and anisotropy require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 231000000.0
+            },
+            "source_id": "goodfellow-kapton",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Polyimide film; coating, film thickness and anisotropy require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECAFORM AH natural POM-C - stock-shape reference",
+      "density_g_cm3": 1.41,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECAFORM AH natural POM-C - stock-shape reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-pom-c",
+            "title": "Ensinger TECAFORM AH natural POM-C",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en-gb/shapes/acetal-tecaform-ah-natural"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1410.0
+            },
+            "source_id": "ensinger-pom-c",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 1400.0
+            },
+            "source_id": "ensinger-pom-c",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"ISO 22007-4:2008\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 67000000.0
+            },
+            "source_id": "ensinger-pom-c",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 67000000.0
+            },
+            "source_id": "ensinger-pom-c",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; conditioning and extrusion direction require review. Not an injection-moulding or printed-part certificate. | typical reference; source review required; not design allowables. | {\"crosshead_speed_mm_min\":50,\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-2\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECAFINE PP grey - stock reference",
+      "density_g_cm3": 0.91,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECAFINE PP grey - stock reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-pp",
+            "title": "Ensinger TECAFINE PP grey",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en-sg/shapes/polypropylene-tecafine-pp-grey"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 910.0
+            },
+            "source_id": "ensinger-pp",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; not foam, film or a moulded/printed part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 33000000.0
+            },
+            "source_id": "ensinger-pp",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled stock shape; not foam, film or a moulded/printed part certificate. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"DIN EN ISO 527-1\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF TECAFLON PTFE natural - stock reference",
+      "density_g_cm3": 2.15,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "TECAFLON PTFE natural - stock reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "ensinger-ptfe",
+            "title": "Ensinger TECAFLON PTFE natural",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.ensingerplastics.com/en/shapes/tecaflon-ptfe-natural"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 2150.0
+            },
+            "source_id": "ensinger-ptfe",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled PTFE stock; not porous film, filled bearing grade or installed seal. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 22000000.0
+            },
+            "source_id": "ensinger-ptfe",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Unfilled PTFE stock; not porous film, filled bearing grade or installed seal. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF PVC stock - Kuhn supplier reference",
+      "density_g_cm3": 1.4,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "PVC stock - Kuhn supplier reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "kuhn-pvc-stock",
+            "title": "Kuhn PVC stock-material reference",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.kuhn-marsberg.de/en/product/PVC/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1400.0
+            },
+            "source_id": "kuhn-pvc-stock",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Kuhn PVC stock material; not plasticized PVC, foam PVC or an identified wire-jacket formulation. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"ISO 1183-1\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                0.159,
+                0.159,
+                0.159
+              ],
+              "axes": "material123"
+            },
+            "source_id": "kuhn-pvc-stock",
+            "conditions": {
+              "temperature_k": 296.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Kuhn PVC stock material; not plasticized PVC, foam PVC or an identified wire-jacket formulation. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Single-crystal sapphire - Crystran reference",
+      "density_g_cm3": 3.97,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Single-crystal sapphire - Crystran reference",
+        "family": "other",
+        "sources": [
+          {
+            "id": "crystran-sapphire",
+            "title": "Crystran sapphire Al2O3",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.crystran.com/optical-materials/sapphire-al2o3/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 3970.0
+            },
+            "source_id": "crystran-sapphire",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Single crystal; not isotropic polycrystalline alumina. Crystal cut/orientation must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Dragon Skin 20 cured silicone - reference",
+      "density_g_cm3": 1.08,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Dragon Skin 20 cured silicone - reference",
+        "family": "polymer",
+        "sources": [
+          {
+            "id": "smoothon-ds20",
+            "title": "Smooth-On Dragon Skin 20",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.smooth-on.com/products/dragon-skin-20/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 1080.0
+            },
+            "source_id": "smoothon-ds20",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Cured 1A:1B silicone by mass or volume; not qualified wire insulation, vacuum hardware or an unspecified silicone compound. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 3792116.51124
+            },
+            "source_id": "smoothon-ds20",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Cured 1A:1B silicone by mass or volume; not qualified wire insulation, vacuum hardware or an unspecified silicone compound. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Sn96.5Ag3Cu0.5 SAC305 - solid alloy reference",
+      "density_g_cm3": 7.5,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Sn96.5Ag3Cu0.5 SAC305 - solid alloy reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "feinhuette-sac305",
+            "title": "Feinhuette SAC305 electronic solder",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.feinhuette.de/en/metals/sn965ag3cu05"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 7500.0
+            },
+            "source_id": "feinhuette-sac305",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Solid bulk alloy, not flux-bearing paste, solder joint or aged intermetallic layer. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                2.4e-05,
+                2.4e-05,
+                2.4e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "feinhuette-sac305",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Solid bulk alloy, not flux-bearing paste, solder joint or aged intermetallic layer. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[298.15,423.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF 304 stainless steel plate - Sandmeyer reference",
+      "density_g_cm3": 7.9,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "304 stainless steel plate - Sandmeyer reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "sandmeyer-304",
+            "title": "Sandmeyer Steel Alloy 304/304L plate",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.sandmeyersteel.com/alloy-304-304l/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 7900.0
+            },
+            "source_id": "sandmeyer-304",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 500.0
+            },
+            "source_id": "sandmeyer-304",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[273.15,373.15],\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "tensile_strength",
+              "pa": 599843884.506
+            },
+            "source_id": "sandmeyer-304",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                16.3,
+                16.3,
+                16.3
+              ],
+              "axes": "material123"
+            },
+            "source_id": "sandmeyer-304",
+            "conditions": {
+              "temperature_k": 373.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                1.66e-05,
+                1.66e-05,
+                1.66e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "sandmeyer-304",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,373.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          },
+          {
+            "data": {
+              "kind": "yield_strength",
+              "pa": 289579806.313
+            },
+            "source_id": "sandmeyer-304",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"0.2% proof stress\"}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF C45 steel - Ovako physical reference",
+      "density_g_cm3": 7.8,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "C45 steel - Ovako physical reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "ovako-c45",
+            "title": "Ovako C45 steel navigator",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://steelnavigator.ovako.com/steel-grades/c45/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 7800.0
+            },
+            "source_id": "ovako-c45",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General C45 physical constants; heat treatment, section and product variant must be specified for strength. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "elasticity",
+              "model": {
+                "symmetry": "isotropic",
+                "young_modulus_pa": 210000000000.0,
+                "poisson_ratio": 0.3
+              }
+            },
+            "source_id": "ovako-c45",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General C45 physical constants; heat treatment, section and product variant must be specified for strength. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior."
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_expansion",
+              "per_k": [
+                1.2e-05,
+                1.2e-05,
+                1.2e-05
+              ],
+              "axes": "material123"
+            },
+            "source_id": "ovako-c45",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "General C45 physical constants; heat treatment, section and product variant must be specified for strength. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,573.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Ti-6Al-4V Grade 5 - Metalcor reference",
+      "density_g_cm3": 4.43,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Ti-6Al-4V Grade 5 - Metalcor reference",
+        "family": "metal",
+        "sources": [
+          {
+            "id": "metalcor-ti5",
+            "title": "Metalcor titanium grade 5 3.7164/65",
+            "kind": "public_reference",
+            "license": null,
+            "reference": "https://www.metalcor.de/en/datenblatt/125/"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 4430.0
+            },
+            "source_id": "metalcor-ti5",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Grade 5 supplier reference; product form and anneal must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "specific_heat",
+              "j_kg_k": 560.0
+            },
+            "source_id": "metalcor-ti5",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Grade 5 supplier reference; product form and anneal must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+            }
+          },
+          {
+            "data": {
+              "kind": "thermal_conductivity",
+              "w_m_k": [
+                7.1,
+                7.1,
+                7.1
+              ],
+              "axes": "material123"
+            },
+            "source_id": "metalcor-ti5",
+            "conditions": {
+              "temperature_k": 293.15,
+              "moisture_dry_basis_kg_kg": null,
+              "strain_rate_per_s": null,
+              "state": "Grade 5 supplier reference; product form and anneal must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF American beech - clear wood at 12% moisture",
+      "density_g_cm3": 0.7168,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "American beech - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 716.8
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Black cherry - clear wood at 12% moisture",
+      "density_g_cm3": 0.56,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Black cherry - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 560.0
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Black walnut - clear wood at 12% moisture",
+      "density_g_cm3": 0.616,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Black walnut - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 616.0
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Coast Douglas-fir - clear wood at 12% moisture",
+      "density_g_cm3": 0.5376000000000001,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Coast Douglas-fir - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 537.6
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Eastern white pine - clear wood at 12% moisture",
+      "density_g_cm3": 0.392,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Eastern white pine - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 392.0
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Western larch - clear wood at 12% moisture",
+      "density_g_cm3": 0.5824,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Western larch - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 582.4
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Western redcedar - clear wood at 12% moisture",
+      "density_g_cm3": 0.3584,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Western redcedar - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 358.4
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF White ash - clear wood at 12% moisture",
+      "density_g_cm3": 0.672,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "White ash - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 672.0
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF White oak - clear wood at 12% moisture",
+      "density_g_cm3": 0.7616,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "White oak - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 761.6
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "material.create",
+    "params": {
+      "name": "REF Yellow birch - clear wood at 12% moisture",
+      "density_g_cm3": 0.6944,
+      "physical_card": {
+        "schema_version": 1,
+        "designation": "Yellow birch - clear wood at 12% moisture",
+        "family": "wood",
+        "sources": [
+          {
+            "id": "usda-wood-2021",
+            "title": "USDA Wood Handbook 2021 Chapter 5",
+            "kind": "public_reference",
+            "license": "US federal government publication; source notice should still be reviewed",
+            "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+          }
+        ],
+        "properties": [
+          {
+            "data": {
+              "kind": "density",
+              "kg_m3": 694.4
+            },
+            "source_id": "usda-wood-2021",
+            "conditions": {
+              "temperature_k": null,
+              "moisture_dry_basis_kg_kg": 0.12,
+              "strain_rate_per_s": null,
+              "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "command": "library.export",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\libraries\\physical-references\\physical-reference-library.json",
+      "id": "tangency.physical-references",
+      "name": "Physical references - select grade and conditions",
+      "format": "solidcraft-library/2",
+      "overwrite": false,
+      "provenance": {
+        "license": "MIT OR Apache-2.0",
+        "author": "SolidCraft contributors",
+        "source_url": "https://github.com/0xlillith/solidcraft/tree/assets/material-physical-properties/assets/render/physical"
+      }
+    }
+  }
+]

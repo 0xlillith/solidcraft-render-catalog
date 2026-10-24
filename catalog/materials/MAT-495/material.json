@@ -1,0 +1,181 @@
+{
+  "id": "MAT-495",
+  "name": "Sprayed cork-like protective layer",
+  "family": "Aerospace protective and functional skins",
+  "version": "1.0.0-local",
+  "seed": 10119905,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.2799829974682521,
+    0.19841264143487516,
+    0.0908743308689878
+  ],
+  "base_linear_high": [
+    0.5178197864347277,
+    0.36928869037395173,
+    0.17347266217935092
+  ],
+  "roughness": 0.6,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.3,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-495",
+    "name": "Sprayed cork-like protective layer",
+    "family": "Aerospace protective and functional skins",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Irregular organic granules form an applied surface coating.",
+    "use_cases": [
+      "Thermal-protection concepts"
+    ],
+    "optical_model": "Layered functional-coating appearance; optical colour and gloss do not supply thermal, electrical or flight-qualification data.",
+    "controls": [
+      "coating texture",
+      "coverage masks",
+      "substrate exposure",
+      "granule size",
+      "coating relief"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Distinguish sprayed relief from a flat cork board.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Appearance does not establish ablative performance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "39392a2476bc2267e2bd4b5a438f92144361ddce66208e2343770171cbd00e67",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "02ad1756ae1b37bff42cc087b16017dfcab31b6f2bcbd732a03de14abfd73a67",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "7d09d8f3eaeecd364373497d8ab839d236d43486806d243e216ba4da9b7bf268",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e7bb6ec27bf28a6215fcc5f7942556e563e45a548d6c3a8323f3ce6f8922f165",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3be644f0ac880d5040a30b97e34afd7822c7e4195deb282164465651fb412f2e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1b1ebb38ebc94a5030c21e56208750ebaf55ec2015cf0be4ba8adb95d78b96a5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "92a0cba49f67867fabbaead90658d2d1ad066cfb88164cb9d1dd125e407e44c5",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "68c567b689394db3e5fb64f99bb51f1136556abd67032c8ea066b854fab507bf",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "profile_id": "nickel-200",
+  "card": {
+    "schema_version": 1,
+    "designation": "Nickel 200 - strip reference",
+    "family": "metal",
+    "sources": [
+      {
+        "id": "elgiloy-ni200",
+        "title": "Elgiloy Nickel 200 and 201 strip",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.elgiloy.com/strip-nickel-200-and-201-alloys"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 8900.0
+        },
+        "source_id": "elgiloy-ni200",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Nickel 200 strip; anneal and strength grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_conductivity",
+          "w_m_k": [
+            70.2,
+            70.2,
+            70.2
+          ],
+          "axes": "material123"
+        },
+        "source_id": "elgiloy-ni200",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Nickel 200 strip; anneal and strength grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_expansion",
+          "per_k": [
+            1.52e-05,
+            1.52e-05,
+            1.52e-05
+          ],
+          "axes": "material123"
+        },
+        "source_id": "elgiloy-ni200",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Nickel 200 strip; anneal and strength grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,773.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density",
+    "thermal_conductivity",
+    "thermal_expansion"
+  ],
+  "not_projected": [
+    {
+      "id": "young_modulus",
+      "quantity": "young_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "shear_modulus",
+      "quantity": "shear_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "volume_resistivity",
+      "quantity": "volume_resistivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "tensile_strength",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

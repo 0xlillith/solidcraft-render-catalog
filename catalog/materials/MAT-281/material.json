@@ -1,0 +1,193 @@
+{
+  "id": "MAT-281",
+  "name": "Grease-smear overlay",
+  "family": "Industrial wear and service overlays",
+  "version": "1.0.0-local",
+  "seed": 8425239,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.13270644410516574,
+    0.06693214792556632,
+    0.03650178521643639
+  ],
+  "base_linear_high": [
+    0.2496445698631376,
+    0.12987644846147894,
+    0.07446593725977968
+  ],
+  "roughness": 0.5780000000000001,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.08,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-281",
+    "name": "Grease-smear overlay",
+    "family": "Industrial wear and service overlays",
+    "domains": [
+      "industrial",
+      "automotive",
+      "electronics"
+    ],
+    "description": "Thick local smears add translucent or opaque surface coverage.",
+    "use_cases": [
+      "Mechanisms",
+      "maintenance scenes"
+    ],
+    "optical_model": "Non-destructive layer or geometric surface modifier over a host material; state is illustrative rather than diagnostic.",
+    "controls": [
+      "coverage mask",
+      "host preservation",
+      "seed",
+      "smear thickness",
+      "streak direction"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Model resolvable grease ridges independently of the host.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039",
+      "CAP-025",
+      "CAP-026"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Grease must not replace the entire underlying material.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "cccb820199fa44c47c7a30be626862af0fcd7bb7afcf1ecc6083f235c2c7c69b",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "0f56a1ec3c999f024766e546af30c82b22c8e22a1769e52f4f48ada58fc4ca03",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "1ebfdcd8ae6e0b98fdeca2a8e68c12b5fcbf38e05b5b095d4725ac90cebfbc86",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "12fd072ecd26a41a1fbc4258f65a9b7ad67de0be0d0bf8a55acb166b50901260",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "5f031d376ff206e1176e07c9efa62a5867c6b0a76fe97f316e8138bb5374fb83",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "2ffdef8a7cfb9be41b7dda2c4da86d9f775fc2ffdb8b6c93a5eec44282107896",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "613edbe637a7bca1d8931198082aaf5448b8963729ffd6a715d56600c49e7c0c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "ed59c09cbe641f3be172074574a98cded727748d8a26cdf8185cfe23357378b3",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "d3bff7bb84ddf6585a163385df4c7ab07bfc53b22ec9f840f91f48eccb4379b6",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

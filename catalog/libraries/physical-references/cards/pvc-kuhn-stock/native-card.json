@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "designation": "PVC stock - Kuhn supplier reference",
+  "family": "polymer",
+  "sources": [
+    {
+      "id": "kuhn-pvc-stock",
+      "title": "Kuhn PVC stock-material reference",
+      "kind": "public_reference",
+      "license": null,
+      "reference": "https://www.kuhn-marsberg.de/en/product/PVC/"
+    }
+  ],
+  "properties": [
+    {
+      "data": {
+        "kind": "density",
+        "kg_m3": 1400.0
+      },
+      "source_id": "kuhn-pvc-stock",
+      "conditions": {
+        "temperature_k": null,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "Kuhn PVC stock material; not plasticized PVC, foam PVC or an identified wire-jacket formulation. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"ISO 1183-1\"}"
+      }
+    },
+    {
+      "data": {
+        "kind": "thermal_conductivity",
+        "w_m_k": [
+          0.159,
+          0.159,
+          0.159
+        ],
+        "axes": "material123"
+      },
+      "source_id": "kuhn-pvc-stock",
+      "conditions": {
+        "temperature_k": 296.15,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "Kuhn PVC stock material; not plasticized PVC, foam PVC or an identified wire-jacket formulation. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+      }
+    }
+  ]
+}

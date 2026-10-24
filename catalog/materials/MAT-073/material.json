@@ -1,0 +1,193 @@
+{
+  "id": "MAT-073",
+  "name": "Frosted glass",
+  "family": "Glass and basic optics",
+  "version": "1.0.0-local",
+  "seed": 6778087,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.4795146453393421,
+    0.5619953378662959,
+    0.5459472033847879
+  ],
+  "base_linear_high": [
+    0.8811460706179065,
+    1.0,
+    1.0
+  ],
+  "roughness": 0.35,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.001,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-073",
+    "name": "Frosted glass",
+    "family": "Glass and basic optics",
+    "domains": [
+      "LED lighting",
+      "laboratory",
+      "CAD product"
+    ],
+    "description": "Rough surfaces blur transmitted scene detail.",
+    "use_cases": [
+      "Partitions",
+      "diffusers"
+    ],
+    "optical_model": "Refractive dielectric with real thickness, path-length absorption and explicit interfaces.",
+    "controls": [
+      "editable refractive index",
+      "absorption distance",
+      "face roughness",
+      "roughness per face",
+      "frost grain"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Separate microscopic frost from pane thickness.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Background blur should respond to geometry and surface roughness.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Rough transmission/scattering intent is represented in portable material; native smooth-transmission fallback is separately named."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "07e039524d676379d7e5694210614560fd8008038b3b48be90021601b103fd5a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "d46a80dc236f179634f28fb0114998ddc0554912e972959cd2cff548db9ad5dd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "11174f99197b36a7cf9e8c917a99c929204d8f1a4c3099b3283f6fc1becb4e86",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b2a314e5bb2e99bb8580d2cc4fc4a92c33af5bdd43f46d754eea2980e2a22d3a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "1dfd94ffc934e736847266be2da3164167f2565df1eb07f439de97e778324f17",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "8ab3095a256b683c075dccd8b267d1b839720929ebe283905b5b202f881661ae",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "e2173d9b872da61e342a79ab7f283dd593a7971dc786d0fcf2455bba1b58da8a",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "1d038596b8092b513bcbc919ca5b963f1c053681e615aeb4a09207e894a9280a",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

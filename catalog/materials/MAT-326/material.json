@@ -1,0 +1,181 @@
+{
+  "id": "MAT-326",
+  "name": "Multilayer ceramic-capacitor section",
+  "family": "Electronic packages and encapsulants",
+  "version": "1.0.0-local",
+  "seed": 8781594,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.014856502811569547,
+    0.016875195950332295,
+    0.021370342158917727
+  ],
+  "base_linear_high": [
+    0.035052139447932604,
+    0.03872796874538119,
+    0.04691316034907407
+  ],
+  "roughness": 0.518,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.025,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-326",
+    "name": "Multilayer ceramic-capacitor section",
+    "family": "Electronic packages and encapsulants",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "Thin alternating internal regions appear within a ceramic body.",
+    "use_cases": [
+      "Component cutaways"
+    ],
+    "optical_model": "Layered dielectric, conductor and magnetic-component appearances; names do not provide electrical material data.",
+    "controls": [
+      "body roughness",
+      "layer masks",
+      "marking finish",
+      "electrode masks",
+      "ceramic scattering"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use an explicitly illustrative layer scale when enlarged.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Mark magnified visual layers rather than claiming a real manufacturing stack.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "30ba1b843c1191011ee0073f29d4c7b6b6a188fa4f9e8ef1c610f1dffe32afea",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "fb3e1f37d216662bcede2ee8df885ab56f54592160ab8df6bae02b3a752f6418",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "9ec143d711420349827aa2b2acc2abba34dbbb1889d5b58f4c5585da0dd8455e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "deffbe04c5cce66d93403d7ad46c0cb465908386867900c3eb70b1453f12fc46",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "92003de0fd255518831b6d745a7513638f7174ad9346ec9c56e695051578d190",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ec9f962fc6105e897c0a4e76ade74f5bfef17d520a8ac6a1b293740b4b2afb92",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "aca7efe85fee5613c797016f8528ec6e7331fe4e0fb02f7d0be782a18b33e6df",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "b154337e28d0bcf8c92b2c34929c807f7a35e13c51d4ff63558f48c6ce4cb86a",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

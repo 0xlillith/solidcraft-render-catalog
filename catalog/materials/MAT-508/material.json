@@ -1,0 +1,182 @@
+{
+  "id": "MAT-508",
+  "name": "Dark conductive-film outer-layer appearance",
+  "family": "Space thermal blankets and films",
+  "version": "1.0.0-local",
+  "seed": 10222852,
+  "pattern": "foil",
+  "base_linear_low": [
+    0.01618561374049819,
+    0.019045446467961934,
+    0.02471593176873703
+  ],
+  "base_linear_high": [
+    0.0374723115871758,
+    0.04267976819539337,
+    0.053005129489342044
+  ],
+  "roughness": 0.304,
+  "roughness_variation": 0.06,
+  "metallic": 0.85,
+  "height_span_mm": 1.2,
+  "tile_mm": [
+    120,
+    120
+  ],
+  "cycles_u": 13,
+  "cycles_v": 15,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-508",
+    "name": "Dark conductive-film outer-layer appearance",
+    "family": "Space thermal blankets and films",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "A thin dark surface layer covers a flexible blanket sheet.",
+    "use_cases": [
+      "Space thermal-control concepts"
+    ],
+    "optical_model": "Thin dielectric and conductor film layers with explicit folds, perforations and stack structure; optical appearance is not thermal qualification.",
+    "controls": [
+      "film-layer order",
+      "crease geometry",
+      "surface roughness",
+      "layer absorption",
+      "microtexture"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve folded geometry and separate backing response.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-025",
+      "CAP-026",
+      "CAP-036"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "No electrical conductivity or emissivity is inferred from appearance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "aadbb09aff581ac71a9193fe2d502ee8fdbfcfd4aa619029a4d296e40f7c4ebb",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "54079545062e2c125da24d2256f00060dda7773b40bec568ce85e5d0ec36c156",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "322d787dad3db094fb6b7948358d7aa5b5609df0bdb3e8053b2f1847bcb5f776",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "4c6ba3eb82fdec74753a56169b4173840c436223bc457145909bd3be0c525138",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "edb0305ea86a628d4ec89118aa68f009b1da38b6c07e8119eb745c3aedceadfc",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "38db6fe74c58c1c37ec16667abe1c40c12de17d5847a92899fdf384b2901d4cb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "fa421f0f1de2c785e144695bdc49ea431271e4797c7b1c19556c2918b91fb049",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fea24f63aa6744e5497f639f0ee61589c8dd52729bb63c3d4c717ba5939445b1",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "fb8c1f3fcd41e052702a8956598336d1c7db53631388a7f5ed140845e34fcbed",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

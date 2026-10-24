@@ -1,0 +1,90 @@
+{
+  "id": "LUZ-111",
+  "name": "Single side-window room",
+  "family": "12 Architectural daylight",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-111",
+    "name": "Single side-window room",
+    "family": "12 Architectural daylight",
+    "domains": [
+      "architecture",
+      "daylight"
+    ],
+    "description": "A proposed lighting arrangement for residential interiors.",
+    "use_cases": [
+      "Residential interiors"
+    ],
+    "sources": "One exterior sky and optional sun",
+    "geometry": "Real room dimensions and window opening",
+    "contribution_policy": "Preserve the chosen sun-sky model relationship; fixed comparison exposure",
+    "controls": [
+      "Solar direction",
+      "sky contribution",
+      "room target"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011",
+      "CAP-042"
+    ],
+    "priority": "P0",
+    "cost": "High",
+    "validation": [
+      "Light enters actual openings with no duplicated window emitter"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 901273,
+  "lights": {
+    "environment": [
+      0.025,
+      0.035,
+      0.055
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1700.0,
+          -200.0,
+          1000.0
+        ],
+        "u": [
+          -64.26268616206846,
+          546.2328323775819,
+          0.0
+        ],
+        "v": [
+          526.0271196921225,
+          61.88554349319088,
+          906.6232121752464
+        ],
+        "radiance": [
+          6.02,
+          6.44,
+          7.0
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

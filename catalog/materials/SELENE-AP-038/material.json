@@ -1,0 +1,105 @@
+{
+  "id": "SELENE-AP-038",
+  "name": "Unpowered LED phosphor face",
+  "original_specification": {
+    "id": "SELENE-AP-038",
+    "name": "Unpowered LED phosphor face",
+    "source_catalog_ids": [
+      "MAT-441"
+    ],
+    "family": "LED assemblies",
+    "domains": [
+      "LED lighting",
+      "electronics",
+      "SELENE"
+    ],
+    "purpose": "A pale yellow unpowered phosphor-face preview; it emits no light.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-038 Unpowered LED phosphor face",
+        "color": "#d6bd64",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.65,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Emission",
+        "Excitation and conversion spectra",
+        "Phosphor scattering",
+        "Encapsulant optics",
+        "Photometry"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Scattering conversion material when unpowered; an active spectral-conversion target requires explicit excitation and emission transport.",
+      "structure": [
+        "Phosphor-in-binder layer",
+        "Independent emitter die and package",
+        "Optional transparent encapsulant"
+      ],
+      "authoring_controls": [
+        {
+          "id": "phosphor_visual_grain_pitch",
+          "value": 0.08,
+          "unit": "mm",
+          "meaning": "Illustrative visible mottling scale, not a phosphor particle specification.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "face_mottle_strength",
+          "value": 0.08,
+          "unit": "normalized",
+          "meaning": "Authored visual variation amount for a future map.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep the emitter aperture and encapsulant as separate regions",
+        "Do not drive emission from the base-color value"
+      ],
+      "capability_requirements": [
+        "CAP-013",
+        "CAP-025",
+        "CAP-028",
+        "CAP-101",
+        "CAP-107",
+        "CAP-113"
+      ],
+      "unknown_optical_inputs": [
+        "Excitation spectrum",
+        "Conversion and emission spectra",
+        "Conversion efficiency",
+        "Scattering data",
+        "Package photometry"
+      ],
+      "validation_criteria": [
+        "The baseline must remain unpowered with zero emitted light",
+        "A future emissive approximation must be labelled separately from spectral fluorescence"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#d6bd64",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.65,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-038 Unpowered LED phosphor face",
+    "bodies": [
+      "SELENE-AP-038"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

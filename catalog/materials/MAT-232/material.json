@@ -1,0 +1,179 @@
+{
+  "id": "MAT-232",
+  "name": "Track-tyre scrubbed surface",
+  "family": "Automotive tyres and sealing profiles",
+  "version": "1.0.0-local",
+  "seed": 8037208,
+  "pattern": "grip",
+  "base_linear_low": [
+    0.007780204270428403,
+    0.008231947199133635,
+    0.009677375209382005
+  ],
+  "base_linear_high": [
+    0.022166939119287542,
+    0.022989515795437364,
+    0.025621489187232904
+  ],
+  "roughness": 0.766,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.65,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-232",
+    "name": "Track-tyre scrubbed surface",
+    "family": "Automotive tyres and sealing profiles",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Torn-looking contact texture interrupts a smoother tyre body.",
+    "use_cases": [
+      "Motorsport visual studies"
+    ],
+    "optical_model": "Dielectric elastomer and reinforced-section recipes with optional explicit textile or wire components.",
+    "controls": [
+      "surface grain",
+      "contact polish",
+      "region masks",
+      "rubber pickup",
+      "abrasion"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Model large attached fragments as geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The appearance must not diagnose actual tyre temperature or grip.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "39ba5d8b924a186d82c5993ed55d5414295ac548c7b309eb0eb53f9f11da7514",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "142c5e2a42e23c2667b2713533a5cbdbd0d3d18c359e6e1c66bf6c74a62f0be1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "bdbd67810bff9bec97608bf44d9d1ac4f09fd36bf066741ff180ade199d245fa",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "dddbc7bc5c80dbf18fe7b284174b0d98f57aa3a7e8a36f5333571c358092d4a9",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f01064d8fa7cb4c15b81f9b82b1c33601369b51be73594164bcbb4d1252af030",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "679e5fba4b9bfc59d6d8f0efc342d99c807a6a22b1176a0b16f62eda989c47f9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a9670d18682a929edd3006ee9de5bedb755bb09ab185c7315e75ed1cc95d20fa",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ba1c5788d48805aec1790ee5f6128b94cc2e58a57e49275e54a570c61ddb2ad6",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-140 Moonlit terrestrial exterior",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 946020,
+            "lighting": {
+              "environment": [
+                0.0006,
+                0.001,
+                0.002
+              ],
+              "area_lights": [],
+              "sun": {
+                "direction": [
+                  0.3830222215594891,
+                  0.6634139481689384,
+                  0.6427876096865393
+                ],
+                "angular_radius_rad": 0.00465,
+                "radiance": [
+                  30.0,
+                  30.0,
+                  30.0
+                ]
+              }
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

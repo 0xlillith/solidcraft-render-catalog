@@ -1,0 +1,183 @@
+{
+  "id": "MAT-563",
+  "name": "SELENE metallic grouser contact finish",
+  "family": "SELENE rover mobility and structural appearances",
+  "version": "1.0.0-local",
+  "seed": 10658397,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.22589962208238135,
+    0.23229171775786986,
+    0.24538923905122248
+  ],
+  "base_linear_high": [
+    0.41933961035896306,
+    0.4309789487531361,
+    0.4548281666305842
+  ],
+  "roughness": 0.34400000000000003,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-563",
+    "name": "SELENE metallic grouser contact finish",
+    "family": "SELENE rover mobility and structural appearances",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Raised traction features retain distinct top and side finishes.",
+    "use_cases": [
+      "Rover contact illustrations"
+    ],
+    "optical_model": "Candidate metallic, composite or coated rover appearances tied to explicit geometry; no suitability, fatigue, traction or flight qualification is inferred.",
+    "controls": [
+      "manufacturing direction",
+      "surface finish",
+      "contact-region masks",
+      "top polish",
+      "dust mask"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep grousers in explicit CAD geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No traction coefficient or ground-pressure result is implied.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "790fbb0cdfa1e1e782f85ba8a54263f01c9b93d181a83b5c36282aed647b1eab",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "df706b81ee5344abd196405c98700edc228b562bb0d9161dee1f23f266061f2b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "295ab9159b68b2180e1b703020a44f8058d353e56cd2acc6f2501cadf969c5c6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "5a9a27f0bad4a8c036ffd0ea6781ff04b213920576d5bc935cdb81b0d2977898",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "6e381fd178c419141efe2b6e8d08ecec656dddb89d6252868606e8eeb0880087",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "082a0171287f7d0f487c21ee98199ae5a62beea65d9ca7c595dd42b68b84a7fc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "df028020b20e52432619076f2d01768f95acc80b08d32efb321ef32e803eb685",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "4a4f9bd1f5a248bf30d857dbd23b2d68ee08342984ed7d201fca3fd242c8b03e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

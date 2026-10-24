@@ -1,0 +1,181 @@
+{
+  "id": "MAT-007",
+  "name": "Black-oxide steel",
+  "family": "Steels and cast irons",
+  "version": "1.0.0-local",
+  "seed": 6255433,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.005740644164106436,
+    0.007780204270428403,
+    0.011260941754434548
+  ],
+  "base_linear_high": [
+    0.018453113254044556,
+    0.022166939119287542,
+    0.02850499841852261
+  ],
+  "roughness": 0.27599999999999997,
+  "roughness_variation": 0.06,
+  "metallic": 0.2,
+  "height_span_mm": 0.018,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-007",
+    "name": "Black-oxide steel",
+    "family": "Steels and cast irons",
+    "domains": [
+      "industrial",
+      "automotive",
+      "CAD product"
+    ],
+    "description": "A thin absorbing conversion layer darkens the steel substrate.",
+    "use_cases": [
+      "Fasteners",
+      "mechanisms"
+    ],
+    "optical_model": "Conductor microfacet steel with a thin absorbing oxide film; coupled layer/substrate reflection and localized exposed-metal wear.",
+    "controls": [
+      "surface roughness",
+      "finish direction",
+      "exposed metal coverage",
+      "layer absorption",
+      "contact wear"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Treat coating as a film and worn regions as local masks.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Worn edges expose metal without turning the entire part into black plastic.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "61541350ea4b3651cc119c63eb75d0d6988ebc1404d4ed097806eedbf1ac7f25",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3fb9604cd5a7607c0105a8db826cfb221610c0eaed53acbd7fe7ef9692b0b6f0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "c7e32d16470b3f0622554481955c3ba52f537c8f4346f70e2554af220dc78044",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "3720b37e4e0be4d9e8e7eb0bd5739b90f522b790108961aa53975ff1a885cb83",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e9e8cce6207a14c3e2e73994fd2016f6ceab2cd43feb30531b402c8fb81e7f91",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d38d2f03aae58d14d66813ea8ad42fa8c47551dda0484bb93e09784fb6887f1d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "2a57743b31507674d3c2a86c1538569a2b54f724eb55f93cf50ab19eecd62ee4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4f3191217e5bedd16c7ac2423f110d100163078cc39cc89e1802ea2d42b3c158",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "edf59589adf8e7cb2b103f544bd0e7cd8b79661c7a3f947ba544399df3887f92",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

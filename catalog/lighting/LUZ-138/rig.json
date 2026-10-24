@@ -1,0 +1,82 @@
+{
+  "id": "LUZ-138",
+  "name": "Forest-filtered light",
+  "family": "14 Solar and sky exteriors",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-138",
+    "name": "Forest-filtered light",
+    "family": "14 Solar and sky exteriors",
+    "domains": [
+      "exterior",
+      "daylight"
+    ],
+    "description": "A proposed lighting arrangement for products among vegetation.",
+    "use_cases": [
+      "Products among vegetation"
+    ],
+    "sources": "Sun and sky through existing leaves",
+    "geometry": "Real foliage or correctly filtered cutouts",
+    "contribution_policy": "Leaf transmission and openings; no duplicated pattern projector",
+    "controls": [
+      "Solar angle",
+      "sky distribution relative to foliage"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011",
+      "CAP-042",
+      "CAP-040"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Dappled pattern follows foliage rather than temporal noise"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 942934,
+  "lights": {
+    "environment": [
+      0.16,
+      0.23,
+      0.38
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        -0.1773171254751691,
+        0.5149663246031949,
+        0.838670567945424
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    }
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

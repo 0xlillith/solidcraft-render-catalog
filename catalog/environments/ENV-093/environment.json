@@ -1,0 +1,1001 @@
+{
+  "id": "ENV-093",
+  "name": "Covered loading dock",
+  "family": "Warehousing and logistics",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-093",
+    "name": "Covered loading dock",
+    "family": "Warehousing and logistics",
+    "domains": [
+      "logistics",
+      "manufacturing",
+      "industrial_design"
+    ],
+    "description": "Covered loading dock is a conceptual setting for ramps; doors; equipment. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Ramps",
+      "doors",
+      "equipment"
+    ],
+    "representation": "Large-scale modular 3D interior or exterior",
+    "geometry": "Raised platform, door and canopy",
+    "ambient_lighting": "Exterior sky and under-canopy interreflection",
+    "scale_policy": "Bay extent from 3 to 15 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Platform dimensions and height",
+      "door opening",
+      "canopy dimensions",
+      "materials",
+      "markings",
+      "subject placement"
+    ],
+    "authoring_method": "Original procedural geometry and generic textures with verifiable provenance",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-042",
+      "CAP-082"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Check package and aisle dimensions.",
+      "Use efficient instances; the scene is not a logistics-code compliance check."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "box",
+      "name": "Room floor",
+      "center_mm": [
+        0.0,
+        0.0,
+        -40.0
+      ],
+      "size_mm": [
+        9000.0,
+        9000.0,
+        80.0
+      ],
+      "color": "a7a7a1"
+    },
+    {
+      "type": "box",
+      "name": "Back wall",
+      "center_mm": [
+        0.0,
+        4500.0,
+        1600.0
+      ],
+      "size_mm": [
+        9000.0,
+        100.0,
+        3200.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Left wall",
+      "center_mm": [
+        -4500.0,
+        0.0,
+        1600.0
+      ],
+      "size_mm": [
+        100.0,
+        9000.0,
+        3200.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Right wall lower",
+      "center_mm": [
+        4500.0,
+        1000.0,
+        500.0
+      ],
+      "size_mm": [
+        100.0,
+        7000.0,
+        1000.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Right wall lintel",
+      "center_mm": [
+        4500.0,
+        1000.0,
+        2900.0
+      ],
+      "size_mm": [
+        100.0,
+        7000.0,
+        600.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -3650.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -3650.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -2350.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -2350.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -3000.0,
+        1800.0,
+        200.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -3390.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -2740.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -3000.0,
+        1800.0,
+        1100.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -3390.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -2740.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -3000.0,
+        1800.0,
+        2000.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -3390.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -2740.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -3000.0,
+        1800.0,
+        2900.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -1950.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -1950.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -650.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        -650.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -1300.0,
+        1800.0,
+        200.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -1690.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -1040.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -1300.0,
+        1800.0,
+        1100.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -1690.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -1040.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -1300.0,
+        1800.0,
+        2000.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -1690.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        -1040.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        -1300.0,
+        1800.0,
+        2900.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        650.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        650.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        1950.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        1950.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        1300.0,
+        1800.0,
+        200.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        910.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        1560.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        1300.0,
+        1800.0,
+        1100.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        910.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        1560.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        1300.0,
+        1800.0,
+        2000.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        910.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        1560.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        1300.0,
+        1800.0,
+        2900.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        2350.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        2350.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        3650.0,
+        1350.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/upright",
+      "center_mm": [
+        3650.0,
+        2250.0,
+        1500.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        3000.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        3000.0,
+        1800.0,
+        200.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        2610.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        3260.0,
+        1800.0,
+        440.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        3000.0,
+        1800.0,
+        1100.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        2610.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        3260.0,
+        1800.0,
+        1340.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        3000.0,
+        1800.0,
+        2000.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        2610.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/crate",
+      "center_mm": [
+        3260.0,
+        1800.0,
+        2240.0
+      ],
+      "size_mm": [
+        454.99999999999994,
+        675.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Warehouse rack/shelf",
+      "center_mm": [
+        3000.0,
+        1800.0,
+        2900.0
+      ],
+      "size_mm": [
+        1300.0,
+        900.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 61,
+    "triangles": 732,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 9000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

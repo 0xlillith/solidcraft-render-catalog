@@ -1,0 +1,191 @@
+{
+  "id": "MAT-558",
+  "name": "Dust packed into tread recesses",
+  "family": "Lunar dust deposition overlays",
+  "version": "1.0.0-local",
+  "seed": 10618802,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.11918523870903151,
+    0.1106385703161173,
+    0.09656607547489872
+  ],
+  "base_linear_high": [
+    0.22502386750002754,
+    0.20946127729203448,
+    0.1838367344468305
+  ],
+  "roughness": 1.0,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.08,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-558",
+    "name": "Dust packed into tread recesses",
+    "family": "Lunar dust deposition overlays",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Grains occupy selected gaps within a wheel-contact geometry.",
+    "use_cases": [
+      "Rover wheel close-ups"
+    ],
+    "optical_model": "Granular particulate layer attached to a host surface in vacuum; no terrestrial airborne-fog model and no inferred electrostatic or friction constants.",
+    "controls": [
+      "coverage mask",
+      "particle distribution",
+      "host preservation",
+      "recess mask",
+      "packed depth"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use actual tread or mesh geometry as the host.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Deposits must not imply a measured adhesion or traction characteristic.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "24ad03615bbc57e5d39eb784a4df3dbdf8f4f831ef13ea3316e1bc58fabfee19",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "691b314cfb60e0b838afb230dc833da5b9783e0696dbd2110147e6079528a0c0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "5638a98d65731300bdb0e36d9e8c8a112b02e0c0d18d88f6107699df746e18f1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "06df8083856e9a395a180a736142dd91b2f6cf2cd1eb090b4f3cad8f5b2fef94",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "7d7fc2a1e5c81f430515bfd2b2d4513ba9ec9fa67329c86958ac535e470adf0e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "5e1127197119c18ca907ae86c308e0dbd9fdbd83887bf2aec69048983d734dca",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "1da2dd90c3c149b1bec6429277b2a9316f64905f065f2623c13f2ffd6d43ae03",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a30a9ceb3544e347d3e56dda7c8e9c76aa8546f9fb6806b2a0573d97d549e554",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ed9e08c98bfa1e75a7f0c973276ebd7d73473e270a0a9ac6523838d254a611ad",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

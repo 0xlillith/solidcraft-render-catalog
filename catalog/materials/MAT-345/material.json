@@ -1,0 +1,192 @@
+{
+  "id": "MAT-345",
+  "name": "Cathode-coated foil illustration",
+  "family": "Battery and thermal-management surfaces",
+  "version": "1.0.0-local",
+  "seed": 8932055,
+  "pattern": "foil",
+  "base_linear_low": [
+    0.11486553749099114,
+    0.12359824631529548,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.21715814289404356,
+    0.23305949329053802,
+    0.2496445698631376
+  ],
+  "roughness": 0.36,
+  "roughness_variation": 0.06,
+  "metallic": 0.6,
+  "height_span_mm": 0.1,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 10,
+  "cycles_v": 12,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-345",
+    "name": "Cathode-coated foil illustration",
+    "family": "Battery and thermal-management surfaces",
+    "domains": [
+      "electronics",
+      "automotive",
+      "aerospace",
+      "space"
+    ],
+    "description": "A granular electrode-like layer covers a thin conductive substrate.",
+    "use_cases": [
+      "Battery-section concepts"
+    ],
+    "optical_model": "Visual construction recipes for conductive shells, films, porous layers and thermal-interface materials; no electrical or thermal values inferred.",
+    "controls": [
+      "surface roughness",
+      "layer masks",
+      "section orientation",
+      "particle distribution",
+      "foil exposure"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use declared illustration scale for enlarged particles.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No electrochemical formulation or performance is asserted.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "bc5e14850b8303aaed7970ae4c2892b1e20dd3047dc624d0f1828cf3e4f07a6e",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "2e67f80ab73762aa2f72f13f3a681ca8fc8df37aa99f63d43691fa9ae04d23ea",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "419f729cd452417aa4e79970a19e1487d1b9750a6957ffa6ccae7836966adea2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "04fac23fd3da0de500dc84d56e66f0f2c9089a024ef5eb42be7d1b5aa6d8501c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "328cdba93b04608cfdf95f3722b5b37d1aee2b46c72455774e3cf1e95b2b83ad",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "202416dbf445120d01c16230a633f0b3f8ef843e1653cfe07db5d0438c1c9db7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ae2e127265cc895e8eecc014b3723418e41a99b25f8c422f968b7c5e74b4fc77",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "23c04ca276fc4205b9f54246b9567cbdecdfae91e7c312dfd8b1550f69129980",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "6c7a14bfb99d44c5fc0f87025cddce6490c4a38fb4188c198e35eb1f107c324e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

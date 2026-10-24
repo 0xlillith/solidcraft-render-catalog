@@ -1,0 +1,181 @@
+{
+  "id": "MAT-222",
+  "name": "Scored brake-rotor track",
+  "family": "Automotive brakes and contact surfaces",
+  "version": "1.0.0-local",
+  "seed": 7958018,
+  "pattern": "turned",
+  "base_linear_low": [
+    0.20734417828773075,
+    0.030274756938402612,
+    0.021370342158917727
+  ],
+  "base_linear_high": [
+    0.3855520858373604,
+    0.06312716935052416,
+    0.04691316034907407
+  ],
+  "roughness": 0.326,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.055,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-222",
+    "name": "Scored brake-rotor track",
+    "family": "Automotive brakes and contact surfaces",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Uneven circumferential grooves interrupt a used contact band.",
+    "use_cases": [
+      "Maintenance illustrations"
+    ],
+    "optical_model": "Separate conductor, ceramic or friction-composite surfaces with localized use-state overlays.",
+    "controls": [
+      "contact-region masks",
+      "roughness",
+      "process direction",
+      "score width",
+      "groove depth"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use geometry for scores that are resolved in close-up.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Visual scoring is illustrative and does not determine serviceability.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d2e8e3ed55c1d0c198abf63be9362a0abeb016634aa55b6bca2895ec204db051",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "7a2d5041a905f055f2fb56797baf5506984df7f201964527a373c864693b1d09",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "481c094a7fc6032f0ccdb269254b5fb3f48fa2b571fb80b3910ac8571a8fe107",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "7955a636feb20b9c6a6b0bfdd3e3683ecddd650556fd4240811378d96c81c9d7",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "e5ef4a86bea6e31258da7dc919079075921e19865ed0600b86044ad71972bac3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "fe777b6668708289d597b043151170d1aa9bedae0ed8e80a857e6fc66332ff01",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2d39c529b6b585605e79b706251db47c09fadffb0ba3f476dd8bfe23c45dcf32",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "9c2e3c5ec2107ef312ecadf3cb634cb0163e94aed8a4d0b7a6e23927f2a35935",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

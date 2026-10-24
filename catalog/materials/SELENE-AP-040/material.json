@@ -1,0 +1,100 @@
+{
+  "id": "SELENE-AP-040",
+  "name": "Aluminium honeycomb cut edge",
+  "original_specification": {
+    "id": "SELENE-AP-040",
+    "name": "Aluminium honeycomb cut edge",
+    "source_catalog_ids": [
+      "MAT-481"
+    ],
+    "family": "Aerospace cores",
+    "domains": [
+      "aerospace",
+      "SELENE",
+      "industrial"
+    ],
+    "purpose": "A conductor response for separately modeled honeycomb walls at a panel edge.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-040 Aluminium honeycomb cut edge",
+        "color": "#a5adb6",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.4,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Honeycomb geometry generation",
+        "Wall silhouettes",
+        "Adhesive",
+        "Internal shadows"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque conductor on explicit thin cell-wall geometry with separate adhesive and face sheets.",
+      "structure": [
+        "Conductor cell walls",
+        "Adhesive regions assigned separately",
+        "Independent face sheets"
+      ],
+      "authoring_controls": [
+        {
+          "id": "cell_pitch",
+          "value": 6.0,
+          "unit": "mm",
+          "meaning": "Illustrative render-geometry cell pitch, not a structural core specification.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "wall_thickness",
+          "value": 0.1,
+          "unit": "mm",
+          "meaning": "Authored visual wall thickness requiring geometric review.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use geometry for cells and empty space",
+        "Keep core boundaries and bond regions explicit"
+      ],
+      "capability_requirements": [
+        "CAP-001",
+        "CAP-033",
+        "CAP-036",
+        "CAP-043",
+        "CAP-097"
+      ],
+      "unknown_optical_inputs": [
+        "Foil optical constants",
+        "Adhesive optical response if visible"
+      ],
+      "validation_criteria": [
+        "Cell voids must remain actual empty space, not black painted hexagons",
+        "The appearance does not certify sandwich strength"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#a5adb6",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.4,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-040 Aluminium honeycomb cut edge",
+    "bodies": [
+      "SELENE-AP-040"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

@@ -1,0 +1,106 @@
+{
+  "id": "SELENE-AP-028",
+  "name": "FDM top-skin preview",
+  "original_specification": {
+    "id": "SELENE-AP-028",
+    "name": "FDM top-skin preview",
+    "source_catalog_ids": [
+      "MAT-171",
+      "MAT-361"
+    ],
+    "family": "Additive polymers",
+    "domains": [
+      "additive manufacturing",
+      "3D printers",
+      "DIY"
+    ],
+    "purpose": "A printable-polymer appearance target with monotonic top-skin lines.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-028 FDM top-skin preview",
+        "color": "#aab5bd",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.46,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Extrusion lines",
+        "Layer seams",
+        "Toolpath-dependent anisotropy"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque dielectric bead surface with manufacturing-direction relief.",
+      "structure": [
+        "Extruded polymer surface",
+        "Top-skin bead pattern",
+        "Wall seams handled independently"
+      ],
+      "authoring_controls": [
+        {
+          "id": "bead_pitch",
+          "value": 0.45,
+          "unit": "mm",
+          "meaning": "Illustrative top-skin spacing, not a printer recommendation.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "bead_relief",
+          "value": 0.035,
+          "unit": "mm",
+          "meaning": "Authored relief for close-view visualization.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "toolpath_angle",
+          "value": 0.0,
+          "unit": "rad",
+          "meaning": "Top-skin direction in the part local frame.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use planar local mapping on top skins",
+        "Do not continue the top-skin pattern through side walls"
+      ],
+      "capability_requirements": [
+        "CAP-020",
+        "CAP-033",
+        "CAP-034",
+        "CAP-035",
+        "CAP-036"
+      ],
+      "unknown_optical_inputs": [
+        "Selected polymer optical response"
+      ],
+      "validation_criteria": [
+        "Top-skin and wall manufacturing directions must differ where appropriate",
+        "Texture must not modify the engineering layer height or toolpath"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#aab5bd",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.46,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-028 FDM top-skin preview",
+    "bodies": [
+      "SELENE-AP-028"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

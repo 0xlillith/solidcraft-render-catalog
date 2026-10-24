@@ -1,0 +1,181 @@
+{
+  "id": "MAT-067",
+  "name": "Laminated neoprene",
+  "family": "Elastomers and foams",
+  "version": "1.0.0-local",
+  "seed": 6730573,
+  "pattern": "rubber",
+  "base_linear_low": [
+    0.011820109507217333,
+    0.013593337247957108,
+    0.015512755339333975
+  ],
+  "base_linear_high": [
+    0.029523184475828575,
+    0.03275204692911593,
+    0.0362471067372947
+  ],
+  "roughness": 0.756,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.16,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-067",
+    "name": "Laminated neoprene",
+    "family": "Elastomers and foams",
+    "domains": [
+      "industrial",
+      "automotive",
+      "electronics"
+    ],
+    "description": "Textile skin overlays a foam core visible at cut edges.",
+    "use_cases": [
+      "Cases",
+      "protection"
+    ],
+    "optical_model": "Dielectric surface with optional subsurface scattering or explicit pore geometry; no mechanical certification.",
+    "controls": [
+      "roughness",
+      "surface texture",
+      "wear coverage",
+      "facing weave",
+      "core pores"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Give fabric and foam their own physical scales.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-028",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Exposed edges should reveal a consistent layered construction.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "adf9b9b4e8d072b3d7054d06d2140b538af4a9ee5336f293a40eb7556e190ac6",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "80d278517a8983e6b9f92933d7f0cdae96aeb26142b61290e2ce43d939df15f4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "d9f7051a5ca81495b2bde23353bd7c7543141dfd54b54f92b96938ebcbe521c9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "2e2c62db90a2c18b629cd4854ec8bb213f9c48877bf80d5b505e3c22b2e07228",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "a08e1eec2fde85e6a0668ea080b7e24587284a33657c5dfc7d055b6a1d742b60",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "71d1f4797d18bc8dba0d6e859f6ec82106c4cce3abe79f03616612012bba21ff",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "bb46664e62feb8b3ae6d785f2db19b07fcbbcb8e70ef8968ab09360ab49494e6",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "d0986e528df0f0ad71eb7c0e84c65a4c6ca05a57f99e0686a938c609655a0c9d",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

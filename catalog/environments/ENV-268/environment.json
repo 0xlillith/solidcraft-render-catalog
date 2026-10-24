@@ -1,0 +1,442 @@
+{
+  "id": "ENV-268",
+  "name": "Polar rotating-azimuth study ground",
+  "family": "Lunar south-pole and low-sun contexts",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-268",
+    "name": "Polar rotating-azimuth study ground",
+    "family": "Lunar south-pole and low-sun contexts",
+    "domains": [
+      "lunar",
+      "space",
+      "polar_operations"
+    ],
+    "description": "Polar rotating-azimuth study ground is a conceptual setting for mast instruments; solar-panel placement. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Mast instruments",
+      "solar-panel placement"
+    ],
+    "representation": "Conceptual polar lunar terrain with explicit terrain-horizon occlusion",
+    "geometry": "Fixed conceptual terrain with saved sun-azimuth variants",
+    "ambient_lighting": "Low-elevation sun evaluated at separately authored azimuths",
+    "scale_policy": "Identical terrain and subject scale across variants; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Sun azimuth variants",
+      "fixed elevation",
+      "reference exposure",
+      "terrain seed",
+      "camera lock"
+    ],
+    "authoring_method": "Original procedural terrain and authored illumination states; no exact polar site, illumination-duration estimate or ephemeris claim",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-011",
+      "CAP-036",
+      "CAP-084"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Low sun is an authored state and not proof of continuous illumination.",
+      "Use terrain geometry to block direct light and keep atmospheric radiance at zero.",
+      "Permanently or temporarily shadowed labels require source-bound site analysis before being treated as mission facts.",
+      "Earth is off by default and is never an arbitrary giant backdrop."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Lunar terrain",
+      "width_mm": 16000,
+      "depth_mm": 16000,
+      "amplitude_mm": 500,
+      "seed": 840268,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 0",
+      "center_mm": [
+        6418.464787445249,
+        -70.86173297740879,
+        195.38684735404357
+      ],
+      "radii_mm": [
+        651.2894911801452,
+        455.9026438261016,
+        423.3381692670944
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 1",
+      "center_mm": [
+        700.2278668782619,
+        -2479.0023224315173,
+        229.62576791972577
+      ],
+      "radii_mm": [
+        765.4192263990859,
+        535.7934584793601,
+        497.5224971594059
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 2",
+      "center_mm": [
+        -6491.2678922505165,
+        1095.4306954427793,
+        217.43336975404264
+      ],
+      "radii_mm": [
+        724.7778991801422,
+        507.3445294260995,
+        471.10563446709244
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 3",
+      "center_mm": [
+        5292.805821095544,
+        1621.0287498193175,
+        98.83792819981001
+      ],
+      "radii_mm": [
+        329.4597606660334,
+        230.62183246622337,
+        214.14884443292172
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 4",
+      "center_mm": [
+        6085.515742391068,
+        6588.572412715446,
+        135.54471306238324
+      ],
+      "radii_mm": [
+        451.8157102079441,
+        316.27099714556084,
+        293.6802116351637
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 5",
+      "center_mm": [
+        -372.24207171462695,
+        4633.479536847422,
+        262.19802484415777
+      ],
+      "radii_mm": [
+        873.9934161471926,
+        611.7953913030348,
+        568.0957204956752
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 6",
+      "center_mm": [
+        -2054.201079467406,
+        -6605.860333028108,
+        195.3365132215986
+      ],
+      "radii_mm": [
+        651.121710738662,
+        455.7851975170634,
+        423.22911198013037
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 7",
+      "center_mm": [
+        2950.886731489685,
+        -403.3160594931296,
+        179.79815714781026
+      ],
+      "radii_mm": [
+        599.3271904927009,
+        419.5290333448906,
+        389.5626738202556
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 8",
+      "center_mm": [
+        3286.913834265918,
+        -726.4638602702298,
+        181.81394748735792
+      ],
+      "radii_mm": [
+        606.0464916245264,
+        424.2325441371685,
+        393.9302195559422
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 9",
+      "center_mm": [
+        5978.643215336324,
+        -1092.577532841874,
+        98.09523915557506
+      ],
+      "radii_mm": [
+        326.9841305185835,
+        228.88889136300844,
+        212.5396848370793
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 10",
+      "center_mm": [
+        2723.043367922057,
+        -2074.9647463955735,
+        76.98144510394788
+      ],
+      "radii_mm": [
+        256.6048170131596,
+        179.62337190921173,
+        166.79313105855377
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 11",
+      "center_mm": [
+        -6356.643282501498,
+        5165.393840365725,
+        201.9251421397561
+      ],
+      "radii_mm": [
+        673.0838071325204,
+        471.1586649927643,
+        437.5044746361383
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 12",
+      "center_mm": [
+        5547.199469362742,
+        -2380.3414211001773,
+        249.44182689462596
+      ],
+      "radii_mm": [
+        831.4727563154199,
+        582.0309294207939,
+        540.457291605023
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 13",
+      "center_mm": [
+        -3730.5190862886725,
+        -4919.280846281747,
+        131.4649218224456
+      ],
+      "radii_mm": [
+        438.2164060748187,
+        306.7514842523731,
+        284.84066394863214
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 14",
+      "center_mm": [
+        -4427.819447647493,
+        -4656.8124440676165,
+        262.0878357043108
+      ],
+      "radii_mm": [
+        873.6261190143695,
+        611.5382833100585,
+        567.8569773593401
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 15",
+      "center_mm": [
+        6719.366928763322,
+        -2525.845312326892,
+        150.97145331906955
+      ],
+      "radii_mm": [
+        503.2381777302318,
+        352.2667244111623,
+        327.1048155246507
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 16",
+      "center_mm": [
+        2589.486550688207,
+        -2005.0294893817236,
+        143.81447560523333
+      ],
+      "radii_mm": [
+        479.38158535077775,
+        335.5671097455444,
+        311.59803047800557
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 17",
+      "center_mm": [
+        5737.63049214278,
+        6311.122303164124,
+        142.47136993522352
+      ],
+      "radii_mm": [
+        474.90456645074505,
+        332.4331965155215,
+        308.6879681929843
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 18",
+      "center_mm": [
+        -1045.6227816901182,
+        4256.223492180181,
+        243.69741016725533
+      ],
+      "radii_mm": [
+        812.3247005575178,
+        568.6272903902624,
+        528.0110553623865
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 19",
+      "center_mm": [
+        -1785.0907956924511,
+        -5232.222598508228,
+        201.10782249854438
+      ],
+      "radii_mm": [
+        670.3594083284813,
+        469.2515858299369,
+        435.7336154135129
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 20",
+      "center_mm": [
+        3505.773049389827,
+        2272.8010917153915,
+        59.03964353425937
+      ],
+      "radii_mm": [
+        196.79881178086458,
+        137.75916824660519,
+        127.91922765756199
+      ],
+      "color": "888783"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 21",
+      "center_mm": [
+        1658.0046066253308,
+        -6895.819313235422,
+        254.75204386699988
+      ],
+      "radii_mm": [
+        849.1734795566663,
+        594.4214356896664,
+        551.9627617118331
+      ],
+      "color": "888783"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 23,
+    "triangles": 5650,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 16000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        -0.6643051034394714,
+        0.2030984519710153,
+        0.7193398003386512
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Conceptual terrain, not measured lunar topography.",
+    "Vacuum: no atmospheric haze, rain, wind or added sky illumination.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

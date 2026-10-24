@@ -1,0 +1,182 @@
+{
+  "id": "MAT-438",
+  "name": "Cork-rubber gasket sheet appearance",
+  "family": "DIY panels adhesives and joint surfaces",
+  "version": "1.0.0-local",
+  "seed": 9668522,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.2799829974682521,
+    0.19841264143487516,
+    0.0908743308689878
+  ],
+  "base_linear_high": [
+    0.5178197864347277,
+    0.36928869037395173,
+    0.17347266217935092
+  ],
+  "roughness": 0.72,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-438",
+    "name": "Cork-rubber gasket sheet appearance",
+    "family": "DIY panels adhesives and joint surfaces",
+    "domains": [
+      "DIY",
+      "woodworking",
+      "industrial"
+    ],
+    "description": "Mixed granules form a bonded compressible-looking sheet.",
+    "use_cases": [
+      "DIY gaskets",
+      "sections"
+    ],
+    "optical_model": "Construction-specific dielectric or layered adhesive surface with explicit host interfaces.",
+    "controls": [
+      "coverage",
+      "surface finish",
+      "joint geometry",
+      "granule mix",
+      "cut texture"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep granules consistent through exposed edges.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Appearance does not supply compression or sealing characteristics.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "2fb1d31196e7ae2435a0b7c44c8406675c5aff643563142d4e1bd509fc41c195",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e1202c7f7f3397231801a0c14a469bb8db38740899eba6785139fda0674395ee",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "33bf4b1932c392e043776416c1af74dd761f8ae9b3a86f7640da10671b690e42",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b2bd1fa573a27adcd4cdb654b78917d1bf981941adba359e08a0917e43976d83",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "97653a18cc8cbb254d3720f95c9693316fe88b098c401467f25c7c4341838f52",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "20b50e2be1fe26dacccd0ee2be8662624218acebb4322e81aedce7f4e089c1c9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4ea588dd0f466266290b12ebbdee0c027f6c795cf1b2b0ca0ee693280b36ba8a",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "beba102e0a62e41129c26753dfb00ada2e481b3bf364af8e1c0145ef067457a0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

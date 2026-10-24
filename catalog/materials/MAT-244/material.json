@@ -1,0 +1,182 @@
+{
+  "id": "MAT-244",
+  "name": "Acoustic-laminate edge appearance",
+  "family": "Automotive glazing and optical covers",
+  "version": "1.0.0-local",
+  "seed": 8132236,
+  "pattern": "plywood",
+  "base_linear_low": [
+    0.36563538911802507,
+    0.4458094898491223,
+    0.47461177252743014
+  ],
+  "base_linear_high": [
+    0.6737838428716276,
+    0.819772503904372,
+    0.8722184514678578
+  ],
+  "roughness": 0.062,
+  "roughness_variation": 0.008,
+  "metallic": 0,
+  "height_span_mm": 0.01,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-244",
+    "name": "Acoustic-laminate edge appearance",
+    "family": "Automotive glazing and optical covers",
+    "domains": [
+      "automotive",
+      "LED lighting"
+    ],
+    "description": "A visible multilayer edge shows an authored glazing stack.",
+    "use_cases": [
+      "Glazing sections"
+    ],
+    "optical_model": "Refractive layered glazing with separately represented printed, coated and structured optical regions.",
+    "controls": [
+      "transmission",
+      "layer absorption",
+      "face roughness",
+      "interlayer boundaries",
+      "edge finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use declared visual ply dimensions rather than inferred acoustic data.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Appearance must not imply acoustic attenuation ratings.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "4e706aad74b66da60505b3218272f8a3ae3468a8fc9264f92f784cde3e58007a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "eee3739988b91b989f1ca3f6600993c77cc31130201d15c66a27cd6928574aad",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "3cb6d427a91c79c2519e16135945408539c87dde26fb855df6e21d60f1d8c08d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "a5affe0b89b9269470bcabe1d548f202a03915f7ad4fc3b3018a59598b18b541",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b529021580ab5475d18e328d343764dd1b91417d51398cc3d3e67f7c7277ba10",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b1a1c2956d819ea083908cc8c123a466858faf600eaa5d32019fc55fa3861351",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "91efdc5dbec96d65359878ca2982265627a5a1569d7c9d2e40a84c5c1289c942",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "2997b2e2d4df11ff4bccac2c78e7094da2a29334e76a8f1d8e978f85403d3fda",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

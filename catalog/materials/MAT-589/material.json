@@ -1,0 +1,183 @@
+{
+  "id": "MAT-589",
+  "name": "SELENE etched witness-window appearance",
+  "family": "SELENE transparent sample containment and viewing",
+  "version": "1.0.0-local",
+  "seed": 10864291,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.46489408006563326,
+    0.5406580126383986,
+    0.5619953378662959
+  ],
+  "base_linear_high": [
+    0.8545235487762277,
+    0.9924817543564869,
+    1.0
+  ],
+  "roughness": 0.132,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.004,
+  "tile_mm": [
+    40,
+    40
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-589",
+    "name": "SELENE etched witness-window appearance",
+    "family": "SELENE transparent sample containment and viewing",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE",
+      "laboratory"
+    ],
+    "description": "A clear coupon carries fine original inspection markings.",
+    "use_cases": [
+      "Containment inspection concepts"
+    ],
+    "optical_model": "Refractive candidate container or viewing material with explicit walls, seals and interiors; no containment, compatibility or flight-readiness claim.",
+    "controls": [
+      "transmission",
+      "absorption distance",
+      "interface priority",
+      "etch pattern",
+      "surface finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep marks at real graphic scale and attached to the correct face.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "The coupon is not a calibrated contamination sensor without supporting data.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d471c5afff0826f643b0eee69bba732c42aa871cc3bfd673f3239366765cfdcb",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "18b79c7fb5df1572f2a4f1fba6db835b94c7441b06ae3b6241f93ce89ccc5cb6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "da03359205d4c1a9c3ed7d5b9f012d101fc9393e3963b1b30470811dddaece07",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "7feff79f2dfca87b141cb545e248ef6ee3dd6b28c78ad0ec48762fe85eead56d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "99ccd9da46d4f521a3b97ab0a16892422d04994192ecf8b98a91dd6a1624e6c7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "d4ff1f1d2c3b261a18600823aacf1fb5e35d2c0f8361d0a0d83f84e9b82806e3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "e75f88b01d06058581f9a764a074bcc4edef980cfe0cc639ba1fa87e65313077",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e237a67e9f1a8459e54ac55f6ad41929cf6d455d689ba5f4d054fe28d0a0e059",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

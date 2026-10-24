@@ -1,0 +1,182 @@
+{
+  "id": "MAT-419",
+  "name": "Live-edge timber slab",
+  "family": "Wood cuts joinery and assembled patterns",
+  "version": "1.0.0-local",
+  "seed": 9518061,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.27640355103421554,
+    0.16495488889424978,
+    0.05939924281146788
+  ],
+  "base_linear_high": [
+    0.5113019884503626,
+    0.30836561858355926,
+    0.116159815268643
+  ],
+  "roughness": 0.572,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-419",
+    "name": "Live-edge timber slab",
+    "family": "Wood cuts joinery and assembled patterns",
+    "domains": [
+      "woodworking",
+      "DIY"
+    ],
+    "description": "Cut faces meet an irregular bark or cambium-like boundary.",
+    "use_cases": [
+      "Tables",
+      "shelves"
+    ],
+    "optical_model": "Geometry-aware wood construction recipe that assigns grain to separate boards, laminations and exposed joints.",
+    "controls": [
+      "board layout",
+      "grain orientation",
+      "finish roughness",
+      "edge layer",
+      "growth pattern"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Model the outer silhouette and map grain through the slab.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "A bark-coloured strip alone must not replace live-edge geometry.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b8edc08c74b2785074abeed71de9f8d26919c045020dca77de8049a74eeb5fbe",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "44278fb19d9fe651aebd2e00915cbbf89af61137beb7163c058008401b9b57d6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "91f04ffabbd1f408b822b41772abeb1c60ee28c0479d0882431cb389e683c913",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "56b0c118e85e7f37d5b16828fb7870279a7cfde0fc4c59d5b7b8b22d87d4e8ef",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "a12ce6208168ec77578fe36fdb54216701d84ca09a9e959223b923cfb654ae9a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "8e24c3b095fc05f69a8b6852deafbddac35b063489cef4ea768a4cd63a931f35",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a368d721b5aa6c5c9d018b3683f3f2123b078ad77173f3b08c1a02f808171df9",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "6f11d7ce885f451612a528ccf34f5ca64aca084119892bee76ead02cb5829b0a",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

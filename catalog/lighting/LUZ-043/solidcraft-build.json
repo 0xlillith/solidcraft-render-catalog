@@ -1,0 +1,143 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "LUZ-043 Powered lamp shade"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "description": "Original relative lighting rig on neutral calibration geometry; no photometric certification.",
+        "org.solidcraft.local_catalog": {
+          "id": "LUZ-043",
+          "unresolved_external_inputs": [],
+          "limitations": []
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.sphere",
+    "params": {
+      "radius": 160,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "body_name": "Reference subject"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Reference subject"
+      ],
+      "color": [
+        155,
+        155,
+        155
+      ],
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.4,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-043 Powered lamp shade",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.7,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 1150,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "background": [
+          30,
+          35,
+          42
+        ],
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 796349,
+            "tone_map": "aces_fitted",
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    1500.0,
+                    500.0
+                  ],
+                  "u": [
+                    800.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    -316.22776601683796,
+                    948.6832980505137
+                  ],
+                  "radiance": [
+                    12,
+                    12,
+                    12
+                  ]
+                },
+                {
+                  "center": [
+                    -1300.0,
+                    -1200.0,
+                    800.0
+                  ],
+                  "u": [
+                    -373.0540565031862,
+                    404.14189454511836,
+                    0.0
+                  ],
+                  "v": [
+                    196.79037443622656,
+                    181.6526533257476,
+                    592.2633384474896
+                  ],
+                  "radiance": [
+                    1.5,
+                    1.5,
+                    1.5
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

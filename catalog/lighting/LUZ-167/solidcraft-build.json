@@ -1,0 +1,187 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "LUZ-167 Small printed-layer inspection"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "description": "Original relative lighting rig on neutral calibration geometry; no photometric certification.",
+        "org.solidcraft.local_catalog": {
+          "id": "LUZ-167",
+          "unresolved_external_inputs": [],
+          "limitations": []
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.sphere",
+    "params": {
+      "radius": 160,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "body_name": "Reference subject"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Reference subject"
+      ],
+      "color": [
+        155,
+        155,
+        155
+      ],
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.4,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-167 Small printed-layer inspection",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.7,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 1150,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "background": [
+          30,
+          35,
+          42
+        ],
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 987681,
+            "tone_map": "aces_fitted",
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    737.2368398600926,
+                    -1500.0,
+                    401.50350544573223
+                  ],
+                  "u": [
+                    -98.72069289268056,
+                    -48.52035443799902,
+                    0.0
+                  ],
+                  "v": [
+                    -15.45444727343403,
+                    31.443994191270054,
+                    145.85072947631087
+                  ],
+                  "radiance": [
+                    6,
+                    6,
+                    6
+                  ]
+                },
+                {
+                  "center": [
+                    -737.2368398600927,
+                    -1500.0,
+                    401.5035054457322
+                  ],
+                  "u": [
+                    -98.72069289268056,
+                    48.520354437999025,
+                    0.0
+                  ],
+                  "v": [
+                    15.45444727343403,
+                    31.44399419127005,
+                    145.85072947631087
+                  ],
+                  "radiance": [
+                    6,
+                    6,
+                    6
+                  ]
+                },
+                {
+                  "center": [
+                    -737.2368398600926,
+                    -1500.0,
+                    -401.5035054457323
+                  ],
+                  "u": [
+                    -98.72069289268056,
+                    48.52035443799902,
+                    0.0
+                  ],
+                  "v": [
+                    -15.454447273434033,
+                    -31.443994191270054,
+                    145.85072947631087
+                  ],
+                  "radiance": [
+                    6,
+                    6,
+                    6
+                  ]
+                },
+                {
+                  "center": [
+                    737.2368398600925,
+                    -1500.0,
+                    -401.50350544573257
+                  ],
+                  "u": [
+                    -98.72069289268056,
+                    -48.520354437999,
+                    0.0
+                  ],
+                  "v": [
+                    15.454447273434038,
+                    -31.44399419127008,
+                    145.85072947631087
+                  ],
+                  "radiance": [
+                    6,
+                    6,
+                    6
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

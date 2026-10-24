@@ -1,0 +1,182 @@
+{
+  "id": "MAT-409",
+  "name": "Open-pore wenge appearance",
+  "family": "Additional timber and bamboo appearances",
+  "version": "1.0.0-local",
+  "seed": 9438871,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.05939924281146788,
+    0.025596928968882156,
+    0.014216736951922382
+  ],
+  "base_linear_high": [
+    0.116159815268643,
+    0.05460933334632273,
+    0.033887192658724336
+  ],
+  "roughness": 0.622,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.3,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-409",
+    "name": "Open-pore wenge appearance",
+    "family": "Additional timber and bamboo appearances",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Dark elongated pores retain strong directional structure.",
+    "use_cases": [
+      "Furniture",
+      "decorative inserts"
+    ],
+    "optical_model": "Volumetric dielectric wood or bamboo structure with independent cut orientation and finish.",
+    "controls": [
+      "growth structure",
+      "grain axis",
+      "surface finish",
+      "pore depth",
+      "fine finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve fine pores while maintaining readable dark detail.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-034"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not turn dark wood into uniformly black plastic.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "e1fb3118cc5dfbf59d8cc2b05b421272e3a9ed9a698e8b12348136a7b1756cc3",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "287ed126a8b8930626e567ac8a18c78224c275ae84f7718d764c5a52af111431",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "1600813d454a267efc8e6c5cbf49b47496f6519f2128acc4860644ec6295eb3f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "3e9191624e9778e4e491af0d696dbcf0a7bc06b2b0442c64cb3143e5f9cf2a1a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "64cd9a345d02d9eb48e8aa1878723169a18e75f489f902e09d938c32477e571a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "bfeb99b5565919ec8ff8ce4ea706f0b778d9ad3f22155620e5528aff72ba96d7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "8d3c4d406af301ae19195822264cea55dc05ea6512ee548202cdea585f703b05",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "7cc8fdd66022b754e1932b709645543d9de08ea8e1172244cbf82827d12aa416",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

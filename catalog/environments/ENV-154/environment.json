@@ -1,0 +1,860 @@
+{
+  "id": "ENV-154",
+  "name": "Timber pier",
+  "family": "Coasts and water",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-154",
+    "name": "Timber pier",
+    "family": "Coasts and water",
+    "domains": [
+      "outdoor_products",
+      "marine",
+      "landscape"
+    ],
+    "description": "Timber pier is a conceptual setting for marine equipment; furniture. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Marine equipment",
+      "furniture"
+    ],
+    "representation": "Procedural sky or verified captured HDRI with 3D shore and water",
+    "geometry": "Planks, supports and water below",
+    "ambient_lighting": "Sky and water reflection",
+    "scale_policy": "Pier width from 1.5 to 8 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Pier width and length",
+      "plank orientation",
+      "supports",
+      "water level",
+      "ripples",
+      "time of day"
+    ],
+    "authoring_method": "Original procedural terrain and water; captured HDR requires verified rights and horizon alignment",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-042",
+      "CAP-025",
+      "CAP-026"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Align the horizon and water level.",
+      "Use geometric water for nearby reflections; avoid adding a second sun to an HDRI containing one."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Terrain",
+      "width_mm": 24000,
+      "depth_mm": 24000,
+      "amplitude_mm": 130,
+      "seed": 840154,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 0",
+      "center_mm": [
+        -6044.765652254638,
+        -240.36403923044782,
+        161.7003332299934
+      ],
+      "radii_mm": [
+        462.0009520856954,
+        323.4006664599868,
+        231.0004760428477
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 1",
+      "center_mm": [
+        7081.813432976949,
+        4492.4909004848705,
+        290.0995298668945
+      ],
+      "radii_mm": [
+        828.8557996196986,
+        580.199059733789,
+        414.4278998098493
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 2",
+      "center_mm": [
+        -1069.249192774074,
+        -8472.237118857005,
+        164.5260279173049
+      ],
+      "radii_mm": [
+        470.07436547801404,
+        329.0520558346098,
+        235.03718273900702
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 3",
+      "center_mm": [
+        -3919.638534131982,
+        7424.384386711208,
+        305.05353208990005
+      ],
+      "radii_mm": [
+        871.5815202568573,
+        610.1070641798001,
+        435.79076012842864
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 4",
+      "center_mm": [
+        2245.507541577519,
+        -1067.6640703203702,
+        249.34567990977465
+      ],
+      "radii_mm": [
+        712.4162283136419,
+        498.6913598195493,
+        356.20811415682095
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 5",
+      "center_mm": [
+        8867.117272265506,
+        -3113.0598256115527,
+        87.92361009274967
+      ],
+      "radii_mm": [
+        251.21031455071335,
+        175.84722018549934,
+        125.60515727535667
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 6",
+      "center_mm": [
+        6861.2205628476695,
+        458.7250019352341,
+        282.21803606307856
+      ],
+      "radii_mm": [
+        806.3372458945101,
+        564.4360721261571,
+        403.1686229472551
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 7",
+      "center_mm": [
+        999.9410698223546,
+        -5605.719772034815,
+        144.4026657279277
+      ],
+      "radii_mm": [
+        412.5790449369364,
+        288.8053314558554,
+        206.2895224684682
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 8",
+      "center_mm": [
+        4829.674538259142,
+        -10304.834614866635,
+        210.09384642735273
+      ],
+      "radii_mm": [
+        600.2681326495792,
+        420.18769285470546,
+        300.1340663247896
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 9",
+      "center_mm": [
+        6141.781352516882,
+        687.9648762779216,
+        155.62889027687103
+      ],
+      "radii_mm": [
+        444.65397221963156,
+        311.25778055374207,
+        222.32698610981578
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 10",
+      "center_mm": [
+        -7535.0739191421,
+        -114.80972388837654,
+        124.39312900503134
+      ],
+      "radii_mm": [
+        355.4089400143753,
+        248.78625801006268,
+        177.70447000718764
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 11",
+      "center_mm": [
+        6783.632365381211,
+        -1154.2609337765807,
+        93.1683559306374
+      ],
+      "radii_mm": [
+        266.195302658964,
+        186.3367118612748,
+        133.097651329482
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 12",
+      "center_mm": [
+        3328.5437307071934,
+        -9022.70296957932,
+        149.4555525444114
+      ],
+      "radii_mm": [
+        427.01586441260406,
+        298.9111050888228,
+        213.50793220630203
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 13",
+      "center_mm": [
+        -10216.524467258263,
+        622.5093811675997,
+        68.85508317474954
+      ],
+      "radii_mm": [
+        196.72880907071297,
+        137.71016634949908,
+        98.36440453535648
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 14",
+      "center_mm": [
+        2374.6259737663986,
+        -4605.118487673136,
+        110.84363343095296
+      ],
+      "radii_mm": [
+        316.6960955170085,
+        221.68726686190593,
+        158.34804775850424
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 15",
+      "center_mm": [
+        381.63500412420217,
+        -5987.160607006549,
+        233.15367263143912
+      ],
+      "radii_mm": [
+        666.1533503755404,
+        466.30734526287824,
+        333.0766751877702
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 16",
+      "center_mm": [
+        9779.78275686386,
+        8357.870621659647,
+        317.8132837340664
+      ],
+      "radii_mm": [
+        908.037953525904,
+        635.6265674681327,
+        454.018976762952
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 17",
+      "center_mm": [
+        1791.4985416215077,
+        9179.568941970414,
+        265.78707795544653
+      ],
+      "radii_mm": [
+        759.3916513012758,
+        531.5741559108931,
+        379.6958256506379
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 18",
+      "center_mm": [
+        6411.608040655858,
+        1282.877282217989,
+        254.5459797316186
+      ],
+      "radii_mm": [
+        727.2742278046246,
+        509.0919594632372,
+        363.6371139023123
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 19",
+      "center_mm": [
+        -8438.25839409382,
+        -9595.639773715617,
+        83.49652813892781
+      ],
+      "radii_mm": [
+        238.56150896836522,
+        166.99305627785563,
+        119.28075448418261
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 20",
+      "center_mm": [
+        -8212.915637858072,
+        -780.6082441135623,
+        66.18511612145657
+      ],
+      "radii_mm": [
+        189.10033177559023,
+        132.37023224291315,
+        94.55016588779512
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 21",
+      "center_mm": [
+        -7240.752743348373,
+        3046.6174030072198,
+        162.42466898510017
+      ],
+      "radii_mm": [
+        464.0704828145719,
+        324.84933797020034,
+        232.03524140728595
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 22",
+      "center_mm": [
+        -720.2991311777569,
+        -6228.958200890698,
+        211.92132768786735
+      ],
+      "radii_mm": [
+        605.489507679621,
+        423.8426553757347,
+        302.7447538398105
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 23",
+      "center_mm": [
+        -8146.509970141926,
+        7150.545988467933,
+        143.19651775257
+      ],
+      "radii_mm": [
+        409.13290786448573,
+        286.39303550514,
+        204.56645393224287
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "box",
+      "name": "Water surface",
+      "center_mm": [
+        0.0,
+        6500.0,
+        -5.0
+      ],
+      "size_mm": [
+        24000.0,
+        10000.0,
+        10.0
+      ],
+      "color": "3e7789"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        3000.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        3220.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        3440.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        3660.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        3880.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        4100.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        4320.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        4540.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        4760.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        4980.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        5200.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        5420.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        5640.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        5860.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        6080.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        6300.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        6520.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        6740.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        6960.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        7180.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        7400.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        7620.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        7840.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        8060.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    },
+    {
+      "type": "box",
+      "name": "Pier plank",
+      "center_mm": [
+        0.0,
+        8280.0,
+        60.0
+      ],
+      "size_mm": [
+        1800.0,
+        200.0,
+        100.0
+      ],
+      "color": "9b825d"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 51,
+    "triangles": 6266,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 24000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        -0.05850270145285565,
+        0.8366276085933443,
+        0.5446390350150271
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Water context is a static authored surface. No hydrodynamics or wave transport is claimed.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

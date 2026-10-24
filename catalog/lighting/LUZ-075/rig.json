@@ -1,0 +1,111 @@
+{
+  "id": "LUZ-075",
+  "name": "Sculpted keyboard legends",
+  "family": "08 Electronics and small mechanisms",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-075",
+    "name": "Sculpted keyboard legends",
+    "family": "08 Electronics and small mechanisms",
+    "domains": [
+      "electronics",
+      "manufacturing"
+    ],
+    "description": "A proposed lighting arrangement for keyboards and keycaps.",
+    "use_cases": [
+      "Keyboards and keycaps"
+    ],
+    "sources": "Long front-upper K and side F",
+    "geometry": "Strip parallel to rows, elevated about 45 degrees",
+    "contribution_policy": "K 0 and F -1.5 reference EV",
+    "controls": [
+      "Inter-key shadow direction",
+      "legend illumination balance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-038"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Legends and gaps remain uniformly readable"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 845725,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          -200.0,
+          1800.0
+        ],
+        "u": [
+          -850.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          596.3302408041714,
+          66.25891564490792
+        ],
+        "radiance": [
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "center": [
+          -1300.0,
+          -1000.0,
+          450.0
+        ],
+        "u": [
+          -76.21384510621155,
+          99.07799863807502,
+          0.0
+        ],
+        "v": [
+          146.80507940648047,
+          112.92698415883116,
+          675.0524164161241
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

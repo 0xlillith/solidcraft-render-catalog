@@ -1,0 +1,182 @@
+{
+  "id": "MAT-147",
+  "name": "Mineral-wool cut section",
+  "family": "Flooring and insulation",
+  "version": "1.0.0-local",
+  "seed": 7364093,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.0908743308689878,
+    0.08902177544105805,
+    0.07333934622146056
+  ],
+  "base_linear_high": [
+    0.17347266217935092,
+    0.17009935229565792,
+    0.1415432871495252
+  ],
+  "roughness": 0.856,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.2,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-147",
+    "name": "Mineral-wool cut section",
+    "family": "Flooring and insulation",
+    "domains": [
+      "DIY",
+      "architecture",
+      "industrial"
+    ],
+    "description": "Dense irregular fibres form a visibly porous body.",
+    "use_cases": [
+      "Construction sections"
+    ],
+    "optical_model": "Heterogeneous dielectric surface or layered porous construction according to the specified recipe.",
+    "controls": [
+      "grain distribution",
+      "roughness",
+      "layer coverage",
+      "fibre density",
+      "orientation"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Reserve geometric fibres for views where they matter.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Appearance must not imply thermal or fire performance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "57ce3e90066254c33e71ee7bdb113a8021bd7a93e21e542f0810109f94090ace",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ed83fee5e2ed68a17a75314a300b9f8fd3b85e59d81cf7d62d9bcded0e680e01",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "2647262772cf5d68e28d13ddfffea21c31541d5dbd3ba740c6269e8bb7a210c2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0b3d3e2fda912fadc73323ad48c8199197da66a052d35ddec3e0636ae6aa5411",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "dd0589870631d419d3077e350bda68c2fb2a8c771170ed368558175d2d7cf145",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "3928eb23d6b91da4f7ded8c30e889a812aa42398153446879a7f6f3177a26201",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "060066386062f6753fb054d56e52697893691f15f7694c2928f6a0ee709b9285",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "c311a5eef269cbf623e9e3e5b1c638fd24a5df988195bd057402b83909d249d3",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

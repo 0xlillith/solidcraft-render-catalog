@@ -1,0 +1,192 @@
+{
+  "id": "MAT-551",
+  "name": "Sparse lunar-dust speckling",
+  "family": "Lunar dust deposition overlays",
+  "version": "1.0.0-local",
+  "seed": 10563369,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.11918523870903151,
+    0.1106385703161173,
+    0.09656607547489872
+  ],
+  "base_linear_high": [
+    0.22502386750002754,
+    0.20946127729203448,
+    0.1838367344468305
+  ],
+  "roughness": 0.878,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.08,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-551",
+    "name": "Sparse lunar-dust speckling",
+    "family": "Lunar dust deposition overlays",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Isolated grains interrupt a mostly clean host finish.",
+    "use_cases": [
+      "Rover panels",
+      "sample tools"
+    ],
+    "optical_model": "Granular particulate layer attached to a host surface in vacuum; no terrestrial airborne-fog model and no inferred electrostatic or friction constants.",
+    "controls": [
+      "coverage mask",
+      "particle distribution",
+      "host preservation",
+      "grain size",
+      "sparse coverage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep particles at physical scale independent of host size.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "A sparse layer must preserve the host's original optical response.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "6d2784aada38da673780b5159ca78bcea2ad1599b8039b6ea0a8d3a2cb814845",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4df79cd75a715e61d2b62fdc8e3e65a956802966c203015da5387f34afbf6afc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "35c4f5505b4a349acc7ed30bfc1e1924295b8a8dda3ef317fb94cd5a4a5db6a1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "bca4db88bbd8712aa06c9316fe4f347c557a0c6c4f4ba62fef2b528825caeca5",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3558e0e79aaf34eb05c3e41956e1d15702f4dc2bf0bc8d5c74900c5554205881",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "f63f276b419786e696aa0de62ef05f871803b7ee00306c7a75914389fd546d78",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "a9d58f27c663f1ed937a1ef3a8c8b6886913a37d1805457ba510e1f51ab9ba23",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2c8eac5f1850d7f87faa822e53ab4a02816335e82941a975922c0136f76b915a",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "3c839197c8213a51572f1a156c1785c73e55a2dd5245d5090ca14d28a29f5e68",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

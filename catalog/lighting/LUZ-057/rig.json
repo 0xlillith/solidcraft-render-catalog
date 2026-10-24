@@ -1,0 +1,89 @@
+{
+  "id": "LUZ-057",
+  "name": "Ribbed technical rubber",
+  "family": "06 Plastics and matte finishes",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-057",
+    "name": "Ribbed technical rubber",
+    "family": "06 Plastics and matte finishes",
+    "domains": [
+      "product",
+      "manufacturing"
+    ],
+    "description": "A proposed lighting arrangement for bellows and protective parts.",
+    "use_cases": [
+      "Bellows and protective parts"
+    ],
+    "sources": "Grazing side K and front F",
+    "geometry": "K about 20 degrees to rib plane; broad front F",
+    "contribution_policy": "K 0 and F -2 reference EV",
+    "controls": [
+      "Rib-revealing key angle",
+      "recess fill"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-035"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Ribs remain readable and rubber remains appropriately dark"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 817951,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1350.0,
+          -1400.0,
+          1200.0
+        ],
+        "u": [
+          -431.9065772524111,
+          416.4813423505392,
+          0.0
+        ],
+        "v": [
+          291.59247279693346,
+          302.39219401163473,
+          680.832424910124
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

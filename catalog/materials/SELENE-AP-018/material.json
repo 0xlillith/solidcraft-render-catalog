@@ -1,0 +1,108 @@
+{
+  "id": "SELENE-AP-018",
+  "name": "Aluminized blanket metal face",
+  "original_specification": {
+    "id": "SELENE-AP-018",
+    "name": "Aluminized blanket metal face",
+    "source_catalog_ids": [
+      "MAT-501"
+    ],
+    "family": "Space blankets",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "space"
+    ],
+    "purpose": "A metallic outer-face preview for a separate blanket panel.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-018 Aluminized blanket metal face",
+        "color": "#c3c8cd",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.18,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Wrinkle geometry",
+        "Layer thickness",
+        "Thin-film effects",
+        "Self-shadowing"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Thin conductor coating on a polymer carrier; visible folds require geometry.",
+      "structure": [
+        "Metal-facing conductor coating",
+        "Polymer carrier",
+        "Blanket folds and seams as geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "wrinkle_span",
+          "value": 18.0,
+          "unit": "mm",
+          "meaning": "Illustrative spacing of broad wrinkles.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "wrinkle_height",
+          "value": 0.7,
+          "unit": "mm",
+          "meaning": "Authored render-only wrinkle height away from controlled interfaces.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "seam_spacing",
+          "value": 80.0,
+          "unit": "mm",
+          "meaning": "Illustrative seam pattern spacing.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use explicit fold geometry for silhouettes and shadowing",
+        "Do not apply displacement across attachment and clearance boundaries"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-018",
+        "CAP-031",
+        "CAP-036",
+        "CAP-043"
+      ],
+      "unknown_optical_inputs": [
+        "Conductor coating optical constants",
+        "Coating continuity and thickness",
+        "Polymer optical data"
+      ],
+      "validation_criteria": [
+        "Large fold highlights must follow actual fold geometry",
+        "The appearance must not certify thermal insulation or blanket construction"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#c3c8cd",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.18,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-018 Aluminized blanket metal face",
+    "bodies": [
+      "SELENE-AP-018"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

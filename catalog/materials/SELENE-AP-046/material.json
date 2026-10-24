@@ -1,0 +1,109 @@
+{
+  "id": "SELENE-AP-046",
+  "name": "Varnished walnut joinery",
+  "original_specification": {
+    "id": "SELENE-AP-046",
+    "name": "Varnished walnut joinery",
+    "source_catalog_ids": [
+      "MAT-113"
+    ],
+    "family": "Wood and DIY",
+    "domains": [
+      "woods",
+      "DIY",
+      "industrial"
+    ],
+    "purpose": "A darker wooden-furniture target with a uniform polished baseline surrogate.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-046 Varnished walnut joinery",
+        "color": "#6d4d37",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.3,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Wood anatomy",
+        "Separate varnish layer",
+        "Absorption",
+        "End grain"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Transparent dielectric varnish above absorbing directional wood anatomy.",
+      "structure": [
+        "Varnish surface",
+        "Wood substrate",
+        "Separate end-grain mapping"
+      ],
+      "authoring_controls": [
+        {
+          "id": "growth_pattern_span",
+          "value": 14.0,
+          "unit": "mm",
+          "meaning": "Illustrative walnut-like pattern spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "pore_extent",
+          "value": 0.18,
+          "unit": "mm",
+          "meaning": "Authored pore-detail scale.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "varnish_surface_relief",
+          "value": 0.002,
+          "unit": "mm",
+          "meaning": "Illustrative polished coating relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Carry wood axes across joined pieces deliberately",
+        "Keep coating separate from grain color and pore relief"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-020",
+        "CAP-021",
+        "CAP-026",
+        "CAP-033",
+        "CAP-034",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Wood reflectance",
+        "Varnish optical data and thickness"
+      ],
+      "validation_criteria": [
+        "Moving the grain direction must not rotate the coating highlight independently of the surface",
+        "The baseline is a uniform surrogate, not a procedural wood shader"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#6d4d37",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.3,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-046 Varnished walnut joinery",
+    "bodies": [
+      "SELENE-AP-046"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

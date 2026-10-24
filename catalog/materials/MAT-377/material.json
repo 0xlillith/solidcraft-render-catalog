@@ -1,0 +1,194 @@
+{
+  "id": "MAT-377",
+  "name": "Translucent dental-model resin appearance",
+  "family": "Resin-printing process appearances",
+  "version": "1.0.0-local",
+  "seed": 9185463,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.18970965608809473,
+    0.2227425293519402,
+    0.25209562240390737
+  ],
+  "base_linear_high": [
+    0.35344146332459037,
+    0.4135908743423388,
+    0.46703979004890595
+  ],
+  "roughness": 0.35,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.065,
+  "tile_mm": [
+    35,
+    35
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-377",
+    "name": "Translucent dental-model resin appearance",
+    "family": "Resin-printing process appearances",
+    "domains": [
+      "additive manufacturing",
+      "industrial",
+      "DIY"
+    ],
+    "description": "Scattering polymer shows fine printed structure in an illustrative model.",
+    "use_cases": [
+      "Dental-model visualizations"
+    ],
+    "optical_model": "Photopolymer appearance with explicit liquid, cured, support and post-processing states; curing mechanics are outside scope.",
+    "controls": [
+      "build direction",
+      "surface state",
+      "local masks",
+      "scattering distance",
+      "layer cues"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use model thickness and explicit visual scale.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-028",
+      "CAP-034",
+      "CAP-036",
+      "CAP-039",
+      "CAP-025"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No medical suitability or material certification is asserted.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Rough transmission/scattering intent is represented in portable material; native smooth-transmission fallback is separately named."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "136fdfb9333f2255e0b7b83b1b7a2f1de49727f7f00e2bd82f07aed3831ecc56",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "dfd01857c5af9eff4f9d01b1330c2abefd0bdd4da1d0dc4dbe0b6909d571c1e7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "d5d06a7549e1a85c716589bc3cd6a830c366115adf5e8bbfd7027e44abf6c36b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "24aece63518a2054b5a3139a8895fd4a749f92396662d1643a99e572fda5e064",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "9f2d4a860f8ed1c524b2e5228fc7a6e902a5a63145152dd9eb0c85cc6712973e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "49588a8b3505de5b48650a7168490027c32372a4eeb78c16844c25d17791237a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a88600db8b9154db84112ef87d5c139be2b41fc11d0753cdb640daef1ec96a45",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "89810066260f25a1b50986a9b4f9a5db54fd4233de01638040b24568db9408d7",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

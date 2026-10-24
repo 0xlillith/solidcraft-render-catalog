@@ -1,0 +1,180 @@
+{
+  "id": "MAT-227",
+  "name": "Painted brake-pad backing plate",
+  "family": "Automotive brakes and contact surfaces",
+  "version": "1.0.0-local",
+  "seed": 7997613,
+  "pattern": "turned",
+  "base_linear_low": [
+    0.1127404981270928,
+    0.12138004364740636,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.21328866823142273,
+    0.22902037798482947,
+    0.2496445698631376
+  ],
+  "roughness": 0.416,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.055,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-227",
+    "name": "Painted brake-pad backing plate",
+    "family": "Automotive brakes and contact surfaces",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Coating covers a formed metal support beneath friction material.",
+    "use_cases": [
+      "Brake-pad assemblies"
+    ],
+    "optical_model": "Separate conductor, ceramic or friction-composite surfaces with localized use-state overlays.",
+    "controls": [
+      "contact-region masks",
+      "roughness",
+      "process direction",
+      "edge coverage",
+      "exposed steel"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use a precise interface mask at the bonded pad.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Friction material must remain separate from the painted plate.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "33ec39384b414bcb20226fff5f9d4e60afd06e067861e420f408af67a27e1b43",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "de19d5755f49327dcf81940d8108502fef1dd024e089b57dfe1f1f6379460be4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "41d459e8bcc7a011a74c0f5afd144270855333e02fea4d7bbf504565e4519848",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "fe0f0c6e05e58d1f0d8237145eeb24b8ea1b54c98539809a0a4dcb38652fe125",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f4709b2f93737c1c3ebf4638a17af0234f4bfc535be8481bde3f35fda3e7e8e0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "013e95848a729e5b75f4fbabf94dd9267e836daca938fe4f186f31da10525a8a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "81884df91e7219accd75ba5b3d3445077053804b416ccac1006830daaea54ae4",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "1d59fe98ab36596a6cb3124c6731f31a3ca1ac520cdd0c6ae44c609cdd5be643",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

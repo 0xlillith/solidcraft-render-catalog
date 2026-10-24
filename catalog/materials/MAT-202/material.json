@@ -1,0 +1,179 @@
+{
+  "id": "MAT-202",
+  "name": "Sanded surfacer-primer appearance",
+  "family": "Automotive paint stacks and correction states",
+  "version": "1.0.0-local",
+  "seed": 7799638,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.03227512223201591,
+    0.0766717004640724,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.06676962555680509,
+    0.14761115606890796,
+    0.2496445698631376
+  ],
+  "roughness": 0.61,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-202",
+    "name": "Sanded surfacer-primer appearance",
+    "family": "Automotive paint stacks and correction states",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Abrasive preparation marks interrupt a uniform primer layer.",
+    "use_cases": [
+      "Paint-process illustrations"
+    ],
+    "optical_model": "Layered pigmented coating with distinct substrate, preparation, effect and finish regions.",
+    "controls": [
+      "layer coverage",
+      "coat roughness",
+      "process masks",
+      "sanding direction",
+      "grit-scale texture"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use physical scratch spacing and local repair masks.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Sanding must remain in the primer rather than deform the body panel.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "05d1607292b25fd66f0fb35b1ddb07581f269704595f5b3dcfb5d9a7ec5f1966",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "506224b4060843190430c2631f1d91a7cddb33246290f43bb42953dc45711960",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "d73ccc4998e915ccd64e6f53de8b23c0ec612da6f05e948fdfadaebf36819577",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "ba95b9f5e7f252243eae7c2bbcc22deff74500065c3373562b735e01feab4c9a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3b3f8980e249808ce13f556804dbfd7600aee951acca36d8e6a144676c7cb106",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "21bc582fe55ba50e0cff949e3d5943b4ea1ff9ace8132abcf58f4019a136b421",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "c37854e33755ac79ced38d02639d9a603cb9c620d7fb35b204d71a0380da85f0",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "c0d99a3ea9b3bf4f1223f70367ff021bf3dc7edd94992268961ea531c29e0c79",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

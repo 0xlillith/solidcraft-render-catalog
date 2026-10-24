@@ -1,0 +1,183 @@
+{
+  "id": "MAT-445",
+  "name": "Chip-on-board phosphor bed",
+  "family": "LED emitters and conversion layers",
+  "version": "1.0.0-local",
+  "seed": 9723955,
+  "pattern": "led",
+  "base_linear_low": [
+    0.5619953378662959,
+    0.4226072813519184,
+    0.1520671352517659
+  ],
+  "base_linear_high": [
+    1.0,
+    0.7775237063422992,
+    0.28489836568232
+  ],
+  "roughness": 0.3,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.005,
+  "tile_mm": [
+    15,
+    15
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-445",
+    "name": "Chip-on-board phosphor bed",
+    "family": "LED emitters and conversion layers",
+    "domains": [
+      "LED lighting",
+      "electronics",
+      "automotive",
+      "space"
+    ],
+    "description": "A shared conversion-like surface covers an authored array region.",
+    "use_cases": [
+      "COB luminaire concepts"
+    ],
+    "optical_model": "Explicit emissive and dielectric package regions; static emission is an authored source, while physical spectral conversion requires a dedicated model.",
+    "controls": [
+      "emission level",
+      "package masks",
+      "surface finish",
+      "region coverage",
+      "uniformity"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep chip-layout geometry and optical surface distinct.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-013",
+      "CAP-025",
+      "CAP-028",
+      "CAP-101"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Hot-spot structure must follow the authored emitter layout.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "510cd6e4e793edb780a9b359b36914f205f892bf49c51e9fcfeb54d375f77a38",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "2740a049dcd2ef18e92f47284f594e1472d16fced7fee86def629244bdd95710",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "fa59c918f85eaec44a1947b78012b59ef594c19fb15ebd56eea9720e74e26b35",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0c4bd3d432bb4dbf9d33f4f4488b8daa5cb962fc7368c2f65925a181ae60d8e9",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "4d105a0460a935fa1a922908be10c6e9c0e150dfe6854c9c7aff721b3d6dbdc4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c839807c339c1645a8fbba0bef801316d9eb8af3337e26e2b7f7c30a05ca8de7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cb75aeabeda6abf0f8807478ebb278cc7d55d24871ccdccc6240e3ac4ee203b2",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "3085a7be7172f5b0e4daea27f00363a37e1809670db34d3b9cf948ec709b1c3e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}
