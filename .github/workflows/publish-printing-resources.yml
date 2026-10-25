@@ -29,17 +29,22 @@ jobs:
           mkdir -p authoring/stage-03-printing/reports
           "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tools/data.py
           "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tests/test_stage.py 2>&1 | tee authoring/stage-03-printing/reports/tests.log
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tests/test_previews.py 2>&1 | tee authoring/stage-03-printing/reports/preview-tests.log
       - name: Generate complete 2K masters, 1K maps, EXR, specimens and gallery
         env:
           OPENCV_IO_ENABLE_OPENEXR: '1'
         run: |
           "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03-printing/tools/build.py --size 2048 | tee authoring/stage-03-printing/reports/generation.log
-      - name: Validate every portable material and image
+      - name: Render filtered previews from the actual runtime textures
+        run: |
+          "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03-printing/tools/render_previews.py | tee authoring/stage-03-printing/reports/preview-generation.log
+      - name: Validate every portable material, image and preview input
         env:
           OPENCV_IO_ENABLE_OPENEXR: '1'
         run: |
           GLTF_VALIDATOR_MODULE="$RUNNER_TEMP/catalog-validator/node_modules/gltf-validator" node authoring/stage-03-printing/tools/validate_gltf.cjs
           "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03-printing/tools/validate_stage.py | tee authoring/stage-03-printing/reports/file-validation.log
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tools/validate_previews.py
       - name: Preserve readable physical records and exact validation checkpoint
         id: checkpoint
         run: |
