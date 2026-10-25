@@ -1,0 +1,36 @@
+name: Publish wood authoring resources
+# Resource-only delivery in the owner's private repository; no upstream/application CI changes.
+on:
+  push:
+    branches: [authoring/stage-01-woods-20261025]
+    paths: [.github/workflows/publish-wood-resources.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: wood-stage01-resource-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == '0xlillith/solidcraft-render-catalog'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Reconstruct exact source-backed data and index
+        run: |
+          python3 authoring/stage-01-woods/tools/prepare_data.py
+          python3 authoring/stage-01-woods/tools/build_registry.py
+          node --test authoring/stage-01-woods/tests/numerical.cjs
+      - name: Generate bounded 2K masters and 1K maps
+        env:
+          WOOD_SIZE: '2048'
+        run: node authoring/stage-01-woods/tools/wood_maps.cjs
+      - name: Independently validate every output
+        run: python3 authoring/stage-01-woods/tools/validate_stage.py
+      - name: Publish and download-verify every archive and member
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 authoring/tools/publish_stage.py --stage authoring/stage-01-woods --tag wood-stage01-20261025
