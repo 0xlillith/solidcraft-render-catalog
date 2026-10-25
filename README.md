@@ -1,38 +1,41 @@
-# SolidCraft Render catalog — authoring v1
+# SolidCraft Render resource catalog
 
-Private personal resource repository. **The complete binary collection is in the release**, not in Git's automatic Source code ZIP.
+Personal resource repository maintained by **0xlillith**. **Complete generated assets are stored in this repository's Releases; GitHub's automatic Source code ZIP is not the complete image/mesh library.** Source, numerical inputs, tests and readable inventory remain in Git.
 
-## Get the complete catalog
+## Published resource deliveries
 
-Open [catalog-v1-20261024](https://github.com/0xlillith/solidcraft-render-catalog/releases/tag/catalog-v1-20261024).
-Download all `catalog-v1-20261024-*.zip` assets and extract them into the **same empty parent directory**. Each ZIP contains a disjoint part of `Render-Catalog-Complete-20261024-v1/`; no concatenation is needed. Open `index.html` inside that folder.
+| Delivery | Coverage | Complete assets | Source and status |
+|---|---|---|---|
+| Original catalog v1 | 1,386 original resource records | [catalog-v1-20261024](https://github.com/0xlillith/solidcraft-render-catalog/releases/tag/catalog-v1-20261024) | [Original guide](catalog/README.md) |
+| Stage 01 — woods | 16 species references, 4 grain views, 6 finishes; 384 variants | [wood-stage01-20261025](https://github.com/0xlillith/solidcraft-render-catalog/releases/tag/wood-stage01-20261025) | [Wood guide](authoring/stage-01-woods/README.md) · [Status](authoring/stage-01-woods/STATUS.md) |
+| Stage 02 — alloys | 24 grade/condition references, 23 distinct grades, 8 finishes; 192 variants | [alloys-stage02-20261025](https://github.com/0xlillith/solidcraft-render-catalog/releases/tag/alloys-stage02-20261025) | [Alloy guide](authoring/stage-02-alloys/README.md) · [Status](authoring/stage-02-alloys/STATUS.md) |
 
-A restoration helper and release SHA-256 manifest are included in `distribution/`. The repository is private: authenticate with your authorized GitHub account to download.
+**[Global resource index: 2,002 records](authoring/RESOURCE-INDEX.json)**. This count includes appearances, physical references, lights, environments and other resource kinds; it does not mean 2,002 distinct engineering materials.
 
-For only the uniform native appearance libraries, download `Native-Appearance-Libraries.zip` instead. This small optional convenience archive is also preserved inside the complete collection.
+For each release, download all its resource ZIPs and extract them into the same empty parent directory. No concatenation is necessary. Open `index.html` inside the resulting collection directory. For stage 01/02 the catalog/previews archive is sufficient for browsing; add runtime/master map archives for complete editable material files. Check the attached manifests and `PUBLICATION-VERIFIED.json`.
 
-## Collection
+Original v1 uses seven `catalog-v1-20261024-*.zip` files. Its small optional `Native-Appearance-Libraries.zip` contains only the uniform native appearance libraries, not all maps. Existing restoration helpers remain in `distribution/`.
 
-| Collection | Entries |
-|---|---:|
-| Main procedural materials | 600 |
-| SELENE appearance baselines | 48 |
-| Lighting rigs | 280 |
-| Environment/context realizations | 280 |
-| Scene, studio and environment setups | 97 |
-| Quality profiles | 10 |
-| SELENE shot studies | 12 |
-| Physical reference profiles | 59 |
-| **Indexed entries** | **1,386** |
+## Appearance and physical data are distinct, linked records
 
-Formats include PNG, EXR, Radiance HDR, glTF/GLB, OBJ/MTL, `.solidcraft`, native version-2 appearance libraries, JSON recipes, HTML and CSV. Full source catalogs, generators, original resources, provenance, diagnostic evidence and local tool dependencies are retained in the resource archives. Editable text is mirrored byte-for-byte in `catalog/` for browsing and review.
+All new wood/alloy variants link explicit physical substrate references. Source units, SI conversions, grade, condition, temperature and unresolved properties are retained. Visual finish edits do not silently rewrite density, strength or mechanical axes. Missing values are unknown, never zero. The source review excludes inconsistent fields rather than guessing corrections.
 
-## Scope and provenance
+New stage 02 exports include 112 map PNGs at 2K/1K, 192 original procedural previews, 192 GLB and 192 editable glTF specimens. All 384 interchange specimens passed the official Khronos validator with zero errors/warnings; data/image regressions and full archive/member download verification also passed. These checks do not imply native SolidCraft or engineering certification.
 
-This is **complete source-catalog file coverage**, not certification that every optical, physical, spectral, motion or semantic requirement is implemented. Native v2 appearance catalogs hold uniform PBR values; arbitrary maps and richer variants remain separate. Read [the original authoring guide](catalog/README.md) for the exact exclusions.
+## Qualification and future integration
 
-The original resource README and `PACK-RECEIPT.json` are immutable historical delivery records: their statements about local-only status describe the moment of generation. This separate repository/release records the subsequently authorized publication without rewriting the original bytes or hashes.
+**Native SolidCraft acceptance and premium visual qualification of the new wood/alloy stages remain pending.** Proposed native command files are not executed imports or certified materials. Procedural preview images are not native GPU evidence. Finite-patch maps are not claimed seamless. Read each stage's exact boundaries.
 
-Source application: `9e6e0b8df130f342e15ebe988b7211d1482a44c2`. No upstream repository, application installation or CI workflow is modified by this publication. The original catalog on Pegasus is preserved.
+The legacy audit still records 345 appearance records with physical-reference candidates requiring selection and 303 without a specific physical reference. New stages do not automatically close those gaps. Further alloy groups, additive manufacturing, soils/masonry/pastes and the 118-element collection remain staged work.
 
-New original authoring retains MIT OR Apache-2.0 notices in `catalog/licenses/`. Third-party tool dependencies and physical-source claims retain their own original licences and metadata; no blanket relicensing is implied.
+**No plugin, autoinstaller, package compatibility standard or SolidCraft integration API is defined by this repository.** Those decisions remain pending community discussion. Internal resource indexes are not proposals to impose an upstream standard.
+
+## Durable storage, provenance and preservation
+
+[Working policy](authoring/WORKING-POLICY.md): this personal GitHub repository is the required durable destination for source and all generated assets. Local work and conversation attachments are not the final delivery. Publication requires download/hash verification. Earlier releases and original source histories are retained.
+
+The original v1 README/receipt are historical records; their local-only/private wording describes the initial snapshot, not current repository visibility. No original binary was rewritten to update those historical statements.
+
+New original authoring uses MIT OR Apache-2.0 with [the original license notices](catalog/licenses/). Primary factual references, third-party dependencies and their own notices retain their provenance; no blanket relicensing of supplier publications or physical datasets is implied. Complete copyrighted datasheets, commercial textures and font files are not included in the new stages.
+
+Resource-delivery automation is limited to this personal repository. No upstream SolidCraft application code/CI, protection rule or installed application was changed by these publications.
