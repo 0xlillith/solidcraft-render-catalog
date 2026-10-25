@@ -3,7 +3,7 @@
   "repository": "0xlillith/solidcraft-render-catalog",
   "updated": "2026-10-25",
   "plugin_standard": null,
-  "indexed_records": 2293,
+  "indexed_records": 2515,
   "counts_are": "Resource records including appearance variants and physical profiles; not unique engineering materials or the count of individual exported files",
   "collections": [
     {
@@ -43,8 +43,27 @@
       "published_assets": "complete_download_verified",
       "native_acceptance": "not_run", "premium_visual_qualification": "pending",
       "scope": "Selected named FFF reference grades and metric surface studies; not a printer profile, general manufacturing simulation or effective infilled-part property model"
+    },
+    {
+      "id": "additive-stage03b", "records": 222,
+      "appearance_variants": 198, "physical_profiles": 24, "physical_property_records": 208, "shared_process_map_sets": 50,
+      "index_path": "authoring/stage-03b-additive/registry/resource-index.json",
+      "appearance_items_key": "items",
+      "physical_index_path": "authoring/stage-03b-additive/data/physical-profiles.json",
+      "physical_items_key": "profiles",
+      "release_tag": "additive-stage03b-20261025",
+      "source_commit": "90d05c24cfff31c560721839edefc00a4a9c3670",
+      "source_interpretation_notes": "authoring/stage-03b-additive/SOURCE-NOTES.md",
+      "publication_closeout": "authoring/stage-03b-additive/reports/PUBLICATION-CLOSEOUT.json",
+      "published_assets": "complete_download_verified",
+      "native_acceptance": "not_run", "premium_visual_qualification": "pending",
+      "appearance_category_counts": {"abs_additional_brands": 60, "photopolymer_resins": 70, "sls_mjf_polymers": 20, "metal_am": 48},
+      "additional_representation_count": {"closed_transmission_studies": 40},
+      "additional_representations_are_not_extra_resource_ids": true,
+      "scope": "Previously missing additive categories delivered with source-linked profiles and generated assets; not every supplier/product/process, manufacturing qualification or measured optics"
     }
   ],
+  "delivered_additive_categories": ["FFF including ABS and additional suppliers", "Vat photopolymer resins", "SLS and MJF polymer powders", "LPBF metals", "Bound-metal extrusion and sintering"],
   "remaining_legacy_physical_coverage": {
     "candidate_linked_looks_requiring_selection": 345,
     "looks_without_specific_reference": 303,
@@ -52,7 +71,7 @@
   },
   "remaining_material_work": [
     "Broaden alloy coverage: carbon/engineering/tool steels, cast irons, magnesium, zinc, solders and further nonferrous grades",
-    "Broaden additive materials: ABS, other suppliers, resin/SLA, powder and metal processes; condition-specific mechanical and optical acceptance",
+    "Native and premium qualification of delivered additive resources; further formulations are follow-on expansion, not an absent-category gate",
     "Soils, aggregates, cement, concrete, mortars and pastes",
     "All 118 pure elements with phase/isotope/measurement qualifications",
     "Reconcile physical references for all historical materials",

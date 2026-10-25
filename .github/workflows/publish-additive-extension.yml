@@ -1,0 +1,55 @@
+name: Publish additive category extension
+# Personal resource delivery only. No upstream SolidCraft application CI is changed.
+on:
+  push:
+    branches: [authoring/stage-03b-additive-20261025]
+    paths: [.github/workflows/publish-additive-extension.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: additive-stage03b-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == '0xlillith/solidcraft-render-catalog'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+      - name: Install isolated pinned authoring tools
+        run: |
+          python3 -m venv "$RUNNER_TEMP/catalog-venv"
+          "$RUNNER_TEMP/catalog-venv/bin/python" -m pip install -r authoring/stage-03b-additive/requirements.txt
+          npm install --prefix "$RUNNER_TEMP/catalog-validator" --ignore-scripts --no-audit --no-fund gltf-validator@2.0.0-dev.3.10
+      - name: Validate identities physical conditions and numerical fields
+        run: |
+          mkdir -p authoring/stage-03b-additive/reports
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03b-additive/tools/inputs.py
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03b-additive/tests/test_stage.py 2>&1 | tee authoring/stage-03b-additive/reports/tests.log
+      - name: Generate all metric maps portable specimens and previews
+        run: |
+          "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03b-additive/tools/build.py --size 2048 | tee authoring/stage-03b-additive/reports/generation.log
+      - name: Validate every output before publication
+        run: |
+          GLTF_VALIDATOR_MODULE="$RUNNER_TEMP/catalog-validator/node_modules/gltf-validator" node authoring/stage-03b-additive/tools/validate_gltf.cjs
+          "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03b-additive/tools/validate_stage.py | tee authoring/stage-03b-additive/reports/file-validation.log
+      - name: Preserve readable generated records and exact-source receipts
+        id: checkpoint
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add authoring/stage-03b-additive
+          git diff --cached --quiet || git commit -m 'authoring: retain verified additive-extension data and resource inventory'
+          git push origin HEAD:authoring/stage-03b-additive-20261025
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Publish and download-verify archives and every original member
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ steps.checkpoint.outputs.sha }}
+        run: GITHUB_SHA="$SOURCE_SHA" python3 authoring/tools/publish_stage.py --stage authoring/stage-03b-additive --tag additive-stage03b-20261025
