@@ -1,0 +1,55 @@
+name: Publish alloy authoring resources
+# Resource publication only. No upstream application CI or plugin interface is changed.
+on:
+  push:
+    branches: [authoring/stage-02-alloys-20261025]
+    paths: [.github/workflows/publish-alloy-resources.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: alloy-stage02-resource-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == '0xlillith/solidcraft-render-catalog'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: authoring/stage-02-alloys-20261025
+      - name: Install isolated validation tools
+        run: |
+          python3 -m venv "$RUNNER_TEMP/catalog-venv"
+          "$RUNNER_TEMP/catalog-venv/bin/python" -m pip install Pillow==11.3.0
+          npm install --prefix "$RUNNER_TEMP/catalog-validator" --ignore-scripts --no-audit --no-fund gltf-validator@2.0.0-dev.3.10
+      - name: Prepare and test original numerical inputs
+        run: |
+          python3 authoring/stage-02-alloys/tools/prepare_alloys.py
+          python3 authoring/stage-02-alloys/tests/test_records.py
+          node --test authoring/stage-02-alloys/tests/numerical.cjs
+      - name: Generate full 2K and 1K assets and the gallery
+        env:
+          ALLOY_SIZE: '2048'
+        run: |
+          node authoring/stage-02-alloys/tools/alloy_maps.cjs
+          python3 authoring/stage-02-alloys/tools/build_gallery.py
+      - name: Validate every portable material and image
+        run: |
+          GLTF_VALIDATOR_MODULE="$RUNNER_TEMP/catalog-validator/node_modules/gltf-validator" node authoring/stage-02-alloys/tools/validate_gltf.cjs
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-02-alloys/tools/validate_stage.py --require-gltf
+      - name: Preserve readable numerical data and exact-source receipts in Git
+        id: checkpoint
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add authoring/stage-02-alloys
+          git commit -m 'authoring: retain generated alloy index, physical records and successful validation'
+          git push origin HEAD:authoring/stage-02-alloys-20261025
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Upload and independently download-verify every archive and file
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ steps.checkpoint.outputs.sha }}
+        run: GITHUB_SHA="$SOURCE_SHA" python3 authoring/tools/publish_stage.py --stage authoring/stage-02-alloys --tag alloys-stage02-20261025
