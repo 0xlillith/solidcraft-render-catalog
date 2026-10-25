@@ -9,7 +9,7 @@ permissions:
   contents: write
 concurrency:
   group: printing-stage03-resource-publication
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   publish:
     if: github.repository == '0xlillith/solidcraft-render-catalog'
