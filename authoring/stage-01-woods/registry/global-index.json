@@ -1,0 +1,12 @@
+{
+  "purpose": "Federated authoring inventory, not a plugin API. Paths relative to repository root.",
+  "plugin_contract": null,
+  "total_resources": 1786,
+  "datasets": [
+    {"path":"catalog/Catalog.json","items_key":"items","count":1386,"origin":"catalog-v1-20261024","source_commit":"c146917376ed214adf5aeb7e3999f18321788b8e"},
+    {"path":"authoring/stage-01-woods/data/material-variants.json","items_key":"items","count":384,"generation":"python3 tools/prepare_data.py && python3 tools/build_registry.py"},
+    {"path":"authoring/stage-01-woods/data/physical-profiles.json","items_key":"profiles","id_prefix":"physical.","count":16,"generation":"python3 tools/prepare_data.py"}
+  ],
+  "quality": "No blanket premium or native-ready status is implied.",
+  "distribution": "Sources are versioned here; generated records are reconstructed locally. Binary publication needs a separate verified receipt."
+}

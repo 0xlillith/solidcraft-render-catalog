@@ -1,7 +1,14 @@
-# Stage 01 status
+# Stage 01 status — 25 October 2026
 
-Private authoring work for 16 wood references, four cuts and six finishes (384 variants). Internal resource bookkeeping only: the SolidCraft plugin/installation standard remains undefined pending community discussion.
+- Source-backed authoring: 16 wood references, four grain views, six finishes, 384 variants.
+- Generation completed: 64 map sets, 768 PNG maps (2048² masters / 1024² runtime), 384 software previews.
+- Independent image/data verification: PASS. Eight numerical regressions: PASS.
+- GitHub source checkpoint: data embedded in the canonical bootstrap, readable physical table, deterministic generators, federated index, tests and reports.
+- Bulk binary publication to GitHub: PENDING; generated exports are supplied separately as conversation attachments.
+- Native SolidCraft acceptance: NOT RUN; Pegasus offline.
+- Premium visual qualification: NOT QUALIFIED.
+- Plugin/installer/integration standard: UNDEFINED, pending community discussion.
+- Historical material audit: 345 candidate-linked looks and 303 without a specific physical reference. Neither group is silently marked complete.
+- Metals/alloys, additive manufacturing, soils/masonry/pastes and the 118-element collection: later stages, not delivered by this checkpoint.
 
-The source generators, physical transcription and tests are being preserved through the connected GitHub writer. Pegasus is offline; native SolidCraft acceptance has not run. High-resolution exports are being generated separately and must not be claimed uploaded until a binary publication receipt exists.
-
-The old v1 release remains unchanged. Broad alloy, additive-manufacturing, soils/masonry and periodic-element expansions are later stages, not delivered by this checkpoint.
+The original v1 release, upstream SolidCraft, CI and application installation remain unchanged.
