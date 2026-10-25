@@ -1,0 +1,61 @@
+name: Publish FFF printing authoring resources
+# Resource delivery in this personal repository only; no upstream application CI changes.
+on:
+  push:
+    branches: [authoring/stage-03-printing-20261025]
+    paths: [.github/workflows/publish-printing-resources.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: printing-stage03-resource-publication
+  cancel-in-progress: true
+jobs:
+  publish:
+    if: github.repository == '0xlillith/solidcraft-render-catalog'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: authoring/stage-03-printing-20261025
+      - name: Install isolated resource-authoring tools
+        run: |
+          python3 -m venv "$RUNNER_TEMP/catalog-venv"
+          "$RUNNER_TEMP/catalog-venv/bin/python" -m pip install -r authoring/stage-03-printing/requirements.txt
+          npm install --prefix "$RUNNER_TEMP/catalog-validator" --ignore-scripts --no-audit --no-fund gltf-validator@2.0.0-dev.3.10
+      - name: Prepare physical references and run numerical regressions
+        run: |
+          mkdir -p authoring/stage-03-printing/reports
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tools/data.py
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tests/test_stage.py 2>&1 | tee authoring/stage-03-printing/reports/tests.log
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tests/test_previews.py 2>&1 | tee authoring/stage-03-printing/reports/preview-tests.log
+      - name: Generate complete 2K masters, 1K maps, EXR, specimens and gallery
+        env:
+          OPENCV_IO_ENABLE_OPENEXR: '1'
+        run: |
+          "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03-printing/tools/build.py --size 2048 | tee authoring/stage-03-printing/reports/generation.log
+      - name: Render filtered previews from the actual runtime textures
+        run: |
+          "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03-printing/tools/render_previews.py | tee authoring/stage-03-printing/reports/preview-generation.log
+      - name: Validate every portable material, image and preview input
+        env:
+          OPENCV_IO_ENABLE_OPENEXR: '1'
+        run: |
+          GLTF_VALIDATOR_MODULE="$RUNNER_TEMP/catalog-validator/node_modules/gltf-validator" node authoring/stage-03-printing/tools/validate_gltf.cjs
+          "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-03-printing/tools/validate_stage.py | tee authoring/stage-03-printing/reports/file-validation.log
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-03-printing/tools/validate_previews.py
+      - name: Preserve readable physical records and exact validation checkpoint
+        id: checkpoint
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add authoring/stage-03-printing
+          git diff --cached --quiet || git commit -m 'authoring: retain generated FFF catalog, source properties and passing validation'
+          git push origin HEAD:authoring/stage-03-printing-20261025
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Publish and download-verify every archive and original file
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ steps.checkpoint.outputs.sha }}
+        run: GITHUB_SHA="$SOURCE_SHA" python3 authoring/tools/publish_stage.py --stage authoring/stage-03-printing --tag printing-stage03-20261025
