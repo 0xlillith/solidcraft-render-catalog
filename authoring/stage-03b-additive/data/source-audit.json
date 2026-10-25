@@ -1,0 +1,46 @@
+[
+  {
+    "source": "polymaker-abs-v56",
+    "excluded": "XY tensile strength 33.4 +/- 92.7 MPa",
+    "reason": "Implausible spread repeats modulus spread; do not replace with wiki value from a different source version."
+  },
+  {
+    "source": "polymaker-abs-v56",
+    "retained_conflict": "Density 1.04 g/cm3 in pinned PDF versus 1.12 in official wiki/older PIS; pinned PDF value is not a universal product identity."
+  },
+  {
+    "source": "bambu-abs-v3",
+    "excluded": "ABS melting point 200 C",
+    "reason": "Amorphous-polymer interpretation unclear; no fabricated phase transition."
+  },
+  {
+    "source": "flex80-v1",
+    "excluded": "Compression/tear rows with inconsistent printed methods",
+    "reason": "Do not silently repair method identifiers."
+  },
+  {
+    "source": "rigid-v1",
+    "excluded": "Absolute density from renamed Rigid4K V1 row",
+    "reason": "Exact original FLRGWH01 formulation mapping not independently established."
+  },
+  {
+    "source": "hp-tpu01",
+    "excluded": "Stress at 50% strain with percent unit in extraction",
+    "reason": "Dimensionally ambiguous; other clearly specified properties retained. PDF screenshot service failed; text verification only."
+  },
+  {
+    "source": "eos-pa3200gf",
+    "excluded": "Flexural strength 73 with missing unit",
+    "reason": "Do not guess the omitted source unit."
+  },
+  {
+    "source": "eos-ti64",
+    "excluded": "Modern grade5 URL with grade23 body",
+    "reason": "Contradictory identity. Use visually checked historical Ti64 M290 document instead."
+  },
+  {
+    "source": "markforged-174",
+    "excluded": "Conversion of relative density to kg/m3",
+    "reason": "Reference denominator and actual part porosity not established."
+  }
+]
