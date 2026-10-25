@@ -1,0 +1,59 @@
+{
+  "purpose": "Internal federated resource inventory; not a plugin, installer or SolidCraft integration standard",
+  "repository": "0xlillith/solidcraft-render-catalog",
+  "updated": "2026-10-25",
+  "plugin_standard": null,
+  "indexed_records": 2002,
+  "counts_are": "Resource records including appearance variants and physical profiles; not unique engineering materials",
+  "collections": [
+    {
+      "id": "catalog-v1",
+      "records": 1386,
+      "index_path": "catalog/Catalog.json",
+      "release_tag": "catalog-v1-20261024",
+      "source_commit": "c20a62843f37367fbddb6e15ee9c0aaff3fba274",
+      "published_assets": "complete",
+      "scope": "Historical full concept-coverage authoring collection; explicit procedural/native approximations retained"
+    },
+    {
+      "id": "wood-stage01",
+      "records": 400,
+      "appearance_variants": 384,
+      "physical_profiles": 16,
+      "index_definition_path": "authoring/stage-01-woods/registry/global-index.json",
+      "generated_index_in_release": "stage-01-woods/registry/resource-index.json",
+      "release_tag": "wood-stage01-20261025",
+      "source_commit": "be9d61a5e9708ad980e32a623d6b191547e7b76a",
+      "published_assets": "complete_download_verified",
+      "native_acceptance": "not_run",
+      "premium_visual_qualification": "pending"
+    },
+    {
+      "id": "alloys-stage02",
+      "records": 216,
+      "appearance_variants": 192,
+      "physical_profiles": 24,
+      "distinct_alloy_grades": 23,
+      "index_path": "authoring/stage-02-alloys/resource-index.json",
+      "release_tag": "alloys-stage02-20261025",
+      "source_commit": "a25826b9c838022bc1f918e86108986f0bb30dc0",
+      "published_assets": "complete_download_verified",
+      "native_acceptance": "not_run",
+      "premium_visual_qualification": "pending"
+    }
+  ],
+  "remaining_legacy_physical_coverage": {
+    "candidate_linked_looks_requiring_selection": 345,
+    "looks_without_specific_reference": 303,
+    "not_closed_by_new_stages": true
+  },
+  "remaining_material_work": [
+    "Broaden alloy coverage: carbon/engineering/tool steels, cast irons, magnesium, zinc, solders and further nonferrous grades",
+    "Additive-manufacturing substrates, process and layer-height appearances",
+    "Soils, aggregates, cement, concrete, mortars and pastes",
+    "All 118 pure elements with phase/isotope/measurement qualifications",
+    "Reconcile physical references for all historical materials",
+    "Native SolidCraft mapping, save/reopen and physical-card acceptance",
+    "Premium visual qualification on representative native renders"
+  ]
+}
