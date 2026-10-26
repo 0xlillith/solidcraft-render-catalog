@@ -1,0 +1,60 @@
+name: Publish pure-element authoring resources
+# Rebuild revision 2: tested f-block metal PBR classification
+# Personal catalog authoring only; not upstream SolidCraft application CI.
+on:
+  push:
+    branches: [authoring/stage-05-elements-20261026]
+    paths: [.github/workflows/publish-element-resources.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: stage05-pure-elements-delivery
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == '0xlillith/solidcraft-render-catalog'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+      - name: Install isolated pinned tools
+        run: |
+          python3 -m venv "$RUNNER_TEMP/element-venv"
+          "$RUNNER_TEMP/element-venv/bin/python" -m pip install -r authoring/stage-05-elements/requirements.txt
+          npm install --prefix "$RUNNER_TEMP/element-validator" --ignore-scripts --no-audit --no-fund gltf-validator@2.0.0-dev.3.10
+      - name: Test all element identities and physical qualifications
+        run: |
+          mkdir -p authoring/stage-05-elements/reports
+          "$RUNNER_TEMP/element-venv/bin/python" -m unittest discover -s authoring/stage-05-elements/tests -v 2>&1 | tee authoring/stage-05-elements/reports/tests.log
+      - name: Generate scientific cards, 2K master/1K runtime materials and gallery
+        env:
+          OPENCV_IO_ENABLE_OPENEXR: '1'
+        run: |
+          "$RUNNER_TEMP/element-venv/bin/python" -u authoring/stage-05-elements/tools/build.py --size 2048 | tee authoring/stage-05-elements/reports/generation.log
+      - name: Validate every portable sample, physical link and generated image
+        env:
+          OPENCV_IO_ENABLE_OPENEXR: '1'
+        run: |
+          export GLTF_VALIDATOR_MODULE="$RUNNER_TEMP/element-validator/node_modules/gltf-validator"
+          node authoring/stage-05-elements/tools/validate_gltf.cjs
+          "$RUNNER_TEMP/element-venv/bin/python" authoring/stage-05-elements/tools/validate.py
+      - name: Commit readable generated records and reports
+        id: checkpoint
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add authoring/stage-05-elements
+          git diff --cached --quiet || git commit -m 'authoring: retain verified 118-element profiles and generated registry'
+          git push origin HEAD:authoring/stage-05-elements-20261026
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Publish and download-verify each original file
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ steps.checkpoint.outputs.sha }}
+        run: GITHUB_SHA="$SOURCE_SHA" python3 authoring/tools/publish_stage.py --stage authoring/stage-05-elements --tag elements-stage05-20261026
