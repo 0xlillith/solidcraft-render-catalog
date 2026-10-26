@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: ${{ github.sha }}
+          fetch-depth: 0
       - name: Install original authoring tools and official Khronos validator
         run: |
           python3 -m venv "$RUNNER_TEMP/quality-venv"
@@ -43,6 +44,9 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add quality/scanned-pbr-r1 authoring/tools/publish_stage.py
           git diff --cached --quiet || git commit -m 'quality: retain pinned scanned PBR QA and per-asset source receipt'
+          # Reconcile independent documentation commits without force pushing.
+          git fetch origin quality/pbr-scanned-benchmark-20261026
+          git rebase origin/quality/pbr-scanned-benchmark-20261026
           git push origin HEAD:quality/pbr-scanned-benchmark-20261026
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - name: Publish downloadable original scanned resources with SHA256 verification
