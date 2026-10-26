@@ -1,0 +1,62 @@
+name: Publish earth and masonry authoring resources
+# Personal authoring/release only; never modifies upstream SolidCraft CI or its plugins.
+on:
+  push:
+    branches: [authoring/stage-04-earth-masonry-20261026]
+    paths:
+      - .github/workflows/publish-earth-masonry.yml
+      - authoring/stage-04-earth-masonry/tools/build.py
+      - authoring/stage-04-earth-masonry/tools/validate.py
+      - authoring/stage-04-earth-masonry/tools/validate_gltf.cjs
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: stage04-earth-masonry-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == '0xlillith/solidcraft-render-catalog'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: authoring/stage-04-earth-masonry-20261026
+      - name: Install isolated pinned authoring dependencies
+        run: |
+          python3 -m venv "$RUNNER_TEMP/catalog-venv"
+          "$RUNNER_TEMP/catalog-venv/bin/python" -m pip install -r authoring/stage-04-earth-masonry/requirements.txt
+          npm install --prefix "$RUNNER_TEMP/catalog-validator" --ignore-scripts --no-audit --no-fund gltf-validator@2.0.0-dev.3.10
+      - name: Test numerical source and surface contracts
+        run: |
+          "$RUNNER_TEMP/catalog-venv/bin/python" -m unittest discover -s authoring/stage-04-earth-masonry/tests -v
+      - name: Generate all source-backed 2K maps, 1K runtime maps and portable specimens
+        env:
+          OPENCV_IO_ENABLE_OPENEXR: '1'
+        run: |
+          "$RUNNER_TEMP/catalog-venv/bin/python" -u authoring/stage-04-earth-masonry/tools/build.py --size 2048 | tee authoring/stage-04-earth-masonry/reports-generation.log
+      - name: Independently validate every resource
+        env:
+          OPENCV_IO_ENABLE_OPENEXR: '1'
+          GLTF_VALIDATOR_MODULE: ${{ runner.temp }}/catalog-validator/node_modules/gltf-validator
+        run: |
+          node authoring/stage-04-earth-masonry/tools/validate_gltf.cjs
+          "$RUNNER_TEMP/catalog-venv/bin/python" authoring/stage-04-earth-masonry/tools/validate.py
+      - name: Preserve readable generated records and verification in Git
+        id: checkpoint
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add authoring/stage-04-earth-masonry
+          git diff --cached --quiet || git commit -m 'authoring: retain generated earth/masonry records and PASS evidence'
+          git push origin HEAD:authoring/stage-04-earth-masonry-20261026
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Publish and download-verify generated archives and all members
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ steps.checkpoint.outputs.sha }}
+        run: GITHUB_SHA="$SOURCE_SHA" python3 authoring/tools/publish_stage.py --stage authoring/stage-04-earth-masonry --tag earth-masonry-stage04-20261026
