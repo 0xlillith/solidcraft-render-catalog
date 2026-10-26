@@ -1,0 +1,3639 @@
+{
+  "schema": "solidcraft.authoring.element-source-snapshot.v1",
+  "purpose": "Reproducible authoring-data snapshot only; NOT a SolidCraft plugin or format contract",
+  "retrieved_date": "2026-10-26",
+  "provenance": [
+    {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "institution": "NIH/NLM PubChem",
+      "fields": "Atomic number, name, symbol, state, electronic/molar/thermal/density summary, family",
+      "note": "Scientific reference; individual PubChem element pages contain underlying references."
+    },
+    {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/ptable/density/",
+      "institution": "NIH/NLM PubChem",
+      "fields": "Density g/cm^3",
+      "note": "Reported density is not a condition-complete engineering mass specification"
+    },
+    {
+      "url": "https://www.nist.gov/pml/periodic-table-elements",
+      "institution": "NIST",
+      "fields": "Reference for atomic data cross-check, not asserted as direct source of every density"
+    }
+  ],
+  "counts": {
+    "elements": 118,
+    "solid_pbr_candidates": 77,
+    "liquid_reference_only": 2,
+    "gas_reference_only": 11,
+    "identity_reference_only": 28
+  },
+  "note": "No CPK atomic color is used as a measured bulk-material color. Unknown/predicted values remain null or explicitly marked.",
+  "records": [
+    {
+      "id": "element.001.h",
+      "atomic_number": 1,
+      "symbol": "H",
+      "name": "Hydrogen",
+      "group_block": "Nonmetal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "1.0080",
+      "electron_configuration": "1s1",
+      "electronegativity_pauling": 2.2,
+      "oxidation_states_reported": "+1, -1",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 0.08988,
+        "reported_g_cm3": "0.00008988",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 13.81,
+      "boiling_point_reference_K": 20.28,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.002.he",
+      "atomic_number": 2,
+      "symbol": "He",
+      "name": "Helium",
+      "group_block": "Noble gas",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "4.00260",
+      "electron_configuration": "1s2",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "0",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 0.1785,
+        "reported_g_cm3": "0.0001785",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 0.95,
+      "boiling_point_reference_K": 4.22,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.003.li",
+      "atomic_number": 3,
+      "symbol": "Li",
+      "name": "Lithium",
+      "group_block": "Alkali metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "7.0",
+      "electron_configuration": "[He]2s1",
+      "electronegativity_pauling": 0.98,
+      "oxidation_states_reported": "+1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 534,
+        "reported_g_cm3": "0.534",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 453.65,
+      "boiling_point_reference_K": 1615,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.004.be",
+      "atomic_number": 4,
+      "symbol": "Be",
+      "name": "Beryllium",
+      "group_block": "Alkaline earth metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "9.012183",
+      "electron_configuration": "[He]2s2",
+      "electronegativity_pauling": 1.57,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 1850,
+        "reported_g_cm3": "1.85",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1560,
+      "boiling_point_reference_K": 2744,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.005.b",
+      "atomic_number": 5,
+      "symbol": "B",
+      "name": "Boron",
+      "group_block": "Metalloid",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "10.81",
+      "electron_configuration": "[He]2s2 2p1",
+      "electronegativity_pauling": 2.04,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 2370,
+        "reported_g_cm3": "2.37",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2348,
+      "boiling_point_reference_K": 4273,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.006.c",
+      "atomic_number": 6,
+      "symbol": "C",
+      "name": "Carbon",
+      "group_block": "Nonmetal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "12.011",
+      "electron_configuration": "[He]2s2 2p2",
+      "electronegativity_pauling": 2.55,
+      "oxidation_states_reported": "+4, +2, -4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 2267,
+        "reported_g_cm3": "2.2670",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 3823,
+      "boiling_point_reference_K": 4098,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.007.n",
+      "atomic_number": 7,
+      "symbol": "N",
+      "name": "Nitrogen",
+      "group_block": "Nonmetal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "14.007",
+      "electron_configuration": "[He] 2s2 2p3",
+      "electronegativity_pauling": 3.04,
+      "oxidation_states_reported": "+5, +4, +3, +2, +1, -1, -2, -3",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 1.2506,
+        "reported_g_cm3": "0.0012506",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 63.15,
+      "boiling_point_reference_K": 77.36,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.008.o",
+      "atomic_number": 8,
+      "symbol": "O",
+      "name": "Oxygen",
+      "group_block": "Nonmetal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "15.999",
+      "electron_configuration": "[He]2s2 2p4",
+      "electronegativity_pauling": 3.44,
+      "oxidation_states_reported": "-2",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 1.4289999999999998,
+        "reported_g_cm3": "0.001429",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 54.36,
+      "boiling_point_reference_K": 90.2,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.009.f",
+      "atomic_number": 9,
+      "symbol": "F",
+      "name": "Fluorine",
+      "group_block": "Halogen",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "18.99840316",
+      "electron_configuration": "[He]2s2 2p5",
+      "electronegativity_pauling": 3.98,
+      "oxidation_states_reported": "-1",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 1.696,
+        "reported_g_cm3": "0.001696",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 53.53,
+      "boiling_point_reference_K": 85.03,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.010.ne",
+      "atomic_number": 10,
+      "symbol": "Ne",
+      "name": "Neon",
+      "group_block": "Noble gas",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "20.180",
+      "electron_configuration": "[He]2s2 2p6",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "0",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 0.8999,
+        "reported_g_cm3": "0.0008999",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 24.56,
+      "boiling_point_reference_K": 27.07,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.011.na",
+      "atomic_number": 11,
+      "symbol": "Na",
+      "name": "Sodium",
+      "group_block": "Alkali metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "22.9897693",
+      "electron_configuration": "[Ne]3s1",
+      "electronegativity_pauling": 0.93,
+      "oxidation_states_reported": "+1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 970,
+        "reported_g_cm3": "0.97",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 370.95,
+      "boiling_point_reference_K": 1156,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.012.mg",
+      "atomic_number": 12,
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "group_block": "Alkaline earth metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "24.305",
+      "electron_configuration": "[Ne]3s2",
+      "electronegativity_pauling": 1.31,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 1740,
+        "reported_g_cm3": "1.74",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 923,
+      "boiling_point_reference_K": 1363,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.013.al",
+      "atomic_number": 13,
+      "symbol": "Al",
+      "name": "Aluminum",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "26.981538",
+      "electron_configuration": "[Ne]3s2 3p1",
+      "electronegativity_pauling": 1.61,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 2700,
+        "reported_g_cm3": "2.70",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 933.437,
+      "boiling_point_reference_K": 2792,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.014.si",
+      "atomic_number": 14,
+      "symbol": "Si",
+      "name": "Silicon",
+      "group_block": "Metalloid",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "28.085",
+      "electron_configuration": "[Ne]3s2 3p2",
+      "electronegativity_pauling": 1.9,
+      "oxidation_states_reported": "+4, +2, -4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 2329.6,
+        "reported_g_cm3": "2.3296",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1687,
+      "boiling_point_reference_K": 3538,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.015.p",
+      "atomic_number": 15,
+      "symbol": "P",
+      "name": "Phosphorus",
+      "group_block": "Nonmetal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "30.97376200",
+      "electron_configuration": "[Ne]3s2 3p3",
+      "electronegativity_pauling": 2.19,
+      "oxidation_states_reported": "+5, +3, -3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 1820,
+        "reported_g_cm3": "1.82",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 317.3,
+      "boiling_point_reference_K": 553.65,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.016.s",
+      "atomic_number": 16,
+      "symbol": "S",
+      "name": "Sulfur",
+      "group_block": "Nonmetal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "32.07",
+      "electron_configuration": "[Ne]3s2 3p4",
+      "electronegativity_pauling": 2.58,
+      "oxidation_states_reported": "+6, +4, -2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 2067,
+        "reported_g_cm3": "2.067",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 388.36,
+      "boiling_point_reference_K": 717.75,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.017.cl",
+      "atomic_number": 17,
+      "symbol": "Cl",
+      "name": "Chlorine",
+      "group_block": "Halogen",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "35.45",
+      "electron_configuration": "[Ne]3s2 3p5",
+      "electronegativity_pauling": 3.16,
+      "oxidation_states_reported": "+7, +5, +1, -1",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 3.214,
+        "reported_g_cm3": "0.003214",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 171.65,
+      "boiling_point_reference_K": 239.11,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.018.ar",
+      "atomic_number": 18,
+      "symbol": "Ar",
+      "name": "Argon",
+      "group_block": "Noble gas",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "39.9",
+      "electron_configuration": "[Ne]3s2 3p6",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "0",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 1.7837,
+        "reported_g_cm3": "0.0017837",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 83.8,
+      "boiling_point_reference_K": 87.3,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.019.k",
+      "atomic_number": 19,
+      "symbol": "K",
+      "name": "Potassium",
+      "group_block": "Alkali metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "39.0983",
+      "electron_configuration": "[Ar]4s1",
+      "electronegativity_pauling": 0.82,
+      "oxidation_states_reported": "+1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 890,
+        "reported_g_cm3": "0.89",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 336.53,
+      "boiling_point_reference_K": 1032,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.020.ca",
+      "atomic_number": 20,
+      "symbol": "Ca",
+      "name": "Calcium",
+      "group_block": "Alkaline earth metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "40.08",
+      "electron_configuration": "[Ar]4s2",
+      "electronegativity_pauling": 1,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 1540,
+        "reported_g_cm3": "1.54",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1115,
+      "boiling_point_reference_K": 1757,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.021.sc",
+      "atomic_number": 21,
+      "symbol": "Sc",
+      "name": "Scandium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "44.95591",
+      "electron_configuration": "[Ar]4s2 3d1",
+      "electronegativity_pauling": 1.36,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 2990,
+        "reported_g_cm3": "2.99",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1814,
+      "boiling_point_reference_K": 3109,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.022.ti",
+      "atomic_number": 22,
+      "symbol": "Ti",
+      "name": "Titanium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "47.867",
+      "electron_configuration": "[Ar]4s2 3d2",
+      "electronegativity_pauling": 1.54,
+      "oxidation_states_reported": "+4, +3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 4500,
+        "reported_g_cm3": "4.5",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1941,
+      "boiling_point_reference_K": 3560,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.023.v",
+      "atomic_number": 23,
+      "symbol": "V",
+      "name": "Vanadium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "50.9415",
+      "electron_configuration": "[Ar]4s2 3d3",
+      "electronegativity_pauling": 1.63,
+      "oxidation_states_reported": "+5, +4, +3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6000,
+        "reported_g_cm3": "6.0",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2183,
+      "boiling_point_reference_K": 3680,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.024.cr",
+      "atomic_number": 24,
+      "symbol": "Cr",
+      "name": "Chromium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "51.996",
+      "electron_configuration": "[Ar]3d5 4s1",
+      "electronegativity_pauling": 1.66,
+      "oxidation_states_reported": "+6, +3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7150,
+        "reported_g_cm3": "7.15",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2180,
+      "boiling_point_reference_K": 2944,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.025.mn",
+      "atomic_number": 25,
+      "symbol": "Mn",
+      "name": "Manganese",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "54.93804",
+      "electron_configuration": "[Ar]4s2 3d5",
+      "electronegativity_pauling": 1.55,
+      "oxidation_states_reported": "+7, +4, +3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7300,
+        "reported_g_cm3": "7.3",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1519,
+      "boiling_point_reference_K": 2334,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.026.fe",
+      "atomic_number": 26,
+      "symbol": "Fe",
+      "name": "Iron",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "55.84",
+      "electron_configuration": "[Ar]4s2 3d6",
+      "electronegativity_pauling": 1.83,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7874,
+        "reported_g_cm3": "7.874",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1811,
+      "boiling_point_reference_K": 3134,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.027.co",
+      "atomic_number": 27,
+      "symbol": "Co",
+      "name": "Cobalt",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "58.93319",
+      "electron_configuration": "[Ar]4s2 3d7",
+      "electronegativity_pauling": 1.88,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8860,
+        "reported_g_cm3": "8.86",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1768,
+      "boiling_point_reference_K": 3200,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.028.ni",
+      "atomic_number": 28,
+      "symbol": "Ni",
+      "name": "Nickel",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "58.693",
+      "electron_configuration": "[Ar]4s2 3d8",
+      "electronegativity_pauling": 1.91,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8912,
+        "reported_g_cm3": "8.912",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1728,
+      "boiling_point_reference_K": 3186,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.029.cu",
+      "atomic_number": 29,
+      "symbol": "Cu",
+      "name": "Copper",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "63.55",
+      "electron_configuration": "[Ar]4s1 3d10",
+      "electronegativity_pauling": 1.9,
+      "oxidation_states_reported": "+2, +1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8933,
+        "reported_g_cm3": "8.933",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1357.77,
+      "boiling_point_reference_K": 2835,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.030.zn",
+      "atomic_number": 30,
+      "symbol": "Zn",
+      "name": "Zinc",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "65.4",
+      "electron_configuration": "[Ar]4s2 3d10",
+      "electronegativity_pauling": 1.65,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7134,
+        "reported_g_cm3": "7.134",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 692.68,
+      "boiling_point_reference_K": 1180,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.031.ga",
+      "atomic_number": 31,
+      "symbol": "Ga",
+      "name": "Gallium",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "69.723",
+      "electron_configuration": "[Ar]4s2 3d10 4p1",
+      "electronegativity_pauling": 1.81,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 5910,
+        "reported_g_cm3": "5.91",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 302.91,
+      "boiling_point_reference_K": 2477,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.032.ge",
+      "atomic_number": 32,
+      "symbol": "Ge",
+      "name": "Germanium",
+      "group_block": "Metalloid",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "72.63",
+      "electron_configuration": "[Ar]4s2 3d10 4p2",
+      "electronegativity_pauling": 2.01,
+      "oxidation_states_reported": "+4, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 5323,
+        "reported_g_cm3": "5.323",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1211.4,
+      "boiling_point_reference_K": 3106,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.033.as",
+      "atomic_number": 33,
+      "symbol": "As",
+      "name": "Arsenic",
+      "group_block": "Metalloid",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "74.92159",
+      "electron_configuration": "[Ar]4s2 3d10 4p3",
+      "electronegativity_pauling": 2.18,
+      "oxidation_states_reported": "+5, +3, -3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 5776,
+        "reported_g_cm3": "5.776",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1090,
+      "boiling_point_reference_K": 887,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.034.se",
+      "atomic_number": 34,
+      "symbol": "Se",
+      "name": "Selenium",
+      "group_block": "Nonmetal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "78.97",
+      "electron_configuration": "[Ar]4s2 3d10 4p4",
+      "electronegativity_pauling": 2.55,
+      "oxidation_states_reported": "+6, +4, -2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 4809,
+        "reported_g_cm3": "4.809",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 493.65,
+      "boiling_point_reference_K": 958,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.035.br",
+      "atomic_number": 35,
+      "symbol": "Br",
+      "name": "Bromine",
+      "group_block": "Halogen",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "79.90",
+      "electron_configuration": "[Ar]4s2 3d10 4p5",
+      "electronegativity_pauling": 2.96,
+      "oxidation_states_reported": "+5, +1, -1",
+      "standard_state_reported": "Liquid",
+      "density_reference": {
+        "value_kg_m3": 3110,
+        "reported_g_cm3": "3.11",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 265.95,
+      "boiling_point_reference_K": 331.95,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "liquid_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.036.kr",
+      "atomic_number": 36,
+      "symbol": "Kr",
+      "name": "Krypton",
+      "group_block": "Noble gas",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "83.80",
+      "electron_configuration": "[Ar]4s2 3d10 4p6",
+      "electronegativity_pauling": 3,
+      "oxidation_states_reported": "0",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 3.733,
+        "reported_g_cm3": "0.003733",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 115.79,
+      "boiling_point_reference_K": 119.93,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.037.rb",
+      "atomic_number": 37,
+      "symbol": "Rb",
+      "name": "Rubidium",
+      "group_block": "Alkali metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "85.468",
+      "electron_configuration": "[Kr]5s1",
+      "electronegativity_pauling": 0.82,
+      "oxidation_states_reported": "+1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 1530,
+        "reported_g_cm3": "1.53",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 312.46,
+      "boiling_point_reference_K": 961,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.038.sr",
+      "atomic_number": 38,
+      "symbol": "Sr",
+      "name": "Strontium",
+      "group_block": "Alkaline earth metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "87.62",
+      "electron_configuration": "[Kr]5s2",
+      "electronegativity_pauling": 0.95,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 2640,
+        "reported_g_cm3": "2.64",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1050,
+      "boiling_point_reference_K": 1655,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.039.y",
+      "atomic_number": 39,
+      "symbol": "Y",
+      "name": "Yttrium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "88.90584",
+      "electron_configuration": "[Kr]5s2 4d1",
+      "electronegativity_pauling": 1.22,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 4470,
+        "reported_g_cm3": "4.47",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1795,
+      "boiling_point_reference_K": 3618,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.040.zr",
+      "atomic_number": 40,
+      "symbol": "Zr",
+      "name": "Zirconium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "91.22",
+      "electron_configuration": "[Kr]5s2 4d2",
+      "electronegativity_pauling": 1.33,
+      "oxidation_states_reported": "+4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6520,
+        "reported_g_cm3": "6.52",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2128,
+      "boiling_point_reference_K": 4682,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.041.nb",
+      "atomic_number": 41,
+      "symbol": "Nb",
+      "name": "Niobium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "92.90637",
+      "electron_configuration": "[Kr]5s1 4d4",
+      "electronegativity_pauling": 1.6,
+      "oxidation_states_reported": "+5, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8570,
+        "reported_g_cm3": "8.57",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2750,
+      "boiling_point_reference_K": 5017,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.042.mo",
+      "atomic_number": 42,
+      "symbol": "Mo",
+      "name": "Molybdenum",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "95.95",
+      "electron_configuration": "[Kr]5s1 4d5",
+      "electronegativity_pauling": 2.16,
+      "oxidation_states_reported": "+6",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 10200,
+        "reported_g_cm3": "10.2",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2896,
+      "boiling_point_reference_K": 4912,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.043.tc",
+      "atomic_number": 43,
+      "symbol": "Tc",
+      "name": "Technetium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "96.90636",
+      "electron_configuration": "[Kr]5s2 4d5",
+      "electronegativity_pauling": 1.9,
+      "oxidation_states_reported": "+7, +6, +4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 11000,
+        "reported_g_cm3": "11",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2430,
+      "boiling_point_reference_K": 4538,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.044.ru",
+      "atomic_number": 44,
+      "symbol": "Ru",
+      "name": "Ruthenium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "101.1",
+      "electron_configuration": "[Kr]5s1 4d7",
+      "electronegativity_pauling": 2.2,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 12100,
+        "reported_g_cm3": "12.1",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2607,
+      "boiling_point_reference_K": 4423,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.045.rh",
+      "atomic_number": 45,
+      "symbol": "Rh",
+      "name": "Rhodium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "102.9055",
+      "electron_configuration": "[Kr]5s1 4d8",
+      "electronegativity_pauling": 2.28,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 12400,
+        "reported_g_cm3": "12.4",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2237,
+      "boiling_point_reference_K": 3968,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.046.pd",
+      "atomic_number": 46,
+      "symbol": "Pd",
+      "name": "Palladium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "106.42",
+      "electron_configuration": "[Kr]4d10",
+      "electronegativity_pauling": 2.2,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 12000,
+        "reported_g_cm3": "12.0",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1828.05,
+      "boiling_point_reference_K": 3236,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.047.ag",
+      "atomic_number": 47,
+      "symbol": "Ag",
+      "name": "Silver",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "107.868",
+      "electron_configuration": "[Kr]5s1 4d10",
+      "electronegativity_pauling": 1.93,
+      "oxidation_states_reported": "+1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 10501,
+        "reported_g_cm3": "10.501",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1234.93,
+      "boiling_point_reference_K": 2435,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.048.cd",
+      "atomic_number": 48,
+      "symbol": "Cd",
+      "name": "Cadmium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "112.41",
+      "electron_configuration": "[Kr]5s2 4d10",
+      "electronegativity_pauling": 1.69,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8690,
+        "reported_g_cm3": "8.69",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 594.22,
+      "boiling_point_reference_K": 1040,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.049.in",
+      "atomic_number": 49,
+      "symbol": "In",
+      "name": "Indium",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "114.818",
+      "electron_configuration": "[Kr]5s2 4d10 5p1",
+      "electronegativity_pauling": 1.78,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7310,
+        "reported_g_cm3": "7.31",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 429.75,
+      "boiling_point_reference_K": 2345,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.050.sn",
+      "atomic_number": 50,
+      "symbol": "Sn",
+      "name": "Tin",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "118.71",
+      "electron_configuration": "[Kr]5s2 4d10 5p2",
+      "electronegativity_pauling": 1.96,
+      "oxidation_states_reported": "+4, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7287,
+        "reported_g_cm3": "7.287",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 505.08,
+      "boiling_point_reference_K": 2875,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.051.sb",
+      "atomic_number": 51,
+      "symbol": "Sb",
+      "name": "Antimony",
+      "group_block": "Metalloid",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "121.760",
+      "electron_configuration": "[Kr]5s2 4d10 5p3",
+      "electronegativity_pauling": 2.05,
+      "oxidation_states_reported": "+5, +3, -3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6685,
+        "reported_g_cm3": "6.685",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 903.78,
+      "boiling_point_reference_K": 1860,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.052.te",
+      "atomic_number": 52,
+      "symbol": "Te",
+      "name": "Tellurium",
+      "group_block": "Metalloid",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "127.6",
+      "electron_configuration": "[Kr]5s2 4d10 5p4",
+      "electronegativity_pauling": 2.1,
+      "oxidation_states_reported": "+6, +4, -2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6232,
+        "reported_g_cm3": "6.232",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 722.66,
+      "boiling_point_reference_K": 1261,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.053.i",
+      "atomic_number": 53,
+      "symbol": "I",
+      "name": "Iodine",
+      "group_block": "Halogen",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "126.9045",
+      "electron_configuration": "[Kr]5s2 4d10 5p5",
+      "electronegativity_pauling": 2.66,
+      "oxidation_states_reported": "+7, +5, +1, -1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 4930,
+        "reported_g_cm3": "4.93",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 386.85,
+      "boiling_point_reference_K": 457.55,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.054.xe",
+      "atomic_number": 54,
+      "symbol": "Xe",
+      "name": "Xenon",
+      "group_block": "Noble gas",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "131.29",
+      "electron_configuration": "[Kr]5s2 4d10 5p6",
+      "electronegativity_pauling": 2.6,
+      "oxidation_states_reported": "0",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 5.887,
+        "reported_g_cm3": "0.005887",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 161.36,
+      "boiling_point_reference_K": 165.03,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.055.cs",
+      "atomic_number": 55,
+      "symbol": "Cs",
+      "name": "Cesium",
+      "group_block": "Alkali metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "132.9054520",
+      "electron_configuration": "[Xe]6s1",
+      "electronegativity_pauling": 0.79,
+      "oxidation_states_reported": "+1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 1930,
+        "reported_g_cm3": "1.93",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 301.59,
+      "boiling_point_reference_K": 944,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.056.ba",
+      "atomic_number": 56,
+      "symbol": "Ba",
+      "name": "Barium",
+      "group_block": "Alkaline earth metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "137.33",
+      "electron_configuration": "[Xe]6s2",
+      "electronegativity_pauling": 0.89,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 3620,
+        "reported_g_cm3": "3.62",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1000,
+      "boiling_point_reference_K": 2170,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.057.la",
+      "atomic_number": 57,
+      "symbol": "La",
+      "name": "Lanthanum",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "138.9055",
+      "electron_configuration": "[Xe]6s2 5d1",
+      "electronegativity_pauling": 1.1,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6150,
+        "reported_g_cm3": "6.15",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1191,
+      "boiling_point_reference_K": 3737,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.058.ce",
+      "atomic_number": 58,
+      "symbol": "Ce",
+      "name": "Cerium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "140.116",
+      "electron_configuration": "[Xe]6s2 4f1 5d1",
+      "electronegativity_pauling": 1.12,
+      "oxidation_states_reported": "+4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6770,
+        "reported_g_cm3": "6.770",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1071,
+      "boiling_point_reference_K": 3697,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.059.pr",
+      "atomic_number": 59,
+      "symbol": "Pr",
+      "name": "Praseodymium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "140.90766",
+      "electron_configuration": "[Xe]6s2 4f3",
+      "electronegativity_pauling": 1.13,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6770,
+        "reported_g_cm3": "6.77",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1204,
+      "boiling_point_reference_K": 3793,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.060.nd",
+      "atomic_number": 60,
+      "symbol": "Nd",
+      "name": "Neodymium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "144.24",
+      "electron_configuration": "[Xe]6s2 4f4",
+      "electronegativity_pauling": 1.14,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7010,
+        "reported_g_cm3": "7.01",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1294,
+      "boiling_point_reference_K": 3347,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.061.pm",
+      "atomic_number": 61,
+      "symbol": "Pm",
+      "name": "Promethium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "144.91276",
+      "electron_configuration": "[Xe]6s2 4f5",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7260,
+        "reported_g_cm3": "7.26",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1315,
+      "boiling_point_reference_K": 3273,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.062.sm",
+      "atomic_number": 62,
+      "symbol": "Sm",
+      "name": "Samarium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "150.4",
+      "electron_configuration": "[Xe]6s2 4f6",
+      "electronegativity_pauling": 1.17,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7520,
+        "reported_g_cm3": "7.52",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1347,
+      "boiling_point_reference_K": 2067,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.063.eu",
+      "atomic_number": 63,
+      "symbol": "Eu",
+      "name": "Europium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "151.964",
+      "electron_configuration": "[Xe]6s2 4f7",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 5240,
+        "reported_g_cm3": "5.24",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1095,
+      "boiling_point_reference_K": 1802,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.064.gd",
+      "atomic_number": 64,
+      "symbol": "Gd",
+      "name": "Gadolinium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "157.25",
+      "electron_configuration": "[Xe]6s2 4f7 5d1",
+      "electronegativity_pauling": 1.2,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7900,
+        "reported_g_cm3": "7.90",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1586,
+      "boiling_point_reference_K": 3546,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.065.tb",
+      "atomic_number": 65,
+      "symbol": "Tb",
+      "name": "Terbium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "158.92535",
+      "electron_configuration": "[Xe]6s2 4f9",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8230,
+        "reported_g_cm3": "8.23",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1629,
+      "boiling_point_reference_K": 3503,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.066.dy",
+      "atomic_number": 66,
+      "symbol": "Dy",
+      "name": "Dysprosium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "162.500",
+      "electron_configuration": "[Xe]6s2 4f10",
+      "electronegativity_pauling": 1.22,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8550,
+        "reported_g_cm3": "8.55",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1685,
+      "boiling_point_reference_K": 2840,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.067.ho",
+      "atomic_number": 67,
+      "symbol": "Ho",
+      "name": "Holmium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "164.93033",
+      "electron_configuration": "[Xe]6s2 4f11",
+      "electronegativity_pauling": 1.23,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 8800,
+        "reported_g_cm3": "8.80",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1747,
+      "boiling_point_reference_K": 2973,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.068.er",
+      "atomic_number": 68,
+      "symbol": "Er",
+      "name": "Erbium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "167.26",
+      "electron_configuration": "[Xe]6s2 4f12",
+      "electronegativity_pauling": 1.24,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 9070,
+        "reported_g_cm3": "9.07",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1802,
+      "boiling_point_reference_K": 3141,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.069.tm",
+      "atomic_number": 69,
+      "symbol": "Tm",
+      "name": "Thulium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "168.93422",
+      "electron_configuration": "[Xe]6s2 4f13",
+      "electronegativity_pauling": 1.25,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 9320,
+        "reported_g_cm3": "9.32",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1818,
+      "boiling_point_reference_K": 2223,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.070.yb",
+      "atomic_number": 70,
+      "symbol": "Yb",
+      "name": "Ytterbium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "173.05",
+      "electron_configuration": "[Xe]6s2 4f14",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 6900,
+        "reported_g_cm3": "6.90",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1092,
+      "boiling_point_reference_K": 1469,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.071.lu",
+      "atomic_number": 71,
+      "symbol": "Lu",
+      "name": "Lutetium",
+      "group_block": "Lanthanide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "174.9667",
+      "electron_configuration": "[Xe]6s2 4f14 5d1",
+      "electronegativity_pauling": 1.27,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 9840,
+        "reported_g_cm3": "9.84",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1936,
+      "boiling_point_reference_K": 3675,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.072.hf",
+      "atomic_number": 72,
+      "symbol": "Hf",
+      "name": "Hafnium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "178.49",
+      "electron_configuration": "[Xe]6s2 4f14 5d2",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 13300,
+        "reported_g_cm3": "13.3",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2506,
+      "boiling_point_reference_K": 4876,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.073.ta",
+      "atomic_number": 73,
+      "symbol": "Ta",
+      "name": "Tantalum",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "180.9479",
+      "electron_configuration": "[Xe]6s2 4f14 5d3",
+      "electronegativity_pauling": 1.5,
+      "oxidation_states_reported": "+5",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 16400,
+        "reported_g_cm3": "16.4",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 3290,
+      "boiling_point_reference_K": 5731,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.074.w",
+      "atomic_number": 74,
+      "symbol": "W",
+      "name": "Tungsten",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "183.84",
+      "electron_configuration": "[Xe]6s2 4f14 5d4",
+      "electronegativity_pauling": 2.36,
+      "oxidation_states_reported": "+6",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 19300,
+        "reported_g_cm3": "19.3",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 3695,
+      "boiling_point_reference_K": 5828,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.075.re",
+      "atomic_number": 75,
+      "symbol": "Re",
+      "name": "Rhenium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "186.207",
+      "electron_configuration": "[Xe]6s2 4f14 5d5",
+      "electronegativity_pauling": 1.9,
+      "oxidation_states_reported": "+7, +6, +4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 20800,
+        "reported_g_cm3": "20.8",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 3459,
+      "boiling_point_reference_K": 5869,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.076.os",
+      "atomic_number": 76,
+      "symbol": "Os",
+      "name": "Osmium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "190.2",
+      "electron_configuration": "[Xe]6s2 4f14 5d6",
+      "electronegativity_pauling": 2.2,
+      "oxidation_states_reported": "+4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 22570,
+        "reported_g_cm3": "22.57",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 3306,
+      "boiling_point_reference_K": 5285,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.077.ir",
+      "atomic_number": 77,
+      "symbol": "Ir",
+      "name": "Iridium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "192.22",
+      "electron_configuration": "[Xe]6s2 4f14 5d7",
+      "electronegativity_pauling": 2.2,
+      "oxidation_states_reported": "+4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 22420,
+        "reported_g_cm3": "22.42",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2719,
+      "boiling_point_reference_K": 4701,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.078.pt",
+      "atomic_number": 78,
+      "symbol": "Pt",
+      "name": "Platinum",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "195.08",
+      "electron_configuration": "[Xe]6s1 4f14 5d9",
+      "electronegativity_pauling": 2.28,
+      "oxidation_states_reported": "+4, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 21460,
+        "reported_g_cm3": "21.46",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2041.55,
+      "boiling_point_reference_K": 4098,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.079.au",
+      "atomic_number": 79,
+      "symbol": "Au",
+      "name": "Gold",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "196.96657",
+      "electron_configuration": "[Xe]6s1 4f14 5d10",
+      "electronegativity_pauling": 2.54,
+      "oxidation_states_reported": "+3, +1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 19282,
+        "reported_g_cm3": "19.282",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1337.33,
+      "boiling_point_reference_K": 3129,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.080.hg",
+      "atomic_number": 80,
+      "symbol": "Hg",
+      "name": "Mercury",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "200.59",
+      "electron_configuration": "[Xe]6s2 4f14 5d10",
+      "electronegativity_pauling": 2,
+      "oxidation_states_reported": "+2, +1",
+      "standard_state_reported": "Liquid",
+      "density_reference": {
+        "value_kg_m3": 13533.6,
+        "reported_g_cm3": "13.5336",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 234.32,
+      "boiling_point_reference_K": 629.88,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "liquid_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.081.tl",
+      "atomic_number": 81,
+      "symbol": "Tl",
+      "name": "Thallium",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "204.383",
+      "electron_configuration": "[Xe]6s2 4f14 5d10 6p1",
+      "electronegativity_pauling": 1.62,
+      "oxidation_states_reported": "+3, +1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 11800,
+        "reported_g_cm3": "11.8",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 577,
+      "boiling_point_reference_K": 1746,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.082.pb",
+      "atomic_number": 82,
+      "symbol": "Pb",
+      "name": "Lead",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "207",
+      "electron_configuration": "[Xe]6s2 4f14 5d10 6p2",
+      "electronegativity_pauling": 2.33,
+      "oxidation_states_reported": "+4, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 11342,
+        "reported_g_cm3": "11.342",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 600.61,
+      "boiling_point_reference_K": 2022,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.083.bi",
+      "atomic_number": 83,
+      "symbol": "Bi",
+      "name": "Bismuth",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "208.98040",
+      "electron_configuration": "[Xe]6s2 4f14 5d10 6p3",
+      "electronegativity_pauling": 2.02,
+      "oxidation_states_reported": "+5, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 9807,
+        "reported_g_cm3": "9.807",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 544.55,
+      "boiling_point_reference_K": 1837,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.084.po",
+      "atomic_number": 84,
+      "symbol": "Po",
+      "name": "Polonium",
+      "group_block": "Metalloid",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "208.98243",
+      "electron_configuration": "[Xe]6s2 4f14 5d10 6p4",
+      "electronegativity_pauling": 2,
+      "oxidation_states_reported": "+4, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 9320,
+        "reported_g_cm3": "9.32",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 527,
+      "boiling_point_reference_K": 1235,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.085.at",
+      "atomic_number": 85,
+      "symbol": "At",
+      "name": "Astatine",
+      "group_block": "Halogen",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "209.98715",
+      "electron_configuration": "[Xe]6s2 4f14 5d10 6p5",
+      "electronegativity_pauling": 2.2,
+      "oxidation_states_reported": "7, 5, 3, 1, -1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 7000,
+        "reported_g_cm3": "7",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 575,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.086.rn",
+      "atomic_number": 86,
+      "symbol": "Rn",
+      "name": "Radon",
+      "group_block": "Noble gas",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "222.01758",
+      "electron_configuration": "[Xe]6s2 4f14 5d10 6p6",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "0",
+      "standard_state_reported": "Gas",
+      "density_reference": {
+        "value_kg_m3": 9.73,
+        "reported_g_cm3": "0.00973",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 202,
+      "boiling_point_reference_K": 211.45,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "gas_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.087.fr",
+      "atomic_number": 87,
+      "symbol": "Fr",
+      "name": "Francium",
+      "group_block": "Alkali metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "223.01973",
+      "electron_configuration": "[Rn]7s1",
+      "electronegativity_pauling": 0.7,
+      "oxidation_states_reported": "+1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 300,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.088.ra",
+      "atomic_number": 88,
+      "symbol": "Ra",
+      "name": "Radium",
+      "group_block": "Alkaline earth metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "226.02541",
+      "electron_configuration": "[Rn]7s2",
+      "electronegativity_pauling": 0.9,
+      "oxidation_states_reported": "+2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 5000,
+        "reported_g_cm3": "5",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 973,
+      "boiling_point_reference_K": 1413,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.089.ac",
+      "atomic_number": 89,
+      "symbol": "Ac",
+      "name": "Actinium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "227.02775",
+      "electron_configuration": "[Rn]7s2 6d1",
+      "electronegativity_pauling": 1.1,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 10070,
+        "reported_g_cm3": "10.07",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1324,
+      "boiling_point_reference_K": 3471,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.090.th",
+      "atomic_number": 90,
+      "symbol": "Th",
+      "name": "Thorium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "232.038",
+      "electron_configuration": "[Rn]7s2 6d2",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 11720,
+        "reported_g_cm3": "11.72",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 2023,
+      "boiling_point_reference_K": 5061,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.091.pa",
+      "atomic_number": 91,
+      "symbol": "Pa",
+      "name": "Protactinium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "231.03588",
+      "electron_configuration": "[Rn]7s2 5f2 6d1",
+      "electronegativity_pauling": 1.5,
+      "oxidation_states_reported": "+5, +4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 15370,
+        "reported_g_cm3": "15.37",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1845,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.092.u",
+      "atomic_number": 92,
+      "symbol": "U",
+      "name": "Uranium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "238.0289",
+      "electron_configuration": "[Rn]7s2 5f3 6d1",
+      "electronegativity_pauling": 1.38,
+      "oxidation_states_reported": "+6, +5, +4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 18950,
+        "reported_g_cm3": "18.95",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1408,
+      "boiling_point_reference_K": 4404,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.093.np",
+      "atomic_number": 93,
+      "symbol": "Np",
+      "name": "Neptunium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "237.048172",
+      "electron_configuration": "[Rn]7s2 5f4 6d1",
+      "electronegativity_pauling": 1.36,
+      "oxidation_states_reported": "+6, +5, +4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 20250,
+        "reported_g_cm3": "20.25",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 917,
+      "boiling_point_reference_K": 4175,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.094.pu",
+      "atomic_number": 94,
+      "symbol": "Pu",
+      "name": "Plutonium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "244.06420",
+      "electron_configuration": "[Rn]7s2 5f6",
+      "electronegativity_pauling": 1.28,
+      "oxidation_states_reported": "+6, +5, +4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 19840,
+        "reported_g_cm3": "19.84",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 913,
+      "boiling_point_reference_K": 3501,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "illustrative_solid_pbr",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": []
+    },
+    {
+      "id": "element.095.am",
+      "atomic_number": 95,
+      "symbol": "Am",
+      "name": "Americium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "243.061380",
+      "electron_configuration": "[Rn]7s2 5f7",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+6, +5, +4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 13690,
+        "reported_g_cm3": "13.69",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1449,
+      "boiling_point_reference_K": 2284,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.096.cm",
+      "atomic_number": 96,
+      "symbol": "Cm",
+      "name": "Curium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "247.07035",
+      "electron_configuration": "[Rn]7s2 5f7 6d1",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 13510,
+        "reported_g_cm3": "13.51",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1618,
+      "boiling_point_reference_K": 3400,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.097.bk",
+      "atomic_number": 97,
+      "symbol": "Bk",
+      "name": "Berkelium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "247.07031",
+      "electron_configuration": "[Rn]7s2 5f9",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+4, +3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": 14000,
+        "reported_g_cm3": "14",
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1323,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.098.cf",
+      "atomic_number": 98,
+      "symbol": "Cf",
+      "name": "Californium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "251.07959",
+      "electron_configuration": "[Rn]7s2 5f10",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1173,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.099.es",
+      "atomic_number": 99,
+      "symbol": "Es",
+      "name": "Einsteinium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "252.0830",
+      "electron_configuration": "[Rn]7s2 5f11",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1133,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.100.fm",
+      "atomic_number": 100,
+      "symbol": "Fm",
+      "name": "Fermium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "257.09511",
+      "electron_configuration": "[Rn] 5f12 7s2",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1800,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.101.md",
+      "atomic_number": 101,
+      "symbol": "Md",
+      "name": "Mendelevium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "258.09843",
+      "electron_configuration": "[Rn]7s2 5f13",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1100,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.102.no",
+      "atomic_number": 102,
+      "symbol": "No",
+      "name": "Nobelium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "259.10100",
+      "electron_configuration": "[Rn]7s2 5f14",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+3, +2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1100,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.103.lr",
+      "atomic_number": 103,
+      "symbol": "Lr",
+      "name": "Lawrencium",
+      "group_block": "Actinide",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "266.120",
+      "electron_configuration": "[Rn]7s2 5f14 6d1",
+      "electronegativity_pauling": 1.3,
+      "oxidation_states_reported": "+3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": 1900,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.104.rf",
+      "atomic_number": 104,
+      "symbol": "Rf",
+      "name": "Rutherfordium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "267.122",
+      "electron_configuration": "[Rn]7s2 5f14 6d2",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+4",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.105.db",
+      "atomic_number": 105,
+      "symbol": "Db",
+      "name": "Dubnium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "268.126",
+      "electron_configuration": "[Rn]7s2 5f14 6d3",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "5, 4, 3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.106.sg",
+      "atomic_number": 106,
+      "symbol": "Sg",
+      "name": "Seaborgium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "269.128",
+      "electron_configuration": "[Rn]7s2 5f14 6d4",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "6, 5, 4, 3, 0",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.107.bh",
+      "atomic_number": 107,
+      "symbol": "Bh",
+      "name": "Bohrium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "270.133",
+      "electron_configuration": "[Rn]7s2 5f14 6d5",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "7, 5, 4, 3",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.108.hs",
+      "atomic_number": 108,
+      "symbol": "Hs",
+      "name": "Hassium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "269.1336",
+      "electron_configuration": "[Rn]7s2 5f14 6d6",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "8, 6, 5, 4, 3, 2",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.109.mt",
+      "atomic_number": 109,
+      "symbol": "Mt",
+      "name": "Meitnerium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "277.154",
+      "electron_configuration": "[Rn]7s2 5f14 6d7 (calculated)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "9, 8, 6, 4, 3, 1",
+      "standard_state_reported": "Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.110.ds",
+      "atomic_number": 110,
+      "symbol": "Ds",
+      "name": "Darmstadtium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "282.166",
+      "electron_configuration": "[Rn]7s2 5f14 6d8 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "8, 6, 4, 2, 0",
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.111.rg",
+      "atomic_number": 111,
+      "symbol": "Rg",
+      "name": "Roentgenium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "282.169",
+      "electron_configuration": "[Rn]7s2 5f14 6d9 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "5, 3, 1, -1",
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.112.cn",
+      "atomic_number": 112,
+      "symbol": "Cn",
+      "name": "Copernicium",
+      "group_block": "Transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "286.179",
+      "electron_configuration": "[Rn]7s2 5f14 6d10 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "2, 1, 0",
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.113.nh",
+      "atomic_number": 113,
+      "symbol": "Nh",
+      "name": "Nihonium",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "286.182",
+      "electron_configuration": "[Rn]5f14 6d10 7s2 7p1 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": null,
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.114.fl",
+      "atomic_number": 114,
+      "symbol": "Fl",
+      "name": "Flerovium",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "290.192",
+      "electron_configuration": "[Rn]7s2 7p2 5f14 6d10 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "6, 4,2, 1, 0",
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.115.mc",
+      "atomic_number": 115,
+      "symbol": "Mc",
+      "name": "Moscovium",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "290.196",
+      "electron_configuration": "[Rn]7s2 7p3 5f14 6d10 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "3, 1",
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.116.lv",
+      "atomic_number": 116,
+      "symbol": "Lv",
+      "name": "Livermorium",
+      "group_block": "Post-transition metal",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "293.205",
+      "electron_configuration": "[Rn]7s2 7p4 5f14 6d10 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+4, +2, -2",
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.117.ts",
+      "atomic_number": 117,
+      "symbol": "Ts",
+      "name": "Tennessine",
+      "group_block": "Halogen",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "294.211",
+      "electron_configuration": "[Rn]7s2 7p5 5f14 6d10 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+5, +3, +1, -1",
+      "standard_state_reported": "Expected to be a Solid",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    },
+    {
+      "id": "element.118.og",
+      "atomic_number": 118,
+      "symbol": "Og",
+      "name": "Oganesson",
+      "group_block": "Noble gas",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+      "atomic_mass_u_reported": "295.216",
+      "electron_configuration": "[Rn]7s2 7p6 5f14 6d10 (predicted)",
+      "electronegativity_pauling": null,
+      "oxidation_states_reported": "+6, +4, +2, +1, 0, -1",
+      "standard_state_reported": "Expected to be a Gas",
+      "density_reference": {
+        "value_kg_m3": null,
+        "reported_g_cm3": null,
+        "conditions": "Not supplied by summary table; not a part density",
+        "status": "reference_only_not_auto_assign"
+      },
+      "melting_point_reference_K": null,
+      "boiling_point_reference_K": null,
+      "isotope_or_allotrope_identified": false,
+      "elemental_identity_not_engineering_grade": true,
+      "preview_representation": "identity_reference_only",
+      "optical_data": {
+        "measured_complex_ior": null,
+        "measured_spectral_reflectance": null,
+        "appearance_source": "original_unmeasured_illustration"
+      },
+      "warnings": [
+        "PubChem expected state, not measured equilibrium macroscopic sample",
+        "Bulk visual and structural material interpretation suppressed for short-lived/limited-sample element"
+      ]
+    }
+  ]
+}
