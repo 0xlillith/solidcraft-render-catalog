@@ -41,7 +41,7 @@ def hexsha(p):
   for chunk in iter(lambda:fh.read(1024*1024),b""):d.update(chunk)
  return d.hexdigest()
 def metallic(group):
- return "metal" in group.lower() and "metalloid" not in group.lower() and "nonmetal" not in group.lower()
+ return ("metal" in group.lower() or group.lower() in ("lanthanide","actinide")) and "metalloid" not in group.lower() and "nonmetal" not in group.lower()
 def group_style(r):
  if metallic(r["group_block"]):return ["metal-polished","metal-brushed"]
  if r["group_block"]=="Metalloid":return ["metalloid-cleaved","metalloid-matte"]
