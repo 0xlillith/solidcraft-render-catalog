@@ -31,6 +31,8 @@ class ElementTests(unittest.TestCase):
   self.assertFalse(build.metallic("Nonmetal"))
   self.assertFalse(build.metallic("Metalloid"))
   self.assertTrue(build.metallic("Transition metal"))
+  self.assertTrue(build.metallic("Lanthanide"))
+  self.assertTrue(build.metallic("Actinide"))
  def test_surface_fields_bounded_and_deterministic(self):
   for surface in ["metal-polished","metal-brushed","metalloid-cleaved","metalloid-matte","nonmetal-crystal","nonmetal-grain"]:
    h,r,a=build.fields(surface,128)
