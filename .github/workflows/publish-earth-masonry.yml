@@ -3,7 +3,11 @@ name: Publish earth and masonry authoring resources
 on:
   push:
     branches: [authoring/stage-04-earth-masonry-20261026]
-    paths: [.github/workflows/publish-earth-masonry.yml]
+    paths:
+      - .github/workflows/publish-earth-masonry.yml
+      - authoring/stage-04-earth-masonry/tools/build.py
+      - authoring/stage-04-earth-masonry/tools/validate.py
+      - authoring/stage-04-earth-masonry/tools/validate_gltf.cjs
   workflow_dispatch:
 permissions:
   contents: write
