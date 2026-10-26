@@ -144,38 +144,74 @@ def save_map(folder,n,height,shade,rough,scale_mm):
  return images
 
 def make_gltf(out_dir,color,base,orm,normal,scale_mm,title,prof):
+ """Author a portable glTF/GLB with explicit, correctly handed tangent frames."""
  out_dir.mkdir(parents=True,exist_ok=True)
- # Two separate open coupons: a flat panel and a gently curved segment, geometric units in metres.
- W,H=scale_mm[0]/1000,scale_mm[1]/1000
- verts=np.array([[0,0,0],[W,0,0],[W,H,0],[0,H,0]],float)
- faces=np.array([[0,1,2],[0,2,3]])
- uv=np.array([[0,1],[1,1],[1,0],[0,0]],float)
- mat=trimesh.visual.material.PBRMaterial(name=title,baseColorFactor=[*list(np.uint8(np.round(255*linear(np.array(color,dtype=np.float32)/255)))),255],baseColorTexture=Image.fromarray(base),metallicRoughnessTexture=Image.fromarray(orm),normalTexture=Image.fromarray(normal),metallicFactor=0.0,roughnessFactor=1.0,doubleSided=True)
- plane=trimesh.Trimesh(vertices=verts,faces=faces,process=False)
- plane.visual=trimesh.visual.texture.TextureVisuals(uv=uv,material=mat)
- # Low curvature in local units; separate coupon shifted +X with UV matching top-left mapping.
- v2=[];u2=[];f2=[]
- columns=32;rows=8;radius=.15
+ W,H=scale_mm[0]/1000.0,scale_mm[1]/1000.0
+ positions=[[0.,0.,0.],[W,0.,0.],[W,H,0.],[0.,H,0.]]
+ normals=[[0.,0.,1.]]*4
+ uv=[[0.,1.],[1.,1.],[1.,0.],[0.,0.]]
+ tangents=[[1.,0.,0.,-1.]]*4  # glTF bitangent = cross(N,T)*handedness; image V points down.
+ faces=[0,1,2,0,2,3]
+ columns,rows,radius=32,8,.15
+ offset=len(positions)
  for row in range(rows+1):
   for col in range(columns+1):
    a=(col/columns-.5)*W/radius
-   v2.append([W*1.2+radius*np.sin(a),row/rows*H,radius*(1-np.cos(a))])
-   u2.append([col/columns,1-row/rows])
+   positions.append([W*1.2+radius*math.sin(a),row/rows*H,radius*(1-math.cos(a))])
+   normals.append([-math.sin(a),0.,math.cos(a)])
+   uv.append([col/columns,1-row/rows])
+   tangents.append([math.cos(a),0.,math.sin(a),-1.])
  for row in range(rows):
   for col in range(columns):
-   a=row*(columns+1)+col;b=a+columns+1
-   f2.extend([[a,a+1,b+1],[a,b+1,b]])
- curved=trimesh.Trimesh(vertices=np.array(v2),faces=np.array(f2),process=False)
- curved.visual=trimesh.visual.texture.TextureVisuals(uv=np.array(u2),material=mat)
- scene=trimesh.Scene();scene.add_geometry(plane,node_name='flat-finite-coupon');scene.add_geometry(curved,node_name='curved-finite-coupon')
- glb=trimesh.exchange.gltf.export_glb(scene,include_normals=True)
+   i=offset+row*(columns+1)+col;j=i+columns+1
+   faces.extend([i,i+1,j+1,i,j+1,j])
+ # All data in one aligned binary buffer for both editable glTF and self-contained GLB.
+ buf=bytearray();views=[];accessors=[]
+ def append(raw,target=None):
+  while len(buf)%4:buf.append(0)
+  loc=len(buf);buf.extend(raw)
+  while len(buf)%4:buf.append(0)
+  d={'buffer':0,'byteOffset':loc,'byteLength':len(raw)}
+  if target:d['target']=target
+  views.append(d);return len(views)-1
+ def attr(data,arity,component_type=5126,semantic=None):
+  dtype='<f4' if component_type==5126 else '<u4'
+  raw=np.asarray(data,dtype=dtype).reshape(-1).tobytes()
+  v=append(raw,34963 if semantic=='indices' else 34962)
+  a={'bufferView':v,'componentType':component_type,'count':len(data) if semantic!='indices' else len(raw)//4,'type':{1:'SCALAR',2:'VEC2',3:'VEC3',4:'VEC4'}[arity]}
+  if semantic=='position':
+   arr=np.asarray(data,dtype=np.float32)
+   a['min']=[float(x) for x in arr.min(axis=0)];a['max']=[float(x) for x in arr.max(axis=0)]
+  accessors.append(a);return len(accessors)-1
+ pos=attr(positions,3,semantic='position');nor=attr(normals,3);tex=attr(uv,2);tan=attr(tangents,4)
+ idx=attr(faces,1,component_type=5125,semantic='indices')
+ ims=[]
+ for rgb in (base,orm,normal):
+  mem=io.BytesIO();Image.fromarray(rgb).save(mem,format='PNG',compress_level=4)
+  ims.append({'bufferView':append(mem.getvalue()),'mimeType':'image/png'})
+ rgb=np.asarray(color,dtype=np.float32)/255
+ pbr={'baseColorFactor':[float(x) for x in linear(rgb)]+[1.],
+      'baseColorTexture':{'index':0},'metallicFactor':0.,'roughnessFactor':1.,
+      'metallicRoughnessTexture':{'index':1}}
+ tree={'asset':{'version':'2.0','generator':'SolidCraft original earth/masonry stage04'},
+       'scenes':[{'nodes':[0]}],'scene':0,'nodes':[{'mesh':0,'name':title}],
+       'meshes':[{'primitives':[{'attributes':{'POSITION':pos,'NORMAL':nor,'TEXCOORD_0':tex,'TANGENT':tan},'indices':idx,'material':0}]}],
+       'materials':[{'name':title,'doubleSided':True,'pbrMetallicRoughness':pbr,'normalTexture':{'index':2},
+                     'extras':{'physical_profile_id':prof,'finite_patch_mm':scale_mm,'native_acceptance':'not_run','not_seamless':True}}],
+       'images':ims,'textures':[{'source':0},{'source':1},{'source':2}],
+       'accessors':accessors,'bufferViews':views,'buffers':[{'byteLength':len(buf)}]}
+ assert len(buf)%4==0
+ external=json.loads(json.dumps(tree));external['buffers'][0]['uri']='gltf_buffer.bin'
+ (out_dir/'material.gltf').write_text(json.dumps(external,separators=(',',':'))+'\n')
+ (out_dir/'gltf_buffer.bin').write_bytes(buf)
+ internal=json.dumps(tree,separators=(',',':')).encode();internal+=b' '*((-len(internal))%4)
+ binary=bytes(buf);total=12+8+len(internal)+8+len(binary)
+ glb=struct.pack('<4sII',b'glTF',2,total)+struct.pack('<II',len(internal),0x4E4F534A)+internal+struct.pack('<II',len(binary),0x004E4942)+binary
  (out_dir/'material.glb').write_bytes(glb)
- gltf=trimesh.exchange.gltf.export_gltf(scene,include_normals=True,merge_buffers=True)
- for name,data in gltf.items():
-  (out_dir/name).write_bytes(data)
- gltf_name=next(k for k in gltf if k.endswith('.gltf'))
- if gltf_name!='material.gltf':(out_dir/gltf_name).rename(out_dir/'material.gltf')
- writejson(out_dir/'resource.json',{'title':title,'physical_profile_id':prof,'visual_palette_srgb':color,'finite_patch_mm':scale_mm,'app_native_acceptance':'not_run','premium_qualification':'pending','formats':['glb','gltf'],'not_seamless':True,'not_engineering_material_assignment':True})
+ writejson(out_dir/'resource.json',{'title':title,'physical_profile_id':prof,'visual_palette_srgb':color,
+                                   'finite_patch_mm':scale_mm,'app_native_acceptance':'not_run',
+                                   'premium_qualification':'pending','formats':['glb','gltf'],
+                                   'not_seamless':True,'not_engineering_material_assignment':True})
 
 def preview(path,height,shade,rough,color):
  # Software mockup: normal-derived relief and colored macro swatch; NOT a native renderer image.
