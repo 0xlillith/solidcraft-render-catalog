@@ -1,0 +1,52 @@
+name: Publish scanned PBR quality benchmarks
+# Personal resource authoring only. No SolidCraft upstream application CI change.
+on:
+  push:
+    branches: [quality/pbr-scanned-benchmark-20261026]
+    paths: [.github/workflows/publish-scanned-pbr-quality-r1.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: personal-quality-scanned-pbr-r1
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == '0xlillith/solidcraft-render-catalog'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+      - name: Install original authoring tools and official Khronos validator
+        run: |
+          python3 -m venv "$RUNNER_TEMP/quality-venv"
+          "$RUNNER_TEMP/quality-venv/bin/python" -m pip install -r quality/scanned-pbr-r1/requirements.txt
+          npm install --prefix "$RUNNER_TEMP/gltf-validator" --ignore-scripts --no-audit --no-fund gltf-validator@2.0.0-dev.3.10
+      - name: Test source metadata, physical qualifications, and export geometry
+        run: |
+          mkdir -p quality/scanned-pbr-r1/reports
+          "$RUNNER_TEMP/quality-venv/bin/python" -m unittest discover -s quality/scanned-pbr-r1/tests -v 2>&1 | tee quality/scanned-pbr-r1/reports/source-tests.log
+      - name: Download pinned CC0 4K source and build true scanned PBR specimens
+        run: |
+          "$RUNNER_TEMP/quality-venv/bin/python" -u quality/scanned-pbr-r1/tools/build.py --full | tee quality/scanned-pbr-r1/reports/generation.log
+      - name: Validate 2K PBR, physical-link contract and official glTF
+        run: |
+          export GLTF_VALIDATOR_MODULE="$RUNNER_TEMP/gltf-validator/node_modules/gltf-validator"
+          node quality/scanned-pbr-r1/tools/validate_gltf.cjs
+          "$RUNNER_TEMP/quality-venv/bin/python" quality/scanned-pbr-r1/tools/validate.py
+      - name: Save human-readable source receipts and validated QA
+        id: checkpoint
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add quality/scanned-pbr-r1 authoring/tools/publish_stage.py
+          git diff --cached --quiet || git commit -m 'quality: retain pinned scanned PBR QA and per-asset source receipt'
+          git push origin HEAD:quality/pbr-scanned-benchmark-20261026
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Publish downloadable original scanned resources with SHA256 verification
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ steps.checkpoint.outputs.sha }}
+        run: GITHUB_SHA="$SOURCE_SHA" python3 authoring/tools/publish_stage.py --stage quality/scanned-pbr-r1 --tag scanned-pbr-quality-r1-20261026
