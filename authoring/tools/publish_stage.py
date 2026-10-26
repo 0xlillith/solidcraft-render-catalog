@@ -14,7 +14,7 @@ def main():
     p = argparse.ArgumentParser(); p.add_argument('--stage', required=True); p.add_argument('--tag', required=True); a = p.parse_args()
     if os.environ.get('GITHUB_REPOSITORY') != REPOSITORY: raise RuntimeError('Owner-only publication target')
     stage = pathlib.Path(a.stage).resolve(); workspace = pathlib.Path(os.environ['GITHUB_WORKSPACE']).resolve()
-    if not stage.is_relative_to(workspace / 'authoring') or not stage.is_dir(): raise RuntimeError('Invalid authoring directory')
+    if not (stage.is_relative_to(workspace / 'authoring') or stage.is_relative_to(workspace / 'quality')) or not stage.is_dir(): raise RuntimeError('Invalid approved resource directory')
     validation = json.loads((stage / 'reports/validation.json').read_text())
     if validation.get('status') != 'PASS': raise RuntimeError('Stage validation has not passed')
     source = os.environ['GITHUB_SHA']; target = workspace / 'publication-output'; target.mkdir()
@@ -23,7 +23,9 @@ def main():
         if not f.is_file() or '.git' in f.parts or '__pycache__' in f.parts: continue
         if f.is_symlink(): raise RuntimeError('Symlink not permitted')
         rel = f.relative_to(stage).as_posix()
-        if rel.startswith('build/maps/'):
+        if rel.startswith('build/source-4k/'):
+            bits = rel.split('/'); group = 'scanned-master-' + bits[2]
+        elif rel.startswith('build/maps/'):
             bits = rel.split('/'); group = 'masters-' + bits[2] if '/master-2048/' in rel else 'runtime-maps'
         else: group = 'catalog-sources-previews'
         groups.setdefault(group, []).append((f, rel))
