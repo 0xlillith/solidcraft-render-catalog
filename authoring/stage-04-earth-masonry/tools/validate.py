@@ -49,7 +49,7 @@ def check():
   d=R/'build/materials'/x['id'];assert d.is_dir()
   for name in ['material.gltf','material.glb','gltf_buffer.bin','preview.png','resource.json']:
    assert (d/name).exists(),d/name
-  s=trimesh.load(d/'material.glb',force='scene');assert len(s.geometry)>=2
+  s=trimesh.load(d/'material.glb',force='scene');assert len(s.geometry)==1 and sum(len(g.faces) for g in s.geometry.values())>1000
   a=json.loads((d/'resource.json').read_text());assert a['physical_profile_id']==x['physical_profile_id']
   files.extend([d/'material.glb',d/'material.gltf',d/'preview.png'])
  json_files=[*R.glob('data/*.json'),*R.glob('registry/*.json')]
