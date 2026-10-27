@@ -213,18 +213,33 @@ def make_gltf(out_dir,color,base,orm,normal,scale_mm,title,prof):
                                    'premium_qualification':'pending','formats':['glb','gltf'],
                                    'not_seamless':True,'not_engineering_material_assignment':True})
 
-def preview(path,height,shade,rough,color):
- # Software mockup: normal-derived relief and colored macro swatch; NOT a native renderer image.
- h,w=height.shape
- hh=cv2.resize(height,(300,300),interpolation=cv2.INTER_AREA)
+def preview_normals(height, scale_mm, size=300):
+ """Finite metric height gradients; image rows point down, OpenGL +V points up."""
+ field=np.asarray(height,dtype=np.float32)
+ scale=np.asarray(scale_mm,dtype=np.float64)
+ if field.ndim!=2 or min(field.shape)<2 or not np.isfinite(field).all():
+  raise ValueError('Finite two-dimensional physical height required')
+ if scale.shape!=(2,) or not np.isfinite(scale).all() or (scale<=0).any():
+  raise ValueError('Two positive physical patch dimensions in millimetres required')
+ if not isinstance(size,int) or isinstance(size,bool) or not 2<=size<=1024:
+  raise ValueError('Bounded preview dimension 2..1024 required')
+ filtered=cv2.resize(field,(size,size),interpolation=cv2.INTER_AREA)
+ gy,gx=np.gradient(filtered,scale[1]/size,scale[0]/size)
+ result=np.stack((-gx,gy,np.ones_like(gx)),axis=-1)
+ return result/np.linalg.norm(result,axis=-1,keepdims=True)
+
+def preview(path,height,shade,rough,color,scale_mm):
+ # Software visualization only: preserve physical slopes after thumbnail filtering.
+ normal=preview_normals(height,scale_mm)
  ss=cv2.resize(shade,(300,300),interpolation=cv2.INTER_AREA)
  rr=cv2.resize(rough,(300,300),interpolation=cv2.INTER_AREA)
- gx,gy=np.gradient(hh)
- light=np.maximum(0.24,(.4-.55*gx+.65*gy)/np.sqrt(1+gx*gx+gy*gy))
+ direction=np.array([-.55,.65,.4],dtype=np.float32)
+ direction/=np.linalg.norm(direction)
+ light=np.maximum(.24,(normal*direction).sum(axis=-1))
  factor=np.stack(color)/255
  patch=np.clip(srgb(linear(factor)[None,None,:]*linear(ss)[:,:,None]*(.55+.6*light[:,:,None]) + (1-rr[:,:,None])*.045),0,1)
  sw=(patch*255).astype('uint8');im=Image.new('RGB',(560,330),(20,23,29));im.paste(Image.fromarray(sw),(15,15))
- strip=Image.fromarray(np.uint8(np.round(np.clip(srgb(linear(factor)[None,None,:]*ss[:,:,None]*.9),0,1)*255)))
+ strip=Image.fromarray(np.uint8(np.round(np.clip(srgb(linear(factor)[None,None,:]*linear(ss)[:,:,None]*.9),0,1)*255)))
  im.paste(strip.resize((215,260)),(330,32))
  dr=ImageDraw.Draw(im);dr.rectangle((326,286,549,310),fill=(30,33,40))
  dr.text((335,291),'Software preview - not native',fill=(205,211,221))
@@ -261,7 +276,7 @@ def main():
   base=np.asarray(Image.open(m/'base_color.png').convert('RGB'));orm=np.asarray(Image.open(m/'orm.png').convert('RGB'));normal=np.asarray(Image.open(m/'normal_directx.png').convert('RGB'))
   out=ROOT/'build/materials'/v['id'];make_gltf(out,p['appearance_palette_srgb'],base,orm,normal,FAMILY_SCALE[fam],v['name'],p['id']);
   height=cv2.imread(str(m/'height_mm.exr'),cv2.IMREAD_UNCHANGED)
-  preview(out/'preview.png',height,np.asarray(Image.open(m/'base_color.png').convert('L'),dtype=np.float32)/255,np.asarray(Image.open(m/'roughness.png'),dtype=np.float32)/255,p['appearance_palette_srgb'])
+  preview(out/'preview.png',height,np.asarray(Image.open(m/'base_color.png').convert('L'),dtype=np.float32)/255,np.asarray(Image.open(m/'roughness.png'),dtype=np.float32)/255,p['appearance_palette_srgb'],FAMILY_SCALE[fam])
   if (j+1)%30==0:print('APPEARANCES',j+1,len(variants),flush=True)
  writejson(ROOT/'registry/resource-index.json',{'purpose':'internal resource index, not a plugin format','items':variants,'physical_profiles':len(profiles),'mapsets':mapindex,'native_acceptance':'not_run','premium_qualification':'pending'})
  # Browsable offline HTML index with relative images, no online requirements.
