@@ -1,0 +1,185 @@
+{
+  "id": "ENV-191",
+  "name": "Dark night studio",
+  "family": "Night and low illumination",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-191",
+    "name": "Dark night studio",
+    "family": "Night and low illumination",
+    "domains": [
+      "automotive",
+      "architecture",
+      "emissive_products"
+    ],
+    "description": "Dark night studio is a conceptual setting for lED products; screens. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "LED products",
+      "screens"
+    ],
+    "representation": "3D night setting or candidate captured HDRI with separately represented physical emitters",
+    "geometry": "Dark neutral enclosure with a support floor",
+    "ambient_lighting": "Minimal ambience; actual product emission lights the scene",
+    "scale_policy": "Subjects from 10 mm to 3 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Enclosure dimensions and reflectance",
+      "floor",
+      "ambient intensity",
+      "exposure",
+      "product-emitter visibility"
+    ],
+    "authoring_method": "Original procedural sky and geometry; calibrated night HDRI requires selection and verification; AI LDR backplates do not duplicate emitters",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-013",
+      "CAP-042"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Do not infer lamp power from bright LDR pixels.",
+      "Check small-source noise and dynamic range; reflections and shadows must match actual emitters."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Terrain",
+      "width_mm": 24000,
+      "depth_mm": 24000,
+      "amplitude_mm": 10,
+      "seed": 840191,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        4000.0,
+        -6000.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        -4000.0,
+        -3800.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        4000.0,
+        -1600.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        -4000.0,
+        600.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        4000.0,
+        2800.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    },
+    {
+      "type": "box",
+      "name": "Streetlight housing",
+      "center_mm": [
+        -4000.0,
+        5000.0,
+        4100.0
+      ],
+      "size_mm": [
+        500.0,
+        300.0,
+        100.0
+      ],
+      "color": "e3d6a3"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 13,
+    "triangles": 4682,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 24000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

@@ -1,0 +1,181 @@
+{
+  "id": "MAT-533",
+  "name": "Scoop-disturbed mare-style regolith",
+  "family": "Lunar mare-style ground and rock concepts",
+  "version": "1.0.0-local",
+  "seed": 10420827,
+  "pattern": "regolith",
+  "base_linear_low": [
+    0.062349505107280594,
+    0.05939924281146788,
+    0.06538352258504786
+  ],
+  "base_linear_high": [
+    0.1215319346729587,
+    0.116159815268643,
+    0.1270565635130722
+  ],
+  "roughness": 0.9239999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.1,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-533",
+    "name": "Scoop-disturbed mare-style regolith",
+    "family": "Lunar mare-style ground and rock concepts",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "A disturbed patch exposes different packing and angular fragments.",
+    "use_cases": [
+      "Sample-collection illustrations"
+    ],
+    "optical_model": "Granular dielectric terrain or rock surface with explicit particle geometry and shadowing; no atmosphere, measured lunar BRDF or site identification is assumed.",
+    "controls": [
+      "grain distribution",
+      "surface packing",
+      "local relief",
+      "disturbance mask",
+      "exposed fragments"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Tie disturbance to the authored scoop geometry or path.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-044",
+      "CAP-097"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "The state is illustrative, not a granular-mechanics prediction.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b133f867abc82ea556d6cf03e5b6f9a03d48d1d958229917e5e74494bde1ad30",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ca970f391e9fec6f5664461b7ed9053e20be533e36239985f9e83b25028cb946",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "9db1ddf244111b5327152a2806981d15af1d71227b19ed200360fe8befa57fcd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "fbb69c04d1c070eae8cd8aa0abfdef3db290f48e1547fe483c44889e1ecbe845",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "31e809fc5059258247a98dc057c6f06e6bfeb380b2fac531208ea9fd578ef8bb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "2af3ffbc2adf5852f2a1f6c50d1548638ab086f3104c13c302acabc302f05a81",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "246c64467cc1192269e7f5d3ee4eb035799be4af1010417d007b9218a16f656b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "245c8c21e00513cd187eb188097e99fc4f807042b762aa542a375739fa259849",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

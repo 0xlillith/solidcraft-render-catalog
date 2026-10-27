@@ -1,0 +1,138 @@
+{
+  "id": "LUZ-179",
+  "name": "High focused pedestal light",
+  "family": "18 Dramatic presentation",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-179",
+    "name": "High focused pedestal light",
+    "family": "18 Dramatic presentation",
+    "domains": [
+      "product",
+      "editorial"
+    ],
+    "description": "A proposed lighting arrangement for objects on a pedestal.",
+    "use_cases": [
+      "Objects on a pedestal"
+    ],
+    "sources": "High spotlight and passive reflector",
+    "geometry": "Real source distance and pedestal within beam",
+    "contribution_policy": "Spot 0 reference EV; reflector passive",
+    "controls": [
+      "Beam aperture",
+      "height",
+      "reflector placement"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-010"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Falloff and penumbra follow source and geometry"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1006197,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1300.0,
+          300.0,
+          600.0
+        ],
+        "u": [
+          22.485950669875844,
+          97.439119569462,
+          0.0
+        ],
+        "v": [
+          359.68325874853156,
+          -83.00382894196882,
+          820.8156417594693
+        ],
+        "radiance": [
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "center": [
+          1400.0,
+          500.0,
+          300.0
+        ],
+        "u": [
+          42.04204962476953,
+          -117.71773894935468,
+          0.0
+        ],
+        "v": [
+          -149.03189459617377,
+          -53.22567664149064,
+          784.1916358512952
+        ],
+        "radiance": [
+          9,
+          9,
+          9
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

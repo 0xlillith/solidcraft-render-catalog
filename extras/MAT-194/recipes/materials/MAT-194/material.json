@@ -1,0 +1,181 @@
+{
+  "id": "MAT-194",
+  "name": "Diffractive holographic foil",
+  "family": "Specialized optical appearances",
+  "version": "1.0.0-local",
+  "seed": 7736286,
+  "pattern": "iridescent",
+  "base_linear_low": [
+    0.17845825521791786,
+    0.08902177544105805,
+    0.2355268416652944
+  ],
+  "base_linear_high": [
+    0.33295383785949223,
+    0.17009935229565792,
+    0.436869771390536
+  ],
+  "roughness": 0.202,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-194",
+    "name": "Diffractive holographic foil",
+    "family": "Specialized optical appearances",
+    "domains": [
+      "LED lighting",
+      "CAD product",
+      "space"
+    ],
+    "description": "A periodic surface structure redirects wavelengths by viewing angle.",
+    "use_cases": [
+      "Labels",
+      "packaging"
+    ],
+    "optical_model": "Surface-diffraction model for a periodic microstructure; not a camera-glare or fixed rainbow-texture effect.",
+    "controls": [
+      "physical or approximate mode",
+      "model-specific dataset",
+      "declared scope",
+      "grating pitch",
+      "orientation"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Optical pitch remains separate from the label dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-099"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "A painted rainbow is only an identified approximation.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Wave/spectral/time-dependent phenomenon is not simulated; static RGB authoring fallback and intended-model metadata are explicit."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "1699228ab9c6dea635cce829c0abffe10bd78e12b7785d75b5e82d50279b39c5",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "dd305630000d39c6e332cddd25051e7604541a76f282ddfbefb49a3c1561e9ef",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "71a6cc1d702a6fad40b1ce924219bc02e52b3794a5718a1e92132445daada279",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b20de03779f8d0cf585ada4ada52bb59c9e990eb9744d031830212c871024155",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b39cab235d98ea8e06c3f5fe6c31a200b9d3decca9354176389cefcb50ba9700",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c9a8747f30deb84fdf624759c33cbbfb191e95d172c7d55956957aaef020c5a0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4456b49566d0b0eab36987ac36626370858ef26a10ae2ca66841a41973fb6fa0",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e879520727bf6924588ee6ab5a821f4250b1ada1b965473fd8c929202f3621ec",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "id": "ENV-279",
+  "name": "SELENE ballistic dust snapshot",
+  "family": "SELENE sampling and rover operation stages",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-279",
+    "name": "SELENE ballistic dust snapshot",
+    "family": "SELENE sampling and rover operation stages",
+    "domains": [
+      "selene",
+      "lunar",
+      "rover",
+      "sampling"
+    ],
+    "description": "SELENE ballistic dust snapshot is a conceptual setting for tool clearance; dust-trajectory illustration. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Tool clearance",
+      "dust-trajectory illustration"
+    ],
+    "representation": "Conceptual project-level 3D lunar operation stage in vacuum",
+    "geometry": "Sparse geometric particles on explicitly authored ballistic paths above a regolith patch",
+    "ambient_lighting": "One sun; particles shade and occlude without a fog volume",
+    "scale_policy": "Particle sizes, initial states and times require a documented authored model; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Particle count",
+      "particle-size range",
+      "authored time",
+      "solar direction",
+      "trajectory overlay"
+    ],
+    "authoring_method": "Original procedural staging for SELENE workflow concepts; no real mission geometry, landing-site data or operation-performance claim",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-011",
+      "CAP-013",
+      "CAP-036",
+      "CAP-082",
+      "CAP-078"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Maintain rover, tool and sample dimensions in millimeters.",
+      "Use a zero-radiance sky and no atmospheric dust or wind.",
+      "Tool lights are product-owned emitters and never duplicated by environment helpers.",
+      "Sampling contacts and particle paths are authored visualization states, not a validated mechanics simulation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Lunar terrain",
+      "width_mm": 4500,
+      "depth_mm": 4500,
+      "amplitude_mm": 80,
+      "seed": 840279,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 0",
+      "center_mm": [
+        1990.0399117333764,
+        1459.934105438855,
+        20.863629261431242
+      ],
+      "radii_mm": [
+        69.54543087143747,
+        48.68180161000623,
+        45.20453006643436
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 1",
+      "center_mm": [
+        -386.16199059861606,
+        -1461.0669097544542,
+        31.00761971544157
+      ],
+      "radii_mm": [
+        103.35873238480524,
+        72.35111266936366,
+        67.18317605012341
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 2",
+      "center_mm": [
+        1050.5205252244227,
+        -974.0495208192167,
+        54.72923730738999
+      ],
+      "radii_mm": [
+        182.4307910246333,
+        127.7015537172433,
+        118.58001416601165
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 3",
+      "center_mm": [
+        808.1416863773168,
+        360.3052462421542,
+        20.736731060386642
+      ],
+      "radii_mm": [
+        69.12243686795547,
+        48.385705807568826,
+        44.92958396417106
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 4",
+      "center_mm": [
+        869.5538567725898,
+        566.5216627559753,
+        62.291667770688534
+      ],
+      "radii_mm": [
+        207.63889256896178,
+        145.34722479827323,
+        134.96528016982515
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 5",
+      "center_mm": [
+        236.3921274809718,
+        -1271.7768929103663,
+        68.30950957380534
+      ],
+      "radii_mm": [
+        227.6983652460178,
+        159.38885567221246,
+        148.00393740991157
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 6",
+      "center_mm": [
+        -958.5046007658282,
+        1479.0897096853919,
+        24.43243944104329
+      ],
+      "radii_mm": [
+        81.44146480347763,
+        57.009025362434336,
+        52.93695212226046
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 7",
+      "center_mm": [
+        -50.512623661467615,
+        -1635.4558746900393,
+        22.132685391011375
+      ],
+      "radii_mm": [
+        73.77561797003791,
+        51.642932579026535,
+        47.954151680524646
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 8",
+      "center_mm": [
+        706.1088304338246,
+        505.160904845588,
+        27.89912552455233
+      ],
+      "radii_mm": [
+        92.99708508184109,
+        65.09795955728876,
+        60.44810530319671
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 9",
+      "center_mm": [
+        1492.250226772212,
+        50.94712264100917,
+        40.173635711108275
+      ],
+      "radii_mm": [
+        133.9121190370276,
+        93.7384833259193,
+        87.04287737406794
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 10",
+      "center_mm": [
+        1849.5945636980118,
+        -1574.118344225994,
+        60.227694260660414
+      ],
+      "radii_mm": [
+        200.75898086886806,
+        140.53128660820764,
+        130.49333756476426
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 11",
+      "center_mm": [
+        -1345.931990157449,
+        962.9052301360889,
+        66.69679429085605
+      ],
+      "radii_mm": [
+        222.32264763618682,
+        155.62585334533077,
+        144.50972096352143
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 0",
+      "center_mm": [
+        -773.3333333333334,
+        19.9851884770179,
+        26.22222222222222
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 1",
+      "center_mm": [
+        -720.0,
+        59.60079923851836,
+        76.0
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 2",
+      "center_mm": [
+        -666.6666666666667,
+        98.15840903884566,
+        122.2222222222222
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 3",
+      "center_mm": [
+        -613.3333333333334,
+        134.9735641667999,
+        164.88888888888889
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 4",
+      "center_mm": [
+        -560.0,
+        169.3927420185106,
+        204.0
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 5",
+      "center_mm": [
+        -506.6666666666667,
+        200.80495207513985,
+        239.55555555555554
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 6",
+      "center_mm": [
+        -453.3333333333333,
+        228.6525818741519,
+        271.55555555555554
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 7",
+      "center_mm": [
+        -400.0,
+        252.44129544236895,
+        300.0
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 8",
+      "center_mm": [
+        -346.6666666666667,
+        271.74880847921435,
+        324.88888888888886
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 9",
+      "center_mm": [
+        -293.33333333333337,
+        286.23238451786494,
+        346.22222222222223
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 10",
+      "center_mm": [
+        -240.0,
+        295.63491899653803,
+        364.0
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 11",
+      "center_mm": [
+        -186.66666666666663,
+        299.7895032387898,
+        378.2222222222223
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 12",
+      "center_mm": [
+        -133.33333333333326,
+        298.6223873255295,
+        388.88888888888886
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 13",
+      "center_mm": [
+        -80.0,
+        292.15428926345857,
+        396.00000000000006
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 14",
+      "center_mm": [
+        -26.66666666666663,
+        280.5000272102873,
+        399.55555555555554
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 15",
+      "center_mm": [
+        26.666666666666742,
+        263.86648128526855,
+        399.55555555555554
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 16",
+      "center_mm": [
+        80.00000000000011,
+        242.54892114587702,
+        396.0
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 17",
+      "center_mm": [
+        133.33333333333337,
+        216.92576452149737,
+        388.88888888888886
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 18",
+      "center_mm": [
+        186.66666666666674,
+        187.45185974777672,
+        378.22222222222223
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 19",
+      "center_mm": [
+        240.0,
+        154.65041154643924,
+        364.0
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 20",
+      "center_mm": [
+        293.33333333333326,
+        119.10369337972496,
+        346.2222222222222
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 21",
+      "center_mm": [
+        346.66666666666674,
+        81.44271124868477,
+        324.8888888888889
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 22",
+      "center_mm": [
+        400.0,
+        42.33600241796017,
+        300.0
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 23",
+      "center_mm": [
+        453.33333333333326,
+        2.4777679059912843,
+        271.55555555555554
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 24",
+      "center_mm": [
+        506.66666666666674,
+        -37.424450593769635,
+        239.5555555555556
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 25",
+      "center_mm": [
+        560.0,
+        -76.66233060804937,
+        204.00000000000003
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 26",
+      "center_mm": [
+        613.3333333333333,
+        -114.5393426389234,
+        164.8888888888889
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 27",
+      "center_mm": [
+        666.6666666666665,
+        -150.38311457650343,
+        122.22222222222226
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 28",
+      "center_mm": [
+        720.0,
+        -183.55736728281568,
+        76.00000000000007
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Authored ballistic particle 29",
+      "center_mm": [
+        773.3333333333333,
+        -213.47320947287892,
+        26.222222222222303
+      ],
+      "radii_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "color": "898680"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 43,
+    "triangles": 6170,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 4500,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        -0.6152864309895063,
+        -0.02148627562798465,
+        0.788010753606722
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Static authored ballistic curve only; no dynamics or dust simulation.",
+    "Conceptual terrain, not measured lunar topography.",
+    "Vacuum: no atmospheric haze, rain, wind or added sky illumination.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "duplex-2205",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "Duplex 2205 plate reference / Lathe-turned face",
+        "density_g_cm3": 7.695013509436469,
+        "color": [
+          197,
+          196,
+          191
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.26,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "Duplex 2205 plate reference",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "sand-duplex-2205",
+              "title": "Duplex 2205 plate reference primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://www.sandmeyersteel.com/alloy-2205/"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 7695.01350943647
+              },
+              "source_id": "sand-duplex-2205",
+              "conditions": {
+                "temperature_k": 293.15,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "Supplier plate reference; heat treatment and test direction not stated for all physical values; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

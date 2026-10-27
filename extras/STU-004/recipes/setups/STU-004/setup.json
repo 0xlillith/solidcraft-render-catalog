@@ -1,0 +1,423 @@
+{
+  "id": "STU-004",
+  "name": "Black housing with broad side reflections",
+  "source_kind": "studio",
+  "original_specification": {
+    "id": "STU-004",
+    "name": "Black housing with broad side reflections",
+    "catalog_id": "LUZ-012",
+    "mode": "studio",
+    "description": "Broad lateral sources reveal dark surfaces; a high front flag shapes reflections.",
+    "required_capabilities": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-081",
+      "CAP-059"
+    ],
+    "subject_scale_policy": {
+      "mode": "selected_subject_max_extent",
+      "definition": "B is the maximum positive extent of the selected subject bounding box, excluding lights, cards, floor, cameras and background.",
+      "origin": "Selected subject bounding-box center unless an explicit per-preset aperture origin is stated.",
+      "axes": "Subject-local right-handed frame: +Z up, -Y front, +X right. Camera motion does not move the rig.",
+      "position_and_size_units": "Dimensionless multiples of B; multiply by B in millimeters exactly once when authoring.",
+      "angle_units": "radians",
+      "fit_policy": "Fit once on explicit user action, then store real transforms. Do not refit per pose, frame, selected face or camera move.",
+      "degenerate_subject_policy": "Block if there is no positive finite selected-subject extent.",
+      "normalization_policy": "Source gains are resolved through CAL-LIGHT-001 at the applied physical scale; point and area source units are never assumed equivalent."
+    },
+    "lights": [
+      {
+        "id": "key",
+        "type": "rectangular_area",
+        "position_b": [
+          -1.5,
+          -0.4,
+          0.7
+        ],
+        "target_b": [
+          0,
+          0,
+          0
+        ],
+        "size_b": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "roll_rad": 0.0,
+        "color": {
+          "space": "linear_srgb",
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "intensity": {
+          "quantity": "reference_contribution_ev",
+          "value": 0.0,
+          "reference_id": "CAL-LIGHT-001"
+        },
+        "emission_sides": "front_only",
+        "energy_owner": "analytic_light",
+        "visible_emitter_policy": "If represented by a visible mesh, it must share this source owner and add no duplicate energy."
+      },
+      {
+        "id": "fill",
+        "type": "rectangular_area",
+        "position_b": [
+          1.5,
+          -0.4,
+          0.7
+        ],
+        "target_b": [
+          0,
+          0,
+          0
+        ],
+        "size_b": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "roll_rad": 0.0,
+        "color": {
+          "space": "linear_srgb",
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "intensity": {
+          "quantity": "reference_contribution_ev",
+          "value": -0.5,
+          "reference_id": "CAL-LIGHT-001"
+        },
+        "emission_sides": "front_only",
+        "energy_owner": "analytic_light",
+        "visible_emitter_policy": "If represented by a visible mesh, it must share this source owner and add no duplicate energy."
+      }
+    ],
+    "modifiers": [
+      {
+        "id": "front_flag",
+        "type": "diffuse_card",
+        "role": "flag",
+        "position_b": [
+          0,
+          -0.9,
+          1.15
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "size_b": {
+          "width": 0.9,
+          "height": 0.4
+        },
+        "roll_rad": 0.0,
+        "material": {
+          "model": "lambertian",
+          "reflectance_linear_srgb": [
+            0.02,
+            0.02,
+            0.02
+          ]
+        },
+        "emission": 0.0,
+        "casts_shadow": true,
+        "two_sided": true,
+        "note": "Original idealized neutral card; reflectance is an authoring input, not a measured commercial material."
+      }
+    ],
+    "exposed_controls": [
+      "key size_b",
+      "fill intensity.value",
+      "front_flag position_b"
+    ],
+    "locks": [
+      "Require manual camera exposure locked across comparisons. This rig does not set exposure, white balance, tone mapping or output settings.",
+      "Material, CAD geometry, object pose and animation remain unchanged when applying the rig.",
+      "Resolve source and modifier clearance before authoring. Block unresolved or intersecting placements instead of silently moving geometry.",
+      "One energy owner per physical emitter. Analytic and visible mesh representations must not double-count emission.",
+      "Check every required capability before authoring or rendering. If any is unavailable, keep the scene unchanged and report the missing capability IDs.",
+      "All samples are specified_unbound: no SolidCraft runtime adapter, asset installation or renderer support is promised.",
+      "For the calibrated studio comparison, require zero unaccounted environment illumination. Preserve existing environment data; ask for an explicit compatible lighting variant rather than changing it silently."
+    ],
+    "validation": [
+      "Confirm all normalized coordinates are resolved once in millimeters and all angle fields use radians.",
+      "Record the calibrated source gains, capability report, subject reference and manual-exposure camera snapshot.",
+      "Compare a clean undenoised linear render before judging fine optical details.",
+      "Retain dark base appearance and check that the high flag does not block the chosen view."
+    ],
+    "status": "specified_unbound"
+  },
+  "resolved_environment_id": "ENV-001",
+  "resolved_lighting_id": "LUZ-012",
+  "resolved_quality": {
+    "id": "Q-002",
+    "name": "Balanced Product",
+    "original_specification": {
+      "id": "Q-002",
+      "name": "Balanced Product",
+      "status": "specified_unbound",
+      "goal": "presentation",
+      "resolution": {
+        "width": 1600,
+        "height": 900
+      },
+      "integrator_intent": "path_tracing",
+      "sampling": {
+        "minimum_samples": 32,
+        "maximum_samples": 512,
+        "relative_error_target": 0.035,
+        "error_estimator": "Versioned relative standard error of scene-linear luminance with a documented dark-signal floor; adapter must bind an estimator before use.",
+        "maximum_samples_action": "Finish with an unconverged flag when the target is not met.",
+        "scope": "Estimated Monte Carlo uncertainty for the bound estimator, not total optical error, finite-depth bias, rare-path coverage or temporal error.",
+        "stopping_rule_binding": "Require a versioned pixel/tile aggregation rule and dark-signal floor before execution."
+      },
+      "transport": {
+        "maximum_depth": 8,
+        "maximum_transmission_depth": 6,
+        "russian_roulette_after_depth": 3,
+        "roulette_policy": "Compensated stochastic termination; finite depth is a declared truncation."
+      },
+      "denoising": {
+        "enabled": true,
+        "preserve_raw": true,
+        "temporal_validation_required": false
+      },
+      "motion": {
+        "enabled": false,
+        "shutter_fraction": 0.0,
+        "temporal_samples": 0,
+        "requires_approved_bake": false,
+        "sample_budget_policy": "No time integration.",
+        "shutter_alignment": "instantaneous",
+        "frame_rate_binding": "not_applicable"
+      },
+      "output": {
+        "master": "linear_buffer",
+        "presentation": "png",
+        "color_transform": "project_declared",
+        "exposure_policy": "manual_locked"
+      },
+      "seed": 21026,
+      "required_capabilities": [
+        "CAP-001",
+        "CAP-002",
+        "CAP-003",
+        "CAP-004",
+        "CAP-005",
+        "CAP-006",
+        "CAP-057",
+        "CAP-058",
+        "CAP-059",
+        "CAP-065",
+        "CAP-073",
+        "CAP-081",
+        "CAP-083",
+        "CAP-085"
+      ],
+      "budget_policy": "Resolve memory and time against the selected executor; never switch devices or downgrade silently.",
+      "baseline_compatibility": "Future authoring target; resolve every field against the current executor before use.",
+      "validation": [
+        "Measure convergence in dark regolith and bright metal or glass regions.",
+        "Compare raw and finished results; preserve labels, fibers and thin wires.",
+        "Report elapsed time, peak memory and incomplete quality targets."
+      ],
+      "provenance_id": "ORIGINAL-2026-10-CATALOG",
+      "seed_policy": "Base seed; bind a versioned frame/pixel/sample/time-stratum stream policy and record it in the render manifest."
+    },
+    "native_projection": {
+      "width": 1600,
+      "height": 900,
+      "format": "png",
+      "job": {
+        "method": "gpu_path",
+        "options": {
+          "samples": 512,
+          "max_depth": 8,
+          "seed": 21026,
+          "tone_map": "aces_fitted",
+          "denoise": false,
+          "linear_exr": false,
+          "lighting": {
+            "environment": [
+              0,
+              0,
+              0
+            ],
+            "area_lights": [
+              {
+                "center": [
+                  -1350.0,
+                  -1400.0,
+                  1200.0
+                ],
+                "u": [
+                  -431.9065772524111,
+                  416.4813423505392,
+                  0.0
+                ],
+                "v": [
+                  291.59247279693346,
+                  302.39219401163473,
+                  680.832424910124
+                ],
+                "radiance": [
+                  8,
+                  8,
+                  8
+                ]
+              },
+              {
+                "center": [
+                  1400.0,
+                  -700.0,
+                  550.0
+                ],
+                "u": [
+                  -190.06577808748213,
+                  -380.13155617496426,
+                  0.0
+                ],
+                "v": [
+                  -192.7335743957555,
+                  96.36678719787776,
+                  613.2431912592222
+                ],
+                "radiance": [
+                  3,
+                  3,
+                  3
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "limitations": [
+      "Native fixed sampling does not assert the original convergence/error estimator.",
+      "Quality specification is a target, not a measured guarantee for every scene."
+    ],
+    "authoring_status": "generated_projection_with_explicit_limits",
+    "full_quality_acceptance": false
+  },
+  "demo_role_bindings": [
+    {
+      "role": "product_finish",
+      "material": "MAT-031",
+      "demo_body": "Demo product_finish",
+      "appearance_variant": "uniform_native_projection"
+    },
+    {
+      "role": "reference_metal",
+      "material": "MAT-001",
+      "demo_body": "Demo reference_metal",
+      "appearance_variant": "uniform_native_projection"
+    },
+    {
+      "role": "reference_polymer",
+      "material": "MAT-051",
+      "demo_body": "Demo reference_polymer",
+      "appearance_variant": "uniform_native_projection"
+    }
+  ],
+  "native_setup": {
+    "width": 960,
+    "height": 640,
+    "background": [
+      28,
+      33,
+      41
+    ],
+    "exposure_ev": -1,
+    "camera": {
+      "target": [
+        0,
+        0,
+        192.0
+      ],
+      "yaw": -0.6,
+      "pitch": 0.35,
+      "roll": 0,
+      "distance": 2160.0,
+      "fov": 0.7,
+      "up": "z"
+    },
+    "job": {
+      "method": "gpu_path",
+      "options": {
+        "samples": 128,
+        "max_depth": 8,
+        "seed": 910004,
+        "tone_map": "aces_fitted",
+        "linear_exr": true,
+        "lighting": {
+          "environment": [
+            0,
+            0,
+            0
+          ],
+          "area_lights": [
+            {
+              "center": [
+                -1350.0,
+                -1400.0,
+                1200.0
+              ],
+              "u": [
+                -431.9065772524111,
+                416.4813423505392,
+                0.0
+              ],
+              "v": [
+                291.59247279693346,
+                302.39219401163473,
+                680.832424910124
+              ],
+              "radiance": [
+                8,
+                8,
+                8
+              ]
+            },
+            {
+              "center": [
+                1400.0,
+                -700.0,
+                550.0
+              ],
+              "u": [
+                -190.06577808748213,
+                -380.13155617496426,
+                0.0
+              ],
+              "v": [
+                -192.7335743957555,
+                96.36678719787776,
+                613.2431912592222
+              ],
+              "radiance": [
+                3,
+                3,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limits": [
+    "Demo objects are placeholders for explicit user roles; no user selection is guessed.",
+    "Native looks are the uniform projection, not an assertion that custom texture maps persisted.",
+    "Native fixed sampling does not assert the original convergence/error estimator.",
+    "Quality specification is a target, not a measured guarantee for every scene."
+  ],
+  "energy_ownership": "Explicit rig owns illumination in the demo; exported HDR remains an alternative, not an additive duplicate.",
+  "full_original_scene_acceptance": false
+}

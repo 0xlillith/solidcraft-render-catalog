@@ -1,0 +1,183 @@
+{
+  "id": "MAT-052",
+  "name": "Surface-frosted acrylic",
+  "family": "Transparent and translucent polymers",
+  "version": "1.0.0-local",
+  "seed": 6611788,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.4411111275772305,
+    0.5301696200228623,
+    0.5406580126383986
+  ],
+  "base_linear_high": [
+    0.8112172770809272,
+    0.9733834872058089,
+    0.9924817543564869
+  ],
+  "roughness": 0.07600000000000001,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.004,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.49,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-052",
+    "name": "Surface-frosted acrylic",
+    "family": "Transparent and translucent polymers",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "CAD product"
+    ],
+    "description": "Rough external faces blur transmission through a clearer interior.",
+    "use_cases": [
+      "Signs",
+      "diffusers"
+    ],
+    "optical_model": "Transmissive dielectric boundary with separate volume absorption or scattering and real thickness.",
+    "controls": [
+      "editable refractive index",
+      "absorption distance",
+      "surface roughness",
+      "face roughness",
+      "frost coverage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep surface texture separate from volume thickness.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-028"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Distinguish surface diffusion from bulk scattering.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "de243580b2119045a3930d5c3005b082c67f7582c2031aac1035fa90ff7072be",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "9e60684d7ac7683188cb3c139df0748573619a1bd6152c428aac1d2ddb7ba3c3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "6bee3b2161761d943ef3672e3b5090f5c44afb6e6dcc88ee13a1d2b36809f0d9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "aa0bdd53677de2fad04fce93dce4078b8d7d9f1a935f0e0960dac70a5d5cf800",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "70fd396a88cce418096777e56cb81d8ee035dbfe52a28399e8cbbdfc5ee6b6d8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b59e1a806697c3561e1668a99b1e3a287e156f4fe17b68ddcb478d5c63710177",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "21a6a05634e9320675d7a0f2cd2f42118dd1e103a79187c354d5bf050ecf7e79",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "247871591ca1de8b0d24c234d6da242579ae8d581ae9c80e71ce8d2155c9f404",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

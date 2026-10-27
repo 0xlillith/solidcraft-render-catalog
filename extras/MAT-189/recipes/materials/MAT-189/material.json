@@ -1,0 +1,195 @@
+{
+  "id": "MAT-189",
+  "name": "Foamy liquid surface",
+  "family": "Liquids and gels",
+  "version": "1.0.0-local",
+  "seed": 7696691,
+  "pattern": "water",
+  "base_linear_low": [
+    0.36984763901304013,
+    0.4943999738777297,
+    0.4994208203920596
+  ],
+  "base_linear_high": [
+    0.6814539098446402,
+    0.9082506987027316,
+    0.9173931356392727
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-189",
+    "name": "Foamy liquid surface",
+    "family": "Liquids and gels",
+    "domains": [
+      "laboratory",
+      "industrial",
+      "CAD product"
+    ],
+    "description": "A bubble layer sits above a separate liquid body.",
+    "use_cases": [
+      "Process illustrations",
+      "products"
+    ],
+    "optical_model": "Absorbing or scattering volume bounded by explicit refractive interfaces; geometry determines menisci and shape.",
+    "controls": [
+      "editable refractive index",
+      "absorption distance",
+      "scattering",
+      "bubble size",
+      "foam depth"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use bubble geometry or a declared close-view approximation.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-028",
+      "CAP-036"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Flat noise must not claim to reproduce visible bubble interfaces.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "4a87bc9b8df89ab1d7ce3077616cdc0efd7e9567be06d132eba8fad23a49b1a5",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "711dfcf5a6a072640a7e431b16de9feb18d188189fbe139ec546df38ca53eedb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "ac355a25bbce5b79cd13aaf3bda7cf62a914e2440a52616d4766c7fffaa0d9a7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "5c7c3d423718ae14e368fe6c971aca7c65f2245e9642b9f7b6dea93847f1a297",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d16a22dc5a8ef27a6a8f4d88db1bd8e705ef0a51dc47035da0b989580ccc9799",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "fa63c4ff7f0473d5a23e9babd28b4821f4bd59536cb030cf0b19155bf8e20b8e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "14a79cb1e799b2f2856c48520222b130f965b4ad39a830c620aa2ef7ec806668",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "345a224cb498fb3b9a520d2e030f6740b354a16fcf838a7c15d6e80ca5644e2b",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

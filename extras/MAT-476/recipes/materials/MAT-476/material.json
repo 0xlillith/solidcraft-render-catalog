@@ -1,0 +1,182 @@
+{
+  "id": "MAT-476",
+  "name": "Resin-rich composite region",
+  "family": "Aerospace composite constructions",
+  "version": "1.0.0-local",
+  "seed": 9969444,
+  "pattern": "weave_twill",
+  "base_linear_low": [
+    0.020578007301105736,
+    0.02471593176873703,
+    0.03126560784570966
+  ],
+  "base_linear_high": [
+    0.04547040135425223,
+    0.053005129489342044,
+    0.06493140533099372
+  ],
+  "roughness": 0.41800000000000004,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.18,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-476",
+    "name": "Resin-rich composite region",
+    "family": "Aerospace composite constructions",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Local matrix-rich areas obscure some underlying reinforcement.",
+    "use_cases": [
+      "Manufacturing illustrations"
+    ],
+    "optical_model": "Region- and ply-aware composite appearance with separate reinforcement, resin and surface-process structure.",
+    "controls": [
+      "ply direction",
+      "matrix finish",
+      "process-region masks",
+      "resin coverage",
+      "optical depth"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep the region attached to the authored laminate surface.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-036",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Do not treat visual resin richness as a void-content measurement.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "2f02bee3bf09972ca4e4bcbb6c017f5c99b1cb444675872739bc3e6d1f6a0d2b",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "621763bef8ccf8a05b2e66349869651ca2e8667d35bdc945e652be8516953aa3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "6afa68f50d6aa9029ea41db974ddf76659332f848ea88d717acf3bd439aac4b9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "7f18f788fa8edaddcaa12c8cf1f872f301c8e6404a41fff56a7f8f084c146e31",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "760cf79b27546e0675af4f60fbb24cc0267f7c25628ee9b774e8fd7a7f6c78cf",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "e8d2c7c90fc58dc63e84086fe0a1b12e993e0280f587f25452bbc81961cf45f3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f7e810a0798abe8b98cf0da20d14cd4d5580e214156dabaeea1a2bd66addb238",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "2e62aae597336accc4cb0a017673b21685112dd050144468140d66097bf37e83",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

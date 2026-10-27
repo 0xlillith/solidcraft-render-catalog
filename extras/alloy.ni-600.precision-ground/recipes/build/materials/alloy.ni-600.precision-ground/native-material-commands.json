@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "ni-600",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "Nickel-chromium alloy 600 / Precision ground",
+        "density_g_cm3": 8.42,
+        "color": [
+          197,
+          196,
+          191
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.19,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "Nickel-chromium alloy 600",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "sand-ni-600",
+              "title": "Nickel-chromium alloy 600 primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://www.sandmeyersteel.com/inconel-alloy-600/"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 8420
+              },
+              "source_id": "sand-ni-600",
+              "conditions": {
+                "temperature_k": null,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "Supplier plate reference; heat treatment and test direction not stated for all physical values; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

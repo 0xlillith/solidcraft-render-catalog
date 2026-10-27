@@ -1,0 +1,194 @@
+{
+  "id": "MAT-450",
+  "name": "Micro-emitter array face",
+  "family": "LED emitters and conversion layers",
+  "version": "1.0.0-local",
+  "seed": 9763550,
+  "pattern": "led",
+  "base_linear_low": [
+    0.5619953378662959,
+    0.4226072813519184,
+    0.1520671352517659
+  ],
+  "base_linear_high": [
+    1.0,
+    0.7775237063422992,
+    0.28489836568232
+  ],
+  "roughness": 0.39,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.005,
+  "tile_mm": [
+    15,
+    15
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 3.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-450",
+    "name": "Micro-emitter array face",
+    "family": "LED emitters and conversion layers",
+    "domains": [
+      "LED lighting",
+      "electronics",
+      "automotive",
+      "space"
+    ],
+    "description": "Many small bounded emitting regions share a non-emitting support surface.",
+    "use_cases": [
+      "Displays",
+      "patterned illumination"
+    ],
+    "optical_model": "Explicit emissive and dielectric package regions; static emission is an authored source, while physical spectral conversion requires a dedicated model.",
+    "controls": [
+      "emission level",
+      "package masks",
+      "surface finish",
+      "emitter pitch",
+      "active masks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve physical pixel dimensions and distant coverage.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-013",
+      "CAP-025",
+      "CAP-028"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Filtering must retain average radiance without making inactive gaps glow.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Emissive radiance is authored; no measured lumens, spectrum or electrical/thermal behavior."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c2c686d3b4807697ad109cef5bdada2f4ec00841f46ffd49a8278f41d6f92632",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "bcac41d5dece42385844fe00ce9e95df50473dcf9d0343aca9c697c7cbdf480e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "0882d063f24a677df23cfe766d5e1540d6c07082f8f45ff81be5628c23ff2ff5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "797eaed0334e5c9942894c5e6e61709989cdc6f1cc727e3d4aac94f88885dcbb",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "ae0b75ede20588dd6acbc9baf44a409761b8139da8a9c7c7ded7aed5bd5cb1c4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1cd40be5f85b16c559612ccd68b133ac95fc114cb71218074c3fde90f8921c2f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "emission": {
+      "path": "maps/emission.png",
+      "sha256": "c2c686d3b4807697ad109cef5bdada2f4ec00841f46ffd49a8278f41d6f92632",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "60f9faded7409dcb5a7b164f9f25de3835f81b9170f134d1eacfda12c9c9ad18",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "439a9776e825e8fc970d08c88f00776d2c6b54e1ca4c028c7466717520bfe016",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "SELENE-AP-025",
+  "name": "Opaque sample cassette body",
+  "original_specification": {
+    "id": "SELENE-AP-025",
+    "name": "Opaque sample cassette body",
+    "source_catalog_ids": [
+      "MAT-595"
+    ],
+    "family": "Sample containment polymers",
+    "domains": [
+      "SELENE",
+      "laboratory",
+      "additive manufacturing"
+    ],
+    "purpose": "A neutral opaque polymer finish for a sample cassette or instrument tray.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-025 Opaque sample cassette body",
+        "color": "#424a54",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.54,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Molded grain",
+        "Cavity occlusion",
+        "Mechanical retention behavior"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Pigmented dielectric polymer with a matte manufactured outer surface.",
+      "structure": [
+        "Opaque polymer surface",
+        "Explicit cassette compartments and retention geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "surface_grain_pitch",
+          "value": 0.35,
+          "unit": "mm",
+          "meaning": "Illustrative molded texture scale.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "surface_grain_relief",
+          "value": 0.006,
+          "unit": "mm",
+          "meaning": "Render-only molded texture amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep cells, catches and identification recesses geometric",
+        "Avoid merging contact surfaces through a shared displacement field"
+      ],
+      "capability_requirements": [
+        "CAP-033",
+        "CAP-035",
+        "CAP-036",
+        "CAP-038"
+      ],
+      "unknown_optical_inputs": [
+        "Optical data for a selected polymer formulation"
+      ],
+      "validation_criteria": [
+        "Separate compartments must remain distinguishable",
+        "Styling must not change sample IDs, geometry or motion constraints"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#424a54",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.54,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-025 Opaque sample cassette body",
+    "bodies": [
+      "SELENE-AP-025"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

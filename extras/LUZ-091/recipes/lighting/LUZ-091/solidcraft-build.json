@@ -1,0 +1,165 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "LUZ-091 Studio design chair"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "description": "Original relative lighting rig on neutral calibration geometry; no photometric certification.",
+        "org.solidcraft.local_catalog": {
+          "id": "LUZ-091",
+          "unresolved_external_inputs": [],
+          "limitations": []
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.sphere",
+    "params": {
+      "radius": 160,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "body_name": "Reference subject"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Reference subject"
+      ],
+      "color": [
+        155,
+        155,
+        155
+      ],
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.4,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-091 Studio design chair",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.7,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 1150,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "background": [
+          30,
+          35,
+          42
+        ],
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 870413,
+            "tone_map": "aces_fitted",
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    -1350.0,
+                    -1400.0,
+                    1200.0
+                  ],
+                  "u": [
+                    -431.9065772524111,
+                    416.4813423505392,
+                    0.0
+                  ],
+                  "v": [
+                    291.59247279693346,
+                    302.39219401163473,
+                    680.832424910124
+                  ],
+                  "radiance": [
+                    8,
+                    8,
+                    8
+                  ]
+                },
+                {
+                  "center": [
+                    1400.0,
+                    -700.0,
+                    550.0
+                  ],
+                  "u": [
+                    -190.06577808748213,
+                    -380.13155617496426,
+                    0.0
+                  ],
+                  "v": [
+                    -192.7335743957555,
+                    96.36678719787776,
+                    613.2431912592222
+                  ],
+                  "radiance": [
+                    3,
+                    3,
+                    3
+                  ]
+                },
+                {
+                  "center": [
+                    0.0,
+                    1400.0,
+                    1400.0
+                  ],
+                  "u": [
+                    750.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    -229.80970388562793,
+                    229.80970388562793
+                  ],
+                  "radiance": [
+                    5,
+                    5,
+                    5
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

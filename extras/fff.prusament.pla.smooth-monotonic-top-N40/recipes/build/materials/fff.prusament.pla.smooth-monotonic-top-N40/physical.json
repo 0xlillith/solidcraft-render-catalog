@@ -1,0 +1,474 @@
+{
+  "id": "physical.fff.prusament.pla",
+  "key": "pla",
+  "name": "Prusament PLA",
+  "chemistry": "PLA",
+  "filler_mass_fraction": null,
+  "texture_class": "smooth",
+  "appearance_palette_srgb": [
+    198,
+    80,
+    48
+  ],
+  "source": {
+    "id": "prusament-pla-tds",
+    "url": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf",
+    "version": "1.1",
+    "dated": "2022-02-16",
+    "accessed": "2026-10-25",
+    "pages_reviewed": [
+      1,
+      2,
+      3
+    ],
+    "table_visually_verified": true,
+    "redistributed_document": false
+  },
+  "specimen_context": {
+    "printer": "Original Prusa i3 MK3",
+    "slicer": "Slic3r Prusa Edition 1.40.0",
+    "layer_height_mm": 0.2,
+    "infill_percent": 100,
+    "infill_pattern": "rectilinear",
+    "perimeters": 2,
+    "solid_top_layers": 0,
+    "solid_bottom_layers": 0,
+    "nozzle_temperature_k": 488.15,
+    "bed_temperature_k": 333.15,
+    "source_print_speed_mm_s": 200,
+    "nozzle_diameter_mm": null,
+    "source_locator": "p.3 specimen footnote",
+    "not_a_general_slicing_profile": true
+  },
+  "properties": [
+    {
+      "id": "density",
+      "quantity": "material_density",
+      "value": 1240.0,
+      "unit": "kg/m3",
+      "source_value": 1.24,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 1000,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 1183",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "g/cm3",
+        "temperature_k": null,
+        "specimen_basis": "material reference; not effective printed bulk density"
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "uptake-24",
+      "quantity": "moisture_absorption",
+      "value": 0.0013,
+      "unit": "kg/kg",
+      "source_value": 0.13,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 0.01,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "percent",
+        "duration_h": 24,
+        "temperature_k": 297.15,
+        "relative_humidity": 0.22
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "uptake-168",
+      "quantity": "moisture_absorption",
+      "value": 0.0019,
+      "unit": "kg/kg",
+      "source_value": 0.19,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 0.01,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "percent",
+        "duration_h": 168,
+        "temperature_k": 297.15,
+        "relative_humidity": 0.22
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "hdt-0.45",
+      "quantity": "heat_deflection_temperature",
+      "value": 328.15,
+      "unit": "K",
+      "source_value": 55,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 1,
+        "offset": 273.15
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 75",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "degC",
+        "bending_stress_pa": 450000.0
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "hdt-1.8",
+      "quantity": "heat_deflection_temperature",
+      "value": 328.15,
+      "unit": "K",
+      "source_value": 55,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 1,
+        "offset": 273.15
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 75",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "degC",
+        "bending_stress_pa": 1800000.0
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "filament-yield",
+      "quantity": "tensile_yield_strength",
+      "value": 57000000.0,
+      "unit": "Pa",
+      "source_value": 57,
+      "source_spread": 1,
+      "converted_spread": 1000000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "specimen": "filament"
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "hardness-d",
+      "quantity": "hardness_shore_d",
+      "value": 81,
+      "unit": "Shore D",
+      "source_value": 81,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 1,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {},
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "interlayer",
+      "quantity": "interlayer_adhesion",
+      "value": 17000000.0,
+      "unit": "Pa",
+      "source_value": 17,
+      "source_spread": 3,
+      "converted_spread": 3000000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "protocol_detail": "Source internal method; not a full constitutive tensor"
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-yield-0",
+      "quantity": "tensile_yield_strength",
+      "value": 51000000.0,
+      "unit": "Pa",
+      "source_value": 51,
+      "source_spread": 3,
+      "converted_spread": 3000000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527-1",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-yield-1",
+      "quantity": "tensile_yield_strength",
+      "value": 59000000.0,
+      "unit": "Pa",
+      "source_value": 59,
+      "source_spread": 2,
+      "converted_spread": 2000000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527-1",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Vertical xz",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-modulus-0",
+      "quantity": "tensile_modulus",
+      "value": 2300000000.0,
+      "unit": "Pa",
+      "source_value": 2.3,
+      "source_spread": 0.1,
+      "converted_spread": 100000000.0,
+      "conversion": {
+        "scale": 1000000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527-1",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "GPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-modulus-1",
+      "quantity": "tensile_modulus",
+      "value": 2400000000.0,
+      "unit": "Pa",
+      "source_value": 2.4,
+      "source_spread": 0.1,
+      "converted_spread": 100000000.0,
+      "conversion": {
+        "scale": 1000000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527-1",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "GPa",
+        "orientation_as_reported": "Vertical xz",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-flexural-strength-0",
+      "quantity": "flexural_strength",
+      "value": 83000000.0,
+      "unit": "Pa",
+      "source_value": 83,
+      "source_spread": 6,
+      "converted_spread": 6000000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 178",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-flexural-strength-1",
+      "quantity": "flexural_strength",
+      "value": 99000000.0,
+      "unit": "Pa",
+      "source_value": 99,
+      "source_spread": 1,
+      "converted_spread": 1000000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 178",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Vertical xz",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-flexural-modulus-0",
+      "quantity": "flexural_modulus",
+      "value": 3100000000.0,
+      "unit": "Pa",
+      "source_value": 3.1,
+      "source_spread": 0.1,
+      "converted_spread": 100000000.0,
+      "conversion": {
+        "scale": 1000000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 178",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "GPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-flexural-modulus-1",
+      "quantity": "flexural_modulus",
+      "value": 3200000000.0,
+      "unit": "Pa",
+      "source_value": 3.2,
+      "source_spread": 0.1,
+      "converted_spread": 100000000.0,
+      "conversion": {
+        "scale": 1000000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 178",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "GPa",
+        "orientation_as_reported": "Vertical xz",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-yield-elongation-0",
+      "quantity": "elongation_at_yield",
+      "value": 0.029,
+      "unit": "1",
+      "source_value": 2.9,
+      "source_spread": 0.3,
+      "converted_spread": 0.003,
+      "conversion": {
+        "scale": 0.01,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527-1",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "percent",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    },
+    {
+      "id": "printed-yield-elongation-1",
+      "quantity": "elongation_at_yield",
+      "value": 0.032,
+      "unit": "1",
+      "source_value": 3.2,
+      "source_spread": 1.0,
+      "converted_spread": 0.01,
+      "conversion": {
+        "scale": 0.01,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527-1",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "percent",
+        "orientation_as_reported": "Vertical xz",
+        "specimen_context_id": "test.pla",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-pla-tds"
+    }
+  ],
+  "effective_printed_density_kg_m3": null,
+  "full_mechanical_model": null,
+  "limitations": [
+    "Manufacturer typical reference data, not engineering design allowables or identification of a printed part.",
+    "Source orientation labels are preserved; Vertical xz is not silently mapped to build-Z tensile loading.",
+    "A 0.20 mm / 100 percent infill test does not establish properties of every authored visual layer, infill or postprocess.",
+    "The source +/- spread is retained; its statistical meaning is not assumed.",
+    "HDT and Vicat are test results, not maximum continuous service temperatures.",
+    "Palette, roughness and bump detail are original illustrative authoring, not measured optical constants.",
+    "No printer compatibility, safety, chemical resistance or manufacturer endorsement is certified."
+  ]
+}

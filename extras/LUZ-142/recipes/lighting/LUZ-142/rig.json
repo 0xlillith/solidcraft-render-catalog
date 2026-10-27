@@ -1,0 +1,92 @@
+{
+  "id": "LUZ-142",
+  "name": "Asymmetric wall washer",
+  "family": "15 Functional photometry",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-142",
+    "name": "Asymmetric wall washer",
+    "family": "15 Functional photometry",
+    "domains": [
+      "lighting_design",
+      "architecture"
+    ],
+    "description": "A proposed lighting arrangement for wall illumination.",
+    "use_cases": [
+      "Wall illumination"
+    ],
+    "sources": "Asymmetric photometric fixture",
+    "geometry": "Real wall offset and mounting height",
+    "contribution_policy": "Documented profile distribution and flux",
+    "controls": [
+      "Wall offset",
+      "photometric-axis orientation",
+      "documented flux"
+    ],
+    "authoring_method": "Original authoring specification requiring a separately sourced and licensed IES/LDT profile or a clearly labeled analytic distribution. No profile asset or absolute measurement is included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-012"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Do not mirror or rotate the asymmetric lobe silently"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 949106,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          0.0,
+          1500.0
+        ],
+        "u": [
+          -125.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          125.0,
+          0.0
+        ],
+        "radiance": [
+          20,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Original luminaire-shaped area source, not measured IES/LDT intensity distribution or lux validation.",
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

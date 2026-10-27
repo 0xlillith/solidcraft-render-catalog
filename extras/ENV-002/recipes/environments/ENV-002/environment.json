@@ -1,0 +1,110 @@
+{
+  "id": "ENV-002",
+  "name": "Enveloping white studio",
+  "family": "Neutral studios",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-002",
+    "name": "Enveloping white studio",
+    "family": "Neutral studios",
+    "domains": [
+      "product_visualization",
+      "industrial_design"
+    ],
+    "description": "Enveloping white studio is a conceptual setting for catalog images of appliances and white components. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Catalog images of appliances and white components"
+    ],
+    "representation": "Procedural 3D studio with separately managed ambient illumination",
+    "geometry": "Open white enclosure with continuous floor and geometric side panels",
+    "ambient_lighting": "White-wall interreflection with controlled ambient radiance",
+    "scale_policy": "Subjects from 50 mm to 3 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Room dimensions",
+      "wall reflectance",
+      "front opening",
+      "floor material",
+      "ambient rotation"
+    ],
+    "authoring_method": "Original procedural geometry and materials; no AI imagery required",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Check horizon and ground contact from multiple cameras.",
+      "Check diffuse gray, chrome and thick glass references for clipped reflections and background highlights."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "box",
+      "name": "Studio floor",
+      "center_mm": [
+        0.0,
+        0.0,
+        -30.0
+      ],
+      "size_mm": [
+        6000.0,
+        6500.0,
+        60.0
+      ],
+      "color": "a7a7a1"
+    },
+    {
+      "type": "box",
+      "name": "Back wall",
+      "center_mm": [
+        0.0,
+        3200.0,
+        2600.0
+      ],
+      "size_mm": [
+        6000.0,
+        60.0,
+        2800.0
+      ],
+      "color": "d5d7d7"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 18,
+    "triangles": 56,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 6000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

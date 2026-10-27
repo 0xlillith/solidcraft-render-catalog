@@ -1,0 +1,145 @@
+{
+  "profile_id": "steel-304-plate",
+  "card": {
+    "schema_version": 1,
+    "designation": "304 stainless steel plate - Sandmeyer reference",
+    "family": "metal",
+    "sources": [
+      {
+        "id": "sandmeyer-304",
+        "title": "Sandmeyer Steel Alloy 304/304L plate",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.sandmeyersteel.com/alloy-304-304l/"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 7900.0
+        },
+        "source_id": "sandmeyer-304",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "specific_heat",
+          "j_kg_k": 500.0
+        },
+        "source_id": "sandmeyer-304",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[273.15,373.15],\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "tensile_strength",
+          "pa": 599843884.506
+        },
+        "source_id": "sandmeyer-304",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_conductivity",
+          "w_m_k": [
+            16.3,
+            16.3,
+            16.3
+          ],
+          "axes": "material123"
+        },
+        "source_id": "sandmeyer-304",
+        "conditions": {
+          "temperature_k": 373.15,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_expansion",
+          "per_k": [
+            1.66e-05,
+            1.66e-05,
+            1.66e-05
+          ],
+          "axes": "material123"
+        },
+        "source_id": "sandmeyer-304",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,373.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      },
+      {
+        "data": {
+          "kind": "yield_strength",
+          "pa": 289579806.313
+        },
+        "source_id": "sandmeyer-304",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Supplier 304/304L plate reference; verify grade, heat and thickness. Main table is the numerical authority. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"0.2% proof stress\"}"
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density",
+    "specific_heat",
+    "tensile_strength",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "not_projected": [
+    {
+      "id": "young_modulus",
+      "quantity": "young_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "volume_resistivity",
+      "quantity": "volume_resistivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "melting_temperature",
+      "quantity": "melting_temperature",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "elongation_break",
+      "quantity": "elongation_break",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

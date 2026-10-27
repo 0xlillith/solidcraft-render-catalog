@@ -1,0 +1,182 @@
+{
+  "id": "MAT-002",
+  "name": "Linear-brushed stainless steel",
+  "family": "Steels and cast irons",
+  "version": "1.0.0-local",
+  "seed": 6215838,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.48,
+    0.52,
+    0.56
+  ],
+  "base_linear_high": [
+    0.62,
+    0.66,
+    0.69
+  ],
+  "roughness": 0.29,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.018,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-002",
+    "name": "Linear-brushed stainless steel",
+    "family": "Steels and cast irons",
+    "domains": [
+      "industrial",
+      "automotive",
+      "CAD product"
+    ],
+    "description": "Parallel machining grain with elongated highlights.",
+    "use_cases": [
+      "Enclosures",
+      "control panels"
+    ],
+    "optical_model": "Conductor microfacet substrate; separate absorbing oxide or dielectric surface layers where specified.",
+    "controls": [
+      "surface roughness",
+      "finish direction",
+      "exposed metal coverage",
+      "groove spacing",
+      "anisotropy direction"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Anchor brushing to a selected local manufacturing axis.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Rotate the part and confirm that the finish rotates with it.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-001",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "f44840af59d6577d655df9c82b48d0a1887b1f0ede6e09106125782039a4603c",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "b9f3117dba75b974e17ed4a44bdabd1b7eaeab41eaa9bd47fd80b6dfe6c16265",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "31f2fb03d6b209f87af6f1133387317ac5ed6824682c5917912bb0a5736f5550",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "18207232488dcad205dfcd31f140230b87cd2659699ea7d5d74ce26c45ebce3d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "836a79f22f386a26f33ea68b88aa6b702583fbc58758dc6fc16e6e19e64ee3d5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "d74ba7430c97926a83df3ab7aeb176f68e28ffaf3f79d2ec97eb628fbdcad9f9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f0a71a3297d35531314e5653ce66306297a7a6766f3caec0e80d2fab69543a58",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e6f0117e8e5d1f1cf912111c5af30ea2236d243130c92c0573e2f6a1e6bfd6af",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

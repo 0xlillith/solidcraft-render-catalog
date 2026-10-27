@@ -1,0 +1,104 @@
+{
+  "id": "SELENE-AP-020",
+  "name": "Solar-cell opaque preview",
+  "original_specification": {
+    "id": "SELENE-AP-020",
+    "name": "Solar-cell opaque preview",
+    "source_catalog_ids": [
+      "MAT-511"
+    ],
+    "family": "Solar assemblies",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "space"
+    ],
+    "purpose": "A dark blue inspection appearance for a solar-cell body beneath a future coverglass layer.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-020 Solar-cell opaque preview",
+        "color": "#172b43",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.24,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Semiconductor spectral response",
+        "Contact lines",
+        "Coating interference",
+        "Coverglass transmission",
+        "Power conversion"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Semiconductor optical surface with separately modeled contacts, antireflection layers and coverglass.",
+      "structure": [
+        "Optional coverglass as separate geometry",
+        "Antireflection stack",
+        "Semiconductor surface",
+        "Metal contact geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "contact_line_pitch",
+          "value": 2.0,
+          "unit": "mm",
+          "meaning": "Illustrative front-contact line spacing for authoring only.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "contact_line_width",
+          "value": 0.1,
+          "unit": "mm",
+          "meaning": "Illustrative contact geometry width; not an electrical design recommendation.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Model electrical contact lines or use bounded masks",
+        "Keep coverglass out of this opaque projection"
+      ],
+      "capability_requirements": [
+        "CAP-018",
+        "CAP-025",
+        "CAP-027",
+        "CAP-031",
+        "CAP-038",
+        "CAP-098"
+      ],
+      "unknown_optical_inputs": [
+        "Measured semiconductor optical data",
+        "Coating stack data",
+        "Coverglass optical constants"
+      ],
+      "validation_criteria": [
+        "An opaque solar tile must not be mistaken for a transparent coverglass material",
+        "No electrical efficiency may be inferred from its color"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#172b43",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.24,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-020 Solar-cell opaque preview",
+    "bodies": [
+      "SELENE-AP-020"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

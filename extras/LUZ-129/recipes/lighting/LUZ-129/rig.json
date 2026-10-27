@@ -1,0 +1,158 @@
+{
+  "id": "LUZ-129",
+  "name": "Retail display cases",
+  "family": "13 Artificial architectural lighting",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-129",
+    "name": "Retail display cases",
+    "family": "13 Artificial architectural lighting",
+    "domains": [
+      "architecture",
+      "interior"
+    ],
+    "description": "A proposed lighting arrangement for shops and vitrines.",
+    "use_cases": [
+      "Shops and vitrines"
+    ],
+    "sources": "General lights and interior strips or spots",
+    "geometry": "Emitters occupy free space inside cases",
+    "contribution_policy": "Display 0 and general -1 reference EV",
+    "controls": [
+      "Object-to-background balance",
+      "glass-relative placement",
+      "beam angle"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Glass retains reflections while the product remains visible"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 929047,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -900.0,
+          -800.0,
+          1800.0
+        ],
+        "u": [
+          -215.91824761972393,
+          242.90802857218938,
+          0.0
+        ],
+        "v": [
+          201.8961107993787,
+          179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      },
+      {
+        "center": [
+          900.0,
+          -800.0,
+          1800.0
+        ],
+        "u": [
+          -215.91824761972393,
+          -242.90802857218938,
+          0.0
+        ],
+        "v": [
+          -201.8961107993787,
+          179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      },
+      {
+        "center": [
+          -900.0,
+          800.0,
+          1800.0
+        ],
+        "u": [
+          215.91824761972393,
+          242.90802857218938,
+          0.0
+        ],
+        "v": [
+          201.8961107993787,
+          -179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      },
+      {
+        "center": [
+          900.0,
+          800.0,
+          1800.0
+        ],
+        "u": [
+          215.91824761972393,
+          -242.90802857218938,
+          0.0
+        ],
+        "v": [
+          -201.8961107993787,
+          -179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

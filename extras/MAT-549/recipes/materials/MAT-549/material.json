@@ -1,0 +1,181 @@
+{
+  "id": "MAT-549",
+  "name": "Angular ejecta-style cobble assembly",
+  "family": "Lunar highland-style rocks and ground concepts",
+  "version": "1.0.0-local",
+  "seed": 10547531,
+  "pattern": "regolith",
+  "base_linear_low": [
+    0.21650595010567703,
+    0.21037243796173077,
+    0.1925853612770347
+  ],
+  "base_linear_high": [
+    0.4022347151177999,
+    0.3910662303183754,
+    0.35867782202683934
+  ],
+  "roughness": 1.0,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.3,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-549",
+    "name": "Angular ejecta-style cobble assembly",
+    "family": "Lunar highland-style rocks and ground concepts",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Broken rock-like clasts occupy a terrain region without a continuous matrix.",
+    "use_cases": [
+      "Lunar terrain props"
+    ],
+    "optical_model": "Conceptual granular or fractured dielectric rock appearance; site, mineral proportions and optical constants remain unspecified.",
+    "controls": [
+      "fragment distribution",
+      "matrix structure",
+      "surface relief",
+      "clast size",
+      "spacing"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use instanced geometry with real gaps and contact shadows.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-044",
+      "CAP-097"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "The label describes a visual arrangement, not an identified event.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "bf0b8a5444874a5c281ff36daf6da9f70e1f3adabdb24748fd540930489e5b53",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "07019fe0b471618b66057364bcb9ec8f3e1225a4f96ac1f9ec16d959ad402d8d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "237c24c2fdc56a9e18e9ade39ac554b8be04444125dcba7eed6833bb25ca2384",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "bec56d289459bbf4a1ee6eb0c86bc9aab32330236b9ab31408a6ff929c7bdcef",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "7452c6ab965b6667a1edafc0ea90da692057c7b690a9cf6a043c2ad3c71bee6c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "cb32ff1b691d0acfc0a7b5a84828917493ec2ad4dcf940719b3dd15cf485c145",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "c11f04eecb551c747da0e3c2234f1517113891ec3dcfc135f89df6e048c170f7",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f1fafa3cdc933b8b2412289eaf938972de22685464eef7de662245a2c37f2711",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

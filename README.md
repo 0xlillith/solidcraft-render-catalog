@@ -1,3 +1,21 @@
+# SolidCraft extras — individual authoring workspace
+
+**Current direction: one editable folder per extra; packaging is deferred.**
+
+Use [extras/README.md](extras/README.md), the [individual inventory](extras/INDEX.json)
+and the offline [workbench](extras/index.html). All 2,983 historical records and eight
+published scanned references now have separate working folders. This is not a
+new plugin format or a claim that every resource has premium native acceptance.
+
+Git contains the per-extra source records and restoration receipts. Large working
+files are restored separately on Pegasus; their original published bytes stay in
+the historical releases. Do not create new packs while this editing phase is active.
+
+The older catalog/stage overview below is retained as provenance and restoration
+information, not the current unit of work.
+
+---
+
 # SolidCraft Render resource catalog
 
 Personal resource repository maintained by **0xlillith**. **Complete generated assets are stored in this repository's Releases; GitHub's automatic Source code ZIP is not the complete image/mesh library.** Source, numerical inputs, tests and readable inventory remain in Git.

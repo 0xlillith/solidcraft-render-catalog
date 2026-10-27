@@ -1,0 +1,115 @@
+{
+  "id": "LUZ-259",
+  "name": "Payload inside integration frame",
+  "family": "26 Aerospace and spacecraft integration",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-259",
+    "name": "Payload inside integration frame",
+    "family": "26 Aerospace and spacecraft integration",
+    "domains": [
+      "aerospace",
+      "spacecraft",
+      "integration"
+    ],
+    "description": "A proposed lighting arrangement for framed instruments and support equipment.",
+    "use_cases": [
+      "Framed instruments and support equipment"
+    ],
+    "sources": "Large key plus physical cards around frame",
+    "geometry": "Sources and cards remain outside occupied hardware",
+    "contribution_policy": "K 0 reference EV; cards passive",
+    "controls": [
+      "Card position",
+      "key direction",
+      "clearance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-006"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Support frame casts real shadows and is not secretly excluded"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1129637,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1350.0,
+          -1400.0,
+          1200.0
+        ],
+        "u": [
+          -431.9065772524111,
+          416.4813423505392,
+          0.0
+        ],
+        "v": [
+          291.59247279693346,
+          302.39219401163473,
+          680.832424910124
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

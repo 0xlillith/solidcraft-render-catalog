@@ -1,0 +1,118 @@
+{
+  "id": "LUZ-193",
+  "name": "Water-container caustics",
+  "family": "20 Specialized physical scenes",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-193",
+    "name": "Water-container caustics",
+    "family": "20 Specialized physical scenes",
+    "domains": [
+      "research",
+      "optics"
+    ],
+    "description": "A proposed lighting arrangement for transparent vessels on a table.",
+    "use_cases": [
+      "Transparent vessels on a table"
+    ],
+    "sources": "Small high K and weak fill",
+    "geometry": "Existing water/glass boundaries and actual receiver",
+    "contribution_policy": "K 0 and F -3 reference EV",
+    "controls": [
+      "Source size",
+      "source position",
+      "receiver target",
+      "fill"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025",
+      "CAP-027",
+      "CAP-029"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Convergent caustics without fictitious interfaces"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1027799,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1400.0,
+          -1200.0,
+          1500.0
+        ],
+        "u": [
+          -9.761870601839528,
+          11.38884903547945,
+          0.0
+        ],
+        "v": [
+          7.186987199641337,
+          6.160274742549718,
+          11.636074513705022
+        ],
+        "radiance": [
+          80,
+          80,
+          80
+        ]
+      },
+      {
+        "center": [
+          1400.0,
+          -500.0,
+          1000.0
+        ],
+        "u": [
+          -201.80183819889373,
+          -565.0451469569025,
+          0.0
+        ],
+        "v": [
+          -341.65890076408255,
+          122.02103598717233,
+          539.3329790633019
+        ],
+        "radiance": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Specialized optical/volume intent remains dependent on matching scene media and geometry.",
+    "Finite source authored; no claim that the current integrator resolves the requested caustic."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

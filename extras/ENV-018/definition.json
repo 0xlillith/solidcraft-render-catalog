@@ -1,0 +1,69 @@
+{
+  "id": "ENV-018",
+  "name": "Concentric ring stage",
+  "kind": "environment",
+  "family": "Product platforms and staging",
+  "path": "environments/ENV-018",
+  "thumbnail": "environments/ENV-018/native-model-preview.png",
+  "description": "Concentric ring stage is a conceptual setting for rotational parts; mechanisms. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Round staging is a faceted ellipsoid realization, not an exact cylindrical manufacturing solid.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-018/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-018/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-018/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-018/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-018/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-018/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-018/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-018/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-018/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-018/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-018/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-018/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

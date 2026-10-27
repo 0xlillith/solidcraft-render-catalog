@@ -1,0 +1,56 @@
+{
+  "id": "LUZ-262",
+  "name": "Lunar low-angle environment sun",
+  "kind": "lighting",
+  "family": "27 Physical lunar surface lighting",
+  "path": "lighting/LUZ-262",
+  "thumbnail": "lighting/LUZ-262/native-render.png",
+  "description": "A proposed lighting arrangement for low-sun rover and lander studies.",
+  "scope": "Original finite-emitter authoring realization, not measured photometry. The complete JSON rig is authoritative; reference-origin HDR loses finite-source parallax and is a separately labelled projection.",
+  "preview_scope": "Actual SolidCraft GPU image; 64 samples, denoised. Read the receipt/variant; this is not a convergence or full-physics claim.",
+  "badge": "Numeric rig + native sample",
+  "limitations": [
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "files": [
+    {
+      "path": "lighting/LUZ-262/rig.solidcraft",
+      "label": "Native rig sample"
+    },
+    {
+      "path": "lighting/LUZ-262/rig.json",
+      "label": "Full rig definition"
+    },
+    {
+      "path": "lighting/LUZ-262/lighting-full.json",
+      "label": "Lighting parameters"
+    },
+    {
+      "path": "lighting/LUZ-262/rig.glb",
+      "label": "Rig geometry GLB"
+    },
+    {
+      "path": "lighting/LUZ-262/reference-origin.hdr",
+      "label": "Reference-origin HDR"
+    },
+    {
+      "path": "lighting/LUZ-262/reference-origin.exr",
+      "label": "Reference-origin EXR"
+    },
+    {
+      "path": "lighting/LUZ-262/native-render-receipt.json",
+      "label": "Native render receipt"
+    }
+  ],
+  "images": [
+    {
+      "path": "lighting/LUZ-262/native-render.png",
+      "label": "Actual GPU sample"
+    },
+    {
+      "path": "lighting/LUZ-262/preview.png",
+      "label": "Authored preview"
+    }
+  ]
+}

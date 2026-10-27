@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-030",
+  "name": "Window opaque inspection surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-030",
+    "name": "Window opaque inspection surrogate",
+    "source_catalog_ids": [
+      "MAT-583"
+    ],
+    "family": "Optical-window targets",
+    "domains": [
+      "SELENE",
+      "electronics",
+      "space"
+    ],
+    "purpose": "An opaque port/window stand-in for geometric inspection without a transmission claim.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_inspection_surrogate",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-030 Window opaque inspection surrogate",
+        "color": "#537286",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.24,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Transmission",
+        "Refraction",
+        "Dispersion",
+        "Polarization or birefringence",
+        "Optical coatings"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Finite-thickness optical window with optional anisotropic, spectral or polarization-aware response when required.",
+      "structure": [
+        "Outer optical interface",
+        "Window solid",
+        "Inner optical interface",
+        "Optional independent coating stack"
+      ],
+      "authoring_controls": [
+        {
+          "id": "inspection_surrogate_opacity",
+          "value": 1.0,
+          "unit": "normalized",
+          "meaning": "Fixed opaque stand-in; does not represent window transmittance.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Model both faces and the window edge",
+        "Keep mounting and optical surfaces independently assignable",
+        "Require crystal orientation only if the advanced model uses it"
+      ],
+      "capability_requirements": [
+        "CAP-025",
+        "CAP-026",
+        "CAP-027",
+        "CAP-030",
+        "CAP-032",
+        "CAP-098"
+      ],
+      "unknown_optical_inputs": [
+        "Optical constants for the specified window material",
+        "Crystal orientation if applicable",
+        "Coating stack data"
+      ],
+      "validation_criteria": [
+        "The opaque preview must not suggest that internal contents are visible",
+        "Polarization or birefringence requires explicit transport support, not an ordinary RGB tint"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#537286",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.24,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-030 Window opaque inspection surrogate",
+    "bodies": [
+      "SELENE-AP-030"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

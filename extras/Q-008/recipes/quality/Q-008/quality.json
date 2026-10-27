@@ -1,0 +1,104 @@
+{
+  "id": "Q-008",
+  "name": "Animation Preview",
+  "original_specification": {
+    "id": "Q-008",
+    "name": "Animation Preview",
+    "status": "specified_unbound",
+    "goal": "animation",
+    "resolution": {
+      "width": 1280,
+      "height": 720
+    },
+    "integrator_intent": "path_tracing",
+    "sampling": {
+      "minimum_samples": 16,
+      "maximum_samples": 256,
+      "relative_error_target": 0.06,
+      "error_estimator": "Versioned relative standard error of scene-linear luminance with a documented dark-signal floor; adapter must bind an estimator before use.",
+      "maximum_samples_action": "Finish with an unconverged flag when the target is not met.",
+      "scope": "Estimated Monte Carlo uncertainty for the bound estimator, not total optical error, finite-depth bias, rare-path coverage or temporal error.",
+      "stopping_rule_binding": "Require a versioned pixel/tile aggregation rule and dark-signal floor before execution."
+    },
+    "transport": {
+      "maximum_depth": 8,
+      "maximum_transmission_depth": 6,
+      "russian_roulette_after_depth": 3,
+      "roulette_policy": "Compensated stochastic termination; finite depth is a declared truncation."
+    },
+    "denoising": {
+      "enabled": false,
+      "preserve_raw": true,
+      "temporal_validation_required": true
+    },
+    "motion": {
+      "enabled": true,
+      "shutter_fraction": 0.5,
+      "temporal_samples": 8,
+      "requires_approved_bake": true,
+      "sample_budget_policy": "One shutter-time sample per camera path, stratified over temporal_samples intervals; temporal_samples does not multiply the spatial sample budget.",
+      "shutter_alignment": "centered_on_frame_time",
+      "frame_rate_binding": "positive_finite_shot_frame_rate_hz_required"
+    },
+    "output": {
+      "master": "linear_exr",
+      "presentation": "png",
+      "color_transform": "project_declared",
+      "exposure_policy": "manual_locked"
+    },
+    "seed": 21026,
+    "required_capabilities": [
+      "CAP-001",
+      "CAP-002",
+      "CAP-003",
+      "CAP-004",
+      "CAP-005",
+      "CAP-006",
+      "CAP-053",
+      "CAP-057",
+      "CAP-058",
+      "CAP-059",
+      "CAP-073",
+      "CAP-074",
+      "CAP-078",
+      "CAP-081",
+      "CAP-083",
+      "CAP-085",
+      "CAP-111",
+      "CAP-112",
+      "CAP-119"
+    ],
+    "budget_policy": "Resolve memory and time against the selected executor; never switch devices or downgrade silently.",
+    "baseline_compatibility": "Future authoring target; resolve every field against the current executor before use.",
+    "validation": [
+      "Measure convergence in dark regolith and bright metal or glass regions.",
+      "Compare raw and finished results; preserve labels, fibers and thin wires.",
+      "Report elapsed time, peak memory and incomplete quality targets."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "seed_policy": "Base seed; bind a versioned frame/pixel/sample/time-stratum stream policy and record it in the render manifest."
+  },
+  "native_projection": {
+    "width": 1280,
+    "height": 720,
+    "format": "png",
+    "job": {
+      "method": "gpu_path",
+      "options": {
+        "samples": 256,
+        "max_depth": 8,
+        "seed": 21026,
+        "tone_map": "aces_fitted",
+        "denoise": false,
+        "linear_exr": true
+      }
+    }
+  },
+  "limitations": [
+    "No camera-time integration is installed by this static native projection. Full motion intent is retained.",
+    "Native fixed sampling does not assert the original convergence/error estimator.",
+    "Quality specification is a target, not a measured guarantee for every scene."
+  ],
+  "authoring_status": "generated_projection_with_explicit_limits",
+  "full_quality_acceptance": false
+}

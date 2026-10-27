@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-016",
+  "name": "Silver anodized cover surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-016",
+    "name": "Silver anodized cover surrogate",
+    "source_catalog_ids": [
+      "MAT-015"
+    ],
+    "family": "Anodized aerospace surfaces",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "electronics"
+    ],
+    "purpose": "A neutral metallic surrogate for an undyed anodized cover or joint housing.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-016 Silver anodized cover surrogate",
+        "color": "#abb3ba",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.39,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Layered oxide Fresnel",
+        "Oxide roughness",
+        "Cut-edge masking"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Dielectric oxide layer over a conductor; the baseline retains the dominant metal-like visual cue only.",
+      "structure": [
+        "Dielectric oxide",
+        "Conductor cover substrate"
+      ],
+      "authoring_controls": [
+        {
+          "id": "blast_texture_pitch",
+          "value": 0.22,
+          "unit": "mm",
+          "meaning": "Illustrative pre-anodizing finish scale.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "blast_texture_relief",
+          "value": 0.004,
+          "unit": "mm",
+          "meaning": "Render-only finish relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep the finish frame in the cover local coordinates",
+        "Treat machined openings and cut edges separately"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-018",
+        "CAP-021",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Oxide optical constants and thickness",
+        "Substrate complex optical constants"
+      ],
+      "validation_criteria": [
+        "This single-lobe metal surrogate must not be presented as an exact anodizing model",
+        "Repeated moving covers should keep consistent local finish"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#abb3ba",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.39,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-016 Silver anodized cover surrogate",
+    "bodies": [
+      "SELENE-AP-016"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

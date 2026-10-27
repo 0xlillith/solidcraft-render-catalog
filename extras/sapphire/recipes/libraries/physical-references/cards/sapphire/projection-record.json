@@ -1,0 +1,80 @@
+{
+  "profile_id": "sapphire",
+  "card": {
+    "schema_version": 1,
+    "designation": "Single-crystal sapphire - Crystran reference",
+    "family": "other",
+    "sources": [
+      {
+        "id": "crystran-sapphire",
+        "title": "Crystran sapphire Al2O3",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.crystran.com/optical-materials/sapphire-al2o3/"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 3970.0
+        },
+        "source_id": "crystran-sapphire",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Single crystal; not isotropic polycrystalline alumina. Crystal cut/orientation must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density"
+  ],
+  "not_projected": [
+    {
+      "id": "melting_temperature",
+      "quantity": "melting_temperature",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "thermal_conductivity",
+      "quantity": "thermal_conductivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "expansion-parallel-c",
+      "quantity": "thermal_expansion",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "expansion-perpendicular-c",
+      "quantity": "thermal_expansion",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "index-ordinary",
+      "quantity": "refractive_index",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "index-extraordinary",
+      "quantity": "refractive_index",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "tensile_strength",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

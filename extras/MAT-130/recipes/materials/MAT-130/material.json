@@ -1,0 +1,182 @@
+{
+  "id": "MAT-130",
+  "name": "Fibrous kraft paper",
+  "family": "Engineered wood and paper",
+  "version": "1.0.0-local",
+  "seed": 7229470,
+  "pattern": "plywood",
+  "base_linear_low": [
+    0.3490670340469174,
+    0.2355268416652944,
+    0.10447073068424437
+  ],
+  "base_linear_high": [
+    0.6436145993093122,
+    0.436869771390536,
+    0.19823028572354942
+  ],
+  "roughness": 0.71,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    120,
+    120
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-130",
+    "name": "Fibrous kraft paper",
+    "family": "Engineered wood and paper",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "packaging"
+    ],
+    "description": "Fine fibres and irregular opacity define a matte sheet.",
+    "use_cases": [
+      "Bags",
+      "models"
+    ],
+    "optical_model": "Layered or fibrous dielectric construction with independent face, core and edge treatments.",
+    "controls": [
+      "layer structure",
+      "fibre scale",
+      "surface finish",
+      "fibre density",
+      "translucency"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use geometry for folds that alter silhouette.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Fibres must remain fine rather than becoming oversized decorative strands.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "5107ec734bd5e197ddced51282bcec6edd4a54725a16b1b0d887794e912703b0",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "86c57825f2c4a319516a6501ea954179c50eba37d849b663001dc7e5a5f672ac",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "abee4a06612a3d3ff1d5552f19467c9133111a48ef9b42dca1b9dc7c294a9011",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "475e2110c3f464204f5263fa1328482d974502f31d3bf96f5406a84d7c66c7b5",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "45e57c4526193de9d71438bff3a9f0ac5f54b4787820ffefdbd2b09b14ece8d3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b5b08f15daf8959bb1a84f67f7e6e37029f9b9d16909870367594138d561c5ee",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "af1bcf42535cfef9f9714bda54383c7f5bba102570887e8e6230af5a07ce058c",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "505760f7edb48f9f9da4782e42ed43082d54109d813cdea8db139e438bd481ed",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

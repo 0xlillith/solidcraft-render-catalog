@@ -1,0 +1,116 @@
+{
+  "id": "LUZ-250",
+  "name": "Photometric fixture appearance check",
+  "family": "25 LED optics and luminaires",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-250",
+    "name": "Photometric fixture appearance check",
+    "family": "25 LED optics and luminaires",
+    "domains": [
+      "led_optics",
+      "lighting_design",
+      "electronics"
+    ],
+    "description": "A proposed lighting arrangement for luminaires with imported profiles.",
+    "use_cases": [
+      "Luminaires with imported profiles"
+    ],
+    "sources": "One declared analytical photometric owner and non-duplicating visible representation",
+    "geometry": "Profile axes and fixture placement explicitly recorded",
+    "contribution_policy": "Preserve documented profile integral; visible mesh energy is not counted twice",
+    "controls": [
+      "Profile orientation",
+      "declared flux",
+      "fixture placement"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-012",
+      "CAP-013"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Reject incompatible duplicate photometric and mesh emitters"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1115750,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          700.0,
+          0.0
+        ],
+        "u": [
+          400.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          20.0
+        ],
+        "radiance": [
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "center": [
+          -1400.0,
+          -1400.0,
+          1000.0
+        ],
+        "u": [
+          -353.5533905932737,
+          353.5533905932737,
+          0.0
+        ],
+        "v": [
+          159.39417826583457,
+          159.39417826583457,
+          446.30369914433675
+        ],
+        "radiance": [
+          0.75,
+          0.75,
+          0.75
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Fixture reference position is illustrative; bind the aperture and calibrate real output before optical/photometric use."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

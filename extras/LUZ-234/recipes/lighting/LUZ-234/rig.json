@@ -1,0 +1,92 @@
+{
+  "id": "LUZ-234",
+  "name": "Oil-versus-varnish samples",
+  "family": "24 Woodworking and DIY",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-234",
+    "name": "Oil-versus-varnish samples",
+    "family": "24 Woodworking and DIY",
+    "domains": [
+      "woodworking",
+      "diy",
+      "furniture"
+    ],
+    "description": "A proposed lighting arrangement for finish comparison on wood.",
+    "use_cases": [
+      "Finish comparison on wood"
+    ],
+    "sources": "Long neutral area plus weak side strip",
+    "geometry": "Same angle and distance across sample tray",
+    "contribution_policy": "K 0 and strip -2 reference EV",
+    "controls": [
+      "Reflection width",
+      "source angle",
+      "shared-lighting lock"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-021",
+      "CAP-079"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Finish differences remain visible without per-sample gain"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1091062,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1350.0,
+          -1400.0,
+          1200.0
+        ],
+        "u": [
+          -431.9065772524111,
+          416.4813423505392,
+          0.0
+        ],
+        "v": [
+          291.59247279693346,
+          302.39219401163473,
+          680.832424910124
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

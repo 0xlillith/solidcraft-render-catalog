@@ -1,0 +1,75 @@
+[
+  {
+    "command": "file.insert_mesh",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-048\\environment.glb",
+      "up": "y",
+      "name": "ENV-048 Context"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "ENV-048 Shared engineering bench",
+        "license": "MIT OR Apache-2.0",
+        "org.solidcraft.local_catalog": {
+          "id": "ENV-048",
+          "scope": "Finite procedural environment authoring scene",
+          "source_recipe": "environment.json",
+          "not_measured": true
+        }
+      }
+    }
+  },
+  {
+    "command": "render.settings.capture_hdr",
+    "params": {
+      "name": "ENV-048 Shared engineering bench",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "background": [
+          34,
+          42,
+          53
+        ],
+        "camera": {
+          "target": [
+            0,
+            0,
+            720.0
+          ],
+          "yaw": -0.8,
+          "pitch": 0.5,
+          "roll": 0,
+          "distance": 10350.0,
+          "fov": 0.65,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 840048,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": []
+            },
+            "tone_map": "aces_fitted"
+          }
+        }
+      },
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-048\\illumination.hdr",
+      "expected_sha256": "adb7e9f019fd52048c2328e2b3010f7b4673fe6d293888f105cb543d4a4ff4c6",
+      "rotation_rad": 3.141592653589793,
+      "intensity": 1,
+      "assume_linear_srgb": false
+    }
+  }
+]

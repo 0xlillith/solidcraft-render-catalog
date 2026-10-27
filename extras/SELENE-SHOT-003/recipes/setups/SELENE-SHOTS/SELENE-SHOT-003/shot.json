@@ -1,0 +1,219 @@
+{
+  "id": "SELENE-SHOT-003",
+  "name": "Sampling contact macro",
+  "original_specification": {
+    "id": "SELENE-SHOT-003",
+    "name": "Sampling contact macro",
+    "reference_scene_id": "SCENE-014",
+    "mode": "lunar_physical",
+    "stage_id": "SELENE-STAGE-003",
+    "quality_preset_id": "Q-007",
+    "studio_preset_id": "STU-023",
+    "reference_scene_policy": "Design lineage only. Resolve the explicit quality, studio, stage and role lists in this shot; do not automatically apply the referenced scene as a second composition.",
+    "appearance_role_ids": [
+      "rover_structure",
+      "wheel_rim",
+      "arm_tube",
+      "arm_wrist",
+      "gripper_contact",
+      "sample_scoop",
+      "solar_cell",
+      "solar_coverglass",
+      "vial_glass",
+      "vial_cap",
+      "sample_contents",
+      "sample_cassette",
+      "pcb_solder_mask",
+      "circuit_contact",
+      "cable_jacket",
+      "rover_dust_overlay",
+      "lunar_mare_regolith",
+      "lunar_highland_rock"
+    ],
+    "appearance_override_policy": "Candidate material IDs come from roles.json. Any reviewed replacement is a visible shot-level override with resource version and reason, not a renumbered concept.",
+    "subject": {
+      "source_lock": "../source-lock.json",
+      "role_registry": "roles.json",
+      "root_role_id": "rover_assembly",
+      "required_geometry_role_ids": [
+        "rover_assembly",
+        "sampling_contact_region",
+        "sample_scoop"
+      ],
+      "selection_policy": "Every used role needs a reviewed selector or explicit absent/not-visible decision. A required geometry role cannot be absent.",
+      "preserve_native_dimensions": true,
+      "source_transform_policy": "Only an explicit scene-instance placement is allowed; native component and joint transforms remain unchanged unless a reviewed pose is selected."
+    },
+    "camera": {
+      "kind": "target_and_framing_recipe",
+      "projection": "perspective",
+      "target_role_id": "sampling_contact_region",
+      "target_position_mm": {
+        "mode": "center_of_reviewed_role_bounds",
+        "offset_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "view_from_target": {
+        "azimuth_rad": -1.047197551197,
+        "elevation_rad": 0.436332312999,
+        "convention": "azimuth_from_positive_X_toward_positive_Y_elevation_above_XY"
+      },
+      "vertical_fov_rad": 0.523598775598,
+      "roll_rad": 0.0,
+      "frame_fill_fraction": 0.7,
+      "distance_mm": {
+        "mode": "resolve_once_from_role_bounds_fov_and_output_aspect",
+        "fit_both_image_axes": true
+      },
+      "clip_planes_mm": {
+        "mode": "resolve_from_complete_scene_and_subject_bounds"
+      },
+      "apply_policy": "explicit_fit_only_when_camera_unlocked",
+      "exposure": {
+        "mode": "manual_locked",
+        "initial_ev": 0.0,
+        "calibration_status": "pending",
+        "preserve_between_comparison_shots": true
+      }
+    },
+    "source_ownership": {
+      "sun": "environment",
+      "studio": "solar_passthrough_no_added_sources",
+      "subject_leds": "disabled",
+      "earth": "disabled",
+      "stars": "disabled"
+    },
+    "output_intent": {
+      "kind": "still",
+      "quality_policy": "future_authoring_target_requires_bound_executor",
+      "preserve_linear_raw": true,
+      "presentation_transform": "project_declared",
+      "record_manifest": true
+    },
+    "sequence": {
+      "kind": "none"
+    },
+    "required_capabilities": [
+      "CAP-001",
+      "CAP-002",
+      "CAP-003",
+      "CAP-004",
+      "CAP-005",
+      "CAP-006",
+      "CAP-011",
+      "CAP-017",
+      "CAP-018",
+      "CAP-019",
+      "CAP-020",
+      "CAP-021",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-033",
+      "CAP-036",
+      "CAP-038",
+      "CAP-039",
+      "CAP-040",
+      "CAP-043",
+      "CAP-044",
+      "CAP-057",
+      "CAP-058",
+      "CAP-059",
+      "CAP-073",
+      "CAP-074",
+      "CAP-079",
+      "CAP-081",
+      "CAP-083",
+      "CAP-084",
+      "CAP-085",
+      "CAP-089",
+      "CAP-090",
+      "CAP-091",
+      "CAP-092",
+      "CAP-097",
+      "CAP-098",
+      "CAP-104",
+      "CAP-105",
+      "CAP-117",
+      "CAP-118",
+      "CAP-120"
+    ],
+    "blockers": [
+      "The improved native source is pinned; semantic geometry selections for this catalog shot are not yet bound.",
+      "Material concepts, stage generator and light quantities must resolve to versioned authored resources.",
+      "Executor capability and resource-budget preflight must succeed before any render request."
+    ],
+    "acceptance": [
+      "Record source-lock identity, reviewed role-map hash, resource versions, effective stage parameters, camera and executor.",
+      "Preserve physical scale, CAD geometry, engineering material and user locks.",
+      "Verify geometry contact, opaque/transparent interfaces, source ownership and raw noise before claiming a finished render.",
+      "Frame the actual tool/soil contact; preserve wider rover geometry for occlusion and reflections. A missing scoop blocks this shot."
+    ],
+    "status": "specified_unbound"
+  },
+  "native_setup_name": "SELENE-SHOT-003 Whole-rover framing study",
+  "native_setup": {
+    "width": 960,
+    "height": 640,
+    "background": [
+      0,
+      0,
+      0
+    ],
+    "exposure_ev": 0.0,
+    "camera": {
+      "target": [
+        132.0,
+        0.0,
+        146.24875698650803
+      ],
+      "yaw": 0.5235987755978966,
+      "pitch": 0.436332312999,
+      "roll": 0.0,
+      "distance": 1880.2205991250835,
+      "fov": 0.523598775598,
+      "up": "z"
+    },
+    "job": {
+      "method": "gpu_path",
+      "options": {
+        "samples": 128,
+        "max_depth": 12,
+        "seed": 610003,
+        "lighting": {
+          "environment": [
+            0,
+            0,
+            0
+          ],
+          "area_lights": [],
+          "sun": {
+            "direction": [
+              0.20258292765170807,
+              0.9530777410965205,
+              0.224951054343865
+            ],
+            "angular_radius_rad": 0.00465,
+            "radiance": [
+              14000.0,
+              14000.0,
+              14000.0
+            ]
+          }
+        },
+        "tone_map": "aces_fitted",
+        "linear_exr": true
+      }
+    }
+  },
+  "role_binding": "whole_rover_only",
+  "limitations": [
+    "No reviewed geometry selector for sampling_contact_region; this saved setup is explicitly whole-rover framing, not a semantic close-up.",
+    "Lunar terrain/stage and material-role assignment are separate assets, not silently inserted into the original rover.",
+    "Solar direction is an authored relative lighting choice, not a site ephemeris."
+  ],
+  "native_source_sha256": "3bd2bfa1c6336394c4a4208d30b52c80d06658a3bd7ea57cc93b774411d1bd68"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "SELENE-AP-039",
+  "name": "Diffuser opaque inspection surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-039",
+    "name": "Diffuser opaque inspection surrogate",
+    "source_catalog_ids": [
+      "MAT-451"
+    ],
+    "family": "LED optical targets",
+    "domains": [
+      "LED lighting",
+      "electronics",
+      "SELENE"
+    ],
+    "purpose": "An opaque inspection stand-in for a light-diffuser sheet.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_inspection_surrogate",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-039 Diffuser opaque inspection surrogate",
+        "color": "#dadcdb",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.72,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Transmission",
+        "Scattering distribution",
+        "Embossed geometry",
+        "Angular light redistribution"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Transmissive dielectric with volume scattering or explicitly modeled embossing; those mechanisms remain separate.",
+      "structure": [
+        "Outer dielectric interface",
+        "Scattering volume or embossed geometry",
+        "Inner dielectric interface"
+      ],
+      "authoring_controls": [
+        {
+          "id": "emboss_repeat",
+          "value": 0.7,
+          "unit": "mm",
+          "meaning": "Illustrative geometric emboss repeat.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "emboss_relief",
+          "value": 0.05,
+          "unit": "mm",
+          "meaning": "Authored geometric relief, not a scattering coefficient.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Choose a volume-scatter target or an embossed-surface target explicitly",
+        "Keep physical sheet thickness in CAD"
+      ],
+      "capability_requirements": [
+        "CAP-025",
+        "CAP-026",
+        "CAP-027",
+        "CAP-028",
+        "CAP-033",
+        "CAP-036"
+      ],
+      "unknown_optical_inputs": [
+        "Scattering and absorption data",
+        "Refractive data",
+        "Angular response of a selected diffuser"
+      ],
+      "validation_criteria": [
+        "The baseline must not make an enclosed light appear functional",
+        "Normal-map frosting alone must not be claimed as volume diffusion"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#dadcdb",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.72,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-039 Diffuser opaque inspection surrogate",
+    "bodies": [
+      "SELENE-AP-039"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

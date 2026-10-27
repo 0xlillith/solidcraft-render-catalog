@@ -1,0 +1,180 @@
+{
+  "id": "MAT-327",
+  "name": "Sleeved electrolytic-capacitor can",
+  "family": "Electronic packages and encapsulants",
+  "version": "1.0.0-local",
+  "seed": 8789513,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.014856502811569547,
+    0.016875195950332295,
+    0.021370342158917727
+  ],
+  "base_linear_high": [
+    0.035052139447932604,
+    0.03872796874538119,
+    0.04691316034907407
+  ],
+  "roughness": 0.536,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.025,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-327",
+    "name": "Sleeved electrolytic-capacitor can",
+    "family": "Electronic packages and encapsulants",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "Printed insulating sleeve covers a metal container with an exposed top.",
+    "use_cases": [
+      "Electronic assemblies"
+    ],
+    "optical_model": "Layered dielectric, conductor and magnetic-component appearances; names do not provide electrical material data.",
+    "controls": [
+      "body roughness",
+      "layer masks",
+      "marking finish",
+      "sleeve print",
+      "can finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep top vent geometry and sleeve edge separate.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Graphics must not obscure the designed visible metal regions.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "41d19bbb14164cdf141b5ec983feee32c22b8a0e85df798550b97d121f5b8711",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "7d8a3f46a4ae9ca2b377a4b49f48f4c8eac4e999733458ca34c1ee4bbb4bc4a0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "a923a52dbab9430d6e26e2eeb64783f73f9c10b5222d3f9ad1fcc7bac26c020e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "f1216e94d62530f9bf7dff1f4363fc8de640d7239c6c05136afe7118a38e9a76",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "e4537e23a9c3ba12bbfcd07e9a1ff8a5e03ee2787a167fc35bd92ff4a4cbf4bb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4df4c5902ba9349ec16f6af8b46e05f79f08cce8e270138ed8c76503cd543260",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cf898490babafb92ac445c9523b093af8daf74050c447ad9ad517146642d2e0f",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "adc31eff7bc3dc94eb9ec2ed617ac08173f45260ea2bec4cb865388159427c6f",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

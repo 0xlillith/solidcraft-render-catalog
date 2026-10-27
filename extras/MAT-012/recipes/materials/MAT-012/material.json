@@ -1,0 +1,182 @@
+{
+  "id": "MAT-012",
+  "name": "Turned aluminium",
+  "family": "Aluminium and titanium finishes",
+  "version": "1.0.0-local",
+  "seed": 6295028,
+  "pattern": "turned",
+  "base_linear_low": [
+    0.64,
+    0.68,
+    0.72
+  ],
+  "base_linear_high": [
+    0.79,
+    0.82,
+    0.85
+  ],
+  "roughness": 0.28,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.016,
+  "tile_mm": [
+    40,
+    40
+  ],
+  "cycles_u": 8,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-012",
+    "name": "Turned aluminium",
+    "family": "Aluminium and titanium finishes",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Concentric machining grooves produce radial highlight structure.",
+    "use_cases": [
+      "Knobs",
+      "shafts",
+      "rings"
+    ],
+    "optical_model": "Conductor microfacet substrate with process-oriented anisotropy and explicit coating layers where present.",
+    "controls": [
+      "surface roughness",
+      "manufacturing direction",
+      "turning axis",
+      "feed pitch"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Store a local turning origin and physical groove pitch.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Check axial continuity and absence of a visible mapping seam.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-006",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c890c3a2e05180fcaad52fd53c3312683a7d25c2c48c46ef7ccc42ee1e9673cc",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "b3f76372c46acabfc67a344fda6908607613ca16b053f10f26b30cbb949e3b07",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "cfcecdd4c2f75096c6b224db2d63f55395ea6edb012fb86c6b31d058deb07251",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "d1c5f40aa74a192127058cafe0417172fb4fbd90c3dcb9bbe7ddd617dc6e7fe7",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f940186eba45ff36b0a30bb5ed7c02d1cee0653ba777577060aa42ec2ff89231",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "dda3660a2f33f053f0fb7217ca24a92c5ee877ea7051c8c84a63a271770f1e11",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "e8a39efd31cc315541a7c4d013df8dcee01cefc98a56183733c7ad3d94c0d2ca",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "1bb9d99509e919e33931035ce6d789d1f8d00ad9fc73d523603aa7ac0899478f",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

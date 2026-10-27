@@ -1,0 +1,165 @@
+{
+  "id": "LUZ-149",
+  "name": "Shuttered projector",
+  "family": "15 Functional photometry",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-149",
+    "name": "Shuttered projector",
+    "family": "15 Functional photometry",
+    "domains": [
+      "lighting_design",
+      "architecture"
+    ],
+    "description": "A proposed lighting arrangement for stage or facade spots.",
+    "use_cases": [
+      "Stage or facade spots"
+    ],
+    "sources": "One projector with physical shutters",
+    "geometry": "Real shutter dimensions and angles",
+    "contribution_policy": "Base photometry plus declared physical occlusion",
+    "controls": [
+      "Shutter opening",
+      "beam angle",
+      "contribution",
+      "position"
+    ],
+    "authoring_method": "Original authoring specification requiring a separately sourced and licensed IES/LDT profile or a clearly labeled analytic distribution. No profile asset or absolute measurement is included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-012",
+      "CAP-010"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Shutters affect shadows and reflections consistently"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 959907,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          0.0,
+          1500.0
+        ],
+        "u": [
+          -125.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          125.0,
+          0.0
+        ],
+        "radiance": [
+          20,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "flag-0",
+      "center_mm": [
+        -700.0,
+        -600.0,
+        150.0
+      ],
+      "half_u_mm": [
+        0.0,
+        40.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        850.0
+      ],
+      "reflectance_linear": [
+        0.005,
+        0.005,
+        0.005
+      ]
+    },
+    {
+      "id": "flag-1",
+      "center_mm": [
+        -700.0,
+        -440.0,
+        150.0
+      ],
+      "half_u_mm": [
+        0.0,
+        40.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        850.0
+      ],
+      "reflectance_linear": [
+        0.005,
+        0.005,
+        0.005
+      ]
+    },
+    {
+      "id": "flag-2",
+      "center_mm": [
+        -700.0,
+        -280.0,
+        150.0
+      ],
+      "half_u_mm": [
+        0.0,
+        40.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        850.0
+      ],
+      "reflectance_linear": [
+        0.005,
+        0.005,
+        0.005
+      ]
+    }
+  ],
+  "limitations": [
+    "Original luminaire-shaped area source, not measured IES/LDT intensity distribution or lux validation.",
+    "Passive flags are geometric rectangles; this is not a photometric projector or image gobo.",
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

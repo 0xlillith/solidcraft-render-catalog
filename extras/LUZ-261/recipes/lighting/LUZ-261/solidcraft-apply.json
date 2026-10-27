@@ -1,0 +1,68 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-261 Lunar daytime single sun",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 1132723,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [],
+              "sun": {
+                "direction": [
+                  0.7631294127377697,
+                  0.6403416087687968,
+                  0.08715574274765817
+                ],
+                "angular_radius_rad": 0.00465,
+                "radiance": [
+                  14000.0,
+                  14000.0,
+                  14000.0
+                ]
+              }
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": [
+          {
+            "id": "passive-fill",
+            "center_mm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "half_u_mm": [
+              0.0,
+              -400.0,
+              0.0
+            ],
+            "half_v_mm": [
+              0.0,
+              0.0,
+              750.0
+            ],
+            "reflectance_linear": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

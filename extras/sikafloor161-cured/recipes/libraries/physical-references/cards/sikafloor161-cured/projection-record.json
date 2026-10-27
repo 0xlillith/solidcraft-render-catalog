@@ -1,0 +1,60 @@
+{
+  "profile_id": "sikafloor161-cured",
+  "card": {
+    "schema_version": 1,
+    "designation": "Sikafloor 161 HC - cured epoxy binder reference",
+    "family": "polymer",
+    "sources": [
+      {
+        "id": "sika-161-cured",
+        "title": "Sika Sikafloor 161 HC cured resin reference",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://phl.sika.com/en/construction/flooring/industry-wet-areas/epoxy-flooring-system/sikafloor-161-hc.html"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "compressive_strength",
+          "pa": 60000000.0
+        },
+        "source_id": "sika-161-cured",
+        "conditions": {
+          "temperature_k": 296.15,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Sikafloor 161 HC resin cured 28 days at +23 C. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "compressive_strength"
+  ],
+  "not_projected": [
+    {
+      "id": "hardness_shore_d",
+      "quantity": "hardness_shore_d",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "flexural_strength",
+      "quantity": "flexural_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "density",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "tensile_strength",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

@@ -1,0 +1,111 @@
+{
+  "id": "SELENE-AP-043",
+  "name": "Tool-transferred dust patch",
+  "original_specification": {
+    "id": "SELENE-AP-043",
+    "name": "Tool-transferred dust patch",
+    "source_catalog_ids": [
+      "MAT-559"
+    ],
+    "family": "Lunar dust deposits",
+    "domains": [
+      "SELENE",
+      "lunar",
+      "robotics"
+    ],
+    "purpose": "An opaque response for explicit dust-deposit geometry or a future bounded transfer mask.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_deposit_geometry_response",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-043 Tool-transferred dust patch",
+        "color": "#7b766d",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.98,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Substrate-preserving mask",
+        "Individual grains",
+        "Coverage transport",
+        "Transfer history"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Granular particulate deposit layered over a separately preserved substrate.",
+      "structure": [
+        "Finite granular dust deposit",
+        "Independent underlying surface",
+        "Bounded transfer-footprint mask"
+      ],
+      "authoring_controls": [
+        {
+          "id": "patch_extent",
+          "value": 12.0,
+          "unit": "mm",
+          "meaning": "Illustrative size of a localized tool transfer patch.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "deposit_relief",
+          "value": 0.18,
+          "unit": "mm",
+          "meaning": "Authored local deposit relief, not a measured dust thickness.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "detail_seed",
+          "value": 4301,
+          "unit": "integer",
+          "meaning": "Deterministic deposit authoring seed.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Apply the baseline only to an explicit dust patch body or face",
+        "Do not replace the entire rover surface to mimic sparse dust",
+        "Keep deposits granular in vacuum"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-033",
+        "CAP-035",
+        "CAP-036",
+        "CAP-038",
+        "CAP-039",
+        "CAP-108",
+        "CAP-110"
+      ],
+      "unknown_optical_inputs": [
+        "Particle reflectance or phase response",
+        "Evidence for deposit distribution and thickness"
+      ],
+      "validation_criteria": [
+        "Uncovered substrate must remain visible in the advanced target",
+        "A deposited patch must not be rendered as terrestrial airborne haze"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#7b766d",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.98,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-043 Tool-transferred dust patch",
+    "bodies": [
+      "SELENE-AP-043"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

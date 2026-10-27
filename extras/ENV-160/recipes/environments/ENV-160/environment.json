@@ -1,0 +1,485 @@
+{
+  "id": "ENV-160",
+  "name": "Cliff-top viewpoint",
+  "family": "Coasts and water",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-160",
+    "name": "Cliff-top viewpoint",
+    "family": "Coasts and water",
+    "domains": [
+      "outdoor_products",
+      "marine",
+      "landscape"
+    ],
+    "description": "Cliff-top viewpoint is a conceptual setting for furniture; outdoor equipment. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Furniture",
+      "outdoor equipment"
+    ],
+    "representation": "Procedural sky or verified captured HDRI with 3D shore and water",
+    "geometry": "Firm platform, railing and distant coastal relief",
+    "ambient_lighting": "Open sky with marine horizon",
+    "scale_policy": "Viewpoint extent from 3 to 30 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Platform dimensions",
+      "railing",
+      "cliff height and profile",
+      "sea horizon",
+      "distant waves",
+      "time of day"
+    ],
+    "authoring_method": "Original procedural terrain and water; captured HDR requires verified rights and horizon alignment",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-042",
+      "CAP-025",
+      "CAP-026"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Align the horizon and water level.",
+      "Use geometric water for nearby reflections; avoid adding a second sun to an HDRI containing one."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Terrain",
+      "width_mm": 24000,
+      "depth_mm": 24000,
+      "amplitude_mm": 130,
+      "seed": 840160,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 0",
+      "center_mm": [
+        -7814.4174333634055,
+        8631.212569879299,
+        292.38734682617593
+      ],
+      "radii_mm": [
+        835.3924195033599,
+        584.7746936523519,
+        417.69620975167993
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 1",
+      "center_mm": [
+        -9402.426632019764,
+        -5418.0572430438415,
+        229.1302720005345
+      ],
+      "radii_mm": [
+        654.6579200015271,
+        458.260544001069,
+        327.3289600007636
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 2",
+      "center_mm": [
+        -8221.007436208158,
+        3541.4162104133793,
+        265.10503400821375
+      ],
+      "radii_mm": [
+        757.4429543091821,
+        530.2100680164275,
+        378.72147715459107
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 3",
+      "center_mm": [
+        6575.709210067627,
+        -10076.212979319265,
+        323.25933200041965
+      ],
+      "radii_mm": [
+        923.5980914297705,
+        646.5186640008393,
+        461.79904571488527
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 4",
+      "center_mm": [
+        -9668.149637781746,
+        -1425.924727480613,
+        83.65991953829263
+      ],
+      "radii_mm": [
+        239.02834153797895,
+        167.31983907658525,
+        119.51417076898947
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 5",
+      "center_mm": [
+        -1046.6235852271893,
+        -7603.830591821057,
+        190.15564212719377
+      ],
+      "radii_mm": [
+        543.3018346491251,
+        380.31128425438754,
+        271.65091732456256
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 6",
+      "center_mm": [
+        6148.013568032213,
+        -10944.857807897517,
+        108.59447563987223
+      ],
+      "radii_mm": [
+        310.269930399635,
+        217.18895127974446,
+        155.1349651998175
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 7",
+      "center_mm": [
+        10989.943817690153,
+        -1825.4807664630825,
+        70.2663145830636
+      ],
+      "radii_mm": [
+        200.76089880875318,
+        140.5326291661272,
+        100.38044940437659
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 8",
+      "center_mm": [
+        -2595.4841849237546,
+        856.9631646460257,
+        241.09371821722016
+      ],
+      "radii_mm": [
+        688.8391949063433,
+        482.1874364344403,
+        344.41959745317166
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 9",
+      "center_mm": [
+        -4916.600739890139,
+        -3269.7191367181413,
+        139.48970070863606
+      ],
+      "radii_mm": [
+        398.5420020246745,
+        278.97940141727213,
+        199.27100101233725
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 10",
+      "center_mm": [
+        5691.655283794011,
+        5504.979510677324,
+        201.68916423055248
+      ],
+      "radii_mm": [
+        576.2547549444357,
+        403.37832846110496,
+        288.12737747221786
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 11",
+      "center_mm": [
+        -7585.731782501807,
+        -5505.4540005984545,
+        314.6034586822739
+      ],
+      "radii_mm": [
+        898.867024806497,
+        629.2069173645478,
+        449.4335124032485
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 12",
+      "center_mm": [
+        -8352.571793782912,
+        -10874.104767561665,
+        79.46569638967075
+      ],
+      "radii_mm": [
+        227.04484682763072,
+        158.9313927793415,
+        113.52242341381536
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 13",
+      "center_mm": [
+        -9301.914680385506,
+        5393.349847596517,
+        197.59703783834698
+      ],
+      "radii_mm": [
+        564.56296525242,
+        395.19407567669396,
+        282.28148262621
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 14",
+      "center_mm": [
+        145.06520778038066,
+        -6980.616614393288,
+        302.2388266315958
+      ],
+      "radii_mm": [
+        863.5395046617024,
+        604.4776532631917,
+        431.7697523308512
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 15",
+      "center_mm": [
+        -3448.298032780989,
+        4104.752309569587,
+        137.93607417669818
+      ],
+      "radii_mm": [
+        394.1030690762805,
+        275.87214835339637,
+        197.05153453814026
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 16",
+      "center_mm": [
+        6466.612544389845,
+        -9050.297270778043,
+        214.20799191771152
+      ],
+      "radii_mm": [
+        612.0228340506044,
+        428.41598383542305,
+        306.0114170253022
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 17",
+      "center_mm": [
+        -5564.501249904961,
+        -10259.642282554065,
+        313.2598841631744
+      ],
+      "radii_mm": [
+        895.0282404662125,
+        626.5197683263488,
+        447.51412023310627
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 18",
+      "center_mm": [
+        6363.838870490825,
+        7569.272084643602,
+        161.92689524506474
+      ],
+      "radii_mm": [
+        462.64827212875645,
+        323.8537904901295,
+        231.32413606437822
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 19",
+      "center_mm": [
+        -6718.783807326379,
+        508.49073407063224,
+        98.20531156772154
+      ],
+      "radii_mm": [
+        280.5866044792044,
+        196.41062313544307,
+        140.2933022396022
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 20",
+      "center_mm": [
+        10370.696191374565,
+        -7765.314282943189,
+        69.84074239502658
+      ],
+      "radii_mm": [
+        199.54497827150453,
+        139.68148479005316,
+        99.77248913575227
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 21",
+      "center_mm": [
+        4238.160857325403,
+        804.3079338631524,
+        183.11632460608908
+      ],
+      "radii_mm": [
+        523.1894988745403,
+        366.23264921217816,
+        261.59474943727014
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 22",
+      "center_mm": [
+        -10682.86942946956,
+        -4520.434154315164,
+        205.86926573146062
+      ],
+      "radii_mm": [
+        588.1979020898875,
+        411.73853146292123,
+        294.09895104494376
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Rock 23",
+      "center_mm": [
+        -6923.7527539234725,
+        -408.88477981033066,
+        322.5188825172382
+      ],
+      "radii_mm": [
+        921.4825214778234,
+        645.0377650344764,
+        460.7412607389117
+      ],
+      "color": "777c64"
+    },
+    {
+      "type": "box",
+      "name": "Water surface",
+      "center_mm": [
+        0.0,
+        6500.0,
+        -5.0
+      ],
+      "size_mm": [
+        24000.0,
+        10000.0,
+        10.0
+      ],
+      "color": "3e7789"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 26,
+    "triangles": 5966,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 24000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        -0.2206333405264906,
+        -0.28239779798968795,
+        0.9335804264972017
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Water context is a static authored surface. No hydrodynamics or wave transport is claimed.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-135 Sunset backlight",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 938305,
+            "lighting": {
+              "environment": [
+                0.08,
+                0.1,
+                0.18
+              ],
+              "area_lights": [],
+              "sun": {
+                "direction": [
+                  -0.8612812260087741,
+                  -0.49726094768413676,
+                  0.10452846326765347
+                ],
+                "angular_radius_rad": 0.00465,
+                "radiance": [
+                  7000,
+                  4100,
+                  2200
+                ]
+              }
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

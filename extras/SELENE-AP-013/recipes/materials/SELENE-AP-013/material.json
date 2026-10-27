@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-013",
+  "name": "Metal sampling scoop",
+  "original_specification": {
+    "id": "SELENE-AP-013",
+    "name": "Metal sampling scoop",
+    "source_catalog_ids": [
+      "MAT-575"
+    ],
+    "family": "Sampling tools",
+    "domains": [
+      "SELENE",
+      "industrial",
+      "robotics"
+    ],
+    "purpose": "A durable-looking metal response for the sampling scoop exterior and lip.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-013 Metal sampling scoop",
+        "color": "#9ba4ad",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.44,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Directional finish",
+        "Contact polish mask",
+        "Granular dust coverage"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque conductor with directional fabrication marks and a separately bounded dust deposit.",
+      "structure": [
+        "Optional granular dust deposit",
+        "Conductor scoop surface"
+      ],
+      "authoring_controls": [
+        {
+          "id": "forming_line_pitch",
+          "value": 0.6,
+          "unit": "mm",
+          "meaning": "Illustrative forming mark spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "contact_polish_extent",
+          "value": 2.5,
+          "unit": "mm",
+          "meaning": "Visual width of a polished lip band.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep the scoop cavity and lip as modeled surfaces",
+        "Apply dust only through a separate mask or deposit geometry"
+      ],
+      "capability_requirements": [
+        "CAP-020",
+        "CAP-033",
+        "CAP-035",
+        "CAP-039",
+        "CAP-108"
+      ],
+      "unknown_optical_inputs": [
+        "Substrate optical constants",
+        "Dust phase-response data if required"
+      ],
+      "validation_criteria": [
+        "The scoop cavity must remain geometrically open",
+        "Dust should stay granular and attached, not form airborne terrestrial fog"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#9ba4ad",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.44,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-013 Metal sampling scoop",
+    "bodies": [
+      "SELENE-AP-013"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

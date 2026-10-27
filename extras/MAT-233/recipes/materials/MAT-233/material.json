@@ -1,0 +1,180 @@
+{
+  "id": "MAT-233",
+  "name": "Winter-tread sipe-edge rubber",
+  "family": "Automotive tyres and sealing profiles",
+  "version": "1.0.0-local",
+  "seed": 8045127,
+  "pattern": "grip",
+  "base_linear_low": [
+    0.007780204270428403,
+    0.008231947199133635,
+    0.009677375209382005
+  ],
+  "base_linear_high": [
+    0.022166939119287542,
+    0.022989515795437364,
+    0.025621489187232904
+  ],
+  "roughness": 0.7839999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.65,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-233",
+    "name": "Winter-tread sipe-edge rubber",
+    "family": "Automotive tyres and sealing profiles",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Fine elastomer texture surrounds many narrow geometric cuts.",
+    "use_cases": [
+      "Winter wheel concepts"
+    ],
+    "optical_model": "Dielectric elastomer and reinforced-section recipes with optional explicit textile or wire components.",
+    "controls": [
+      "surface grain",
+      "contact polish",
+      "region masks",
+      "edge polish",
+      "surface grain"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep sipes in geometry at the intended dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Cuts must remain visible without becoming painted black lines.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "6400754db33b472b5e19ff03dbc165164ee8ae803e0427706eb5c62a2a29b12f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a31ed627bc8112476b873caf66fc0c287f12a23ed53eb2ec01a83b3dd7db9083",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "5e8f5fc8f6db78ffa8855beacf1b0283f2ad4f25959b4e198a577a217854b64c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b62cb96f114e9d867efcb29dc3e180048f7e18f0cacccaccc1ee3edf80d93669",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "630bd5e0d860555f4bf34619742bf08309a72211b55253e6ad5acaffe0cb074a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ab56bc8ae686322a2d5e73d7355b2de5df897106d0c2e8fc30d611e896c0ce87",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "8072f4905994dfd0f6fa6c47d2b9444340d743fdd49b15f11b630b8867134ed6",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "2f09cd5e69e870a74e81e5e1d450795b0f1d59d2db5075456c2e689fce19af11",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

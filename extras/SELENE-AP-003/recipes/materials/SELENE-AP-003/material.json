@@ -1,0 +1,96 @@
+{
+  "id": "SELENE-AP-003",
+  "name": "Matte optical baffle",
+  "original_specification": {
+    "id": "SELENE-AP-003",
+    "name": "Matte optical baffle",
+    "source_catalog_ids": [
+      "MAT-468"
+    ],
+    "family": "Absorbing surfaces",
+    "domains": [
+      "SELENE",
+      "LED lighting",
+      "electronics"
+    ],
+    "purpose": "A dark inspection-camera or LED-baffle appearance with deliberately weak broad highlights.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-003 Matte optical baffle",
+        "color": "#141619",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.94,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Baffle microtexture",
+        "Stray-light prediction",
+        "Measured directional reflectance"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque absorbing dielectric finish with controlled fine surface relief.",
+      "structure": [
+        "Absorbing pigment layer",
+        "Baffle geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "grain_pitch",
+          "value": 0.12,
+          "unit": "mm",
+          "meaning": "Illustrative finish grain spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "grain_relief",
+          "value": 0.004,
+          "unit": "mm",
+          "meaning": "Render-only texture amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Model ribs and apertures as geometry",
+        "Do not use black color as a claim of zero reflectance"
+      ],
+      "capability_requirements": [
+        "CAP-024",
+        "CAP-033",
+        "CAP-035",
+        "CAP-036"
+      ],
+      "unknown_optical_inputs": [
+        "Directional reflectance measurements"
+      ],
+      "validation_criteria": [
+        "Geometry should reveal baffle edges under grazing illumination",
+        "A dark surface must remain distinguishable from an empty hole"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#141619",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.94,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-003 Matte optical baffle",
+    "bodies": [
+      "SELENE-AP-003"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

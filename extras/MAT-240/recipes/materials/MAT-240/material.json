@@ -1,0 +1,180 @@
+{
+  "id": "MAT-240",
+  "name": "Hollow weatherseal cross-section",
+  "family": "Automotive tyres and sealing profiles",
+  "version": "1.0.0-local",
+  "seed": 8100560,
+  "pattern": "grip",
+  "base_linear_low": [
+    0.007780204270428403,
+    0.008231947199133635,
+    0.009677375209382005
+  ],
+  "base_linear_high": [
+    0.022166939119287542,
+    0.022989515795437364,
+    0.025621489187232904
+  ],
+  "roughness": 0.9099999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.65,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-240",
+    "name": "Hollow weatherseal cross-section",
+    "family": "Automotive tyres and sealing profiles",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Smooth outer skin surrounds a visibly hollow elastomer profile.",
+    "use_cases": [
+      "Door-seal cutaways"
+    ],
+    "optical_model": "Dielectric elastomer and reinforced-section recipes with optional explicit textile or wire components.",
+    "controls": [
+      "surface grain",
+      "contact polish",
+      "region masks",
+      "inner-wall finish",
+      "cut edge"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve actual cavities and wall dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "A shaded solid cross-section must not replace the intended hollow profile.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "46f28b04fc484ed04478287bf4c4a45a03399ca7badc124b42c51862ab246d4e",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "c4f231ad191ee55029db4e826f395715367a3b615940907925397e2f082ad6fb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "e9abb64406d1fabf243f4a6372d339e25558231deb97e4fe330d2e7c430a1fd7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "3f572a9bce22db34b24536e34cd01131c1f825cad181cc3d1a7270c1b3c72dfc",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "57128a2c5cba9d655bae0c2c8e09c471657fa2f4b4fb1ae6e5f4a539e6822c79",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "e4e43e0cbc75d4e9ac2c564ac00958a72ca04b8983fa2b88f42ade8e43a503bc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d8f1a071c0ced47742dab19b2a76d63f81a24ea4a14bab59d266f2b38ccbd0a1",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "23f70246ddf5eaaf09acefcd076d16af72ddf7ed2ab1db63c32db86efc198f87",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

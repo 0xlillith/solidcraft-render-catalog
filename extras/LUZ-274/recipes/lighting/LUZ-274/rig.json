@@ -1,0 +1,87 @@
+{
+  "id": "LUZ-274",
+  "name": "SELENE sample-transfer sequence",
+  "family": "28 SELENE arm and sample-handling studies",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-274",
+    "name": "SELENE sample-transfer sequence",
+    "family": "28 SELENE arm and sample-handling studies",
+    "domains": [
+      "selene",
+      "robotics",
+      "lunar",
+      "macro"
+    ],
+    "description": "A proposed lighting arrangement for vial transfer between actual grasp states.",
+    "use_cases": [
+      "Vial transfer between actual grasp states"
+    ],
+    "sources": "Environment-owned sun and declared onboard fixtures if present",
+    "geometry": "Lights bound to existing mounts, never auto-refit per frame",
+    "contribution_policy": "Source ownership and contribution held across snapshots",
+    "controls": [
+      "Mount binding",
+      "fixture enable state",
+      "contribution lock"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-011",
+      "CAP-010",
+      "CAP-078"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "No hidden interpolation of hardware geometry or exposure"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1152782,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        0.6601410503592006,
+        0.6601410503592006,
+        0.35836794954530027
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    }
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

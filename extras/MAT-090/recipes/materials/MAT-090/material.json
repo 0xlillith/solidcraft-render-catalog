@@ -1,0 +1,181 @@
+{
+  "id": "MAT-090",
+  "name": "Metallized ceramic",
+  "family": "Ceramics and porcelain",
+  "version": "1.0.0-local",
+  "seed": 6912710,
+  "pattern": "ceramic",
+  "base_linear_low": [
+    0.46489408006563326,
+    0.4411111275772305,
+    0.3740880610549595
+  ],
+  "base_linear_high": [
+    0.8545235487762277,
+    0.8112172770809272,
+    0.6891752753538068
+  ],
+  "roughness": 0.31,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.05,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-090",
+    "name": "Metallized ceramic",
+    "family": "Ceramics and porcelain",
+    "domains": [
+      "industrial",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "A conductor coating covers selected portions of a ceramic body.",
+    "use_cases": [
+      "Buttons",
+      "decorative components"
+    ],
+    "optical_model": "Dielectric ceramic body beneath a conductive coating, with separate coating coverage and substrate-exposure masks.",
+    "controls": [
+      "body colour",
+      "porosity",
+      "glaze roughness",
+      "metal coverage",
+      "coating wear"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep exposed substrate and coating masks separate.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-028"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Covered and bare areas must use the appropriate distinct optical response.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "77f138242a48e807d8fc4740e356389f4520884a6b67794eb21621614ee91891",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a3b0c7c66834e8c368aec290caace8b387870383c2634155e7ff0fd624d7b261",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "85945ce25d2a2607f2a68c3ae953d1e561ed859f872d53d1f50e5a729140b534",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "ec7e82fa660b78deae4a625dc642c58d615088f7a8987d33208159fe14f2e31a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3d215d153ff35ea541c5268a211be6a0f9a7ac27c7572738e056eda6ab7ef394",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ec29f1360be269f2f4654b83090fa9ecef34b562f81dbcd011304c7fdcb1a110",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "84faa561cbd45b1b0f60b3b7d521e80bfe9bbb6fe0f9a39845f9cc87b42412bd",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "0e3b6b171887a6db0efa9184f389dc19181cc5bd836d328ebac4cb636a31f440",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

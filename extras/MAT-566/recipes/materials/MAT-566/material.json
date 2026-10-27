@@ -1,0 +1,182 @@
+{
+  "id": "MAT-566",
+  "name": "SELENE flexure-wheel sheet finish",
+  "family": "SELENE rover mobility and structural appearances",
+  "version": "1.0.0-local",
+  "seed": 10682154,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.22589962208238135,
+    0.23229171775786986,
+    0.24538923905122248
+  ],
+  "base_linear_high": [
+    0.41933961035896306,
+    0.4309789487531361,
+    0.4548281666305842
+  ],
+  "roughness": 0.398,
+  "roughness_variation": 0.06,
+  "metallic": 0.85,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-566",
+    "name": "SELENE flexure-wheel sheet finish",
+    "family": "SELENE rover mobility and structural appearances",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Thin formed metal regions reflect along authored flexure shapes.",
+    "use_cases": [
+      "Mobility concepts"
+    ],
+    "optical_model": "Candidate metallic, composite or coated rover appearances tied to explicit geometry; no suitability, fatigue, traction or flight qualification is inferred.",
+    "controls": [
+      "manufacturing direction",
+      "surface finish",
+      "contact-region masks",
+      "forming marks",
+      "edge finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Geometry defines flexures; material defines only appearance.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No elastic range or fatigue life is inferred.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b2fd99f2e4bf88d567f5021097f8a6723ba9e66d8b18b0546342f6efc95b6ae4",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "1a4a22d3ff5ca1bcabfdf6dbc499233e267378eabf55da308ea8d73db235d580",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "f2989ca53f3fe2ebb3eaed61dc44d975a358e75ac752be561ce1e7c9c3ca349d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "4c6ba3eb82fdec74753a56169b4173840c436223bc457145909bd3be0c525138",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "5ae2232a583c031a23976cdb157c96aeb161620276178ffaf049fb3b6abb2d81",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "1041c2d631a961c8a33db4d8a88c5eaf69613b08a03fc9eea0a12a70152cfb7b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "201d5d251c8a03fb40536ef31071bd2d30037b8bebb487ed76b72a0972ce6ae9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cd8d0ef244af6591abb795bbd1bbdfc3608fe525841abda832390facaa58a9f7",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "62bc999829af0da4a6a770ca4eed1259ed2e05dc09fad122cf7abc85cf5e821e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

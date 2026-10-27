@@ -1,0 +1,135 @@
+{
+  "id": "LUZ-042",
+  "name": "Wax edge backlight",
+  "family": "05 Translucent and soft materials",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-042",
+    "name": "Wax edge backlight",
+    "family": "05 Translucent and soft materials",
+    "domains": [
+      "product",
+      "translucency"
+    ],
+    "description": "A proposed lighting arrangement for wax objects.",
+    "use_cases": [
+      "Wax objects"
+    ],
+    "sources": "High rear K and passive front reflector",
+    "geometry": "K at rear-side 120 degrees, elevation 35 degrees",
+    "contribution_policy": "K 0 reference EV; card passive",
+    "controls": [
+      "Backlight angle to reveal thickness",
+      "reflector distance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-028"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Subsurface response has no unpowered internal glow"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 794806,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          1500.0,
+          500.0
+        ],
+        "u": [
+          800.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          -316.22776601683796,
+          948.6832980505137
+        ],
+        "radiance": [
+          12,
+          12,
+          12
+        ]
+      },
+      {
+        "center": [
+          -1300.0,
+          -1200.0,
+          800.0
+        ],
+        "u": [
+          -373.0540565031862,
+          404.14189454511836,
+          0.0
+        ],
+        "v": [
+          196.79037443622656,
+          181.6526533257476,
+          592.2633384474896
+        ],
+        "radiance": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

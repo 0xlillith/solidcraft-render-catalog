@@ -1,0 +1,153 @@
+{
+  "entry": {
+    "domains": null,
+    "family": null,
+    "id": "NATIVE-STUDIO-007",
+    "name": "Spacecraft inspection bay",
+    "projection": {
+      "executor": "gpu-path",
+      "preserves": [
+        "camera",
+        "materials",
+        "geometry",
+        "engineering_properties"
+      ],
+      "requires_subject_and_explicit_replacement_consent": true,
+      "status": "native_composition",
+      "variants": [
+        "review_then_apply"
+      ]
+    },
+    "source_status": null
+  },
+  "resolved_plan": {
+    "clearance": "conservative subject/stage/emitter AABB separation; not exact contact certification",
+    "document_changed": false,
+    "executor": "gpu-path",
+    "id": "NATIVE-STUDIO-007",
+    "limitations": [
+      "Authored relative RGB radiance, not measured photometric calibration.",
+      "No automatic material or semantic-role assignment.",
+      "This composition preserves existing sampling, master retention and medium intent; it does not certify convergence or add terrain, motion or nested-media support."
+    ],
+    "name": "Studio",
+    "preserves": [
+      "camera",
+      "output_dimensions",
+      "sampling",
+      "optical_bindings",
+      "geometry",
+      "engineering_materials",
+      "pose",
+      "visibility"
+    ],
+    "replaces": [
+      "lighting",
+      "environment",
+      "passive_stage",
+      "exposure"
+    ],
+    "requires_lighting_consent": true,
+    "requires_stage_consent": false,
+    "resource_sha256": "8e6f212e5d44f8733cd03451402b9618bf5751e6efda05898e6adc6f617f9a5c",
+    "revision": 5,
+    "rig_projection": null,
+    "setup": {
+      "backend": "builtin",
+      "background": [
+        236,
+        240,
+        245
+      ],
+      "camera": {
+        "distance": 200.0,
+        "fov": 0.7,
+        "pitch": 0.4,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": -0.7
+      },
+      "environment_intensity": 1.0,
+      "environment_rotation": 0.0,
+      "exposure_ev": -2.0,
+      "format": "png",
+      "height": 480,
+      "job": {
+        "method": "gpu_path",
+        "options": {
+          "denoise": false,
+          "hdr": {
+            "assume_linear_srgb": false,
+            "intensity": 1.0,
+            "resource": "8e6f212e5d44f8733cd03451402b9618bf5751e6efda05898e6adc6f617f9a5c",
+            "rotation_rad": 3.491592653589793
+          },
+          "lighting": {
+            "area_lights": [],
+            "environment": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "sun": null
+          },
+          "linear_exr": false,
+          "max_depth": 8,
+          "nested_media": false,
+          "samples": 128,
+          "seed": 21026,
+          "tone_map": "aces_fitted",
+          "transmission_samples": 1
+        },
+        "transparent_background": false
+      },
+      "mode": "preview",
+      "stage": [
+        {
+          "center_mm": [
+            0.0,
+            0.0,
+            -4.1
+          ],
+          "half_u_mm": [
+            120.0,
+            0.0,
+            0.0
+          ],
+          "half_v_mm": [
+            0.0,
+            120.0,
+            0.0
+          ],
+          "id": "studio_ground",
+          "reflectance_linear": [
+            0.42,
+            0.44,
+            0.48
+          ]
+        }
+      ],
+      "width": 640
+    },
+    "source": {
+      "description": "Original clean-bay HDR and pale neutral ground. A terrestrial inspection composition, not lunar illumination or vacuum physics.",
+      "exposure_ev": -2.0,
+      "ground": [
+        0.42,
+        0.44,
+        0.48
+      ],
+      "hdr": "HDR-023",
+      "id": "NATIVE-STUDIO-007",
+      "intensity": 1.0,
+      "name": "Spacecraft inspection bay",
+      "rig": null
+    },
+    "status": "resolved_native_projection"
+  }
+}

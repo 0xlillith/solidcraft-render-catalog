@@ -1,0 +1,112 @@
+{
+  "id": "LUZ-160",
+  "name": "Section and back-face lighting",
+  "family": "16 Visual inspection and validation",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-160",
+    "name": "Section and back-face lighting",
+    "family": "16 Visual inspection and validation",
+    "domains": [
+      "validation",
+      "manufacturing"
+    ],
+    "description": "A proposed lighting arrangement for thickness and face-orientation review.",
+    "use_cases": [
+      "Thickness and face-orientation review"
+    ],
+    "sources": "Front and rear areas activated separately",
+    "geometry": "Existing thin sheet, solid and open section",
+    "contribution_policy": "Equal isolated reference contributions",
+    "controls": [
+      "Front/rear source selection",
+      "contribution matching",
+      "source orientation"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Response follows correct geometry and material boundaries"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 976880,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1200.0,
+          -1200.0,
+          1200.0
+        ],
+        "u": [
+          -424.2640687119285,
+          424.2640687119285,
+          0.0
+        ],
+        "v": [
+          244.94897427831776,
+          244.94897427831776,
+          489.8979485566355
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "center": [
+          1200.0,
+          0.0,
+          1200.0
+        ],
+        "u": [
+          -0.0,
+          -300.0,
+          0.0
+        ],
+        "v": [
+          -424.2640687119285,
+          0.0,
+          424.2640687119285
+        ],
+        "radiance": [
+          4,
+          4,
+          4
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

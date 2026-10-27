@@ -1,0 +1,80 @@
+{
+  "id": "LUZ-134",
+  "name": "Broken-cloud sun",
+  "family": "14 Solar and sky exteriors",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-134",
+    "name": "Broken-cloud sun",
+    "family": "14 Solar and sky exteriors",
+    "domains": [
+      "exterior",
+      "daylight"
+    ],
+    "description": "A proposed lighting arrangement for variable-contrast exteriors.",
+    "use_cases": [
+      "Variable-contrast exteriors"
+    ],
+    "sources": "Cloudy procedural sky and consistently attenuated sun",
+    "geometry": "One orientation shared by sky and sun",
+    "contribution_policy": "Solar attenuation follows chosen sky model",
+    "controls": [
+      "Cloud distribution",
+      "attenuation",
+      "solar elevation"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011",
+      "CAP-042"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Sky and direct sun are consistent unless editorial changes are labeled"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 936762,
+  "lights": {
+    "environment": [
+      0.16,
+      0.23,
+      0.38
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        0.42402404807821303,
+        0.7649596321166023,
+        0.48480962024633706
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    }
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

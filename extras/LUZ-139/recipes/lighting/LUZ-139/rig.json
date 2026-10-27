@@ -1,0 +1,104 @@
+{
+  "id": "LUZ-139",
+  "name": "Coastal ground bounce",
+  "family": "14 Solar and sky exteriors",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-139",
+    "name": "Coastal ground bounce",
+    "family": "14 Solar and sky exteriors",
+    "domains": [
+      "exterior",
+      "daylight"
+    ],
+    "description": "A proposed lighting arrangement for objects on sand or bright paving.",
+    "use_cases": [
+      "Objects on sand or bright paving"
+    ],
+    "sources": "Sun, sky and passive ground",
+    "geometry": "Ground and horizon are scene-owned",
+    "contribution_policy": "Additional lower fill arises from actual ground reflection",
+    "controls": [
+      "Solar elevation",
+      "sky distribution",
+      "exterior intensity"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011",
+      "CAP-042"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Lower fill changes with the existing ground material"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 944477,
+  "lights": {
+    "environment": [
+      0.16,
+      0.23,
+      0.38
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        -0.22577783153835926,
+        0.375757412598883,
+        0.898794046299167
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    }
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

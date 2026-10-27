@@ -1,0 +1,96 @@
+{
+  "id": "SELENE-AP-026",
+  "name": "Textured ABS instrument shell",
+  "original_specification": {
+    "id": "SELENE-AP-026",
+    "name": "Textured ABS instrument shell",
+    "source_catalog_ids": [
+      "MAT-042"
+    ],
+    "family": "Molded polymers",
+    "domains": [
+      "electronics",
+      "industrial",
+      "3D printers"
+    ],
+    "purpose": "A textured polymer-shell preview for industrial and desktop electronics.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-026 Textured ABS instrument shell",
+        "color": "#59616b",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.64,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Mold grain",
+        "Manufacturing seam details",
+        "Spatial roughness variation"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque pigmented dielectric with a deliberate injection-molded surface texture.",
+      "structure": [
+        "Opaque polymer surface",
+        "Mold parting line and ejector details where modeled"
+      ],
+      "authoring_controls": [
+        {
+          "id": "mold_texture_pitch",
+          "value": 0.55,
+          "unit": "mm",
+          "meaning": "Illustrative grain spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "mold_texture_relief",
+          "value": 0.012,
+          "unit": "mm",
+          "meaning": "Authored render-only mold texture height.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Orient grain consistently across adjacent shell parts",
+        "Mask polished windows and labels separately"
+      ],
+      "capability_requirements": [
+        "CAP-033",
+        "CAP-034",
+        "CAP-035",
+        "CAP-038"
+      ],
+      "unknown_optical_inputs": [
+        "Formulation-specific optical response"
+      ],
+      "validation_criteria": [
+        "Mold grain should read at close range without changing the silhouette",
+        "Uniform preview must not be described as a textured runtime shader"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#59616b",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.64,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-026 Textured ABS instrument shell",
+    "bodies": [
+      "SELENE-AP-026"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

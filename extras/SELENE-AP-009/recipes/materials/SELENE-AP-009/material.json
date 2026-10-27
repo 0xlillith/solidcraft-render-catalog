@@ -1,0 +1,99 @@
+{
+  "id": "SELENE-AP-009",
+  "name": "Titanium wrist finish",
+  "original_specification": {
+    "id": "SELENE-AP-009",
+    "name": "Titanium wrist finish",
+    "source_catalog_ids": [
+      "MAT-572"
+    ],
+    "family": "Machined aerospace metals",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "robotics"
+    ],
+    "purpose": "A muted metal preview for a robotic wrist or articulation bracket.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-009 Titanium wrist finish",
+        "color": "#8b9098",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.43,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Oxide interference",
+        "Directional machining",
+        "Localized wear"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Conductor plus a separately parameterized surface oxide; finish direction follows machining.",
+      "structure": [
+        "Oxide surface if required",
+        "Titanium-like conductor substrate"
+      ],
+      "authoring_controls": [
+        {
+          "id": "milling_pitch",
+          "value": 0.45,
+          "unit": "mm",
+          "meaning": "Illustrative milling pass spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "milling_relief",
+          "value": 0.004,
+          "unit": "mm",
+          "meaning": "Render-only toolmark amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Attach the texture frame to the wrist body",
+        "Preserve shafts and bearing interfaces"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-020",
+        "CAP-031",
+        "CAP-033",
+        "CAP-035",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Complex substrate optical constants",
+        "Oxide optical thickness and dispersion"
+      ],
+      "validation_criteria": [
+        "Wrist motion must preserve texture orientation",
+        "No interference color should be claimed by the uniform baseline"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#8b9098",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.43,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-009 Titanium wrist finish",
+    "bodies": [
+      "SELENE-AP-009"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

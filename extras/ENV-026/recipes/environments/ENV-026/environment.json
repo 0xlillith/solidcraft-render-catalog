@@ -1,0 +1,186 @@
+{
+  "id": "ENV-026",
+  "name": "Gray felt mat",
+  "family": "Tables and presentation surfaces",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-026",
+    "name": "Gray felt mat",
+    "family": "Tables and presentation surfaces",
+    "domains": [
+      "product_visualization",
+      "industrial_design"
+    ],
+    "description": "Gray felt mat is a conceptual setting for desktop devices. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Desktop devices"
+    ],
+    "representation": "Close 3D surface with a separately selectable ambient environment",
+    "geometry": "Textile pad with actual thickness and edge",
+    "ambient_lighting": "Neutral indoor ambience",
+    "scale_policy": "Mat extent from 0.2 to 1.5 m; physically scaled fibers; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Mat dimensions and thickness",
+      "edge shape",
+      "fiber scale",
+      "color",
+      "orientation",
+      "ambient backdrop"
+    ],
+    "authoring_method": "Original procedural materials; licensed scans are optional future replacements after verification",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092"
+    ],
+    "priority": "P1",
+    "cost": "Low",
+    "validation": [
+      "Keep grain, joints and pores at physical scale.",
+      "Inspect ground contact and avoid illumination baked into texture maps."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "box",
+      "name": "Work surface/top",
+      "center_mm": [
+        0.0,
+        0.0,
+        760.0
+      ],
+      "size_mm": [
+        2000.0,
+        1200.0,
+        45.0
+      ],
+      "color": "777b82"
+    },
+    {
+      "type": "box",
+      "name": "Work surface/leg",
+      "center_mm": [
+        -860.0,
+        -432.0,
+        380.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        760.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Work surface/leg",
+      "center_mm": [
+        -860.0,
+        432.0,
+        380.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        760.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Work surface/leg",
+      "center_mm": [
+        860.0,
+        -432.0,
+        380.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        760.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Work surface/leg",
+      "center_mm": [
+        860.0,
+        432.0,
+        380.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        760.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Backdrop",
+      "center_mm": [
+        0.0,
+        1400.0,
+        1400.0
+      ],
+      "size_mm": [
+        2800.0,
+        50.0,
+        2000.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Task mat",
+      "center_mm": [
+        0.0,
+        0.0,
+        790.0
+      ],
+      "size_mm": [
+        1200.0,
+        700.0,
+        8.0
+      ],
+      "color": "777b82"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 7,
+    "triangles": 84,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 2600,
+    "suggested_subject_support_mm": 760
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

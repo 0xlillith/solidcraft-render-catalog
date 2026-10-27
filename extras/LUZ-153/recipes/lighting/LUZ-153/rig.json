@@ -1,0 +1,180 @@
+{
+  "id": "LUZ-153",
+  "name": "Four-direction normal inspection",
+  "family": "16 Visual inspection and validation",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-153",
+    "name": "Four-direction normal inspection",
+    "family": "16 Visual inspection and validation",
+    "domains": [
+      "validation",
+      "manufacturing"
+    ],
+    "description": "A proposed lighting arrangement for surface-normal review.",
+    "use_cases": [
+      "Surface-normal review"
+    ],
+    "sources": "Four cardinal areas activated individually",
+    "geometry": "Sources at +/-X and +/-Y, shared elevation",
+    "contribution_policy": "Equal reference contribution; one active at a time",
+    "controls": [
+      "Direction",
+      "grazing angle",
+      "activation sequence"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-035"
+    ],
+    "priority": "P1",
+    "cost": "Low",
+    "validation": [
+      "Seams and inverted normals remain visible"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 966079,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          1600.0,
+          0.0,
+          700.0
+        ],
+        "u": [
+          -0.0,
+          -400.0,
+          0.0
+        ],
+        "v": [
+          -200.40941700985388,
+          0.0,
+          458.0786674510946
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "center": [
+          9.797174393178826e-14,
+          1600.0,
+          700.0
+        ],
+        "u": [
+          400.0,
+          -2.4492935982947064e-14,
+          0.0
+        ],
+        "v": [
+          -1.2271537553005234e-14,
+          -200.40941700985388,
+          458.0786674510946
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "center": [
+          -1600.0,
+          1.9594348786357651e-13,
+          700.0
+        ],
+        "u": [
+          4.898587196589413e-14,
+          400.0,
+          0.0
+        ],
+        "v": [
+          200.40941700985388,
+          -2.4543075106010467e-14,
+          458.0786674510946
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "center": [
+          -2.9391523179536476e-13,
+          -1600.0,
+          700.0
+        ],
+        "u": [
+          -400.0,
+          7.347880794884119e-14,
+          0.0
+        ],
+        "v": [
+          3.68146126590157e-14,
+          200.40941700985388,
+          458.0786674510946
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

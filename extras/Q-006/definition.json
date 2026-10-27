@@ -1,0 +1,37 @@
+{
+  "id": "Q-006",
+  "name": "Lunar Hero Master",
+  "kind": "quality",
+  "family": "Quality targets",
+  "path": "quality/Q-006",
+  "thumbnail": null,
+  "description": "Lunar Hero Master",
+  "scope": "The original resolution/sampling/motion target is preserved. The native variant is explicitly bounded to supported samples/depth and does not claim convergence or shutter integration.",
+  "preview_scope": "",
+  "badge": "Original target + bounded native variant",
+  "limitations": [
+    "Original sample ceiling exceeds native 4096; the separate bounded projection uses 4096.",
+    "Original path depth exceeds native 16; the separate bounded projection uses 16.",
+    "Native fixed sampling does not assert the original convergence/error estimator.",
+    "Quality specification is a target, not a measured guarantee for every scene."
+  ],
+  "files": [
+    {
+      "path": "quality/Q-006/quality.solidcraft",
+      "label": "Native quality sample"
+    },
+    {
+      "path": "quality/Q-006/quality.json",
+      "label": "Quality contract"
+    },
+    {
+      "path": "quality/Q-006/external-render-target.json",
+      "label": "Full external target"
+    },
+    {
+      "path": "quality/Q-006/solidcraft-bounded-settings.json",
+      "label": "Native bounded parameters"
+    }
+  ],
+  "images": []
+}

@@ -1,0 +1,182 @@
+{
+  "id": "MAT-485",
+  "name": "Open-cell metal-foam section",
+  "family": "Aerospace cores and lightweight sections",
+  "version": "1.0.0-local",
+  "seed": 10040715,
+  "pattern": "foam",
+  "base_linear_low": [
+    0.25548842765979524,
+    0.24538923905122248,
+    0.2355268416652944
+  ],
+  "base_linear_high": [
+    0.4732177339476868,
+    0.4548281666305842,
+    0.436869771390536
+  ],
+  "roughness": 0.72,
+  "roughness_variation": 0.06,
+  "metallic": 0.4,
+  "height_span_mm": 1.0,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-485",
+    "name": "Open-cell metal-foam section",
+    "family": "Aerospace cores and lightweight sections",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Conductive ligaments form a connected irregular porous network.",
+    "use_cases": [
+      "Lightweight structure concepts"
+    ],
+    "optical_model": "Explicit lightweight-core geometry with separate wall, skin and bond-line appearances.",
+    "controls": [
+      "cell geometry",
+      "wall finish",
+      "skin masks",
+      "ligament size",
+      "pore distribution"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use geometry when the network is visible.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "A rough solid block must not stand in for open porosity.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "54285e0ac782f349a71d42f8e10e93493bca2d473a70d3aef0451aaf52e6faaa",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ee811b0a93632cc0a40161a0a9498b5d83ea201d053d42ecc10ff4f69e92f8b9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "edce72a812d92b1d4dac8cc0fae76cadb8b0589103cadc45e7c972382603f4e7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "fa00963c1b9bb16fc9a27b778100347e52d17f958e4c5c47e07d0a486207dc02",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "99992763526a069c1c06db292744ab33262af542d68f50e7a392adc3bc95b7f0",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "ced57476f86ef1fef765aad9e18830453b19c73dcc221d44321789ab6d8c88fe",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4af681d2bea3c29a28363d847f535109bd5a44f2a37948cf72ee953e246b0e61",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "e7b6c39943cd8070c452e2cd7566ce3e76bf491be953bed00d22a6567b5e7e6a",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ff304dae974a2098eae56b13dffa7b933dc218bbca5ce54e4ff871aef94c33e7",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

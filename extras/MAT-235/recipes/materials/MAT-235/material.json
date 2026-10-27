@@ -1,0 +1,180 @@
+{
+  "id": "MAT-235",
+  "name": "Cut tyre-carcass section",
+  "family": "Automotive tyres and sealing profiles",
+  "version": "1.0.0-local",
+  "seed": 8060965,
+  "pattern": "grip",
+  "base_linear_low": [
+    0.007780204270428403,
+    0.008231947199133635,
+    0.009677375209382005
+  ],
+  "base_linear_high": [
+    0.022166939119287542,
+    0.022989515795437364,
+    0.025621489187232904
+  ],
+  "roughness": 0.82,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.65,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-235",
+    "name": "Cut tyre-carcass section",
+    "family": "Automotive tyres and sealing profiles",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Elastomer layers expose embedded fabric and curved internal construction.",
+    "use_cases": [
+      "Tyre cutaways"
+    ],
+    "optical_model": "Dielectric elastomer and reinforced-section recipes with optional explicit textile or wire components.",
+    "controls": [
+      "surface grain",
+      "contact polish",
+      "region masks",
+      "layer boundaries",
+      "fabric visibility"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Match the authored section to the intended construction diagram.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The visual cutaway is not a certified tyre construction specification.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b3ae608b0a1790a5cf5a4ce5002bdac3ced4d5051ed7d2b43048532e616e614a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "74b06ca1e221c4e3db09c6db0cf92ae4bf151e1a54ed184afacbb82fd239ff36",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "8e217ac68a5811278a4bb5ba881aa2971664c4b4913eebd7978f23ae3d225024",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "fcbcad85b7dde2701399676ad65fa952032e8abc42c624ab462d47b36e675968",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "baf0700f39fa101b6d655cfef5b085a653e55ea9b6c2208d5cda0392f53c7f49",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "a7193f0f913ddfe389cdb1507356da27f2d4cf73a3c38dc9de083f2a5bcbbd2c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fa14df18e982e4f4ff76b45dda9976d91a6f37f765e853f200e73790dfb571b4",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "618183373e822e42f307c92af99519face250607fea5aa54ac5cfecf8c3cf724",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": "MAT-011",
+  "name": "Face-milled aluminium",
+  "family": "Aluminium and titanium finishes",
+  "version": "1.0.0-local",
+  "seed": 6287109,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.65,
+    0.68,
+    0.72
+  ],
+  "base_linear_high": [
+    0.8,
+    0.82,
+    0.85
+  ],
+  "roughness": 0.27,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.05,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 32,
+  "cycles_v": 4,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-011",
+    "name": "Face-milled aluminium",
+    "family": "Aluminium and titanium finishes",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Overlapping cutter arcs organize reflections across a machined face.",
+    "use_cases": [
+      "CNC housings",
+      "fixtures"
+    ],
+    "optical_model": "Conductor microfacet substrate with process-oriented anisotropy and explicit coating layers where present.",
+    "controls": [
+      "surface roughness",
+      "manufacturing direction",
+      "cutter path",
+      "feed spacing"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Set arc diameter and feed from the intended operation.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Arcs must stop or change direction at manufacturing boundaries.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-005",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "fc1d703535716abf6ca7098d196bf059af9cbc31af56004e0a7c123d6fee043f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3d34e8f5975adb025dcec8c8c83066a08a5be3fd8253d71e596670b2057c689a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "f615e16dfb361e72ed1076db593642231e8186dd24850ace72a7e34397d390fd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "635a17dd05307226a2bbbaf37b9b076709423226adf77f1c3d7b802b37d8270f",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b44c8c58cfc02153a93e6a479f80df8b993a937f88288fd92deacac349c7779a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "fe9f9566ca0208dfe94adc2b150c40af5b31bdf0d0098383c4fe78e59e536f95",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d4438164385bdca9758375aa53633ef47baf53cda094ff391f3b5b61390cb6d5",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "110b5df7de16f049b8c10ff4c45d8e0a7f98009e1593f6ff7de7370dee61ff73",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

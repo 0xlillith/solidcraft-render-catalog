@@ -1,0 +1,68 @@
+{
+  "id": "ENV-150",
+  "name": "Snow-covered conifer forest",
+  "kind": "environment",
+  "family": "Forests and dense vegetation",
+  "path": "environments/ENV-150",
+  "thumbnail": "environments/ENV-150/native-model-preview.png",
+  "description": "Snow-covered conifer forest is a conceptual setting for winter equipment. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-150/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-150/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-150/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-150/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-150/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-150/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-150/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-150/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-150/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-150/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-150/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-150/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "SELENE-AP-019",
+  "name": "Polyimide-facing blanket surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-019",
+    "name": "Polyimide-facing blanket surrogate",
+    "source_catalog_ids": [
+      "MAT-502"
+    ],
+    "family": "Space blankets",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "space"
+    ],
+    "purpose": "An opaque amber inspection surrogate for the polymer-facing side of a metallized film.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-019 Polyimide-facing blanket surrogate",
+        "color": "#80602e",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.3,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Transmission through the polymer",
+        "Spectral absorption",
+        "Conductor seen through film",
+        "Fold self-shadowing"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Absorbing dielectric film over a conductor; the opaque baseline does not transmit through the film.",
+      "structure": [
+        "Absorbing polymer outer layer",
+        "Conductor backing",
+        "Fold geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "wrinkle_span",
+          "value": 14.0,
+          "unit": "mm",
+          "meaning": "Illustrative wrinkle spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "wrinkle_height",
+          "value": 0.5,
+          "unit": "mm",
+          "meaning": "Authored render-only fold height.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep the polymer-facing and metal-facing sides distinct",
+        "Represent folds and overlaps as separate geometry where resolved"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-021",
+        "CAP-025",
+        "CAP-026",
+        "CAP-027",
+        "CAP-036"
+      ],
+      "unknown_optical_inputs": [
+        "Film absorption spectrum and thickness",
+        "Film refractive index",
+        "Conductor complex optical constants"
+      ],
+      "validation_criteria": [
+        "The two blanket sides must not share an identical optical stack",
+        "The amber surrogate must remain labelled opaque"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#80602e",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.3,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-019 Polyimide-facing blanket surrogate",
+    "bodies": [
+      "SELENE-AP-019"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

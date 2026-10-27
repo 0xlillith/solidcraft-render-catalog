@@ -1,0 +1,70 @@
+{
+  "id": "ENV-250",
+  "name": "Vacuum deployment clearance context",
+  "kind": "environment",
+  "family": "Orbital and spacecraft surroundings",
+  "path": "environments/ENV-250",
+  "thumbnail": "environments/ENV-250/native-model-preview.png",
+  "description": "Vacuum deployment clearance context is a conceptual setting for booms; antennas; deployable mechanisms. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Vacuum: zero atmospheric sky. Earth and star fields disabled without explicit external inputs.",
+    "Relative context is authored, not a mission/ephemeris model.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-250/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-250/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-250/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-250/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-250/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-250/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-250/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-250/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-250/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-250/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-250/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-250/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

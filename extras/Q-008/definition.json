@@ -1,0 +1,36 @@
+{
+  "id": "Q-008",
+  "name": "Animation Preview",
+  "kind": "quality",
+  "family": "Quality targets",
+  "path": "quality/Q-008",
+  "thumbnail": null,
+  "description": "Animation Preview",
+  "scope": "The original resolution/sampling/motion target is preserved. The native variant is explicitly bounded to supported samples/depth and does not claim convergence or shutter integration.",
+  "preview_scope": "",
+  "badge": "Original target + bounded native variant",
+  "limitations": [
+    "No camera-time integration is installed by this static native projection. Full motion intent is retained.",
+    "Native fixed sampling does not assert the original convergence/error estimator.",
+    "Quality specification is a target, not a measured guarantee for every scene."
+  ],
+  "files": [
+    {
+      "path": "quality/Q-008/quality.solidcraft",
+      "label": "Native quality sample"
+    },
+    {
+      "path": "quality/Q-008/quality.json",
+      "label": "Quality contract"
+    },
+    {
+      "path": "quality/Q-008/external-render-target.json",
+      "label": "Full external target"
+    },
+    {
+      "path": "quality/Q-008/solidcraft-bounded-settings.json",
+      "label": "Native bounded parameters"
+    }
+  ],
+  "images": []
+}

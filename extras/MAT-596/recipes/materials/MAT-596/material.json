@@ -1,0 +1,185 @@
+{
+  "id": "MAT-596",
+  "name": "SELENE threaded metal closure cap",
+  "family": "SELENE opaque sample cassettes caps and seals",
+  "version": "1.0.0-local",
+  "seed": 10919724,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.2227425293519402,
+    0.23229171775786986,
+    0.24872924591767992
+  ],
+  "base_linear_high": [
+    0.4135908743423388,
+    0.4309789487531361,
+    0.4609099701784619
+  ],
+  "roughness": 0.338,
+  "roughness_variation": 0.06,
+  "metallic": 0.8,
+  "height_span_mm": 0.045,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-596",
+    "name": "SELENE threaded metal closure cap",
+    "family": "SELENE opaque sample cassettes caps and seals",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE",
+      "laboratory"
+    ],
+    "description": "Conductive cap surfaces include a separate seal-contact track.",
+    "use_cases": [
+      "Sample-container closures"
+    ],
+    "optical_model": "Region-aware candidate containment assembly using distinct body, cap, liner and sealing appearances; engineering selection remains a separate decision.",
+    "controls": [
+      "surface finish",
+      "contact-region masks",
+      "part identity",
+      "thread finish",
+      "sealing-land polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use actual threads and contact surfaces from CAD.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-038",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The render must not imply leak-tightness or closure torque requirements.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "365c42a232533fb82b91250b93f7823cdeb5a5fe79ec76a88072feaf95e4e1f4",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3e4261728f74b6adedeef78fced216aa6f80f8bd0cd696891575c58354285e09",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "6bf421e33607ee0de0f8754f11ec737907ca1224f7fbbf18af147d224715cbdc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "13694aa3aba41eade6555d44cd1b174b97628ea30cd1256a454b7d09f0347f95",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b04d0d8637c06adc4dc6f9308270f1ad97f019ccdfc309c7d0f5b51a158b1f78",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "cecdc1802aaeb2ce6f0e2fc0fd48804424f7d759c00e5772a1670193de7ebe22",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "8def670818dc85252dcd4264e33b38c9a4f76fc85b2984f8599f94905140db75",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "21b933cfc36ab8314eba2f24509d814541f2010f0c30a334b3c31c24642d41d5",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "1119a0ee9dc0306e66dadbdb02fc7d93ec54c8da46266c5792773249969dbb8b",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

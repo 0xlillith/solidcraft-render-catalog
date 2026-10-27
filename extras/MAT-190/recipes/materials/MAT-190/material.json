@@ -1,0 +1,184 @@
+{
+  "id": "MAT-190",
+  "name": "Condensation film and droplets",
+  "family": "Liquids and gels",
+  "version": "1.0.0-local",
+  "seed": 7704610,
+  "pattern": "water",
+  "base_linear_low": [
+    0.36984763901304013,
+    0.4943999738777297,
+    0.4994208203920596
+  ],
+  "base_linear_high": [
+    0.6814539098446402,
+    0.9082506987027316,
+    0.9173931356392727
+  ],
+  "roughness": 0.15,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-190",
+    "name": "Condensation film and droplets",
+    "family": "Liquids and gels",
+    "domains": [
+      "laboratory",
+      "industrial",
+      "CAD product"
+    ],
+    "description": "Droplets and partial wetting cover an existing host material.",
+    "use_cases": [
+      "Refrigeration",
+      "vessels"
+    ],
+    "optical_model": "Absorbing or scattering volume bounded by explicit refractive interfaces; geometry determines menisci and shape.",
+    "controls": [
+      "editable refractive index",
+      "absorption distance",
+      "scattering",
+      "droplet size",
+      "coverage",
+      "runoff"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Large drops need geometry where silhouette or refraction changes.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-028"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "The host remains visible through a separate water layer.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c87ceaacd53cc003c55adda6194b841c4ef4b0c7efebb0cda7936ee3478b690f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4f73fd05413d2c5b91be5be45cdf13e93457eecb093cc6fca2bb003dbc20376d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "1ce86b4b7f1d6459744c35b81e4a00fd074f3314708514401b141e5d3d43391b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "9277b23c3a46cb3ad5377227238957316c21ef8afa116279a250e631fc105634",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "edc8cbaae25d593600172e57f1f088182a6070db1234921a0ae0931c53e32c71",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "7260aba45f900934d8c07f72272f22d64ccc1f40b48d1b515bd21ed7edb34316",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a5e6687a9db13e70bb3f6d0609a57cb2e1cd29f3c06df4a4e7bf61ad836a794e",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "717a97fbb39db902cfc6ed54d063e29cb1f3a3adde28aed40ab7059fa6ec4cdf",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "id": "MAT-043",
+  "name": "Injection-moulded polypropylene",
+  "family": "Opaque engineering polymers",
+  "version": "1.0.0-local",
+  "seed": 6540517,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.019803079073331897,
+    0.029302469602172223,
+    0.04221671182762234
+  ],
+  "base_linear_high": [
+    0.04405933801412674,
+    0.06135673569350763,
+    0.08487222153686455
+  ],
+  "roughness": 0.36400000000000005,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.03,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-043",
+    "name": "Injection-moulded polypropylene",
+    "family": "Opaque engineering polymers",
+    "domains": [
+      "industrial",
+      "electronics",
+      "CAD product"
+    ],
+    "description": "Satin polymer skin has a restrained waxy visual character.",
+    "use_cases": [
+      "Lids",
+      "containers"
+    ],
+    "optical_model": "Opaque dielectric microfacet surface with process-specific texture; engineering properties remain separate.",
+    "controls": [
+      "surface colour",
+      "roughness",
+      "mould texture",
+      "surface gloss",
+      "fine texture"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use real wall geometry rather than texture to imply hinges.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Appearance must not certify flexibility or hinge lifetime.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b755702a7a5ecc074e9b1b9d90156732218b93df911bfe34ec96d69b2d1c596b",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "be2ad969db3dfd470123e810ec1540279eb5e6a147aea6af0905c528c0b88477",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "ee61f0544db4cefdf07212354307ca7d5f7d1cc9b682f70501e638648594a15e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b292d3597614da9bfc3039ad93a9604bf640895ae0c46d9085a192f0ae2e4ff1",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "4bba48621b8975d4bf7e640cde94d3a000caa2af45475b800814a595ec00ba90",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "23ccf8c58c3b4916a4e5561692663b1c927eb5cad6b491bb0a21d66032c12774",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "17d334c129067a306837ea608e1f63a2c3839bcb479212137ed145217a1c5b59",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "a40af0448928e515fb816dbaf5409949adf8151d579dbc34421bc60e18d32cd7",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

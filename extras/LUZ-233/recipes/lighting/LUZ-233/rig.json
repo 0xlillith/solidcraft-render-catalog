@@ -1,0 +1,116 @@
+{
+  "id": "LUZ-233",
+  "name": "End-grain and face-grain comparison",
+  "family": "24 Woodworking and DIY",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-233",
+    "name": "End-grain and face-grain comparison",
+    "family": "24 Woodworking and DIY",
+    "domains": [
+      "woodworking",
+      "diy",
+      "furniture"
+    ],
+    "description": "A proposed lighting arrangement for timber samples.",
+    "use_cases": [
+      "Timber samples"
+    ],
+    "sources": "One neutral broad area and passive gray card",
+    "geometry": "Samples share reference plane and source distance",
+    "contribution_policy": "K 0 reference EV, passive card",
+    "controls": [
+      "Source-to-grain direction",
+      "apparent size",
+      "card distance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-033",
+      "CAP-079"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Grain is material-owned and comparison exposure stays fixed"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1089519,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1350.0,
+          -1400.0,
+          1200.0
+        ],
+        "u": [
+          -431.9065772524111,
+          416.4813423505392,
+          0.0
+        ],
+        "v": [
+          291.59247279693346,
+          302.39219401163473,
+          680.832424910124
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

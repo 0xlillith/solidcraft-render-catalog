@@ -1,0 +1,68 @@
+{
+  "id": "ENV-079",
+  "name": "Prototyping makerspace",
+  "kind": "environment",
+  "family": "Workshops and manufacturing",
+  "path": "environments/ENV-079",
+  "thumbnail": "environments/ENV-079/native-model-preview.png",
+  "description": "Prototyping makerspace is a conceptual setting for 3D printers; prototypes. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-079/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-079/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-079/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-079/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-079/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-079/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-079/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-079/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-079/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-079/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-079/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-079/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

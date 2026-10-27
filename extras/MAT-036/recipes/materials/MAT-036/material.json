@@ -1,0 +1,184 @@
+{
+  "id": "MAT-036",
+  "name": "Multilayer pearlescent paint",
+  "family": "Paints and general coatings",
+  "version": "1.0.0-local",
+  "seed": 6485084,
+  "pattern": "iridescent",
+  "base_linear_low": [
+    0.022180193602492987,
+    0.06086394649288315,
+    0.11701376044924199
+  ],
+  "base_linear_high": [
+    0.048387815216479765,
+    0.11882688764375737,
+    0.22106983245981374
+  ],
+  "roughness": 0.498,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.06,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 1.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-036",
+    "name": "Multilayer pearlescent paint",
+    "family": "Paints and general coatings",
+    "domains": [
+      "industrial",
+      "automotive",
+      "DIY"
+    ],
+    "description": "Effect particles create controlled angle-dependent appearance.",
+    "use_cases": [
+      "Automotive surfaces",
+      "product shells"
+    ],
+    "optical_model": "Energy-aware layered surface: substrate, pigmented layer and optional clear topcoat.",
+    "controls": [
+      "pigment colour",
+      "coat roughness",
+      "coverage",
+      "effect-layer strength",
+      "particle orientation"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve particle size and optical-layer parameters independently.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039",
+      "CAP-023",
+      "CAP-031"
+    ],
+    "priority": "P0",
+    "cost": "Medium",
+    "validation": [
+      "Identify RGB approximation if spectral behaviour is not resolved.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "fe06047958485e82e724194b81fd7dd55d59cf2c1129bb3bd8783c4874b9dd33",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "81d3e93250eab20dee67c34a0519c9b5496ab20dabb99c95589515b5b3077b31",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "35d4985471b667a4eb78781a7e4be92c3dd47c65dcb1f4f61a84858a4a41e892",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "a1eb24415b040e0aba070dc419d05155c04b3c73934c5a9674cd1c0d7becd370",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f64896d8d4debda7811258b5b9528e399ef107380abd4c8a04bf54d318f5d100",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "54c507c29067aaa8b41cc41fd15a96cf7b7b0e964fde575afc0363791806cced",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a48e2aef8d9207b94e21021fc53db0a8b4b7cfd9687de6da62f942f00da31676",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "a08aa8c70d48b6bc2f0a757df117b646547fd572dfabfa1403777851b20fc228",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

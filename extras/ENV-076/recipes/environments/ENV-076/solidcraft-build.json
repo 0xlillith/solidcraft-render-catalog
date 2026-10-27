@@ -1,0 +1,75 @@
+[
+  {
+    "command": "file.insert_mesh",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-076\\environment.glb",
+      "up": "y",
+      "name": "ENV-076 Context"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "ENV-076 Machinery assembly area",
+        "license": "MIT OR Apache-2.0",
+        "org.solidcraft.local_catalog": {
+          "id": "ENV-076",
+          "scope": "Finite procedural environment authoring scene",
+          "source_recipe": "environment.json",
+          "not_measured": true
+        }
+      }
+    }
+  },
+  {
+    "command": "render.settings.capture_hdr",
+    "params": {
+      "name": "ENV-076 Machinery assembly area",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "background": [
+          34,
+          42,
+          53
+        ],
+        "camera": {
+          "target": [
+            0,
+            0,
+            720.0
+          ],
+          "yaw": -0.8,
+          "pitch": 0.5,
+          "roll": 0,
+          "distance": 10350.0,
+          "fov": 0.65,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 840076,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": []
+            },
+            "tone_map": "aces_fitted"
+          }
+        }
+      },
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-076\\illumination.hdr",
+      "expected_sha256": "31b6da670ce03c2b03711f0fc45ae7cbb8a94bb4fb142b28ec5e8daebf6a7e55",
+      "rotation_rad": 3.141592653589793,
+      "intensity": 1,
+      "assume_linear_srgb": false
+    }
+  }
+]

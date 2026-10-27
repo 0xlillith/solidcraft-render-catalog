@@ -1,0 +1,110 @@
+{
+  "id": "LUZ-004",
+  "name": "Compact clamshell",
+  "family": "01 Essential studio",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-004",
+    "name": "Compact clamshell",
+    "family": "01 Essential studio",
+    "domains": [
+      "product",
+      "general"
+    ],
+    "description": "A proposed lighting arrangement for short objects with important front faces.",
+    "use_cases": [
+      "Short objects with important front faces"
+    ],
+    "sources": "Upper and lower front areas",
+    "geometry": "Elevations approximately +45 and -20 degrees, distance B",
+    "contribution_policy": "Upper 0 and lower -1.5 reference EV",
+    "controls": [
+      "Vertical opening",
+      "lower fill contribution"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Front remains readable without a central double shadow"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 736172,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          -1500.0,
+          700.0
+        ],
+        "u": [
+          -750.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          148.00991286589334,
+          317.1640989983429
+        ],
+        "radiance": [
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "center": [
+          0.0,
+          -1400.0,
+          -700.0
+        ],
+        "u": [
+          -700.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          -134.1640786499874,
+          268.3281572999748
+        ],
+        "radiance": [
+          3,
+          3,
+          3
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

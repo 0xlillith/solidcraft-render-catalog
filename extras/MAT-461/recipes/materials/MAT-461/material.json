@@ -1,0 +1,182 @@
+{
+  "id": "MAT-461",
+  "name": "Total-internal-reflection LED lens",
+  "family": "LED lenses reflectors and optical hardware",
+  "version": "1.0.0-local",
+  "seed": 9850659,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.4458094898491223,
+    0.5249703203225496,
+    0.5619953378662959
+  ],
+  "base_linear_high": [
+    0.819772503904372,
+    0.9639161056619561,
+    1.0
+  ],
+  "roughness": 0.048,
+  "roughness_variation": 0.008,
+  "metallic": 0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-461",
+    "name": "Total-internal-reflection LED lens",
+    "family": "LED lenses reflectors and optical hardware",
+    "domains": [
+      "LED lighting",
+      "automotive",
+      "electronics"
+    ],
+    "description": "A shaped clear optic redirects light through refractive and internal-reflection paths.",
+    "use_cases": [
+      "LED optics"
+    ],
+    "optical_model": "Geometric-optics components with separate dielectric lenses, conductor reflectors and absorbing baffles.",
+    "controls": [
+      "surface roughness",
+      "optical geometry",
+      "region masks",
+      "lens finish",
+      "source alignment"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep source position and optic dimensions explicit.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-103"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Verify internal interfaces rather than replacing transport with a beam decal.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a9e9feab027a31f08ea8c7194264f33f579111b530a294fb5e4c8961ba2099a2",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "8dcf993df2afe5e21b2784a2e8d11ba0d5196cdf23923c4395c9d0fd6532cd41",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "386458707621acde1bcfb726ed75099c9d91b8fd08989bb30ca1cb5e48e570f0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "c57921f3813c9f8153f919aee955fbe06c83dd8797b87afe4d21f0ac73d7afb3",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "9723ba255eb43c76e2277918d15880d2576710db2f7abbb77e6c2e52d6667212",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c25f0c43c8d9e703095c5a4edf0eff1b82b2ec05d6734e1bae44361787f18660",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "7d98218f71198f2cea77930404a1737ccf291d4224dbdf8994305cbccef79e6e",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "77203bbf3bcbf47de5977c1816df58a7b81ac5d1d0c2a5474034a4df0d638370",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

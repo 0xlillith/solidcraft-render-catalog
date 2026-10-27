@@ -1,0 +1,180 @@
+{
+  "id": "MAT-219",
+  "name": "Rubberized underseal appearance",
+  "family": "Automotive exterior trim and films",
+  "version": "1.0.0-local",
+  "seed": 7934261,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.016875195950332295,
+    0.019803079073331897,
+    0.026495977635411002
+  ],
+  "base_linear_high": [
+    0.03872796874538119,
+    0.04405933801412674,
+    0.05624640703761406
+  ],
+  "roughness": 0.72,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-219",
+    "name": "Rubberized underseal appearance",
+    "family": "Automotive exterior trim and films",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Uneven dark protective texture follows underside contours.",
+    "use_cases": [
+      "Underbody assemblies"
+    ],
+    "optical_model": "Layered conductor or dielectric finish over a separately represented product substrate.",
+    "controls": [
+      "surface roughness",
+      "layer masks",
+      "wear coverage",
+      "spray texture",
+      "coverage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use application masks instead of coating all exposed hardware.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Fasteners and service interfaces remain distinct unless deliberately coated.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "4b96033977579c67bcd3d378f6b1bf57a8ae8ada2c7d6f84ff7e2029f1fd39de",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4659c678366065d6107bc1e67fe07bdc822587b65bb660d72020aac8d1958f1c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "6e1b9dc857cc81775279e646c9f466ce800b280a34a23aa2bb1faf587492371a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "aa250ccd659b0e0be68822966b8040a2296d93c717c3a3fd848a3d81190ec191",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "33800ff530c0f2d862b257692033679843bac78c93ab2ca19f4319ec7f745beb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1dfdf30698d828ce8ffc526f4d7a69abd340d269d576c0601f2ee8c2c687495c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cfe1c28ba44a3c2cd8f3ff1809c9e4c066024f896661772457b5dce7773300f6",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f09a07f4b2e864d59f665c8437cf9933cc0003982f88f95e3f48691c75e6e3ee",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

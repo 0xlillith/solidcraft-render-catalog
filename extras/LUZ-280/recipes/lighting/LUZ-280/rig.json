@@ -1,0 +1,97 @@
+{
+  "id": "LUZ-280",
+  "name": "SELENE night sample handling",
+  "family": "28 SELENE arm and sample-handling studies",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-280",
+    "name": "SELENE night sample handling",
+    "family": "28 SELENE arm and sample-handling studies",
+    "domains": [
+      "selene",
+      "robotics",
+      "lunar",
+      "macro"
+    ],
+    "description": "A proposed lighting arrangement for night handling with declared task fixtures.",
+    "use_cases": [
+      "Night handling with declared task fixtures"
+    ],
+    "sources": "Onboard spot and optional separately declared gripper lamp",
+    "geometry": "Sources attached to actual mounts; terrain and arm occlude them",
+    "contribution_policy": "Relative fixture contribution, no solar or sky ambient",
+    "controls": [
+      "Mount binding",
+      "beam angle",
+      "fixture balance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-010",
+      "CAP-025"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Dark regions require a real light path and no automatic sky fill"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1162040,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -600.0,
+          -500.0,
+          500.0
+        ],
+        "u": [
+          -19.205531989934393,
+          23.046638387921274,
+          0.0
+        ],
+        "v": [
+          8.283943101287907,
+          6.9032859177399235,
+          16.84401763928541
+        ],
+        "radiance": [
+          35,
+          35,
+          35
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture.",
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

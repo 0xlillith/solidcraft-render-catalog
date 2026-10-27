@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "ss-17-4ph-a",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "17-4PH — Condition A / Scuffed bare metal",
+        "density_g_cm3": 7.75,
+        "color": [
+          199,
+          202,
+          205
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.37,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "17-4PH — Condition A",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "sand-ss-17-4ph-a",
+              "title": "17-4PH — Condition A primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://www.sandmeyersteel.com/alloy-17-4ph/"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 7750
+              },
+              "source_id": "sand-ss-17-4ph-a",
+              "conditions": {
+                "temperature_k": null,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "Physical table Condition A; not an aged H900/H1150 strength model; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

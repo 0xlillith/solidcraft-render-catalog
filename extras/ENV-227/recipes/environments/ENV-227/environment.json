@@ -1,0 +1,836 @@
+{
+  "id": "ENV-227",
+  "name": "LED package macro enclosure",
+  "family": "LED and optical laboratory contexts",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-227",
+    "name": "LED package macro enclosure",
+    "family": "LED and optical laboratory contexts",
+    "domains": [
+      "led_optics",
+      "electronics",
+      "optical_instruments"
+    ],
+    "description": "LED package macro enclosure is a conceptual setting for die-package visualization; bond-wire inspection. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Die-package visualization",
+      "bond-wire inspection"
+    ],
+    "representation": "Procedural 3D optical test context with explicit emitter and receiver boundaries",
+    "geometry": "Small dark enclosure with stable package support and camera opening",
+    "ambient_lighting": "Optional neutral fill for inspection; physical emission separate",
+    "scale_policy": "Package region from 1 to 50 mm; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Support dimensions",
+      "camera opening",
+      "ambient intensity",
+      "emission binding",
+      "reference scale"
+    ],
+    "authoring_method": "Original generic optical benches and enclosures; no measured luminaire distributions or test certification are included",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-013",
+      "CAP-025",
+      "CAP-026"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "A glowing LED mesh and its analytical representation must not emit twice.",
+      "Keep camera exposure, receiver geometry and emitter units visible.",
+      "Visual patterns are not calibrated optical measurements until a separate validated method is supplied."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "box",
+      "name": "Room floor",
+      "center_mm": [
+        0.0,
+        0.0,
+        -40.0
+      ],
+      "size_mm": [
+        6000.0,
+        6000.0,
+        80.0
+      ],
+      "color": "a7a7a1"
+    },
+    {
+      "type": "box",
+      "name": "Back wall",
+      "center_mm": [
+        0.0,
+        3000.0,
+        1600.0
+      ],
+      "size_mm": [
+        6000.0,
+        100.0,
+        3200.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Left wall",
+      "center_mm": [
+        -3000.0,
+        0.0,
+        1600.0
+      ],
+      "size_mm": [
+        100.0,
+        6000.0,
+        3200.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Right wall lower",
+      "center_mm": [
+        3000.0,
+        1000.0,
+        500.0
+      ],
+      "size_mm": [
+        100.0,
+        4000.0,
+        1000.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Right wall lintel",
+      "center_mm": [
+        3000.0,
+        1000.0,
+        2900.0
+      ],
+      "size_mm": [
+        100.0,
+        4000.0,
+        600.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench -1/top",
+      "center_mm": [
+        -1700.0,
+        1700.0,
+        780.0
+      ],
+      "size_mm": [
+        2000.0,
+        900.0,
+        45.0
+      ],
+      "color": "8b939a"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench -1/leg",
+      "center_mm": [
+        -2560.0,
+        1376.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench -1/leg",
+      "center_mm": [
+        -2560.0,
+        2024.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench -1/leg",
+      "center_mm": [
+        -840.0,
+        1376.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench -1/leg",
+      "center_mm": [
+        -840.0,
+        2024.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench 1/top",
+      "center_mm": [
+        1700.0,
+        1700.0,
+        780.0
+      ],
+      "size_mm": [
+        2000.0,
+        900.0,
+        45.0
+      ],
+      "color": "8b939a"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench 1/leg",
+      "center_mm": [
+        840.0,
+        1376.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench 1/leg",
+      "center_mm": [
+        840.0,
+        2024.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench 1/leg",
+      "center_mm": [
+        2560.0,
+        1376.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Technical bench 1/leg",
+      "center_mm": [
+        2560.0,
+        2024.0,
+        390.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        780.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Instrument 0",
+      "center_mm": [
+        -2200.0,
+        2000.0,
+        1030.0
+      ],
+      "size_mm": [
+        500.0,
+        450.0,
+        450.0
+      ],
+      "color": "c7cdd0"
+    },
+    {
+      "type": "box",
+      "name": "Instrument display 0",
+      "center_mm": [
+        -2200.0,
+        1765.0,
+        1080.0
+      ],
+      "size_mm": [
+        330.0,
+        12.0,
+        180.0
+      ],
+      "color": "25353d"
+    },
+    {
+      "type": "box",
+      "name": "Instrument 1",
+      "center_mm": [
+        -1500.0,
+        2000.0,
+        1030.0
+      ],
+      "size_mm": [
+        500.0,
+        450.0,
+        450.0
+      ],
+      "color": "c7cdd0"
+    },
+    {
+      "type": "box",
+      "name": "Instrument display 1",
+      "center_mm": [
+        -1500.0,
+        1765.0,
+        1080.0
+      ],
+      "size_mm": [
+        330.0,
+        12.0,
+        180.0
+      ],
+      "color": "25353d"
+    },
+    {
+      "type": "box",
+      "name": "Instrument 2",
+      "center_mm": [
+        -800.0,
+        2000.0,
+        1030.0
+      ],
+      "size_mm": [
+        500.0,
+        450.0,
+        450.0
+      ],
+      "color": "c7cdd0"
+    },
+    {
+      "type": "box",
+      "name": "Instrument display 2",
+      "center_mm": [
+        -800.0,
+        1765.0,
+        1080.0
+      ],
+      "size_mm": [
+        330.0,
+        12.0,
+        180.0
+      ],
+      "color": "25353d"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/upright",
+      "center_mm": [
+        2200.0,
+        2200.0,
+        1200.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        2400.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/upright",
+      "center_mm": [
+        2200.0,
+        2800.0,
+        1200.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        2400.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/upright",
+      "center_mm": [
+        3800.0,
+        2200.0,
+        1200.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        2400.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/upright",
+      "center_mm": [
+        3800.0,
+        2800.0,
+        1200.0
+      ],
+      "size_mm": [
+        65.0,
+        65.0,
+        2400.0
+      ],
+      "color": "626c76"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/shelf",
+      "center_mm": [
+        3000.0,
+        2500.0,
+        200.0
+      ],
+      "size_mm": [
+        1600.0,
+        600.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/crate",
+      "center_mm": [
+        2520.0,
+        2500.0,
+        440.0
+      ],
+      "size_mm": [
+        560.0,
+        450.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/crate",
+      "center_mm": [
+        3320.0,
+        2500.0,
+        440.0
+      ],
+      "size_mm": [
+        560.0,
+        450.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/shelf",
+      "center_mm": [
+        3000.0,
+        2500.0,
+        900.0
+      ],
+      "size_mm": [
+        1600.0,
+        600.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/crate",
+      "center_mm": [
+        2520.0,
+        2500.0,
+        1140.0
+      ],
+      "size_mm": [
+        560.0,
+        450.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/crate",
+      "center_mm": [
+        3320.0,
+        2500.0,
+        1140.0
+      ],
+      "size_mm": [
+        560.0,
+        450.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/shelf",
+      "center_mm": [
+        3000.0,
+        2500.0,
+        1600.0
+      ],
+      "size_mm": [
+        1600.0,
+        600.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/crate",
+      "center_mm": [
+        2520.0,
+        2500.0,
+        1840.0
+      ],
+      "size_mm": [
+        560.0,
+        450.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/crate",
+      "center_mm": [
+        3320.0,
+        2500.0,
+        1840.0
+      ],
+      "size_mm": [
+        560.0,
+        450.0,
+        400.0
+      ],
+      "color": "a08764"
+    },
+    {
+      "type": "box",
+      "name": "Parts storage/shelf",
+      "center_mm": [
+        3000.0,
+        2500.0,
+        2300.0
+      ],
+      "size_mm": [
+        1600.0,
+        600.0,
+        55.0
+      ],
+      "color": "a0a5a7"
+    },
+    {
+      "type": "box",
+      "name": "Machine base",
+      "center_mm": [
+        1500.0,
+        -1500.0,
+        700.0
+      ],
+      "size_mm": [
+        1800.0,
+        1300.0,
+        1400.0
+      ],
+      "color": "6b737c"
+    },
+    {
+      "type": "box",
+      "name": "Machine column",
+      "center_mm": [
+        650.0,
+        -1500.0,
+        2000.0
+      ],
+      "size_mm": [
+        120.0,
+        1300.0,
+        1200.0
+      ],
+      "color": "565f68"
+    },
+    {
+      "type": "box",
+      "name": "Machine column",
+      "center_mm": [
+        2350.0,
+        -1500.0,
+        2000.0
+      ],
+      "size_mm": [
+        120.0,
+        1300.0,
+        1200.0
+      ],
+      "color": "565f68"
+    },
+    {
+      "type": "box",
+      "name": "Machine top",
+      "center_mm": [
+        1500.0,
+        -1500.0,
+        2600.0
+      ],
+      "size_mm": [
+        1800.0,
+        1300.0,
+        120.0
+      ],
+      "color": "8b959e"
+    },
+    {
+      "type": "box",
+      "name": "Machine bed",
+      "center_mm": [
+        1500.0,
+        -1500.0,
+        1500.0
+      ],
+      "size_mm": [
+        1500.0,
+        1050.0,
+        100.0
+      ],
+      "color": "c1c4c2"
+    },
+    {
+      "type": "box",
+      "name": "Optical breadboard/top",
+      "center_mm": [
+        0.0,
+        -1200.0,
+        850.0
+      ],
+      "size_mm": [
+        2200.0,
+        1000.0,
+        45.0
+      ],
+      "color": "252a30"
+    },
+    {
+      "type": "box",
+      "name": "Optical breadboard/leg",
+      "center_mm": [
+        -946.0,
+        -1560.0,
+        425.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        850.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Optical breadboard/leg",
+      "center_mm": [
+        -946.0,
+        -840.0,
+        425.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        850.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Optical breadboard/leg",
+      "center_mm": [
+        946.0,
+        -1560.0,
+        425.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        850.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Optical breadboard/leg",
+      "center_mm": [
+        946.0,
+        -840.0,
+        425.0
+      ],
+      "size_mm": [
+        55.0,
+        55.0,
+        850.0
+      ],
+      "color": "555b60"
+    },
+    {
+      "type": "box",
+      "name": "Optical holder",
+      "center_mm": [
+        -700.0,
+        -1200.0,
+        1200.0
+      ],
+      "size_mm": [
+        200.0,
+        80.0,
+        230.0
+      ],
+      "color": "3e4854"
+    },
+    {
+      "type": "box",
+      "name": "Optical holder",
+      "center_mm": [
+        -350.0,
+        -1200.0,
+        1200.0
+      ],
+      "size_mm": [
+        200.0,
+        80.0,
+        230.0
+      ],
+      "color": "3e4854"
+    },
+    {
+      "type": "box",
+      "name": "Optical holder",
+      "center_mm": [
+        0.0,
+        -1200.0,
+        1200.0
+      ],
+      "size_mm": [
+        200.0,
+        80.0,
+        230.0
+      ],
+      "color": "3e4854"
+    },
+    {
+      "type": "box",
+      "name": "Optical holder",
+      "center_mm": [
+        350.0,
+        -1200.0,
+        1200.0
+      ],
+      "size_mm": [
+        200.0,
+        80.0,
+        230.0
+      ],
+      "color": "3e4854"
+    },
+    {
+      "type": "box",
+      "name": "Optical holder",
+      "center_mm": [
+        700.0,
+        -1200.0,
+        1200.0
+      ],
+      "size_mm": [
+        200.0,
+        80.0,
+        230.0
+      ],
+      "color": "3e4854"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 55,
+    "triangles": 760,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 6000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

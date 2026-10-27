@@ -1,0 +1,182 @@
+{
+  "id": "MAT-127",
+  "name": "Wood veneer over board",
+  "family": "Engineered wood and paper",
+  "version": "1.0.0-local",
+  "seed": 7205713,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.3490670340469174,
+    0.2355268416652944,
+    0.10447073068424437
+  ],
+  "base_linear_high": [
+    0.6436145993093122,
+    0.436869771390536,
+    0.19823028572354942
+  ],
+  "roughness": 0.656,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    120,
+    120
+  ],
+  "cycles_u": 14,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-127",
+    "name": "Wood veneer over board",
+    "family": "Engineered wood and paper",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "packaging"
+    ],
+    "description": "A thin real-wood-like face conceals a different core.",
+    "use_cases": [
+      "Furniture",
+      "interiors"
+    ],
+    "optical_model": "Layered or fibrous dielectric construction with independent face, core and edge treatments.",
+    "controls": [
+      "layer structure",
+      "fibre scale",
+      "surface finish",
+      "veneer matching",
+      "sheet direction"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use actual sheet layout and expose substrate only where designed.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Bookmatching and edge conditions must agree with the cutting layout.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "3c5c1e04469d5d9243981459b929dae78731db7fbff4a3192d67c6c9ed5ffcac",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "31a7792281799c1b33fe23bb054773d18efa1eb08f213063668d711d560325da",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "3c157ebbd346a67bb62bb29f6df2d66cd614753eb69de00fecef643070c3c809",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "adcf6fe0b44804a5b95c7d523739ecd49f002bcf85c8018c26a800f6881294c8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "32652c85f23b228a6a849b58d1d549c3154912fd66263d25fc9caaa8aaa9e52b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ec985962c641cc5058ddb5b770a8cfc8664d87a6686b10cc69dc227766b8fb0f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "3aa8b4271afd8db44b72d1c549e6d7c54abd9da98b81b3e29758a4009cfdee54",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "105ecd08191fce1b5bfd22812df39d9f1e8944953889113b062d8b9f73d7ca2e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

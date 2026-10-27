@@ -1,0 +1,183 @@
+{
+  "id": "MAT-467",
+  "name": "Optical silicone with diagnostic voids",
+  "family": "LED lenses reflectors and optical hardware",
+  "version": "1.0.0-local",
+  "seed": 9898173,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.4458094898491223,
+    0.5249703203225496,
+    0.5619953378662959
+  ],
+  "base_linear_high": [
+    0.819772503904372,
+    0.9639161056619561,
+    1.0
+  ],
+  "roughness": 0.156,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.41,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-467",
+    "name": "Optical silicone with diagnostic voids",
+    "family": "LED lenses reflectors and optical hardware",
+    "domains": [
+      "LED lighting",
+      "automotive",
+      "electronics"
+    ],
+    "description": "A clear body contains deliberately authored internal void regions.",
+    "use_cases": [
+      "Encapsulation illustrations"
+    ],
+    "optical_model": "Geometric-optics components with separate dielectric lenses, conductor reflectors and absorbing baffles.",
+    "controls": [
+      "surface roughness",
+      "optical geometry",
+      "region masks",
+      "void size",
+      "absorption"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use exact authored void geometry in close views.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-103"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Treat voids as illustrative, not a diagnosis of a real component.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c555f38764b1880aa3547e956439e9004a249f6eed5b57d668667a929e928c89",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "015be887b694956138bc117c0241d3bbda4e07b3128a18254207abadc44e1eeb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "0020a1f73054be94ae392c0cbb86f66be744d6839f65038a38b5ab7df6942678",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "9667d2644c46ff0e2e748deb4db27719c289ca40707338fdc9dcdec5df40016e",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "7e87f8cf06db60ceb942503aba2294a9a31d6b1010147559e91c9a3de1ed3dec",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "ba83e10a165bff9da8a2593cedec0ea308ec6c727626fdbd323e5bb0d5f8ddd1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "28c132d9ae2615a1812ff4c6a6be5663933f3e4f2a241d2f119dc4bdbe39c2ca",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f1fddfdbfbf750fea326d4f016bbac43cfb495155fc93339a9f6b50091ba2324",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

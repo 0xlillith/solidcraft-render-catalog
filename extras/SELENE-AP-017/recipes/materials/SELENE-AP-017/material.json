@@ -1,0 +1,109 @@
+{
+  "id": "SELENE-AP-017",
+  "name": "Composite arm tube surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-017",
+    "name": "Composite arm tube surrogate",
+    "source_catalog_ids": [
+      "MAT-571"
+    ],
+    "family": "Aerospace composites",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "robotics"
+    ],
+    "purpose": "A dark resin-surface preview for a composite arm tube.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-017 Composite arm tube surrogate",
+        "color": "#252a2e",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.42,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Woven reinforcement",
+        "Resin layer",
+        "Directional highlights",
+        "Cut-edge structure"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Dielectric resin over directional reinforcement, with independently modeled cut ends.",
+      "structure": [
+        "Resin surface",
+        "Directional reinforcement",
+        "Cut-edge composite section"
+      ],
+      "authoring_controls": [
+        {
+          "id": "weave_repeat",
+          "value": 4.0,
+          "unit": "mm",
+          "meaning": "Illustrative twill-scale repeat for a future procedural pattern.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "weave_relief",
+          "value": 0.06,
+          "unit": "mm",
+          "meaning": "Authored weave relief beneath the resin finish.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "fiber_angle",
+          "value": 0.0,
+          "unit": "rad",
+          "meaning": "Reinforcement direction relative to the tube axis.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use cylindrical mapping that follows the arm tube",
+        "Keep end-cut structure distinct from the outer skin"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-020",
+        "CAP-021",
+        "CAP-033",
+        "CAP-034",
+        "CAP-035",
+        "CAP-104"
+      ],
+      "unknown_optical_inputs": [
+        "Resin optical constants",
+        "Effective directional reinforcement response"
+      ],
+      "validation_criteria": [
+        "The weave must track arm motion and wrap continuously around the tube",
+        "Appearance must not assign laminate stiffness"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#252a2e",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.42,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-017 Composite arm tube surrogate",
+    "bodies": [
+      "SELENE-AP-017"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

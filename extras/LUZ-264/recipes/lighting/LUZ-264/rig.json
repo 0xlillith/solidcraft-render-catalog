@@ -1,0 +1,107 @@
+{
+  "id": "LUZ-264",
+  "name": "Lunar occluded sunlight",
+  "family": "27 Physical lunar surface lighting",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-264",
+    "name": "Lunar occluded sunlight",
+    "family": "27 Physical lunar surface lighting",
+    "domains": [
+      "lunar",
+      "spacecraft",
+      "physical_study"
+    ],
+    "description": "A proposed lighting arrangement for hardware behind a lander or terrain obstruction.",
+    "use_cases": [
+      "Hardware behind a lander or terrain obstruction"
+    ],
+    "sources": "Existing single sun and passive surrounding geometry",
+    "geometry": "Real occluder and receiving surface are required",
+    "contribution_policy": "No rig fill; only valid reflected paths illuminate shadow",
+    "controls": [
+      "Sun-ownership verification",
+      "target-region selection"
+    ],
+    "authoring_method": "Original lunar authoring concept. Solar directions and relative contributions are illustrative inputs, not site ephemerides or measured lunar photometry. No atmospheric sky, haze or automatic ambient fill is permitted in physical mode.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011",
+      "CAP-006"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Shadow detail is not rescued with hidden ambient illumination"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1137352,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        -0.15187611829634035,
+        0.8613322685281437,
+        0.48480962024633706
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    }
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    }
+  ],
+  "limitations": [
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

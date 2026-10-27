@@ -1,0 +1,44 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-132 Grazing facade sun",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 933676,
+            "lighting": {
+              "environment": [
+                0.16,
+                0.23,
+                0.38
+              ],
+              "area_lights": [],
+              "sun": {
+                "direction": [
+                  0.7714226649462228,
+                  0.581308673511317,
+                  0.25881904510252074
+                ],
+                "angular_radius_rad": 0.00465,
+                "radiance": [
+                  10000.0,
+                  10000.0,
+                  10000.0
+                ]
+              }
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

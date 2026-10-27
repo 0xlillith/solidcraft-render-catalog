@@ -1,0 +1,191 @@
+{
+  "id": "MAT-548",
+  "name": "Dust-veiled highland rock",
+  "family": "Lunar highland-style rocks and ground concepts",
+  "version": "1.0.0-local",
+  "seed": 10539612,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.21650595010567703,
+    0.21037243796173077,
+    0.1925853612770347
+  ],
+  "base_linear_high": [
+    0.4022347151177999,
+    0.3910662303183754,
+    0.35867782202683934
+  ],
+  "roughness": 0.984,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.3,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-548",
+    "name": "Dust-veiled highland rock",
+    "family": "Lunar highland-style rocks and ground concepts",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "A granular surface layer partly obscures an underlying fractured block.",
+    "use_cases": [
+      "Lunar sample presentation"
+    ],
+    "optical_model": "Conceptual granular or fractured dielectric rock appearance; site, mineral proportions and optical constants remain unspecified.",
+    "controls": [
+      "fragment distribution",
+      "matrix structure",
+      "surface relief",
+      "dust coverage",
+      "sheltered regions"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep dust and rock independently editable.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-044",
+      "CAP-097"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "The dust layer must not replace the rock's geometry or composition label.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "24ab2fdf07b658b133c9fd5363fdd4056b151dae45321b23b16f8a9ba8baf1e3",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "221f0f92235916e31bdc90e3653848cfc0fb5f36d043a30ed9689f54d33e470f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "f461ee0b5bd8e9767df3db9059e27d86b1dac7bbbcd54efa0e6329bac0eecea1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "21f14bf2e1382787edab3a5841125343d0a30352d576ef8b312e02339bf2eb89",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b87154693f5cfffbbe1541ed4acd320103a2ed42780121c8bbb2bfafee74c044",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "e943ae29755faffc8777ae26d03f15ea3d7c303ce6b09e447744734462088060",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "5be1e7272764c34b225e8ca89459292a6fec78a22f82b1c348868d44fc7b402a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "9de97be602b5495057f97f15d69c34acafb92b4bc1ac4ee1c3e3963a5b301374",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ddc70607fcfa0f32e1bb19216c024a7e331c759c01b9e018712215d0a356e45e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

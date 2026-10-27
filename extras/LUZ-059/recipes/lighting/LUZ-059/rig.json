@@ -1,0 +1,91 @@
+{
+  "id": "LUZ-059",
+  "name": "Sintered granular surface",
+  "family": "06 Plastics and matte finishes",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-059",
+    "name": "Sintered granular surface",
+    "family": "06 Plastics and matte finishes",
+    "domains": [
+      "product",
+      "manufacturing"
+    ],
+    "description": "A proposed lighting arrangement for sLS parts and sandy finishes.",
+    "use_cases": [
+      "SLS parts and sandy finishes"
+    ],
+    "sources": "Medium K and low accent",
+    "geometry": "Accent about 10 degrees to surface; K near 45 degrees",
+    "contribution_policy": "K 0 and accent -1.5 reference EV",
+    "controls": [
+      "Grain-revealing accent angle",
+      "key size",
+      "source balance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-033",
+      "CAP-035"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Grain remains distinct from sampling noise"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 821037,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1350.0,
+          -1400.0,
+          1200.0
+        ],
+        "u": [
+          -431.9065772524111,
+          416.4813423505392,
+          0.0
+        ],
+        "v": [
+          291.59247279693346,
+          302.39219401163473,
+          680.832424910124
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

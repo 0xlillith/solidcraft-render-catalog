@@ -1,0 +1,115 @@
+{
+  "id": "LUZ-198",
+  "name": "Angle-swept iridescent film",
+  "family": "20 Specialized physical scenes",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-198",
+    "name": "Angle-swept iridescent film",
+    "family": "20 Specialized physical scenes",
+    "domains": [
+      "research",
+      "optics"
+    ],
+    "description": "A proposed lighting arrangement for thin-film coatings.",
+    "use_cases": [
+      "Thin-film coatings"
+    ],
+    "sources": "Neutral fixed area with existing sample motion",
+    "geometry": "Incidence recorded; film thickness remains material-owned",
+    "contribution_policy": "Fixed source and camera exposure",
+    "controls": [
+      "Incidence angle",
+      "source size",
+      "contribution",
+      "inspect film and spectral model separately"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-031"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Label RGB approximation and do not claim validated spectral accuracy"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1035514,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1200.0,
+          -1200.0,
+          1100.0
+        ],
+        "u": [
+          -176.7766952966369,
+          176.7766952966369,
+          0.0
+        ],
+        "v": [
+          96.15149517532153,
+          96.15149517532153,
+          209.7850803825197
+        ],
+        "radiance": [
+          12,
+          12,
+          12
+        ]
+      },
+      {
+        "center": [
+          1400.0,
+          -500.0,
+          1000.0
+        ],
+        "u": [
+          -201.80183819889373,
+          -565.0451469569025,
+          0.0
+        ],
+        "v": [
+          -341.65890076408255,
+          122.02103598717233,
+          539.3329790633019
+        ],
+        "radiance": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Specialized optical/volume intent remains dependent on matching scene media and geometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

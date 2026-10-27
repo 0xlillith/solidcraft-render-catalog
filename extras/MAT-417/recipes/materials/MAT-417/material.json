@@ -1,0 +1,182 @@
+{
+  "id": "MAT-417",
+  "name": "Dovetail-joint material assignment",
+  "family": "Wood cuts joinery and assembled patterns",
+  "version": "1.0.0-local",
+  "seed": 9502223,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.27640355103421554,
+    0.16495488889424978,
+    0.05939924281146788
+  ],
+  "base_linear_high": [
+    0.5113019884503626,
+    0.30836561858355926,
+    0.116159815268643
+  ],
+  "roughness": 0.536,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 14,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-417",
+    "name": "Dovetail-joint material assignment",
+    "family": "Wood cuts joinery and assembled patterns",
+    "domains": [
+      "woodworking",
+      "DIY"
+    ],
+    "description": "Separate boards preserve grain and exposed end sections at a joint.",
+    "use_cases": [
+      "Drawer concepts",
+      "furniture"
+    ],
+    "optical_model": "Geometry-aware wood construction recipe that assigns grain to separate boards, laminations and exposed joints.",
+    "controls": [
+      "board layout",
+      "grain orientation",
+      "finish roughness",
+      "board grain",
+      "end-grain contrast"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Assign appearance by the actual joined parts.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Exposed pins and tails must show the correct board's grain.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "990161c239df836f5058674f49c82d297a9ce2bded7c29c75719bbe72ca378b6",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "85cf5caeb9d36cb92c70d43d4d1fc6747334e2d9341bb0d31f595e33acc6d5e7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "64a998e8e67f57bc322bf148202ff590600b58956ecf078bbbc096e75a05ef56",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "361a9dc7f419e21692327924842829fc7083701b95cbd88becd67084d56d90f8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "69fcb98b9ebfc72c6b29a41972a066e2f1eb3eee0f630cda335502f29f62e64d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "0cd91cd3dea43623d948d81b5e9b63d633d8ffcf86dbfbeff651d8b09b6d5286",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "1f28a368d119fd0883da234081e3b226275d346c035eace08a5de8c2169894c8",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "bf94399662353210b729b0c49954eaa0422d3af4f7254b703b2e1482769af74e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

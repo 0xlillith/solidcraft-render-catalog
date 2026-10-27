@@ -1,0 +1,100 @@
+{
+  "id": "SELENE-AP-032",
+  "name": "Threaded metal closure cap",
+  "original_specification": {
+    "id": "SELENE-AP-032",
+    "name": "Threaded metal closure cap",
+    "source_catalog_ids": [
+      "MAT-596"
+    ],
+    "family": "Sample containment closures",
+    "domains": [
+      "SELENE",
+      "laboratory",
+      "industrial"
+    ],
+    "purpose": "A conductor preview for a modeled threaded cap, with no inferred sealing performance.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-032 Threaded metal closure cap",
+        "color": "#b6bcc3",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.31,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Thread generation",
+        "Anisotropy",
+        "Gasket response",
+        "Wear and sealing behavior"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque conductor with turning marks and explicit threads, gaskets and seating surfaces.",
+      "structure": [
+        "Conductor cap",
+        "Separately assigned sealing ring",
+        "Optional localized handling wear"
+      ],
+      "authoring_controls": [
+        {
+          "id": "turning_pitch",
+          "value": 0.4,
+          "unit": "mm",
+          "meaning": "Illustrative face-toolmark spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "turning_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Render-only turning relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Retain threads as engineering or render geometry",
+        "Keep cap and seal as separately targetable parts"
+      ],
+      "capability_requirements": [
+        "CAP-020",
+        "CAP-033",
+        "CAP-035",
+        "CAP-039",
+        "CAP-097"
+      ],
+      "unknown_optical_inputs": [
+        "Substrate optical constants",
+        "Evidence for any real wear pattern"
+      ],
+      "validation_criteria": [
+        "Style changes must not alter thread pitch or cap motion",
+        "The closure must not be described as leak-tight based on appearance"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#b6bcc3",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.31,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-032 Threaded metal closure cap",
+    "bodies": [
+      "SELENE-AP-032"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

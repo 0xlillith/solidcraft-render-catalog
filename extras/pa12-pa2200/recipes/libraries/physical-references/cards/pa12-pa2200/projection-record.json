@@ -1,0 +1,83 @@
+{
+  "profile_id": "pa12-pa2200",
+  "card": {
+    "schema_version": 1,
+    "designation": "EOS PA 2200 - laser-sintered part reference",
+    "family": "polymer",
+    "sources": [
+      {
+        "id": "eos-pa2200",
+        "title": "EOS PA 2200 PA12 reference",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.eos.info/polymer-solutions/polymer-materials/biocompatible"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 930.0
+        },
+        "source_id": "eos-pa2200",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Manufacturer process-specific PA12 reference; machine/process set, moisture, build direction and porosity must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "tensile_strength",
+          "pa": 48000000.0
+        },
+        "source_id": "eos-pa2200",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Manufacturer process-specific PA12 reference; machine/process set, moisture, build direction and porosity must be selected. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density",
+    "tensile_strength"
+  ],
+  "not_projected": [
+    {
+      "id": "young_modulus",
+      "quantity": "young_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "elongation_break",
+      "quantity": "elongation_break",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hdt-1.8mpa",
+      "quantity": "heat_deflection",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hdt-0.45mpa",
+      "quantity": "heat_deflection",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

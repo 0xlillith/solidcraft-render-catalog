@@ -1,0 +1,97 @@
+{
+  "id": "SELENE-AP-002",
+  "name": "White thermal-coating preview",
+  "original_specification": {
+    "id": "SELENE-AP-002",
+    "name": "White thermal-coating preview",
+    "source_catalog_ids": [
+      "MAT-491"
+    ],
+    "family": "Aerospace coatings",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "space"
+    ],
+    "purpose": "An original white outer-surface appearance for thermal-control design presentations.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-002 White thermal-coating preview",
+        "color": "#d9dde0",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.58,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Coating microstructure",
+        "Measured visible reflectance",
+        "Thermal behavior"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque scattering inorganic coating over an independently specified substrate.",
+      "structure": [
+        "Scattering dielectric coating",
+        "Underlying metal or composite assigned independently"
+      ],
+      "authoring_controls": [
+        {
+          "id": "surface_grain_pitch",
+          "value": 0.18,
+          "unit": "mm",
+          "meaning": "Illustrative visual grain spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "surface_grain_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Small render-only grain relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use stable object-local scale",
+        "Do not derive temperature or thermal emissivity from visible color"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-028",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Measured coating reflectance",
+        "Scattering data if volume scattering is required"
+      ],
+      "validation_criteria": [
+        "The surface should preserve broad white highlights without claiming perfect reflectance",
+        "Visible color must not populate thermal-property fields"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#d9dde0",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.58,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-002 White thermal-coating preview",
+    "bodies": [
+      "SELENE-AP-002"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

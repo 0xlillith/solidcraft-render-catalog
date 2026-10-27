@@ -1,0 +1,95 @@
+{
+  "id": "LUZ-267",
+  "name": "Lunar night with onboard task lights",
+  "family": "27 Physical lunar surface lighting",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-267",
+    "name": "Lunar night with onboard task lights",
+    "family": "27 Physical lunar surface lighting",
+    "domains": [
+      "lunar",
+      "spacecraft",
+      "physical_study"
+    ],
+    "description": "A proposed lighting arrangement for night operations with actual vehicle fixtures.",
+    "use_cases": [
+      "Night operations with actual vehicle fixtures"
+    ],
+    "sources": "Declared onboard finite emitters only; no sun",
+    "geometry": "Sources tied to real fixture mounts and transforms",
+    "contribution_policy": "Reference ratios until actual fixture photometry is supplied",
+    "controls": [
+      "Fixture contribution",
+      "beam direction",
+      "mount binding"
+    ],
+    "authoring_method": "Original lunar authoring concept. Solar directions and relative contributions are illustrative inputs, not site ephemerides or measured lunar photometry. No atmospheric sky, haze or automatic ambient fill is permitted in physical mode.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-010"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "No atmospheric ambient",
+      "acknowledge unspecified photometry"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1141981,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          -700.0,
+          400.0
+        ],
+        "u": [
+          -30.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          9.922778767136677,
+          17.364862842489185
+        ],
+        "radiance": [
+          40,
+          40,
+          40
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

@@ -1,0 +1,112 @@
+{
+  "id": "LUZ-178",
+  "name": "Product between luminous panels",
+  "family": "18 Dramatic presentation",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-178",
+    "name": "Product between luminous panels",
+    "family": "18 Dramatic presentation",
+    "domains": [
+      "product",
+      "editorial"
+    ],
+    "description": "A proposed lighting arrangement for display compositions.",
+    "use_cases": [
+      "Display compositions"
+    ],
+    "sources": "Two visible emissive panels and optional K",
+    "geometry": "Panels beside product with real clearance",
+    "contribution_policy": "Panels 0/-0.5 and K -2 reference EV",
+    "controls": [
+      "Panel separation",
+      "source contribution",
+      "emitter color"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-013"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Visible panel and analytical light share one energy owner"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1004654,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1300.0,
+          300.0,
+          600.0
+        ],
+        "u": [
+          22.485950669875844,
+          97.439119569462,
+          0.0
+        ],
+        "v": [
+          359.68325874853156,
+          -83.00382894196882,
+          820.8156417594693
+        ],
+        "radiance": [
+          16,
+          16,
+          16
+        ]
+      },
+      {
+        "center": [
+          1400.0,
+          500.0,
+          300.0
+        ],
+        "u": [
+          42.04204962476953,
+          -117.71773894935468,
+          0.0
+        ],
+        "v": [
+          -149.03189459617377,
+          -53.22567664149064,
+          784.1916358512952
+        ],
+        "radiance": [
+          9,
+          9,
+          9
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

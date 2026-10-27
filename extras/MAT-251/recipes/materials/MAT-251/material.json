@@ -1,0 +1,180 @@
+{
+  "id": "MAT-251",
+  "name": "Slush-moulded dashboard skin",
+  "family": "Automotive cabin and soft trim",
+  "version": "1.0.0-local",
+  "seed": 8187669,
+  "pattern": "leather",
+  "base_linear_low": [
+    0.028348645115942483,
+    0.023007670561817056,
+    0.020578007301105736
+  ],
+  "base_linear_high": [
+    0.0596199209573878,
+    0.04989456430659225,
+    0.04547040135425223
+  ],
+  "roughness": 0.7080000000000001,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-251",
+    "name": "Slush-moulded dashboard skin",
+    "family": "Automotive cabin and soft trim",
+    "domains": [
+      "automotive",
+      "CAD product"
+    ],
+    "description": "Embossed flexible-looking skin covers broad formed panels.",
+    "use_cases": [
+      "Dashboard concepts"
+    ],
+    "optical_model": "Layered soft-trim materials with distinct embossed skins, textile structures and backing regions.",
+    "controls": [
+      "surface grain",
+      "sheen",
+      "panel orientation",
+      "emboss scale",
+      "gloss variation"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve grain scale across curved panel regions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-022",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Grain must follow forming without becoming stretched beyond the chosen model.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "71bd5e2c674a3d5611d01ce04d689c6435f31bb7af3bc5eda31771a93cd4cc9f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "37162cff9a7786e0675344fb44080bd94d22080818ede27d31d73f46429d5876",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "c6efe4565265bdf2a832368d03d408bda1fc0ab75327347baa905f176a1b9ccb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "623c8e5377923aa8eef8e337d052fa3d895db8292b8d9793a1e081eb0c51e810",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f56d0b86db68b3bfe03ac989d0c82722fe9efd454ec71c259b28516c11265f76",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "01be05c9320513e94975aaa6978060d382e94b1c7410ac2ef20449e1d272222c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "6ad5ee69911654df66fff59be9fccdb9b2ab2c1d926a3bdfb4c44f49412ab5cf",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "39aeb745d6aa8606223bc2e27a9b55f93f3f00e6f5bc7c05fa43f8163d748856",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

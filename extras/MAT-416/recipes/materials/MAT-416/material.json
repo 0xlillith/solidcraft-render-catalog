@@ -1,0 +1,182 @@
+{
+  "id": "MAT-416",
+  "name": "Finger-jointed timber edge",
+  "family": "Wood cuts joinery and assembled patterns",
+  "version": "1.0.0-local",
+  "seed": 9494304,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.27640355103421554,
+    0.16495488889424978,
+    0.05939924281146788
+  ],
+  "base_linear_high": [
+    0.5113019884503626,
+    0.30836561858355926,
+    0.116159815268643
+  ],
+  "roughness": 0.518,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 13,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-416",
+    "name": "Finger-jointed timber edge",
+    "family": "Wood cuts joinery and assembled patterns",
+    "domains": [
+      "woodworking",
+      "DIY"
+    ],
+    "description": "Interlocking end joints expose changing grain directions.",
+    "use_cases": [
+      "DIY stock",
+      "joinery"
+    ],
+    "optical_model": "Geometry-aware wood construction recipe that assigns grain to separate boards, laminations and exposed joints.",
+    "controls": [
+      "board layout",
+      "grain orientation",
+      "finish roughness",
+      "joint masks",
+      "grain assignment"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use CAD joint geometry and per-piece grain coordinates.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Surface texturing must not create imaginary joint teeth.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "0aea72e1c066ad1423e4cf1a3deb6a14739844ff55a1f15e7e2bc729e7c3c476",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e1ccab4d775fb609e5007a31cf88bdcefbae4a89b7894eb69a09c487f612e25c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "33ede7298fba82c95ae93a2929a647981d95c252b83d55bd1a145da37b5ca11f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b53062d9d74f049e4399ce76473afdca5a8a0e7dce0abb92f1b7e5647cb4d51a",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "658336709fe11445e79f66510af5736862149dd86d1c92e6a301aae790e34df7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "abb0f48ec87d4471a9501654ff0e169f22bd29569b234fd617c5d33b7e297de1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "739afb98b1656c65497457f15850e17e6b21159f99fa68b8700e0032c3289e8b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "669a8f231aac27678ea7db9e0c0f8468adc83964b804e670af2bcb2b4d692f92",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

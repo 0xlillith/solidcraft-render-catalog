@@ -1,0 +1,100 @@
+{
+  "id": "SELENE-AP-035",
+  "name": "Exposed glass-epoxy board edge",
+  "original_specification": {
+    "id": "SELENE-AP-035",
+    "name": "Exposed glass-epoxy board edge",
+    "source_catalog_ids": [
+      "MAT-162"
+    ],
+    "family": "Circuit-board sections",
+    "domains": [
+      "electronics",
+      "industrial",
+      "LED lighting"
+    ],
+    "purpose": "A muted laminate-edge preview for cut circuit-board sections.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-035 Exposed glass-epoxy board edge",
+        "color": "#9b9270",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.77,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Fiber section structure",
+        "Layer interfaces",
+        "Copper-plane detail"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Dielectric resin and exposed glass-fiber structure with a section-specific orientation.",
+      "structure": [
+        "Resin binder",
+        "Exposed glass-fiber section",
+        "Independent copper planes when present"
+      ],
+      "authoring_controls": [
+        {
+          "id": "weave_repeat",
+          "value": 0.8,
+          "unit": "mm",
+          "meaning": "Illustrative visible laminate structure repeat.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "edge_fiber_relief",
+          "value": 0.025,
+          "unit": "mm",
+          "meaning": "Authored cut-edge relief for close views.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use section-local fiber orientation",
+        "Keep conductor planes as separate regions"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-028",
+        "CAP-033",
+        "CAP-035",
+        "CAP-036",
+        "CAP-104"
+      ],
+      "unknown_optical_inputs": [
+        "Resin and glass optical properties",
+        "Actual laminate layup"
+      ],
+      "validation_criteria": [
+        "Board faces and cut edges must not share the same planar texture",
+        "Visual laminate does not define electrical or mechanical properties"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#9b9270",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.77,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-035 Exposed glass-epoxy board edge",
+    "bodies": [
+      "SELENE-AP-035"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

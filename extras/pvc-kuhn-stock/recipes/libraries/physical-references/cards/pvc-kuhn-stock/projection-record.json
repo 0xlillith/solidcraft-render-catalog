@@ -1,0 +1,98 @@
+{
+  "profile_id": "pvc-kuhn-stock",
+  "card": {
+    "schema_version": 1,
+    "designation": "PVC stock - Kuhn supplier reference",
+    "family": "polymer",
+    "sources": [
+      {
+        "id": "kuhn-pvc-stock",
+        "title": "Kuhn PVC stock-material reference",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.kuhn-marsberg.de/en/product/PVC/"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 1400.0
+        },
+        "source_id": "kuhn-pvc-stock",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Kuhn PVC stock material; not plasticized PVC, foam PVC or an identified wire-jacket formulation. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"ISO 1183-1\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_conductivity",
+          "w_m_k": [
+            0.159,
+            0.159,
+            0.159
+          ],
+          "axes": "material123"
+        },
+        "source_id": "kuhn-pvc-stock",
+        "conditions": {
+          "temperature_k": 296.15,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Kuhn PVC stock material; not plasticized PVC, foam PVC or an identified wire-jacket formulation. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density",
+    "thermal_conductivity"
+  ],
+  "not_projected": [
+    {
+      "id": "volume_resistivity",
+      "quantity": "volume_resistivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "dielectric_strength",
+      "quantity": "dielectric_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "permittivity-100",
+      "quantity": "relative_permittivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "loss-100",
+      "quantity": "loss_tangent",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "permittivity-1000000",
+      "quantity": "relative_permittivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "loss-1000000",
+      "quantity": "loss_tangent",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "tensile_strength",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}
