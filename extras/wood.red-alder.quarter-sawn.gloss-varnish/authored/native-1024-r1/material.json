@@ -1,0 +1,106 @@
+{
+  "id": "wood.red-alder.quarter-sawn.gloss-varnish",
+  "name": "Red alder / quarter-sawn / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "red-alder/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "bf73dff5d818a6b123e81e6de95dd0469fbf99a126e6f3bb3da199bd2bdea37a",
+    "normal_opengl": "62a23b2138ce5bdc7255c040994001f5603a951dce3a63e696cc2d15e70018a0",
+    "roughness": "10fa52408387a983c0e97af729f7ad22c9b39a79a67a389833b966ca02960eb1"
+  },
+  "physical_profile_id": "wood.usda2021.red-alder",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "b37c1d38fc62c8c49a72fedf0ea97ae6863ec8ed940ceb0b6bfa1b73100bce81",
+      "bytes": 869319,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "aeec5681b9fb49f7338660dddc120e79d33ea90c68c1770a1acf077391c63249",
+      "bytes": 355639,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "31f8d9e39a9e3a6fe08f1b886457a47317b9f3d09674e375e6a9ec1b379383df",
+      "bytes": 355474,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "87a6dd7e99ff6ade16fba90593540b58b997952cd34c0560fd85bcf3f45daf95",
+      "bytes": 165801,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "0fe52a908d8f2f29cf181816ea762594ca1d2dce91a992cadef830b345a38495",
+      "bytes": 219592,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "41e409ba1239b3260dd1398d338dfd1c7e24a696f69571abe7388be9c0e240f2",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.red-alder.quarter-sawn.gloss-varnish"
+}

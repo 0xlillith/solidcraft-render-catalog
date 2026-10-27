@@ -1,0 +1,106 @@
+{
+  "id": "wood.western-redcedar.end-grain.gloss-varnish",
+  "name": "Western redcedar / end-grain / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "western-redcedar/end-grain",
+  "source_file_sha256": {
+    "base_color": "a2c1e18abc819b6f6ccfe28d39a8920a764f657ddb08d9fe1c1510231daf7ec8",
+    "normal_opengl": "06fbdd2fce42e71944c59b5aa081d85659477940ed9485075a29ee78222c3d47",
+    "roughness": "46df4b3fb04198a5b62af08caa3eb2f2de44ea3691ba8100cedf80b64ecd9b0e"
+  },
+  "physical_profile_id": "wood.usda2021.western-redcedar",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "b7121871d27c62bcc53a780f7e88c3a029917dc6845c651ac97f1fd9e849e515",
+      "bytes": 1206218,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "247e456b81af27507c3de7184730f59775e0b82c62c2db5cd2467f9bb62e9581",
+      "bytes": 529657,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "9983dd7216f0fd7aa0ef128ea8a9e0fdbd8b5c0c61be6cc19f78e1de7869b222",
+      "bytes": 529748,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "4537b8a2158f4eb77f51edc0a0640f215b591edaf7999d5879946cc5397bb31a",
+      "bytes": 252344,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "abea9f1fee00657ca6cefc221a7a39424e800803e47c3c1ce44f6788df608b62",
+      "bytes": 331859,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "0e17e166f41f891a934dd859a52c239980d979e422cccdddbebe77ef1d3355fc",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.western-redcedar.end-grain.gloss-varnish"
+}

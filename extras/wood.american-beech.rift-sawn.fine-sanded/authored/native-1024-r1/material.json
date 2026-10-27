@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-beech.rift-sawn.fine-sanded",
+  "name": "American beech / rift-sawn / Fine-sanded",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-beech/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "d4b9c0823054def45bff8663cfe3c903d101742131ca07501c42b9bea4c32ebb",
+    "normal_opengl": "96645205ef55f3271f4ac82f311ca0a159841185485c7e30668ff76386d1dff6",
+    "roughness": "c5915117e84d046a587119a5964f6ea1a8ca3d2ac842f82207325d6517a79737"
+  },
+  "physical_profile_id": "wood.usda2021.american-beech",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "fbd1235654040babbfef6ce2159d50d64b3eb1260dfadae33ce072cecca87eb8",
+      "bytes": 879727,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "027c468c6641377acf8e4e573011f6d6c777e6a53a9edbb2ac3de81702754d06",
+      "bytes": 606525,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "6099878d9b758833357034e7237f36efa32ae20e47fe1ba08693640d5a450053",
+      "bytes": 606366,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "2be2adac79f12a791d046fbda07ae0f526a7b9dd4ece7956971c3ee6df26c117",
+      "bytes": 325678,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "882973a6b1e60d445e1eadcb95b6dd319e2caf11b29366cfcfbaa61a6ee7ae1c",
+      "bytes": 421980,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 0.83,
+    "normal_scale": 0.58
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "0610c8a3b130d5cebd07e3cd717d03cdfa316b43d364dec852bfad1907580c01",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-beech.rift-sawn.fine-sanded"
+}

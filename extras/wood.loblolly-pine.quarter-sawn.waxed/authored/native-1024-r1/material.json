@@ -1,0 +1,106 @@
+{
+  "id": "wood.loblolly-pine.quarter-sawn.waxed",
+  "name": "Loblolly pine / quarter-sawn / Waxed appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "loblolly-pine/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "6945df92569567411f840d4d91fe0533fa5a2223471e5ae797fef9865bcbfc36",
+    "normal_opengl": "92b652218e0398fa53191d8c415dbc6aadcce620c8d96173f997ac865cba5369",
+    "roughness": "e4ca8b8200ec6133d6cfd7e78c0e7277d85823ce3d428676bc9b48fcf466b8b6"
+  },
+  "physical_profile_id": "wood.usda2021.loblolly-pine",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "4e0bf22f0a34f8a030e878f6e3a9c2b5adb79bf5a117d07b449cf9188fcc2c7a",
+      "bytes": 751704,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "e84a4365ac3d94e51b8a4e87b404e352537f1755d5a8d7be1a67204655ff64bc",
+      "bytes": 382336,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "5755ae6b2ea0e528e695b7b7fdd18bb51ad15ecae78740a1d275315475010f82",
+      "bytes": 382304,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "3f15347dc16ae72ffb4ef4f0c390d12f3ba04572d82df2d5420b1676684ced46",
+      "bytes": 205950,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "35655bd121dd7418f7803b7ac4b995d8e7380f947048dbea479cc994c3830d03",
+      "bytes": 271785,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.25,
+    "roughness": 0.26,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.94,
+      0.91,
+      0.86
+    ],
+    "roughness_factor": 0.55,
+    "normal_scale": 0.45
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "1a3f2c96548822dd5f2bb353ece97ebcce6f1f53326ed9c7e73d618c463262af",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.loblolly-pine.quarter-sawn.waxed"
+}

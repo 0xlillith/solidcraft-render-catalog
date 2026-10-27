@@ -1,0 +1,106 @@
+{
+  "id": "wood.black-walnut.quarter-sawn.fine-sanded",
+  "name": "Black walnut / quarter-sawn / Fine-sanded",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "black-walnut/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "101e8dfa36890bd7761de86337ffb7b87b97a6ddaf2156bbee3c9cc8e0cfa544",
+    "normal_opengl": "3c117a8e3ff166991e0be2752f0946e1afd2097830a10f0e42ad5c8687ff1614",
+    "roughness": "ac60fffaf373a72a6c2bc57a6f43213ddc7d8ed72f037bb169ab9753c83ddf0d"
+  },
+  "physical_profile_id": "wood.usda2021.black-walnut",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "5405aa8c33f88c9573c2fdd3b5e7bf14b796039075262cd7d50e6e09e18b98e0",
+      "bytes": 826959,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "dd5de3f0c43cadc12b75445a4ac8aad58e9ee519f8c02d376709139608410dc4",
+      "bytes": 701578,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "63a530d2d7b0cb48aa16979cac4745056701b3759ba0439d14025fda1ee8ba6c",
+      "bytes": 701481,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "14f9842cb1d6e3d90dc24ce0b2c138c0b9060f2d4dc477a28c9fb999b78cb247",
+      "bytes": 339231,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "1c8bce08ec623316134ee02692eeeae9eb3ed48ca545b9b9868200584365a973",
+      "bytes": 435555,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 0.83,
+    "normal_scale": 0.58
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "8500b85f83b3e4ecd55f9e407cc264cb612dff561f125f6a8ab2022aef6bccbe",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.black-walnut.quarter-sawn.fine-sanded"
+}

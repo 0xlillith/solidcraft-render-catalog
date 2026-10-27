@@ -1,0 +1,106 @@
+{
+  "id": "wood.white-oak.plain-sawn.raw",
+  "name": "White oak / plain-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "white-oak/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "a136fadf626ece5c292fc24b8aadabb5940a78c73808efb7bd70e161d4591571",
+    "normal_opengl": "88280571c46deac296460ebea4a2c949580face88ddd87b0d6e087e5f20cb9af",
+    "roughness": "dc7b3b1ac0b890228b365e673122259490c12ab3d532840eaaa2bb48fbb11fce"
+  },
+  "physical_profile_id": "wood.usda2021.white-oak",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "4cab1cafcdaa8d83b4d57f62c0f19d662c84718faaa49649c709224a8a6ba7d0",
+      "bytes": 1054115,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "a094114e55bf75510156694894cb36828e7c24f51058111b752b532629cad5df",
+      "bytes": 898065,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "cef3e2366e5bf8a8077611f1528338e0c25fe7a74589a7a7f6d28a1df9dc3f26",
+      "bytes": 897978,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "689687bcba249b5726775285a633bcb22bbfd2cda5c0c174b936514511d52acc",
+      "bytes": 393808,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "0de451e6def733b8a607e964ad00341203fb2ee3bdcdbf0739e9cd0fd82f2564",
+      "bytes": 500738,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "2dd921b1237761f8b4777539ecdfc30d8d36cb134daad760f8ad6edff19bcc09",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.white-oak.plain-sawn.raw"
+}

@@ -1,0 +1,119 @@
+{
+  "title": "SolidCraft Render Material Quality Qualification Register",
+  "updated": "2026-10-26",
+  "intent": "Hard separation of published file integrity, visual fidelity, physical provenance and native application acceptance.",
+  "plugin_contract": null,
+  "baseline_records": 2983,
+  "source_releases_immutable": true,
+  "conditions": {
+    "asset_validation": "Successful PNG/glTF numeric integrity is not a visual approval",
+    "native_acceptance": "Requires SolidCraft executable CPU/GPU/viewport and save-reopen",
+    "premium_visual": "Requires reviewed comparisons with real-world photos/measurements, multi-light and camera conditions",
+    "physical": "Never silently invent density, stiffness, strength, dielectric spectra or certification"
+  },
+  "stages": [
+    {
+      "id": "catalog-v1",
+      "records": 1386,
+      "data_state": "complete_source_coverage",
+      "engineering_model_complete": false,
+      "native_accepted": false,
+      "independently_visual_reviewed": false,
+      "premium_qualified": false,
+      "high_priority_gaps": [
+        "Procedural design specifications and approximation families intermixed with runnable assets",
+        "Physical reference coverage incomplete (345 candidate and 303 unresolved appearance records)"
+      ]
+    },
+    {
+      "id": "wood-stage01",
+      "records": 400,
+      "data_state": "asset_validated",
+      "engineering_model_complete": false,
+      "native_accepted": false,
+      "independently_visual_reviewed": false,
+      "premium_qualified": false,
+      "high_priority_gaps": [
+        "Growth rings overly regular and species-shape similarity",
+        "Finish-dependent roughness/clearcoat maps not fully exported",
+        "Finite patches not seam-free; wood grain is illustrative"
+      ]
+    },
+    {
+      "id": "alloys-stage02",
+      "records": 216,
+      "data_state": "asset_validated",
+      "engineering_model_complete": false,
+      "native_accepted": false,
+      "independently_visual_reviewed": false,
+      "premium_qualified": false,
+      "high_priority_gaps": [
+        "Reflectance color/complex IOR not alloy-grade measured",
+        "Surface roughness anisotropy and oxides not calibrated in native renderer"
+      ]
+    },
+    {
+      "id": "printing-stage03",
+      "records": 291,
+      "data_state": "asset_validated",
+      "engineering_model_complete": false,
+      "native_accepted": false,
+      "independently_visual_reviewed": false,
+      "premium_qualified": false,
+      "high_priority_gaps": [
+        "Layer-height/source-specimen property mismatch must remain separated",
+        "Texture mip anisotropy/grazing angles not native accepted"
+      ]
+    },
+    {
+      "id": "additive-stage03b",
+      "records": 222,
+      "data_state": "asset_validated",
+      "engineering_model_complete": false,
+      "native_accepted": false,
+      "independently_visual_reviewed": false,
+      "premium_qualified": false,
+      "high_priority_gaps": [
+        "Unmeasured transmission/volume properties and resin scattering",
+        "Printed strength depends on build/cure/orientation, cannot import generic model"
+      ]
+    },
+    {
+      "id": "earth-masonry-stage04",
+      "records": 196,
+      "data_state": "asset_validated",
+      "engineering_model_complete": false,
+      "native_accepted": false,
+      "independently_visual_reviewed": false,
+      "premium_qualified": false,
+      "high_priority_gaps": [
+        "Stone/clast distributions too procedural or not resolved in preview",
+        "Preview physical-height gradients omit mm-per-texel transform",
+        "Site/mix/water/cure data incomplete"
+      ]
+    },
+    {
+      "id": "elements-stage05",
+      "records": 272,
+      "data_state": "asset_validated",
+      "engineering_model_complete": false,
+      "native_accepted": false,
+      "independently_visual_reviewed": false,
+      "premium_qualified": false,
+      "high_priority_gaps": [
+        "No measured optical constants for PBR studies",
+        "41 elements scientifically reference-only, not plausible bulk specimens",
+        "Isotope/allotrope/temperature/purity not specified for automatic engineering use"
+      ]
+    }
+  ],
+  "proposed_quality_r1": {
+    "id": "scanned-pbr-r1",
+    "count": 8,
+    "status": "draft_under_validation",
+    "kind": "CC0 photographic physically-scaled PBR benchmark",
+    "native_accepted": false,
+    "premium_qualified": false,
+    "complements_existing": true
+  }
+}

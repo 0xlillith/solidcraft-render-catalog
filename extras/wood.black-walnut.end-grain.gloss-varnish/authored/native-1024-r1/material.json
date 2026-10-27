@@ -1,0 +1,106 @@
+{
+  "id": "wood.black-walnut.end-grain.gloss-varnish",
+  "name": "Black walnut / end-grain / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "black-walnut/end-grain",
+  "source_file_sha256": {
+    "base_color": "a9c513923cba24073ffd4ed0200517b50870bd9709dfcfc03f5cbe212109777f",
+    "normal_opengl": "6345e64ecda1d11da70253cbc6567b309f9247052f8095755a955470082076cd",
+    "roughness": "565d3da82797c039ab2a9a0d9a6e7cefcdd9b709b43f5658c61ba95926586b53"
+  },
+  "physical_profile_id": "wood.usda2021.black-walnut",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "ed6b643e569286b01ffa590d7252604c2a9c8841dd479360b04065f07860464a",
+      "bytes": 1172428,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "b60ea4d44dbfa268bddc844867ed1054aa441c6d90f0df819b460a78cd87072d",
+      "bytes": 693042,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "a38ef178450a1e6f2117afc0d60d55788209ccbb311131a648bd0fc5aae5092f",
+      "bytes": 692838,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "9fdcfff160bc009dad40b28ca2087de8a348470810980ddfd36cdc4cbf7e5e2b",
+      "bytes": 284453,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "914c7cbec10e1045700e617848f0127e3dc882c58b4e193b07e5f50e3a279f10",
+      "bytes": 370423,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "a1154a8049f86788da9968a3c8b16c2b4cb867398165caedb19039a96ee52c1b",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.black-walnut.end-grain.gloss-varnish"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "wood.shagbark-hickory.quarter-sawn.raw",
+  "name": "Shagbark hickory / quarter-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "shagbark-hickory/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "fe59bc28994cea94f4acee28565f51abb1e71eb381a16a7f6731ea94bd15c8db",
+    "normal_opengl": "04bacb1f0c4de5914c7e4e1539a53f5d9f1388a14b524dfe7a6a87e8af2611c0",
+    "roughness": "85902b70bfe66f974c993fe143a249433487899ae7803bf2236b081cdf7db99d"
+  },
+  "physical_profile_id": "wood.usda2021.shagbark-hickory",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "765cc79b6148dfe53669db1170b5539a5cae2153bdf125c27f0895350b2b07bb",
+      "bytes": 913189,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "b22b3a8c0a5ba00aebe4a5d9944d7e1f742bb2e1a9146d2736a4402a45eda6a7",
+      "bytes": 874300,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "297e0a9cbc315c7d95863cc47381113de924cf178850ba1cc6d52241fe13cedc",
+      "bytes": 874265,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "6a5de3ec2397869838577b8cafbc6646663304a7643a6bfa188d1c65272da1a9",
+      "bytes": 354597,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "f21760cddbc4faa8da316176867aac7603754063e1810fb8c5284ceb08e780d7",
+      "bytes": 454666,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "add77f037b2fe88e2f1a65be822468b76a37e4b1836a86f18a9a53b429de1a71",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.shagbark-hickory.quarter-sawn.raw"
+}

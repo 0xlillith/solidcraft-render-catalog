@@ -1,0 +1,106 @@
+{
+  "id": "wood.eastern-white-pine.end-grain.gloss-varnish",
+  "name": "Eastern white pine / end-grain / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "eastern-white-pine/end-grain",
+  "source_file_sha256": {
+    "base_color": "b1afabfd90b1d9cf61d6735a86b7b9dbc54d4a7c78008e393aa02b7c17c37d88",
+    "normal_opengl": "c385888298d4d8dfa664f49933af50cc51550a3e16b8c4c9c493ae88b4e25922",
+    "roughness": "002a72d2f320874cae8d562afbec39c192b4c2921ea1c3a71f821f7ce962578c"
+  },
+  "physical_profile_id": "wood.usda2021.eastern-white-pine",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "1c70ea0bd984b2732e09f352ba803b7a63557ba8beaee96c58d157639e55a27f",
+      "bytes": 1260882,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "52b3f45f982042c58cd283b16d997c6332ef18f831f4a37c5735b3ce3cbb2fbb",
+      "bytes": 522181,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "23efcc4b4cf2587725c7a8923e2703fdd8f939b565f063416e66da810cdda336",
+      "bytes": 522015,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "709e46546ec0bc188a4568c7c44ac9fbc26aa7ad34431006013f3e522511210a",
+      "bytes": 240824,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "cdf98e02d9f76285d9d764e61fb885e7586d2cd55f7f5c731527e26d0849c8c7",
+      "bytes": 317371,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "f62219bc2304c5331a5988c679fba8d06274cc71b435883cf911b7f700a20f18",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.eastern-white-pine.end-grain.gloss-varnish"
+}

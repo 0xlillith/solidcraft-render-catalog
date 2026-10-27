@@ -1,0 +1,106 @@
+{
+  "id": "wood.western-redcedar.quarter-sawn.gloss-varnish",
+  "name": "Western redcedar / quarter-sawn / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "western-redcedar/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "d94ae9388e2f405af957cc53bba334840278b42594d71fecb3e8776415486248",
+    "normal_opengl": "4a4a6861cdb6a3991ad1cd5b83b39eae080d725d899b298803324242c6f34ae4",
+    "roughness": "e841529a8620f805ca16006e9623d537f8e80cac2d773f82bec4614571f9adea"
+  },
+  "physical_profile_id": "wood.usda2021.western-redcedar",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "28783f07e8af001e642c5ab6c932962b38a8cd132d44f1c73156752f8c1224dc",
+      "bytes": 695647,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "3fa7a26be865090f1240bec6457a6c51e2b45adef040584e1b518b602376ddee",
+      "bytes": 276877,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "23b1fe6711a045ef70749487f98a960b5af05e1d9df664cdbd7145e8f0df85ed",
+      "bytes": 276951,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "20d19cd8c1be13db0fcf096347bb30c807d3e74fc4a0cd403a570525264bde7b",
+      "bytes": 143024,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "132c4ec259343ffb03a33c342e75a8880e8629f12f03f3f18d6c96599263ab08",
+      "bytes": 188933,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "5f48d23cdac7d532a93d0629391b8c98d1b0269113e075f1a07d744d4089e35a",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.western-redcedar.quarter-sawn.gloss-varnish"
+}

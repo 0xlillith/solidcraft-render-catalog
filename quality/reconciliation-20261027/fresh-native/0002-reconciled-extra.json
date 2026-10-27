@@ -1,0 +1,409 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -2.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 162.95943999893774,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 32,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -125.0,
+            -65.0,
+            80.0
+          ],
+          "u": [
+            19.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -50.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            125.0,
+            -70.0,
+            -25.0
+          ],
+          "u": [
+            19.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -50.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -50.0,
+            162.0
+          ],
+          "u": [
+            40.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -18.900000000000002
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.black-walnut.end-grain.oiled flat",
+          "frame": {
+            "origin": [
+              -50.0,
+              -0.001,
+              -50.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              100.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "extras/wood.black-walnut.end-grain.oiled/authored/native-1024-r1/base_color.png",
+          "normal_opengl": "extras/wood.black-walnut.end-grain.oiled/authored/native-1024-r1/normal_opengl.png",
+          "roughness_linear": "extras/wood.black-walnut.end-grain.oiled/authored/native-1024-r1/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.black-walnut.end-grain.oiled curved",
+          "frame": {
+            "origin": [
+              -50.0,
+              -0.001,
+              -50.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              100.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "extras/wood.black-walnut.end-grain.oiled/authored/native-1024-r1/base_color.png",
+          "normal_opengl": "extras/wood.black-walnut.end-grain.oiled/authored/native-1024-r1/normal_opengl.png",
+          "roughness_linear": "extras/wood.black-walnut.end-grain.oiled/authored/native-1024-r1/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.black-walnut.end-grain.oiled flat",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.black-walnut.end-grain.oiled curved",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 327961183,
+      "face_appearances": 0,
+      "geometry_bytes": 1846396,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 326114763,
+      "triangles": 10236
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -125.0,
+              -65.0,
+              80.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              19.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -50.0
+            ]
+          },
+          {
+            "center": [
+              125.0,
+              -70.0,
+              -25.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              19.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -50.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -50.0,
+              162.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              40.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -18.900000000000002
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 32,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 162.95943999893774,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 7,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 2,
+      "encoded_bytes": 2916699,
+      "linear_pixel_bytes": 50331648
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 12
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 578431,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 12
+      },
+      "png_bytes": 578431,
+      "png_sha256": "41034c18474ef82f54d176ce0421b05995a4457a32b5fe378c3ce04f4e118399",
+      "scene_generation": 7,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 12
+    },
+    "linear_master": null,
+    "path": "quality/reconciliation-20261027/fresh-native/0002-reconciled-extra.png",
+    "presentation": null
+  },
+  "png_sha256": "41034c18474ef82f54d176ce0421b05995a4457a32b5fe378c3ce04f4e118399",
+  "elapsed_s": 1.844,
+  "recipe_fingerprint": "99684613bb718786d2fa394c8d389f1f36f8e4a157d3d55f2198f15eb0dff7d8",
+  "ids": [
+    "wood.black-walnut.end-grain.oiled"
+  ],
+  "collection": "reconciled-extra",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.black-walnut.end-grain.oiled\\authored\\native-1024-r1\\base_color.png": "c48108cb6125d1405d3e59e49c4e6a02727ee56c8538d965f4b0ec4935cf673a",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.black-walnut.end-grain.oiled\\authored\\native-1024-r1\\normal_opengl.png": "59c8cb5cfa948c7c229e96a92231c7e0b091c8a3c18ebbbfa0fe16208cde061d",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.black-walnut.end-grain.oiled\\authored\\native-1024-r1\\normal_directx.png": "cd2adf8bc4fd77e7bc720afc073cfe15f1bfcbd4f9eea617f7116491b0ee52c4",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.black-walnut.end-grain.oiled\\authored\\native-1024-r1\\roughness.png": "fc3f17a4fd075f7b39451261d4b63196a61ce1f18334a20fdf1a175882e14176",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.black-walnut.end-grain.oiled\\authored\\native-1024-r1\\orm.png": "b45f70792202f6cf8e5cc5f566abe5b5a7532383fab575e725c3f70d8bbc9bb2"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.black-walnut.end-grain.oiled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "7c2b6e81c0886fed9730519fa091dda5a0669d390a03244ea1a1d03aceace7d7",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

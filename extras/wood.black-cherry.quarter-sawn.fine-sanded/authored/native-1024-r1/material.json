@@ -1,0 +1,106 @@
+{
+  "id": "wood.black-cherry.quarter-sawn.fine-sanded",
+  "name": "Black cherry / quarter-sawn / Fine-sanded",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "black-cherry/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "daec65f70ab5ce14f1cfd2610500576e9d33b98f7889287b0b2dadf5590db01a",
+    "normal_opengl": "70b7d4fd0649cdbee3b1a43461447eb7257f120b6618ec4586222f7d99ab34ba",
+    "roughness": "8e9647e531f952ac1adbfd11e70bcee1312b496ceb5f809a01b696972a6da826"
+  },
+  "physical_profile_id": "wood.usda2021.black-cherry",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "ccb3df6fe093251536596e1224a033054c53410715f6e0f79400cd1635b796fb",
+      "bytes": 802847,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "a837f0c7ce7cd8b217ee61c209f9190ee99cf02d9f3fd1559fe673f5bdc39c7b",
+      "bytes": 597134,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "426b145ff4db42f726c4729fb5217e1cb3a7549a339e01b5a4e2861ae419325f",
+      "bytes": 597070,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "f38a7d081640e816062bda032074b0ee16d3bc2a227acb72ff968a675ae93dab",
+      "bytes": 306646,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "bb13e978776d6f401dc3503ce74a3c685e24273d9a6df9f81a61a5b5df5b8880",
+      "bytes": 397442,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 0.83,
+    "normal_scale": 0.58
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "63089e90ae98953c25b0017154771608bce3794ab6cb5d135f9c906821bbae5f",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.black-cherry.quarter-sawn.fine-sanded"
+}

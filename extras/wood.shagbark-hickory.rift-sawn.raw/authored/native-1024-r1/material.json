@@ -1,0 +1,106 @@
+{
+  "id": "wood.shagbark-hickory.rift-sawn.raw",
+  "name": "Shagbark hickory / rift-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "shagbark-hickory/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "ba8c9d9a8e4b540ee05aa5d41dccf7d56f378f15a73b33ae97cf8fb39028cc96",
+    "normal_opengl": "521db0533d0fce81a3cf320b6643ba51ff0f39f1ee3d87369d00f9ec6083a4e2",
+    "roughness": "5e88c4a035c035a0a966261c7d10e1b339d41cd6bd44291e8612ee03eb730078"
+  },
+  "physical_profile_id": "wood.usda2021.shagbark-hickory",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "05638ed025b8bcbf33a5ab777894ae573fa20ecedb8244960de93a90911ca161",
+      "bytes": 926684,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "2e939082537d12fab05eb02943a9f55c938d00ab9e805d90faea2402489c8e5e",
+      "bytes": 877262,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "9af68bf75ddac65caeb76a3a91621c2eb0c88a6ea130da8bcc80d8a2ae0e9d76",
+      "bytes": 877062,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "d2f98cac002dc6cbcc845f9642de6483974a49bc2df6c58584feeb629a16a723",
+      "bytes": 362167,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "dd3a18a453ab89b196474e6dabae17d220c97950159136723b8ece84ebf61d08",
+      "bytes": 464461,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "87934e6e2dbf491ba7b13fe6d6fcd6d437b4295f2ef95b72e3adc2d2183115e7",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.shagbark-hickory.rift-sawn.raw"
+}

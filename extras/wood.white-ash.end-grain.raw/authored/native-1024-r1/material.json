@@ -1,0 +1,106 @@
+{
+  "id": "wood.white-ash.end-grain.raw",
+  "name": "White ash / end-grain / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "white-ash/end-grain",
+  "source_file_sha256": {
+    "base_color": "743be76bda42390c814d6480f9acfe62b71bddeb81d164d45b0673800effee6d",
+    "normal_opengl": "903cecd5c69785c33cffc298540e684b5eb32c9dcba6cff92525008c402f846c",
+    "roughness": "55314b9b8116c0eb59a0a8278a5872c71798bfaa1b4cfff4bb5fe8adb922be02"
+  },
+  "physical_profile_id": "wood.usda2021.white-ash",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "c51b8eccc6303672f55282cedbcc1ce03a4f88b2b1f1eba8507108f41a867bab",
+      "bytes": 1327201,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "611513ae5c180554a7fcb129329a7c0160c3942907d1a88735d60fd6e75065ce",
+      "bytes": 1444027,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "3cedfa025a8e6bfd17f38657321774a965de3518cc7c0da9aedf6c5ed9de5580",
+      "bytes": 1443584,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "ae3b8ef5b1dae22710ae35f5d28f1ea8e9c89846ff267f4424965881ef64a5bd",
+      "bytes": 495908,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "9bff7a280bc100d1b84ec48f000ac714f39440b4b584fbad96c7733ef3db3b5a",
+      "bytes": 633586,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "9b15f84d3322b67b46feeca3ce3eb39c7e6335acc4826b86ce19033e7d36e120",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.white-ash.end-grain.raw"
+}

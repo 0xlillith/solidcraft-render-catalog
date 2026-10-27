@@ -1,0 +1,1053 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -8.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 2281.4321599851287,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -1946.0000000000002,
+            -1274.0000000000002,
+            320.0
+          ],
+          "u": [
+            372.40000000000003,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -200.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            1946.0000000000002,
+            -1372.0,
+            -100.0
+          ],
+          "u": [
+            372.40000000000003,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -200.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -980.0000000000001,
+            2268.0
+          ],
+          "u": [
+            784.0000000000001,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -264.6000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 earth.silty-sand.rake-tracked flat",
+          "frame": {
+            "origin": [
+              -980.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 earth.silty-sand.rake-tracked curved",
+          "frame": {
+            "origin": [
+              -980.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 earth.urban-fill.rake-tracked flat",
+          "frame": {
+            "origin": [
+              -460.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 earth.urban-fill.rake-tracked curved",
+          "frame": {
+            "origin": [
+              -460.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/rake-tracked/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 4,
+          "body_name": "03 earth.clay-loam.wind-rippled flat",
+          "frame": {
+            "origin": [
+              60.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 5,
+          "body_name": "03 earth.clay-loam.wind-rippled curved",
+          "frame": {
+            "origin": [
+              60.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 6,
+          "body_name": "04 earth.glacial-till.wind-rippled flat",
+          "frame": {
+            "origin": [
+              580.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 7,
+          "body_name": "04 earth.glacial-till.wind-rippled curved",
+          "frame": {
+            "origin": [
+              580.0,
+              -0.001,
+              300.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 8,
+          "body_name": "05 earth.organic-silt-clay.wind-rippled flat",
+          "frame": {
+            "origin": [
+              -980.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 9,
+          "body_name": "05 earth.organic-silt-clay.wind-rippled curved",
+          "frame": {
+            "origin": [
+              -980.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 10,
+          "body_name": "06 earth.peat-undisturbed.wind-rippled flat",
+          "frame": {
+            "origin": [
+              -460.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 11,
+          "body_name": "06 earth.peat-undisturbed.wind-rippled curved",
+          "frame": {
+            "origin": [
+              -460.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 12,
+          "body_name": "07 earth.red-earth.wind-rippled flat",
+          "frame": {
+            "origin": [
+              60.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 13,
+          "body_name": "07 earth.red-earth.wind-rippled curved",
+          "frame": {
+            "origin": [
+              60.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 14,
+          "body_name": "08 earth.sandy-undisturbed.wind-rippled flat",
+          "frame": {
+            "origin": [
+              580.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 15,
+          "body_name": "08 earth.sandy-undisturbed.wind-rippled curved",
+          "frame": {
+            "origin": [
+              580.0,
+              -0.001,
+              -200.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 16,
+          "body_name": "09 earth.silt-loam.wind-rippled flat",
+          "frame": {
+            "origin": [
+              -980.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 17,
+          "body_name": "09 earth.silt-loam.wind-rippled curved",
+          "frame": {
+            "origin": [
+              -980.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 18,
+          "body_name": "10 earth.silt.wind-rippled flat",
+          "frame": {
+            "origin": [
+              -460.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 19,
+          "body_name": "10 earth.silt.wind-rippled curved",
+          "frame": {
+            "origin": [
+              -460.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 20,
+          "body_name": "11 earth.silty-sand.wind-rippled flat",
+          "frame": {
+            "origin": [
+              60.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 21,
+          "body_name": "11 earth.silty-sand.wind-rippled curved",
+          "frame": {
+            "origin": [
+              60.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 22,
+          "body_name": "12 earth.urban-fill.wind-rippled flat",
+          "frame": {
+            "origin": [
+              580.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 23,
+          "body_name": "12 earth.urban-fill.wind-rippled curved",
+          "frame": {
+            "origin": [
+              580.0,
+              -0.001,
+              -700.0
+            ],
+            "u": [
+              400.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              400.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/soil/wind-rippled/runtime-1024/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 584806326,
+      "face_appearances": 0,
+      "geometry_bytes": 22153098,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 562653204,
+      "triangles": 122832
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -1946.0000000000002,
+              -1274.0000000000002,
+              320.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              372.40000000000003,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -200.0
+            ]
+          },
+          {
+            "center": [
+              1946.0000000000002,
+              -1372.0,
+              -100.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              372.40000000000003,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -200.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -980.0000000000001,
+              2268.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              784.0000000000001,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -264.6000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 2281.4321599851287,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -8.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 62,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 24,
+      "encoded_bytes": 7268244,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 236
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 592928,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 236
+      },
+      "png_bytes": 592928,
+      "png_sha256": "2441cc11c77ebb98c59f7c5563e64f2a2bb287f81baa585faaa5c7b8c0293d65",
+      "scene_generation": 62,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 236
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0058-earth-masonry-stage04.png",
+    "presentation": null
+  },
+  "png_sha256": "2441cc11c77ebb98c59f7c5563e64f2a2bb287f81baa585faaa5c7b8c0293d65",
+  "elapsed_s": 2.563,
+  "ids": [
+    "earth.silty-sand.rake-tracked",
+    "earth.urban-fill.rake-tracked",
+    "earth.clay-loam.wind-rippled",
+    "earth.glacial-till.wind-rippled",
+    "earth.organic-silt-clay.wind-rippled",
+    "earth.peat-undisturbed.wind-rippled",
+    "earth.red-earth.wind-rippled",
+    "earth.sandy-undisturbed.wind-rippled",
+    "earth.silt-loam.wind-rippled",
+    "earth.silt.wind-rippled",
+    "earth.silty-sand.wind-rippled",
+    "earth.urban-fill.wind-rippled"
+  ],
+  "collection": "earth-masonry-stage04",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\soil\\rake-tracked\\runtime-1024\\base_color.png": "f0a39d2f95f5fd32ecb3f175950a032895977796fb43be3cafb53dbe10864e00",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\soil\\rake-tracked\\runtime-1024\\normal_opengl.png": "129d56200fe9a56c2d5ec6dcaed18bd9ab717a299fb4b55c77f160c78f22b72e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\soil\\rake-tracked\\runtime-1024\\roughness.png": "b20e8e2d3fed52339471371c2b95d84d303b5d947dc5f2e4400cfd80eb5d8d95",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\soil\\wind-rippled\\runtime-1024\\base_color.png": "155dcfa61c4e3f273e65e17e451095304e80f5d6fcbc515fb0c3945be1882a22",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\soil\\wind-rippled\\runtime-1024\\normal_opengl.png": "8aa2702e4d67877bf89af25e5118e512e2bacac89bed5ca5a4f709c64de0b94c",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\soil\\wind-rippled\\runtime-1024\\roughness.png": "578b0040230c5ceb33e39d89128c6b54ec268aeba065ec90950d63ec6feba095"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "earth.silty-sand.rake-tracked",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.urban-fill.rake-tracked",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.clay-loam.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.glacial-till.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.organic-silt-clay.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.peat-undisturbed.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.red-earth.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.sandy-undisturbed.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.silt-loam.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.silt.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.silty-sand.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.urban-fill.wind-rippled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "136d95ebd8d46413e3ac7dd020188d8fbc1838ff1c2e92f7bb754f2940c5e003",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

@@ -1,0 +1,106 @@
+{
+  "id": "wood.eastern-white-pine.plain-sawn.oiled",
+  "name": "Eastern white pine / plain-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "eastern-white-pine/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "14aba25e7c58aa667ab6f91fd09ffb7f27bceeec076cf4a29267c57e2d9c208a",
+    "normal_opengl": "2998ce16f97b9ea2027a9efa5593c2c191b97a1eb7464a4eba703924dafe7038",
+    "roughness": "7ba0f07c0d3372ef58029821d4d1c6b5824e6f471112be561369f20c9b3d1f67"
+  },
+  "physical_profile_id": "wood.usda2021.eastern-white-pine",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "c6092cbc2a8063238f00654d39b74a332aee2d42af036c56d3922fa5fcc0b42c",
+      "bytes": 971418,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "666ccecb8cd32bc80ea3b6fcc073eeead490642d9f48225b50e45b531b84a307",
+      "bytes": 517076,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "904d1b0f008bdc5002c69530088332194061d280fc03f7865b41d00df5b6f222",
+      "bytes": 517157,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "be5492cef483976016569cb1b8d7cd6f8a1a91a6b02a1403b3671c65638a8a08",
+      "bytes": 268708,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "abdc28a5165c3c97d419bf94be730a5aede33f3186473bc412928d9b3441c68e",
+      "bytes": 347778,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "d4126028f516f378545db00e663f48310a3d16fcaf523d62d03f79af40608c4c",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.eastern-white-pine.plain-sawn.oiled"
+}

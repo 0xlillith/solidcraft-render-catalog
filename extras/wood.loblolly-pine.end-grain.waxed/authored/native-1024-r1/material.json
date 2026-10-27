@@ -1,0 +1,106 @@
+{
+  "id": "wood.loblolly-pine.end-grain.waxed",
+  "name": "Loblolly pine / end-grain / Waxed appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "loblolly-pine/end-grain",
+  "source_file_sha256": {
+    "base_color": "c8316abeff5f63d70542c9172671691da0494e413c868767f1284247c07f28a6",
+    "normal_opengl": "8fbea3adcd441f3c03c70cf47e442df963613252127b89425837a5d6741d7b14",
+    "roughness": "2c91f3ff3349ead23ba8b66ac8d74bfa338c70dd54f95910e49fd1b04d9268b3"
+  },
+  "physical_profile_id": "wood.usda2021.loblolly-pine",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "8fd34f57faf0ed87287383e515d2d7334560aca18e52f35721077da1f0fd963c",
+      "bytes": 1271582,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "c790d967efa4288f3751da504915be2263fa9177c64536d2f82ed40ca0f4eedb",
+      "bytes": 859517,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "1be5c20672a7cd49c29f7bdff4f112509d3e16b0679bee76a6f562f0ab8d5b51",
+      "bytes": 859610,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "889126988a8918c31fbb380e4d6aaa26bc4eec4831aec42351dccbfcbfabb323",
+      "bytes": 349232,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "b36a837bc8c16c254811bad458e5fea17ba244c1c982fc2dc73860c72644bd3e",
+      "bytes": 452116,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.25,
+    "roughness": 0.26,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.94,
+      0.91,
+      0.86
+    ],
+    "roughness_factor": 0.55,
+    "normal_scale": 0.45
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "de9b4869e61128b00158c9b06bfe59e8875ceb53847965f4c3e89f594d74382d",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.loblolly-pine.end-grain.waxed"
+}

@@ -1,0 +1,392 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -30.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 2444.3915999840665,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 32,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -1425.0,
+            -975.0,
+            1200.0
+          ],
+          "u": [
+            285.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -750.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            1425.0,
+            -1050.0,
+            -375.0
+          ],
+          "u": [
+            285.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -750.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -750.0,
+            2430.0
+          ],
+          "u": [
+            600.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -283.50000000000006
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 scan.mud_cracked_dry_03 flat",
+          "frame": {
+            "origin": [
+              -750.0,
+              -0.001,
+              -750.0
+            ],
+            "u": [
+              1500.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              1500.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/mud_cracked_dry_03/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/mud_cracked_dry_03/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/mud_cracked_dry_03/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 scan.mud_cracked_dry_03 curved",
+          "frame": {
+            "origin": [
+              -750.0,
+              -0.001,
+              -750.0
+            ],
+            "u": [
+              1500.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              1500.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/mud_cracked_dry_03/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/mud_cracked_dry_03/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/mud_cracked_dry_03/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 330242140,
+      "face_appearances": 0,
+      "geometry_bytes": 1846376,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 328395740,
+      "triangles": 10236
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -1425.0,
+              -975.0,
+              1200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              285.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -750.0
+            ]
+          },
+          {
+            "center": [
+              1425.0,
+              -1050.0,
+              -375.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              285.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -750.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -750.0,
+              2430.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              600.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -283.50000000000006
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 32,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 2444.3915999840665,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -30.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 7,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 2,
+      "encoded_bytes": 5197676,
+      "linear_pixel_bytes": 50331648
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 16
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 738724,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 16
+      },
+      "png_bytes": 738724,
+      "png_sha256": "c4c5873c9aac1ebf8a3082a169e73b1dc84fce4964dd614793de4f7fa30aebb9",
+      "scene_generation": 7,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 16
+    },
+    "linear_master": null,
+    "path": "native-scans/0003-scanned-pbr-r1.png",
+    "presentation": null
+  },
+  "png_sha256": "c4c5873c9aac1ebf8a3082a169e73b1dc84fce4964dd614793de4f7fa30aebb9",
+  "elapsed_s": 3.187,
+  "ids": [
+    "scan.mud_cracked_dry_03"
+  ],
+  "collection": "scanned-pbr-r1",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\mud_cracked_dry_03\\base_color.png": "c5e6fcf73ec7cc238c46da63bbc69b8422d47604598219d69f453fe1739ace99",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\mud_cracked_dry_03\\normal_opengl.png": "5ffb1b7206c5e99d8c667f32eecb7fa4ffb2e32a9cdd94bbda50d55230dcd4d7",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\mud_cracked_dry_03\\normal_directx.png": "eeb8a52d1fd4a5c6aebeae2700f162b62b4b9a561d9eae1bf894f52c7c6cc905",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\mud_cracked_dry_03\\roughness.png": "93573328e5a77f8eac62195111a1efa89ff4b021d3daffc28b10635460534b17",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\mud_cracked_dry_03\\orm.png": "a5b423cddcf447a5ec2c20a9b22a58cb367042b4213a71bf0359c5806456623f"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "scan.mud_cracked_dry_03",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "92fb54edaf5f905b135013b5f1717935bd8fd8dd8fb79b32571da22c99aa49fb",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

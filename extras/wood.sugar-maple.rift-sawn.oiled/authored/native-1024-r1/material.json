@@ -1,0 +1,106 @@
+{
+  "id": "wood.sugar-maple.rift-sawn.oiled",
+  "name": "Sugar maple / rift-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "sugar-maple/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "ae559a7d9456d554891c45b5eff9c30c3d226d4e4ad751791961de97df54c85d",
+    "normal_opengl": "1532fab635380aafe65779702fb5cd3fa772e277511f4b6eb1da41336238ec41",
+    "roughness": "4d9155e87423de6f1ae1581746f04971b16f795ba7606a33bfcb6289afaa0f8e"
+  },
+  "physical_profile_id": "wood.usda2021.sugar-maple",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "1d437af7288b3dbbe45e8ca49a6f0d1caa615b82415de0bc70e3a61ef6baba2d",
+      "bytes": 914904,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "9dc18da1ee2e6149e544f2484eed7e323d7e0d1b0067fe52a0ef1873da428c26",
+      "bytes": 703603,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "e3260827a2a27edc0ebf0309430f0abe865118f91a5fa639d773ade024efa809",
+      "bytes": 703492,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "75cde347467fe21078645f397812777412cac571be38158283b383b2aab5f1e7",
+      "bytes": 292415,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "25d3ba12cf49196ddbab797ef69443d077b7b38ac2fd605da324ea96dcee8427",
+      "bytes": 381622,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "46e688705ce5425049d58b801e5867b49db2b4f182fd41541ee2e4c4444ea20a",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.sugar-maple.rift-sawn.oiled"
+}

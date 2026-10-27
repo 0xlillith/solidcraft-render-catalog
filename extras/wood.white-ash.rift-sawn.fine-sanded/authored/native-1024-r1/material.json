@@ -1,0 +1,106 @@
+{
+  "id": "wood.white-ash.rift-sawn.fine-sanded",
+  "name": "White ash / rift-sawn / Fine-sanded",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "white-ash/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "b69fd636f92e11a0c18cb525a400c6235df32037173801df3694e89fdbd92cae",
+    "normal_opengl": "770850748ae4db6200aca3d5ffbf250ac0861c12dbdb573ed80c8e8eb25d6fae",
+    "roughness": "d95b641324f9a9e516b41ee532c29482bc21177f1c309326c8065a2945ae38b1"
+  },
+  "physical_profile_id": "wood.usda2021.white-ash",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "9152472f1eac1a459a4510f916a4da8e38c9a07c49823884065b32d0f612a342",
+      "bytes": 897544,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "dec94fbcf7ae37764f94813febac3bdc82575f1cb249c205117292303055a499",
+      "bytes": 684417,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "bcccfeb1acd18aa98857abc44bcee978531a47b42a35a6eb03766dd443469837",
+      "bytes": 684346,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "2b38f420e6602a2d17781cf024c33015afe8fb0d30dc3ef1e5cfff73b1b2b287",
+      "bytes": 335498,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "287c1565359b197e6f207c85ac9d283daa36e07636c47fe5870d2fba93ea8f5e",
+      "bytes": 432178,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 0.83,
+    "normal_scale": 0.58
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "1187cf6b330eebb5ab7bf62b6286f22d7ebc88913ae267356a5040b6ae3a9908",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.white-ash.rift-sawn.fine-sanded"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "wood.douglas-fir-coast.rift-sawn.oiled",
+  "name": "Douglas-fir (Coast) / rift-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "douglas-fir-coast/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "aa3df94a6b119fae119ac1d0820cc95a46cdd051ecbdb89b6be7a0f26ef6f012",
+    "normal_opengl": "012fe28a553cb9308d4913a6c7851954b5fc24f8c05a0692edf1bd6aa0087e12",
+    "roughness": "250b04fac56153cf309b60029fc4d6a90e90fe500a6ee9af517d0351ae31bd2a"
+  },
+  "physical_profile_id": "wood.usda2021.douglas-fir-coast",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "a046361f7815e472305b7b7a7660b630b5b6addcff842bbe55db2893af0d065a",
+      "bytes": 790202,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "70ccbdad5c2dd4631325a4a4be8e743b2f1203b9fc0225450b64b7bf4d55b418",
+      "bytes": 497532,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "cf3c0491e259677a6055a487f6172009679e71097fc3ade16639dc8f57e13913",
+      "bytes": 497640,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "b0c2656ad5cd26277b9201b86cfe12ecb09a6f98b9167ec1e10d7577f5914dbd",
+      "bytes": 239757,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "fee5f4904a8a46aa8c5bf43bda3ebac57ee4b4fd474b3465536b06c935ba6afb",
+      "bytes": 314097,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "aca27b978bcaa49762a242ed96bf293cca2fec861eac24a2b678f4d284f3c787",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.douglas-fir-coast.rift-sawn.oiled"
+}

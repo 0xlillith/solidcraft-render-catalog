@@ -1,0 +1,445 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -2.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 570.3580399962822,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -486.50000000000006,
+            -318.50000000000006,
+            80.0
+          ],
+          "u": [
+            93.10000000000001,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -50.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            486.50000000000006,
+            -343.0,
+            -25.0
+          ],
+          "u": [
+            93.10000000000001,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -50.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -245.00000000000003,
+            567.0
+          ],
+          "u": [
+            196.00000000000003,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -66.15000000000002
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 106727024,
+      "face_appearances": 0,
+      "geometry_bytes": 22152688,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 84574336,
+      "triangles": 122832
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -486.50000000000006,
+              -318.50000000000006,
+              80.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              93.10000000000001,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -50.0
+            ]
+          },
+          {
+            "center": [
+              486.50000000000006,
+              -343.0,
+              -25.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              93.10000000000001,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -50.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -245.00000000000003,
+              567.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              196.00000000000003,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -66.15000000000002
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 570.3580399962822,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 62,
+    "stage_panels": 0,
+    "textures": null,
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 448
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 582384,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 448
+      },
+      "png_bytes": 582384,
+      "png_sha256": "6a8c51f69be9fcf77be673b58e6e9b17271ea9c5462a2ed57e5b62af4638a725",
+      "scene_generation": 62,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 448
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0111-selene-baseline.png",
+    "presentation": null
+  },
+  "png_sha256": "6a8c51f69be9fcf77be673b58e6e9b17271ea9c5462a2ed57e5b62af4638a725",
+  "elapsed_s": 1.547,
+  "ids": [
+    "SELENE-AP-025",
+    "SELENE-AP-026",
+    "SELENE-AP-027",
+    "SELENE-AP-028",
+    "SELENE-AP-029",
+    "SELENE-AP-030",
+    "SELENE-AP-031",
+    "SELENE-AP-032",
+    "SELENE-AP-033",
+    "SELENE-AP-034",
+    "SELENE-AP-035",
+    "SELENE-AP-036"
+  ],
+  "collection": "selene-baseline",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {},
+  "source_appearance_projections": [
+    {
+      "id": "SELENE-AP-025",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Molded grain",
+        "Cavity occlusion",
+        "Mechanical retention behavior"
+      ]
+    },
+    {
+      "id": "SELENE-AP-026",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Mold grain",
+        "Manufacturing seam details",
+        "Spatial roughness variation"
+      ]
+    },
+    {
+      "id": "SELENE-AP-027",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Powder grain",
+        "Pores",
+        "Local roughness variation",
+        "Manufacturing performance"
+      ]
+    },
+    {
+      "id": "SELENE-AP-028",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Extrusion lines",
+        "Layer seams",
+        "Toolpath-dependent anisotropy"
+      ]
+    },
+    {
+      "id": "SELENE-AP-029",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Transmission",
+        "Refraction",
+        "Absorption",
+        "Interior medium boundaries",
+        "Caustics"
+      ]
+    },
+    {
+      "id": "SELENE-AP-030",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Transmission",
+        "Refraction",
+        "Dispersion",
+        "Polarization or birefringence",
+        "Optical coatings"
+      ]
+    },
+    {
+      "id": "SELENE-AP-031",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Ceramic grain",
+        "Subsurface response",
+        "Chemical cleanliness or contamination behavior"
+      ]
+    },
+    {
+      "id": "SELENE-AP-032",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Thread generation",
+        "Anisotropy",
+        "Gasket response",
+        "Wear and sealing behavior"
+      ]
+    },
+    {
+      "id": "SELENE-AP-033",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Directional graphitic response",
+        "Fine domains",
+        "Measured optical or thermal properties"
+      ]
+    },
+    {
+      "id": "SELENE-AP-034",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Layered translucency",
+        "Pad masks",
+        "Trace topography",
+        "Silkscreen"
+      ]
+    },
+    {
+      "id": "SELENE-AP-035",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Fiber section structure",
+        "Layer interfaces",
+        "Copper-plane detail"
+      ]
+    },
+    {
+      "id": "SELENE-AP-036",
+      "full_optics_supported": true,
+      "declared_omissions": [
+        "Fine grain",
+        "Package legends",
+        "Filled-resin microstructure"
+      ]
+    }
+  ],
+  "model_sha256": "1a89d34631105819fbe67d20251833353416145fca8bf6aec2fb905d1f96f050",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

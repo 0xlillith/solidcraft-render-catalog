@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-elm.end-grain.oiled",
+  "name": "American elm / end-grain / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-elm/end-grain",
+  "source_file_sha256": {
+    "base_color": "5b698cd7fa7e6849941d5b0c1a2cc1c186538b1138a5df9942b62c8d7b08791e",
+    "normal_opengl": "8087d55eb28f78c09a7f2b4d4809b55da56a402170cae1e9bad7e472cdb54fd7",
+    "roughness": "6411b7db55de8933dd35e4aa818388adbc02c7ca13b329a4af5b9322880cbf50"
+  },
+  "physical_profile_id": "wood.usda2021.american-elm",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "74050fca7def684debfd80f319e62b8c79d26abadcb0aaa2818303e3f66300d9",
+      "bytes": 1322645,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "f03e391b1e8147e0f09f5cb59ef1c674ba4e82d3f46c62d5eae2e9fcd4037fbf",
+      "bytes": 1304821,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "7c10bf6ae38d89f44dfd2b76e41f6a0bef20e783432d170ff60307b14a5e57f8",
+      "bytes": 1304742,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "2b8e9be00b8ab04c262dae6f55a73b54228810ee8d1e074cf5db705ff10e1a5f",
+      "bytes": 429064,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "9c25c44836721b9ade2585d91347f54bc6fdd5493663a8a4d27e8e87f831f1f8",
+      "bytes": 548300,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "f186d8c253089e3b8921c50b5c2e106854f9bf8871457a92e771f834567936e8",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-elm.end-grain.oiled"
+}

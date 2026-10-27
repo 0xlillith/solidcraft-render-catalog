@@ -1,0 +1,392 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -40.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 3259.188799978755,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 32,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -1900.0,
+            -1300.0,
+            1600.0
+          ],
+          "u": [
+            380.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -1000.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            1900.0,
+            -1400.0,
+            -500.0
+          ],
+          "u": [
+            380.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -1000.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -1000.0,
+            3240.0
+          ],
+          "u": [
+            800.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -378.00000000000006
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 scan.gravel_concrete_04 flat",
+          "frame": {
+            "origin": [
+              -1000.0,
+              -0.001,
+              -1000.0
+            ],
+            "u": [
+              2000.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              2000.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/gravel_concrete_04/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/gravel_concrete_04/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/gravel_concrete_04/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 scan.gravel_concrete_04 curved",
+          "frame": {
+            "origin": [
+              -1000.0,
+              -0.001,
+              -1000.0
+            ],
+            "u": [
+              2000.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              2000.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/gravel_concrete_04/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/gravel_concrete_04/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/gravel_concrete_04/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 330255004,
+      "face_appearances": 0,
+      "geometry_bytes": 1846376,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 328408604,
+      "triangles": 10236
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -1900.0,
+              -1300.0,
+              1600.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              380.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -1000.0
+            ]
+          },
+          {
+            "center": [
+              1900.0,
+              -1400.0,
+              -500.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              380.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -1000.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -1000.0,
+              3240.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              800.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -378.00000000000006
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 32,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 3259.188799978755,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -40.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 7,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 2,
+      "encoded_bytes": 5210540,
+      "linear_pixel_bytes": 50331648
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 24
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 748224,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 24
+      },
+      "png_bytes": 748224,
+      "png_sha256": "62cfd08ced9ea5a0ea4c6b438113d0a2fda65716ff80969056981dba5d169376",
+      "scene_generation": 7,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 24
+    },
+    "linear_master": null,
+    "path": "native-scans/0005-scanned-pbr-r1.png",
+    "presentation": null
+  },
+  "png_sha256": "62cfd08ced9ea5a0ea4c6b438113d0a2fda65716ff80969056981dba5d169376",
+  "elapsed_s": 1.859,
+  "ids": [
+    "scan.gravel_concrete_04"
+  ],
+  "collection": "scanned-pbr-r1",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\gravel_concrete_04\\base_color.png": "10642958eef4eac3f499d87ce257c93417e4e06136fbf5925940162e18871e75",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\gravel_concrete_04\\normal_opengl.png": "b610fde45ec7d0343ef9013f84486e0975fb96738b974dd21fc6932043c0c0e8",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\gravel_concrete_04\\normal_directx.png": "694c47433272a5c249b6e2920ecfad30ec206bb3bff33da03abc4e0d9a1b6162",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\gravel_concrete_04\\roughness.png": "300ee442bbabcec02aa37c5331159646465f8a8bc0895b17bc7d45f359deae59",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\gravel_concrete_04\\orm.png": "d77838c908bfb6f8ec69f9aa88aab33cb89bccc5b36164ea40f70111966ff596"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "scan.gravel_concrete_04",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "e2108befd2bda85cd2283476310e5294348bf53dff75780f786f7ad124e08cda",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

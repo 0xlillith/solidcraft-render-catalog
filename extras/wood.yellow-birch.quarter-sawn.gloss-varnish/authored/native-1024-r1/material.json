@@ -1,0 +1,106 @@
+{
+  "id": "wood.yellow-birch.quarter-sawn.gloss-varnish",
+  "name": "Yellow birch / quarter-sawn / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "yellow-birch/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "d424559fc1345bed5b2761e0af52136f595d6dfcb3624087a45672fa1dda5d2c",
+    "normal_opengl": "47f64f8f76dd45e03cc85c05885bc84faeb3387c2f68c4d889d82a1f79d951f1",
+    "roughness": "8962a995c036304ee4e5db2fe312c65093c5c22891a60a23c2a961e16ad0146a"
+  },
+  "physical_profile_id": "wood.usda2021.yellow-birch",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "e158cf5513291f5933a78952cfac0e8388a7c7b748a4bd8c95d159b6220b646d",
+      "bytes": 862925,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "fcef98991432ad5fe4b3d24b2b079753c2cdea7a4544b5fb2e6978926df2cfe3",
+      "bytes": 351774,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "0cd4f63efa867b85a053e34497e6eb4c0f903cb5b63b854f0c921cf7dc74c413",
+      "bytes": 351846,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "e719f7b0aa786fd03dfb54fcb8f972d85dfeb82e12bff8fbb9fc19270a6fe248",
+      "bytes": 163446,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "8091698746959c3ddcaaad5c1bdef5701cde0d6274a3d499422230a0a0f87e82",
+      "bytes": 216737,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "db5d8e419f4d3aaa6beeb557fb48c78dd39405511b795f5a25c58f76b1e5a90d",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.yellow-birch.quarter-sawn.gloss-varnish"
+}

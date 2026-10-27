@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-basswood.rift-sawn.waxed",
+  "name": "American basswood / rift-sawn / Waxed appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-basswood/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "3369a15b211fe300af928290b906129b4810a5ab33ad9f2a2e02b2c1a425d62b",
+    "normal_opengl": "b2f5e6890351ad8f73f823cea4937361826f0012a585f2450fd59e2ca286cc1a",
+    "roughness": "ca0949ebc0842f9683e94e6ed7903adc35dc9eabbf64c369b76b025ae597c17f"
+  },
+  "physical_profile_id": "wood.usda2021.american-basswood",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "90c395e5969dee450e072a89e490cefc59bfdb2fb35675a468ea2edf2a0ee479",
+      "bytes": 903603,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "0128a60faf43af4c8528f179799da4a100fd8cf387c75bcf1a513970b99d4c2a",
+      "bytes": 550278,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "a1657a13b6b804e778bb5dceb4b214fe3e866981873422b183ef9661831d5f7b",
+      "bytes": 550194,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "ce8ba996a1fb918db201ff4ffca0533b238990ba4f4f3494552893eae79c5f49",
+      "bytes": 269222,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "9db9c957fec1929767844361ac448659ec74ac3477c54cab4b690da6efd1bd8d",
+      "bytes": 352842,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.25,
+    "roughness": 0.26,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.94,
+      0.91,
+      0.86
+    ],
+    "roughness_factor": 0.55,
+    "normal_scale": 0.45
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "eb1cdea865d0ebc031e5dd4d275961951a2e6f3adf96e590a5a8b4980d507e63",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-basswood.rift-sawn.waxed"
+}

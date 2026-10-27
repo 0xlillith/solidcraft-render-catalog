@@ -1,0 +1,106 @@
+{
+  "id": "wood.sugar-maple.quarter-sawn.fine-sanded",
+  "name": "Sugar maple / quarter-sawn / Fine-sanded",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "sugar-maple/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "5f677a6eb7c6790e24211fb7eddacc0f5cb3ea68c0105c3a4e22dca98dfd5780",
+    "normal_opengl": "6487e4bbed00c5417a480a5a849c593dba4ec8cf761409a50fa9dd6082d8e4d7",
+    "roughness": "0c5b54e60ab348c9b5ca1619c834f960edf855ea0f74f07a906c1a5178734865"
+  },
+  "physical_profile_id": "wood.usda2021.sugar-maple",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "be1de6669dcd0a58a8a5f327e9a85960ef4fc98344d46d1ec5c7b775afa5f3db",
+      "bytes": 846234,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "8f0ff0d041ae94d398ee597b0f9e7133b1a3f7d04ea510e3c4f703e981db105b",
+      "bytes": 596358,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "8dd3ddd3d6f5cf67beb8aa0ff4cc6723dca9ce1e2541c4c79bc0bec8084fb594",
+      "bytes": 596293,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "c879f6a1c521b74b2f3a76411d377d61ae3b09899f7469e66cb54ac64e20c9ec",
+      "bytes": 308986,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "90588b21d62d5f42032378b2e3394320aa81e8d48a9ad0ae02572230f6672164",
+      "bytes": 400663,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 0.83,
+    "normal_scale": 0.58
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "f39421fb503f57dfa72b00cf16fb706a73f2f35ff5a7263521ba9c2941ad13b0",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.sugar-maple.quarter-sawn.fine-sanded"
+}

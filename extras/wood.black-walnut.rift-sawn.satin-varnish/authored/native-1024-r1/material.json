@@ -1,0 +1,106 @@
+{
+  "id": "wood.black-walnut.rift-sawn.satin-varnish",
+  "name": "Black walnut / rift-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "black-walnut/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "d0f9ac1d1d0bef2b6bdce30834b5ed307ca1aac378fa5c175455b2d4a52448a5",
+    "normal_opengl": "603c5f31a20ea84d65da6920db39ae78ba57d1d5a51a54a41c35c978d2d9225d",
+    "roughness": "2686f64adc9a44caca230a88ff3466b7f8c3bdc1018f8b42d9e8b0c6bde63fc0"
+  },
+  "physical_profile_id": "wood.usda2021.black-walnut",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "6e774afead4f19c19f54a7adc47752fa2b0e12f26c6f9ed951b98b22c04e4ec8",
+      "bytes": 795313,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "c81835930150c2215206e48dd7902c74a467ed8a98969f04412254e78b04c99e",
+      "bytes": 530224,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "89321d1096336d6236151032df0e47a639ec0abce2ff09d137c55de24792e89e",
+      "bytes": 530180,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "d87c74f1f734e2d9986c9ea1ae5372e5436f91433f297778d05dd87423519e16",
+      "bytes": 259701,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "09351d8c9c3e20c80704a69cdda02ebb4884374633f89c2d6638803579183ab7",
+      "bytes": 338765,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "f93246576d673b3c22c58fe689d06c8e5615c60fe96e5aa3c4b27483b0a0e86f",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.black-walnut.rift-sawn.satin-varnish"
+}

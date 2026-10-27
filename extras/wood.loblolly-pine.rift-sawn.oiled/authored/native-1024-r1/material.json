@@ -1,0 +1,106 @@
+{
+  "id": "wood.loblolly-pine.rift-sawn.oiled",
+  "name": "Loblolly pine / rift-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "loblolly-pine/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "004e1bb7ac70e1b134efd1752bdf4a5aa7060d3d75e0bf8146333ca9e64e0918",
+    "normal_opengl": "fa23a136041ccf4f2d7024f5169962ca56eb32edb077c4e2ce849d543c7a667c",
+    "roughness": "8ff5082a5ec45b650a5c90e1daba0ffa5793d30c0a7cbd53c9269f1bd38343ab"
+  },
+  "physical_profile_id": "wood.usda2021.loblolly-pine",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "b54fa6af7447473d95054b23b4c487a5a6965fdf33378cdf085396ba47d0f8f4",
+      "bytes": 798149,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "c156bf2dc200de0fab0104f10284a5c16315f4a22e6250ad28ced26b1486dbd3",
+      "bytes": 495208,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "e0d77f5cce1d63b10fe06c90891317a57d3b262facfb64e8dcc4ee9f21f1c319",
+      "bytes": 495219,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "f8b3cd90be5c35b51c9b636a75a23f4dde9e36b2a83be8e8fdad749b1032bd97",
+      "bytes": 239422,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "4574af50e28c0261498ae7b28278b9db50da788c6c7f5d8969245a1447f97a36",
+      "bytes": 313604,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "707d84f8f6069f3b2afa95115e2af79017a099f9ba35b04459d7788c44de1318",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.loblolly-pine.rift-sawn.oiled"
+}

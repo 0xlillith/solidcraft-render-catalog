@@ -1,0 +1,106 @@
+{
+  "id": "wood.eastern-white-pine.quarter-sawn.waxed",
+  "name": "Eastern white pine / quarter-sawn / Waxed appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "eastern-white-pine/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "aee7d9f5c43778b96c6383891f2994a483e676cb91b4e38c85d830b890e1408e",
+    "normal_opengl": "706d00af370790f713893b86cb6ec6cf9e1b22fbd1296fe09965dc87fc814845",
+    "roughness": "33122ccf3fcc493b56e5a4d67c59ba1ac4dbaf830009765ab0572df935fc729f"
+  },
+  "physical_profile_id": "wood.usda2021.eastern-white-pine",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "00986d85b63fed6faeb9b8b95ed02ce44fedb7a49785d3e54ab2b46b61c51035",
+      "bytes": 764669,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "0e4dbe96c21e5e8dea7b2acac4d006a031c3ce05ce83d04a60a2a6fb68641de3",
+      "bytes": 385895,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "7d6878913fa9c0618812d6bc5ec6d26200559191dd4778c4e6ca8da6f277b98e",
+      "bytes": 385883,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "56b56b0a0fd3b8530dd3e72517c147164da9a575288bbe9669739a98f57035c5",
+      "bytes": 206188,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "dc2067d5f86e517994653623ec8ae2dee84eab025edcfddf212df832fa190b0d",
+      "bytes": 272511,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.25,
+    "roughness": 0.26,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.94,
+      0.91,
+      0.86
+    ],
+    "roughness_factor": 0.55,
+    "normal_scale": 0.45
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "85ab73cc673149568a4107383e13a08991be19fb53b42829ed94b4f8a85cc6f8",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.eastern-white-pine.quarter-sawn.waxed"
+}

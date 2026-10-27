@@ -92,3 +92,7 @@ record's provenance. Scanned references retain their separate CC0/provider/sourc
 receipts; supplier publications and scientific facts are not blanket relicensed.
 No font files are redistributed. Native SolidCraft acceptance and premium optical
 quality remain separate, source-pinned gates. This layout change does not pass them.
+
+## Integrated follow-up
+
+The prepared quality work is resolved in [the reconciliation report](../quality/reconciliation-20261027/README.md). Accepted maps are tracked under each `authored/` folder, with exact receipts; rejected stone candidates are not active. Use `tools/extras/improve.py --id ...` to rebuild one selected extra. This is not blanket premium qualification.

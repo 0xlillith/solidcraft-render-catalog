@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-elm.plain-sawn.oiled",
+  "name": "American elm / plain-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-elm/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "da537381a9388a0c83f0b20fdfd5d29e278f317baa3c67fd34db067f5d6c31da",
+    "normal_opengl": "f02987a11ae606d82815f35e2c9bcca8d0aa27d0d76d499fd524cd3ce79fe23c",
+    "roughness": "f6866138fab51da046ba1500301be3285a3ad02685aea491dd6b3189ba47cc56"
+  },
+  "physical_profile_id": "wood.usda2021.american-elm",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "544d5d8725af86c0e966958bebca50812d20cd9865e7744f7752acc4a8886ea8",
+      "bytes": 1072294,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "149135b5a17cdcf9284fcdde047c04012ffeced614a004e91f18ba199fd1e75b",
+      "bytes": 806196,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "c9516d5b933511cecba89008fea7259acb3d690afd0c0dbbd4a9ca2bba5cbba4",
+      "bytes": 805957,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "fbb58bf1dac6b9fcf5d4997b5d89c68457e1416258f56ce44d8cb1db31202ecd",
+      "bytes": 330444,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "5ec87cbaacf2531b6f3833eb212bad4e7c9c97616fff5d8841ce11bca6ddda4f",
+      "bytes": 423672,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "fb89d839dd46a62104f7ec3d9c12f6de9e43101fb72e0b8682f1102874d1883d",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-elm.plain-sawn.oiled"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "wood.yellow-birch.end-grain.gloss-varnish",
+  "name": "Yellow birch / end-grain / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "yellow-birch/end-grain",
+  "source_file_sha256": {
+    "base_color": "30996dbcb3cc099f06eb45e941fbdba730547c901f38fac8181324a8386ea7c2",
+    "normal_opengl": "1cddbcae2be68b12f9d9d89e1e5dfd66f78b1ba386e8a07fba63353e38fcbd77",
+    "roughness": "705ddfe76e56e615f1417bed7ae33ea12d5bf89626beac39306073f3beacdb22"
+  },
+  "physical_profile_id": "wood.usda2021.yellow-birch",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "3e3c48821e037d84efc198910cc4336f0ede02c2b9602ebbaa62389bacefcdb6",
+      "bytes": 1380651,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "67dbd6542dd77e0815193143427611b35adcc871c6a5338bafbd3fdcd2d4040d",
+      "bytes": 600926,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "cfbfac359df5ca3dd4ceeaca523fa538564abd54064c29639ae816010c40fad5",
+      "bytes": 600948,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "a2bd2e3c3af7e4134a1febe7697b40c0a4e279c018d13c0d351af4f1d74c996f",
+      "bytes": 276386,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "1d2cddc35a8cb50036e97607a338b35efa7ce8d279fcca6356002b3c30164ade",
+      "bytes": 362150,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "4ca512bdad9e1d8f0a3f9ca6e1fc76643e3df0f26668c7f99e77f0534850fe52",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.yellow-birch.end-grain.gloss-varnish"
+}

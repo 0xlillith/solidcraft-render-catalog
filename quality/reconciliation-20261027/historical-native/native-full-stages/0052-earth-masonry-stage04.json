@@ -1,0 +1,933 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -4.8,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 1368.859295991077,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -1167.6,
+            -764.4,
+            192.0
+          ],
+          "u": [
+            223.44,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -120.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            1167.6,
+            -823.1999999999999,
+            -60.0
+          ],
+          "u": [
+            223.44,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -120.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -588.0,
+            1360.8
+          ],
+          "u": [
+            470.40000000000003,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -158.76000000000002
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 earth.portland-cement-powder.exposed-stones flat",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 earth.portland-cement-powder.exposed-stones curved",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 earth.poured-concrete-generic.exposed-stones flat",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 earth.poured-concrete-generic.exposed-stones curved",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 4,
+          "body_name": "03 earth.quikrete-concrete-1101.exposed-stones flat",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 5,
+          "body_name": "03 earth.quikrete-concrete-1101.exposed-stones curved",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 6,
+          "body_name": "04 earth.quikrete-mason-type-s.exposed-stones flat",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 7,
+          "body_name": "04 earth.quikrete-mason-type-s.exposed-stones curved",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 8,
+          "body_name": "05 earth.quikrete-mortar-type-n.exposed-stones flat",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 9,
+          "body_name": "05 earth.quikrete-mortar-type-n.exposed-stones curved",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/exposed-stones/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 10,
+          "body_name": "06 earth.portland-cement-powder.form-board flat",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 11,
+          "body_name": "06 earth.portland-cement-powder.form-board curved",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 12,
+          "body_name": "07 earth.poured-concrete-generic.form-board flat",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 13,
+          "body_name": "07 earth.poured-concrete-generic.form-board curved",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 14,
+          "body_name": "08 earth.quikrete-concrete-1101.form-board flat",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 15,
+          "body_name": "08 earth.quikrete-concrete-1101.form-board curved",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 16,
+          "body_name": "09 earth.quikrete-mason-type-s.form-board flat",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 17,
+          "body_name": "09 earth.quikrete-mason-type-s.form-board curved",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 18,
+          "body_name": "10 earth.quikrete-mortar-type-n.form-board flat",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 19,
+          "body_name": "10 earth.quikrete-mortar-type-n.form-board curved",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/form-board/runtime-1024/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 571246032,
+      "face_appearances": 0,
+      "geometry_bytes": 18462328,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 552783680,
+      "triangles": 102360
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -1167.6,
+              -764.4,
+              192.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              223.44,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -120.0
+            ]
+          },
+          {
+            "center": [
+              1167.6,
+              -823.1999999999999,
+              -60.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              223.44,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -120.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -588.0,
+              1360.8
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              470.40000000000003,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -158.76000000000002
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 1368.859295991077,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -4.8,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 52,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 20,
+      "encoded_bytes": 7254752,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 212
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 510809,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 212
+      },
+      "png_bytes": 510809,
+      "png_sha256": "f933ccdcf8c093543f421d4e531077a61e5ef01d41b637fdb55e12d6ec8707b7",
+      "scene_generation": 52,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 212
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0052-earth-masonry-stage04.png",
+    "presentation": null
+  },
+  "png_sha256": "f933ccdcf8c093543f421d4e531077a61e5ef01d41b637fdb55e12d6ec8707b7",
+  "elapsed_s": 2.469,
+  "ids": [
+    "earth.portland-cement-powder.exposed-stones",
+    "earth.poured-concrete-generic.exposed-stones",
+    "earth.quikrete-concrete-1101.exposed-stones",
+    "earth.quikrete-mason-type-s.exposed-stones",
+    "earth.quikrete-mortar-type-n.exposed-stones",
+    "earth.portland-cement-powder.form-board",
+    "earth.poured-concrete-generic.form-board",
+    "earth.quikrete-concrete-1101.form-board",
+    "earth.quikrete-mason-type-s.form-board",
+    "earth.quikrete-mortar-type-n.form-board"
+  ],
+  "collection": "earth-masonry-stage04",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\exposed-stones\\runtime-1024\\base_color.png": "cbe6477fbcb0a6b6812e90851ff905d7e9f4de28d32a6219b57a73efb39d1864",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\exposed-stones\\runtime-1024\\normal_opengl.png": "f1048b028ced67a36cc013c7aebae0fdf1315cfcbad9e014f8f270a7041dc909",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\exposed-stones\\runtime-1024\\roughness.png": "6bbb5bb35f193223889fc807b53ad11a7b923a600ccb7faf23e5daf736cf6095",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\form-board\\runtime-1024\\base_color.png": "26dce07e1012070e35ef8f7ecc8dc3e2d13944288fbc7169b10a517b055b7bb1",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\form-board\\runtime-1024\\normal_opengl.png": "94f6a4612f0b8d5546eeee69370c9dae32aa0d8f6fd3ffc8b7edc4dbdf96f8f3",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\form-board\\runtime-1024\\roughness.png": "aaf896bef5344e3cf6ebe47a8ebeec28824fbaccfc1e50de8d3b1f4b473a3f74"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "earth.portland-cement-powder.exposed-stones",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.poured-concrete-generic.exposed-stones",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-concrete-1101.exposed-stones",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mason-type-s.exposed-stones",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mortar-type-n.exposed-stones",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.portland-cement-powder.form-board",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.poured-concrete-generic.form-board",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-concrete-1101.form-board",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mason-type-s.form-board",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mortar-type-n.form-board",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "565c6294a103fd9d7cebaeeea908bd81ffaeb8c51dc964833c96ed7dad503b58",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

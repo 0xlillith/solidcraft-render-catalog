@@ -1,0 +1,457 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -20.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 2352.9532475402175,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 32,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -2185.0,
+            -1495.0,
+            800.0
+          ],
+          "u": [
+            437.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -500.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            2185.0,
+            -1610.0,
+            -250.0
+          ],
+          "u": [
+            437.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -500.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -1150.0,
+            2339.0999999999995
+          ],
+          "u": [
+            920.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -272.895
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 scan.ash_veneer flat",
+          "frame": {
+            "origin": [
+              -1150.0,
+              -0.001,
+              -500.0
+            ],
+            "u": [
+              1000.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              1000.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/ash_veneer/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/ash_veneer/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/ash_veneer/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 scan.ash_veneer curved",
+          "frame": {
+            "origin": [
+              -1150.0,
+              -0.001,
+              -500.0
+            ],
+            "u": [
+              1000.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              1000.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/ash_veneer/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/ash_veneer/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/ash_veneer/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 scan.black_walnut_veneer_01 flat",
+          "frame": {
+            "origin": [
+              150.0,
+              -0.001,
+              -500.0
+            ],
+            "u": [
+              1000.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              1000.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/black_walnut_veneer_01/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/black_walnut_veneer_01/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/black_walnut_veneer_01/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 scan.black_walnut_veneer_01 curved",
+          "frame": {
+            "origin": [
+              150.0,
+              -0.001,
+              -500.0
+            ],
+            "u": [
+              1000.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              1000.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/scanned-native-1024/black_walnut_veneer_01/base_color.png",
+          "normal_opengl": "native-profiles-r2/scanned-native-1024/black_walnut_veneer_01/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/scanned-native-1024/black_walnut_veneer_01/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 536527150,
+      "face_appearances": 0,
+      "geometry_bytes": 3691848,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 532835278,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -2185.0,
+              -1495.0,
+              800.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              437.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -500.0
+            ]
+          },
+          {
+            "center": [
+              2185.0,
+              -1610.0,
+              -250.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              437.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -500.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -1150.0,
+              2339.0999999999995
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              920.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -272.895
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 32,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 2352.9532475402175,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -20.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 5976814,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 8
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 530645,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 8
+      },
+      "png_bytes": 530645,
+      "png_sha256": "a84cd79ff60196b76176987d55b45e44305562316365fdb6f2c16f7f5bfcf37d",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 8
+    },
+    "linear_master": null,
+    "path": "native-scans/0001-scanned-pbr-r1.png",
+    "presentation": null
+  },
+  "png_sha256": "a84cd79ff60196b76176987d55b45e44305562316365fdb6f2c16f7f5bfcf37d",
+  "elapsed_s": 3.282,
+  "ids": [
+    "scan.ash_veneer",
+    "scan.black_walnut_veneer_01"
+  ],
+  "collection": "scanned-pbr-r1",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\ash_veneer\\base_color.png": "520597c916a277db361d49f2162af2cb33af184bd87c6b5546c59db87c8d5976",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\ash_veneer\\normal_opengl.png": "09b5edb6d5f3c2c1b6d7bdc7ac337c2a08a3a3377d876c3a256d44b41603d5ac",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\ash_veneer\\normal_directx.png": "b595be4e4178436eb75af8473c284db9255d24a10f65fccf48b5d6e0c8631386",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\ash_veneer\\roughness.png": "0002c669ac4a67b41ff77000c168b274503ee1ea3ac6e16eaf1c63be7b8c5b9e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\ash_veneer\\orm.png": "77e625033c98c6e14633fbf1c438e171da4d23e889d7f9743cbe7479520fab62",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\black_walnut_veneer_01\\base_color.png": "75eabec8d61b966f54880e0fc971e8f5bdf476e608c7a28a40ede615b7688365",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\black_walnut_veneer_01\\normal_opengl.png": "dc26c587ae3b40923ec9b79e40ab064ee826921fa712420f905ff2a1af28511e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\black_walnut_veneer_01\\normal_directx.png": "18e16f41a500053f5c01a7dfc4253fc0627d5fe94ef3c7e5c8658baa24df6a78",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\black_walnut_veneer_01\\roughness.png": "1b2c185498e8f7f69de352c5daa1a06c5811d7ed0bbba7569436fd1526253ae2",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\scanned-native-1024\\black_walnut_veneer_01\\orm.png": "e24e9dd9fbe59726ec6372fa19c89c56cb9cdad4db864245e9a31cde73391a11"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "scan.ash_veneer",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "scan.black_walnut_veneer_01",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "7687afcaa4f45e62315efd63f193c51d248a51ebfc09313bc0f847cef3487627",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

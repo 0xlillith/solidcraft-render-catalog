@@ -1,0 +1,106 @@
+{
+  "id": "wood.loblolly-pine.plain-sawn.satin-varnish",
+  "name": "Loblolly pine / plain-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "loblolly-pine/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "f4b44c49aee42a5c2b959d6aff53274c229a5568accbc24c381669d0a958ebd4",
+    "normal_opengl": "086f05dcd1aaa1800857d83ba47d0599145ac2174fbcdd1ba32bca1a54f19c3e",
+    "roughness": "1865ff80aedf9268d21c445c00d3caed688ca3ec31d094c9128bb5f1d60fa91b"
+  },
+  "physical_profile_id": "wood.usda2021.loblolly-pine",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "2d5a5d64280da3a807b4b76fd8e26985515051a5a7dfe983a02950bfa95b4d68",
+      "bytes": 1018756,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "22e7a58898c5048088cea4c09e7fa1e8f9dc30265ccb37b68712ade598e4068e",
+      "bytes": 360510,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "57ffc581ed4bde22f0d07e2b92c803c53187d019ea0fd3e71dbbcac17d66adc9",
+      "bytes": 360314,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "9a9e7b64aba679bb5fff7ca3efec88f576ce7bf60d0a2422c85c5250331e20a5",
+      "bytes": 228426,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "dd73c925f3a03ecf060aec36e7c9d133b2bcb0f56756efed47d6890963333149",
+      "bytes": 297333,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "405a6bd34bcd32fd64604cbac2cfdf1406174aec89780950ff49611dbf046951",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.loblolly-pine.plain-sawn.satin-varnish"
+}

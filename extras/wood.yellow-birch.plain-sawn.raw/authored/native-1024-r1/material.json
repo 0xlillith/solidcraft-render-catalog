@@ -1,0 +1,106 @@
+{
+  "id": "wood.yellow-birch.plain-sawn.raw",
+  "name": "Yellow birch / plain-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "yellow-birch/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "30fcdb222b7e3e5339d56d66cebbfa4702cd94150963d8c22477828fc3bd7525",
+    "normal_opengl": "da3d4fcedb2d5165c32585b35b79bb26a2238acd6a15366e9e919da05359f7dc",
+    "roughness": "fe19ae324b41a435fc83f7a7944fe70234c82687f8f2121e22745ea8ad58cda7"
+  },
+  "physical_profile_id": "wood.usda2021.yellow-birch",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "cb24018f0d5e9620e31292a23130979fc2e99a5affe6a41e93923b6750ad175f",
+      "bytes": 1133192,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "967c2655c902e352d5826fab7be2fdb1a37078df7f2caae237885f273676e191",
+      "bytes": 826374,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "3fdb82907800c0bfa095cd7d709566702ff6546c291b6d4a0f8730a4d67e9ea6",
+      "bytes": 826206,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "c0ec2b76d5a58c10e6ed8d15069208ec13abd805e44adc83c01d70e5063c55e8",
+      "bytes": 401610,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "76ab362775f73606777cfc1310ab800ec988f37dfa32e74e715822375fae18e3",
+      "bytes": 512509,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "51f41d9ce68df8ff33869c49293a7b88cb8a8af7daec9ba9d3096eb4a5bc1084",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.yellow-birch.plain-sawn.raw"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "wood.white-oak.quarter-sawn.waxed",
+  "name": "White oak / quarter-sawn / Waxed appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "white-oak/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "a58cc667739f714eab9ee1c49583107430ef04fe7ef8db76dfd401c64ee3ee57",
+    "normal_opengl": "43357340838c34cde89a818adf629930674a0b9f4e8b4f662510981fa195b23c",
+    "roughness": "60a2a114622e74c5bf78c2b7a7ee3de16e777414c21908e29a35c13318a9b08e"
+  },
+  "physical_profile_id": "wood.usda2021.white-oak",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "e99d56c5b271445f47de7030b353bb36baeb6e4c745b1e24ff6c605f972ad828",
+      "bytes": 996218,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "5acfcc6cc36bbd1c1f2ee1fa730f8086597a3fbb50e4bdef860d700778df8145",
+      "bytes": 626138,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "98ac2b3f1d094e0895aa1a7e6aa39aba3ef55ede9f9baa0a5fd4c5346d630a69",
+      "bytes": 625867,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "58a3c129e1507b9daa152fc0a9c8683cba1e735546af46c511ce24351df6b3d9",
+      "bytes": 302119,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "d751c6f302483e3e67a5de4aeecdc7a44adde5b1e50e60771e8105f1ce482280",
+      "bytes": 386942,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.25,
+    "roughness": 0.26,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.94,
+      0.91,
+      0.86
+    ],
+    "roughness_factor": 0.55,
+    "normal_scale": 0.45
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "3359eaa4a29b926245317e5abb43b4298cd480f1544aefc577a70b97f40aa1fd",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.white-oak.quarter-sawn.waxed"
+}

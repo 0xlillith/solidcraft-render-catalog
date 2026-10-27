@@ -1,0 +1,106 @@
+{
+  "id": "wood.northern-red-oak.rift-sawn.raw",
+  "name": "Northern red oak / rift-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "northern-red-oak/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "e53ba282eb005ce58f6bff0d9b900950a2b0ccb9725088e8addb550f540a4ab7",
+    "normal_opengl": "4215b0271ab6ed92db1b3dc2f6981c934fc573abb362493e96102f923be61f15",
+    "roughness": "b7231df1bb98f84ce738de615b1680fa7cc92fcdb0e6dd48bbc703ab5a7a2384"
+  },
+  "physical_profile_id": "wood.usda2021.northern-red-oak",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "14e6de92109a1b5c12f1576b77f26c0a7d9d9863068d6a88f1fd88054bd5bd81",
+      "bytes": 883570,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "03b0ef26a9a5a4ef6cad4ac5d715014a9b3dbdd2b3f1e07a1971b047f69a2dd8",
+      "bytes": 876515,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "11947cb3f392f17096486eeaeac476ea4ed98750479048d29d2a7d4124de3777",
+      "bytes": 876349,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "f9992fa30f7c16b41265d304ff0f3d6deac04ed5f1cdaee991fa9f164629d048",
+      "bytes": 360401,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "19907bcd34ae6b6d1d81148d8dbcb99b7cdd811312232cb66be98b2ff2b786d2",
+      "bytes": 462489,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "f6ceaf68b487f4619e8839ad8602064a53540124fe941abf8f367f165925eed5",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.northern-red-oak.rift-sawn.raw"
+}
