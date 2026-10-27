@@ -1,0 +1,181 @@
+{
+  "id": "MAT-132",
+  "name": "Irregular linen weave",
+  "family": "Textiles and leather",
+  "version": "1.0.0-local",
+  "seed": 7245308,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.09850826855338865,
+    0.0908743308689878,
+    0.10855968167820437
+  ],
+  "base_linear_high": [
+    0.18737326512706587,
+    0.17347266217935092,
+    0.20567583827971542
+  ],
+  "roughness": 0.8160000000000001,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.45,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-132",
+    "name": "Irregular linen weave",
+    "family": "Textiles and leather",
+    "domains": [
+      "automotive",
+      "CAD product",
+      "DIY"
+    ],
+    "description": "Uneven yarn thickness produces structured natural variation.",
+    "use_cases": [
+      "Furniture",
+      "interiors"
+    ],
+    "optical_model": "Dielectric fibre or leather response with appropriate sheen, anisotropy and optional geometric fibres.",
+    "controls": [
+      "weave orientation",
+      "surface roughness",
+      "fibre sheen",
+      "yarn irregularity",
+      "openness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep irregularity tied to individual yarn paths.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-022"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Avoid replacing yarn variation with uniform random noise.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a50491d2576eb294ffa67f3252bbcd615b506574a644c580e6916216ff84c5ff",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "8077daf1e74940382404da101391dd0c3369bf1edebe7682e9ff3de66529b29d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "52571fbbf589c4975016423162dbb08ba844c7a57527a566459ef4d09318eb04",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "850d3d78fa127796456543004d334e65be893ff544d09aa3996d4067c34266f9",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3bcedb5b024f1e508d3aad51708303421cce4545fd5960e5f5d474e8d205c9e8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "dc380a2703130a38bf3be81719c020c0866c66bf3ef6d9fa5fb693ce4df0d74d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "ff0debd1153e8507b30a23ae6df31d7121e45aaf6c15d4c1aa0d012939f2e73c",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "60fdef0deb946700f3bb3296cade9ce9e84e8b49b041423bc7d2f95514d34f0b",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "al-7075-t7351",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "7075-T7351 / Cross-satin brushed",
+        "density_g_cm3": 2.8,
+        "color": [
+          241,
+          243,
+          246
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.32,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "7075-T7351",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "kaiser-al-7075-t7351",
+              "title": "7075-T7351 primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1028/Kaiser_Aluminum_7075_Rod_and_Bar.pdf"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 2800
+              },
+              "source_id": "kaiser-al-7075-t7351",
+              "conditions": {
+                "temperature_k": 293.15,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "rod/bar; T73/T7351 typical row; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

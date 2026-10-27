@@ -1,0 +1,101 @@
+{
+  "id": "SELENE-AP-022",
+  "name": "Polyimide harness wrap",
+  "original_specification": {
+    "id": "SELENE-AP-022",
+    "name": "Polyimide harness wrap",
+    "source_catalog_ids": [
+      "MAT-332"
+    ],
+    "family": "Harness insulation",
+    "domains": [
+      "SELENE",
+      "electronics",
+      "aerospace"
+    ],
+    "purpose": "An opaque amber preview of wrapped cable insulation.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-022 Polyimide harness wrap",
+        "color": "#9d713d",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.46,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Thin-film transmission",
+        "Helical overlap geometry",
+        "Spectral absorption"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Absorbing polymer film with geometric helical overlaps and separately specified optical thickness.",
+      "structure": [
+        "Polymer film layer",
+        "Overlapping wrap seams",
+        "Independent cable substrate"
+      ],
+      "authoring_controls": [
+        {
+          "id": "wrap_pitch",
+          "value": 5.0,
+          "unit": "mm",
+          "meaning": "Illustrative axial distance per helical wrap.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "wrap_overlap",
+          "value": 0.8,
+          "unit": "mm",
+          "meaning": "Authored visible overlap width.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Generate wrap seams from the cable-local curve frame",
+        "Use geometry for overlap silhouette in close views"
+      ],
+      "capability_requirements": [
+        "CAP-025",
+        "CAP-026",
+        "CAP-027",
+        "CAP-033",
+        "CAP-034",
+        "CAP-036",
+        "CAP-104"
+      ],
+      "unknown_optical_inputs": [
+        "Film optical constants",
+        "Actual optical thickness"
+      ],
+      "validation_criteria": [
+        "Wrap pitch should stay stable when the cable deforms",
+        "The opaque preview must not claim real film transparency"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#9d713d",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.46,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-022 Polyimide harness wrap",
+    "bodies": [
+      "SELENE-AP-022"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

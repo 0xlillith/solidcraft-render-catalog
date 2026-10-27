@@ -1,0 +1,97 @@
+{
+  "id": "SELENE-AP-029",
+  "name": "Sample vial opaque inspection surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-029",
+    "name": "Sample vial opaque inspection surrogate",
+    "source_catalog_ids": [
+      "MAT-582"
+    ],
+    "family": "Transparent containment targets",
+    "domains": [
+      "SELENE",
+      "laboratory",
+      "space"
+    ],
+    "purpose": "An explicitly opaque inspection stand-in that keeps sample-vial geometry visible until transmission exists.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_inspection_surrogate",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-029 Sample vial opaque inspection surrogate",
+        "color": "#91a2ae",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.35,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Transmission",
+        "Refraction",
+        "Absorption",
+        "Interior medium boundaries",
+        "Caustics"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Finite-thickness dielectric vessel with interior and exterior interfaces, absorption and nested sample medium.",
+      "structure": [
+        "Outer glass interface",
+        "Glass wall with actual thickness",
+        "Inner interface",
+        "Sample or internal medium"
+      ],
+      "authoring_controls": [
+        {
+          "id": "inspection_surrogate_opacity",
+          "value": 1.0,
+          "unit": "normalized",
+          "meaning": "Fixed opaque baseline; not a glass opacity setting.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use closed, consistently oriented vessel walls",
+        "Keep sample contents as a distinct nested volume",
+        "Never use alpha blending as evidence of glass optics"
+      ],
+      "capability_requirements": [
+        "CAP-025",
+        "CAP-026",
+        "CAP-027",
+        "CAP-029"
+      ],
+      "unknown_optical_inputs": [
+        "Glass refractive-index data",
+        "Absorption spectrum",
+        "Actual wall thickness from CAD",
+        "Interior-medium optics"
+      ],
+      "validation_criteria": [
+        "The baseline must visibly remain opaque and be labelled a surrogate",
+        "The advanced target must preserve two vessel interfaces and the internal medium"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#91a2ae",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.35,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-029 Sample vial opaque inspection surrogate",
+    "bodies": [
+      "SELENE-AP-029"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

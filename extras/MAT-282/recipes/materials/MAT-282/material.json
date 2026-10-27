@@ -1,0 +1,191 @@
+{
+  "id": "MAT-282",
+  "name": "Oily fingerprint overlay",
+  "family": "Industrial wear and service overlays",
+  "version": "1.0.0-local",
+  "seed": 8433158,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.13270644410516574,
+    0.06693214792556632,
+    0.03650178521643639
+  ],
+  "base_linear_high": [
+    0.2496445698631376,
+    0.12987644846147894,
+    0.07446593725977968
+  ],
+  "roughness": 0.5960000000000001,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.08,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-282",
+    "name": "Oily fingerprint overlay",
+    "family": "Industrial wear and service overlays",
+    "domains": [
+      "industrial",
+      "automotive",
+      "electronics"
+    ],
+    "description": "Fine touch patterns locally alter reflection and absorption.",
+    "use_cases": [
+      "Metal panels",
+      "glass covers"
+    ],
+    "optical_model": "Non-destructive layer or geometric surface modifier over a host material; state is illustrative rather than diagnostic.",
+    "controls": [
+      "coverage mask",
+      "host preservation",
+      "seed",
+      "ridge spacing",
+      "oil amount"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve realistic fingerprint scale and surface attachment.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Marks should emerge in suitable reflections without becoming painted ink.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a21c6e604d40f0c152f3a30851beb49cbacb02561c35261bdadf06c69d757b5a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "c4a1360eff5cead62be06e237bb326fb36bd1c19527681b9aa095531cf785002",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "d35206495d5afd97e687e981773a63785b5f95f1e2a39f1846c46f2100f2c7ee",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "10dce0b4326a94b7fed62ce3467fadbce691c154501cc75259ff28d21793a57b",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c55580c5550581dfc174199e19cabce4a0dc1e3fccc02a00e21c3a3dc9e8b18a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "6f0e8cc36aed82e809b5020da7323bf11648114ce9c009fe950cee76ecf2209f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "d82bd3308571aee950ca138d65fb4bff11fa21656e9349805323035914a8bd0e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "de3202b19a27536997906dc774cc85edf25dd57f46a6f6a274bece686a908946",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "5d0ba07180eab01af8e6349be8e2b012025a32b4a96872d68ef2cc76ff1b541c",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

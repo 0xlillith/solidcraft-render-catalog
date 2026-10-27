@@ -1,0 +1,68 @@
+{
+  "id": "ENV-202",
+  "name": "Four-post vehicle test bay",
+  "kind": "environment",
+  "family": "Automotive test and manufacturing facilities",
+  "path": "environments/ENV-202",
+  "thumbnail": "environments/ENV-202/native-model-preview.png",
+  "description": "Four-post vehicle test bay is a conceptual setting for suspension components; vehicle test-fixture visualization. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-202/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-202/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-202/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-202/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-202/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-202/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-202/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-202/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-202/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-202/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-202/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-202/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

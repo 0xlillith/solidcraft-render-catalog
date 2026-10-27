@@ -1,0 +1,157 @@
+{
+  "id": "LUZ-166",
+  "name": "Transmission through fine mesh",
+  "family": "17 Macro and miniatures",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-166",
+    "name": "Transmission through fine mesh",
+    "family": "17 Macro and miniatures",
+    "domains": [
+      "macro",
+      "manufacturing"
+    ],
+    "description": "A proposed lighting arrangement for woven and perforated structures.",
+    "use_cases": [
+      "Woven and perforated structures"
+    ],
+    "sources": "Uniform rear area and optional front fill",
+    "geometry": "Rear source covers selected region",
+    "contribution_policy": "Rear 0 and front -3 reference EV",
+    "controls": [
+      "Rear coverage",
+      "source distance",
+      "fill"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025",
+      "CAP-040"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Separate real openings from average transparency"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 986138,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          737.2368398600926,
+          -1500.0,
+          401.50350544573223
+        ],
+        "u": [
+          -98.72069289268056,
+          -48.52035443799902,
+          0.0
+        ],
+        "v": [
+          -15.45444727343403,
+          31.443994191270054,
+          145.85072947631087
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "center": [
+          -737.2368398600927,
+          -1500.0,
+          401.5035054457322
+        ],
+        "u": [
+          -98.72069289268056,
+          48.520354437999025,
+          0.0
+        ],
+        "v": [
+          15.45444727343403,
+          31.44399419127005,
+          145.85072947631087
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "center": [
+          -737.2368398600926,
+          -1500.0,
+          -401.5035054457323
+        ],
+        "u": [
+          -98.72069289268056,
+          48.52035443799902,
+          0.0
+        ],
+        "v": [
+          -15.454447273434033,
+          -31.443994191270054,
+          145.85072947631087
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "center": [
+          737.2368398600925,
+          -1500.0,
+          -401.50350544573257
+        ],
+        "u": [
+          -98.72069289268056,
+          -48.520354437999,
+          0.0
+        ],
+        "v": [
+          15.454447273434038,
+          -31.44399419127008,
+          145.85072947631087
+        ],
+        "radiance": [
+          6,
+          6,
+          6
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

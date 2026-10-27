@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "c71500",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "C71500 copper-nickel / Fine directional brush",
+        "density_g_cm3": 8.94060922139561,
+        "color": [
+          206,
+          200,
+          192
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.24,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "C71500 copper-nickel",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "cda-c71500",
+              "title": "C71500 copper-nickel primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://alloys.copper.org/alloy/C71500"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 8940.609221395609
+              },
+              "source_id": "cda-c71500",
+              "conditions": {
+                "temperature_k": 293.15,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "CDA alloy physical reference; product form and temper must be selected separately; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

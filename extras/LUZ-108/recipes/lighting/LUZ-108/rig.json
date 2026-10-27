@@ -1,0 +1,136 @@
+{
+  "id": "LUZ-108",
+  "name": "Powered headlamp on a screen",
+  "family": "11 Vehicles and transport",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-108",
+    "name": "Powered headlamp on a screen",
+    "family": "11 Vehicles and transport",
+    "domains": [
+      "automotive",
+      "transport"
+    ],
+    "description": "A proposed lighting arrangement for beam-pattern visualization.",
+    "use_cases": [
+      "Beam-pattern visualization"
+    ],
+    "sources": "Actual optical source or documented photometric profile",
+    "geometry": "Real source-to-screen distance and receiver orientation; no B autoscaling",
+    "contribution_policy": "Documented photometry if supplied; no invented absolute output",
+    "controls": [
+      "Beam orientation",
+      "documented source contribution",
+      "receiver target"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-010",
+      "CAP-012",
+      "CAP-025"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Visualization is not beam homologation or compliance certification"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 896644,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          0.0,
+          2000.0
+        ],
+        "u": [
+          -1500.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          500.0,
+          0.0
+        ],
+        "radiance": [
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "center": [
+          -1400.0,
+          -1200.0,
+          450.0
+        ],
+        "u": [
+          -81.34892168199607,
+          94.90707529566207,
+          0.0
+        ],
+        "v": [
+          270.01653213051725,
+          231.44274182615771,
+          1457.2320781646965
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "center": [
+          1400.0,
+          100.0,
+          500.0
+        ],
+        "u": [
+          10.687057498186446,
+          -149.61880497461027,
+          0.0
+        ],
+        "v": [
+          -468.615312352114,
+          -33.47252231086528,
+          1318.8173790480926
+        ],
+        "radiance": [
+          5,
+          5,
+          5
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

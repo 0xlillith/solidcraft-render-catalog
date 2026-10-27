@@ -1,0 +1,137 @@
+{
+  "id": "LUZ-032",
+  "name": "Clear glass dark field",
+  "family": "04 Glass and optical products",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-032",
+    "name": "Clear glass dark field",
+    "family": "04 Glass and optical products",
+    "domains": [
+      "product",
+      "optics"
+    ],
+    "description": "A proposed lighting arrangement for glass on a dark background.",
+    "use_cases": [
+      "Glass on a dark background"
+    ],
+    "sources": "Two rear-side strips and passive black background",
+    "geometry": "Strips near 110 degrees from subject front and outside view",
+    "contribution_policy": "Strips 0 and -0.5 reference EV",
+    "controls": [
+      "Edge brightness",
+      "strip separation"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025"
+    ],
+    "priority": "P0",
+    "cost": "High",
+    "validation": [
+      "Bright contours with a clean center and no hidden front fill"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 779376,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1100.0,
+          400.0,
+          200.0
+        ],
+        "u": [
+          25.63072973150283,
+          70.48450676163277,
+          0.0
+        ],
+        "v": [
+          197.86220924911697,
+          -71.94989427240617,
+          1232.1419394149557
+        ],
+        "radiance": [
+          12,
+          12,
+          12
+        ]
+      },
+      {
+        "center": [
+          1100.0,
+          400.0,
+          200.0
+        ],
+        "u": [
+          25.63072973150283,
+          -70.48450676163277,
+          0.0
+        ],
+        "v": [
+          -197.86220924911697,
+          -71.94989427240617,
+          1232.1419394149557
+        ],
+        "radiance": [
+          12,
+          12,
+          12
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    }
+  ],
+  "limitations": [
+    "Refraction/caustic quality depends on the actual optical object, topology and executor, not on this light recipe."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

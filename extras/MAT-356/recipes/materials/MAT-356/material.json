@@ -1,0 +1,180 @@
+{
+  "id": "MAT-356",
+  "name": "Metal-filled polymer filament",
+  "family": "Additive feedstock appearances",
+  "version": "1.0.0-local",
+  "seed": 9019164,
+  "pattern": "fdm",
+  "base_linear_low": [
+    0.07333934622146056,
+    0.18123351997875412,
+    0.2420755424549514
+  ],
+  "base_linear_high": [
+    0.1415432871495252,
+    0.3380073050359403,
+    0.44879427133588157
+  ],
+  "roughness": 0.468,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.16,
+  "tile_mm": [
+    12.8,
+    12.8
+  ],
+  "cycles_u": 12,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-356",
+    "name": "Metal-filled polymer filament",
+    "family": "Additive feedstock appearances",
+    "domains": [
+      "additive manufacturing",
+      "DIY",
+      "industrial"
+    ],
+    "description": "Conductive particles interrupt a continuous polymer matrix.",
+    "use_cases": [
+      "Decorative feedstock concepts"
+    ],
+    "optical_model": "Process feedstock appearance with distinct polymer, particle or filament regions; no printability or formulation claims.",
+    "controls": [
+      "feedstock geometry",
+      "surface finish",
+      "inclusion structure",
+      "particle coverage",
+      "exposed polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Distinguish discrete particles from a continuous metal body.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Polishing may expose particles without converting the binder into metal.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b47dc3f604f034465b39444d755d4d57a9687891bb0498f298d0e878704f79b5",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ae315f58ba6059d4f2638e168230c55e29887edf04c1f522527ffeb1226fdcfb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "71200953227eb04a0820fe3d7ecf37b8997034cdd135a5a69042c64b3dbc10e2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "83c942d43fddf0e6157d3666775de85ac0165d57d12cb5ecbea24a56e7ac3a68",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c6a5359bf2b98828c42258b31ff1e489b1e143a0353f35ffdc1ba7c40c3955a1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "e06716b3729d361f7b76b6c6e428e1dd7bffd7e1988699407b58f174ba930137",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cabed9d0a9e1057992b26cbfb7dba1ce57ea2ee8720ad70816fc531c86ba56a8",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "4ad521809edf6120c56781bb1009897fa83b0e62952792eb7a09baa220fae34e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

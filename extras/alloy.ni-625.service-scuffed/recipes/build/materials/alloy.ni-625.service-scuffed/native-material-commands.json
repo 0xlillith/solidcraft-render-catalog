@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "ni-625",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "Nickel alloy 625 / Scuffed bare metal",
+        "density_g_cm3": 8.44,
+        "color": [
+          197,
+          196,
+          191
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.37,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "Nickel alloy 625",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "sand-ni-625",
+              "title": "Nickel alloy 625 primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://www.sandmeyersteel.com/inconel-alloy-625/"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 8440
+              },
+              "source_id": "sand-ni-625",
+              "conditions": {
+                "temperature_k": null,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "Supplier plate reference; heat treatment and test direction not stated for all physical values; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

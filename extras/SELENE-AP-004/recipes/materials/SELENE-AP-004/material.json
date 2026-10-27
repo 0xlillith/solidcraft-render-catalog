@@ -1,0 +1,96 @@
+{
+  "id": "SELENE-AP-004",
+  "name": "Ceramic gripper contact pad",
+  "original_specification": {
+    "id": "SELENE-AP-004",
+    "name": "Ceramic gripper contact pad",
+    "source_catalog_ids": [
+      "MAT-574"
+    ],
+    "family": "Ceramic contact surfaces",
+    "domains": [
+      "SELENE",
+      "industrial",
+      "robotics"
+    ],
+    "purpose": "A light ceramic appearance for a separate gripper contact pad.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-004 Ceramic gripper contact pad",
+        "color": "#d9d7cf",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.32,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Ceramic microstructure",
+        "Directional polish",
+        "Contact or friction behavior"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque dielectric ceramic with optional fine polishing marks and limited subsurface response.",
+      "structure": [
+        "Ceramic surface",
+        "Separate pad geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "polish_line_pitch",
+          "value": 0.25,
+          "unit": "mm",
+          "meaning": "Illustrative spacing of faint polishing marks.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "polish_line_relief",
+          "value": 0.002,
+          "unit": "mm",
+          "meaning": "Render-only polished texture amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep pad contact dimensions in CAD",
+        "Orient polishing direction in the pad local frame"
+      ],
+      "capability_requirements": [
+        "CAP-020",
+        "CAP-028",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Ceramic optical response for a specified composition"
+      ],
+      "validation_criteria": [
+        "A moving gripper must carry its pad texture with it",
+        "A glossy response must not imply lubrication or a friction coefficient"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#d9d7cf",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.32,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-004 Ceramic gripper contact pad",
+    "bodies": [
+      "SELENE-AP-004"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

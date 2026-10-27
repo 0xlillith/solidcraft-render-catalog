@@ -1,0 +1,117 @@
+{
+  "id": "LUZ-039",
+  "name": "Optical caustic on a receiver",
+  "family": "04 Glass and optical products",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-039",
+    "name": "Optical caustic on a receiver",
+    "family": "04 Glass and optical products",
+    "domains": [
+      "product",
+      "optics"
+    ],
+    "description": "A proposed lighting arrangement for prism or lens demonstrations.",
+    "use_cases": [
+      "Prism or lens demonstrations"
+    ],
+    "sources": "Small K and weak F",
+    "geometry": "K at 2B, width 0.03B; real receiving surface",
+    "contribution_policy": "K 0 and F -3 reference EV",
+    "controls": [
+      "Source size",
+      "source distance",
+      "receiver target",
+      "fill"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025",
+      "CAP-029"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Caustic converges from transport rather than a projected decal"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 790177,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1400.0,
+          -1200.0,
+          1500.0
+        ],
+        "u": [
+          -9.761870601839528,
+          11.38884903547945,
+          0.0
+        ],
+        "v": [
+          7.186987199641337,
+          6.160274742549718,
+          11.636074513705022
+        ],
+        "radiance": [
+          80,
+          80,
+          80
+        ]
+      },
+      {
+        "center": [
+          -1400.0,
+          -1000.0,
+          800.0
+        ],
+        "u": [
+          -72.65477421488706,
+          101.71668390084186,
+          0.0
+        ],
+        "v": [
+          308.7901412793992,
+          220.56438662814233,
+          816.0882305241266
+        ],
+        "radiance": [
+          3,
+          3,
+          3
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Refraction/caustic quality depends on the actual optical object, topology and executor, not on this light recipe.",
+    "Finite source authored; no claim that the current integrator resolves the requested caustic."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

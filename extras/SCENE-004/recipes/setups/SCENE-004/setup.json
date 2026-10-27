@@ -1,0 +1,417 @@
+{
+  "id": "SCENE-004",
+  "name": "Automotive Paint Review",
+  "source_kind": "scene",
+  "original_specification": {
+    "id": "SCENE-004",
+    "name": "Automotive Paint Review",
+    "description": "Large reflection bands for judging a curved paint stack.",
+    "status": "specified_unbound",
+    "mode": "terrestrial",
+    "quality_preset_id": "Q-003",
+    "studio_preset_id": "STU-014",
+    "environment_preset_id": "ENVSET-010",
+    "appearance_bindings": {
+      "paint_stack": "MAT-204",
+      "trim": "MAT-211",
+      "neutral_satin_floor": "MAT-145"
+    },
+    "required_capabilities": [
+      "CAP-001",
+      "CAP-002",
+      "CAP-003",
+      "CAP-004",
+      "CAP-005",
+      "CAP-006",
+      "CAP-009",
+      "CAP-017",
+      "CAP-018",
+      "CAP-019",
+      "CAP-021",
+      "CAP-033",
+      "CAP-036",
+      "CAP-038",
+      "CAP-039",
+      "CAP-040",
+      "CAP-043",
+      "CAP-044",
+      "CAP-057",
+      "CAP-058",
+      "CAP-059",
+      "CAP-065",
+      "CAP-073",
+      "CAP-081",
+      "CAP-082",
+      "CAP-083",
+      "CAP-085",
+      "CAP-089",
+      "CAP-090",
+      "CAP-091",
+      "CAP-092",
+      "CAP-093",
+      "CAP-095",
+      "CAP-107",
+      "CAP-116",
+      "CAP-117",
+      "CAP-118",
+      "CAP-120"
+    ],
+    "subject_binding": {
+      "kind": "explicit_selected_subject",
+      "manifest": "user_confirmed_role_selection",
+      "selection_rule": "Select the intended CAD subject and confirm each material-role target.",
+      "preserve_physical_scale": true,
+      "unresolved_action": "block_without_scene_mutation"
+    },
+    "controls": [
+      "Appearance choice",
+      "Texture scale in mm",
+      "Light or Sun direction",
+      "Manual exposure",
+      "Camera framing",
+      "Quality profile"
+    ],
+    "locks": [
+      "Preserve engineering and simulation properties.",
+      "Preserve user-locked camera and material fields.",
+      "Resolve source ownership and geometry clearance before one atomic apply.",
+      "Never silently approximate an unsupported optical or physical feature."
+    ],
+    "camera_intent": {
+      "projection": "perspective",
+      "vertical_fov_rad": 0.6981317007977318,
+      "view_from_target_direction": [
+        0.49490154195747266,
+        -0.761386987626881,
+        0.4187628431947846
+      ],
+      "frame_fill_fraction": 0.72,
+      "fit_policy": "explicit_once_when_camera_not_locked",
+      "clip_planes": "derive_from_resolved_scene_scale",
+      "exposure": "preserve_manual_project_exposure"
+    },
+    "environment_overrides": {
+      "ambient_scale": 0.0,
+      "background_kind": "scene_geometry"
+    },
+    "validation": [
+      "Resolve every concept to a versioned authored resource before applying.",
+      "Validate union of quality, rig, environment, catalog and appearance requirements.",
+      "Record source ownership, applied overrides, resource hashes, camera and executor.",
+      "Review physical scale, contact, unclipped highlights and raw noise before publishing."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "environment_override_reason": "Explicit scene composition for calibrated studio ratios; preserve the standalone environment resource."
+  },
+  "resolved_environment_id": "ENV-201",
+  "resolved_lighting_id": "LUZ-101",
+  "resolved_quality": {
+    "id": "Q-003",
+    "name": "Product Portfolio",
+    "original_specification": {
+      "id": "Q-003",
+      "name": "Product Portfolio",
+      "status": "specified_unbound",
+      "goal": "presentation",
+      "resolution": {
+        "width": 2560,
+        "height": 1440
+      },
+      "integrator_intent": "path_tracing",
+      "sampling": {
+        "minimum_samples": 64,
+        "maximum_samples": 2048,
+        "relative_error_target": 0.015,
+        "error_estimator": "Versioned relative standard error of scene-linear luminance with a documented dark-signal floor; adapter must bind an estimator before use.",
+        "maximum_samples_action": "Finish with an unconverged flag when the target is not met.",
+        "scope": "Estimated Monte Carlo uncertainty for the bound estimator, not total optical error, finite-depth bias, rare-path coverage or temporal error.",
+        "stopping_rule_binding": "Require a versioned pixel/tile aggregation rule and dark-signal floor before execution."
+      },
+      "transport": {
+        "maximum_depth": 12,
+        "maximum_transmission_depth": 10,
+        "russian_roulette_after_depth": 3,
+        "roulette_policy": "Compensated stochastic termination; finite depth is a declared truncation."
+      },
+      "denoising": {
+        "enabled": true,
+        "preserve_raw": true,
+        "temporal_validation_required": false
+      },
+      "motion": {
+        "enabled": false,
+        "shutter_fraction": 0.0,
+        "temporal_samples": 0,
+        "requires_approved_bake": false,
+        "sample_budget_policy": "No time integration.",
+        "shutter_alignment": "instantaneous",
+        "frame_rate_binding": "not_applicable"
+      },
+      "output": {
+        "master": "linear_buffer",
+        "presentation": "png",
+        "color_transform": "project_declared",
+        "exposure_policy": "manual_locked"
+      },
+      "seed": 21026,
+      "required_capabilities": [
+        "CAP-001",
+        "CAP-002",
+        "CAP-003",
+        "CAP-004",
+        "CAP-005",
+        "CAP-006",
+        "CAP-057",
+        "CAP-058",
+        "CAP-059",
+        "CAP-065",
+        "CAP-073",
+        "CAP-081",
+        "CAP-083",
+        "CAP-085"
+      ],
+      "budget_policy": "Resolve memory and time against the selected executor; never switch devices or downgrade silently.",
+      "baseline_compatibility": "Future authoring target; resolve every field against the current executor before use.",
+      "validation": [
+        "Measure convergence in dark regolith and bright metal or glass regions.",
+        "Compare raw and finished results; preserve labels, fibers and thin wires.",
+        "Report elapsed time, peak memory and incomplete quality targets."
+      ],
+      "provenance_id": "ORIGINAL-2026-10-CATALOG",
+      "seed_policy": "Base seed; bind a versioned frame/pixel/sample/time-stratum stream policy and record it in the render manifest."
+    },
+    "native_projection": {
+      "width": 2560,
+      "height": 1440,
+      "format": "png",
+      "job": {
+        "method": "gpu_path",
+        "options": {
+          "samples": 2048,
+          "max_depth": 12,
+          "seed": 21026,
+          "tone_map": "aces_fitted",
+          "denoise": false,
+          "linear_exr": false,
+          "lighting": {
+            "environment": [
+              0,
+              0,
+              0
+            ],
+            "area_lights": [
+              {
+                "center": [
+                  0.0,
+                  0.0,
+                  2000.0
+                ],
+                "u": [
+                  -1500.0,
+                  0.0,
+                  0.0
+                ],
+                "v": [
+                  0.0,
+                  500.0,
+                  0.0
+                ],
+                "radiance": [
+                  7,
+                  7,
+                  7
+                ]
+              },
+              {
+                "center": [
+                  -1400.0,
+                  -1200.0,
+                  450.0
+                ],
+                "u": [
+                  -81.34892168199607,
+                  94.90707529566207,
+                  0.0
+                ],
+                "v": [
+                  270.01653213051725,
+                  231.44274182615771,
+                  1457.2320781646965
+                ],
+                "radiance": [
+                  8,
+                  8,
+                  8
+                ]
+              },
+              {
+                "center": [
+                  1400.0,
+                  100.0,
+                  500.0
+                ],
+                "u": [
+                  10.687057498186446,
+                  -149.61880497461027,
+                  0.0
+                ],
+                "v": [
+                  -468.615312352114,
+                  -33.47252231086528,
+                  1318.8173790480926
+                ],
+                "radiance": [
+                  5,
+                  5,
+                  5
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "limitations": [
+      "Native fixed sampling does not assert the original convergence/error estimator.",
+      "Quality specification is a target, not a measured guarantee for every scene."
+    ],
+    "authoring_status": "generated_projection_with_explicit_limits",
+    "full_quality_acceptance": false
+  },
+  "demo_role_bindings": [
+    {
+      "role": "paint_stack",
+      "material": "MAT-204",
+      "demo_body": "Demo paint_stack",
+      "appearance_variant": "uniform_native_projection"
+    },
+    {
+      "role": "trim",
+      "material": "MAT-211",
+      "demo_body": "Demo trim",
+      "appearance_variant": "uniform_native_projection"
+    },
+    {
+      "role": "neutral_satin_floor",
+      "material": "MAT-145",
+      "demo_body": "Demo neutral_satin_floor",
+      "appearance_variant": "uniform_native_projection"
+    }
+  ],
+  "native_setup": {
+    "width": 960,
+    "height": 640,
+    "background": [
+      28,
+      33,
+      41
+    ],
+    "exposure_ev": -1,
+    "camera": {
+      "target": [
+        0,
+        0,
+        200.0
+      ],
+      "yaw": -0.6,
+      "pitch": 0.35,
+      "roll": 0,
+      "distance": 2250.0,
+      "fov": 0.7,
+      "up": "z"
+    },
+    "job": {
+      "method": "gpu_path",
+      "options": {
+        "samples": 128,
+        "max_depth": 8,
+        "seed": 910004,
+        "tone_map": "aces_fitted",
+        "linear_exr": true,
+        "lighting": {
+          "environment": [
+            0,
+            0,
+            0
+          ],
+          "area_lights": [
+            {
+              "center": [
+                0.0,
+                0.0,
+                2000.0
+              ],
+              "u": [
+                -1500.0,
+                0.0,
+                0.0
+              ],
+              "v": [
+                0.0,
+                500.0,
+                0.0
+              ],
+              "radiance": [
+                7,
+                7,
+                7
+              ]
+            },
+            {
+              "center": [
+                -1400.0,
+                -1200.0,
+                450.0
+              ],
+              "u": [
+                -81.34892168199607,
+                94.90707529566207,
+                0.0
+              ],
+              "v": [
+                270.01653213051725,
+                231.44274182615771,
+                1457.2320781646965
+              ],
+              "radiance": [
+                8,
+                8,
+                8
+              ]
+            },
+            {
+              "center": [
+                1400.0,
+                100.0,
+                500.0
+              ],
+              "u": [
+                10.687057498186446,
+                -149.61880497461027,
+                0.0
+              ],
+              "v": [
+                -468.615312352114,
+                -33.47252231086528,
+                1318.8173790480926
+              ],
+              "radiance": [
+                5,
+                5,
+                5
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limits": [
+    "Demo objects are placeholders for explicit user roles; no user selection is guessed.",
+    "Native looks are the uniform projection, not an assertion that custom texture maps persisted.",
+    "Native fixed sampling does not assert the original convergence/error estimator.",
+    "Quality specification is a target, not a measured guarantee for every scene."
+  ],
+  "energy_ownership": "Explicit rig owns illumination in the demo; exported HDR remains an alternative, not an additive duplicate.",
+  "full_original_scene_acceptance": false
+}

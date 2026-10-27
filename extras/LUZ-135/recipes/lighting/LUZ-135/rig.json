@@ -1,0 +1,80 @@
+{
+  "id": "LUZ-135",
+  "name": "Sunset backlight",
+  "family": "14 Solar and sky exteriors",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-135",
+    "name": "Sunset backlight",
+    "family": "14 Solar and sky exteriors",
+    "domains": [
+      "exterior",
+      "daylight"
+    ],
+    "description": "A proposed lighting arrangement for product or building silhouette.",
+    "use_cases": [
+      "Product or building silhouette"
+    ],
+    "sources": "Sun behind subject and sky",
+    "geometry": "Capture chosen sun direction; moving camera does not move it",
+    "contribution_policy": "One model for sun and sky",
+    "controls": [
+      "Solar position",
+      "exterior intensity",
+      "sky distribution"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011",
+      "CAP-042"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Rim and long shadows agree with sun position"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 938305,
+  "lights": {
+    "environment": [
+      0.08,
+      0.1,
+      0.18
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        -0.8612812260087741,
+        -0.49726094768413676,
+        0.10452846326765347
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        7000,
+        4100,
+        2200
+      ]
+    }
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

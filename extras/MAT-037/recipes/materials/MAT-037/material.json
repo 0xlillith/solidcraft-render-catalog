@@ -1,0 +1,182 @@
+{
+  "id": "MAT-037",
+  "name": "Hammer-finish enamel",
+  "family": "Paints and general coatings",
+  "version": "1.0.0-local",
+  "seed": 6493003,
+  "pattern": "hammered",
+  "base_linear_low": [
+    0.07,
+    0.09,
+    0.1
+  ],
+  "base_linear_high": [
+    0.18,
+    0.21,
+    0.22
+  ],
+  "roughness": 0.39,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.32,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 12,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-037",
+    "name": "Hammer-finish enamel",
+    "family": "Paints and general coatings",
+    "domains": [
+      "industrial",
+      "automotive",
+      "DIY"
+    ],
+    "description": "Overlapping cells structure irregular coated highlights.",
+    "use_cases": [
+      "Machinery",
+      "electrical cases"
+    ],
+    "optical_model": "Energy-aware layered surface: substrate, pigmented layer and optional clear topcoat.",
+    "controls": [
+      "pigment colour",
+      "coat roughness",
+      "coverage",
+      "cell size",
+      "cell depth"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Set cell diameter in mm across all coated faces.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039"
+    ],
+    "priority": "P0",
+    "cost": "Medium",
+    "validation": [
+      "Avoid replacing the characteristic cellular pattern with unstructured noise.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-016",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "39904cd603d7411e113b5bf8ddf0fdf48d01c093db75d1d74ed6e878a5d4a024",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a27a1991eb02149cdb526b82700562800007291d30cb227138064b0d9e0cbbc3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "4804632b8ba3a4c09e647b3fab35e126ad3df5f1cd26978e27f7948ea24895af",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "1b12281bb8e8af1961b0fee27f0fed13dd9d300581bd26799aaa0537e39d664e",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "87b57d96d96af725bd9cc7058de188149bbbc3564cc73e0e991f52aeb5255cd9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "5e782f0d559d8a88a0741f302f0ad84a8da0a0ca6a6079f63fbeb8730216acf5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2d27965e2a3c7e737c66a41be6a8deea3cd921d12c1f5690f65435544bbb5684",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f6c7784c2670c066ebada89555ff4d3930655d736fcda4353c34b0ab3c6d2e2c",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

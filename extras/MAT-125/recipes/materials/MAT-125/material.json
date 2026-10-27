@@ -1,0 +1,181 @@
+{
+  "id": "MAT-125",
+  "name": "Melamine-faced panel",
+  "family": "Engineered wood and paper",
+  "version": "1.0.0-local",
+  "seed": 7189875,
+  "pattern": "plywood",
+  "base_linear_low": [
+    0.3490670340469174,
+    0.2355268416652944,
+    0.10447073068424437
+  ],
+  "base_linear_high": [
+    0.6436145993093122,
+    0.436869771390536,
+    0.19823028572354942
+  ],
+  "roughness": 0.62,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    120,
+    120
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-125",
+    "name": "Melamine-faced panel",
+    "family": "Engineered wood and paper",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "packaging"
+    ],
+    "description": "Decorative facing covers a distinct board substrate.",
+    "use_cases": [
+      "Modular furniture"
+    ],
+    "optical_model": "Layered or fibrous dielectric construction with independent face, core and edge treatments.",
+    "controls": [
+      "layer structure",
+      "fibre scale",
+      "surface finish",
+      "printed pattern",
+      "surface relief"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve artwork scale and model edge band separately.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Graphics and edge banding should align with the intended fabrication.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "2b963eeb8d5d7359c6fe79e1424af837f89c20df34d37b002ca2862b32323fd2",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "0e378c5739bae610ad564c87e67fcb2c81b046b47557953b711de8f55274a4e4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "1e2ab98d5c80fb8538daa4f0a5379bf2957db210f5e653d1dfe55ad8b03e3df4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "8c7028222c83da1933191982fa4df3bc1ba5d097a5b8d63d1bb819a2e85eca10",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "39707ae9378a386311adf0c36c023217f3b98dcc345638bf221b83265636289f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "9e7cc71242bd283868a61af6b2675686a0076e216f27c5fabc99e47d7dabe19a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "04a4e0518478ceb3c8436ac56abd9bfe14728e5d69ac9484f99fa471137df6e1",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f6ca06f07cd835c000cedefb29b794015d106021f2817326269f7d08c4e6a850",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

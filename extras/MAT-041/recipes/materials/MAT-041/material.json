@@ -1,0 +1,179 @@
+{
+  "id": "MAT-041",
+  "name": "Smooth injection-moulded ABS",
+  "family": "Opaque engineering polymers",
+  "version": "1.0.0-local",
+  "seed": 6524679,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.019803079073331897,
+    0.029302469602172223,
+    0.04221671182762234
+  ],
+  "base_linear_high": [
+    0.04405933801412674,
+    0.06135673569350763,
+    0.08487222153686455
+  ],
+  "roughness": 0.328,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.03,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-041",
+    "name": "Smooth injection-moulded ABS",
+    "family": "Opaque engineering polymers",
+    "domains": [
+      "industrial",
+      "electronics",
+      "CAD product"
+    ],
+    "description": "Closed polymer skin carries soft reflected highlights.",
+    "use_cases": [
+      "Electronic cases",
+      "covers"
+    ],
+    "optical_model": "Opaque dielectric microfacet surface with process-specific texture; engineering properties remain separate.",
+    "controls": [
+      "surface colour",
+      "roughness",
+      "mould texture",
+      "mould finish",
+      "parting-line mask"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Tie visible mould boundaries to the intended part tooling.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "A mould line should not appear randomly across unrelated faces.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "6e3640495665aca3b3ddc844dfb89550cede9f32f56c2dfee1ff762693ae38d9",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "5c9010888e4da81a303c4dbd3a39ff8663bd198a55044f4b5a8ffc2efd11dd0e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "dd9755fa9c6cceb03802ede36fcc14990474684d7e1ff86d47764c96d53ca90f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e78b2f5bdf1645abb74bd502973cfcff43daec4002d7376ec59efd504f5acb37",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c271901f11a2623bc1df93a8b774d9d92e9d9b4d567da5493f9007d1a0c91755",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "6402ee022ca58e9a9a7f6015ecd8a6110bfb6f0cb8c1787f8125560628c677cd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2e4085a500c68eff39797a03557cc7693fb3c5d8f7017eefc28dd8c96f4ca93c",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "9f1634d60bd47f6b979a1f10cd3e8fb8a9948cf5f97f828a096ed65bd4601ecd",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

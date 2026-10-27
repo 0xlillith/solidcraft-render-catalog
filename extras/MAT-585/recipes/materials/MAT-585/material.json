@@ -1,0 +1,193 @@
+{
+  "id": "MAT-585",
+  "name": "SELENE transparent fluoropolymer sample bag",
+  "family": "SELENE transparent sample containment and viewing",
+  "version": "1.0.0-local",
+  "seed": 10832615,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.46489408006563326,
+    0.5406580126383986,
+    0.5619953378662959
+  ],
+  "base_linear_high": [
+    0.8545235487762277,
+    0.9924817543564869,
+    1.0
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.004,
+  "tile_mm": [
+    40,
+    40
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-585",
+    "name": "SELENE transparent fluoropolymer sample bag",
+    "family": "SELENE transparent sample containment and viewing",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE",
+      "laboratory"
+    ],
+    "description": "A thin flexible film encloses an authored sample volume.",
+    "use_cases": [
+      "Flexible containment concepts"
+    ],
+    "optical_model": "Refractive candidate container or viewing material with explicit walls, seals and interiors; no containment, compatibility or flight-readiness claim.",
+    "controls": [
+      "transmission",
+      "absorption distance",
+      "interface priority",
+      "film folds",
+      "absorption"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use true film folds and avoid duplicate coincident interfaces.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "The visual bag is a candidate concept, not approved sample packaging.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "ae1ff501245d32d242a24099fc18b37b4c54d325b88b034bd31bea3f48957620",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "fc3780af02915856fda3a64ec5e0c37a61297f1829241a9a456483a0ecd73204",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "186bf5ee28853f5bd931acf81fa575700d5a50294cf0fb25dd6fc5b8e9cc2b96",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b49d6961483118c664080ee07eac42a3427e0afa49fe9e9d1386abe21a64dde3",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d75200d9ee9cb8fa686493c4145ebe6f6c6b9a1c7dddc425f409debd6bc04b0d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "766d79411368fe7445cd1491322b353be2ba25f7bdb0c6dc1161b15b4f4f184f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "7956f001ed759f17b8946c2c375fba7cbc0fa952ede54da2c285e6f9f08e5baf",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e4bdeb9c2205aedcf8ffee8375e5fb87ee2e1064d7936c0492b7774b56d158ff",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "id": "MAT-330",
+  "name": "Epoxy glob-top encapsulation",
+  "family": "Electronic packages and encapsulants",
+  "version": "1.0.0-local",
+  "seed": 8813270,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.014856502811569547,
+    0.016875195950332295,
+    0.021370342158917727
+  ],
+  "base_linear_high": [
+    0.035052139447932604,
+    0.03872796874538119,
+    0.04691316034907407
+  ],
+  "roughness": 0.59,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.025,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-330",
+    "name": "Epoxy glob-top encapsulation",
+    "family": "Electronic packages and encapsulants",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "A shaped opaque or scattering resin dome covers a localized circuit region.",
+    "use_cases": [
+      "Chip-on-board illustrations"
+    ],
+    "optical_model": "Layered dielectric, conductor and magnetic-component appearances; names do not provide electrical material data.",
+    "controls": [
+      "body roughness",
+      "layer masks",
+      "marking finish",
+      "dome geometry",
+      "surface texture"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use explicit dome shape and actual coverage boundary.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-028"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Encapsulation must not hide unrelated board components.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "843327c28787dba999bf0b80cccf9edd75c58233d70dad590fc730210b4413e8",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "eb0eeec26891fac6e75b19c90a6ee67185803bfadb77ecdb6655b472c61f94c8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "bd3ec3f3d748a8963992df5877a1f7138e110a2b102747f842425a08b20ab784",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "584de44a24f29d3f573aa40a386e204e6d1dca7b7d07f144f1e42a115497bce8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "ada21c08910c7458044efc6b712d1c38cedf313e30dfdf1ddc56ebce92edcbf9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "a97890b64654354cbb08b9579c7151adbd621cc0157a54a8cdb8bcfcee3e3bd5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "df13d549094f2c20d70b7fe5ca520326e76260153cfde9212f670a6b82cbab53",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "4b1fba446effdddcff9c11176d1bf9e10e98c3d7863614f307533fdc4e0464ff",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

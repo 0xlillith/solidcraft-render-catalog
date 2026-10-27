@@ -1,0 +1,105 @@
+{
+  "profile_id": "pla-printed",
+  "card": {
+    "schema_version": 1,
+    "designation": "PolyLite PLA - directional coupon reference",
+    "family": "polymer",
+    "sources": [
+      {
+        "id": "polymaker-pla",
+        "title": "Polymaker PolyLite PLA technical sheet",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://wiki.polymaker.com/polymaker-products/more-about-our-products/documents/technical-data-sheets/pla/polylite-tm-pla"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 1170.0
+        },
+        "source_id": "polymaker-pla",
+        "conditions": {
+          "temperature_k": 296.15,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Manufacturer printed coupon conditions; actual layer height, raster, infill and machine must be confirmed. Solid-feedstock density is not an infilled-part density. | typical reference; source review required; not design allowables. | {\"density_basis\":\"solid_feedstock_not_part_envelope\",\"direction\":\"not_reported\",\"test_method\":\"ISO 1183\"}"
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density"
+  ],
+  "not_projected": [
+    {
+      "id": "glass_transition",
+      "quantity": "glass_transition",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "melting_temperature",
+      "quantity": "melting_temperature",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "decomposition_temperature",
+      "quantity": "decomposition_temperature",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hdt-1.8mpa",
+      "quantity": "heat_deflection",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hdt-0.45mpa",
+      "quantity": "heat_deflection",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "young_modulus-xy",
+      "quantity": "young_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "tensile_strength-xy",
+      "quantity": "tensile_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "elongation_break-xy",
+      "quantity": "elongation_break",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "young_modulus-z",
+      "quantity": "young_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "tensile_strength-z",
+      "quantity": "tensile_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "elongation_break-z",
+      "quantity": "elongation_break",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "tensile_strength",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

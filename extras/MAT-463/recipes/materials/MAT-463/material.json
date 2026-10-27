@@ -1,0 +1,193 @@
+{
+  "id": "MAT-463",
+  "name": "Metal-coated parabolic reflector",
+  "family": "LED lenses reflectors and optical hardware",
+  "version": "1.0.0-local",
+  "seed": 9866497,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.4458094898491223,
+    0.5249703203225496,
+    0.5619953378662959
+  ],
+  "base_linear_high": [
+    0.819772503904372,
+    0.9639161056619561,
+    1.0
+  ],
+  "roughness": 0.08399999999999999,
+  "roughness_variation": 0.008,
+  "metallic": 0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-463",
+    "name": "Metal-coated parabolic reflector",
+    "family": "LED lenses reflectors and optical hardware",
+    "domains": [
+      "LED lighting",
+      "automotive",
+      "electronics"
+    ],
+    "description": "A shaped conductor coating redirects light from a defined source region.",
+    "use_cases": [
+      "Spotlights",
+      "optical assemblies"
+    ],
+    "optical_model": "Geometric-optics components with separate dielectric lenses, conductor reflectors and absorbing baffles.",
+    "controls": [
+      "surface roughness",
+      "optical geometry",
+      "region masks",
+      "coating roughness",
+      "source position"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve the reflector's actual geometric profile.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-103"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Do not infer a beam specification from the material alone.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "9b2f06ef8e4c910a3d5ac574376493b4c0a94519693a1c6713f36c95bd7ff7de",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "d4e7229e7c2a5b2d40fef6a0ec3ab85bcfaea681d6990a7932dc6246ca5fb284",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "8d311128eb0339d6de11c3ade21fee672ed0165c89271587ffa8898090136840",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "4e3e00bf28822d07d949163b2f947bb894aff21b84197a9e02b9592b352e8842",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b4ab8c3b5df3f232cf227fb7d10fad30d633795e932a34ce27eb87c617dd8d79",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "298ac181bbfd2e069702dd44aabdd67dc9319582ef0d7e92f6591438b97cae16",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2f7974d0d6e607be164bbf9d7d7be9f0bb297ea2ab7526b804e54a9734921d12",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "8f70d6e6e93b4d4f0f8caf46a5bd72c09a2b0b707bfbe76f6600e85dc5cf3836",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-012",
+  "name": "Solidified solder joint",
+  "original_specification": {
+    "id": "SELENE-AP-012",
+    "name": "Solidified solder joint",
+    "source_catalog_ids": [
+      "MAT-165"
+    ],
+    "family": "Electronics joining",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "purpose": "A smooth grey conductor preview for modeled solder fillets.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-012 Solidified solder joint",
+        "color": "#bec3c6",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.25,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Fine cooling texture",
+        "Flux residue",
+        "Real fillet geometry creation"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque conductor with local cooling texture; geometry supplies the fillet shape.",
+      "structure": [
+        "Solder-like conductor",
+        "Optional flux residue as a distinct dielectric layer"
+      ],
+      "authoring_controls": [
+        {
+          "id": "solidification_patch_extent",
+          "value": 0.35,
+          "unit": "mm",
+          "meaning": "Illustrative mottling size.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "solidification_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Small render-only surface variation.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Model solder menisci and pad boundaries explicitly",
+        "Keep flux residue separate from the metallic response"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-018",
+        "CAP-033",
+        "CAP-035",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Optical constants for a specified alloy",
+        "Flux absorption if included"
+      ],
+      "validation_criteria": [
+        "A solder fillet should not read as a flat printed disc",
+        "Residue must not become metallic when layered over solder"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#bec3c6",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.25,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-012 Solidified solder joint",
+    "bodies": [
+      "SELENE-AP-012"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

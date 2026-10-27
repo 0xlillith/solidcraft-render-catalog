@@ -1,0 +1,96 @@
+{
+  "id": "SELENE-AP-033",
+  "name": "Graphite thermal-sheet preview",
+  "original_specification": {
+    "id": "SELENE-AP-033",
+    "name": "Graphite thermal-sheet preview",
+    "source_catalog_ids": [
+      "MAT-349"
+    ],
+    "family": "Thermal interface appearances",
+    "domains": [
+      "electronics",
+      "aerospace",
+      "LED lighting"
+    ],
+    "purpose": "A dark matte appearance for a thin thermal-interface sheet.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-033 Graphite thermal-sheet preview",
+        "color": "#35383d",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.91,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Directional graphitic response",
+        "Fine domains",
+        "Measured optical or thermal properties"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Effective absorbing surface with possible directional sheen; the baseline uses a neutral dielectric surrogate.",
+      "structure": [
+        "Graphitic sheet surface",
+        "Explicit thin-sheet boundary geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "flake_pattern_extent",
+          "value": 0.3,
+          "unit": "mm",
+          "meaning": "Illustrative visible domain scale.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "sheet_surface_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Small render-only surface variation.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Model sheet thickness and cut edges explicitly",
+        "Do not convert darkness into thermal conductivity"
+      ],
+      "capability_requirements": [
+        "CAP-020",
+        "CAP-024",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Effective directional optical response for the actual sheet"
+      ],
+      "validation_criteria": [
+        "The sheet should remain visually separate from rubber despite a similar dark baseline",
+        "The appearance must not populate thermal-property data"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#35383d",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.91,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-033 Graphite thermal-sheet preview",
+    "bodies": [
+      "SELENE-AP-033"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

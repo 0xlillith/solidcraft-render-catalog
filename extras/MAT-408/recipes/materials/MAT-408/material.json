@@ -1,0 +1,182 @@
+{
+  "id": "MAT-408",
+  "name": "Acacia timber appearance",
+  "family": "Additional timber and bamboo appearances",
+  "version": "1.0.0-local",
+  "seed": 9430952,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.24538923905122248,
+    0.14219460746741702,
+    0.052385572609474844
+  ],
+  "base_linear_high": [
+    0.4548281666305842,
+    0.26692152404514735,
+    0.10338865460232732
+  ],
+  "roughness": 0.6040000000000001,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.3,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 15,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-408",
+    "name": "Acacia timber appearance",
+    "family": "Additional timber and bamboo appearances",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Irregular contrasting grain follows an authored board volume.",
+    "use_cases": [
+      "Worktops",
+      "furniture"
+    ],
+    "optical_model": "Volumetric dielectric wood or bamboo structure with independent cut orientation and finish.",
+    "controls": [
+      "growth structure",
+      "grain axis",
+      "surface finish",
+      "grain contrast",
+      "interlock"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Continue grain through edges and end cuts.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-034"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Colour variation alone must not substitute for wood structure.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "0201e1d353edba1f90b258d05c5bd882027ce505f8493c51f562d3e86233086d",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e9eb69a53729cba56c047df53d304a941ef25eb728b2781d5cb115d88c08d32a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "d84fc68e9ccbab88ee9ac977bb75256be8e5226b9ec7d63156bd16a37d5df60e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e77b151b98d1fe0b3b0750f9109cdfe70d28090e99637a7a3967e1ed0ae858b7",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3744234ee8c769f24f6edf8f3a01034b6e7cc61f76a1cf5e8443ca54a40fa434",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1f393a80f0243777387bd3868c530ba9ead037b2065256d666d66de961b0c897",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "abe03c1a8b7497e485f30acdd424d3a4d5442e247076d54760ec15b1cd80eabb",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f00fac7a0c36b694d349b291172e430437d5b531c33a67b45483c22ec8f76ae0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

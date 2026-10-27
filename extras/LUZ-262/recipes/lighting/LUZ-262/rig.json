@@ -1,0 +1,82 @@
+{
+  "id": "LUZ-262",
+  "name": "Lunar low-angle environment sun",
+  "family": "27 Physical lunar surface lighting",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-262",
+    "name": "Lunar low-angle environment sun",
+    "family": "27 Physical lunar surface lighting",
+    "domains": [
+      "lunar",
+      "spacecraft",
+      "physical_study"
+    ],
+    "description": "A proposed lighting arrangement for low-sun rover and lander studies.",
+    "use_cases": [
+      "Low-sun rover and lander studies"
+    ],
+    "sources": "Environment-owned sun only; rig adds no emitter",
+    "geometry": "Solar direction supplied by environment; no automatic ephemeris claim",
+    "contribution_policy": "Preserve environment sun and physical surface interreflection",
+    "controls": [
+      "Inspect solar direction in environment",
+      "no duplicate emitter on apply"
+    ],
+    "authoring_method": "Original lunar authoring concept. Solar directions and relative contributions are illustrative inputs, not site ephemerides or measured lunar photometry. No atmospheric sky, haze or automatic ambient fill is permitted in physical mode.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-011"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Long shadows follow terrain and a single source"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1134266,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [],
+    "sun": {
+      "direction": [
+        0.48718503239261773,
+        0.843829228791103,
+        0.224951054343865
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    }
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

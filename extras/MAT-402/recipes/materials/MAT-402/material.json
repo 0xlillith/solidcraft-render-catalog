@@ -1,0 +1,182 @@
+{
+  "id": "MAT-402",
+  "name": "Interlocked-grain elm appearance",
+  "family": "Additional timber and bamboo appearances",
+  "version": "1.0.0-local",
+  "seed": 9383438,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.24538923905122248,
+    0.14219460746741702,
+    0.052385572609474844
+  ],
+  "base_linear_high": [
+    0.4548281666305842,
+    0.26692152404514735,
+    0.10338865460232732
+  ],
+  "roughness": 0.49600000000000005,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.3,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 9,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-402",
+    "name": "Interlocked-grain elm appearance",
+    "family": "Additional timber and bamboo appearances",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Changing fibre direction produces locally varied reflection.",
+    "use_cases": [
+      "Furniture",
+      "turned objects"
+    ],
+    "optical_model": "Volumetric dielectric wood or bamboo structure with independent cut orientation and finish.",
+    "controls": [
+      "growth structure",
+      "grain axis",
+      "surface finish",
+      "grain interlock",
+      "finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve directional changes through the authored wood volume.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-034"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Directional variation must not become random mirror-like sparkle.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a2f07d6c026279ff4228ce8c99ffbd9ed705b99b912c235ec61563090f2336e4",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "366cea1ffabb63f4cf30c060aab0335f83cc00eff8062ec863abe8054bded053",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "79d7f5ff6a23ab92c4e14695de1c59f70867de8679922380ed9eb49c6eaba7ff",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0ff2defa81155319e23fa72546b0fc1e2754a85a03b249834e30d3bfaa1a9b52",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "4f161e4b07c1361c51ef22b321514b55cc56521cd308b743ded124b6f35a8ad5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b096a3fb6cfc0a5647d9ffebb337e6213a7947a7a71d551cfdfad9fe64adc24b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "60dc583a0a44fd28c9c5ce7d6f69cce80d7f21df1109728c9ed1067cb5b4ae7b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "d64f32096058efe5528ba549103faf244b4cdbcd030b6ec82ab7f9402136920d",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

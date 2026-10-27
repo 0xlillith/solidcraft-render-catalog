@@ -1,0 +1,182 @@
+{
+  "id": "MAT-039",
+  "name": "Applied vinyl laminate",
+  "family": "Paints and general coatings",
+  "version": "1.0.0-local",
+  "seed": 6508841,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.022180193602492987,
+    0.06086394649288315,
+    0.11701376044924199
+  ],
+  "base_linear_high": [
+    0.048387815216479765,
+    0.11882688764375737,
+    0.22106983245981374
+  ],
+  "roughness": 0.5519999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.06,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-039",
+    "name": "Applied vinyl laminate",
+    "family": "Paints and general coatings",
+    "domains": [
+      "industrial",
+      "automotive",
+      "DIY"
+    ],
+    "description": "A thin surface film carries graphics and its own finish.",
+    "use_cases": [
+      "Signs",
+      "product panels"
+    ],
+    "optical_model": "Energy-aware layered surface: substrate, pigmented layer and optional clear topcoat.",
+    "controls": [
+      "pigment colour",
+      "coat roughness",
+      "coverage",
+      "film finish",
+      "edge lift"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Model visible edges and bubbles at their actual dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039"
+    ],
+    "priority": "P0",
+    "cost": "Medium",
+    "validation": [
+      "Film borders must follow the host surface without floating.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a25fede543cf0445a08cb03cb14bc07e8df1092ca3676ce187ecf5afffaafddd",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "05f5505a803c418db1eadde308fb9bc853f302661850923a04206d1512d2922b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "4b4a45cfb5e7c5f11e7d1db2d81e6296a0d103e70ba30d63d009d6f7aa6d20ff",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "391b69f2fc478e6e4a2b8a79d0274cfa9703a0b18530ae6710324537e45cb790",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "ecd0ce983ec7242028ce628bec09fc8c8968fbacbe44648058b39741b29cf4fb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "0c70d5f310647d811bf88a3729aef0d4f33dde199956f262eea1802b3390159b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "e233c8ce91813e1c3b4dbbf771824c419d3722058f91d374f035aecba2c226f2",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "945ade82910e991ed577954680ff2f05ef343b954ab0cb7c3a9c73e97ace0e7d",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

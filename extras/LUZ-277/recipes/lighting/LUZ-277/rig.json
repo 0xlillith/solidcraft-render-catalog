@@ -1,0 +1,111 @@
+{
+  "id": "LUZ-277",
+  "name": "SELENE editorial vial readability",
+  "family": "28 SELENE arm and sample-handling studies",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-277",
+    "name": "SELENE editorial vial readability",
+    "family": "28 SELENE arm and sample-handling studies",
+    "domains": [
+      "selene",
+      "robotics",
+      "lunar",
+      "macro"
+    ],
+    "description": "A proposed lighting arrangement for communication view of lunar sample handling.",
+    "use_cases": [
+      "Communication view of lunar sample handling"
+    ],
+    "sources": "Environment sun plus explicitly added studio fill",
+    "geometry": "Fill outside arm and vial; no hardware material edits",
+    "contribution_policy": "Deliberate fill labeled lunar_editorial with manual comparison exposure",
+    "controls": [
+      "Fill position",
+      "fill size",
+      "fill-to-sun contribution"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-011",
+      "CAP-025",
+      "CAP-027"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Must not be labeled an unassisted physical lunar view"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1157411,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          700.0,
+          -1100.0,
+          650.0
+        ],
+        "u": [
+          -210.91537193302688,
+          -134.21887304828982,
+          0.0
+        ],
+        "v": [
+          -95.81269979916381,
+          150.56281397011458,
+          357.9815157331395
+        ],
+        "radiance": [
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "sun": {
+      "direction": [
+        0.6123724356957946,
+        0.6123724356957946,
+        0.49999999999999994
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    }
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Editorial fill is deliberate additional energy and is never labelled unassisted lunar lighting.",
+    "Vacuum mode: no atmospheric sky, fog, star dome or undeclared ambient light.",
+    "Solar direction and radiance are authored relative values, not site ephemerides or measured lunar photometry."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

@@ -1,0 +1,189 @@
+{
+  "id": "MAT-201",
+  "name": "Automotive electrocoat appearance",
+  "family": "Automotive paint stacks and correction states",
+  "version": "1.0.0-local",
+  "seed": 7791719,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.03227512223201591,
+    0.0766717004640724,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.06676962555680509,
+    0.14761115606890796,
+    0.2496445698631376
+  ],
+  "roughness": 0.14800000000000002,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-201",
+    "name": "Automotive electrocoat appearance",
+    "family": "Automotive paint stacks and correction states",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Thin even primer-like coverage follows body seams and recesses.",
+    "use_cases": [
+      "Body-shell cutaways"
+    ],
+    "optical_model": "Layered pigmented coating with distinct substrate, preparation, effect and finish regions.",
+    "controls": [
+      "layer coverage",
+      "coat roughness",
+      "process masks",
+      "coverage",
+      "seam accumulation"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep visible thickness subtle and derive seams from geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Show preparation state without implying corrosion-test performance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "7f4a7c23b935cdbf94f954dbc003fe9a6ef9bd953259a799913b0b2773e0f390",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4624cf4b18d73c7f92d7fbc6786487002d475f620f6fc00988b3f283acf61f4c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "597c545a1af881c7a809c684948265ecef757b8a68aff69ac25e8116cdb5500b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "80052f825c0f847f3a43238b15d7ab550bc1d36c742e358ce225ed5e32f0e16e",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "6772ec070cc20b3853dbd883b2d8cd0838b4b66e65be1c3e0e5753cc5d6eb2d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "f997a9aa92ec7099e5bf5b63b2f5478f76d638e074b392adca696e7d0b426bca",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fa13ee982c3727aec3573bb4123d797aaaf9be5978483d8e787567f4887a3a46",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "7887856ada1f8baa00575d16fdd60f93570a91866fbca74cba8358f89ba9aae0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

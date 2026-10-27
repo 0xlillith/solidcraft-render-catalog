@@ -1,0 +1,183 @@
+{
+  "id": "MAT-574",
+  "name": "SELENE ceramic contact-pad appearance",
+  "family": "SELENE arm gripper and sampling-tool appearances",
+  "version": "1.0.0-local",
+  "seed": 10745506,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.1729825114574692,
+    0.18685915652946297,
+    0.21650595010567703
+  ],
+  "base_linear_high": [
+    0.3229830805643469,
+    0.3482510014417087,
+    0.4022347151177999
+  ],
+  "roughness": 0.302,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-574",
+    "name": "SELENE ceramic contact-pad appearance",
+    "family": "SELENE arm gripper and sampling-tool appearances",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Dense dielectric pads occupy explicit tool-contact regions.",
+    "use_cases": [
+      "Sample-contact concepts"
+    ],
+    "optical_model": "Candidate component-region recipes for robotic sampling illustrations, with physical geometry and visual finish kept separate from engineering properties.",
+    "controls": [
+      "component masks",
+      "manufacturing direction",
+      "surface state",
+      "pad roughness",
+      "edge finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep each pad distinct from its supporting mechanism.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-039",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No contamination or abrasion performance is certified.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "9bc6a509bc479fe8fa6987f49939dde440d062335f3689541638cba1a9cfca29",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "16a29de4c44cda82b340d14457e8e087a9621b08691614c3f370ad0db52433d7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "e89276c168f4190e1de76545f30e09d699e591d0c9d94ec62f50bdf3d1bca926",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "f5ef912468cd79ad94bfbc2731a97b34ac1422f65b4db9cf44f4522432af6f76",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "464782906b0d3bde2c6969d4bf1d9b56f9fc8c2452c372d2d826150e416ffc06",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "341c70e1910f48aa6aedd4a90068b95267e1daee4c48b9fee911aba9fa2086aa",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f8a8fb06f7f0e4df37782e79fb4fbae90721571a5dc5cd92ec763399f0b10e80",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "12b54ca9ea914bd5c62289de53780123bcd76eb184d86eb0cbd0a0a2345c9e19",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "command": "file.insert_mesh",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-004\\environment.glb",
+      "up": "y",
+      "name": "ENV-004 Context"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "ENV-004 Transparent compositing stage",
+        "license": "MIT OR Apache-2.0",
+        "org.solidcraft.local_catalog": {
+          "id": "ENV-004",
+          "scope": "Finite procedural environment authoring scene",
+          "source_recipe": "environment.json",
+          "not_measured": true
+        }
+      }
+    }
+  },
+  {
+    "command": "render.settings.capture_hdr",
+    "params": {
+      "name": "ENV-004 Transparent compositing stage",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "background": [
+          34,
+          42,
+          53
+        ],
+        "camera": {
+          "target": [
+            0,
+            0,
+            480.0
+          ],
+          "yaw": -0.8,
+          "pitch": 0.5,
+          "roll": 0,
+          "distance": 6899.999999999999,
+          "fov": 0.65,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 840004,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": []
+            },
+            "tone_map": "aces_fitted"
+          }
+        }
+      },
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-004\\illumination.hdr",
+      "expected_sha256": "a20400d09ea453140c1ba558b49e39ed93d495155d6a26a9499e2602e63b09ce",
+      "rotation_rad": 3.141592653589793,
+      "intensity": 1,
+      "assume_linear_srgb": false
+    }
+  }
+]

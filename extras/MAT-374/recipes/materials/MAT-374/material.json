@@ -1,0 +1,182 @@
+{
+  "id": "MAT-374",
+  "name": "DLP voxel-step appearance",
+  "family": "Resin-printing process appearances",
+  "version": "1.0.0-local",
+  "seed": 9161706,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.18970965608809473,
+    0.2227425293519402,
+    0.25209562240390737
+  ],
+  "base_linear_high": [
+    0.35344146332459037,
+    0.4135908743423388,
+    0.46703979004890595
+  ],
+  "roughness": 0.432,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.065,
+  "tile_mm": [
+    35,
+    35
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-374",
+    "name": "DLP voxel-step appearance",
+    "family": "Resin-printing process appearances",
+    "domains": [
+      "additive manufacturing",
+      "industrial",
+      "DIY"
+    ],
+    "description": "Projection-related small steps follow the build geometry.",
+    "use_cases": [
+      "Process comparisons"
+    ],
+    "optical_model": "Photopolymer appearance with explicit liquid, cured, support and post-processing states; curing mechanics are outside scope.",
+    "controls": [
+      "build direction",
+      "surface state",
+      "local masks",
+      "voxel pattern",
+      "layer height"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep lateral pattern and vertical layer spacing separate.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-028",
+      "CAP-034",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The recipe must not claim a particular printer's accuracy.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b5585a83d785d0a7922f3514f666d093079cc39ff495e7b32c2b3742a4701459",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4b8adcb5f7051676e83007aefe94ca3488e8b52e4dcf624897b2d53aacb6dc69",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "679326aba01300a6e7b50ccb8ea15ef25bcca0bbc23da3cf692966cb6e8565de",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "d95ca0ead4db81b8522abb85a7552e7fd65120b6040e21a3510c62978e2c415d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "f88bbdfca642f60e443e71f3a18f0ae92c2d4bca448974f962edc32e826e6237",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "885e9ff1d01a0b2a4e66770b91d7ac921053f996ab8238b99bd3b57507e6b3b1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "8720616929a43546cf4a214779197aaa22f43c2eff668273797ed0b21904600e",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "64f8d87cf2aefe353bc5626b1a76af68756d599b79a063872ce347b71a588821",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

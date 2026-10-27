@@ -1,0 +1,191 @@
+{
+  "id": "MAT-229",
+  "name": "Brake-dust deposit overlay",
+  "family": "Automotive brakes and contact surfaces",
+  "version": "1.0.0-local",
+  "seed": 8013451,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.1127404981270928,
+    0.12138004364740636,
+    0.13270644410516574
+  ],
+  "base_linear_high": [
+    0.21328866823142273,
+    0.22902037798482947,
+    0.2496445698631376
+  ],
+  "roughness": 0.72,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.055,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-229",
+    "name": "Brake-dust deposit overlay",
+    "family": "Automotive brakes and contact surfaces",
+    "domains": [
+      "automotive",
+      "industrial"
+    ],
+    "description": "Fine opaque particulate deposits accumulate on nearby surfaces.",
+    "use_cases": [
+      "Wheel close-ups",
+      "service illustrations"
+    ],
+    "optical_model": "Separate conductor, ceramic or friction-composite surfaces with localized use-state overlays.",
+    "controls": [
+      "contact-region masks",
+      "roughness",
+      "process direction",
+      "coverage",
+      "particle grain"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Apply as a host-preserving deposit layer.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No dust appearance is an identification of chemistry or wear rate.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "eb0fa1c179e07837d58e12b351a54c52d58a803597da90714a20b0d5c547d1bf",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "f97f4219988fb8f339bbedd78c20387500a2e09fe92bf44506d291978b84e613",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "9834ca8085f61c29155eda3221eb2d60e4d4019070fc3e76d66ce83867e8bf67",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "650d3d59b3ea10686f98416ad83951742d19bc0f86d00f0d1dadfbc4f6278a3f",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "518eace3c96f39f2d3958a47f9e5a6e085015f8917fdb089e71ab7e6565ad88c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "21923786d3b4797a1000daa3cc65a0c85576258cb983d31bcb0e2964454c9fa2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "c7343892bf39c1882c8209c8a0681315a42d2b1deabd75f97044cba259bc10ff",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "5b06e581a6a9125784202bf0aa594a3c783676f217df424a17815c7218773390",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "1f496e05eacb4a77d75400697c34d1db3ee0161e8bec13f280a55503aefff465",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

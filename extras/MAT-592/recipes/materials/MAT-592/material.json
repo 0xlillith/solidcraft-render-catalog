@@ -1,0 +1,185 @@
+{
+  "id": "MAT-592",
+  "name": "SELENE brushed titanium sample vessel",
+  "family": "SELENE opaque sample cassettes caps and seals",
+  "version": "1.0.0-local",
+  "seed": 10888048,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.21037243796173077,
+    0.21961132569788328,
+    0.2355268416652944
+  ],
+  "base_linear_high": [
+    0.3910662303183754,
+    0.40788927962898147,
+    0.436869771390536
+  ],
+  "roughness": 0.266,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.045,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-592",
+    "name": "SELENE brushed titanium sample vessel",
+    "family": "SELENE opaque sample cassettes caps and seals",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE",
+      "laboratory"
+    ],
+    "description": "Directional finish follows an authored vessel body and distinct rim.",
+    "use_cases": [
+      "Sample-vessel concepts"
+    ],
+    "optical_model": "Region-aware candidate containment assembly using distinct body, cap, liner and sealing appearances; engineering selection remains a separate decision.",
+    "controls": [
+      "surface finish",
+      "contact-region masks",
+      "part identity",
+      "brush direction",
+      "rim finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Anchor texture to the vessel and its sealing region.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-038",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not infer alloy grade, mass or chemical compatibility.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "43c60486e33cb14d2fb508d3740d203aa16c629a7b53a465609f1cfc7160d8c5",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "c866bf2bd9b588a22683fbf301ceafa3fac5fbf6aa01ca2b1a9ec572a9d5736e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "3cac1f98490ec5e91ad4043a6e7c8acf652d2f28c0482de1125833b752fd9e0c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "3f67538543fd3e778ae87443cfefc3a3a96d5716bc0d698164d1deb2f78724e4",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "37602a772833dcecbd4c72dbd521411391985e0d8ed1212d5d87b96551492eb6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "938e36a60f7bfe8d1c2de7b484d62753094a5d2f92959c7b10d33fd0b9b0ca5e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "6da2dbaa04ac768f63873cb345022d132c95979a23708741c4aec9a4e632c898",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "198959ba57469a12c27698ab9f8a5ce2d69c2202b345a759bd7430628ee8e517",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

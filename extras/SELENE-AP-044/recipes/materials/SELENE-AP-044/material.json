@@ -1,0 +1,108 @@
+{
+  "id": "SELENE-AP-044",
+  "name": "Woven-metal wheel mesh",
+  "original_specification": {
+    "id": "SELENE-AP-044",
+    "name": "Woven-metal wheel mesh",
+    "source_catalog_ids": [
+      "MAT-565"
+    ],
+    "family": "Rover wheel structures",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "robotics"
+    ],
+    "purpose": "A conductor response for actual wire or mesh wheel geometry.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-044 Woven-metal wheel mesh",
+        "color": "#999fa7",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.38,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Mesh geometry",
+        "Wire tangent anisotropy",
+        "Contact deformation",
+        "Self-shadowing"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque conductor on geometric wires with tangent-aligned microtexture.",
+      "structure": [
+        "Geometric metal wires",
+        "Woven crossings",
+        "Independent attachment rings"
+      ],
+      "authoring_controls": [
+        {
+          "id": "mesh_pitch",
+          "value": 5.0,
+          "unit": "mm",
+          "meaning": "Illustrative weave opening pitch, not a traction design.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "wire_diameter",
+          "value": 0.65,
+          "unit": "mm",
+          "meaning": "Authored render-geometry wire diameter.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "wire_finish_pitch",
+          "value": 0.16,
+          "unit": "mm",
+          "meaning": "Illustrative axial wire-finish spacing.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Model openings as empty space and wires as geometry",
+        "Keep render representation separate from the collision or traction model"
+      ],
+      "capability_requirements": [
+        "CAP-020",
+        "CAP-033",
+        "CAP-036",
+        "CAP-043",
+        "CAP-104",
+        "CAP-114"
+      ],
+      "unknown_optical_inputs": [
+        "Wire conductor optical constants",
+        "Evidence for finish and any physical deformation"
+      ],
+      "validation_criteria": [
+        "Open mesh must not be simulated with black paint on a solid wheel",
+        "Appearance must not claim spring stiffness or traction"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#999fa7",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.38,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-044 Woven-metal wheel mesh",
+    "bodies": [
+      "SELENE-AP-044"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

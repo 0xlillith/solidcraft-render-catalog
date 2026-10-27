@@ -1,0 +1,115 @@
+{
+  "id": "LUZ-037",
+  "name": "Laminated glass edge",
+  "family": "04 Glass and optical products",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-037",
+    "name": "Laminated glass edge",
+    "family": "04 Glass and optical products",
+    "domains": [
+      "product",
+      "optics"
+    ],
+    "description": "A proposed lighting arrangement for glass panels and edges.",
+    "use_cases": [
+      "Glass panels and edges"
+    ],
+    "sources": "Strip along edge and broad front area",
+    "geometry": "K parallel to long edge at 0.3B; F at 2B",
+    "contribution_policy": "Edge K 0 and F -1.5 reference EV",
+    "controls": [
+      "Edge-strip placement",
+      "fill size",
+      "strip-to-front balance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025",
+      "CAP-027"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Layers and edge remain visible without duplicated geometry"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 787091,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          1600.0,
+          200.0
+        ],
+        "u": [
+          1200.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          -148.84168150705017,
+          1190.7334520564013
+        ],
+        "radiance": [
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "center": [
+          -1400.0,
+          -1000.0,
+          800.0
+        ],
+        "u": [
+          -72.65477421488706,
+          101.71668390084186,
+          0.0
+        ],
+        "v": [
+          308.7901412793992,
+          220.56438662814233,
+          816.0882305241266
+        ],
+        "radiance": [
+          3,
+          3,
+          3
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Refraction/caustic quality depends on the actual optical object, topology and executor, not on this light recipe."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

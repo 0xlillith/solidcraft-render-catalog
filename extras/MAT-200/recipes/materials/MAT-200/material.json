@@ -1,0 +1,181 @@
+{
+  "id": "MAT-200",
+  "name": "Ultrashort flocked surface",
+  "family": "Specialized optical appearances",
+  "version": "1.0.0-local",
+  "seed": 7783800,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.17845825521791786,
+    0.08902177544105805,
+    0.2355268416652944
+  ],
+  "base_linear_high": [
+    0.33295383785949223,
+    0.17009935229565792,
+    0.436869771390536
+  ],
+  "roughness": 0.31,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 17,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-200",
+    "name": "Ultrashort flocked surface",
+    "family": "Specialized optical appearances",
+    "domains": [
+      "LED lighting",
+      "CAD product",
+      "space"
+    ],
+    "description": "Dense fine fibres create low-gloss grazing response.",
+    "use_cases": [
+      "Optical housings",
+      "packaging"
+    ],
+    "optical_model": "Short-fibre surface response with optional geometric fibres for close silhouette and shadow detail.",
+    "controls": [
+      "physical or approximate mode",
+      "model-specific dataset",
+      "declared scope",
+      "fibre length",
+      "density"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use geometric fibres for close silhouettes and a matched distant lobe.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-022",
+      "CAP-104"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Retain grazing reflection rather than substituting absolute black.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "c746faabf39686dcde3d4ed971acb2bf12237a77b026d558a989562f243e8527",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e8d7a20fdce51843a2c7a3ce99d595e2ca16839b7e29ece6cdddda9502b72240",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "0d254a7e356e66ec94f947f0cd4c507027f78926ec2d339797e02f9ebbbc968f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "630cfcfbb570758c9cf8aa569bafbeb8130ee7a1396db542cb9fcfcbbebf4cd8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c8de1eafad3e20b7b3eb1b68e00fd98a4fbc478428fbb9a3deb90af87e393f2b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "eab3b1028f30399068fe6e71f190eff0d639446c71b4d0efcadbba6c2c061528",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "0c4803ef23a20aa073e732332ee2cde4e37432a73cea32646d5c3738964911a3",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "9a5311e6c19da61e34b2f2c11853a719ffb766467b1e9dd17871e321ff08741e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

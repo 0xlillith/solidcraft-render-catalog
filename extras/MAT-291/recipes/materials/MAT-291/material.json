@@ -1,0 +1,180 @@
+{
+  "id": "MAT-291",
+  "name": "Toothed timing-belt skin",
+  "family": "Industrial belts meshes and packing",
+  "version": "1.0.0-local",
+  "seed": 8504429,
+  "pattern": "leather",
+  "base_linear_low": [
+    0.029302469602172223,
+    0.03227512223201591,
+    0.034350537110608974
+  ],
+  "base_linear_high": [
+    0.06135673569350763,
+    0.06676962555680509,
+    0.07054873921633276
+  ],
+  "roughness": 0.628,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-291",
+    "name": "Toothed timing-belt skin",
+    "family": "Industrial belts meshes and packing",
+    "domains": [
+      "industrial",
+      "automotive",
+      "DIY"
+    ],
+    "description": "Elastomer teeth and backing include restrained fabric-facing texture.",
+    "use_cases": [
+      "Transmission illustrations"
+    ],
+    "optical_model": "Multi-material construction using dielectric bodies, metallic strands and explicit openings as required.",
+    "controls": [
+      "construction pitch",
+      "surface roughness",
+      "orientation",
+      "fabric coverage",
+      "contact polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Teeth remain CAD geometry at the intended pitch.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not imply tooth profile or belt rating through surface texture.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "0722110d5dda4c1498e3a1ca6132851b8d9f3c1c7e8610f92c500babf78f4ce2",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a7b226aa23b000755bd3a37ddf2c988447501243d8e39f4ba8b3960d80666609",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "f4838968a0b2955e831104a3c3beb9914fda655d46be137fab718e6351db3bec",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "91ff729a4b55b9a9dc5f60c8ffccf3f127e341d2e381c8e2a7842034ea461ab8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d9e75b46528379c6a564fe89c5b3c5e772e4461c957e1eea4194d117ec908ba3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "0151aa9453eb05227857d1e46f6de3719c62c56e17464e4a2aa213cc32c5274c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "de03820b50d3f59dbd36d85a4c2de55cbe4f220417a8a467e996ddac3991e22f",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "4c2f33eb3b010c0d3e5be7e79f630c86e31e9885e002efb8f1089fa87df2e98f",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

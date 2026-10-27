@@ -1,0 +1,183 @@
+{
+  "id": "MAT-588",
+  "name": "SELENE double-wall viewing tube",
+  "family": "SELENE transparent sample containment and viewing",
+  "version": "1.0.0-local",
+  "seed": 10856372,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.46489408006563326,
+    0.5406580126383986,
+    0.5619953378662959
+  ],
+  "base_linear_high": [
+    0.8545235487762277,
+    0.9924817543564869,
+    1.0
+  ],
+  "roughness": 0.11399999999999999,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.004,
+  "tile_mm": [
+    40,
+    40
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-588",
+    "name": "SELENE double-wall viewing tube",
+    "family": "SELENE transparent sample containment and viewing",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE",
+      "laboratory"
+    ],
+    "description": "Two transparent walls surround an authored gap or intermediate region.",
+    "use_cases": [
+      "Sample-tube concepts"
+    ],
+    "optical_model": "Refractive candidate container or viewing material with explicit walls, seals and interiors; no containment, compatibility or flight-readiness claim.",
+    "controls": [
+      "transmission",
+      "absorption distance",
+      "interface priority",
+      "layer interfaces",
+      "gap state"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep every boundary separated by actual geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Avoid duplicated absorption or an invented gas layer with no defined role.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "46785fc84628835dc2f269212c9c922491413eda3726e57aeab1b53ad9bf77a9",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "b4794f178026cc4390381809ba31ce02592fe6d96c8ff2076e4dedf34e09081a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "b0503dd427259768f37c9aafe92cf4f0a182be8fba3f10f3a58819e6fc3879cd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "cd11ff8e68eed28abc3ea03fe2601eba060a5a9e424ecdadbfd0345f8ed323f9",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "8d1198c617a9c4c771936dce670c1926a3cffe77349619471a27f70bc124efc2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "eed96cf3b35b2a07febec8431722166e4c6caed3794daf4e068a749b19cf5307",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "210848cf789931430ac7a5ae3cc4ad40668fabf237a2848d507233c5a1df84cf",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ed3e7e84db864ffc8d852aea14fd92e9c13494ddd38f3975b978237b4e23df76",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

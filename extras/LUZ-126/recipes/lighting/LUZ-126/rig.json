@@ -1,0 +1,155 @@
+{
+  "id": "LUZ-126",
+  "name": "Restaurant table lighting",
+  "family": "13 Artificial architectural lighting",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-126",
+    "name": "Restaurant table lighting",
+    "family": "13 Artificial architectural lighting",
+    "domains": [
+      "architecture",
+      "interior"
+    ],
+    "description": "A proposed lighting arrangement for dining spaces.",
+    "use_cases": [
+      "Dining spaces"
+    ],
+    "sources": "Pendants over tables and perimeter fixtures",
+    "geometry": "Mounting heights follow real tables",
+    "contribution_policy": "Tables 0 and perimeter -2 reference EV",
+    "controls": [
+      "Table-to-perimeter balance",
+      "source softness",
+      "emitter CCT"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Visibility comes from declared sources"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 924418,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -900.0,
+          -800.0,
+          1800.0
+        ],
+        "u": [
+          -215.91824761972393,
+          242.90802857218938,
+          0.0
+        ],
+        "v": [
+          201.8961107993787,
+          179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      },
+      {
+        "center": [
+          900.0,
+          -800.0,
+          1800.0
+        ],
+        "u": [
+          -215.91824761972393,
+          -242.90802857218938,
+          0.0
+        ],
+        "v": [
+          -201.8961107993787,
+          179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      },
+      {
+        "center": [
+          -900.0,
+          800.0,
+          1800.0
+        ],
+        "u": [
+          215.91824761972393,
+          242.90802857218938,
+          0.0
+        ],
+        "v": [
+          201.8961107993787,
+          -179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      },
+      {
+        "center": [
+          900.0,
+          800.0,
+          1800.0
+        ],
+        "u": [
+          215.91824761972393,
+          -242.90802857218938,
+          0.0
+        ],
+        "v": [
+          -201.8961107993787,
+          -179.46320959944777,
+          180.7094818883328
+        ],
+        "radiance": [
+          4.0,
+          3.64,
+          3.04
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

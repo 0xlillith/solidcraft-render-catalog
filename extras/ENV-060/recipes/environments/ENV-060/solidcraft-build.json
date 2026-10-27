@@ -1,0 +1,75 @@
+[
+  {
+    "command": "file.insert_mesh",
+    "params": {
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-060\\environment.glb",
+      "up": "y",
+      "name": "ENV-060 Context"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "project": "ENV-060 Covered residential terrace",
+        "license": "MIT OR Apache-2.0",
+        "org.solidcraft.local_catalog": {
+          "id": "ENV-060",
+          "scope": "Finite procedural environment authoring scene",
+          "source_recipe": "environment.json",
+          "not_measured": true
+        }
+      }
+    }
+  },
+  {
+    "command": "render.settings.capture_hdr",
+    "params": {
+      "name": "ENV-060 Covered residential terrace",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "background": [
+          34,
+          42,
+          53
+        ],
+        "camera": {
+          "target": [
+            0,
+            0,
+            720.0
+          ],
+          "yaw": -0.8,
+          "pitch": 0.5,
+          "roll": 0,
+          "distance": 10350.0,
+          "fov": 0.65,
+          "up": "z"
+        },
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 840060,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": []
+            },
+            "tone_map": "aces_fitted"
+          }
+        }
+      },
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\environments\\ENV-060\\illumination.hdr",
+      "expected_sha256": "deb30ee2e2a1711bd8310c9fbf505878607b977669c072743a065d11d14735bb",
+      "rotation_rad": 3.141592653589793,
+      "intensity": 1,
+      "assume_linear_srgb": false
+    }
+  }
+]

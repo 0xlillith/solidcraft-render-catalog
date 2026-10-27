@@ -1,0 +1,181 @@
+{
+  "id": "MAT-098",
+  "name": "Polished cement terrazzo",
+  "family": "Concrete and mineral composites",
+  "version": "1.0.0-local",
+  "seed": 6976062,
+  "pattern": "aggregate",
+  "base_linear_low": [
+    0.21961132569788328,
+    0.2043415004268238,
+    0.16495488889424978
+  ],
+  "base_linear_high": [
+    0.40788927962898147,
+    0.38008452316526126,
+    0.30836561858355926
+  ],
+  "roughness": 0.055,
+  "roughness_variation": 0.008,
+  "metallic": 0,
+  "height_span_mm": 1.0,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-098",
+    "name": "Polished cement terrazzo",
+    "family": "Concrete and mineral composites",
+    "domains": [
+      "architecture",
+      "DIY",
+      "industrial"
+    ],
+    "description": "Cut mineral chips sit within a continuous polished matrix.",
+    "use_cases": [
+      "Floors",
+      "furniture"
+    ],
+    "optical_model": "Rough dielectric mixture with separate aggregate, matrix and pore appearance.",
+    "controls": [
+      "matrix colour",
+      "aggregate distribution",
+      "porosity",
+      "chip distribution",
+      "matrix polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep chips in physical units and joints in installation geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Chips should resemble sections of embedded material rather than loose stones.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "cbabbf3004bcdec42a7f0632dac5ea36eb9c46ce212c64027e2af319e030e7f2",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "09b0e6dc7d275162ea289b0fe59cf5f580a20a995a75107d866e386c890c33d2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "89acc65541c489590a060818f7263ac98845d6be553755dafc7ff57ff850ce13",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "930e09a37c1c2b4094727a603f87ae1fd42d98beb4e6183a805b4f3fc57ef1bd",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "94160ae3c9d998f0039aade5362860342941ce279eca8ceca2674851b0d807e4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "6dde7ee806e18338e4e301d9fe76a270b5b30761a097c9bbf5423db16a0294e2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "1d7b2bec7271fc733f7931b8aa638f7dc8fa94b0e4f85246baf2188fef55ec83",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "45abeb6f96a42297ff0f7293e6202af8035d4fb15916156903a79a972ec6a7e0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

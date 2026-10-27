@@ -1,0 +1,181 @@
+{
+  "id": "MAT-366",
+  "name": "FDM bridged underside",
+  "family": "FDM surface pathways and post-processing",
+  "version": "1.0.0-local",
+  "seed": 9098354,
+  "pattern": "fdm",
+  "base_linear_low": [
+    0.07837034739820227,
+    0.1757079405448965,
+    0.29088293623708183
+  ],
+  "base_linear_high": [
+    0.15070421466538322,
+    0.3279458021862294,
+    0.5376674361331937
+  ],
+  "roughness": 0.498,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.16,
+  "tile_mm": [
+    12.8,
+    12.8
+  ],
+  "cycles_u": 12,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-366",
+    "name": "FDM bridged underside",
+    "family": "FDM surface pathways and post-processing",
+    "domains": [
+      "additive manufacturing",
+      "DIY"
+    ],
+    "description": "Stretched deposited paths span a designed unsupported region.",
+    "use_cases": [
+      "Bridge-feature illustrations"
+    ],
+    "optical_model": "Host-preserving deposition or finishing modifier with geometry-aware toolpath coordinates.",
+    "controls": [
+      "layer height",
+      "path orientation",
+      "host material",
+      "strand sag",
+      "path spacing"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use geometry for visibly sagging or separated strands.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-035",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The depiction is an authored print state, not a print-success prediction.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "1c1c469ba1490553f798b97d2142e561d528d4b84b47cf15ebd3d5326fb5a7b4",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a3c021e88840dca7e0afc37eb63be6ec468faff1cb54e7fb9d12dca93fad49d1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "2e8f68fb4dff34c93fd26da1e4534568403c5cdc12aa21137bea22de42cbecf7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "806c1c7f2362f7a96ff2abc77e6b27fcfb6d63bf928650368fa9164f161ecf39",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "6b8559ead38e1792576b7f9bf470da5e7ded45145fc0719b1b83b3e3d175b576",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "16259f9cdf70cfe2ea625f4a0cbf7641fa74d5545639b1ee9a9945823dc0de9d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "08ee286f9e2a45d2a0e387d1f4fce5b05ee964078b9732a2d2e338288467b1ef",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "da391b63967f7103237c649baf67bcc8bbad650ac269728cbf375ab38c69479a",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

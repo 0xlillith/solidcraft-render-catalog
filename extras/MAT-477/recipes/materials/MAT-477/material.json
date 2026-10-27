@@ -1,0 +1,183 @@
+{
+  "id": "MAT-477",
+  "name": "Filament-wound composite tube",
+  "family": "Aerospace composite constructions",
+  "version": "1.0.0-local",
+  "seed": 9977363,
+  "pattern": "fdm",
+  "base_linear_low": [
+    0.020578007301105736,
+    0.02471593176873703,
+    0.03126560784570966
+  ],
+  "base_linear_high": [
+    0.04547040135425223,
+    0.053005129489342044,
+    0.06493140533099372
+  ],
+  "roughness": 0.436,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.16,
+  "tile_mm": [
+    12.8,
+    12.8
+  ],
+  "cycles_u": 12,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-477",
+    "name": "Filament-wound composite tube",
+    "family": "Aerospace composite constructions",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Helical reinforcement follows a tubular substrate.",
+    "use_cases": [
+      "Tubes",
+      "pressure-vessel concepts"
+    ],
+    "optical_model": "Region- and ply-aware composite appearance with separate reinforcement, resin and surface-process structure.",
+    "controls": [
+      "ply direction",
+      "matrix finish",
+      "process-region masks",
+      "winding angle",
+      "tow pitch"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve helix geometry and actual tube dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-036",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Appearance does not establish pressure capability or winding quality.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "08c7ccf4600b764e30cc9fb10c528897fc411e136313658e8240588386867cd0",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "fb1c681d05667dd16935813f26242f7f3e70fde56b548aa8deca452eca8058f8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "c5ed954f6900736225b1f57cd71b0ef471119bcfd0b96f4c03bee9b372e9599d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "7ca1f913b1fff84c96cc03a5698ef84f90911296b5fe53dd7c10325fec13aa3c",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "e13bf61b3c16b6a740a64a995ec631448c16330d94b335b6de2d61d2e9c5ff28",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "7c8abb3da9a5bc17abc71edebe31828a1d22e9abc20cf21934b6e8f1f4e1c48a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a9293d3161ea9b0b3236e38d90230790bc850e1ee401d3c7f0aa0056968f40ac",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "c317734db2205b5350ad3f7b7d1e0d7db77a066c46642089a3dddc245d728030",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

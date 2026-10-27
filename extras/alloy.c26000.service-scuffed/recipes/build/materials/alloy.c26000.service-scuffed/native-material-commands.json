@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "c26000",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "C26000 cartridge brass / Scuffed bare metal",
+        "density_g_cm3": 8.525410650742563,
+        "color": [
+          221,
+          192,
+          134
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.37,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "C26000 cartridge brass",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "cda-c26000",
+              "title": "C26000 cartridge brass primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://alloys.copper.org/alloy/C26000"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 8525.410650742562
+              },
+              "source_id": "cda-c26000",
+              "conditions": {
+                "temperature_k": 293.15,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "CDA alloy physical reference; product form and temper must be selected separately; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

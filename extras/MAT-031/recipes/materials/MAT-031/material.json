@@ -1,0 +1,182 @@
+{
+  "id": "MAT-031",
+  "name": "Matte industrial paint",
+  "family": "Paints and general coatings",
+  "version": "1.0.0-local",
+  "seed": 6445489,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.67,
+    0.67,
+    0.65
+  ],
+  "base_linear_high": [
+    0.78,
+    0.78,
+    0.76
+  ],
+  "roughness": 0.67,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 12,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-031",
+    "name": "Matte industrial paint",
+    "family": "Paints and general coatings",
+    "domains": [
+      "industrial",
+      "automotive",
+      "DIY"
+    ],
+    "description": "Fine pigment texture retains restrained grazing reflection.",
+    "use_cases": [
+      "Equipment",
+      "cabinets"
+    ],
+    "optical_model": "Energy-aware layered surface: substrate, pigmented layer and optional clear topcoat.",
+    "controls": [
+      "pigment colour",
+      "coat roughness",
+      "coverage",
+      "pigment grain",
+      "residual gloss"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep paint grain at a fixed fine scale.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039"
+    ],
+    "priority": "P0",
+    "cost": "Medium",
+    "validation": [
+      "Matte surfaces must still respond to viewing angle and illumination.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-013",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "3ee57be54eb7fd45c8e29a3e4b067e678978bb1bec292b2f10725baa18c76637",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "1b4a2b8756f0f42cf740c056eda676eaf411b9d2a95d7181312cdf4edefcee89",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "85c62ac645671ff6158ab0e4737215e9da19a21e9f457ffb403fe5b6c05c3e69",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e4cf93fa4fce3dc1533021716f93958a45811623d7c0d117fe2b3d069630095d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "71bdb1b3d606845ad420f21093f27effc7c7ec2813d3ea6d7a7f85b1e39665f8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "06539ba9831c8875cec15fb23901eeb85f39216083996f2d0b23a18ced95903d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "5038ad7c063a516c87a3c11787a75711786d6843fe5c94582ad675591826e3a9",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "40d015534b5c55087fade24985f8f050d2e332ac2a161d8bf14e79629c0d8e10",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

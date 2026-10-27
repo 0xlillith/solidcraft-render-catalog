@@ -1,0 +1,182 @@
+{
+  "id": "MAT-310",
+  "name": "PCB silkscreen legend ink",
+  "family": "PCB constructions and fabrication regions",
+  "version": "1.0.0-local",
+  "seed": 8654890,
+  "pattern": "pcb",
+  "base_linear_low": [
+    0.013593337247957108,
+    0.08183297739383326,
+    0.03126560784570966
+  ],
+  "base_linear_high": [
+    0.03275204692911593,
+    0.1570093021201143,
+    0.06493140533099372
+  ],
+  "roughness": 0.43999999999999995,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.055,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-310",
+    "name": "PCB silkscreen legend ink",
+    "family": "PCB constructions and fabrication regions",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "Opaque printed markings sit on top of the selected board finish.",
+    "use_cases": [
+      "PCB assembly presentation"
+    ],
+    "optical_model": "Region-aware PCB assembly appearance with independent dielectric, conductor, coating and printed layers.",
+    "controls": [
+      "layer masks",
+      "surface roughness",
+      "stack orientation",
+      "print coverage",
+      "ink roughness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve text and line dimensions from board artwork.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Legends must remain legible under glare and correct colour management.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "1cd778459362e3d2b1878aed767610af4d8eeee5215bd9719b9e915fea18cc4b",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "f6ac32d1852234f3fc968f039e4829d86244c2a41449b04f352cca1be4e7c7d7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "fcaf50baec296b0699d8f0a4535f68a121af0cc3235c0955c3d74db19dfd5e88",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "38daab2839fac917515f77c25ad76ba281d4d4ad5ea25f4a5f1488e003f5dfc7",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "bcc69d07c377b12669b9cd3462acccc66d63037b6586a1e5826dcd10ba8a88f7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "21b0b87e71072d54f08f376b5a19b0c219e0c4e6ad968b22e68fe9dc9278e49d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "519fa1e171b03d2293752eb452283669f541f985ffe5c104b1982c96914c9e8a",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "22e1c0ece23b39f366d4b2c52ffd219294b43f0c202a51a2245e3a59200d82c2",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

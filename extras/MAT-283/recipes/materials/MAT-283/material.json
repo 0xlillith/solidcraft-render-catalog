@@ -1,0 +1,191 @@
+{
+  "id": "MAT-283",
+  "name": "Directional abrasion overlay",
+  "family": "Industrial wear and service overlays",
+  "version": "1.0.0-local",
+  "seed": 8441077,
+  "pattern": "overlay",
+  "base_linear_low": [
+    0.13270644410516574,
+    0.06693214792556632,
+    0.03650178521643639
+  ],
+  "base_linear_high": [
+    0.2496445698631376,
+    0.12987644846147894,
+    0.07446593725977968
+  ],
+  "roughness": 0.614,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.08,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-283",
+    "name": "Directional abrasion overlay",
+    "family": "Industrial wear and service overlays",
+    "domains": [
+      "industrial",
+      "automotive",
+      "electronics"
+    ],
+    "description": "Scratches and locally polished regions follow authored contact motion.",
+    "use_cases": [
+      "Tools",
+      "product wear"
+    ],
+    "optical_model": "Non-destructive layer or geometric surface modifier over a host material; state is illustrative rather than diagnostic.",
+    "controls": [
+      "coverage mask",
+      "host preservation",
+      "seed",
+      "abrasion direction",
+      "scratch depth"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep contact paths tied to actual usable surfaces.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not scratch protected recesses indiscriminately.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "367276871ff4d3b19cdfd9a1424fe50439a105d18bdfcb74720eb6851a10d887",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e1731f66e5d3d781338354941ffe7d1cf8b267ca80180e9b169dc4211c7222ea",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "bea7a1516cda155514fa72795dbaf1ac1460e485ae7c6200a05aa2c18fba89da",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "01a0f9095b5308d00edb28d4c1fa4d3e9402fee32a88858cf959bfabcdc97307",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b47dcb618d04ad911eb4259ab607e413d96f4f87555ff94de0f777ceb3acb76f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "656d0cd06eaf615ed1ecfb72184b319502addd395291d0759858f477f8bd3409",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "mask": {
+      "path": "maps/mask.png",
+      "sha256": "d12b77f9444b9431da71cf896e80329f034d7788df8a9f061a5d5d8434116928",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "2cb21d75e69dae75239da7ecb9c7883fd351ba13104ef403b3a9bfa489c4312d",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "264a750b4d909eddb6970ebc88c3444c95648ed53f6d55557a904cfe8b80d746",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

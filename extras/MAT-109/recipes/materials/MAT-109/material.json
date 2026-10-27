@@ -1,0 +1,181 @@
+{
+  "id": "MAT-109",
+  "name": "Sawn basalt",
+  "family": "Natural stone appearances",
+  "version": "1.0.0-local",
+  "seed": 7063171,
+  "pattern": "regolith",
+  "base_linear_low": [
+    0.36984763901304013,
+    0.3531671342228948,
+    0.30959158976845275
+  ],
+  "base_linear_high": [
+    0.6814539098446402,
+    0.651080453361092,
+    0.5717339395783766
+  ],
+  "roughness": 0.372,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.1,
+  "tile_mm": [
+    300,
+    300
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-109",
+    "name": "Sawn basalt",
+    "family": "Natural stone appearances",
+    "domains": [
+      "architecture",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Compact dark stone contains restrained pores and cutting marks.",
+    "use_cases": [
+      "Paving",
+      "furniture"
+    ],
+    "optical_model": "Dielectric mineral structure with independently controlled cut orientation and surface finish.",
+    "controls": [
+      "mineral pattern",
+      "finish roughness",
+      "vein direction",
+      "pore density",
+      "saw marks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use fine cut texture and mm-scale pores.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Dark stone remains dielectric rather than becoming a metallic black.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d2cf84c6ed70e8213b784d4d2faba512202f9670e9e18b40d569b4a695397924",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ad1c00ba27a5a7f5cd0f5433669b3788bfa84012a35961bd077d8d60425ffc83",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "c457f58896be02f69da3e239da5694ee77d834677fac98049a01239348b1aac0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "653db9dcc9649561913dadfbff155bc0c6378b33134c276a0e0d36bc45763a2d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "2964ff81df407b99901c4147f03053be53f37a99864f92b5d4696c0a17622f51",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "9346b546c32b0eb506170d1a49fd20777b43d59de3c8ebae61d91f301bf5fc1a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "f518b4f292961a7a6b95e324891ec4a7ba96b919fb3b9d577d7070311dff5540",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "92b7e703d18be16f58057c1f14a7e320799c88776c7f3fbd38d7ea481bdd391f",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

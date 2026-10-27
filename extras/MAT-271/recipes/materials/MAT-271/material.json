@@ -1,0 +1,182 @@
+{
+  "id": "MAT-271",
+  "name": "Zinc-plated steel with passivation appearance",
+  "family": "Industrial protective treatments",
+  "version": "1.0.0-local",
+  "seed": 8346049,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.22908266468880284,
+    0.25209562240390737,
+    0.2799829974682521
+  ],
+  "base_linear_high": [
+    0.4251355983885663,
+    0.46703979004890595,
+    0.5178197864347277
+  ],
+  "roughness": 0.328,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.06,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-271",
+    "name": "Zinc-plated steel with passivation appearance",
+    "family": "Industrial protective treatments",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "A metal layer and thin conversion-film appearance cover a steel part.",
+    "use_cases": [
+      "Fasteners",
+      "brackets"
+    ],
+    "optical_model": "Explicit coating over a separate substrate, with optical behaviour selected per treatment rather than inferred performance.",
+    "controls": [
+      "coating coverage",
+      "layer roughness",
+      "substrate exposure",
+      "passivation film",
+      "zinc roughness"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep optical-film controls separate from geometric thickness.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039",
+      "CAP-031"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Any iridescence must be identified as physical or approximated.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "0749d21af564297cc6b764b10dbe2388356c575122b716e76de837d856886eef",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "25d01a866f2414b96b5ad1b80a20094b88bb6ed4df86f1e37a6f780339d95fb0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "7b6a4049868a1aa401524efa3560b0d156cfdbebeeecabf59764d55fd63d10ee",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "4b268e4b48adfbebc78e7c6a98238dc1819342f80f697d71be8b7cce36012823",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "dddc41af58283c75dc913902854b2f217699e7c35b257b5d732addbc99c8927d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "26b5395b403a6df4c98bbb5e8e8590d8844d9844872ffe616ef96b30fc871b4d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4e3135fe9e0faa3ff934b358d21be9a288ce8d4961f776d9f54556486ac868e6",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "cf39932449629704440ca8c5c39b9301a2a391eb906aa895bad5e3d6cb4a14bc",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

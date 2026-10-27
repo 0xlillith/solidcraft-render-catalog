@@ -1,0 +1,118 @@
+{
+  "id": "LUZ-191",
+  "name": "Clear-water submerged product",
+  "family": "20 Specialized physical scenes",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-191",
+    "name": "Clear-water submerged product",
+    "family": "20 Specialized physical scenes",
+    "domains": [
+      "research",
+      "optics"
+    ],
+    "description": "A proposed lighting arrangement for watertight housings and submerged objects.",
+    "use_cases": [
+      "Watertight housings and submerged objects"
+    ],
+    "sources": "Sun or areas above an existing water surface",
+    "geometry": "Real depth, water surface and metric scene scale",
+    "contribution_policy": "External sources only; medium handles absorption and refraction",
+    "controls": [
+      "Source direction",
+      "source intensity",
+      "angular source size"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-029"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Attenuation follows path length and approximations are labeled"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1024713,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1200.0,
+          -1200.0,
+          1100.0
+        ],
+        "u": [
+          -176.7766952966369,
+          176.7766952966369,
+          0.0
+        ],
+        "v": [
+          96.15149517532153,
+          96.15149517532153,
+          209.7850803825197
+        ],
+        "radiance": [
+          12,
+          12,
+          12
+        ]
+      },
+      {
+        "center": [
+          1400.0,
+          -500.0,
+          1000.0
+        ],
+        "u": [
+          -201.80183819889373,
+          -565.0451469569025,
+          0.0
+        ],
+        "v": [
+          -341.65890076408255,
+          122.02103598717233,
+          539.3329790633019
+        ],
+        "radiance": [
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Specialized optical/volume intent remains dependent on matching scene media and geometry.",
+    "Requires an explicitly bound volume/material; the light asset does not silently add an atmosphere or a water medium."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

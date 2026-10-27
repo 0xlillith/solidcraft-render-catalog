@@ -1,0 +1,181 @@
+{
+  "id": "MAT-141",
+  "name": "Dry compact asphalt",
+  "family": "Flooring and insulation",
+  "version": "1.0.0-local",
+  "seed": 7316579,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.0908743308689878,
+    0.08902177544105805,
+    0.07333934622146056
+  ],
+  "base_linear_high": [
+    0.17347266217935092,
+    0.17009935229565792,
+    0.1415432871495252
+  ],
+  "roughness": 0.748,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.2,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-141",
+    "name": "Dry compact asphalt",
+    "family": "Flooring and insulation",
+    "domains": [
+      "DIY",
+      "architecture",
+      "industrial"
+    ],
+    "description": "Dark binder surrounds exposed aggregate and small voids.",
+    "use_cases": [
+      "Product environments",
+      "roads"
+    ],
+    "optical_model": "Heterogeneous dielectric surface or layered porous construction according to the specified recipe.",
+    "controls": [
+      "grain distribution",
+      "roughness",
+      "layer coverage",
+      "aggregate distribution",
+      "binder coverage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve aggregate dimensions in all scene scales.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Dark binder must retain physically plausible reflection.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "63d964066ee1016b9305b263ef1ffadadd3ad023bf3934585adad0b244f7ce00",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "23580d0a52d8e9ccb906c0e3faed4f247fe0fb0e764e0f168584b8c34e77d567",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "ee8d984f9718369c71e37dfe4f24eb39235ce084f7609ecdd22acb218d1ade08",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0520e94830922ed129e6516b0e64a32d8f64a9ffaf1ca27829199d67bc2658fd",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "20fe14e8ec0a5a49469b93deb071387f57877a8e145c27341a4334a976a8f5ca",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "efd8acc9dfe7485adf2bfffebd5bb80b4b9438c6a914c3a22ad98313091eefa0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fd330f40bd7583b5a6ec7668b5b89c8f82215268c95860cec33e362fc416b760",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "39250391e933e949d3b586649688f62397eae070a260973b5ed4d63701eab47d",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "SELENE-AP-048",
+  "name": "Embossed tyre-sidewall preview",
+  "original_specification": {
+    "id": "SELENE-AP-048",
+    "name": "Embossed tyre-sidewall preview",
+    "source_catalog_ids": [
+      "MAT-237"
+    ],
+    "family": "Automotive elastomers",
+    "domains": [
+      "automotive",
+      "industrial",
+      "robotics"
+    ],
+    "purpose": "A dark rubber appearance for a geometrically modeled sidewall, distinct from metal lunar wheels.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-048 Embossed tyre-sidewall preview",
+        "color": "#282a2c",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.83,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Mold grain",
+        "Embossed geometry",
+        "Contact wear",
+        "Tyre deformation and traction"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque filled elastomer with mold grain, embossed geometry and bounded contact-polished regions.",
+      "structure": [
+        "Rubber surface",
+        "Original embossed geometry",
+        "Optional contact-polished region"
+      ],
+      "authoring_controls": [
+        {
+          "id": "mold_grain_pitch",
+          "value": 0.32,
+          "unit": "mm",
+          "meaning": "Illustrative sidewall grain spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "mold_grain_relief",
+          "value": 0.01,
+          "unit": "mm",
+          "meaning": "Authored render-only rubber grain.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "emboss_relief",
+          "value": 0.4,
+          "unit": "mm",
+          "meaning": "Illustrative raised-detail height for original geometry.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep embossed wording original and optional",
+        "Use geometry for silhouette-changing ribs",
+        "Do not assign this tyre candidate to a metal lunar mesh wheel by default"
+      ],
+      "capability_requirements": [
+        "CAP-033",
+        "CAP-035",
+        "CAP-036",
+        "CAP-038",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Optical response for a specified rubber formulation"
+      ],
+      "validation_criteria": [
+        "A tyre surface must remain distinct from the open metal wheel target",
+        "Visual rubber must not imply vacuum suitability or tire performance"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#282a2c",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.83,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-048 Embossed tyre-sidewall preview",
+    "bodies": [
+      "SELENE-AP-048"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

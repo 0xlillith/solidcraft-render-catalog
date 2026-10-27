@@ -1,0 +1,54 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-267 Lunar night with onboard task lights",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 1141981,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    -700.0,
+                    400.0
+                  ],
+                  "u": [
+                    -30.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    9.922778767136677,
+                    17.364862842489185
+                  ],
+                  "radiance": [
+                    40,
+                    40,
+                    40
+                  ]
+                }
+              ]
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

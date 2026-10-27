@@ -1,0 +1,54 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-150 Two-luminaire comparison",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 961450,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    1500.0
+                  ],
+                  "u": [
+                    -125.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    125.0,
+                    0.0
+                  ],
+                  "radiance": [
+                    20,
+                    20,
+                    20
+                  ]
+                }
+              ]
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "id": "ENV-250",
+  "name": "Vacuum deployment clearance context",
+  "family": "Orbital and spacecraft surroundings",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-250",
+    "name": "Vacuum deployment clearance context",
+    "family": "Orbital and spacecraft surroundings",
+    "domains": [
+      "space",
+      "spacecraft",
+      "aerospace"
+    ],
+    "description": "Vacuum deployment clearance context is a conceptual setting for booms; antennas; deployable mechanisms. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Booms",
+      "antennas",
+      "deployable mechanisms"
+    ],
+    "representation": "Conceptual 3D vacuum setting with explicit astronomical-light ownership",
+    "geometry": "Free spacecraft assembly with removable geometric clearance envelope",
+    "ambient_lighting": "One sun and actual hardware emitters; clearance envelope is an explicit editorial overlay",
+    "scale_policy": "CAD dimensions and deployment poses supplied by the project; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Deployment pose",
+      "clearance-overlay visibility",
+      "sun direction",
+      "exposure",
+      "auxiliary structure visibility"
+    ],
+    "authoring_method": "Original procedural geometry and authored relative layout; no downloaded space imagery, real orbit solution or mission-site claim",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-044",
+      "CAP-092",
+      "CAP-011",
+      "CAP-082",
+      "CAP-088"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Vacuum has no atmospheric sky, haze, rain or wind-driven smoke.",
+      "Use one environment-owned sun; preserve physically dark unlit regions.",
+      "Earth visibility, size and phase require location and ephemeris input; Earth is off by default.",
+      "Sunlit-subject exposure does not automatically produce a dense visible star field."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [],
+  "geometry_summary": {
+    "mesh_nodes": 28,
+    "triangles": 896,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 12000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        -0.4947222527119188,
+        -0.1899060801478079,
+        0.8480480961564261
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Vacuum: zero atmospheric sky. Earth and star fields disabled without explicit external inputs.",
+    "Relative context is authored, not a mission/ephemeris model.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

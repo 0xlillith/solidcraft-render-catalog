@@ -1,0 +1,180 @@
+{
+  "id": "MAT-018",
+  "name": "Sand-cast aluminium",
+  "family": "Aluminium and titanium finishes",
+  "version": "1.0.0-local",
+  "seed": 6342542,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.3531671342228948,
+    0.3783567088223026,
+    0.4090320324412694
+  ],
+  "base_linear_high": [
+    0.651080453361092,
+    0.6969480369600136,
+    0.752804596385595
+  ],
+  "roughness": 0.324,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.02,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-018",
+    "name": "Sand-cast aluminium",
+    "family": "Aluminium and titanium finishes",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Irregular casting grain contrasts with selected machined lands.",
+    "use_cases": [
+      "Casings",
+      "brackets"
+    ],
+    "optical_model": "Conductor microfacet substrate with process-oriented anisotropy and explicit coating layers where present.",
+    "controls": [
+      "surface roughness",
+      "manufacturing direction",
+      "casting grain",
+      "machining mask"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep grain in mm and parting lines tied to geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Avoid turning shallow casting texture into excessive open porosity.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "ae5b09c121a1d62193e3d0905651db2894beb2155b032606e57ec97421b29f79",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "ca1a025b3f88a790a77cad20e226a57898dfdd9219488dad84ad76ddd44ab1d9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "5ba9f38d29016386df0d5ee0c133e79ec330134e6d6585a5baa77a41dbfc643d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "c4dc6af5686df1db36f90afce636abad98129440cbed09d41ecb391578b29c34",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "6636797ce922c54466d2e8a416dbc5ff10e0318c3ea4c6d23fd520e2371db374",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "2ed9bcae5e2194a93be403c685b017cf1f05662084138c5e8798d522cb858986",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "eff5eeb9bf59ddb43a7e7b3b2485608a5b738e7ae5e4544a18b5f3142d25a69d",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "ab4bf0fb699a1e25eac13ae8bfec259c8836ea1ae41eebff02e5373c45fc3aa8",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

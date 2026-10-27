@@ -1,0 +1,827 @@
+{
+  "id": "ENV-138",
+  "name": "Freshly worked crop field",
+  "family": "Countryside and gardens",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-138",
+    "name": "Freshly worked crop field",
+    "family": "Countryside and gardens",
+    "domains": [
+      "outdoor_products",
+      "agriculture",
+      "landscape"
+    ],
+    "description": "Freshly worked crop field is a conceptual setting for machinery; implements. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Machinery",
+      "implements"
+    ],
+    "representation": "Procedural sky with 3D terrain and instanced vegetation",
+    "geometry": "Furrows with actual nearby relief and distant repetition",
+    "ambient_lighting": "Open sky",
+    "scale_policy": "Physically dimensioned furrow spacing and editable plot; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Furrow spacing and depth",
+      "plot dimensions",
+      "terrain slope",
+      "sky orientation"
+    ],
+    "authoring_method": "Original procedural terrain and vegetation; external plant assets require verified rights and attribution",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-042",
+      "CAP-082",
+      "CAP-084"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Keep grass and leaves at physical scale and provide solid ground below the subject.",
+      "Check vegetation noise, instancing and memory use."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Terrain",
+      "width_mm": 24000,
+      "depth_mm": 24000,
+      "amplitude_mm": 130,
+      "seed": 840138,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 0/crown0",
+      "center_mm": [
+        6747.1416965854505,
+        -207.2919818583752,
+        3928.1241176674407
+      ],
+      "radii_mm": [
+        1617.4628719807108,
+        1559.6963408385427,
+        1617.4628719807108
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 0/crown1",
+      "center_mm": [
+        7779.51095005505,
+        683.1668138329075,
+        4216.956773378282
+      ],
+      "radii_mm": [
+        1617.4628719807108,
+        1559.6963408385427,
+        1617.4628719807108
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 0/crown2",
+      "center_mm": [
+        7697.842722707733,
+        219.62066734024887,
+        4505.789429089123
+      ],
+      "radii_mm": [
+        1617.4628719807108,
+        1559.6963408385427,
+        1617.4628719807108
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 1/crown0",
+      "center_mm": [
+        6674.991834777515,
+        2905.770995020687,
+        2735.623001318963
+      ],
+      "radii_mm": [
+        1126.4330005431025,
+        1086.203250523706,
+        1126.4330005431025
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 1/crown1",
+      "center_mm": [
+        7446.2926387047655,
+        3367.4851145227967,
+        2936.771751415946
+      ],
+      "radii_mm": [
+        1126.4330005431025,
+        1086.203250523706,
+        1126.4330005431025
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 1/crown2",
+      "center_mm": [
+        7253.619296529586,
+        2776.7871693577936,
+        3137.920501512928
+      ],
+      "radii_mm": [
+        1126.4330005431025,
+        1086.203250523706,
+        1126.4330005431025
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 2/crown0",
+      "center_mm": [
+        4947.931522848518,
+        5168.15467861304,
+        3405.92977245405
+      ],
+      "radii_mm": [
+        1402.4416710104913,
+        1352.3544684744022,
+        1402.4416710104913
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 2/crown1",
+      "center_mm": [
+        4787.353183697682,
+        5142.801061916106,
+        3656.3657851344956
+      ],
+      "radii_mm": [
+        1402.4416710104913,
+        1352.3544684744022,
+        1402.4416710104913
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 2/crown2",
+      "center_mm": [
+        5056.169843312192,
+        5343.675340010203,
+        3906.80179781494
+      ],
+      "radii_mm": [
+        1402.4416710104913,
+        1352.3544684744022,
+        1402.4416710104913
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 3/crown0",
+      "center_mm": [
+        1517.456627859072,
+        5467.273343164051,
+        3533.209472979888
+      ],
+      "radii_mm": [
+        1454.850959462307,
+        1402.8919966243673,
+        1454.850959462307
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 3/crown1",
+      "center_mm": [
+        2169.339742224587,
+        5543.855409885886,
+        3793.004287169586
+      ],
+      "radii_mm": [
+        1454.850959462307,
+        1402.8919966243673,
+        1454.850959462307
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 3/crown2",
+      "center_mm": [
+        1944.2404926735958,
+        4497.260306751399,
+        4052.799101359283
+      ],
+      "radii_mm": [
+        1454.850959462307,
+        1402.8919966243673,
+        1454.850959462307
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 4/crown0",
+      "center_mm": [
+        -50.96522469825301,
+        5471.921578955387,
+        2210.5325367802866
+      ],
+      "radii_mm": [
+        910.2192798507062,
+        877.7114484274666,
+        910.2192798507062
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 4/crown1",
+      "center_mm": [
+        -321.3510027558289,
+        5290.133844577439,
+        2373.0716938964842
+      ],
+      "radii_mm": [
+        910.2192798507062,
+        877.7114484274666,
+        910.2192798507062
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 4/crown2",
+      "center_mm": [
+        -127.62065350865464,
+        4858.756971785765,
+        2535.6108510126815
+      ],
+      "radii_mm": [
+        910.2192798507062,
+        877.7114484274666,
+        910.2192798507062
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 5/crown0",
+      "center_mm": [
+        -2885.621843793682,
+        7145.180036824555,
+        3198.701975078871
+      ],
+      "radii_mm": [
+        1317.1125779736528,
+        1270.0728430460224,
+        1317.1125779736528
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 5/crown1",
+      "center_mm": [
+        -3392.9822112517872,
+        7332.904053790853,
+        3433.9006497170235
+      ],
+      "radii_mm": [
+        1317.1125779736528,
+        1270.0728430460224,
+        1317.1125779736528
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 5/crown2",
+      "center_mm": [
+        -2401.2346462506157,
+        6760.3717337900325,
+        3669.099324355175
+      ],
+      "radii_mm": [
+        1317.1125779736528,
+        1270.0728430460224,
+        1317.1125779736528
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 6/crown0",
+      "center_mm": [
+        -6343.624669580617,
+        6519.675671231859,
+        3410.96330713611
+      ],
+      "radii_mm": [
+        1404.5143029383983,
+        1354.3530778334552,
+        1404.5143029383983
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 6/crown1",
+      "center_mm": [
+        -6099.737500085011,
+        6546.198447719811,
+        3661.769432660824
+      ],
+      "radii_mm": [
+        1404.5143029383983,
+        1354.3530778334552,
+        1404.5143029383983
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 6/crown2",
+      "center_mm": [
+        -5735.785270160546,
+        6111.142838451165,
+        3912.5755581855374
+      ],
+      "radii_mm": [
+        1404.5143029383983,
+        1354.3530778334552,
+        1404.5143029383983
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 7/crown0",
+      "center_mm": [
+        -6526.81351920376,
+        2406.289408015014,
+        3183.8161138630944
+      ],
+      "radii_mm": [
+        1310.9831057083331,
+        1264.162280504464,
+        1310.9831057083331
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 7/crown1",
+      "center_mm": [
+        -6678.623275134316,
+        2738.9413301450154,
+        3417.92023988244
+      ],
+      "radii_mm": [
+        1310.9831057083331,
+        1264.162280504464,
+        1310.9831057083331
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 7/crown2",
+      "center_mm": [
+        -6975.898023899602,
+        2632.269761394236,
+        3652.0243659017847
+      ],
+      "radii_mm": [
+        1310.9831057083331,
+        1264.162280504464,
+        1310.9831057083331
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 8/crown0",
+      "center_mm": [
+        -7741.332076213522,
+        -277.2544511994373,
+        3744.541496375267
+      ],
+      "radii_mm": [
+        1541.8700279192276,
+        1486.8032412078267,
+        1541.8700279192276
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 8/crown1",
+      "center_mm": [
+        -8393.216866292776,
+        -622.5808420998068,
+        4019.8754299322723
+      ],
+      "radii_mm": [
+        1541.8700279192276,
+        1486.8032412078267,
+        1541.8700279192276
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 8/crown2",
+      "center_mm": [
+        -7827.123498840463,
+        -420.6811266352759,
+        4295.209363489277
+      ],
+      "radii_mm": [
+        1541.8700279192276,
+        1486.8032412078267,
+        1541.8700279192276
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 9/crown0",
+      "center_mm": [
+        -4580.750821629859,
+        -1727.1752713475444,
+        2181.19054560058
+      ],
+      "radii_mm": [
+        898.1372834825918,
+        866.0609519296421,
+        898.1372834825918
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 9/crown1",
+      "center_mm": [
+        -5114.705389695582,
+        -2018.5447464833464,
+        2341.5722033653287
+      ],
+      "radii_mm": [
+        898.1372834825918,
+        866.0609519296421,
+        898.1372834825918
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 9/crown2",
+      "center_mm": [
+        -5142.052051037354,
+        -2293.0626897407165,
+        2501.9538611300773
+      ],
+      "radii_mm": [
+        898.1372834825918,
+        866.0609519296421,
+        898.1372834825918
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 10/crown0",
+      "center_mm": [
+        -4115.222482038768,
+        -3431.8608543644823,
+        2963.275386094862
+      ],
+      "radii_mm": [
+        1220.1722178037667,
+        1176.5946385964892,
+        1220.1722178037667
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 10/crown1",
+      "center_mm": [
+        -3598.303094084516,
+        -3508.624762368236,
+        3181.1632821312487
+      ],
+      "radii_mm": [
+        1220.1722178037667,
+        1176.5946385964892,
+        1220.1722178037667
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 10/crown2",
+      "center_mm": [
+        -3442.9664722128286,
+        -3993.70339524257,
+        3399.0511781676355
+      ],
+      "radii_mm": [
+        1220.1722178037667,
+        1176.5946385964892,
+        1220.1722178037667
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 11/crown0",
+      "center_mm": [
+        -2520.026772343581,
+        -5038.152551347079,
+        3476.1368600226665
+      ],
+      "radii_mm": [
+        1431.350471774039,
+        1380.2308120678235,
+        1431.350471774039
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 11/crown1",
+      "center_mm": [
+        -1918.4694791473617,
+        -5327.907098695978,
+        3731.735158553745
+      ],
+      "radii_mm": [
+        1431.350471774039,
+        1380.2308120678235,
+        1431.350471774039
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 11/crown2",
+      "center_mm": [
+        -2260.7485628006857,
+        -5748.87441358769,
+        3987.3334570848233
+      ],
+      "radii_mm": [
+        1431.350471774039,
+        1380.2308120678235,
+        1431.350471774039
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 12/crown0",
+      "center_mm": [
+        -262.3774357273358,
+        -7555.592892712574,
+        3838.2098210516597
+      ],
+      "radii_mm": [
+        1580.4393380800952,
+        1523.9950760058061,
+        1580.4393380800952
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 12/crown1",
+      "center_mm": [
+        335.3239205280077,
+        -7110.467336930609,
+        4120.431131423105
+      ],
+      "radii_mm": [
+        1580.4393380800952,
+        1523.9950760058061,
+        1580.4393380800952
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 12/crown2",
+      "center_mm": [
+        651.5124294009659,
+        -6461.581703861965,
+        4402.65244179455
+      ],
+      "radii_mm": [
+        1580.4393380800952,
+        1523.9950760058061,
+        1580.4393380800952
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 13/crown0",
+      "center_mm": [
+        2980.412245920315,
+        -6206.277635659733,
+        3242.5812326960204
+      ],
+      "radii_mm": [
+        1335.1805075807142,
+        1287.4954894528316,
+        1335.1805075807142
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 13/crown1",
+      "center_mm": [
+        2144.6695183804604,
+        -6302.109942651078,
+        3481.006323335434
+      ],
+      "radii_mm": [
+        1335.1805075807142,
+        1287.4954894528316,
+        1335.1805075807142
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 13/crown2",
+      "center_mm": [
+        2779.7990580635005,
+        -6849.490676618358,
+        3719.4314139748467
+      ],
+      "radii_mm": [
+        1335.1805075807142,
+        1287.4954894528316,
+        1335.1805075807142
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 14/crown0",
+      "center_mm": [
+        4229.620041076464,
+        -3797.3300111675094,
+        2672.5159538959288
+      ],
+      "radii_mm": [
+        1100.447745721853,
+        1061.146040517501,
+        1100.447745721853
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 14/crown1",
+      "center_mm": [
+        3514.1674901745455,
+        -4250.535865590344,
+        2869.024479917688
+      ],
+      "radii_mm": [
+        1100.447745721853,
+        1061.146040517501,
+        1100.447745721853
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 14/crown2",
+      "center_mm": [
+        3908.345579414545,
+        -3955.2918308261915,
+        3065.5330059394473
+      ],
+      "radii_mm": [
+        1100.447745721853,
+        1061.146040517501,
+        1100.447745721853
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 15/crown0",
+      "center_mm": [
+        5509.945901377495,
+        -2391.235860135551,
+        2097.066412747425
+      ],
+      "radii_mm": [
+        863.4979346607046,
+        832.6587227085365,
+        863.4979346607046
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 15/crown1",
+      "center_mm": [
+        5342.863752279299,
+        -2034.9429897216114,
+        2251.2624725082655
+      ],
+      "radii_mm": [
+        863.4979346607046,
+        832.6587227085365,
+        863.4979346607046
+      ],
+      "color": "55764c"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Tree 15/crown2",
+      "center_mm": [
+        5033.9568403584735,
+        -1947.4920341434085,
+        2405.4585322691055
+      ],
+      "radii_mm": [
+        863.4979346607046,
+        832.6587227085365,
+        863.4979346607046
+      ],
+      "color": "55764c"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 65,
+    "triangles": 9730,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 24000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        -0.5416554453946921,
+        -0.056930281365698505,
+        0.838670567945424
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "d2-sverker21-62hrc",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "D2 / Sverker 21 — hardened and tempered 62 HRC / Precision ground",
+        "density_g_cm3": 7.7,
+        "color": [
+          196,
+          197,
+          199
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.19,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "D2 / Sverker 21 — hardened and tempered 62 HRC",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "uddeholm-sverker21",
+              "title": "D2 / Sverker 21 — hardened and tempered 62 HRC primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://www.uddeholm.com/app/uploads/sites/216/productdb/api/tech_uddeholm-sverker-21_en.pdf"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 7700
+              },
+              "source_id": "uddeholm-sverker21",
+              "conditions": {
+                "temperature_k": 293.15,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "Hardened and tempered to 62 HRC, not the soft-annealed delivery condition; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

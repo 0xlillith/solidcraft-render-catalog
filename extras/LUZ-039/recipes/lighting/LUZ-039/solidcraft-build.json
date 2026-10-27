@@ -1,0 +1,146 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "LUZ-039 Optical caustic on a receiver"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "description": "Original relative lighting rig on neutral calibration geometry; no photometric certification.",
+        "org.solidcraft.local_catalog": {
+          "id": "LUZ-039",
+          "unresolved_external_inputs": [],
+          "limitations": [
+            "Refraction/caustic quality depends on the actual optical object, topology and executor, not on this light recipe.",
+            "Finite source authored; no claim that the current integrator resolves the requested caustic."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.sphere",
+    "params": {
+      "radius": 160,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "body_name": "Reference subject"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Reference subject"
+      ],
+      "color": [
+        155,
+        155,
+        155
+      ],
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.4,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-039 Optical caustic on a receiver",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.7,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 1150,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "background": [
+          30,
+          35,
+          42
+        ],
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 790177,
+            "tone_map": "aces_fitted",
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    -1400.0,
+                    -1200.0,
+                    1500.0
+                  ],
+                  "u": [
+                    -9.761870601839528,
+                    11.38884903547945,
+                    0.0
+                  ],
+                  "v": [
+                    7.186987199641337,
+                    6.160274742549718,
+                    11.636074513705022
+                  ],
+                  "radiance": [
+                    80,
+                    80,
+                    80
+                  ]
+                },
+                {
+                  "center": [
+                    -1400.0,
+                    -1000.0,
+                    800.0
+                  ],
+                  "u": [
+                    -72.65477421488706,
+                    101.71668390084186,
+                    0.0
+                  ],
+                  "v": [
+                    308.7901412793992,
+                    220.56438662814233,
+                    816.0882305241266
+                  ],
+                  "radiance": [
+                    3,
+                    3,
+                    3
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

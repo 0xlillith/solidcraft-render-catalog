@@ -1,0 +1,184 @@
+{
+  "id": "MAT-571",
+  "name": "SELENE composite arm-tube finish",
+  "family": "SELENE arm gripper and sampling-tool appearances",
+  "version": "1.0.0-local",
+  "seed": 10721749,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.1729825114574692,
+    0.18685915652946297,
+    0.21650595010567703
+  ],
+  "base_linear_high": [
+    0.3229830805643469,
+    0.3482510014417087,
+    0.4022347151177999
+  ],
+  "roughness": 0.248,
+  "roughness_variation": 0.06,
+  "metallic": 0.75,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-571",
+    "name": "SELENE composite arm-tube finish",
+    "family": "SELENE arm gripper and sampling-tool appearances",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Directional reinforcement lies beneath an authored protective surface.",
+    "use_cases": [
+      "Robotic arm concepts"
+    ],
+    "optical_model": "Candidate component-region recipes for robotic sampling illustrations, with physical geometry and visual finish kept separate from engineering properties.",
+    "controls": [
+      "component masks",
+      "manufacturing direction",
+      "surface state",
+      "ply direction",
+      "outer finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve tube-axis coordinates and laminate-region masks.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-039",
+      "CAP-090",
+      "CAP-097",
+      "CAP-021"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Visual fibre orientation does not define the structural layup.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "921875ccfe024c4aa475589467d6d412153fc97ebc392d6102e8580dc891ce75",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3a2fffd5fcb34cf359630731f26c868c66e6d275b257f2df91eba41d41a6c35c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "7fb7964f897fb039e56b8b7513c91b5d1ff6f85836e02272ab1816d10d2588c4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "19eb4724976c0241725da3f5b37d7b9d1a04fc6fd6ab91faa0210273a00b2897",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "f4fd709044f4464887e4cba30662d0671611fa70b7df4c831ec2fbbdfca14929",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "e9c74504073aaabfed3d0ea60e35b08017d128a1f588beb893759f1629bcd56d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c53bcab5d8696299bca402fe922476c2d367e021d39145b087c6bfabdd4c412d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "60efea2567b1e28d95ea2be026f75bda2978262592b5303204a38678de95520c",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "15b8a5602d5f856b14fe0232b7f2fc95abcada8af42bf6cf425770c9d94d1e7c",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

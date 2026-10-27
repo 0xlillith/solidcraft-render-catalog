@@ -1,0 +1,193 @@
+{
+  "id": "MAT-352",
+  "name": "Clear PETG feedstock strand",
+  "family": "Additive feedstock appearances",
+  "version": "1.0.0-local",
+  "seed": 8987488,
+  "pattern": "fdm",
+  "base_linear_low": [
+    0.07333934622146056,
+    0.18123351997875412,
+    0.2420755424549514
+  ],
+  "base_linear_high": [
+    0.1415432871495252,
+    0.3380073050359403,
+    0.44879427133588157
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.16,
+  "tile_mm": [
+    12.8,
+    12.8
+  ],
+  "cycles_u": 12,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-352",
+    "name": "Clear PETG feedstock strand",
+    "family": "Additive feedstock appearances",
+    "domains": [
+      "additive manufacturing",
+      "DIY",
+      "industrial"
+    ],
+    "description": "A transparent cylindrical strand produces internal refraction.",
+    "use_cases": [
+      "Filament presentation"
+    ],
+    "optical_model": "Process feedstock appearance with distinct polymer, particle or filament regions; no printability or formulation claims.",
+    "controls": [
+      "feedstock geometry",
+      "surface finish",
+      "inclusion structure",
+      "absorption",
+      "surface polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve real strand diameter and bend geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-104",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Transmission must differ from a flat transparent ribbon.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "499cd9f61a5acf0343f6eac769e26d83dc9f6287a64a5b04a357ea1acd6a9f9b",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "82d37e6e8093bc2506d2fb9f97f981760486b6c0cb1ff27286238f8961c0e5f7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "4fc10fcc89932aa7b938ff9c0aa9ad78213e38764fd60bfdf3fbd54f2e28853b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "2970ba7ba6040bae230a80c9557d1d018af14b53665cab053e5fe4f6bb7cb414",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "566c64c6117b32a265531f455bcb8cd6f29bbe08909b59b7c4020655fd581d75",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4fedaa091f70e6f0ad1e40f3ed13ea8da0a94f6c926cb3faa34897da0a28938a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "e3072721bff6b187efb4bc6f1a76eadb32ad3dafba5a4de968c95c1a4141f313",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "59d1fc26061e0447c6a5bdf93f1d60a6eca8b46010f519f4a0da58bb9c0ff9e0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

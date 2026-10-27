@@ -1,0 +1,179 @@
+{
+  "id": "MAT-046",
+  "name": "Machined POM",
+  "family": "Opaque engineering polymers",
+  "version": "1.0.0-local",
+  "seed": 6564274,
+  "pattern": "milled",
+  "base_linear_low": [
+    0.7,
+    0.71,
+    0.7
+  ],
+  "base_linear_high": [
+    0.82,
+    0.83,
+    0.81
+  ],
+  "roughness": 0.4,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.025,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 24,
+  "cycles_v": 3,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-046",
+    "name": "Machined POM",
+    "family": "Opaque engineering polymers",
+    "domains": [
+      "industrial",
+      "electronics",
+      "CAD product"
+    ],
+    "description": "Dense smooth polymer displays restrained tool paths.",
+    "use_cases": [
+      "Precision parts",
+      "sliders"
+    ],
+    "optical_model": "Opaque dielectric microfacet surface with process-specific texture; engineering properties remain separate.",
+    "controls": [
+      "surface colour",
+      "roughness",
+      "mould texture",
+      "groove pitch",
+      "tool direction"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use a physical machining pitch.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "Do not infer tolerance or friction from the visual preset.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-021",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "f15e888b4dbc38ce9daa5eb10f8fd8c67f3d1086b3afe45e559f1ffc8458080d",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e9f8ef0f8f42e4f84efc2f265a4a5da653822153cff6a01877340558dd748815",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "ae60201ef580563f8aa8bdfd127f785a6ae4157efe31e26e834bf905c0b01d88",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0dd0bba472544e0486b9ce7946b89e5bd017e8d230828c7122843617b4c71aad",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "0cda5b8c0631ba66d04e8ccbde9c1704b454942c2d442219d3ced68dd52ee99e",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "9d8d4f7abd53cface6bef86f8fcee6557ed6bfc22449be9ac005b94544a2a3cf",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "10ec595d4714ca2d487eb274ee08b3ef32470baaa8d32a262cf1990ea58d8f09",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "dbb9552e9f9e909089013135a4622f3f9eb056980030ec47a7b639a1b3ed8386",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "id": "MAT-443",
+  "name": "Remote-phosphor conversion plate",
+  "family": "LED emitters and conversion layers",
+  "version": "1.0.0-local",
+  "seed": 9708117,
+  "pattern": "led",
+  "base_linear_low": [
+    0.5619953378662959,
+    0.4226072813519184,
+    0.1520671352517659
+  ],
+  "base_linear_high": [
+    1.0,
+    0.7775237063422992,
+    0.28489836568232
+  ],
+  "roughness": 0.264,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.005,
+  "tile_mm": [
+    15,
+    15
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-443",
+    "name": "Remote-phosphor conversion plate",
+    "family": "LED emitters and conversion layers",
+    "domains": [
+      "LED lighting",
+      "electronics",
+      "automotive",
+      "space"
+    ],
+    "description": "A separated conversion layer receives light from distinct emitters.",
+    "use_cases": [
+      "LED optical studies"
+    ],
+    "optical_model": "Explicit emissive and dielectric package regions; static emission is an authored source, while physical spectral conversion requires a dedicated model.",
+    "controls": [
+      "emission level",
+      "package masks",
+      "surface finish",
+      "excitation",
+      "conversion response"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve spacing and thickness between source and converter.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-013",
+      "CAP-025",
+      "CAP-028",
+      "CAP-101"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Do not make the plate emit independently of excitation in physical mode.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "bd505180e051fc0da545beeef83c9286d342f3d7bba0e8a4614bb719826717ec",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "d144c5fd9f510feef4839fbbc9b8e62ea838e036bbf5d76889e2bd27ebaf42fc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "087dd923534bfdb3f17efb289f752c15c08f2efcde056fe576990762e49941f9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "f5d7be9904097c995524992b55f1f6522e9985b6f29f7e13ef7bd91bd03ab8c8",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "734e5828ce47ce51f0f77b272cc135b24b4f5784dd667e37576ac74a80f378d4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "3afe370141eb0aca6a217f0e538bf6f60ef7822652e3601c673ba4aebf0cef03",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "4b3f214c11d5f2a828d75b7a9bf165bc803fadcf3047885634edc416bb5d5c6f",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "b0a65698699716ddbaf4e2261fd3d033d47a6755b4ade3ed3d8bec7f6f9fdc45",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

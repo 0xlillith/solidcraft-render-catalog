@@ -1,0 +1,184 @@
+{
+  "id": "MAT-261",
+  "name": "Cylindrically ground bearing steel",
+  "family": "Industrial machining signatures",
+  "version": "1.0.0-local",
+  "seed": 8266859,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.22908266468880284,
+    0.25209562240390737,
+    0.2799829974682521
+  ],
+  "base_linear_high": [
+    0.4251355983885663,
+    0.46703979004890595,
+    0.5178197864347277
+  ],
+  "roughness": 0.198,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.035,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-261",
+    "name": "Cylindrically ground bearing steel",
+    "family": "Industrial machining signatures",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Fine circumferential grinding marks follow a precision cylinder.",
+    "use_cases": [
+      "Bearings",
+      "shafts"
+    ],
+    "optical_model": "Conductor or dielectric base with operation-specific directional microgeometry and filtered roughness.",
+    "controls": [
+      "operation axis",
+      "surface roughness",
+      "feature pitch",
+      "grinding pitch",
+      "local polish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Anchor marks to the cylinder axis.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-035",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Rotation and instancing must preserve the manufacturing direction.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "e668db99a5d495104ec7df4607de1802119e9c6d3cf8658c8df8e3593214ee7f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "41d5b68c7315568fb1ab3e46f582dc2bbe3b184011fbc7223b0c69b91a550c1d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "beceb0bbdce74ccb56d6013586950d888987672b073b1730ff7ff9c0fe476bf2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "35cb67e9a9073f887daf710e9f2abf14a40d4cf2cad6550796b43a12997c3a87",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "15aa3b369b2ec75a05a4332ef60abc496df73bb0040cd27f5cb50df030b5d103",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "b92f77c4b3509be41d6f51728b906722764dcaf1527af01fccc15d0ba75dd5ca",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "47e59bd2e37c9254cbaffd33107882fc7af77a4364764ddebc205c71b9bcaf59",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "fb0bb40542bb73233b3cc96991f9d1e572440d4f495aebc29703dade521795a5",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

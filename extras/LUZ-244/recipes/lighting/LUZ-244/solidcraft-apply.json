@@ -1,0 +1,100 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-244 Reflector-cup LED study",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 1106492,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    0.0,
+                    700.0,
+                    0.0
+                  ],
+                  "u": [
+                    400.0,
+                    0.0,
+                    0.0
+                  ],
+                  "v": [
+                    0.0,
+                    0.0,
+                    20.0
+                  ],
+                  "radiance": [
+                    20,
+                    20,
+                    20
+                  ]
+                },
+                {
+                  "center": [
+                    -1400.0,
+                    -1400.0,
+                    1000.0
+                  ],
+                  "u": [
+                    -353.5533905932737,
+                    353.5533905932737,
+                    0.0
+                  ],
+                  "v": [
+                    159.39417826583457,
+                    159.39417826583457,
+                    446.30369914433675
+                  ],
+                  "radiance": [
+                    0.75,
+                    0.75,
+                    0.75
+                  ]
+                }
+              ]
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": [
+          {
+            "id": "passive-fill",
+            "center_mm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "half_u_mm": [
+              0.0,
+              -400.0,
+              0.0
+            ],
+            "half_v_mm": [
+              0.0,
+              0.0,
+              750.0
+            ],
+            "reflectance_linear": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

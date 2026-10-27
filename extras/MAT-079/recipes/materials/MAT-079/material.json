@@ -1,0 +1,192 @@
+{
+  "id": "MAT-079",
+  "name": "Laboratory borosilicate-glass appearance",
+  "family": "Glass and basic optics",
+  "version": "1.0.0-local",
+  "seed": 6825601,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.4795146453393421,
+    0.5619953378662959,
+    0.5459472033847879
+  ],
+  "base_linear_high": [
+    0.8811460706179065,
+    1.0,
+    1.0
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0.0,
+  "height_span_mm": 0.001,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.47,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-079",
+    "name": "Laboratory borosilicate-glass appearance",
+    "family": "Glass and basic optics",
+    "domains": [
+      "LED lighting",
+      "laboratory",
+      "CAD product"
+    ],
+    "description": "Clear vessels retain defined walls, lips and printed markings.",
+    "use_cases": [
+      "Lab vessels",
+      "equipment"
+    ],
+    "optical_model": "Refractive dielectric with real thickness, path-length absorption and explicit interfaces.",
+    "controls": [
+      "editable refractive index",
+      "absorption distance",
+      "face roughness",
+      "absorption",
+      "print masks"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use vessel geometry rather than a thin transparent shell shortcut.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Appearance does not establish glass composition or thermal resistance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "9d2e9fa0c1f465c751afce67699ed205aeabd71d7ac663e371037422e731ba44",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "8e169c20f47d35c9bbe0f3202e65b1384dfdda6b72ac208285c63c3b3cb5e200",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "235e8d53ac55b6e8fad1dc3770d2a162557f85e68d6b5457b65723aa1b936290",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "8c4ca80ba7393db2c2ef28fb4a6a789c17dc3dc3710e40653fba529faa7e2544",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "408e6b64120fe5f4145fe4daf674cd34eca3352b8e89ff385449dd930b084602",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "3ee56c36f924d898fb9dc0f3f3f4ccba9cb205a872bc4402130215816f142d38",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "71218d64fb87b0a67c87488a061f203b871cf91f3b40a6ac116364f764fe25bb",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "acf5349410dce5a299fc45af2614796daf8b2147a0a4690b13a48dfd10e2fb92",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

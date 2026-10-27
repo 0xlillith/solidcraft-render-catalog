@@ -1,0 +1,68 @@
+{
+  "id": "ENV-200",
+  "name": "Industrial emergency-lighting corridor",
+  "kind": "environment",
+  "family": "Night and low illumination",
+  "path": "environments/ENV-200",
+  "thumbnail": "environments/ENV-200/native-model-preview.png",
+  "description": "Industrial emergency-lighting corridor is a conceptual setting for signs; luminous equipment. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-200/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-200/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-200/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-200/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-200/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-200/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-200/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-200/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-200/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-200/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-200/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-200/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

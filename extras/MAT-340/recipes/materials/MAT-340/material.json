@@ -1,0 +1,183 @@
+{
+  "id": "MAT-340",
+  "name": "Mica-sheet insulation appearance",
+  "family": "Electrical insulation and cable constructions",
+  "version": "1.0.0-local",
+  "seed": 8892460,
+  "pattern": "fibre",
+  "base_linear_low": [
+    0.30202647450160974,
+    0.1757079405448965,
+    0.035416633505530766
+  ],
+  "base_linear_high": [
+    0.5579586550626326,
+    0.3279458021862294,
+    0.07248998936827991
+  ],
+  "roughness": 0.57,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.12,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-340",
+    "name": "Mica-sheet insulation appearance",
+    "family": "Electrical insulation and cable constructions",
+    "domains": [
+      "electronics",
+      "industrial",
+      "aerospace",
+      "space"
+    ],
+    "description": "Thin layered dielectric structure shows flake-like edge detail.",
+    "use_cases": [
+      "Heater assemblies",
+      "insulation sections"
+    ],
+    "optical_model": "Separate dielectric jackets, films, fibre sleeves and metallic conductors with explicit cut-section interfaces.",
+    "controls": [
+      "jacket roughness",
+      "construction pitch",
+      "region masks",
+      "layer texture",
+      "edge flakes"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep sheet dimensions separate from fine lamination detail.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-038",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Appearance must not certify composition or dielectric strength.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "0bc2f97cbe007a27a12a756a43c8cf2f92baece842a4d67b55fd489eceaf6f75",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "2f6301b41da94e3bc632820a443a7c41e012542089c90222ea01278111b50c9b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "8fc45db548b0c89c482d2b4e5082dc00df0227cf253f92801628cd5652e5aadb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "b0ad202cbde678abd4df9009ad9c7fa92d94a169e6978c9676c32a498cad6bc1",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "823e04392d01e95117fac6d11fcb541477a49d18e7b18aaf47a0b10e2324a41b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4aa9e6deb8fa66385f7a77a7c4aebda8a58a6a1a34bbb69d87d635c69d9fb1a5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "7af8e60c32fb3318ac2372b0e06bb5eff5c5423a508a7f1df33446f4c940af04",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "19425c0f131afc7ed7ed8e1743c457acf81e1913975ebad40c864264ce573750",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ENV-272",
+  "source_id": "ENV-272",
+  "name": "SELENE drilling setup patch",
+  "kind": "environment",
+  "depends_on": [],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "catalog-v1",
+    "tag": "catalog-v1-20261024",
+    "source_document": "catalog/Catalog.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "03fff6174c619277a0048f04236a58e84c6a9d1e800b0060066e2d1027c7360a",
+  "entrypoints": [
+    "files/environments/ENV-272/environment.glb",
+    "files/environments/ENV-272/environment.gltf",
+    "files/environments/ENV-272/environment.solidcraft"
+  ],
+  "previews": [
+    "files/environments/ENV-272/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/environments/ENV-272/environment.json",
+    "recipes/environments/ENV-272/native-model-preview.json",
+    "recipes/environments/ENV-272/solidcraft-build.json"
+  ],
+  "historical_evidence": [
+    "provenance/environments/ENV-272/native-validation.json"
+  ],
+  "historical_readback_snapshots": [
+    "files/environments/ENV-272/reopened.json"
+  ]
+}

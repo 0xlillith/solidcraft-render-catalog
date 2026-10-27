@@ -1,0 +1,68 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-139 Coastal ground bounce",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 944477,
+            "lighting": {
+              "environment": [
+                0.16,
+                0.23,
+                0.38
+              ],
+              "area_lights": [],
+              "sun": {
+                "direction": [
+                  -0.22577783153835926,
+                  0.375757412598883,
+                  0.898794046299167
+                ],
+                "angular_radius_rad": 0.00465,
+                "radiance": [
+                  10000.0,
+                  10000.0,
+                  10000.0
+                ]
+              }
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": [
+          {
+            "id": "passive-fill",
+            "center_mm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "half_u_mm": [
+              0.0,
+              -400.0,
+              0.0
+            ],
+            "half_v_mm": [
+              0.0,
+              0.0,
+              750.0
+            ],
+            "reflectance_linear": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

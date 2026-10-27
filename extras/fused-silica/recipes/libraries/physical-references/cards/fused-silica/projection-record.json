@@ -1,0 +1,127 @@
+{
+  "profile_id": "fused-silica",
+  "card": {
+    "schema_version": 1,
+    "designation": "Fused silica - Crystran reference",
+    "family": "glass",
+    "sources": [
+      {
+        "id": "crystran-silica",
+        "title": "Crystran fused silica SiO2",
+        "kind": "public_reference",
+        "license": null,
+        "reference": "https://www.crystran.com/optical-materials/fused-silica-sio2/"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 2203.0
+        },
+        "source_id": "crystran-silica",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "elasticity",
+          "model": {
+            "symmetry": "isotropic",
+            "young_modulus_pa": 73100000000.0,
+            "poisson_ratio": 0.17
+          }
+        },
+        "source_id": "crystran-silica",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior."
+        }
+      },
+      {
+        "data": {
+          "kind": "specific_heat",
+          "j_kg_k": 703.0
+        },
+        "source_id": "crystran-silica",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_conductivity",
+          "w_m_k": [
+            1.38,
+            1.38,
+            1.38
+          ],
+          "axes": "material123"
+        },
+        "source_id": "crystran-silica",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      },
+      {
+        "data": {
+          "kind": "thermal_expansion",
+          "per_k": [
+            5.5e-07,
+            5.5e-07,
+            5.5e-07
+          ],
+          "axes": "material123"
+        },
+        "source_id": "crystran-silica",
+        "conditions": {
+          "temperature_k": 300.0,
+          "moisture_dry_basis_kg_kg": null,
+          "strain_rate_per_s": null,
+          "state": "Bulk fused silica supplier reference; actual purity and optical grade require selection. | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density",
+    "poisson_ratio",
+    "specific_heat",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "young_modulus"
+  ],
+  "not_projected": [
+    {
+      "id": "relative_permittivity",
+      "quantity": "relative_permittivity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hardness_knoop",
+      "quantity": "hardness_knoop",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "shear_strength",
+    "tensile_strength",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

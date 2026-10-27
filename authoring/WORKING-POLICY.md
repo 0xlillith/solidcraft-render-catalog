@@ -1,3 +1,19 @@
+# Current authoring decision — 27 October 2026
+
+The owner now wants **individual extras, each in its own folder**, with final
+structure and packaging deferred. `extras/README.md` and `extras/AGENTS.md` govern
+new work. Do not publish new packs merely because the old stage workflow can do so.
+Keep prior releases as immutable recovery/provenance sources. Git still is the
+durable destination for readable source, records and acceptance receipts; large
+edited binaries require an explicit verified backup, not an unreported local-only
+claim. Native/premium acceptance is not granted by reorganizing directories.
+
+The previous rules below are historical where they prescribe pack publication.
+Their data integrity, licensing, source separation and non-interference requirements
+continue to apply.
+
+---
+
 # Resource authoring and durable delivery
 
 Owner instruction, 25 October 2026: **always save all stage work in `0xlillith/solidcraft-render-catalog`.** Conversation attachments and a local workstation are not the delivery of record.

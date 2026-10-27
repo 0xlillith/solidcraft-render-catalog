@@ -1,0 +1,294 @@
+{
+  "id": "ENV-273",
+  "name": "SELENE sample-selection boulder",
+  "family": "SELENE sampling and rover operation stages",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-273",
+    "name": "SELENE sample-selection boulder",
+    "family": "SELENE sampling and rover operation stages",
+    "domains": [
+      "selene",
+      "lunar",
+      "rover",
+      "sampling"
+    ],
+    "description": "SELENE sample-selection boulder is a conceptual setting for gripper reach; sample choice illustration. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Gripper reach",
+      "sample choice illustration"
+    ],
+    "representation": "Conceptual project-level 3D lunar operation stage in vacuum",
+    "geometry": "Procedural boulder with marked candidate regions as optional editorial overlays",
+    "ambient_lighting": "Single sun; overlays do not emit light",
+    "scale_policy": "Boulder from 0.2 to 3 m with explicit tool clearance; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Boulder dimensions",
+      "candidate-marker visibility",
+      "tool clearance",
+      "sun direction",
+      "exposure"
+    ],
+    "authoring_method": "Original procedural staging for SELENE workflow concepts; no real mission geometry, landing-site data or operation-performance claim",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-011",
+      "CAP-013",
+      "CAP-036",
+      "CAP-082"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Maintain rover, tool and sample dimensions in millimeters.",
+      "Use a zero-radiance sky and no atmospheric dust or wind.",
+      "Tool lights are product-owned emitters and never duplicated by environment helpers.",
+      "Sampling contacts and particle paths are authored visualization states, not a validated mechanics simulation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "terrain",
+      "name": "Lunar terrain",
+      "width_mm": 4500,
+      "depth_mm": 4500,
+      "amplitude_mm": 80,
+      "seed": 840273,
+      "style": "rolling",
+      "z_mm": 0,
+      "grid": 48
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 0",
+      "center_mm": [
+        -1895.3061106476168,
+        -1324.9950505336215,
+        24.41026275972342
+      ],
+      "radii_mm": [
+        81.3675425324114,
+        56.95727977268798,
+        52.888902646067415
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 1",
+      "center_mm": [
+        1051.204992773526,
+        158.88985551447377,
+        21.37401366715165
+      ],
+      "radii_mm": [
+        71.24671222383884,
+        49.87269855668718,
+        46.31036294549525
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 2",
+      "center_mm": [
+        1047.5067415174176,
+        618.6081031690396,
+        47.64196464601729
+      ],
+      "radii_mm": [
+        158.80654882005766,
+        111.16458417404036,
+        103.22425673303748
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 3",
+      "center_mm": [
+        -1729.0346282965638,
+        -1106.6523679599136,
+        58.67011956102668
+      ],
+      "radii_mm": [
+        195.5670652034223,
+        136.8969456423956,
+        127.11859238222449
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 4",
+      "center_mm": [
+        -707.8662296087266,
+        501.3743187558457,
+        44.78733114584541
+      ],
+      "radii_mm": [
+        149.2911038194847,
+        104.50377267363929,
+        97.03921748266507
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 5",
+      "center_mm": [
+        1731.1715605772688,
+        -102.08880290869956,
+        18.940585013725
+      ],
+      "radii_mm": [
+        63.13528337908333,
+        44.19469836535833,
+        41.037934196404166
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 6",
+      "center_mm": [
+        1475.9838969785815,
+        561.3938909921312,
+        16.539229410599035
+      ],
+      "radii_mm": [
+        55.13076470199679,
+        38.59153529139775,
+        35.834997056297915
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 7",
+      "center_mm": [
+        -1173.9311406740117,
+        1662.4393785103698,
+        32.390765631772354
+      ],
+      "radii_mm": [
+        107.96921877257452,
+        75.57845314080215,
+        70.17999220217344
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 8",
+      "center_mm": [
+        1565.3465695397617,
+        -84.54657502988266,
+        69.32874236765068
+      ],
+      "radii_mm": [
+        231.09580789216895,
+        161.76706552451824,
+        150.2122751299098
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 9",
+      "center_mm": [
+        -1064.0830813568286,
+        -1762.5967440572947,
+        32.538767715929495
+      ],
+      "radii_mm": [
+        108.46255905309832,
+        75.92379133716882,
+        70.50066338451391
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 10",
+      "center_mm": [
+        1362.2437497766282,
+        -445.6985152593145,
+        29.496016358924802
+      ],
+      "radii_mm": [
+        98.32005452974934,
+        68.82403817082454,
+        63.908035444337074
+      ],
+      "color": "626165"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "Angular lunar rock 11",
+      "center_mm": [
+        1389.6387949280556,
+        895.641372635158,
+        45.78122695270603
+      ],
+      "radii_mm": [
+        152.60408984235343,
+        106.8228628896474,
+        99.19265839752974
+      ],
+      "color": "626165"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 13,
+    "triangles": 5090,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 4500,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": {
+      "direction": [
+        0.3600949692966558,
+        0.8912663244874977,
+        0.27563735581699916
+      ],
+      "angular_radius_rad": 0.00465,
+      "radiance": [
+        14000.0,
+        14000.0,
+        14000.0
+      ]
+    },
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Conceptual terrain, not measured lunar topography.",
+    "Vacuum: no atmospheric haze, rain, wind or added sky illumination.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

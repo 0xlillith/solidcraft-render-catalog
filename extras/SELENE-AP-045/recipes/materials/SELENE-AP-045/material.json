@@ -1,0 +1,109 @@
+{
+  "id": "SELENE-AP-045",
+  "name": "Oiled oak workshop surface",
+  "original_specification": {
+    "id": "SELENE-AP-045",
+    "name": "Oiled oak workshop surface",
+    "source_catalog_ids": [
+      "MAT-111"
+    ],
+    "family": "Wood and DIY",
+    "domains": [
+      "woods",
+      "DIY",
+      "industrial"
+    ],
+    "purpose": "A warm uniform baseline for a future anatomically structured workshop-wood surface.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-045 Oiled oak workshop surface",
+        "color": "#a17a51",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.56,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Wood anatomy",
+        "Pores",
+        "Oil treatment",
+        "End grain"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Directional wood substrate with an absorbing oil-treated outer region and separate end-grain structure.",
+      "structure": [
+        "Oil-treated outer region",
+        "Directional wood anatomy",
+        "Separate end-grain mapping"
+      ],
+      "authoring_controls": [
+        {
+          "id": "growth_pattern_span",
+          "value": 18.0,
+          "unit": "mm",
+          "meaning": "Illustrative grain-pattern spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "pore_extent",
+          "value": 0.25,
+          "unit": "mm",
+          "meaning": "Authored pore-detail scale.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "grain_angle",
+          "value": 0.0,
+          "unit": "rad",
+          "meaning": "Longitudinal grain direction in the part frame.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use wood-local longitudinal, radial and tangential axes",
+        "Change the pattern at end grain",
+        "Keep joinery geometry independent"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-020",
+        "CAP-026",
+        "CAP-033",
+        "CAP-034",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Measured wood reflectance if fidelity requires it",
+        "Oil optical response"
+      ],
+      "validation_criteria": [
+        "End grain should not look like a stretched side-grain map",
+        "Appearance must not assign density, moisture or orthotropic stiffness"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#a17a51",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.56,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-045 Oiled oak workshop surface",
+    "bodies": [
+      "SELENE-AP-045"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

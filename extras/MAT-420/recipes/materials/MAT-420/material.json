@@ -1,0 +1,185 @@
+{
+  "id": "MAT-420",
+  "name": "Resin-infilled timber void",
+  "family": "Wood cuts joinery and assembled patterns",
+  "version": "1.0.0-local",
+  "seed": 9525980,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.27640355103421554,
+    0.16495488889424978,
+    0.05939924281146788
+  ],
+  "base_linear_high": [
+    0.5113019884503626,
+    0.30836561858355926,
+    0.116159815268643
+  ],
+  "roughness": 0.59,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 17,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-420",
+    "name": "Resin-infilled timber void",
+    "family": "Wood cuts joinery and assembled patterns",
+    "domains": [
+      "woodworking",
+      "DIY"
+    ],
+    "description": "Transparent infill occupies an authored gap within wood.",
+    "use_cases": [
+      "Furniture",
+      "DIY concepts"
+    ],
+    "optical_model": "Geometry-aware wood construction recipe that assigns grain to separate boards, laminations and exposed joints.",
+    "controls": [
+      "board layout",
+      "grain orientation",
+      "finish roughness",
+      "resin absorption",
+      "interface"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use closed wood and resin boundaries with explicit void geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-090",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Grain must terminate at the real void and remain visible through resin.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "09b2887b791fa5fbaa782a4abb197d76f09557b3275d051dfa23d1a1f9e897d3",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "bb9de90909e2a840ca855c4e5f9527d07209c1a53acdc72761573e4ca48ad537",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "e809a38188b1554547e200f8d6b25ff164dd41df3b35de3a1e5e169e47bfbcb9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "85eb29285cfd9951ecf29ef81ff1aa8b16d36d10400b8bf6871a23f999f28a8d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "24949f56075780f31ce5cdd5b9060d538bc00e70045a0ac0ad8f6d6e63f50b77",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "3413063cfc77a05374d32a6a9212c545a095b8473c60968fcdd8cbcfb72d5a66",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "5e460404b8eb6bff2778f228b0697f6270799004f3aabfe25bef962ec1c742bb",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "340209a6a0880d979c57b607f989bfcf2178ced165ff38b02ab6e282b025044a",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "id": "MAT-449",
+  "name": "Spectral-conversion film concept",
+  "family": "LED emitters and conversion layers",
+  "version": "1.0.0-local",
+  "seed": 9755631,
+  "pattern": "led",
+  "base_linear_low": [
+    0.5619953378662959,
+    0.4226072813519184,
+    0.1520671352517659
+  ],
+  "base_linear_high": [
+    1.0,
+    0.7775237063422992,
+    0.28489836568232
+  ],
+  "roughness": 0.372,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.005,
+  "tile_mm": [
+    15,
+    15
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-449",
+    "name": "Spectral-conversion film concept",
+    "family": "LED emitters and conversion layers",
+    "domains": [
+      "LED lighting",
+      "electronics",
+      "automotive",
+      "space"
+    ],
+    "description": "A thin optical layer absorbs excitation and re-emits by a specified model.",
+    "use_cases": [
+      "Lighting research concepts"
+    ],
+    "optical_model": "Explicit emissive and dielectric package regions; static emission is an authored source, while physical spectral conversion requires a dedicated model.",
+    "controls": [
+      "emission level",
+      "package masks",
+      "surface finish",
+      "excitation data",
+      "emission data"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Convert layer thickness to scene units explicitly.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-013",
+      "CAP-025",
+      "CAP-028",
+      "CAP-101"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "A physical mode requires traceable conversion data, not guessed RGB values.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Wave/spectral/time-dependent phenomenon is not simulated; static RGB authoring fallback and intended-model metadata are explicit."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "5958f0f5d5f43e77264952a6bd6c365226ed7f19bcd897395488bff4fd83d27d",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "158d76ceb153e1ade00747c6775528c46900e52b026be2d0524ffe31e8162895",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "76149d515b37487cb2ce59e558293507cd73895e83fd9e2dbce927cbf8dd0208",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "74c90c0717dfda212981c782d60a2d73f383d4f5b8c14dfced1805b6bd74f086",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "375ca48adc9ae67b954d4c4b82e900c355fe898d1f4ea85c3c8a01a1d52792f7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4f545f92eff9e45b0bdabf581d181c53e1ea3a0cbe0945423823288a02831bd1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "b76452ee49471ea8fb226a1a4243872cab4b16fe4a767b812dccce7a8d705b0f",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "05094f6ab23b902c43b0e2fa3838bb4687d2eab80440285d7414a334c2d9d54b",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

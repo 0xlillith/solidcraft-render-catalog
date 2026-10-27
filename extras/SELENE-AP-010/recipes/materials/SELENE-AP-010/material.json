@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-010",
+  "name": "Exposed copper conductor",
+  "original_specification": {
+    "id": "SELENE-AP-010",
+    "name": "Exposed copper conductor",
+    "source_catalog_ids": [
+      "MAT-164"
+    ],
+    "family": "Electronics conductors",
+    "domains": [
+      "electronics",
+      "industrial",
+      "LED lighting"
+    ],
+    "purpose": "A warm conductor preview for visible copper pads, busbars or trace samples.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-010 Exposed copper conductor",
+        "color": "#b97850",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.27,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Complex spectral reflection",
+        "Oxidation masks",
+        "Fine polish"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Conductor response with optional separately masked oxidation and polish.",
+      "structure": [
+        "Optional oxide contamination layer",
+        "Copper-like conductor surface"
+      ],
+      "authoring_controls": [
+        {
+          "id": "polish_line_pitch",
+          "value": 0.2,
+          "unit": "mm",
+          "meaning": "Illustrative surface finish spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "oxide_patch_extent",
+          "value": 2.0,
+          "unit": "mm",
+          "meaning": "Authored patch scale for an optional future oxidation mask.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep conductor traces and electrical clearances geometric",
+        "Do not infer electrical conductivity from the swatch"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-018",
+        "CAP-020",
+        "CAP-033",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Complex refractive-index spectrum",
+        "Oxide absorption and thickness"
+      ],
+      "validation_criteria": [
+        "Copper-colored highlights should remain distinct from orange paint in a curved reference test",
+        "Visual finish must not assign electrical properties"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#b97850",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.27,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-010 Exposed copper conductor",
+    "bodies": [
+      "SELENE-AP-010"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

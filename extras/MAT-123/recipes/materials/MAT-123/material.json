@@ -1,0 +1,192 @@
+{
+  "id": "MAT-123",
+  "name": "Uncoated MDF",
+  "family": "Engineered wood and paper",
+  "version": "1.0.0-local",
+  "seed": 7174037,
+  "pattern": "fibre",
+  "base_linear_low": [
+    0.22,
+    0.13,
+    0.055
+  ],
+  "base_linear_high": [
+    0.45,
+    0.3,
+    0.14
+  ],
+  "roughness": 0.88,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 32,
+  "cycles_v": 20,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-123",
+    "name": "Uncoated MDF",
+    "family": "Engineered wood and paper",
+    "domains": [
+      "woodworking",
+      "DIY",
+      "packaging"
+    ],
+    "description": "Fine fibre body contrasts with a denser pressed face.",
+    "use_cases": [
+      "Prototypes",
+      "furniture"
+    ],
+    "optical_model": "Layered or fibrous dielectric construction with independent face, core and edge treatments.",
+    "controls": [
+      "layer structure",
+      "fibre scale",
+      "surface finish",
+      "face density",
+      "cut texture"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Assign different appearance to pressed faces and cut edges.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "A milled edge should not reuse the face skin unchanged.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-032",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "779cefa2e0700ec119879cd9748e454aa514e74268b100160067a45bec12a284",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "901295998b30d58deef493eabcab994d5a34bbed8e2b3a80550eff22b9050985",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "18ddb1d711daddc4f5862efcf9dfe66f102cbb7de5dcdb8af4ad86ec3ced09d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "ec86d3a6337344342ffbb7747390d0ce01369a95e55f33cebee04b91022f7f5d",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "57d02830e779b3f6b9578bccce76f286d36c9460d663e5a0ddf87a94e2df578f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "7a2dee760f8d703d1e287e6e031b9096854a06712e683290e87a39ea5ccde284",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "141146771559d8018b64ced8f8b1a128f7b0aeb2ff51dcc5b3db1a83f62b7ec1",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "d5f8734d2e8ddd2263429f32f91a3820d635df2eb86211161636f6ea3b23b350",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

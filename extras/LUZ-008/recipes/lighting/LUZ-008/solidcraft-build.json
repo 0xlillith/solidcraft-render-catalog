@@ -1,0 +1,104 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "LUZ-008 Discrete upper dome"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "description": "Original relative lighting rig on neutral calibration geometry; no photometric certification.",
+        "org.solidcraft.local_catalog": {
+          "id": "LUZ-008",
+          "unresolved_external_inputs": [],
+          "limitations": [
+            "Current native GPU maximum is four area lights. The full rig remains in the authoritative recipe; its environment projection is a separately identified position-bound approximation."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.sphere",
+    "params": {
+      "radius": 160,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "body_name": "Reference subject"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Reference subject"
+      ],
+      "color": [
+        155,
+        155,
+        155
+      ],
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.4,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.capture_hdr",
+    "params": {
+      "name": "LUZ-008 [reference-origin HDR projection]",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.7,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 1150,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "background": [
+          30,
+          35,
+          42
+        ],
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 742344,
+            "tone_map": "aces_fitted",
+            "lighting": {
+              "environment": [
+                0,
+                0,
+                0
+              ],
+              "area_lights": []
+            }
+          }
+        }
+      },
+      "path": "D:\\SolidCraft\\Render-Catalog-Complete-20261024-v1\\lighting\\LUZ-008\\reference-origin.hdr",
+      "expected_sha256": "3a89ffe98de9549bc07d7d022218b1d2d15f014bfa94558a4f50fff79fda0efc",
+      "rotation_rad": 3.141592653589793,
+      "intensity": 1,
+      "assume_linear_srgb": false
+    }
+  }
+]

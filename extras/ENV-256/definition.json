@@ -1,0 +1,70 @@
+{
+  "id": "ENV-256",
+  "name": "Lunar regolith slope",
+  "kind": "environment",
+  "family": "Lunar terrain and surface forms",
+  "path": "environments/ENV-256",
+  "thumbnail": "environments/ENV-256/native-model-preview.png",
+  "description": "Lunar regolith slope is a conceptual setting for rover contact visualization; sampling posture. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Conceptual terrain, not measured lunar topography.",
+    "Vacuum: no atmospheric haze, rain, wind or added sky illumination.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-256/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-256/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-256/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-256/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-256/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-256/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-256/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-256/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-256/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-256/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-256/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-256/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

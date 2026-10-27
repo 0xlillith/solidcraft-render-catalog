@@ -1,0 +1,190 @@
+{
+  "id": "MAT-272",
+  "name": "Phosphate-coated steel appearance",
+  "family": "Industrial protective treatments",
+  "version": "1.0.0-local",
+  "seed": 8353968,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.22908266468880284,
+    0.25209562240390737,
+    0.2799829974682521
+  ],
+  "base_linear_high": [
+    0.4251355983885663,
+    0.46703979004890595,
+    0.5178197864347277
+  ],
+  "roughness": 0.34600000000000003,
+  "roughness_variation": 0.06,
+  "metallic": 0.2,
+  "height_span_mm": 0.06,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-272",
+    "name": "Phosphate-coated steel appearance",
+    "family": "Industrial protective treatments",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "Fine porous conversion-layer texture darkens a metal substrate.",
+    "use_cases": [
+      "Industrial hardware"
+    ],
+    "optical_model": "Explicit coating over a separate substrate, with optical behaviour selected per treatment rather than inferred performance.",
+    "controls": [
+      "coating coverage",
+      "layer roughness",
+      "substrate exposure",
+      "pore texture",
+      "exposed steel"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use a thin surface treatment rather than thick crust geometry.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Do not infer corrosion protection or friction coefficients.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "32b5ad1b5231c7dcdf318b75953993c565f54be98ecd845d14a1febc5cd872aa",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "f1226a71aba762d8556a694d570a17485c126194f2838c5682d2eb6effe1dff3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "2f90395418089203fc8b010895fd205be0c3a0277f0db9361865bbb59c9ce7a4",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "3720b37e4e0be4d9e8e7eb0bd5739b90f522b790108961aa53975ff1a885cb83",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "6a70729dcbc26d79781dd2028680751d95b75d8eb4f19d5927053e3e83823b78",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "45b502f1852549e9f5bca8ae4b0000edb6d17a2492907f9390081036be07bfcc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "7e3c4b77f06fe9c74b9691d9c338ef27260f2c6572ab132d4f4976ef345a691a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "253254a685bf13901c9c4115787ca8d6deeb1d44e282053a6970b7b4aefb1f8c",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "f649dac91fd07dfa60d9797cc3a9ca30a4af3271968ce28ea47aece43d487ff5",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "id": "MAT-412",
+  "name": "Edge-grain strip laminate",
+  "family": "Wood cuts joinery and assembled patterns",
+  "version": "1.0.0-local",
+  "seed": 9462628,
+  "pattern": "wood",
+  "base_linear_low": [
+    0.27640355103421554,
+    0.16495488889424978,
+    0.05939924281146788
+  ],
+  "base_linear_high": [
+    0.5113019884503626,
+    0.30836561858355926,
+    0.116159815268643
+  ],
+  "roughness": 0.446,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.35,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 9,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-412",
+    "name": "Edge-grain strip laminate",
+    "family": "Wood cuts joinery and assembled patterns",
+    "domains": [
+      "woodworking",
+      "DIY"
+    ],
+    "description": "Long narrow strips create repeated parallel grain boundaries.",
+    "use_cases": [
+      "Worktops",
+      "shelves"
+    ],
+    "optical_model": "Geometry-aware wood construction recipe that assigns grain to separate boards, laminations and exposed joints.",
+    "controls": [
+      "board layout",
+      "grain orientation",
+      "finish roughness",
+      "strip width",
+      "grain variation"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep individual strip identity across edges.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-034",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Adjacent strips may vary without breaking the panel construction.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "fb61b1bbf1df5fee7978d2743915cd597f1dc00c8e0f28e04b0bd146c6de33e8",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "850704d892c10600bc3515d5bf0f778a0798e3f2d73388a3ed568ae428a188db",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "1cb9ec5e880b6551c7cb6a6dbdb4b9d739c5d913bdb0a08cb6c555b2dbbeca4c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "af135742fe416cc25803fcaad0d1f8d043115c3bd92421fe03e78c6dfd66d6b0",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "257958cf6cc92d54a811b36c2bd6ddee780f07b976170824af077d9698010ab8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "7e351adab9aa7431eda81b216f5bdd97f8603febc3af0fa0605beb59132f1a08",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "e2b97e035ef434bc566bae9dc8b4aad705d6e854beda9560b2fcc675df17065e",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "0f06708267b5f6cac5f046292a4e926e84b1305781f17c1b5b551595b474bfa8",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

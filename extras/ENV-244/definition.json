@@ -1,0 +1,71 @@
+{
+  "id": "ENV-244",
+  "name": "Deep-space transit context",
+  "kind": "environment",
+  "family": "Orbital and spacecraft surroundings",
+  "path": "environments/ENV-244",
+  "thumbnail": "environments/ENV-244/native-model-preview.png",
+  "description": "Deep-space transit context is a conceptual setting for cruise spacecraft; deployed appendages. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Vacuum: zero atmospheric sky. Earth and star fields disabled without explicit external inputs.",
+    "Relative context is authored, not a mission/ephemeris model.",
+    "One 1 mm coordinate witness is included solely to keep portable mesh files nonempty; hide or delete it in free-flight scenes.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-244/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-244/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-244/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-244/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-244/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-244/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-244/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-244/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-244/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-244/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-244/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-244/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

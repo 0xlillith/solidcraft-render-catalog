@@ -1,0 +1,171 @@
+{
+  "id": "ENV-013",
+  "name": "Monolithic stone blocks",
+  "family": "Product platforms and staging",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-013",
+    "name": "Monolithic stone blocks",
+    "family": "Product platforms and staging",
+    "domains": [
+      "product_visualization",
+      "exhibition_design"
+    ],
+    "description": "Monolithic stone blocks is a conceptual setting for faucets; metal objects. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Faucets",
+      "metal objects"
+    ],
+    "representation": "Procedural 3D stage with actual parallax",
+    "geometry": "Stone prisms with softened edges and physically scaled pores",
+    "ambient_lighting": "Soft sky or studio illumination; no lighting baked into stone textures",
+    "scale_policy": "Blocks from 0.1 to 2 m; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Block dimensions and positions",
+      "bevel",
+      "pore scale",
+      "stone finish",
+      "product contact"
+    ],
+    "authoring_method": "Original procedural geometry; externally supplied textures require asset-level license verification",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Check physical support and product scale.",
+      "Ensure platforms do not hide functional parts; inspect self-shadowing and reflections."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "box",
+      "name": "Presentation floor",
+      "center_mm": [
+        0.0,
+        0.0,
+        -30.0
+      ],
+      "size_mm": [
+        5000.0,
+        5000.0,
+        60.0
+      ],
+      "color": "a7a7a1"
+    },
+    {
+      "type": "box",
+      "name": "Podium 0",
+      "center_mm": [
+        -850.0,
+        500.0,
+        150.0
+      ],
+      "size_mm": [
+        700.0,
+        700.0,
+        300.0
+      ],
+      "color": "b4afa7"
+    },
+    {
+      "type": "box",
+      "name": "Podium 1",
+      "center_mm": [
+        0.0,
+        1000.0,
+        280.0
+      ],
+      "size_mm": [
+        700.0,
+        700.0,
+        560.0
+      ],
+      "color": "b4afa7"
+    },
+    {
+      "type": "box",
+      "name": "Podium 2",
+      "center_mm": [
+        850.0,
+        500.0,
+        410.0
+      ],
+      "size_mm": [
+        700.0,
+        700.0,
+        820.0
+      ],
+      "color": "b4afa7"
+    },
+    {
+      "type": "box",
+      "name": "Podium 3",
+      "center_mm": [
+        1700.0,
+        1000.0,
+        540.0
+      ],
+      "size_mm": [
+        700.0,
+        700.0,
+        1080.0
+      ],
+      "color": "b4afa7"
+    },
+    {
+      "type": "box",
+      "name": "Podium 4",
+      "center_mm": [
+        2550.0,
+        500.0,
+        670.0
+      ],
+      "size_mm": [
+        700.0,
+        700.0,
+        1340.0
+      ],
+      "color": "b4afa7"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 6,
+    "triangles": 72,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 4500,
+    "suggested_subject_support_mm": 300
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

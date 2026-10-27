@@ -1,0 +1,185 @@
+{
+  "id": "MAT-565",
+  "name": "SELENE woven-metal wheel mesh",
+  "family": "SELENE rover mobility and structural appearances",
+  "version": "1.0.0-local",
+  "seed": 10674235,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.22589962208238135,
+    0.23229171775786986,
+    0.24538923905122248
+  ],
+  "base_linear_high": [
+    0.41933961035896306,
+    0.4309789487531361,
+    0.4548281666305842
+  ],
+  "roughness": 0.38,
+  "roughness_variation": 0.06,
+  "metallic": 0.85,
+  "height_span_mm": 0.04,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-565",
+    "name": "SELENE woven-metal wheel mesh",
+    "family": "SELENE rover mobility and structural appearances",
+    "domains": [
+      "space",
+      "lunar",
+      "SELENE"
+    ],
+    "description": "Interlaced wires form open contact and support regions.",
+    "use_cases": [
+      "Rover wheel studies"
+    ],
+    "optical_model": "Candidate metallic, composite or coated rover appearances tied to explicit geometry; no suitability, fatigue, traction or flight qualification is inferred.",
+    "controls": [
+      "manufacturing direction",
+      "surface finish",
+      "contact-region masks",
+      "mesh pitch",
+      "wire diameter"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve open geometry and actual strand scale.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-036",
+      "CAP-039",
+      "CAP-097",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The mesh must not become an opaque metallic tyre shader.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "4402553b6c1269b69250580d0192d8ba48e5ebc1cbd7545d69a1bd59eef0ee48",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "fef4067151d36d1acd2c103769ae15ec6037afeac4fb821f23251a143edd400b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "16472b6c3cb324868adab18632464a810af17c45d012310ffb5ce8f5825dbf35",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "4c6ba3eb82fdec74753a56169b4173840c436223bc457145909bd3be0c525138",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "f31c09c1af74770e09cff1fb9aef4528ae94a352926ed54bda53063aa07b47a9",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "e50912a70c61896a5cac5a363aca115e9861fbfdf7654f03e5ad7ebfb7f049f1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "30bd9875dd24be20c40d907e33d42e70b497d57fd15281f176cb5c68dc219e57",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "95b33bde87389eaef1457a35dea1382c460684087b236f9ad32bda3f91eacc67",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "dee1dc18966b47fc8a223e88f63e48d58c826f483f8e1e38f6c8718efbfa55de",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

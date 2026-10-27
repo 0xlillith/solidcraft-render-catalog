@@ -1,0 +1,192 @@
+{
+  "id": "ti-6al4v",
+  "name": "Ti-6Al-4V / TIMETAL 6-4",
+  "family": "titanium",
+  "source_id": "timet-6-4",
+  "material_state": "solid",
+  "condition": "Grade 5 reference; modulus range depends on texture and heat treatment; thermal conductivity explicitly mill annealed",
+  "properties": [
+    {
+      "quantity": "density",
+      "value": 4420,
+      "unit": "kg/m^3",
+      "original": {
+        "value": 4.42,
+        "unit": "g/cm^3",
+        "scale_to_si": 1000
+      },
+      "source_id": "timet-6-4",
+      "source_locator": "Physical Properties",
+      "temperature_k": 295.15,
+      "temperature_interval_k": null,
+      "qualifier": "supplier_typical",
+      "uncertainty": null,
+      "note": null
+    },
+    {
+      "quantity": "young_modulus",
+      "value": [
+        107000000000,
+        122000000000
+      ],
+      "unit": "Pa",
+      "original": {
+        "value": [
+          107,
+          122
+        ],
+        "unit": "GPa",
+        "scale_to_si": 1000000000
+      },
+      "source_id": "timet-6-4",
+      "source_locator": "Physical Properties",
+      "temperature_k": 293.15,
+      "temperature_interval_k": null,
+      "qualifier": "source_range",
+      "uncertainty": null,
+      "note": "Range retained; no midpoint or isotropic tensor inferred."
+    },
+    {
+      "quantity": "shear_modulus",
+      "value": [
+        41000000000,
+        45000000000
+      ],
+      "unit": "Pa",
+      "original": {
+        "value": [
+          41,
+          45
+        ],
+        "unit": "GPa",
+        "scale_to_si": 1000000000
+      },
+      "source_id": "timet-6-4",
+      "source_locator": "Physical Properties",
+      "temperature_k": 293.15,
+      "temperature_interval_k": null,
+      "qualifier": "source_range",
+      "uncertainty": null,
+      "note": null
+    },
+    {
+      "quantity": "poisson_ratio",
+      "value": 0.31,
+      "unit": "1",
+      "original": {
+        "value": 0.31,
+        "unit": "1",
+        "scale_to_si": 1
+      },
+      "source_id": "timet-6-4",
+      "source_locator": "Physical Properties",
+      "temperature_k": 293.15,
+      "temperature_interval_k": null,
+      "qualifier": "supplier_typical",
+      "uncertainty": null,
+      "note": null
+    },
+    {
+      "quantity": "thermal_conductivity",
+      "value": 6.6,
+      "unit": "W/(m K)",
+      "original": {
+        "value": 6.6,
+        "unit": "W/(m K)",
+        "scale_to_si": 1
+      },
+      "source_id": "timet-6-4",
+      "source_locator": "Physical Properties",
+      "temperature_k": 293.15,
+      "temperature_interval_k": null,
+      "qualifier": "supplier_typical",
+      "uncertainty": null,
+      "note": null
+    },
+    {
+      "quantity": "specific_heat",
+      "value": 580,
+      "unit": "J/(kg K)",
+      "original": {
+        "value": 0.58,
+        "unit": "J/(g K)",
+        "scale_to_si": 1000
+      },
+      "source_id": "timet-6-4",
+      "source_locator": "Physical Properties",
+      "temperature_k": 293.15,
+      "temperature_interval_k": null,
+      "qualifier": "supplier_typical",
+      "uncertainty": null,
+      "note": null
+    },
+    {
+      "quantity": "mean_linear_expansion",
+      "value": 0.000009,
+      "unit": "1/K",
+      "original": {
+        "value": 9,
+        "unit": "microstrain/K",
+        "scale_to_si": 0.000001
+      },
+      "source_id": "timet-6-4",
+      "source_locator": "Physical Properties",
+      "temperature_k": null,
+      "temperature_interval_k": [
+        273.15,
+        373.15
+      ],
+      "qualifier": "supplier_typical",
+      "uncertainty": null,
+      "note": null
+    }
+  ],
+  "composition": [
+    {
+      "element_or_group": "Al",
+      "min_mass_percent": 5.5,
+      "max_mass_percent": 6.75,
+      "nominal_mass_percent": null,
+      "balance": false,
+      "source_id": "timet-6-4",
+      "source_locator": "Chemical Analysis / Composition",
+      "uncertainty": null
+    },
+    {
+      "element_or_group": "V",
+      "min_mass_percent": 3.5,
+      "max_mass_percent": 4.5,
+      "nominal_mass_percent": null,
+      "balance": false,
+      "source_id": "timet-6-4",
+      "source_locator": "Chemical Analysis / Composition",
+      "uncertainty": null
+    },
+    {
+      "element_or_group": "Ti",
+      "min_mass_percent": null,
+      "max_mass_percent": null,
+      "nominal_mass_percent": null,
+      "balance": true,
+      "source_id": "timet-6-4",
+      "source_locator": "Chemical Analysis / Composition",
+      "uncertainty": null
+    }
+  ],
+  "composition_scope": "Selected major constituents only; source specification remains authoritative.",
+  "appearance_palette_linear": [
+    0.53,
+    0.52,
+    0.5
+  ],
+  "appearance_value_basis": "Original illustrative RGB conductor reflectance; not measured optical constants",
+  "unknown_is_zero": false,
+  "auto_assign": false,
+  "structural_design_allowable": false,
+  "property_count": 7,
+  "missing_properties": [
+    "tensile_strength",
+    "yield_strength",
+    "electrical_resistivity"
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "MAT-134",
+  "name": "Ripstop nylon",
+  "family": "Textiles and leather",
+  "version": "1.0.0-local",
+  "seed": 7261146,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.09850826855338865,
+    0.0908743308689878,
+    0.10855968167820437
+  ],
+  "base_linear_high": [
+    0.18737326512706587,
+    0.17347266217935092,
+    0.20567583827971542
+  ],
+  "roughness": 0.852,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.45,
+  "tile_mm": [
+    60,
+    60
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-134",
+    "name": "Ripstop nylon",
+    "family": "Textiles and leather",
+    "domains": [
+      "automotive",
+      "CAD product",
+      "DIY"
+    ],
+    "description": "Reinforcing threads cross a finer woven base.",
+    "use_cases": [
+      "Bags",
+      "protective products"
+    ],
+    "optical_model": "Dielectric fibre or leather response with appropriate sheen, anisotropy and optional geometric fibres.",
+    "controls": [
+      "weave orientation",
+      "surface roughness",
+      "fibre sheen",
+      "reinforcement pitch",
+      "gloss"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep reinforcement spacing consistent through the fabric layout.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-022"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Reinforcement must read as thread structure rather than printed lines.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "d04617a95f3dfc3002bc54320e7e35320537e032201b09d484a5cd1b85bcda9a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "6ab86097ba7e3e19f8ffdb693f4aad39f770a1bb01da5c3e1bfa2362fecd1e82",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "9a1ec566adc67f1fcf13c22a116db95044ba29ad43589ff426c425dfff38362a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "fc1b6feb3d4ad1e183d5654ccb7b129dda21b662d3af7f9400128a64179e5bd5",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "a88cc72977615453764bf1c263d1c948eaa0b24e489764caa1ac64d284901094",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "e980b89b74a2b1f9afcb469995e02d4bdeff09b3c41ec26754baeb3d0dc89023",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "513baa6add0386dfb7a0892b2c916709ab44b0c10dbe8ffae7c66ed0d771d3ee",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "e720569d257765a914d7fa6050adaa1e1129ed17dc8939c0305aec9163804a83",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "LUZ-252",
+  "name": "Multilayer-insulation fold study",
+  "family": "26 Aerospace and spacecraft integration",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-252",
+    "name": "Multilayer-insulation fold study",
+    "family": "26 Aerospace and spacecraft integration",
+    "domains": [
+      "aerospace",
+      "spacecraft",
+      "integration"
+    ],
+    "description": "A proposed lighting arrangement for spacecraft thermal-blanket appearance.",
+    "use_cases": [
+      "Spacecraft thermal-blanket appearance"
+    ],
+    "sources": "Long soft key and narrow crossing strip",
+    "geometry": "Scale by existing blanket region; no geometry changes",
+    "contribution_policy": "K 0 and strip -1.5 reference EV",
+    "controls": [
+      "Reflection direction",
+      "source width",
+      "strip balance"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-018",
+      "CAP-035"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Fold reflections remain readable without claiming thermal performance"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 1118836,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1350.0,
+          -1400.0,
+          1200.0
+        ],
+        "u": [
+          -431.9065772524111,
+          416.4813423505392,
+          0.0
+        ],
+        "v": [
+          291.59247279693346,
+          302.39219401163473,
+          680.832424910124
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

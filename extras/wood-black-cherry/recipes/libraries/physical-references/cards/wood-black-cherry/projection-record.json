@@ -1,0 +1,80 @@
+{
+  "profile_id": "wood-black-cherry",
+  "card": {
+    "schema_version": 1,
+    "designation": "Black cherry - clear wood at 12% moisture",
+    "family": "wood",
+    "sources": [
+      {
+        "id": "usda-wood-2021",
+        "title": "USDA Wood Handbook 2021 Chapter 5",
+        "kind": "public_reference",
+        "license": "US federal government publication; source notice should still be reviewed",
+        "reference": "https://research.fs.usda.gov/download/treesearch/62244.pdf"
+      }
+    ],
+    "properties": [
+      {
+        "data": {
+          "kind": "density",
+          "kg_m3": 560.0
+        },
+        "source_id": "usda-wood-2021",
+        "conditions": {
+          "temperature_k": null,
+          "moisture_dry_basis_kg_kg": 0.12,
+          "strain_rate_per_s": null,
+          "state": "Small clear straight-grained specimens at 12% dry-basis moisture; mean values, NOT graded lumber design allowables. | derived reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Derived value; formula retained in extended profile."
+        }
+      }
+    ]
+  },
+  "native_projection_status": "partial_native_card",
+  "exported_property_ids": [
+    "density"
+  ],
+  "not_projected": [
+    {
+      "id": "specific_gravity",
+      "quantity": "specific_gravity",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "flexural_strength",
+      "quantity": "flexural_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "flexural_modulus",
+      "quantity": "flexural_modulus",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "compressive_strength",
+      "quantity": "compressive_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "shear_strength",
+      "quantity": "shear_strength",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    },
+    {
+      "id": "hardness_janka",
+      "quantity": "hardness_janka",
+      "reason": "Retained in extended profile: unsupported native quantity, range/bound, directional measurement or incomplete constitutive model."
+    }
+  ],
+  "missing_native_kinds": [
+    "compressive_strength",
+    "elasticity",
+    "shear_strength",
+    "specific_heat",
+    "tensile_strength",
+    "thermal_conductivity",
+    "thermal_expansion",
+    "yield_strength"
+  ],
+  "reference_selection_required": true,
+  "runtime_assignment": false
+}

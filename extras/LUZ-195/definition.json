@@ -1,0 +1,57 @@
+{
+  "id": "LUZ-195",
+  "name": "Dusty workshop shafts",
+  "kind": "lighting",
+  "family": "20 Specialized physical scenes",
+  "path": "lighting/LUZ-195",
+  "thumbnail": "lighting/LUZ-195/native-render.png",
+  "description": "A proposed lighting arrangement for machinery in a workshop.",
+  "scope": "Original finite-emitter authoring realization, not measured photometry. The complete JSON rig is authoritative; reference-origin HDR loses finite-source parallax and is a separately labelled projection.",
+  "preview_scope": "Actual SolidCraft GPU image; 64 samples, denoised. Read the receipt/variant; this is not a convergence or full-physics claim.",
+  "badge": "Numeric rig + native sample",
+  "limitations": [
+    "Specialized optical/volume intent remains dependent on matching scene media and geometry.",
+    "Native GPU realization uses a finite rectangular emitter; a directional/spot angular model is retained as intent, not silently equated to a measured fixture.",
+    "Requires an explicitly bound volume/material; the light asset does not silently add an atmosphere or a water medium."
+  ],
+  "files": [
+    {
+      "path": "lighting/LUZ-195/rig.solidcraft",
+      "label": "Native rig sample"
+    },
+    {
+      "path": "lighting/LUZ-195/rig.json",
+      "label": "Full rig definition"
+    },
+    {
+      "path": "lighting/LUZ-195/lighting-full.json",
+      "label": "Lighting parameters"
+    },
+    {
+      "path": "lighting/LUZ-195/rig.glb",
+      "label": "Rig geometry GLB"
+    },
+    {
+      "path": "lighting/LUZ-195/reference-origin.hdr",
+      "label": "Reference-origin HDR"
+    },
+    {
+      "path": "lighting/LUZ-195/reference-origin.exr",
+      "label": "Reference-origin EXR"
+    },
+    {
+      "path": "lighting/LUZ-195/native-render-receipt.json",
+      "label": "Native render receipt"
+    }
+  ],
+  "images": [
+    {
+      "path": "lighting/LUZ-195/native-render.png",
+      "label": "Actual GPU sample"
+    },
+    {
+      "path": "lighting/LUZ-195/preview.png",
+      "label": "Authored preview"
+    }
+  ]
+}

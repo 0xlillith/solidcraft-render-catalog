@@ -1,0 +1,181 @@
+{
+  "id": "MAT-092",
+  "name": "Board-formed concrete",
+  "family": "Concrete and mineral composites",
+  "version": "1.0.0-local",
+  "seed": 6928548,
+  "pattern": "aggregate",
+  "base_linear_low": [
+    0.21961132569788328,
+    0.2043415004268238,
+    0.16495488889424978
+  ],
+  "base_linear_high": [
+    0.40788927962898147,
+    0.38008452316526126,
+    0.30836561858355926
+  ],
+  "roughness": 0.766,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 1.0,
+  "tile_mm": [
+    200,
+    200
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-092",
+    "name": "Board-formed concrete",
+    "family": "Concrete and mineral composites",
+    "domains": [
+      "architecture",
+      "DIY",
+      "industrial"
+    ],
+    "description": "Timber impressions interrupt a mineral matrix.",
+    "use_cases": [
+      "Walls",
+      "precast objects"
+    ],
+    "optical_model": "Rough dielectric mixture with separate aggregate, matrix and pore appearance.",
+    "controls": [
+      "matrix colour",
+      "aggregate distribution",
+      "porosity",
+      "board width",
+      "grain relief"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep board widths and joints consistent through the layout.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Grain should read as an impressed surface rather than painted wood.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "70f27b951849b1f0bf465ada0455662d75072995a7fc9abf508d6c1a7d7d1c1c",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "fe4cbc58879d6debacebd4bbbec19812a1e701ccdcbaf7b84d76c1a7c972cd1b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "12c41d85c0a7bd4ec68ea6e0c1060e3747acbb501db3ee1c1c64e9f26b71e656",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "c04c2fffa7a7c0200629c5ab3025086cbe983a5a4c79f65feba99c5130b264ca",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "608df0aa32dae5313eda4c106e522f2825be307a0e17ef4cccf1554af5bb0711",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "a6969c9495dbf4e17548c747d86f42f2cce4b27aa5bc8441fe529e2800610d37",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "0c1483a6779474afd7aa79c832e09d8c9459f46ded19d4cec1cc5195a4bb179e",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "90bf1879e16186534b7d2d0cdc78a5445261bc7ce65f90b83af45eec3bde3093",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

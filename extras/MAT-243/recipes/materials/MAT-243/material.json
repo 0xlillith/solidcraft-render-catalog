@@ -1,0 +1,181 @@
+{
+  "id": "MAT-243",
+  "name": "Heated rear-window grid",
+  "family": "Automotive glazing and optical covers",
+  "version": "1.0.0-local",
+  "seed": 8124317,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.36563538911802507,
+    0.4458094898491223,
+    0.47461177252743014
+  ],
+  "base_linear_high": [
+    0.6737838428716276,
+    0.819772503904372,
+    0.8722184514678578
+  ],
+  "roughness": 0.045,
+  "roughness_variation": 0.008,
+  "metallic": 0,
+  "height_span_mm": 0.01,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": true,
+  "thickness_mm": 1.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-243",
+    "name": "Heated rear-window grid",
+    "family": "Automotive glazing and optical covers",
+    "domains": [
+      "automotive",
+      "LED lighting"
+    ],
+    "description": "Fine conductive-looking traces sit on a transparent pane.",
+    "use_cases": [
+      "Rear glazing"
+    ],
+    "optical_model": "Refractive layered glazing with separately represented printed, coated and structured optical regions.",
+    "controls": [
+      "transmission",
+      "layer absorption",
+      "face roughness",
+      "grid pitch",
+      "trace finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep trace widths at authored physical dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-038"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Distant filtering must preserve coverage without oversized lines.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "37565d6af0f042a1c2ab1574c9d84a625301288b58b6c54c33c301b73b9fdfb2",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "4ea6874ca734214d6868199fed427f078b41cadbb437688b56bcd6d57c7516d5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "65316eb0a5e1917344581a02ab6fb19d33ca6d66ecf6c4180f2ac5caec1be501",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "8d5495e55e7adcc2dc7bc1991c6f8330ea93ec2a494e6b6980e8a42b1bd52716",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "acecab1193890c2dc469003d18c70f8c768fe3d78dea8ccbf93cb33810083ae8",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "3a99b409cceef198e38bbee973e03932b084a7825d22ceb95b50573af9ef4fa0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "9e73f30dcf2f44f9b1349775347679d7b3c51ea1a3f493b200d369a80d342fc3",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "d48d52b592b779e57f1fcb9ba175878987ea08ba1899892bd2a9b769c23b6409",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

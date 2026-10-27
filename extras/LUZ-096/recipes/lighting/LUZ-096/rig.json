@@ -1,0 +1,91 @@
+{
+  "id": "LUZ-096",
+  "name": "Faucet and white ceramic",
+  "family": "10 Furniture and domestic products",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-096",
+    "name": "Faucet and white ceramic",
+    "family": "10 Furniture and domestic products",
+    "domains": [
+      "furniture",
+      "product"
+    ],
+    "description": "A proposed lighting arrangement for bathroom product sets.",
+    "use_cases": [
+      "Bathroom product sets"
+    ],
+    "sources": "Metal reflection strips and broad ceramic area",
+    "geometry": "Strips avoid dominant front reflections; area elevated",
+    "contribution_policy": "Strips 0 and area -0.5 reference EV",
+    "controls": [
+      "Strip-to-area balance",
+      "metal reflections",
+      "ceramic-area size"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-018",
+      "CAP-025"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Metal and ceramic separate under consistent illumination"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 878128,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1350.0,
+          -1400.0,
+          1200.0
+        ],
+        "u": [
+          -431.9065772524111,
+          416.4813423505392,
+          0.0
+        ],
+        "v": [
+          291.59247279693346,
+          302.39219401163473,
+          680.832424910124
+        ],
+        "radiance": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

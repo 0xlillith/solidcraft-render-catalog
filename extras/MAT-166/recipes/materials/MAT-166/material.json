@@ -1,0 +1,181 @@
+{
+  "id": "MAT-166",
+  "name": "Epoxy integrated-circuit package",
+  "family": "Electronic component foundations",
+  "version": "1.0.0-local",
+  "seed": 7514554,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.01,
+    0.012,
+    0.015
+  ],
+  "base_linear_high": [
+    0.021,
+    0.024,
+    0.029
+  ],
+  "roughness": 0.78,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.045,
+  "tile_mm": [
+    40,
+    40
+  ],
+  "cycles_u": 12,
+  "cycles_v": 12,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-166",
+    "name": "Epoxy integrated-circuit package",
+    "family": "Electronic component foundations",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "industrial"
+    ],
+    "description": "Fine matte moulded body carries readable package markings.",
+    "use_cases": [
+      "Semiconductors"
+    ],
+    "optical_model": "Layered functional surface with separate conductors, dielectrics and emitters as required by the component.",
+    "controls": [
+      "layer masks",
+      "roughness",
+      "orientation",
+      "micrograin",
+      "laser-mark mask"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep marking dimensions and grain tied to the component.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-090"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Package text must stay legible without a rubber-like appearance.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-038",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "deb96fa507687529f56498fd1f6ef22f9a05dcfd03845156d4e38f63761bb60a",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "3d3aa20f19e159fe6b01376cf18c2d77cd39d8dd3471a2eb081026e7522f1dbe",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "021d5b6024a5784aa0d8e42193ceb4119c1b1be3134b2ae8d0a2417eae409773",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "e3487f9add153c8a256341c99987c0cebadbfc421156ebcc182906a4d92137c0",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "2d9bad52adbed46597b43c2e432e08f8e5490ab8810c3e6d4733d0689d1c12b6",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "74b0f2b9b24a64edba34ca0cf89684cb581e81ba4d552d9fe8cdbb4c8995b1ac",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "103e92946a365e2e49fbfbe3257ace77a3cb1b744d8aa5cd3f81b13ff1fecd9c",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "eba37cc1df1553ee848c1d92fd05d349bf54860ad5ceca23fadcc06014d86d17",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

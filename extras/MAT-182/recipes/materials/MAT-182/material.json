@@ -1,0 +1,194 @@
+{
+  "id": "MAT-182",
+  "name": "Slightly turbid water appearance",
+  "family": "Liquids and gels",
+  "version": "1.0.0-local",
+  "seed": 7641258,
+  "pattern": "water",
+  "base_linear_low": [
+    0.36984763901304013,
+    0.4943999738777297,
+    0.4994208203920596
+  ],
+  "base_linear_high": [
+    0.6814539098446402,
+    0.9082506987027316,
+    0.9173931356392727
+  ],
+  "roughness": 0.35,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.333,
+  "transmission": 1.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-182",
+    "name": "Slightly turbid water appearance",
+    "family": "Liquids and gels",
+    "domains": [
+      "laboratory",
+      "industrial",
+      "CAD product"
+    ],
+    "description": "Weak internal scattering reduces contrast through the liquid.",
+    "use_cases": [
+      "Sample illustrations",
+      "environments"
+    ],
+    "optical_model": "Absorbing or scattering volume bounded by explicit refractive interfaces; geometry determines menisci and shape.",
+    "controls": [
+      "editable refractive index",
+      "absorption distance",
+      "scattering",
+      "scattering density",
+      "absorption"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep transport distances in actual scene units.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027",
+      "CAP-028"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Visual turbidity is not an analytical concentration measurement.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Rough transmission/scattering intent is represented in portable material; native smooth-transmission fallback is separately named."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "1ac45a69e7590c5b01485086bd884c2f0c7e11465a4ba394842461c9a0ffd8db",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "bd8dd0665441379218183d0256cfcfe37b7c74de8cb465c700ccbc21cc81e472",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "fdf0ca67f9ee4f1b6194a8996138c6321a5ad7896d796cf02f2556a64224c537",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "a23196e2ed06f75b67ce4adc8accd3c7e51334c75f5b67b9f3c60e8929d4d7e6",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "9511d680b97a3168d7a2741b7ed56f05c4d391d1bd634124b952b037b8ee20bf",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "4f464b88e8c37179ffd9413bf556da99ae3b8d6f84cfee69b262cf181c428622",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "transmission": {
+      "path": "maps/transmission.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "a16d2566e5fc297c616cec01d437ab16ce078feb4f580e96f10bc9bce1d4a96e",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "aeb241a3f657535619557b0d0c2c1d525826c08dcfd726e5b6eb4d338ba14e33",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

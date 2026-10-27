@@ -1,0 +1,157 @@
+{
+  "id": "LUZ-061",
+  "name": "Window reflection on a ring",
+  "family": "07 Jewelry and watches",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-061",
+    "name": "Window reflection on a ring",
+    "family": "07 Jewelry and watches",
+    "domains": [
+      "product",
+      "jewelry"
+    ],
+    "description": "A proposed lighting arrangement for plain rings and bands.",
+    "use_cases": [
+      "Plain rings and bands"
+    ],
+    "sources": "Window K, black card and small reflector",
+    "geometry": "Window 1.2B wide; card shapes a reflected arc",
+    "contribution_policy": "K 0 reference EV; cards passive",
+    "controls": [
+      "Reflected-arc shape",
+      "card placement"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-018"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Ring section and finish remain readable"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 824123,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1200.0,
+          -800.0,
+          400.0
+        ],
+        "u": [
+          -49.923017660270624,
+          74.88452649040593,
+          0.0
+        ],
+        "v": [
+          244.6122744981634,
+          163.0748496654423,
+          1059.986522825375
+        ],
+        "radiance": [
+          14,
+          14,
+          14
+        ]
+      },
+      {
+        "center": [
+          1200.0,
+          -100.0,
+          600.0
+        ],
+        "u": [
+          -10.380684981717497,
+          -124.56821978060997,
+          0.0
+        ],
+        "v": [
+          -444.4359771425177,
+          37.03633142854314,
+          895.0446761897925
+        ],
+        "radiance": [
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "center": [
+          0.0,
+          -1700.0,
+          1500.0
+        ],
+        "u": [
+          -600.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          264.6486548347386,
+          299.935142146037
+        ],
+        "radiance": [
+          2.5,
+          2.5,
+          2.5
+        ]
+      }
+    ]
+  },
+  "passive_stage": [
+    {
+      "id": "passive-fill",
+      "center_mm": [
+        900.0,
+        0.0,
+        0.0
+      ],
+      "half_u_mm": [
+        0.0,
+        -400.0,
+        0.0
+      ],
+      "half_v_mm": [
+        0.0,
+        0.0,
+        750.0
+      ],
+      "reflectance_linear": [
+        0.02,
+        0.02,
+        0.02
+      ]
+    }
+  ],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

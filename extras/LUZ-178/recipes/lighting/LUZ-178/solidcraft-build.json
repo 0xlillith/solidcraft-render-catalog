@@ -1,0 +1,143 @@
+[
+  {
+    "command": "file.new",
+    "params": {
+      "name": "LUZ-178 Product between luminous panels"
+    }
+  },
+  {
+    "command": "document.metadata.set",
+    "params": {
+      "values": {
+        "license": "MIT OR Apache-2.0",
+        "description": "Original relative lighting rig on neutral calibration geometry; no photometric certification.",
+        "org.solidcraft.local_catalog": {
+          "id": "LUZ-178",
+          "unresolved_external_inputs": [],
+          "limitations": []
+        }
+      }
+    }
+  },
+  {
+    "command": "solid.sphere",
+    "params": {
+      "radius": 160,
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "body_name": "Reference subject"
+    }
+  },
+  {
+    "command": "appearance.assign",
+    "params": {
+      "bodies": [
+        "Reference subject"
+      ],
+      "color": [
+        155,
+        155,
+        155
+      ],
+      "pbr": {
+        "metallic": 0,
+        "roughness": 0.4,
+        "dielectric_ior": 1.5
+      }
+    }
+  },
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-178 Product between luminous panels",
+      "set": {
+        "width": 640,
+        "height": 480,
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "yaw": -0.7,
+          "pitch": 0.35,
+          "roll": 0,
+          "distance": 1150,
+          "fov": 0.7,
+          "up": "z"
+        },
+        "background": [
+          30,
+          35,
+          42
+        ],
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 1004654,
+            "tone_map": "aces_fitted",
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    -1300.0,
+                    300.0,
+                    600.0
+                  ],
+                  "u": [
+                    22.485950669875844,
+                    97.439119569462,
+                    0.0
+                  ],
+                  "v": [
+                    359.68325874853156,
+                    -83.00382894196882,
+                    820.8156417594693
+                  ],
+                  "radiance": [
+                    16,
+                    16,
+                    16
+                  ]
+                },
+                {
+                  "center": [
+                    1400.0,
+                    500.0,
+                    300.0
+                  ],
+                  "u": [
+                    42.04204962476953,
+                    -117.71773894935468,
+                    0.0
+                  ],
+                  "v": [
+                    -149.03189459617377,
+                    -53.22567664149064,
+                    784.1916358512952
+                  ],
+                  "radiance": [
+                    9,
+                    9,
+                    9
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

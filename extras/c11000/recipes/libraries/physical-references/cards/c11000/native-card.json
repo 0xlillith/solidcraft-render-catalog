@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "designation": "C11000 ETP copper - CDA reference",
+  "family": "metal",
+  "sources": [
+    {
+      "id": "cda-c11000",
+      "title": "Copper Development Association C11000",
+      "kind": "public_reference",
+      "license": null,
+      "reference": "https://alloys.copper.org/alloy/C11000"
+    }
+  ],
+  "properties": [
+    {
+      "data": {
+        "kind": "density",
+        "kg_m3": 8912.92931669
+      },
+      "source_id": "cda-c11000",
+      "conditions": {
+        "temperature_k": 293.15,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+      }
+    },
+    {
+      "data": {
+        "kind": "elasticity",
+        "model": {
+          "symmetry": "isotropic",
+          "young_modulus_pa": 117210873984.0,
+          "poisson_ratio": 0.328125
+        }
+      },
+      "source_id": "cda-c11000",
+      "conditions": {
+        "temperature_k": null,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference model; not validated part behavior. Poisson ratio derived from same-source E and G, not independently measured."
+      }
+    },
+    {
+      "data": {
+        "kind": "specific_heat",
+        "j_kg_k": 385.1856
+      },
+      "source_id": "cda-c11000",
+      "conditions": {
+        "temperature_k": null,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"}"
+      }
+    },
+    {
+      "data": {
+        "kind": "thermal_conductivity",
+        "w_m_k": [
+          391.1460346,
+          391.1460346,
+          391.1460346
+        ],
+        "axes": "material123"
+      },
+      "source_id": "cda-c11000",
+      "conditions": {
+        "temperature_k": 293.15,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+      }
+    },
+    {
+      "data": {
+        "kind": "thermal_expansion",
+        "per_k": [
+          1.692e-05,
+          1.692e-05,
+          1.692e-05
+        ],
+        "axes": "material123"
+      },
+      "source_id": "cda-c11000",
+      "conditions": {
+        "temperature_k": null,
+        "moisture_dry_basis_kg_kg": null,
+        "strain_rate_per_s": null,
+        "state": "General alloy physical properties; temper and product form not selected. Strength is intentionally not generalized.  | typical reference; source review required; not design allowables. | {\"direction\":\"not_reported\",\"temperature_interval_k\":[293.15,373.15],\"test_method\":\"not_reported\"} | Isotropic reference approximation, not measured directional tensor."
+      }
+    }
+  ]
+}

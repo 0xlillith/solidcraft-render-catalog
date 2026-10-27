@@ -1,0 +1,102 @@
+{
+  "id": "SELENE-AP-047",
+  "name": "Automotive smooth clearcoat surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-047",
+    "name": "Automotive smooth clearcoat surrogate",
+    "source_catalog_ids": [
+      "MAT-034",
+      "MAT-204"
+    ],
+    "family": "Automotive paint",
+    "domains": [
+      "automotive",
+      "industrial",
+      "DIY"
+    ],
+    "purpose": "A glossy opaque pigment preview for a future clear-coated body panel.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-047 Automotive smooth clearcoat surrogate",
+        "color": "#4e697e",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.21,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Independent clearcoat lobe",
+        "Layer absorption",
+        "Orange-peel detail",
+        "Paint thickness"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Transparent dielectric clearcoat over an opaque pigment base; no metallic flakes are implied.",
+      "structure": [
+        "Transparent clearcoat",
+        "Opaque pigmented base",
+        "Structural panel substrate"
+      ],
+      "authoring_controls": [
+        {
+          "id": "orange_peel_span",
+          "value": 1.8,
+          "unit": "mm",
+          "meaning": "Illustrative residual surface waviness extent.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "orange_peel_relief",
+          "value": 0.006,
+          "unit": "mm",
+          "meaning": "Authored small-amplitude waviness for a polished finish.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Keep clearcoat surface detail separate from pigment color",
+        "Use panel-local coordinates and continuous normals"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-021",
+        "CAP-026",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Clearcoat optical constants",
+        "Pigment reflectance",
+        "Actual layer thickness if needed"
+      ],
+      "validation_criteria": [
+        "A clearcoat target must have a separate coating response when implemented",
+        "The baseline must not be described as metallic-flake paint"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#4e697e",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.21,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-047 Automotive smooth clearcoat surrogate",
+    "bodies": [
+      "SELENE-AP-047"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

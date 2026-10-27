@@ -1,0 +1,182 @@
+{
+  "id": "MAT-379",
+  "name": "Flexible resin-print appearance",
+  "family": "Resin-printing process appearances",
+  "version": "1.0.0-local",
+  "seed": 9201301,
+  "pattern": "polymer",
+  "base_linear_low": [
+    0.18970965608809473,
+    0.2227425293519402,
+    0.25209562240390737
+  ],
+  "base_linear_high": [
+    0.35344146332459037,
+    0.4135908743423388,
+    0.46703979004890595
+  ],
+  "roughness": 0.522,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.065,
+  "tile_mm": [
+    35,
+    35
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-379",
+    "name": "Flexible resin-print appearance",
+    "family": "Resin-printing process appearances",
+    "domains": [
+      "additive manufacturing",
+      "industrial",
+      "DIY"
+    ],
+    "description": "Smooth polymer skin carries fine layers and soft-looking reflection.",
+    "use_cases": [
+      "Elastomeric prototype concepts"
+    ],
+    "optical_model": "Photopolymer appearance with explicit liquid, cured, support and post-processing states; curing mechanics are outside scope.",
+    "controls": [
+      "build direction",
+      "surface state",
+      "local masks",
+      "gloss",
+      "layer relief"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Geometry determines deformation; shader only defines appearance.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-028",
+      "CAP-034",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Visual softness must not imply elastic material properties.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "287782988d9945785f15ae79c4b747a6306cf63feda1049c51099e30406ac7c1",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "8ce570c873ac8871014eb71de9ecfbc04afd8cc6717e0b47f8d0257650b91905",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "0c917408a0bfd60b1124d8a84a2cb05bf99965b56ea53b790fc352d8b9898264",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "a595bf346191c79607f53d34c8c678a3545d79b112a137b21ac976ad1afb8d50",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c5628fb7506295e28fe6ad84ac8b59b4253d5d88b3b8660eced9b00360a02ef5",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c565d5e220d657b91116c3a1ec75cc4d0c30f0ebf242f6aacbe8427bf476c5aa",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "5122ce6f8dcc6310ab768aa54e9903cc129ba8b02035be434aceceea5f677f11",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "a70ce1af11b1f53c84f8626546fffdd484c96b346ebf6e90091c7db771f19c2e",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

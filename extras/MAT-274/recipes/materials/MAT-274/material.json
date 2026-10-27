@@ -1,0 +1,181 @@
+{
+  "id": "MAT-274",
+  "name": "Hard-chromium-plated rod appearance",
+  "family": "Industrial protective treatments",
+  "version": "1.0.0-local",
+  "seed": 8369806,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.1106385703161173,
+    0.12359824631529548,
+    0.14708255381861038
+  ],
+  "base_linear_high": [
+    0.20946127729203448,
+    0.23305949329053802,
+    0.27582196366970846
+  ],
+  "roughness": 0.382,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.06,
+  "tile_mm": [
+    100,
+    100
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-274",
+    "name": "Hard-chromium-plated rod appearance",
+    "family": "Industrial protective treatments",
+    "domains": [
+      "industrial",
+      "automotive",
+      "aerospace"
+    ],
+    "description": "A reflective outer metal layer follows a polished cylindrical substrate.",
+    "use_cases": [
+      "Actuator rods",
+      "tools"
+    ],
+    "optical_model": "Explicit coating over a separate substrate, with optical behaviour selected per treatment rather than inferred performance.",
+    "controls": [
+      "coating coverage",
+      "layer roughness",
+      "substrate exposure",
+      "polish",
+      "coating damage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Preserve cylinder geometry and local finish direction.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The visual preset does not certify coating hardness or thickness.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "94a55f53d0b53ecf34aed7a9efdfd518683c6f40edf1d44e199d079e67207f21",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "21bf87843b1b229898ae8355d0fff13fd7923f05037c3208265e7f3da3b0a214",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "64aef9fb3250dd229b2ffab72820f6e7ced6d02b3a56d9596b662e982dfc2d08",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "4e2663b9784e75fe621357946f76d18b9fd16be26b2c3d48a2e76612f0aa4d04",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "2da114ab7c92cdc5e4c6b47d9a7531a7198ccb557e616bda0991a6c553ca1e00",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "aed67ed7af7d626d19f02a31f7dff27ba39a6b5ef484ba80113c790deebe3664",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "1462b958b94a65f03e2e5f22eb9f9163f82d89ca80ea1189ab007b6f26e0aee3",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "3bf368d6c1bb95581657be49f95669beb798860dac54d459b9c5a8eebac99f17",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

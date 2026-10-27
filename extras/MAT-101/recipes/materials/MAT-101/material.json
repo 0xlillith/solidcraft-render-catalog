@@ -1,0 +1,182 @@
+{
+  "id": "MAT-101",
+  "name": "Polished white veined marble",
+  "family": "Natural stone appearances",
+  "version": "1.0.0-local",
+  "seed": 6999819,
+  "pattern": "marble",
+  "base_linear_low": [
+    0.5301696200228623,
+    0.5146612686558297,
+    0.46489408006563326
+  ],
+  "base_linear_high": [
+    0.9733834872058089,
+    0.9451443996419585,
+    0.8545235487762277
+  ],
+  "roughness": 0.055,
+  "roughness_variation": 0.008,
+  "metallic": 0,
+  "height_span_mm": 0.1,
+  "tile_mm": [
+    300,
+    300
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-101",
+    "name": "Polished white veined marble",
+    "family": "Natural stone appearances",
+    "domains": [
+      "architecture",
+      "DIY",
+      "CAD product"
+    ],
+    "description": "Soft continuous veins run through a reflective stone body.",
+    "use_cases": [
+      "Countertops",
+      "wall panels"
+    ],
+    "optical_model": "Dielectric mineral structure with independently controlled cut orientation and surface finish.",
+    "controls": [
+      "mineral pattern",
+      "finish roughness",
+      "vein direction",
+      "vein thickness",
+      "shallow scattering"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Carry veins through the same volume across adjacent cuts.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-034",
+      "CAP-036",
+      "CAP-028"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Edge veins must continue from the top face.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "79e5b275fbb46a3f614c70a9b0063d778fa41fe578103fd6e4d59593acc00e8e",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "b15cea8ea23bf28df1cadbd1b59f94af1a8affe0d678a96a2e547b2cf2149ec3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "479e87744a339f251b023a34a2f3f33166570510ca148872fffffb3bae2c9e92",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "2be005dd75d301fb9f4d8e6ac026e0f5eb82909cf902a6117712b9aee34bccb4",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "2c138d1bd6b35d1bba38f2b699020fd8d9b5959f3a5fb5221aac67b45fe94bee",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "a75189abe34dedc203c1091990e0e7faa42926fc3fa6251a2237c4d70690d738",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "fbc5b9c9f5a54dd89c76b2897e001bf15d527daac3c024aa1d8752922b17e338",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "30957d8dd3d5cc98270b8d6d93b0f59cf27bb96a7890d8b8f0a5ea041512d449",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

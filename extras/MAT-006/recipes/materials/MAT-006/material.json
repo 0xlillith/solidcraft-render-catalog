@@ -1,0 +1,181 @@
+{
+  "id": "MAT-006",
+  "name": "Hot-dip galvanized steel",
+  "family": "Steels and cast irons",
+  "version": "1.0.0-local",
+  "seed": 6247514,
+  "pattern": "galvanized",
+  "base_linear_low": [
+    0.44,
+    0.47,
+    0.51
+  ],
+  "base_linear_high": [
+    0.7,
+    0.73,
+    0.76
+  ],
+  "roughness": 0.35,
+  "roughness_variation": 0.06,
+  "metallic": 1,
+  "height_span_mm": 0.06,
+  "tile_mm": [
+    180,
+    180
+  ],
+  "cycles_u": 12,
+  "cycles_v": 12,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-006",
+    "name": "Hot-dip galvanized steel",
+    "family": "Steels and cast irons",
+    "domains": [
+      "industrial",
+      "automotive",
+      "CAD product"
+    ],
+    "description": "Zinc spangle cells create structured variation in metal reflection.",
+    "use_cases": [
+      "Cable trays",
+      "exterior hardware"
+    ],
+    "optical_model": "Conductor microfacet substrate; separate absorbing oxide or dielectric surface layers where specified.",
+    "controls": [
+      "surface roughness",
+      "finish direction",
+      "exposed metal coverage",
+      "spangle size",
+      "cell contrast"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use fixed cell size across adjacent formed faces.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-039"
+    ],
+    "priority": "P0",
+    "cost": "Low",
+    "validation": [
+      "The spangle should affect reflection rather than read as painted spots.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": "SURF-004",
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "dd58c23ced2558115f1673e8df51f3400a48055b07d9cf58c31149ea879e9322",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "bd4b05e1eb35e619cd480b7c8e267724282389bfad3262f6c6e5499a86ecab8a",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "ae5973fd57240d35f46749f9c7964ca4a3525bfd34124db74203962ab033fd3c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "0127a7df0ee62750a20a337c05ea63023243e03046fc8bb755d686f8c9822195",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "ff1dcb4dc2794de11edb3c7121fa8e5a4ef885381b4bac310c3e3dbd57a25f00",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c6b0e31b290633724d85bbec59e2162936caf779201b2fa1a893c63044cb3455",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "d565ac6f8a68f5d274cd49773be6995a76dd567318b7d399a09ad5c17e4f5f99",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "33b6e9e8660e03df71efd49383a6b291af67b71a3f6b7a61427cf7eb1acf4572",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

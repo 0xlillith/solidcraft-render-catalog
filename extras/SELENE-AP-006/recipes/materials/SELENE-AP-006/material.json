@@ -1,0 +1,97 @@
+{
+  "id": "SELENE-AP-006",
+  "name": "Serrated metal gripper jaw",
+  "original_specification": {
+    "id": "SELENE-AP-006",
+    "name": "Serrated metal gripper jaw",
+    "source_catalog_ids": [
+      "MAT-573"
+    ],
+    "family": "Machined contact surfaces",
+    "domains": [
+      "SELENE",
+      "industrial",
+      "robotics"
+    ],
+    "purpose": "A restrained metal response for a modeled serrated jaw.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-006 Serrated metal gripper jaw",
+        "color": "#a6adb5",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.4,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Serration geometry generation",
+        "Directional marks",
+        "Contact wear masks"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque conductor with machining marks and contact-polished regions.",
+      "structure": [
+        "Conductor jaw",
+        "Localized wear mask without any inferred force model"
+      ],
+      "authoring_controls": [
+        {
+          "id": "machining_pitch",
+          "value": 0.3,
+          "unit": "mm",
+          "meaning": "Illustrative milling mark spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "contact_mask_extent",
+          "value": 1.5,
+          "unit": "mm",
+          "meaning": "Authored visual width of a contact-polished strip.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Retain serrations as CAD or render geometry",
+        "Bind local wear to contact-facing regions without changing joint limits"
+      ],
+      "capability_requirements": [
+        "CAP-020",
+        "CAP-033",
+        "CAP-035",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Substrate optical constants",
+        "Evidence for any real wear state"
+      ],
+      "validation_criteria": [
+        "Teeth must come from geometry rather than a flat dark pattern",
+        "Appearance assignment must preserve jaw articulation"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#a6adb5",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.4,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-006 Serrated metal gripper jaw",
+    "bodies": [
+      "SELENE-AP-006"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

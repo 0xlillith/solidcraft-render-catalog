@@ -1,0 +1,180 @@
+{
+  "id": "MAT-359",
+  "name": "Pellet-extrusion feedstock",
+  "family": "Additive feedstock appearances",
+  "version": "1.0.0-local",
+  "seed": 9042921,
+  "pattern": "fdm",
+  "base_linear_low": [
+    0.07333934622146056,
+    0.18123351997875412,
+    0.2420755424549514
+  ],
+  "base_linear_high": [
+    0.1415432871495252,
+    0.3380073050359403,
+    0.44879427133588157
+  ],
+  "roughness": 0.522,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.16,
+  "tile_mm": [
+    12.8,
+    12.8
+  ],
+  "cycles_u": 12,
+  "cycles_v": 64,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-359",
+    "name": "Pellet-extrusion feedstock",
+    "family": "Additive feedstock appearances",
+    "domains": [
+      "additive manufacturing",
+      "DIY",
+      "industrial"
+    ],
+    "description": "Small irregular polymer pellets form a loose granular assembly.",
+    "use_cases": [
+      "Pellet-printer scenes"
+    ],
+    "optical_model": "Process feedstock appearance with distinct polymer, particle or filament regions; no printability or formulation claims.",
+    "controls": [
+      "feedstock geometry",
+      "surface finish",
+      "inclusion structure",
+      "pellet shape",
+      "surface finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use instanced pellets at explicit physical dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Pellets must retain gaps and contact shadows where resolved.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "a642a6cec35e8893df635288e7a50d9a51df119bcf3f31f272699c0484518b5d",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "e6fe212ffc7a5348c9e068105586cd503285565eb1db67a835ad96aeffe0552b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "73166699c5e0c2946d84607d9fdad8e999251c337657a3b8a8dcec00ffb0f006",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "cc6d049573ba03e82dcf48230a9d7c732aa08365a97cfbd866844783ddf09cf1",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "d6a54187f41e5c5a61f8b9ed369c3fe3f43a7ee4040c00bb8f58beeef1ac5271",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "52195f1f2c2cc92a6e7e24b1dabff21819e28c4afdb33039c1eb9f1f1f03fa70",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "8f013ce0969c15ad91ae90e3afec17a17ec1a93491c4773fe7398e606a9685e1",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "3a59f75545e60d68d1b98984a17f547cfaf3f150e8912c986bf11c27ec15e437",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

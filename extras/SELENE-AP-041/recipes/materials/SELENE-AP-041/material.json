@@ -1,0 +1,111 @@
+{
+  "id": "SELENE-AP-041",
+  "name": "Mare-style regolith surface",
+  "original_specification": {
+    "id": "SELENE-AP-041",
+    "name": "Mare-style regolith surface",
+    "source_catalog_ids": [
+      "MAT-531"
+    ],
+    "family": "Lunar particulate surfaces",
+    "domains": [
+      "SELENE",
+      "lunar",
+      "space"
+    ],
+    "purpose": "A dark granular terrain target with a deliberately uniform baseline approximation.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-041 Mare-style regolith surface",
+        "color": "#5e5c58",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.96,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Grain geometry",
+        "Particulate phase response",
+        "Terrain hierarchy",
+        "Self-shadowing",
+        "Contact tracks"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Vacuum-exposed particulate surface with size-dependent geometric detail and a separately calibrated phase response.",
+      "structure": [
+        "Fine grain population",
+        "Coarser fragments",
+        "Underlying terrain geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "fine_detail_extent",
+          "value": 0.6,
+          "unit": "mm",
+          "meaning": "Illustrative visible-detail scale, not a measured grain distribution.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "fragment_extent",
+          "value": 7.0,
+          "unit": "mm",
+          "meaning": "Authored coarse fragment size for a small demonstration patch.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "detail_seed",
+          "value": 4101,
+          "unit": "integer",
+          "meaning": "Deterministic seed for future original procedural detail.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use hierarchical terrain detail in millimetres",
+        "Use explicit granular or instanced geometry for resolved grains",
+        "No terrestrial atmospheric fog or wet glints"
+      ],
+      "capability_requirements": [
+        "CAP-033",
+        "CAP-035",
+        "CAP-036",
+        "CAP-043",
+        "CAP-108",
+        "CAP-109",
+        "CAP-110"
+      ],
+      "unknown_optical_inputs": [
+        "Measured particulate reflectance or phase data",
+        "Mission-specific texture and grain evidence if needed"
+      ],
+      "validation_criteria": [
+        "Zoom must reveal a stable hierarchy instead of stretching one noise scale",
+        "Dust behavior must remain compatible with vacuum; no airborne fog volume"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#5e5c58",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.96,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-041 Mare-style regolith surface",
+    "bodies": [
+      "SELENE-AP-041"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

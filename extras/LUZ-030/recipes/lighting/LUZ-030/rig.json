@@ -1,0 +1,134 @@
+{
+  "id": "LUZ-030",
+  "name": "Deep machined cavity",
+  "family": "03 Metals and reflective surfaces",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-030",
+    "name": "Deep machined cavity",
+    "family": "03 Metals and reflective surfaces",
+    "domains": [
+      "product",
+      "metalworking"
+    ],
+    "description": "A proposed lighting arrangement for mold cavities and metal pockets.",
+    "use_cases": [
+      "Mold cavities and metal pockets"
+    ],
+    "sources": "Area above opening and broad front fill",
+    "geometry": "K aimed through a real opening and kept outside solid walls",
+    "contribution_policy": "K 0 and F -1.5 reference EV",
+    "controls": [
+      "Target opening",
+      "key size",
+      "fill contribution"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-006"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Light reaches cavities through valid paths, not through solids"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 776290,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          -1200.0,
+          -800.0,
+          400.0
+        ],
+        "u": [
+          -49.923017660270624,
+          74.88452649040593,
+          0.0
+        ],
+        "v": [
+          244.6122744981634,
+          163.0748496654423,
+          1059.986522825375
+        ],
+        "radiance": [
+          14,
+          14,
+          14
+        ]
+      },
+      {
+        "center": [
+          1200.0,
+          -100.0,
+          600.0
+        ],
+        "u": [
+          -10.380684981717497,
+          -124.56821978060997,
+          0.0
+        ],
+        "v": [
+          -444.4359771425177,
+          37.03633142854314,
+          895.0446761897925
+        ],
+        "radiance": [
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "center": [
+          0.0,
+          -1700.0,
+          1500.0
+        ],
+        "u": [
+          -600.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          264.6486548347386,
+          299.935142146037
+        ],
+        "radiance": [
+          2.5,
+          2.5,
+          2.5
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

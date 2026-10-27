@@ -1,0 +1,68 @@
+{
+  "id": "ENV-234",
+  "name": "Acoustic-test chamber context",
+  "kind": "environment",
+  "family": "Aerospace integration and test facilities",
+  "path": "environments/ENV-234",
+  "thumbnail": "environments/ENV-234/native-model-preview.png",
+  "description": "Acoustic-test chamber context is a conceptual setting for spacecraft panels; payload structures. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-234/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-234/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-234/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-234/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-234/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-234/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-234/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-234/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-234/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-234/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-234/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-234/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

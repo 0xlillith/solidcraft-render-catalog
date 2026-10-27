@@ -1,0 +1,182 @@
+{
+  "id": "MAT-529",
+  "name": "Woven harness-lacing cord",
+  "family": "Space harness and mechanism interfaces",
+  "version": "1.0.0-local",
+  "seed": 10389151,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.25890772063732287,
+    0.18970965608809473,
+    0.05653206173457971
+  ],
+  "base_linear_high": [
+    0.4794439092201998,
+    0.35344146332459037,
+    0.11093897808386155
+  ],
+  "roughness": 0.572,
+  "roughness_variation": 0.06,
+  "metallic": 0.3,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-529",
+    "name": "Woven harness-lacing cord",
+    "family": "Space harness and mechanism interfaces",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "Fine interlaced fibres form an explicit tied or wrapped cord.",
+    "use_cases": [
+      "Space harness illustrations"
+    ],
+    "optical_model": "Explicit insulating, conductive and joining regions for mechanism illustrations; no vacuum, contamination or flight qualification is asserted.",
+    "controls": [
+      "region masks",
+      "construction orientation",
+      "surface roughness",
+      "cord weave",
+      "knot geometry"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use curve or mesh geometry for the actual cord path.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Weave detail must follow the cord through bends and knots.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "8c1af140cc1025b69642befcb141c07fc3d4994629fb80e7c1d87bb5cc09e638",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "88fb1ae9bba4ddd547066cb546cecfd37c9f26c48533795826fc897ea11321c9",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "870046aeed77d70cafa9247b9e9ed26a47eff7c8b48b3df5f5c31445be9d4553",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "cb16feea347231620c8b1203362bf05c14c620ed03d802623c73ce9b4d0578eb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "6e5bc4c00fa2051fa3781f4b66e0fdc31564842b55e326ad2c7eac999d694bdd",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "4786009a78e3dfbba7f000cb0c7ff94273e4b849bd1b7d2ffef189812b8fde92",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "d3b811109f53afa94fc58743cbd7f7524e5e7c099f8f06685ec283c0ec41d22d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "128004751fd215e71385fcdd069bbf2315746a7112747d61670327d92e54cce3",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "c7f118139242eba704f1433c8f7bcdc11b14ab00b680462a6493b10f5b0d8043",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-027",
+  "name": "Powder-printed polyamide preview",
+  "original_specification": {
+    "id": "SELENE-AP-027",
+    "name": "Powder-printed polyamide preview",
+    "source_catalog_ids": [
+      "MAT-175"
+    ],
+    "family": "Additive polymers",
+    "domains": [
+      "additive manufacturing",
+      "3D printers",
+      "industrial"
+    ],
+    "purpose": "A grainy polymer-print target with a uniform matte baseline response.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-027 Powder-printed polyamide preview",
+        "color": "#abb0b1",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.87,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Powder grain",
+        "Pores",
+        "Local roughness variation",
+        "Manufacturing performance"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque dielectric powder-fused surface with fine pore and particle-scale variation.",
+      "structure": [
+        "Fused polymer surface",
+        "Bounded pore and particle relief"
+      ],
+      "authoring_controls": [
+        {
+          "id": "surface_grain_pitch",
+          "value": 0.16,
+          "unit": "mm",
+          "meaning": "Illustrative surface grain size, not a powder specification.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "surface_grain_relief",
+          "value": 0.025,
+          "unit": "mm",
+          "meaning": "Authored render-only rough-surface amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use object-local millimetres",
+        "Reserve geometry for pores large enough to affect silhouettes"
+      ],
+      "capability_requirements": [
+        "CAP-028",
+        "CAP-033",
+        "CAP-035",
+        "CAP-036"
+      ],
+      "unknown_optical_inputs": [
+        "Polymer scattering data",
+        "Evidence for the chosen print finish"
+      ],
+      "validation_criteria": [
+        "Grain scale must remain stable across differently sized parts",
+        "A visual powder texture must not imply porosity or strength values"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#abb0b1",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.87,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-027 Powder-printed polyamide preview",
+    "bodies": [
+      "SELENE-AP-027"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

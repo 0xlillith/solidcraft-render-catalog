@@ -1,0 +1,100 @@
+{
+  "id": "SELENE-AP-015",
+  "name": "Black anodized chassis surrogate",
+  "original_specification": {
+    "id": "SELENE-AP-015",
+    "name": "Black anodized chassis surrogate",
+    "source_catalog_ids": [
+      "MAT-567"
+    ],
+    "family": "Anodized aerospace surfaces",
+    "domains": [
+      "SELENE",
+      "aerospace",
+      "industrial"
+    ],
+    "purpose": "An opaque dark dielectric surrogate for a dyed anodized chassis.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-015 Black anodized chassis surrogate",
+        "color": "#252a30",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.56,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Absorbing oxide transport",
+        "Metal underlayer",
+        "Exposed cut-face differences"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Absorbing porous oxide over a metallic substrate; the baseline represents only its dark outer response.",
+      "structure": [
+        "Dyed absorbing dielectric oxide",
+        "Metallic chassis substrate"
+      ],
+      "authoring_controls": [
+        {
+          "id": "oxide_texture_pitch",
+          "value": 0.16,
+          "unit": "mm",
+          "meaning": "Illustrative finish texture size.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "oxide_texture_relief",
+          "value": 0.002,
+          "unit": "mm",
+          "meaning": "Render-only microtexture amplitude.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Assign chassis cut faces independently when exposed",
+        "Retain machining and assembly features"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-018",
+        "CAP-021",
+        "CAP-026",
+        "CAP-033",
+        "CAP-035"
+      ],
+      "unknown_optical_inputs": [
+        "Oxide absorption and refractive data",
+        "Substrate optical constants",
+        "Actual coating thickness"
+      ],
+      "validation_criteria": [
+        "Cut faces should use their own conductor appearance when required",
+        "The surrogate must be identified as an approximation of a layered surface"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#252a30",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.56,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-015 Black anodized chassis surrogate",
+    "bodies": [
+      "SELENE-AP-015"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

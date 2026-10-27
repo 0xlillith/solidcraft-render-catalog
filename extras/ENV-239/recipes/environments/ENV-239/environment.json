@@ -1,0 +1,266 @@
+{
+  "id": "ENV-239",
+  "name": "Spacecraft transport cradle area",
+  "family": "Aerospace integration and test facilities",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "ENV-239",
+    "name": "Spacecraft transport cradle area",
+    "family": "Aerospace integration and test facilities",
+    "domains": [
+      "aerospace",
+      "spacecraft",
+      "manufacturing"
+    ],
+    "description": "Spacecraft transport cradle area is a conceptual setting for cradles; covers; ground-support equipment. It combines the specified surroundings with independently managed lighting.",
+    "use_cases": [
+      "Cradles",
+      "covers",
+      "ground-support equipment"
+    ],
+    "representation": "Procedural 3D terrestrial integration or test setting",
+    "geometry": "Clear hall with generic transport cradle and removable protective-cover proxy",
+    "ambient_lighting": "Neutral facility ambience",
+    "scale_policy": "Hall and cradle dimensions independent of the payload model; preserve subject dimensions; fit the stage once to an explicit selection, never continuously rescale the CAD model",
+    "controls": [
+      "Cradle dimensions",
+      "cover visibility",
+      "clearance",
+      "floor markings",
+      "ambient intensity"
+    ],
+    "authoring_method": "Original generic aerospace-facility geometry; no proprietary spacecraft, mission hardware, facility scan or measurement data",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-018",
+      "CAP-019",
+      "CAP-033",
+      "CAP-043",
+      "CAP-044",
+      "CAP-092",
+      "CAP-009",
+      "CAP-082"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Preserve subject dimensions and make handling clearances explicit.",
+      "Keep support fixtures independent of flight hardware.",
+      "Facility appearance does not certify cleanliness, thermal, vibration, acoustic or vacuum performance."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "generated_geometry": [
+    {
+      "type": "box",
+      "name": "Room floor",
+      "center_mm": [
+        0.0,
+        0.0,
+        -40.0
+      ],
+      "size_mm": [
+        9000.0,
+        9000.0,
+        80.0
+      ],
+      "color": "a7a7a1"
+    },
+    {
+      "type": "box",
+      "name": "Back wall",
+      "center_mm": [
+        0.0,
+        4500.0,
+        1600.0
+      ],
+      "size_mm": [
+        9000.0,
+        100.0,
+        3200.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Left wall",
+      "center_mm": [
+        -4500.0,
+        0.0,
+        1600.0
+      ],
+      "size_mm": [
+        100.0,
+        9000.0,
+        3200.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Right wall lower",
+      "center_mm": [
+        4500.0,
+        1000.0,
+        500.0
+      ],
+      "size_mm": [
+        100.0,
+        7000.0,
+        1000.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Right wall lintel",
+      "center_mm": [
+        4500.0,
+        1000.0,
+        2900.0
+      ],
+      "size_mm": [
+        100.0,
+        7000.0,
+        600.0
+      ],
+      "color": "d5d7d7"
+    },
+    {
+      "type": "box",
+      "name": "Bay frame",
+      "center_mm": [
+        -3000.0,
+        -2200.0,
+        1700.0
+      ],
+      "size_mm": [
+        160.0,
+        160.0,
+        3400.0
+      ],
+      "color": "858d98"
+    },
+    {
+      "type": "box",
+      "name": "Bay frame",
+      "center_mm": [
+        -3000.0,
+        0.0,
+        1700.0
+      ],
+      "size_mm": [
+        160.0,
+        160.0,
+        3400.0
+      ],
+      "color": "858d98"
+    },
+    {
+      "type": "box",
+      "name": "Bay frame",
+      "center_mm": [
+        -3000.0,
+        2200.0,
+        1700.0
+      ],
+      "size_mm": [
+        160.0,
+        160.0,
+        3400.0
+      ],
+      "color": "858d98"
+    },
+    {
+      "type": "box",
+      "name": "Bay frame",
+      "center_mm": [
+        3000.0,
+        -2200.0,
+        1700.0
+      ],
+      "size_mm": [
+        160.0,
+        160.0,
+        3400.0
+      ],
+      "color": "858d98"
+    },
+    {
+      "type": "box",
+      "name": "Bay frame",
+      "center_mm": [
+        3000.0,
+        0.0,
+        1700.0
+      ],
+      "size_mm": [
+        160.0,
+        160.0,
+        3400.0
+      ],
+      "color": "858d98"
+    },
+    {
+      "type": "box",
+      "name": "Bay frame",
+      "center_mm": [
+        3000.0,
+        2200.0,
+        1700.0
+      ],
+      "size_mm": [
+        160.0,
+        160.0,
+        3400.0
+      ],
+      "color": "858d98"
+    },
+    {
+      "type": "box",
+      "name": "Equipment platform",
+      "center_mm": [
+        0.0,
+        1500.0,
+        150.0
+      ],
+      "size_mm": [
+        2800.0,
+        2200.0,
+        300.0
+      ],
+      "color": "7f8994"
+    }
+  ],
+  "geometry_summary": {
+    "mesh_nodes": 15,
+    "triangles": 240,
+    "units": "millimetres Z-up in OBJ; metres Y-up in glTF/GLB",
+    "extent_mm": 9000,
+    "suggested_subject_support_mm": 0.0
+  },
+  "radiance": {
+    "file": "illumination.hdr",
+    "exr": "illumination.exr",
+    "orientation": "phi = 2*pi*(u-.5), theta=pi*v, Z up",
+    "native_rotation_offset_rad": 3.141592653589793,
+    "sun_disk_in_hdr": false,
+    "analytic_sun": null,
+    "source_owner": "HDR owns distant room/task patches; the separate Sun owns solar energy",
+    "units": "authored relative linear-sRGB",
+    "measurement_status": "not_measured"
+  },
+  "background": {
+    "file": "backplate.png",
+    "kind": "camera_only_shaded_geometry_authoring_view",
+    "lighting_source": false,
+    "limitations": "Not a photograph or native renderer output; finite scene geometry is provided separately."
+  },
+  "limitations": [
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "full_original_requirements_validated": false
+}

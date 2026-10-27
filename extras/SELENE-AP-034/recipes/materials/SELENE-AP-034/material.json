@@ -1,0 +1,101 @@
+{
+  "id": "SELENE-AP-034",
+  "name": "Solder-mask board face",
+  "original_specification": {
+    "id": "SELENE-AP-034",
+    "name": "Solder-mask board face",
+    "source_catalog_ids": [
+      "MAT-161"
+    ],
+    "family": "Circuit-board surfaces",
+    "domains": [
+      "electronics",
+      "LED lighting",
+      "3D printers"
+    ],
+    "purpose": "A green dielectric preview for the masked board face, separate from metal pads.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-034 Solder-mask board face",
+        "color": "#32624b",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.42,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Layered translucency",
+        "Pad masks",
+        "Trace topography",
+        "Silkscreen"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Pigmented dielectric solder mask over board and conductor structures.",
+      "structure": [
+        "Solder-mask dielectric",
+        "Copper or laminate underlayer as appropriate",
+        "Independent exposed pads and legends"
+      ],
+      "authoring_controls": [
+        {
+          "id": "surface_texture_pitch",
+          "value": 0.12,
+          "unit": "mm",
+          "meaning": "Illustrative mask microtexture size.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "surface_texture_relief",
+          "value": 0.002,
+          "unit": "mm",
+          "meaning": "Render-only mask surface relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use explicit masks or separate faces for exposed metal pads",
+        "Keep silkscreen and copper geometry independent"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-025",
+        "CAP-026",
+        "CAP-033",
+        "CAP-035",
+        "CAP-038"
+      ],
+      "unknown_optical_inputs": [
+        "Mask optical constants and absorption",
+        "Actual layer thickness"
+      ],
+      "validation_criteria": [
+        "Exposed pads must remain metallic while masked regions remain dielectric",
+        "A green color must not imply board certification"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#32624b",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.42,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-034 Solder-mask board face",
+    "bodies": [
+      "SELENE-AP-034"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

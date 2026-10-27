@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "invar-36",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "Invar 36 reference / Lathe-turned face",
+        "density_g_cm3": 8.11,
+        "color": [
+          197,
+          196,
+          191
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.26,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "Invar 36 reference",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "sand-invar-36",
+              "title": "Invar 36 reference primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://www.sandmeyersteel.com/ssc-invar-36/"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 8109.999999999999
+              },
+              "source_id": "sand-invar-36",
+              "conditions": {
+                "temperature_k": null,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "Supplier plate reference; heat treatment and test direction not stated for all physical values; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

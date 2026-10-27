@@ -1,0 +1,181 @@
+{
+  "id": "MAT-489",
+  "name": "Machined isogrid panel surface",
+  "family": "Aerospace cores and lightweight sections",
+  "version": "1.0.0-local",
+  "seed": 10072391,
+  "pattern": "honeycomb",
+  "base_linear_low": [
+    0.25548842765979524,
+    0.24538923905122248,
+    0.2355268416652944
+  ],
+  "base_linear_high": [
+    0.4732177339476868,
+    0.4548281666305842,
+    0.436869771390536
+  ],
+  "roughness": 0.752,
+  "roughness_variation": 0.06,
+  "metallic": 0.4,
+  "height_span_mm": 1.0,
+  "tile_mm": [
+    70,
+    70
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-489",
+    "name": "Machined isogrid panel surface",
+    "family": "Aerospace cores and lightweight sections",
+    "domains": [
+      "aerospace",
+      "space",
+      "industrial"
+    ],
+    "description": "Integral metal ribs surround open triangular pockets.",
+    "use_cases": [
+      "Aerospace structure concepts"
+    ],
+    "optical_model": "Explicit lightweight-core geometry with separate wall, skin and bond-line appearances.",
+    "controls": [
+      "cell geometry",
+      "wall finish",
+      "skin masks",
+      "milling marks",
+      "rib finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Ribs and pockets are CAD geometry, not displacement textures.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-090",
+      "CAP-097"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Surface detail must not change rib thickness or structural mass.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b76405fd3565ccdfbd56d9634bfa9c8c8f3cb78661c399d9406ff2cfad6864c7",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "c2fbdd6ddff4b5551a242556c74fac0ed09fcc308cc9edf3926aafc176139366",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "5486f9e60aecdea8ad8921f8f19265bd27b937cd48c2704d0217e0747ffe8ee2",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "fa00963c1b9bb16fc9a27b778100347e52d17f958e4c5c47e07d0a486207dc02",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "002216cee7d083a84d7dbb43350c80835649a1e2b043b2e468786164de41d99e",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "0148c726c7e45a3348ebbfa492e35a91aeca2392bc62a2c8bc664509790b615b",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1a35e1f59a599b8a65487939e9ba100f46e9447e43cfd13e24d20b407a727e67",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "cb85bc8c6b092df18f96079e1dc3861bf6d264870775072e79e572158c797a5b",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "b315311bfe1c8e4a65ea3b638f06352caaa467e458ca9f27673907e69345cab7",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

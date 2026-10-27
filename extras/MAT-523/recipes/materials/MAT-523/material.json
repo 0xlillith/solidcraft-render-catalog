@@ -1,0 +1,182 @@
+{
+  "id": "MAT-523",
+  "name": "Opaque multilayer wire-insulation section",
+  "family": "Space harness and mechanism interfaces",
+  "version": "1.0.0-local",
+  "seed": 10341637,
+  "pattern": "weave",
+  "base_linear_low": [
+    0.25890772063732287,
+    0.18970965608809473,
+    0.05653206173457971
+  ],
+  "base_linear_high": [
+    0.4794439092201998,
+    0.35344146332459037,
+    0.11093897808386155
+  ],
+  "roughness": 0.464,
+  "roughness_variation": 0.06,
+  "metallic": 0.3,
+  "height_span_mm": 0.25,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-523",
+    "name": "Opaque multilayer wire-insulation section",
+    "family": "Space harness and mechanism interfaces",
+    "domains": [
+      "space",
+      "aerospace",
+      "SELENE"
+    ],
+    "description": "Distinct dielectric layers surround an explicit conductor core.",
+    "use_cases": [
+      "Wiring cutaways"
+    ],
+    "optical_model": "Explicit insulating, conductive and joining regions for mechanism illustrations; no vacuum, contamination or flight qualification is asserted.",
+    "controls": [
+      "region masks",
+      "construction orientation",
+      "surface roughness",
+      "layer boundaries",
+      "cut finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use a declared illustrative layer stack and actual overall diameter.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "No insulation rating or outgassing claim is encoded.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Topology, openings and assembled geometry require matching geometry; the texture coupon does not manufacture them."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "e9f659fb12a7ccf2ae3a6830c1de03fea680d9b145de7e815fed9480bd9ce377",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "d30587edc1d96e046d7cd64944f1e3faae9aed28dfecc4e092eff2d9ac066aa1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "0b15628bfb4db59dd04fd47d76f0d436d2e2809f2cd907121f8a799896f51e6c",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "cb16feea347231620c8b1203362bf05c14c620ed03d802623c73ce9b4d0578eb",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "c7dc54a5cfdcce67588189a969a958de5376af75215a47619b8d3f00fbc6bebd",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "c80e8f8340a32edd10ad9b8595f042bb078021a8b7fea62f315ac8411a55eb51",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "15fc9b16ea623bbc4691affa78b9beba74d5180b8c7bf4f6059dab17b4a27936",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "6a1e5fe9587a595c8e27826d4a79ed8f35351114dea8258ded71cbabf4df16e9",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "c25539b5cb610f980f99ce1768bbd1ff440f3dcd6088dc8c62df20666017b2b0",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

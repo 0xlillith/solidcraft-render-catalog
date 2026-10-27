@@ -1,0 +1,101 @@
+{
+  "id": "SELENE-AP-037",
+  "name": "Battery-can metal preview",
+  "original_specification": {
+    "id": "SELENE-AP-037",
+    "name": "Battery-can metal preview",
+    "source_catalog_ids": [
+      "MAT-341"
+    ],
+    "family": "Battery assemblies",
+    "domains": [
+      "electronics",
+      "automotive",
+      "aerospace"
+    ],
+    "purpose": "A metal-can preview for a modeled cylindrical cell housing.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-037 Battery-can metal preview",
+        "color": "#b3bbc3",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 1.0,
+          "roughness": 0.35,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Drawn finish",
+        "Sleeve and label layers",
+        "Weld texture",
+        "Electrochemical behavior"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Conductor shell with separately assignable sleeve, cap, weld and terminal insulation.",
+      "structure": [
+        "Conductor shell",
+        "Optional dielectric label sleeve as a separate layer",
+        "Terminal insulator"
+      ],
+      "authoring_controls": [
+        {
+          "id": "drawing_line_pitch",
+          "value": 0.24,
+          "unit": "mm",
+          "meaning": "Illustrative shell-drawing line spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "drawing_line_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Render-only drawn finish.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use cylinder-local coordinates",
+        "Keep cap, weld seam and insulation independently targetable"
+      ],
+      "capability_requirements": [
+        "CAP-017",
+        "CAP-020",
+        "CAP-033",
+        "CAP-035",
+        "CAP-038",
+        "CAP-039"
+      ],
+      "unknown_optical_inputs": [
+        "Shell optical constants",
+        "Sleeve optical properties if included"
+      ],
+      "validation_criteria": [
+        "Terminals must remain separate from the can appearance",
+        "A visual can must not imply chemistry, charge state or qualification"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#b3bbc3",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 1.0,
+      "roughness": 0.35,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-037 Battery-can metal preview",
+    "bodies": [
+      "SELENE-AP-037"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

@@ -1,0 +1,98 @@
+{
+  "id": "SELENE-AP-021",
+  "name": "Silicone cable jacket",
+  "original_specification": {
+    "id": "SELENE-AP-021",
+    "name": "Silicone cable jacket",
+    "source_catalog_ids": [
+      "MAT-333"
+    ],
+    "family": "Harness insulation",
+    "domains": [
+      "SELENE",
+      "electronics",
+      "3D printers"
+    ],
+    "purpose": "A soft matte outer-jacket appearance for a separately modeled flexible cable.",
+    "status": "prepared_authoring_input",
+    "component_binding": "unbound",
+    "baseline_projection": {
+      "command": "appearance.assign",
+      "role": "opaque_surface",
+      "runtime_parameters": {
+        "appearance": "SELENE-AP-021 Silicone cable jacket",
+        "color": "#484d56",
+        "opacity": 1.0,
+        "pbr": {
+          "metallic": 0.0,
+          "roughness": 0.77,
+          "dielectric_ior": 1.5
+        }
+      },
+      "value_basis": "Original, unmeasured preview choices; no grade-specific optical constants.",
+      "fidelity": "Uniform opaque response only; detailed target behavior is not encoded.",
+      "omitted_target_features": [
+        "Extrusion microtexture",
+        "Subsurface response",
+        "Cable deformation"
+      ]
+    },
+    "advanced_target": {
+      "status": "authored_specification_not_runtime_bound",
+      "optical_model": "Opaque dielectric elastomer surface with subtle extrusion direction.",
+      "structure": [
+        "Elastomer jacket",
+        "Cable path and cross-section geometry"
+      ],
+      "authoring_controls": [
+        {
+          "id": "extrusion_line_pitch",
+          "value": 0.2,
+          "unit": "mm",
+          "meaning": "Illustrative axial extrusion-line spacing.",
+          "basis": "original illustrative authoring value"
+        },
+        {
+          "id": "extrusion_line_relief",
+          "value": 0.003,
+          "unit": "mm",
+          "meaning": "Small render-only surface relief.",
+          "basis": "original illustrative authoring value"
+        }
+      ],
+      "geometry_and_mapping_requirements": [
+        "Use a cable-local longitudinal frame",
+        "Keep cable bending and routing separate from material assignment"
+      ],
+      "capability_requirements": [
+        "CAP-028",
+        "CAP-033",
+        "CAP-034",
+        "CAP-035",
+        "CAP-104"
+      ],
+      "unknown_optical_inputs": [
+        "Jacket optical response",
+        "Scattering data if translucency is later requested"
+      ],
+      "validation_criteria": [
+        "The texture must follow cable bends without a world-space slide",
+        "A visual jacket must not claim dielectric strength or bend life"
+      ]
+    }
+  },
+  "native_projection": {
+    "color": "#484d56",
+    "opacity": 1.0,
+    "pbr": {
+      "metallic": 0.0,
+      "roughness": 0.77,
+      "dielectric_ior": 1.5
+    },
+    "name": "SELENE-AP-021 Silicone cable jacket",
+    "bodies": [
+      "SELENE-AP-021"
+    ]
+  },
+  "scope": "Exact original opaque baseline; advanced source intent remains explicit."
+}

@@ -1,0 +1,181 @@
+{
+  "id": "MAT-319",
+  "name": "Gold bond-wire appearance",
+  "family": "Electronic bonding and contact finishes",
+  "version": "1.0.0-local",
+  "seed": 8726161,
+  "pattern": "grain",
+  "base_linear_low": [
+    0.4226072813519184,
+    0.27640355103421554,
+    0.045880373795748115
+  ],
+  "base_linear_high": [
+    0.7775237063422992,
+    0.5113019884503626,
+    0.0915433672101682
+  ],
+  "roughness": 0.422,
+  "roughness_variation": 0.06,
+  "metallic": 1.0,
+  "height_span_mm": 0.018,
+  "tile_mm": [
+    50,
+    50
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-319",
+    "name": "Gold bond-wire appearance",
+    "family": "Electronic bonding and contact finishes",
+    "domains": [
+      "electronics",
+      "industrial"
+    ],
+    "description": "Thin curved conductors connect explicit attachment points.",
+    "use_cases": [
+      "Semiconductor packages"
+    ],
+    "optical_model": "Conductive interfaces and compound process materials with explicit binder, residue or coating components.",
+    "controls": [
+      "conductor roughness",
+      "coverage masks",
+      "process state",
+      "wire roughness",
+      "attachment finish"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Use curve geometry with authored wire diameter.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-038",
+      "CAP-039",
+      "CAP-104"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Wires must cast appropriate small shadows without inflated thickness.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "eea9de5b41932ff7ce7e8075cb824c6c1f013c1d053dda0c28d944417afe9144",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "b71503f3498e3bd6a5f20bf617a613df7a24ee35ae61b4b2e03046e04872de57",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "81db9dfbc198527ff70ef8936d1a7521e66f3339a348ee5d3c13c6c6600cfe03",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "f4dfca7f77bdea7b8d8c3b70447e0db14862303cdee5bb05b2a6b3f4d960e6d0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "764ddde2da6917e7ab2ab318893c5c7f364b84eca1dc24b8a7bb05e739c75deb",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "9f006eb01025c3ab3b8eb36fe953f62d22403fccf8c165512639b860705dc5d1",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "1a9460b0eaa12c6fe5b4fbb3eb55d4650c1151ae5f9209184379733f195ce816",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "8fab1a1fd72503b202e0410d10affb867a7707309ce5e4e0d353343a279f3163",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "9fd726a1ab6a06a7b35e31bd84c22ff6c872cae4bfd5ddf42dfa51458b3546f5",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

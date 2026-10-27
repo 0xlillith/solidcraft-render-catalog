@@ -1,0 +1,115 @@
+{
+  "id": "LUZ-038",
+  "name": "Labeled bottle with liquid",
+  "family": "04 Glass and optical products",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-038",
+    "name": "Labeled bottle with liquid",
+    "family": "04 Glass and optical products",
+    "domains": [
+      "product",
+      "optics"
+    ],
+    "description": "A proposed lighting arrangement for beverage containers.",
+    "use_cases": [
+      "Beverage containers"
+    ],
+    "sources": "Rear panel, label fill and rim",
+    "geometry": "Front source placed to avoid a dominant central reflection",
+    "contribution_policy": "Rear 0, front -1.5 and rim -1 reference EV",
+    "controls": [
+      "Liquid-to-label illumination balance",
+      "rim"
+    ],
+    "authoring_method": "Original procedural rig specification; author numeric emitters and physical cards, then calibrate in the fixed reference scene. No third-party assets included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-009",
+      "CAP-025",
+      "CAP-026",
+      "CAP-027"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Correct glass-liquid interfaces and readable labeling"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 788634,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          1600.0,
+          200.0
+        ],
+        "u": [
+          1200.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          -148.84168150705017,
+          1190.7334520564013
+        ],
+        "radiance": [
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "center": [
+          -1400.0,
+          -1000.0,
+          800.0
+        ],
+        "u": [
+          -72.65477421488706,
+          101.71668390084186,
+          0.0
+        ],
+        "v": [
+          308.7901412793992,
+          220.56438662814233,
+          816.0882305241266
+        ],
+        "radiance": [
+          3,
+          3,
+          3
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Refraction/caustic quality depends on the actual optical object, topology and executor, not on this light recipe."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

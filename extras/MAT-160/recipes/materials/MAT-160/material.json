@@ -1,0 +1,182 @@
+{
+  "id": "MAT-160",
+  "name": "Visible short-fibre-reinforced polymer",
+  "family": "Composite reinforcement foundations",
+  "version": "1.0.0-local",
+  "seed": 7467040,
+  "pattern": "weave_twill",
+  "base_linear_low": [
+    0.019803079073331897,
+    0.023007670561817056,
+    0.028348645115942483
+  ],
+  "base_linear_high": [
+    0.04405933801412674,
+    0.04989456430659225,
+    0.0596199209573878
+  ],
+  "roughness": 0.43000000000000005,
+  "roughness_variation": 0.06,
+  "metallic": 0.0,
+  "height_span_mm": 0.2,
+  "tile_mm": [
+    80,
+    80
+  ],
+  "cycles_u": 16,
+  "cycles_v": 16,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-160",
+    "name": "Visible short-fibre-reinforced polymer",
+    "family": "Composite reinforcement foundations",
+    "domains": [
+      "automotive",
+      "aerospace",
+      "industrial"
+    ],
+    "description": "Short aligned fibres interrupt a continuous moulded matrix.",
+    "use_cases": [
+      "Technical mouldings"
+    ],
+    "optical_model": "Layered dielectric matrix and optically distinct reinforcement with direction-dependent response.",
+    "controls": [
+      "reinforcement architecture",
+      "matrix finish",
+      "orientation",
+      "fibre orientation",
+      "mould flow"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep fibres fine and flow fields at component scale.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-020",
+      "CAP-021",
+      "CAP-036"
+    ],
+    "priority": "P1",
+    "cost": "High",
+    "validation": [
+      "Appearance-based fibre alignment must not become simulation input automatically.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "0ce83ccee30886f33bcd9f621f014b5a014abf73f7671351c72e2f9e088f0e0f",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "aa294c8b574dd964e8db67cc29c57b3ce9f7de243ec1a9c4fee2b916c4a44668",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "cbff7604d5770d98ccb29c392cb36faca766e5375aaa045f5e95f88997d222c3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "edaf7f391d0595a00694d221bd5d090fcf66e687edebbe007756180dcedb5b28",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "ce5d91edd0cf4df566c0d595f8a04381c2b07fec6432f77ff8f936d687f6f7bd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "c3292b60ac96f4a66dcdae6c906a615cf6954e3ede1a3917f51c94f3615295c0",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "8ed7645fbc27045d5ad8ecbbf95af86260cab281c2a695e3d5bfa17490ed6cb8",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "cb151de52f19c523dce9c11a8f16e1964db4396c263796f662b31b8ead39f537",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

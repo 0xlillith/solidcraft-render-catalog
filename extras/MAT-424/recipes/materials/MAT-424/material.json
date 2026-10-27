@@ -1,0 +1,190 @@
+{
+  "id": "MAT-424",
+  "name": "Brushed polyurethane varnish",
+  "family": "Woodworking and DIY finishes",
+  "version": "1.0.0-local",
+  "seed": 9557656,
+  "pattern": "brushed",
+  "base_linear_low": [
+    0.24538923905122248,
+    0.13504269004224603,
+    0.03760608833323206
+  ],
+  "base_linear_high": [
+    0.4548281666305842,
+    0.25389862962916443,
+    0.07647675786051211
+  ],
+  "roughness": 0.302,
+  "roughness_variation": 0.06,
+  "metallic": 0,
+  "height_span_mm": 0.2,
+  "tile_mm": [
+    160,
+    160
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.7,
+  "anisotropy": 0.65,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-424",
+    "name": "Brushed polyurethane varnish",
+    "family": "Woodworking and DIY finishes",
+    "domains": [
+      "woodworking",
+      "DIY"
+    ],
+    "description": "A clear layer contains faint application marks.",
+    "use_cases": [
+      "DIY furniture"
+    ],
+    "optical_model": "Editable finish layer over a host wood volume; preparation and wear remain separate masks.",
+    "controls": [
+      "finish coverage",
+      "surface roughness",
+      "host-grain preservation",
+      "brush marks",
+      "coating build"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep brush direction separate from wood-grain direction.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-021",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "Marks should appear in reflection rather than as opaque stripes.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability.",
+    "Directional normal map is not proof of anisotropic transport; portable material declares anisotropy explicitly."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "6fdba0c6e993c1a22cd3983ece59e8728196ab1e097d3ed794b377df83bdb348",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "00773d05479792f059f64d990f5a76040cc57e13212878a0221ef86c82c41203",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "d6906d46947483f0ad49f78962d27c7b75fc57513dfc9a837c5ad92255dfbc61",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "c62b5716203cfd24f46061cbc8472cc25a138d00ba699414d37fb6560d088ae3",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "2403bcf15653dcfc8aceda6dc83b0b4edb35440591af555fcfcec8caf4553514",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "b2f1b686219fd3edfda872bf4513a0a18a1612be7aacfa3daaa3acf3a2fc6d35",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "2557586d78536efd3ef2ecbb1a264244c2d593463eb583b789114e01cc9e3361",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "clearcoat": {
+      "path": "maps/clearcoat.png",
+      "sha256": "269340a30c9bd20bff1643db4a82066fa773e00a902f2074bdc6946e08ba55b7",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "6f742d4266938f29317f26d9789b8f2a8987c23ffdfaea65b4401f0470f127a7",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "6c1fa227592dfd2a9873168d296411fffce8a5185b1d9a32d02499eaf8d3a60c",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "ENV-255",
+  "name": "Lunar crater floor depression",
+  "kind": "environment",
+  "family": "Lunar terrain and surface forms",
+  "path": "environments/ENV-255",
+  "thumbnail": "environments/ENV-255/native-model-preview.png",
+  "description": "Lunar crater floor depression is a conceptual setting for sampling tools; terrain-context presentation. It combines the specified surroundings with independently managed lighting.",
+  "scope": "Finite original context geometry, a separate HDR/EXR illumination field and a camera-only authored backplate. Sun energy is kept outside the HDR to prevent duplicate solar illumination.",
+  "preview_scope": "Actual SolidCraft modelling/product viewport snapshot. It does not apply the saved HDR/path-traced lighting.",
+  "badge": "Native scene + geometry + HDR",
+  "limitations": [
+    "Conceptual terrain, not measured lunar topography.",
+    "Vacuum: no atmospheric haze, rain, wind or added sky illumination.",
+    "Procedural family realization with named contextual components; no claim that every physical detail of the concept has been modeled or validated.",
+    "Native glTF import retains geometry and scalar appearances, not arbitrary material extensions or textures."
+  ],
+  "files": [
+    {
+      "path": "environments/ENV-255/environment.solidcraft",
+      "label": "Native environment"
+    },
+    {
+      "path": "environments/ENV-255/environment.glb",
+      "label": "Self-contained GLB"
+    },
+    {
+      "path": "environments/ENV-255/environment.gltf",
+      "label": "Editable glTF"
+    },
+    {
+      "path": "environments/ENV-255/environment.obj",
+      "label": "OBJ geometry"
+    },
+    {
+      "path": "environments/ENV-255/illumination.hdr",
+      "label": "Radiance HDR"
+    },
+    {
+      "path": "environments/ENV-255/illumination.exr",
+      "label": "Float EXR"
+    },
+    {
+      "path": "environments/ENV-255/backplate.png",
+      "label": "Authored backplate PNG"
+    },
+    {
+      "path": "environments/ENV-255/environment.json",
+      "label": "Environment recipe"
+    }
+  ],
+  "images": [
+    {
+      "path": "environments/ENV-255/native-model-preview.png",
+      "label": "Native model snapshot"
+    },
+    {
+      "path": "environments/ENV-255/preview.png",
+      "label": "Authored preview"
+    },
+    {
+      "path": "environments/ENV-255/panorama.png",
+      "label": "Tone-mapped panorama"
+    },
+    {
+      "path": "environments/ENV-255/backplate.png",
+      "label": "Authored background"
+    }
+  ]
+}

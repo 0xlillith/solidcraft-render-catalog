@@ -1,0 +1,91 @@
+{
+  "id": "LUZ-145",
+  "name": "High-bay industrial fixture",
+  "family": "15 Functional photometry",
+  "version": "1.0.0-local",
+  "license": "MIT OR Apache-2.0",
+  "original_specification": {
+    "id": "LUZ-145",
+    "name": "High-bay industrial fixture",
+    "family": "15 Functional photometry",
+    "domains": [
+      "lighting_design",
+      "architecture"
+    ],
+    "description": "A proposed lighting arrangement for tall halls and yards.",
+    "use_cases": [
+      "Tall halls and yards"
+    ],
+    "sources": "High-bay or floodlight profile",
+    "geometry": "Real height and receiver grid",
+    "contribution_policy": "Documented source output and distribution",
+    "controls": [
+      "Beam distribution",
+      "mounting height",
+      "spacing"
+    ],
+    "authoring_method": "Original authoring specification requiring a separately sourced and licensed IES/LDT profile or a clearly labeled analytic distribution. No profile asset or absolute measurement is included.",
+    "capability_requirements": [
+      "CAP-001",
+      "CAP-012"
+    ],
+    "priority": "P2",
+    "cost": "High",
+    "validation": [
+      "Distance and occlusion affect light normally"
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "units": {
+    "length": "mm",
+    "radiance": "authored relative linear-sRGB",
+    "angle": "radian"
+  },
+  "subject_reference_extent_mm": 1000.0,
+  "subject_origin_mm": [
+    0,
+    0,
+    0
+  ],
+  "scale_policy": "Scale light positions/sizes once to an explicitly selected subject; never scale the subject.",
+  "seed": 953735,
+  "lights": {
+    "environment": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_lights": [
+      {
+        "center": [
+          0.0,
+          0.0,
+          1500.0
+        ],
+        "u": [
+          -125.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          125.0,
+          0.0
+        ],
+        "radiance": [
+          20,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "passive_stage": [],
+  "limitations": [
+    "Original luminaire-shaped area source, not measured IES/LDT intensity distribution or lux validation."
+  ],
+  "unresolved_external_inputs": [],
+  "measurement_status": "not_measured",
+  "native_gpu_complete": true
+}

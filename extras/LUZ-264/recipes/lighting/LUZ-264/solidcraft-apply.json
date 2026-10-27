@@ -1,0 +1,68 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-264 Lunar occluded sunlight",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 1137352,
+            "lighting": {
+              "environment": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "area_lights": [],
+              "sun": {
+                "direction": [
+                  -0.15187611829634035,
+                  0.8613322685281437,
+                  0.48480962024633706
+                ],
+                "angular_radius_rad": 0.00465,
+                "radiance": [
+                  14000.0,
+                  14000.0,
+                  14000.0
+                ]
+              }
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": [
+          {
+            "id": "passive-fill",
+            "center_mm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "half_u_mm": [
+              0.0,
+              -400.0,
+              0.0
+            ],
+            "half_v_mm": [
+              0.0,
+              0.0,
+              750.0
+            ],
+            "reflectance_linear": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

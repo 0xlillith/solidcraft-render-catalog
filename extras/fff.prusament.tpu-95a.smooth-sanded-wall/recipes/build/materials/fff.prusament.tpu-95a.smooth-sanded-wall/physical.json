@@ -1,0 +1,385 @@
+{
+  "id": "physical.fff.prusament.tpu-95a",
+  "key": "tpu-95a",
+  "name": "Prusament TPU 95A",
+  "chemistry": "Thermoplastic polyurethane",
+  "filler_mass_fraction": null,
+  "texture_class": "smooth",
+  "appearance_palette_srgb": [
+    60,
+    67,
+    75
+  ],
+  "source": {
+    "id": "prusament-tpu-95a-tds",
+    "url": "https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/05/80316f6d-tds-prusament_tpu_95a_en-1.pdf",
+    "version": "1.0",
+    "dated": "2025-05-29",
+    "accessed": "2026-10-25",
+    "pages_reviewed": [
+      1,
+      2,
+      3
+    ],
+    "table_visually_verified": true,
+    "redistributed_document": false
+  },
+  "specimen_context": {
+    "printer": "Original Prusa i3 MK4S",
+    "slicer": "PrusaSlicer 2.8.1",
+    "layer_height_mm": 0.2,
+    "infill_percent": 100,
+    "infill_pattern": "rectilinear",
+    "perimeters": 2,
+    "solid_top_layers": 0,
+    "solid_bottom_layers": 0,
+    "nozzle_temperature_k": 493.15,
+    "bed_temperature_k": 348.15,
+    "source_print_speed_mm_s": 36,
+    "nozzle_diameter_mm": 0.4,
+    "source_locator": "p.3 specimen footnote",
+    "not_a_general_slicing_profile": true,
+    "nozzle_material": "brass",
+    "extrusion_multiplier": 1.08,
+    "cooling_percent": 50,
+    "source_additional_retraction_and_overhang_settings": "See TDS p.3; not reduced to a mechanical model."
+  },
+  "properties": [
+    {
+      "id": "density",
+      "quantity": "material_density",
+      "value": 1250.0,
+      "unit": "kg/m3",
+      "source_value": 1.25,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 1000,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 1183",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "g/cm3",
+        "temperature_k": null,
+        "specimen_basis": "material reference; not effective printed bulk density"
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "vicat-a",
+      "quantity": "vicat_softening_temperature",
+      "value": 374.75,
+      "unit": "K",
+      "source_value": 101.6,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 1,
+        "offset": 273.15
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 306",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "degC",
+        "source_variant": "A"
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "hdt-1.8",
+      "quantity": "heat_deflection_temperature",
+      "value": 351.75,
+      "unit": "K",
+      "source_value": 78.6,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 1,
+        "offset": 273.15
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 75",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "degC",
+        "bending_stress_pa": 1800000.0
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "hardness-a",
+      "quantity": "hardness_shore_a",
+      "value": 92,
+      "unit": "Shore A",
+      "source_value": 92,
+      "source_spread": 0.4,
+      "converted_spread": 0.4,
+      "conversion": {
+        "scale": 1,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {},
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "hardness-d",
+      "quantity": "hardness_shore_d",
+      "value": 39,
+      "unit": "Shore D",
+      "source_value": 39,
+      "source_spread": 0.7,
+      "converted_spread": 0.7,
+      "conversion": {
+        "scale": 1,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {},
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "filament-strength",
+      "quantity": "tensile_strength",
+      "value": 64000000.0,
+      "unit": "Pa",
+      "source_value": 64,
+      "source_spread": 3,
+      "converted_spread": 3000000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "specimen": "filament"
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "interlayer",
+      "quantity": "interlayer_adhesion",
+      "value": 9500000.0,
+      "unit": "Pa",
+      "source_value": 9.5,
+      "source_spread": 0.2,
+      "converted_spread": 200000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 527",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa"
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "uptake-24",
+      "quantity": "moisture_absorption",
+      "value": 0.0002,
+      "unit": "kg/kg",
+      "source_value": 0.02,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 0.01,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "percent",
+        "duration_h": 24,
+        "temperature_k": 298.15,
+        "relative_humidity": 0.2
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "uptake-168",
+      "quantity": "moisture_absorption",
+      "value": 0.0004,
+      "unit": "kg/kg",
+      "source_value": 0.04,
+      "source_spread": null,
+      "converted_spread": null,
+      "conversion": {
+        "scale": 0.01,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "Prusa Polymers",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "percent",
+        "duration_h": 168,
+        "temperature_k": 298.15,
+        "relative_humidity": 0.2
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "printed-strength",
+      "quantity": "tensile_strength",
+      "value": 41400000.0,
+      "unit": "Pa",
+      "source_value": 41.4,
+      "source_spread": 1.3,
+      "converted_spread": 1300000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 37",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.tpu-95a",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "stress100",
+      "quantity": "stress_at_100_percent_elongation",
+      "value": 8900000.0,
+      "unit": "Pa",
+      "source_value": 8.9,
+      "source_spread": 0.2,
+      "converted_spread": 200000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 37",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.tpu-95a",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "stress200",
+      "quantity": "stress_at_200_percent_elongation",
+      "value": 14700000.0,
+      "unit": "Pa",
+      "source_value": 14.7,
+      "source_spread": 0.2,
+      "converted_spread": 200000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 37",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.tpu-95a",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "stress300",
+      "quantity": "stress_at_300_percent_elongation",
+      "value": 21300000.0,
+      "unit": "Pa",
+      "source_value": 21.3,
+      "source_spread": 0.4,
+      "converted_spread": 400000.0,
+      "conversion": {
+        "scale": 1000000.0,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 37",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "MPa",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.tpu-95a",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    },
+    {
+      "id": "printed-elongation",
+      "quantity": "elongation_maximum",
+      "value": 5.633,
+      "unit": "1",
+      "source_value": 563.3,
+      "source_spread": 13.1,
+      "converted_spread": 0.131,
+      "conversion": {
+        "scale": 0.01,
+        "offset": 0
+      },
+      "qualifier": "manufacturer_typical",
+      "method": "ISO 37",
+      "source_locator": "p.2 property table; p.3 for printed-specimen context",
+      "conditions": {
+        "source_unit": "percent",
+        "orientation_as_reported": "Horizontal",
+        "specimen_context_id": "test.tpu-95a",
+        "temperature_k": null
+      },
+      "statistical_interpretation_of_spread": null,
+      "source_id": "prusament-tpu-95a-tds"
+    }
+  ],
+  "effective_printed_density_kg_m3": null,
+  "full_mechanical_model": null,
+  "limitations": [
+    "Manufacturer typical reference data, not engineering design allowables or identification of a printed part.",
+    "Source orientation labels are preserved; Vertical xz is not silently mapped to build-Z tensile loading.",
+    "A 0.20 mm / 100 percent infill test does not establish properties of every authored visual layer, infill or postprocess.",
+    "The source +/- spread is retained; its statistical meaning is not assumed.",
+    "HDT and Vicat are test results, not maximum continuous service temperatures.",
+    "Palette, roughness and bump detail are original illustrative authoring, not measured optical constants.",
+    "No printer compatibility, safety, chemical resistance or manufacturer endorsement is certified.",
+    "The trade name 95A does not replace the source measured Shore A value 92 +/- 0.4.",
+    "Source elongation moduli are stresses at specified strains, not small-strain Young modulus."
+  ],
+  "excluded_source_rows": [
+    {
+      "label": "Maximum elongation for filament",
+      "source_text": "7264 +/- 76 percent",
+      "reason": "Ambiguous/suspicious source magnitude retained for review, not silently corrected or used."
+    }
+  ]
+}

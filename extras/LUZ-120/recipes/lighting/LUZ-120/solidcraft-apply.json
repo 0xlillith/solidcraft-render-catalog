@@ -1,0 +1,54 @@
+[
+  {
+    "command": "render.settings.set",
+    "params": {
+      "name": "LUZ-120 Room without direct sun",
+      "set": {
+        "width": 960,
+        "height": 640,
+        "exposure_ev": -1,
+        "job": {
+          "method": "gpu_path",
+          "options": {
+            "samples": 128,
+            "max_depth": 8,
+            "seed": 915160,
+            "lighting": {
+              "environment": [
+                0.025,
+                0.035,
+                0.055
+              ],
+              "area_lights": [
+                {
+                  "center": [
+                    -1700.0,
+                    -200.0,
+                    1000.0
+                  ],
+                  "u": [
+                    -64.26268616206846,
+                    546.2328323775819,
+                    0.0
+                  ],
+                  "v": [
+                    526.0271196921225,
+                    61.88554349319088,
+                    906.6232121752464
+                  ],
+                  "radiance": [
+                    6.02,
+                    6.44,
+                    7.0
+                  ]
+                }
+              ]
+            },
+            "tone_map": "aces_fitted"
+          }
+        },
+        "stage": []
+      }
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "scope": "Proposed existing-engine commands, NOT executed/native accepted. No automatic body assignment.",
+  "source_profile": "c93200",
+  "commands": [
+    {
+      "command": "material.create",
+      "params": {
+        "name": "C93200 bearing bronze / Cross-satin brushed",
+        "density_g_cm3": 8.912929316685405,
+        "color": [
+          205,
+          166,
+          118
+        ],
+        "opacity": 1,
+        "pbr": {
+          "metallic": 1,
+          "roughness": 0.32,
+          "dielectric_ior": 1.5
+        },
+        "physical_card": {
+          "schema_version": 1,
+          "designation": "C93200 bearing bronze",
+          "family": "metal",
+          "sources": [
+            {
+              "id": "cda-c93200",
+              "title": "C93200 bearing bronze primary reference",
+              "kind": "public_reference",
+              "license": null,
+              "reference": "https://alloys.copper.org/alloy/C93200"
+            }
+          ],
+          "properties": [
+            {
+              "data": {
+                "kind": "density",
+                "kg_m3": 8912.929316685406
+              },
+              "source_id": "cda-c93200",
+              "conditions": {
+                "temperature_k": 293.15,
+                "moisture_dry_basis_kg_kg": null,
+                "strain_rate_per_s": null,
+                "state": "CDA alloy physical reference; product form and temper must be selected separately; reference only, not verified identity of a manufactured part"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remaining_extended_properties": "Retained in physical-profile.json. No guessed Poisson ratio or constitutive tensor is exported."
+}

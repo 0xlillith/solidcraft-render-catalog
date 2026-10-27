@@ -1,0 +1,180 @@
+{
+  "id": "MAT-384",
+  "name": "Binder-jetted metal green-part appearance",
+  "family": "Powder-printing and sintered states",
+  "version": "1.0.0-local",
+  "seed": 9240896,
+  "pattern": "powder",
+  "base_linear_low": [
+    0.023007670561817056,
+    0.10047305917310774,
+    0.055129413776975916
+  ],
+  "base_linear_high": [
+    0.04989456430659225,
+    0.19095094356894246,
+    0.10838490269837406
+  ],
+  "roughness": 0.742,
+  "roughness_variation": 0.06,
+  "metallic": 0.35,
+  "height_span_mm": 0.23,
+  "tile_mm": [
+    40,
+    40
+  ],
+  "cycles_u": 12,
+  "cycles_v": 32,
+  "ior": 1.5,
+  "transmission": 0.0,
+  "thin_walled": false,
+  "thickness_mm": 10.0,
+  "clearcoat": 0.0,
+  "anisotropy": 0.0,
+  "iridescence": 0.0,
+  "emission_strength": 0.0,
+  "authoring_license": "MIT OR Apache-2.0",
+  "measurement_status": "authored_not_measured",
+  "original_specification": {
+    "id": "MAT-384",
+    "name": "Binder-jetted metal green-part appearance",
+    "family": "Powder-printing and sintered states",
+    "domains": [
+      "additive manufacturing",
+      "industrial",
+      "aerospace"
+    ],
+    "description": "Metal particles remain held in a binder-like unsintered body.",
+    "use_cases": [
+      "Manufacturing-stage illustrations"
+    ],
+    "optical_model": "Granular, porous or post-treated material states with explicit process masks and substrate response.",
+    "controls": [
+      "particle structure",
+      "surface state",
+      "build orientation",
+      "particle grain",
+      "binder coverage"
+    ],
+    "scale_policy": "Store scene lengths in mm and angles in radians. Preserve physical feature size across part resizing. Keep the visual stage separate from final part dimensions.",
+    "authoring_method": "Original deterministic procedural recipe with versioned seed; optional in-house reference capture for later calibration. No third-party asset is included.",
+    "capability_requirements": [
+      "CAP-017",
+      "CAP-018",
+      "CAP-033",
+      "CAP-040",
+      "CAP-057",
+      "CAP-089",
+      "CAP-092",
+      "CAP-036",
+      "CAP-039"
+    ],
+    "priority": "P1",
+    "cost": "Medium",
+    "validation": [
+      "The surface must not appear as fully dense polished metal.",
+      "Check on a flat coupon, a curved part and an exposed edge under fixed neutral illumination; this is a proposed check, not a completed validation."
+    ],
+    "provenance_id": "ORIGINAL-2026-10-CATALOG",
+    "status": "concept"
+  },
+  "source_surface_id": null,
+  "limitations": [
+    "Illustrative authored RGB material; no measured optical/engineering certification.",
+    "Bump/height is not automatically geometric displacement.",
+    "Full original specification retained; generated realization is not every required physical capability."
+  ],
+  "maps": {
+    "base_color": {
+      "path": "maps/base_color.png",
+      "sha256": "b24c26d456411e74b24c87eecf048e703db409a9bf4cef9adeb6ed6cb0fbc717",
+      "encoding": "srgb",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "path": "maps/normal_gl.png",
+      "sha256": "a211320592f1bbea5882b948bd36c506c9f96af6a55f67e2a321a2189bae1014",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "path": "maps/roughness.png",
+      "sha256": "17fe424526a0395ba86307dff4bc2240d3b160e1c6a93c438cbeb24bd67c7a0f",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "path": "maps/metallic.png",
+      "sha256": "124fe05031d98728a27b7105a59604dc7ce962f00affbbc4b7afa1b7e5c3b4bd",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height16": {
+      "path": "maps/height16.png",
+      "sha256": "9fac81c33fa56ff86efe2b59f6f6b05cdb383c4517d32ccdeda768045593e5eb",
+      "encoding": "linear_data",
+      "bit_depth": 16,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "path": "maps/normal_dx.png",
+      "sha256": "3d8dfa57757a7616f9d8efb711460921ae7dda5b16155d804efc04061413be5d",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "orm": {
+      "path": "maps/orm.png",
+      "sha256": "a80ac487f7b06de734f44f804038b9e2723f81c1c8bf4b3c9965f4469081a0fc",
+      "encoding": "linear_data",
+      "bit_depth": 8,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height_mm": {
+      "path": "maps/height_mm.exr",
+      "sha256": "948c711f0fdedbc3c2a85deb2c0a15986c6394504183fe69cb488bd7c3be8369",
+      "units": "mm",
+      "zero": 0
+    },
+    "base_color_linear": {
+      "path": "maps/base_color_linear.exr",
+      "sha256": "97e42a47e1372f126f5a2f0cab24982cb94e1e7f76dec9ff7b2fd5840847cb00",
+      "encoding": "linear_srgb"
+    }
+  },
+  "preview_contract": "Original approximate authoring swatch, not a SolidCraft render or optical validation.",
+  "normal_convention": "normal_gl: +Y tangent-space, V image-up; normal_dx flips green. glTF UV0 V image-down, tangent basis supplied.",
+  "height_decoding": "(height16/65535 - 0.5) * height_span_mm",
+  "ao_contract": "ORM red is constant 1; no fictitious cavity occlusion baked in.",
+  "native_contract": {
+    "uniform_look": "supported; textures/advanced optics are not encoded in an appearance-library entry",
+    "runtime_texture_request": "opaque planar fields only; explicit file capture and exact target required",
+    "persistent_new_texture_binding": "not installed in the application built-in catalog; requires future importer",
+    "full_optical_intent": "portable material and recipe; native support is capability dependent"
+  }
+}
