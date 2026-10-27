@@ -1,0 +1,106 @@
+{
+  "id": "wood.red-alder.plain-sawn.satin-varnish",
+  "name": "Red alder / plain-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "red-alder/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "37d04c981ef86b472ed12e6e30d13d6e0c3f7f8d41607fa216ea27c0cb0e7979",
+    "normal_opengl": "def2bd9266bffbbf320cd45fe897c25ef1b8a498b31a3fd897162f70be272f82",
+    "roughness": "24aaabf49d80aa630f5d017fd6a9c066fbd166e250136910350ce5800fe7f5ed"
+  },
+  "physical_profile_id": "wood.usda2021.red-alder",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "04012bb7f6f591101f153e4bb5436362e379505aa8fac90856864aced15f08cd",
+      "bytes": 1052519,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "aefe05ced1db639a4aab54285784cd4487be5543500308959a07b91a8e9df7ea",
+      "bytes": 484098,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "ffe439ccc3f81b075327723fb52fdeff2dde041474063c489ec898b27f50fdeb",
+      "bytes": 484198,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "f416d88c6dbd9673e4dcd4964a9d34be49a9d50ebd7706d1c807430545ac3390",
+      "bytes": 274044,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "f96871fbde28df233bdfa3991d597b449ef2439e7dc36e394255b7c90d4e6f91",
+      "bytes": 354689,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "fbd3a00957d5fc9b87c83ab17870a1c67d16179e4d5fdd3b8e066fd686bea73a",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.red-alder.plain-sawn.satin-varnish"
+}

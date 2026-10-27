@@ -1,0 +1,106 @@
+{
+  "id": "wood.red-alder.end-grain.oiled",
+  "name": "Red alder / end-grain / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "red-alder/end-grain",
+  "source_file_sha256": {
+    "base_color": "1cc6dbffb8a96ef5d0c4e7113ae5727c98ac3881fd80b08ead764c43acbc8300",
+    "normal_opengl": "6bdc87b67c153bda4b6493757ed168d953fbf820730f5c6abcdf378c4e4fd6ca",
+    "roughness": "66c4308d61e1ceb7e682cc087d2d8f2600a3d62b26b2f74b7b49331b1fedd39e"
+  },
+  "physical_profile_id": "wood.usda2021.red-alder",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "892cc3e9e65545e4c5919fdeaca144df49e9ea6badef4ec919a1cd29feee49ab",
+      "bytes": 1288127,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "8ce0212ca1e22a76b66a8e1059add097806802f7eaf1bce6cd666d771320f848",
+      "bytes": 1178220,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "83440e47411dcd6ac012ca19b9e67bc63d2414e13bc35f5f9f5f7a9eaaa18421",
+      "bytes": 1178346,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "30cb5473efa1c3d5ac63a054746b4bc04183620526799fa5d39752e8b71d1095",
+      "bytes": 415894,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "502020d30c30ad3338a9e889c856d39640f5101b2bc0de0f90e972e0fbf22b78",
+      "bytes": 533354,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "3303d546b9b6054c24e5ee13ed92a0332686ba30aeb5676dd507a6640dea33ff",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.red-alder.end-grain.oiled"
+}

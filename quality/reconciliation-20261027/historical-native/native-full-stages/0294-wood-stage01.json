@@ -1,0 +1,473 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -5.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 407.3985999973444,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -305.5,
+            -149.5,
+            200.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            305.5,
+            -160.99999999999997,
+            -62.5
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -114.99999999999999,
+            405.0
+          ],
+          "u": [
+            92.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -47.25000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.white-oak.rift-sawn.oiled flat",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.white-oak.rift-sawn.oiled curved",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 wood.white-oak.rift-sawn.raw flat",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.raw/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.white-oak.rift-sawn.raw curved",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.white-oak.rift-sawn.raw/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.white-oak.rift-sawn.oiled flat",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.white-oak.rift-sawn.oiled curved",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 534632217,
+      "face_appearances": 0,
+      "geometry_bytes": 3691880,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 530940313,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -305.5,
+              -149.5,
+              200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              305.5,
+              -160.99999999999997,
+              -62.5
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -114.99999999999999,
+              405.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              92.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -47.25000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 407.3985999973444,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -5.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 4081849,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 1180
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 525034,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 1180
+      },
+      "png_bytes": 525034,
+      "png_sha256": "f7c3d6f8aca8842ed2bed0a6bb1c132b83f3b5018a73087779e9f63be678f54c",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 1180
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0294-wood-stage01.png",
+    "presentation": null
+  },
+  "png_sha256": "f7c3d6f8aca8842ed2bed0a6bb1c132b83f3b5018a73087779e9f63be678f54c",
+  "elapsed_s": 0.953,
+  "ids": [
+    "wood.white-oak.rift-sawn.oiled",
+    "wood.white-oak.rift-sawn.raw"
+  ],
+  "collection": "wood-stage01",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.oiled\\base_color.png": "50167dbc7e4c21cba428801dbe18c47bca4477ee1e889bd8407ed5e7482fecb3",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.oiled\\normal_opengl.png": "f83bfdef3a84d7a44733897ff90215fb85af177c1be9240516e00b322d4ea59b",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.oiled\\normal_directx.png": "370efa2c39040e9f9ffb25246141b0a21572ccb810a7b79a44fd6fb637b2390f",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.oiled\\roughness.png": "06b7259d228862b55e2d463b940b538497c68917dd90430fb3415a21fcdefcb5",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.oiled\\orm.png": "62dad60e9a0f76e5e6660f3efb2451e505276d287ef761bce84a18187f3688f8",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.raw\\base_color.png": "0b6325f790ea8eff34f56e0069801605dc9cbe0d7a70b752769c426c2d0980d2",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.raw\\normal_opengl.png": "da1b5c9205e39ee673de75e6a386d80a563df95ff218e7508900d36eda097601",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.raw\\normal_directx.png": "f600d8dffcf9b7a8ffef9bfa74fa21eb9719171c6b5d8b916adb6dd246d87205",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.raw\\roughness.png": "7ef42c9fd03d6c4ada1c99b77091c70b04071a03654a44c0430c431079a14e3c",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.white-oak.rift-sawn.raw\\orm.png": "bebb753d19dd9d0dc9f57eef669c63e39dd16d8789478db8a386c9742646de4e"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.white-oak.rift-sawn.oiled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "wood.white-oak.rift-sawn.raw",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "277f4fd327b260fc6ea5f9660ddf79e65fd0ce0374469599b7f9f1b65aac9109",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

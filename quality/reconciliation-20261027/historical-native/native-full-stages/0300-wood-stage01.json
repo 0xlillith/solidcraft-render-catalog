@@ -1,0 +1,473 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -5.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 407.3985999973444,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -305.5,
+            -149.5,
+            200.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            305.5,
+            -160.99999999999997,
+            -62.5
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -114.99999999999999,
+            405.0
+          ],
+          "u": [
+            92.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -47.25000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.yellow-birch.quarter-sawn.oiled flat",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.yellow-birch.quarter-sawn.oiled curved",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 wood.yellow-birch.quarter-sawn.raw flat",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.raw/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.yellow-birch.quarter-sawn.raw curved",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.yellow-birch.quarter-sawn.raw/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.yellow-birch.quarter-sawn.oiled flat",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.yellow-birch.quarter-sawn.oiled curved",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 534310532,
+      "face_appearances": 0,
+      "geometry_bytes": 3691904,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 530618604,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -305.5,
+              -149.5,
+              200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              305.5,
+              -160.99999999999997,
+              -62.5
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -114.99999999999999,
+              405.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              92.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -47.25000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 407.3985999973444,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -5.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 3760140,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 1204
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 528253,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 1204
+      },
+      "png_bytes": 528253,
+      "png_sha256": "986a9ea6db5011685da94735eaec3a6e5988aaf726844754fb7cfbbfab138724",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 1204
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0300-wood-stage01.png",
+    "presentation": null
+  },
+  "png_sha256": "986a9ea6db5011685da94735eaec3a6e5988aaf726844754fb7cfbbfab138724",
+  "elapsed_s": 0.969,
+  "ids": [
+    "wood.yellow-birch.quarter-sawn.oiled",
+    "wood.yellow-birch.quarter-sawn.raw"
+  ],
+  "collection": "wood-stage01",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.oiled\\base_color.png": "e26339a140340d859ee624efde6ef1a816bab54748bad16c201bd1bb0fa6b201",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.oiled\\normal_opengl.png": "cb6223b5ea1c4b682e5f2b5db88da8b58b7fa44ac71ec95f6e0aea11e20a640e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.oiled\\normal_directx.png": "3480ff22a4e55b6a4dddf77a4b733450cfe923e3d848ad35ab96716fffdf2099",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.oiled\\roughness.png": "15de0be11cad55b7d72c5ab49cf8b2c82b71e742363652c22ff0973896eeaf24",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.oiled\\orm.png": "e07b65fb9864bcb58419d92c921171049a9596a083e41e99dfb20b4ff008b0d3",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.raw\\base_color.png": "afcbbe1c9f2e99692866bb89cff7c04ee37a31c7d0a8ff48802f51fb26957ecd",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.raw\\normal_opengl.png": "6f924f4307ee2095e872803b7cdd1990232516220d67fcc2794849ea77b6c3cc",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.raw\\normal_directx.png": "a969a79b245f3f134ec4ccf9856d4a0734f492d63b56c5d640c48de5e127821f",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.raw\\roughness.png": "efbfc2e1cee4e9b577d1a9e3ce4dcde9707bb735a9101de09d7f58b57614ac44",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.yellow-birch.quarter-sawn.raw\\orm.png": "d145475556429a18db71708a4aaf86de321d5c67b0066fb4ba64b6a817f19f67"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.yellow-birch.quarter-sawn.oiled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "wood.yellow-birch.quarter-sawn.raw",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "88399f673b5b2d7c19689a189261707e67cd76d93c02b3de6651a575ad10e0d4",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

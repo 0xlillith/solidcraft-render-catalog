@@ -1,0 +1,473 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -5.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 407.3985999973444,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -305.5,
+            -149.5,
+            200.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            305.5,
+            -160.99999999999997,
+            -62.5
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -114.99999999999999,
+            405.0
+          ],
+          "u": [
+            92.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -47.25000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.american-basswood.quarter-sawn.oiled flat",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.american-basswood.quarter-sawn.oiled curved",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 wood.american-basswood.quarter-sawn.raw flat",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.raw/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.american-basswood.quarter-sawn.raw curved",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-basswood.quarter-sawn.raw/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.american-basswood.quarter-sawn.oiled flat",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.american-basswood.quarter-sawn.oiled curved",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 534282086,
+      "face_appearances": 0,
+      "geometry_bytes": 3691924,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 530590138,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -305.5,
+              -149.5,
+              200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              305.5,
+              -160.99999999999997,
+              -62.5
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -114.99999999999999,
+              405.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              92.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -47.25000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 407.3985999973444,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -5.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 3731674,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 664
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 513804,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 664
+      },
+      "png_bytes": 513804,
+      "png_sha256": "12e392be160d70f87ba409c5f5d3fc25cb10e56120015e71637078a9f28022c3",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 664
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0165-wood-stage01.png",
+    "presentation": null
+  },
+  "png_sha256": "12e392be160d70f87ba409c5f5d3fc25cb10e56120015e71637078a9f28022c3",
+  "elapsed_s": 1.25,
+  "ids": [
+    "wood.american-basswood.quarter-sawn.oiled",
+    "wood.american-basswood.quarter-sawn.raw"
+  ],
+  "collection": "wood-stage01",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.oiled\\base_color.png": "99f0dbefa2de445dc519f56e0166ac85485b946c3fc9fcce4170587875939425",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.oiled\\normal_opengl.png": "2608a0108cdf6c3dcea6c3953748ab474d9e5913977559839fe7b3510b2feae7",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.oiled\\normal_directx.png": "5ca0be9174bef9494a78a041959d72310761b80f2d33db58ac62ed1e97cb9dcd",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.oiled\\roughness.png": "9692755f0546d5f3added9ec1e2c931d4545035e77b72b04df823a7eb02cb89e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.oiled\\orm.png": "4c83f4fc997e96c58fd1b31fddd1607f22b8db3cb1fbbde3eaf09339d21d0c2d",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.raw\\base_color.png": "2412ac2d31bb4acd65e2b1b40348505ec4d8e800c0e2225a4d549c2c71493e93",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.raw\\normal_opengl.png": "8aea0d06d1923f059a2c97d797dc5369db463b3ae138dc7f8aa5c275b100c110",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.raw\\normal_directx.png": "fda5b0ee635cbe8da4fb991c2fea9093b37ba2e73d807f4f0657e9fb5bc32d69",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.raw\\roughness.png": "c6e7f5e7b5ded3fc8776bbd566354bde4a5025e3cea7609383e905241838e731",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-basswood.quarter-sawn.raw\\orm.png": "d297c67086618a49887421682bfb5b71431d16e8bc1f667f06118d9f72646f45"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.american-basswood.quarter-sawn.oiled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "wood.american-basswood.quarter-sawn.raw",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "b2d65472895a56a6f663820580857935de73810078ad719a726a5fdb758c92d1",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

@@ -1,0 +1,106 @@
+{
+  "id": "wood.western-redcedar.plain-sawn.raw",
+  "name": "Western redcedar / plain-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "western-redcedar/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "0fa4a3e4c3e2d3ac2f0bec28e568204928e3a9967687eded06f868819be59004",
+    "normal_opengl": "98de27e1bddbb7fc081a8b559c8216d7f7dee4149d63ef6bc799f08e6148cde7",
+    "roughness": "4155f12f337d69d59e16d578f61108191cc059c00fb72c0a3ecb1ab3a8b72001"
+  },
+  "physical_profile_id": "wood.usda2021.western-redcedar",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "55fe68572b6d298169e9938479ed3dcc94af5be2bfde54ecb2cd00e7178c5c1e",
+      "bytes": 944850,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "6c2af06d439563c7bd7a055009e77431faa03ffcfd4c137e84e66362a107e975",
+      "bytes": 584413,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "eaa76f2ef12cb5af2ad077f7560c6f70c645ca6cb1c499a7eb886f215cf658d9",
+      "bytes": 584389,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "d2c81087ee988e1ddf9063476d69e6baf28f8ce78ec421f8f56d92dbb028d665",
+      "bytes": 338755,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "c6c7b05f7cca872916630898a4e9f68b6faa268a22e49f94f79ab87df55830bd",
+      "bytes": 435559,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "a382006ae9209dab938a65ac999e0745053be7813124d5248a0a646aa310e523",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.western-redcedar.plain-sawn.raw"
+}

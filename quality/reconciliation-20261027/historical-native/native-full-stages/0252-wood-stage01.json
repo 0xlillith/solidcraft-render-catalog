@@ -1,0 +1,473 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -5.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 407.3985999973444,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -305.5,
+            -149.5,
+            200.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            305.5,
+            -160.99999999999997,
+            -62.5
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -114.99999999999999,
+            405.0
+          ],
+          "u": [
+            92.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -47.25000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.shagbark-hickory.plain-sawn.oiled flat",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.shagbark-hickory.plain-sawn.oiled curved",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 wood.shagbark-hickory.plain-sawn.raw flat",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.raw/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.shagbark-hickory.plain-sawn.raw curved",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.shagbark-hickory.plain-sawn.raw/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.shagbark-hickory.plain-sawn.oiled flat",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.shagbark-hickory.plain-sawn.oiled curved",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 535265274,
+      "face_appearances": 0,
+      "geometry_bytes": 3691912,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 531573338,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -305.5,
+              -149.5,
+              200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              305.5,
+              -160.99999999999997,
+              -62.5
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -114.99999999999999,
+              405.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              92.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -47.25000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 407.3985999973444,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -5.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 4714874,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 1012
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 543681,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 1012
+      },
+      "png_bytes": 543681,
+      "png_sha256": "da54c1a261dbb35826a0fdd5607763bc7af8878af2d8517734817285c99227ff",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 1012
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0252-wood-stage01.png",
+    "presentation": null
+  },
+  "png_sha256": "da54c1a261dbb35826a0fdd5607763bc7af8878af2d8517734817285c99227ff",
+  "elapsed_s": 0.969,
+  "ids": [
+    "wood.shagbark-hickory.plain-sawn.oiled",
+    "wood.shagbark-hickory.plain-sawn.raw"
+  ],
+  "collection": "wood-stage01",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.oiled\\base_color.png": "fed2ed492c82de86049307b96f805113891189519a7efe4824ac0e101b6e0f07",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.oiled\\normal_opengl.png": "d8c483917e8c81fd45169faf2f8a14674c8cc3a62c9231ca2476b06cbc1993b3",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.oiled\\normal_directx.png": "e61be55feec2751deb3597a93355b40e23a7a62c7ac99e3d1020a9b5e5d7ec65",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.oiled\\roughness.png": "c6ae4f312eae9d952d2e710f00da5e91b6d9c2762676ff0d3b005b43c93beb07",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.oiled\\orm.png": "66051e4196612b2df38fe477d3d7bafee6d8059703d37d40e38f45177df0657a",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.raw\\base_color.png": "68eee41dd70fb2c2f61c65a67d9837f1023de8ffd60a8be798034cb45f857852",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.raw\\normal_opengl.png": "4dc617e73dcbd1a542b6f832552e5a59bc90af61f105d5d1b4e46105349bf42b",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.raw\\normal_directx.png": "3391a9ee44723dccf6d0b6c0d41c80db319363aba55e55709c2f6de3f0331c2d",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.raw\\roughness.png": "5287dc14aa9cfe9dcc596e49745065ce6fd6f7d564b1ec0086d2ec4028075172",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.shagbark-hickory.plain-sawn.raw\\orm.png": "fcdef42b9c5402275069bdade8c0065e740ebc56fa1ab99e82504f6874253d93"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.shagbark-hickory.plain-sawn.oiled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "wood.shagbark-hickory.plain-sawn.raw",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "e38b6db26439b95b30016c3903ca78edb090a2144ba4217899d38f68f142b964",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

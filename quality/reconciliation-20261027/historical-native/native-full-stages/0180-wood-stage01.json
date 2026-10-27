@@ -1,0 +1,473 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -5.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 407.3985999973444,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -305.5,
+            -149.5,
+            200.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            305.5,
+            -160.99999999999997,
+            -62.5
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -114.99999999999999,
+            405.0
+          ],
+          "u": [
+            92.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -47.25000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.american-elm.plain-sawn.oiled flat",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.american-elm.plain-sawn.oiled curved",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.oiled/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 wood.american-elm.plain-sawn.raw flat",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.raw/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.american-elm.plain-sawn.raw curved",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-elm.plain-sawn.raw/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.american-elm.plain-sawn.oiled flat",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.american-elm.plain-sawn.oiled curved",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 535113712,
+      "face_appearances": 0,
+      "geometry_bytes": 3691896,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 531421792,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -305.5,
+              -149.5,
+              200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              305.5,
+              -160.99999999999997,
+              -62.5
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -114.99999999999999,
+              405.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              92.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -47.25000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 407.3985999973444,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -5.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 4563328,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 724
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 538344,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 724
+      },
+      "png_bytes": 538344,
+      "png_sha256": "4a18d61fce798e6ebe629cfa9e75abcdd998f8a685614fe9644fd715e4f28480",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 724
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0180-wood-stage01.png",
+    "presentation": null
+  },
+  "png_sha256": "4a18d61fce798e6ebe629cfa9e75abcdd998f8a685614fe9644fd715e4f28480",
+  "elapsed_s": 1.687,
+  "ids": [
+    "wood.american-elm.plain-sawn.oiled",
+    "wood.american-elm.plain-sawn.raw"
+  ],
+  "collection": "wood-stage01",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.oiled\\base_color.png": "544d5d8725af86c0e966958bebca50812d20cd9865e7744f7752acc4a8886ea8",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.oiled\\normal_opengl.png": "149135b5a17cdcf9284fcdde047c04012ffeced614a004e91f18ba199fd1e75b",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.oiled\\normal_directx.png": "c9516d5b933511cecba89008fea7259acb3d690afd0c0dbbd4a9ca2bba5cbba4",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.oiled\\roughness.png": "fbb58bf1dac6b9fcf5d4997b5d89c68457e1416258f56ce44d8cb1db31202ecd",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.oiled\\orm.png": "5ec87cbaacf2531b6f3833eb212bad4e7c9c97616fff5d8841ce11bca6ddda4f",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.raw\\base_color.png": "b78b655729b47b2f9b8c21401ebb60639c8f01dfc7ee86db44fec1eca2268aa5",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.raw\\normal_opengl.png": "98581b5d3d84e0ec52f46b99eaec369af73c27baff7efa7ad7249df6ca0ed77e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.raw\\normal_directx.png": "268c503a093baa85657bba726245711cb63380eeff10176fb688533b9068067e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.raw\\roughness.png": "3d33fe9a9b10e9f52e52cec59745c155f27bfcf023843679f676babd69dc5dbd",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-elm.plain-sawn.raw\\orm.png": "ff457bd8dc2080af1cc12412a3a326c98c2ad6e6b3399937eb77b7b086d26ee5"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.american-elm.plain-sawn.oiled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "wood.american-elm.plain-sawn.raw",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "a055f012959ffdbf8bb727a609f7ce8b9bfc6c36d0e5cf57b8a163552799b704",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

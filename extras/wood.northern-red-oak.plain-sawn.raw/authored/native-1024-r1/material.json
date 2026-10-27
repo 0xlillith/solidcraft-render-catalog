@@ -1,0 +1,106 @@
+{
+  "id": "wood.northern-red-oak.plain-sawn.raw",
+  "name": "Northern red oak / plain-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "northern-red-oak/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "6503aa2be5f171904d30c58e571c2c3a7d343f2a72781e1da7bb7ebfb6f8287b",
+    "normal_opengl": "702af3fe084b786d740c47249fdbae227c9dfc687aaae5092188d2f5706ad0b7",
+    "roughness": "8ff9867af65492e8eb987a6580a892984de527d5e593a709785694d8f7c58009"
+  },
+  "physical_profile_id": "wood.usda2021.northern-red-oak",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "ba1367e182106c8efca61535fe6586396b38fd7d349d25fa7fbd177aed81a343",
+      "bytes": 1040730,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "f6a643dfe11962e5ae944f1a521641bfe2946bd6d30b9bdc1caf7c88c2e3390c",
+      "bytes": 893454,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "c5b19276c086a00f68dabce8ee793f47ad520fc385cb3a2faf2ecc4eae25474c",
+      "bytes": 893387,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "42f6298a2e691058f8ad69803ae619302cdd88cfcceaa80bdebb20b06d4f07df",
+      "bytes": 389760,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "f6ad303443bdbee7ac5334b2dd91183c017d2f851f50f459075cd68f6e8d3018",
+      "bytes": 495603,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "f4afbcb2d8bc5c901be9a4c715fe8385959eea5424d01fbfef41641f26e657d8",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.northern-red-oak.plain-sawn.raw"
+}

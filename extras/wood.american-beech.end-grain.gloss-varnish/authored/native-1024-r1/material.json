@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-beech.end-grain.gloss-varnish",
+  "name": "American beech / end-grain / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-beech/end-grain",
+  "source_file_sha256": {
+    "base_color": "8de0738d7de72128409d3b0a9f6e4edb0b2cb4229a8f8d8454067a85c02ef055",
+    "normal_opengl": "ae32f40ea2ef1854f248fedee74c9552a88beb8671e453592cfa909869a1340a",
+    "roughness": "506186422ccdbd30d96d7063b3893821001a4a3b1eec2849d7428a1a3f89361f"
+  },
+  "physical_profile_id": "wood.usda2021.american-beech",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "09f86e54e1c621d82b32351d4a1939714f6854ff827baec475ddc8ee1c3fb89c",
+      "bytes": 1345684,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "035fac3fb3e304481bd04a8e6c83f53461eaf1ac14cc87b4445232311ac0820a",
+      "bytes": 601180,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "a4632936d21507931ca2702e4ff1b71ad3c047d5b59f7d16c1608c9d1dbb2026",
+      "bytes": 601023,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "06fd42211cd8464c703770f5290cc7d8916c906bb2196b717823fdae7c109562",
+      "bytes": 276673,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "b33a83e4778cc5912ea59dca29d51a6ef70b7c2f852dc34c8c29ee27dc01b56f",
+      "bytes": 362068,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "8e03e43e518a1b4efbe24d15b099caeba983f5c54df67acd0e804108106b9a65",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-beech.end-grain.gloss-varnish"
+}

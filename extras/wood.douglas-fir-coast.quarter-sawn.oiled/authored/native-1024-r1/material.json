@@ -1,0 +1,106 @@
+{
+  "id": "wood.douglas-fir-coast.quarter-sawn.oiled",
+  "name": "Douglas-fir (Coast) / quarter-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "douglas-fir-coast/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "34be19a764e5453514d7c02540a916211bae4aeaac4b3a1f7f9e47c6b5995639",
+    "normal_opengl": "551324adfe06780d822344ce387cc9ce39f4217efcfec575cf3615705f334994",
+    "roughness": "96c833fa1addb8ff26ef2ed339b6ca9bce41d9dc36a4807ad2fccf558968e5e4"
+  },
+  "physical_profile_id": "wood.usda2021.douglas-fir-coast",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "2af9e974fc7f31957b89c84853e5950ee9e0153a5b8a2cd55c6e63dcea0539dd",
+      "bytes": 752036,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "aeae8314b7e2675dd9fec7f1dac40ba4e763c754bf434ecd66a2252c7fcd4743",
+      "bytes": 488579,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "d127acf25f3233f0de87fef95ffbef1f9bb9c1fc448939e83d4060fd2d139c45",
+      "bytes": 488507,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "71bfdf668576f20439f803f594b83b01ad6a6ecd6dbd164b4e5fc75cb2bb045f",
+      "bytes": 229539,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "784378114c67cf45b46410c3ba8c197da009a4ff6553008575b4be8b2c712592",
+      "bytes": 300416,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "bc2dab45bf80bfa3501646106516a08af3cc5014b2c0a9e80454e2188affbb2b",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.douglas-fir-coast.quarter-sawn.oiled"
+}

@@ -1,0 +1,393 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -10.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 814.7971999946888,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 32,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -625.0,
+            -325.0,
+            400.0
+          ],
+          "u": [
+            95.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -250.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            625.0,
+            -350.0,
+            -125.0
+          ],
+          "u": [
+            95.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -250.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -250.0,
+            810.0
+          ],
+          "u": [
+            200.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -94.50000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 scan.white_oak_veneer flat",
+          "frame": {
+            "origin": [
+              -250.0,
+              -0.001,
+              -250.0
+            ],
+            "u": [
+              500.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              500.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "extras/scan.white_oak_veneer/authored/native-1024-r1/base_color.png",
+          "normal_opengl": "extras/scan.white_oak_veneer/authored/native-1024-r1/normal_opengl.png",
+          "roughness_linear": "extras/scan.white_oak_veneer/authored/native-1024-r1/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 scan.white_oak_veneer curved",
+          "frame": {
+            "origin": [
+              -250.0,
+              -0.001,
+              -250.0
+            ],
+            "u": [
+              500.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              500.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "extras/scan.white_oak_veneer/authored/native-1024-r1/base_color.png",
+          "normal_opengl": "extras/scan.white_oak_veneer/authored/native-1024-r1/normal_opengl.png",
+          "roughness_linear": "extras/scan.white_oak_veneer/authored/native-1024-r1/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 328474011,
+      "face_appearances": 0,
+      "geometry_bytes": 1846372,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 326627615,
+      "triangles": 10236
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -625.0,
+              -325.0,
+              400.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              95.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -250.0
+            ]
+          },
+          {
+            "center": [
+              625.0,
+              -350.0,
+              -125.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              95.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -250.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -250.0,
+              810.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              200.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -94.50000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 32,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 814.7971999946888,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -10.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 7,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 2,
+      "encoded_bytes": 3429551,
+      "linear_pixel_bytes": 50331648
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 16
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 585305,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 16
+      },
+      "png_bytes": 585305,
+      "png_sha256": "b333c1b189836a9c0182698c420f98ab4e46e6e817185838de54b6ec10276b50",
+      "scene_generation": 7,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 16
+    },
+    "linear_master": null,
+    "path": "quality/reconciliation-20261027/fresh-native/0003-reconciled-extra.png",
+    "presentation": null
+  },
+  "png_sha256": "b333c1b189836a9c0182698c420f98ab4e46e6e817185838de54b6ec10276b50",
+  "elapsed_s": 1.844,
+  "recipe_fingerprint": "17bd6640bd3f05852e65e9d821f1f6addf075bd8bf11ad586b01b2588aa91e2b",
+  "ids": [
+    "scan.white_oak_veneer"
+  ],
+  "collection": "reconciled-extra",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\scan.white_oak_veneer\\authored\\native-1024-r1\\base_color.png": "fe059bb38a2b3039f4b77fd394247076bcbd4fe77e7b4f04ad521b8fab85e13b",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\scan.white_oak_veneer\\authored\\native-1024-r1\\normal_opengl.png": "de7f5638072826a8c12b73ea7250c9022c9525e2f2cacc85195c2e3690a77353",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\scan.white_oak_veneer\\authored\\native-1024-r1\\normal_directx.png": "4ac658401a7fd6bc570c0fee467b8e185d42ae310f1b08b8428f85e50607b431",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\scan.white_oak_veneer\\authored\\native-1024-r1\\roughness.png": "d369e25a11c6519b41a6845bb2bac55dfdb69d3c1e5d808137dde9778401a705",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\scan.white_oak_veneer\\authored\\native-1024-r1\\orm.png": "5ef0477347318bbbda52f3a23d90f6479412d12adc12a9fafb1e3494b77ee6ff"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "scan.white_oak_veneer",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "99d49a114bfd9df2cfb9e114cd108ee1cc6d046e6b3f8c15f7a3af0c711ceb7b",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

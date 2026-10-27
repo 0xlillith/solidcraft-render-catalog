@@ -1,0 +1,933 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -4.8,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 1368.859295991077,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -1167.6,
+            -764.4,
+            192.0
+          ],
+          "u": [
+            223.44,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -120.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            1167.6,
+            -823.1999999999999,
+            -60.0
+          ],
+          "u": [
+            223.44,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -120.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -588.0,
+            1360.8
+          ],
+          "u": [
+            470.40000000000003,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -158.76000000000002
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 earth.portland-cement-powder.trowelled flat",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 earth.portland-cement-powder.trowelled curved",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 earth.poured-concrete-generic.trowelled flat",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 earth.poured-concrete-generic.trowelled curved",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 4,
+          "body_name": "03 earth.quikrete-concrete-1101.trowelled flat",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 5,
+          "body_name": "03 earth.quikrete-concrete-1101.trowelled curved",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 6,
+          "body_name": "04 earth.quikrete-mason-type-s.trowelled flat",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 7,
+          "body_name": "04 earth.quikrete-mason-type-s.trowelled curved",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              180.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 8,
+          "body_name": "05 earth.quikrete-mortar-type-n.trowelled flat",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 9,
+          "body_name": "05 earth.quikrete-mortar-type-n.trowelled curved",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/trowelled/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 10,
+          "body_name": "06 earth.portland-cement-powder.weathered-cracks flat",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 11,
+          "body_name": "06 earth.portland-cement-powder.weathered-cracks curved",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 12,
+          "body_name": "07 earth.poured-concrete-generic.weathered-cracks flat",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 13,
+          "body_name": "07 earth.poured-concrete-generic.weathered-cracks curved",
+          "frame": {
+            "origin": [
+              36.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 14,
+          "body_name": "08 earth.quikrete-concrete-1101.weathered-cracks flat",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 15,
+          "body_name": "08 earth.quikrete-concrete-1101.weathered-cracks curved",
+          "frame": {
+            "origin": [
+              348.0,
+              -0.001,
+              -120.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 16,
+          "body_name": "09 earth.quikrete-mason-type-s.weathered-cracks flat",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 17,
+          "body_name": "09 earth.quikrete-mason-type-s.weathered-cracks curved",
+          "frame": {
+            "origin": [
+              -588.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 18,
+          "body_name": "10 earth.quikrete-mortar-type-n.weathered-cracks flat",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 19,
+          "body_name": "10 earth.quikrete-mortar-type-n.weathered-cracks curved",
+          "frame": {
+            "origin": [
+              -276.0,
+              -0.001,
+              -420.0
+            ],
+            "u": [
+              240.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              240.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/cement/weathered-cracks/runtime-1024/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 571177443,
+      "face_appearances": 0,
+      "geometry_bytes": 18462338,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 552715081,
+      "triangles": 102360
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -1167.6,
+              -764.4,
+              192.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              223.44,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -120.0
+            ]
+          },
+          {
+            "center": [
+              1167.6,
+              -823.1999999999999,
+              -60.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              223.44,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -120.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -588.0,
+              1360.8
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              470.40000000000003,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -158.76000000000002
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 1368.859295991077,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -4.8,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 52,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 20,
+      "encoded_bytes": 7186153,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 216
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 506148,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 216
+      },
+      "png_bytes": 506148,
+      "png_sha256": "b7ccbcae04329f95a47b8b99fa9fdd972402d9ecdcdff783d43898bf56f1ce7d",
+      "scene_generation": 52,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 216
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0053-earth-masonry-stage04.png",
+    "presentation": null
+  },
+  "png_sha256": "b7ccbcae04329f95a47b8b99fa9fdd972402d9ecdcdff783d43898bf56f1ce7d",
+  "elapsed_s": 2.797,
+  "ids": [
+    "earth.portland-cement-powder.trowelled",
+    "earth.poured-concrete-generic.trowelled",
+    "earth.quikrete-concrete-1101.trowelled",
+    "earth.quikrete-mason-type-s.trowelled",
+    "earth.quikrete-mortar-type-n.trowelled",
+    "earth.portland-cement-powder.weathered-cracks",
+    "earth.poured-concrete-generic.weathered-cracks",
+    "earth.quikrete-concrete-1101.weathered-cracks",
+    "earth.quikrete-mason-type-s.weathered-cracks",
+    "earth.quikrete-mortar-type-n.weathered-cracks"
+  ],
+  "collection": "earth-masonry-stage04",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\trowelled\\runtime-1024\\base_color.png": "880b504950ac844a670c328edc4e35310d20aa869759df5da6b5d58722c61c27",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\trowelled\\runtime-1024\\normal_opengl.png": "58847b95291dd3ab59c3f1387363529a4e8074f5ad3bea477efe8023e0c47556",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\trowelled\\runtime-1024\\roughness.png": "461d27a59bae985fb1c11f52c889c1d81ea06699ad54fcc19a77473c29ad9b52",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\weathered-cracks\\runtime-1024\\base_color.png": "15f65d8b9f0d8c03925b0c075e8ad225a91165e9e4c9f1b53ca32666ad36bfe4",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\weathered-cracks\\runtime-1024\\normal_opengl.png": "b02d5d389bad1f088dd0e4f2dd8b055ed8cc0d95bfa0686fdad953a876f37560",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\cement\\weathered-cracks\\runtime-1024\\roughness.png": "d4b1c671052454847ecc5cb743b823bbda7c6392a68b6ec563470636128dcd7e"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "earth.portland-cement-powder.trowelled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.poured-concrete-generic.trowelled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-concrete-1101.trowelled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mason-type-s.trowelled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mortar-type-n.trowelled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.portland-cement-powder.weathered-cracks",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.poured-concrete-generic.weathered-cracks",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-concrete-1101.weathered-cracks",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mason-type-s.weathered-cracks",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.quikrete-mortar-type-n.weathered-cracks",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "ec15a752e42572202fc8b3b63b3a255fcf12126777d6a2ee86a08c74889e2dac",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

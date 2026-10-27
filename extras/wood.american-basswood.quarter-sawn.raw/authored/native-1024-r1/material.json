@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-basswood.quarter-sawn.raw",
+  "name": "American basswood / quarter-sawn / Raw / uncoated",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-basswood/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "ed958458ffbe82948bc63067bbf1edcda0eeb50084d9bffe785396d59754cc94",
+    "normal_opengl": "838e2c27a20b6819ed5fe9d43fdd90efdfe6b4906097f0b390ee6f6da9c09d06",
+    "roughness": "ffa221abbc352d7f5ca7e9c2c5b7a27d01aa3c13c8993a08bb5c54d05e79a6f3"
+  },
+  "physical_profile_id": "wood.usda2021.american-basswood",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "2412ac2d31bb4acd65e2b1b40348505ec4d8e800c0e2225a4d549c2c71493e93",
+      "bytes": 839670,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "8aea0d06d1923f059a2c97d797dc5369db463b3ae138dc7f8aa5c275b100c110",
+      "bytes": 762710,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "fda5b0ee635cbe8da4fb991c2fea9093b37ba2e73d807f4f0657e9fb5bc32d69",
+      "bytes": 762493,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "c6e7f5e7b5ded3fc8776bbd566354bde4a5025e3cea7609383e905241838e731",
+      "bytes": 328765,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "d297c67086618a49887421682bfb5b71431d16e8bc1f667f06118d9f72646f45",
+      "bytes": 425214,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 1.0,
+    "normal_scale": 1.0
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "935eac2f7e8a9675042f701bd4bfac08035a38aa48cd71f632d8255e9e3c252a",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-basswood.quarter-sawn.raw"
+}

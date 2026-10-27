@@ -1,0 +1,106 @@
+{
+  "id": "wood.white-ash.quarter-sawn.satin-varnish",
+  "name": "White ash / quarter-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "white-ash/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "092d28ef1838a272c5ab4f2380df66cbae66c774170f03d86a99502949108be9",
+    "normal_opengl": "49ece96e62eec0c394061a71c70cba1f4bf0b5396c748fd433395884d92c63f5",
+    "roughness": "f3837adbf70b470bcd8c286fddef6fa343265b16b67df0c2b3b07c3d54f0793c"
+  },
+  "physical_profile_id": "wood.usda2021.white-ash",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "671e422cf16d46fa4159423f664523275675f4c90ac2816e9fb335cd379d76eb",
+      "bytes": 980243,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "72e296528942a836e55da3dead83e725554c76de97d914e0e9117499b610c99c",
+      "bytes": 522258,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "677647a40e5c50e5f56818c540e7ad41e5a29d4c4e6f6ee3e72bacbfab79fbed",
+      "bytes": 522194,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "1e1505df5f29a33d652bc241a7acb8691f247c704e31af964e0b2ed308347fbe",
+      "bytes": 255629,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "45e81be6f2e35e650f703977ce43655f6fbc25ababfcb5841722d534974bfb3a",
+      "bytes": 331703,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "f0ce67d9f7aed2c28d1169a3cfd9616b46ca4bb738d00217635f56ace4ccc7c2",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.white-ash.quarter-sawn.satin-varnish"
+}

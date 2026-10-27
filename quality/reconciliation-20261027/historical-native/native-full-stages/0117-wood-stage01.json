@@ -1,0 +1,473 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -2.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 235.29532475402172,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -210.44999999999993,
+            -149.5,
+            80.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -50.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            210.44999999999993,
+            -160.99999999999997,
+            -25.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -50.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -114.99999999999999,
+            233.90999999999994
+          ],
+          "u": [
+            92.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -27.289499999999997
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.american-beech.end-grain.oiled flat",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -50.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              100.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.oiled/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.american-beech.end-grain.oiled curved",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -50.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              100.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.oiled/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.oiled/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.oiled/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 wood.american-beech.end-grain.raw flat",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -50.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              100.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.raw/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.american-beech.end-grain.raw curved",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -50.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              100.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.raw/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.raw/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.american-beech.end-grain.raw/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.american-beech.end-grain.oiled flat",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.american-beech.end-grain.oiled curved",
+          "weight": 0.12,
+          "roughness": 0.32,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 536668668,
+      "face_appearances": 0,
+      "geometry_bytes": 3691900,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 532976744,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -210.44999999999993,
+              -149.5,
+              80.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -50.0
+            ]
+          },
+          {
+            "center": [
+              210.44999999999993,
+              -160.99999999999997,
+              -25.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -50.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -114.99999999999999,
+              233.90999999999994
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              92.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -27.289499999999997
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 235.29532475402172,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 6118280,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 472
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 609174,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 472
+      },
+      "png_bytes": 609174,
+      "png_sha256": "510506afc4bf18b69ea31dd53d5ec9bc97bd22637fdb453a4e86ac7158d90620",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 472
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0117-wood-stage01.png",
+    "presentation": null
+  },
+  "png_sha256": "510506afc4bf18b69ea31dd53d5ec9bc97bd22637fdb453a4e86ac7158d90620",
+  "elapsed_s": 1.563,
+  "ids": [
+    "wood.american-beech.end-grain.oiled",
+    "wood.american-beech.end-grain.raw"
+  ],
+  "collection": "wood-stage01",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.oiled\\base_color.png": "ab946e0b7bb231a5386ed121aa7c2356e7ade89ac11d241413752290aefc4fc2",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.oiled\\normal_opengl.png": "37d8eae0be9b74e9ee9dda4caecb2b9139c31b965c193223989d6555fead8d9f",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.oiled\\normal_directx.png": "a926cd369c4bb37b2cf3a807048a2e995ff4b94a358302310283b665859f31a7",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.oiled\\roughness.png": "8cb9439207b95beeec308d669624d6d4b01587219fd15a9780cdc07ccc279618",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.oiled\\orm.png": "d0052219cfb544e869d22321cd97121a0d7f6f3ada01470a1065a04de017ae21",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.raw\\base_color.png": "6fbeed58f299679f538ddd130011191e2d2e60561afcc44db4b0b98785001327",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.raw\\normal_opengl.png": "f92caab34fe2ef71ca5df4f547b77ee087c53367fbef8119c4d98e4a2b2e58b8",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.raw\\normal_directx.png": "fbaaa83e10f64405635d19385f4373d882124438a2906937c1d68fe7e6fd0129",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.raw\\roughness.png": "b1f750f3cdc37c9de13991b30007ce487ec0eae25d601fe18e483b3c62660aa1",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.american-beech.end-grain.raw\\orm.png": "a1a1ed7c156d1163e9f743c6cddfbe566b91205c4f8764ff9aef718404e22f7b"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.american-beech.end-grain.oiled",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "wood.american-beech.end-grain.raw",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "ad6d592677f50698256d5fdcb4d4e7d2552d101afa3e1875381af014f88a22f8",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

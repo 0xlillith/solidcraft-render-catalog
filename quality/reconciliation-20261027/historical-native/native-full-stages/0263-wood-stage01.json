@@ -1,0 +1,473 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -5.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 407.3985999973444,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -305.5,
+            -149.5,
+            200.0
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            305.5,
+            -160.99999999999997,
+            -62.5
+          ],
+          "u": [
+            43.699999999999996,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -114.99999999999999,
+            405.0
+          ],
+          "u": [
+            92.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -47.25000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.sugar-maple.quarter-sawn.fine-sanded flat",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.fine-sanded/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.fine-sanded/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.fine-sanded/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.sugar-maple.quarter-sawn.fine-sanded curved",
+          "frame": {
+            "origin": [
+              -115.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.fine-sanded/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.fine-sanded/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.fine-sanded/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 wood.sugar-maple.quarter-sawn.gloss-varnish flat",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.gloss-varnish/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.gloss-varnish/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.gloss-varnish/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.sugar-maple.quarter-sawn.gloss-varnish curved",
+          "frame": {
+            "origin": [
+              15.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.gloss-varnish/base_color.png",
+          "normal_opengl": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.gloss-varnish/normal_opengl.png",
+          "roughness_linear": "native-profiles-r2/wood-finishes/wood.sugar-maple.quarter-sawn.gloss-varnish/roughness.png"
+        }
+      ],
+      "clear_coats": [
+        {
+          "body_index": 2,
+          "body_name": "02 wood.sugar-maple.quarter-sawn.gloss-varnish flat",
+          "weight": 1.0,
+          "roughness": 0.075,
+          "ior": 1.5
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 wood.sugar-maple.quarter-sawn.gloss-varnish curved",
+          "weight": 1.0,
+          "roughness": 0.075,
+          "ior": 1.5
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 533674934,
+      "face_appearances": 0,
+      "geometry_bytes": 3691932,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 529982978,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -305.5,
+              -149.5,
+              200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              305.5,
+              -160.99999999999997,
+              -62.5
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              43.699999999999996,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -114.99999999999999,
+              405.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              92.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -47.25000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 407.3985999973444,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -5.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 3124514,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 1056
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 559536,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 1056
+      },
+      "png_bytes": 559536,
+      "png_sha256": "d079e55557222a53e3a7e0e0711c31b0de7ae1ca016e44006123466d8383ee3e",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 1056
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0263-wood-stage01.png",
+    "presentation": null
+  },
+  "png_sha256": "d079e55557222a53e3a7e0e0711c31b0de7ae1ca016e44006123466d8383ee3e",
+  "elapsed_s": 0.969,
+  "ids": [
+    "wood.sugar-maple.quarter-sawn.fine-sanded",
+    "wood.sugar-maple.quarter-sawn.gloss-varnish"
+  ],
+  "collection": "wood-stage01",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.fine-sanded\\base_color.png": "be1de6669dcd0a58a8a5f327e9a85960ef4fc98344d46d1ec5c7b775afa5f3db",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.fine-sanded\\normal_opengl.png": "8f0ff0d041ae94d398ee597b0f9e7133b1a3f7d04ea510e3c4f703e981db105b",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.fine-sanded\\normal_directx.png": "8dd3ddd3d6f5cf67beb8aa0ff4cc6723dca9ce1e2541c4c79bc0bec8084fb594",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.fine-sanded\\roughness.png": "c879f6a1c521b74b2f3a76411d377d61ae3b09899f7469e66cb54ac64e20c9ec",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.fine-sanded\\orm.png": "90588b21d62d5f42032378b2e3394320aa81e8d48a9ad0ae02572230f6672164",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.gloss-varnish\\base_color.png": "07ffd3ee633334534ec3c1d73c96978f10eaaa3b81c4783a906d83de748dd60f",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.gloss-varnish\\normal_opengl.png": "ba0e50d90fa36ddd836771dc6324ca1096c97ec912a4af7d2495eaf51e6f36dc",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.gloss-varnish\\normal_directx.png": "ee38d3ce2bfb322b627f9fa1cec2c8f82c28f35924fb7e1ba6f819b9c0bae0f7",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.gloss-varnish\\roughness.png": "423e9f0c64cb71af80b371ac5e303a70051d8f14974ad1d6909e41e2b542de7a",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\native-profiles-r2\\wood-finishes\\wood.sugar-maple.quarter-sawn.gloss-varnish\\orm.png": "5a33786c7f586de3a6be514d89c0f71298d9cab32e42d9d192cb88cafe536de7"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.sugar-maple.quarter-sawn.fine-sanded",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "wood.sugar-maple.quarter-sawn.gloss-varnish",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "9c7d90865a6f41a8cad90b599b58fbc309e9605da49f3d3d24b1a7bd236ab66b",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

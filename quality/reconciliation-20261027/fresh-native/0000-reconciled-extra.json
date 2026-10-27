@@ -1,0 +1,393 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -5.0,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 407.3985999973444,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 32,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -260.0,
+            -65.0,
+            200.0
+          ],
+          "u": [
+            19.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            260.0,
+            -70.0,
+            -62.5
+          ],
+          "u": [
+            19.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -125.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -50.0,
+            405.0
+          ],
+          "u": [
+            40.0,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -47.25000000000001
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 wood.red-alder.plain-sawn.raw flat",
+          "frame": {
+            "origin": [
+              -50.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "extras/wood.red-alder.plain-sawn.raw/authored/native-1024-r1/base_color.png",
+          "normal_opengl": "extras/wood.red-alder.plain-sawn.raw/authored/native-1024-r1/normal_opengl.png",
+          "roughness_linear": "extras/wood.red-alder.plain-sawn.raw/authored/native-1024-r1/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 wood.red-alder.plain-sawn.raw curved",
+          "frame": {
+            "origin": [
+              -50.0,
+              -0.001,
+              -125.0
+            ],
+            "u": [
+              100.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              250.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "extras/wood.red-alder.plain-sawn.raw/authored/native-1024-r1/base_color.png",
+          "normal_opengl": "extras/wood.red-alder.plain-sawn.raw/authored/native-1024-r1/normal_opengl.png",
+          "roughness_linear": "extras/wood.red-alder.plain-sawn.raw/authored/native-1024-r1/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 327281982,
+      "face_appearances": 0,
+      "geometry_bytes": 1846388,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 325435570,
+      "triangles": 10236
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -260.0,
+              -65.0,
+              200.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              19.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              260.0,
+              -70.0,
+              -62.5
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              19.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -125.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -50.0,
+              405.0
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              40.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -47.25000000000001
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 32,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 407.3985999973444,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -5.0,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 7,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 2,
+      "encoded_bytes": 2237506,
+      "linear_pixel_bytes": 50331648
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 4
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 257540,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 4
+      },
+      "png_bytes": 257540,
+      "png_sha256": "f73a2f4572cf28bca699aa268cb1d30e386b7f7713ab4185edf8bdfe92496a40",
+      "scene_generation": 7,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 4
+    },
+    "linear_master": null,
+    "path": "quality/reconciliation-20261027/fresh-native/0000-reconciled-extra.png",
+    "presentation": null
+  },
+  "png_sha256": "f73a2f4572cf28bca699aa268cb1d30e386b7f7713ab4185edf8bdfe92496a40",
+  "elapsed_s": 0.921,
+  "recipe_fingerprint": "2b06ef729a321a9a3283576cea545c9cf4eb21b36fef2842a65473c4aec839c3",
+  "ids": [
+    "wood.red-alder.plain-sawn.raw"
+  ],
+  "collection": "reconciled-extra",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.red-alder.plain-sawn.raw\\authored\\native-1024-r1\\base_color.png": "a78a9795993345b8bbadba308114a03eccac0683fcc87c98ed2ef8db7eec0297",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.red-alder.plain-sawn.raw\\authored\\native-1024-r1\\normal_opengl.png": "6f5e6a5a2222f2b8a033d458a07a48ef444de3d9f01292109a25fc3b6017e76b",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.red-alder.plain-sawn.raw\\authored\\native-1024-r1\\normal_directx.png": "805678b7e8ff28eb383536932afddd4002b7357e7752f4d533df0c43c8c80b57",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.red-alder.plain-sawn.raw\\authored\\native-1024-r1\\roughness.png": "1c8193762a50f412e8f8773230b0af49ccbca457c10966c00f8b0b6861cc1033",
+    "D:\\codex-project-worktrees\\catalog-extras-editable-20261027\\extras\\wood.red-alder.plain-sawn.raw\\authored\\native-1024-r1\\orm.png": "542d539b196e990309ed4d46888df398f74d388dd55852956c57eb5077267789"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "wood.red-alder.plain-sawn.raw",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "92db7df41706b579a567b453bb8149b64ffd37d48532e3de4e742f62ea66a1be",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

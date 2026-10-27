@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-elm.quarter-sawn.gloss-varnish",
+  "name": "American elm / quarter-sawn / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-elm/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "f19c18f6ccb9768d90ff7c5712b508f3c73bf7f3e7eeb600c758e173cd5217b9",
+    "normal_opengl": "52784d1addb7344ce36fca095cb6e3c1aa2e79aa601a4776ada0c0c8f41c7b0a",
+    "roughness": "0b57ee275d24997e199cbfa339c6da1e24c4e7f2ea103fcd899da5e6d6179bf7"
+  },
+  "physical_profile_id": "wood.usda2021.american-elm",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "55c3891b61345f7cabc60f3f2dd5c4c7ed1602a822a7164f9e0b635c99906ae1",
+      "bytes": 891851,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "733cf17c1292bfeee3448aeafd3f00e3283d1920b04a7f72cdbe8addf6b7c012",
+      "bytes": 392096,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "97dafd491ae2697a651dea5747b49d251eea1a82abd1a0f113b1231d086ad74a",
+      "bytes": 392184,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "1b0b943b941e56aa36f13255e98b65212f5c82262275091db4b188a1c963a83a",
+      "bytes": 177462,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "e312043e48e69d82264ab6e79352a1266cf59a695591bcb2863f79729902c67c",
+      "bytes": 234550,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "494eb9fad7f3ab8a3446d125543bc549695dc2fcabc49b57a032995c68126db5",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-elm.quarter-sawn.gloss-varnish"
+}

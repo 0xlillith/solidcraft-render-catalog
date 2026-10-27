@@ -1,0 +1,106 @@
+{
+  "id": "wood.red-alder.rift-sawn.fine-sanded",
+  "name": "Red alder / rift-sawn / Fine-sanded",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "red-alder/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "f2f993f1d9263d7786dc3bc48004c228dd36dcaa691a38781e24ea01cbc0b749",
+    "normal_opengl": "88b60c82a482793bb0da03742da4256fbe4f5cac8c94af239409ef5f70efefab",
+    "roughness": "5b0575d8632900206eabcc77c92fe549190af11f8e0c0592e7c5ac8579e98928"
+  },
+  "physical_profile_id": "wood.usda2021.red-alder",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "1cc2dd7fb71d29133f2ef22fc6893fbfbd333a2e0424628b9e2b30dc43b6c746",
+      "bytes": 850489,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "93f6a0fa74e80f31bd2541841da60af3eadbd1682d415c39fc4a197e4142cc7f",
+      "bytes": 605697,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "60937f5e6ba251513dd85b87f73abe55611f0da2d4ef5f811173d8b7747daeeb",
+      "bytes": 605390,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "b29de88ebf011bd88af94462c533fdaf0287cf71b309340309358fc921325825",
+      "bytes": 323157,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "accea0494343dd53967ec72ed31deafd337f04c1d62f3e8bcd90f7a48b1dbab5",
+      "bytes": 418719,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 0.83,
+    "normal_scale": 0.58
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "8cbbf80ce0baec08f77a338595ddfec773573b4a096cb612ac9548aa243c7c7a",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.red-alder.rift-sawn.fine-sanded"
+}

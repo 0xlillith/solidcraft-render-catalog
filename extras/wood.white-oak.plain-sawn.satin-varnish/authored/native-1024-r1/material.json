@@ -1,0 +1,106 @@
+{
+  "id": "wood.white-oak.plain-sawn.satin-varnish",
+  "name": "White oak / plain-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "white-oak/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "a136fadf626ece5c292fc24b8aadabb5940a78c73808efb7bd70e161d4591571",
+    "normal_opengl": "88280571c46deac296460ebea4a2c949580face88ddd87b0d6e087e5f20cb9af",
+    "roughness": "dc7b3b1ac0b890228b365e673122259490c12ab3d532840eaaa2bb48fbb11fce"
+  },
+  "physical_profile_id": "wood.usda2021.white-oak",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "e4de9e2050fe202171b2bb398a2ce61c40b7353e98cccbc2753c1dae5aec557c",
+      "bytes": 1067764,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "13052991fcbdf374a1a1fbb9423941b4cddd15041da3b8f18b00e53da9bde03e",
+      "bytes": 529637,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "7dca71423f5c62af0aa2712884e0b1c136fc2a0e7b8e566009e83cd47f58452e",
+      "bytes": 529787,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "a2b2ecdac4eafe535e04df9018ba5bd0c83060e4f4f91fe6605ee0156e443c90",
+      "bytes": 279098,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "f14fb631ff6914633d27cc720400290f4b7a9f83653c23fede08d9e2cc85cb93",
+      "bytes": 360567,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "2c41482a92a44f312ead5779d98ade558dd19c7e3f7a28a7e0aa478abfe9d9d4",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.white-oak.plain-sawn.satin-varnish"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-beech.quarter-sawn.gloss-varnish",
+  "name": "American beech / quarter-sawn / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-beech/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "727879036bb4f0162b9874cd2db692a4a018dfb21bbc52e4fd7bd21641f80865",
+    "normal_opengl": "c45e9d6987b53a5ff4cdb9c50380cb0128a603f0ddfe575538729609aaf8c47d",
+    "roughness": "84d4ec4aae93bf17edc6469d7357b49d525069a1164ba779a5eac5b237c28070"
+  },
+  "physical_profile_id": "wood.usda2021.american-beech",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "91cc97254bf4331dffd997243c5fa995152e4b68f38b3367a453101d2e73a99a",
+      "bytes": 908185,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "a157a6c70740cc6e79b2c980961adac3782bd5c2c05e46037bee0a0d348fcd5d",
+      "bytes": 356967,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "3b22f813e5990ad28a1931e7d4f4fb701be18313f746856b223b7e5af02d62cd",
+      "bytes": 356820,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "b5e4ea577abf60543f85ffe5a383d91376f86d3f6b0445e13848491d5e452f9a",
+      "bytes": 167472,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "2979eda94b8a2301331bc301ed0b8e4002ec095344caed747f5e4b6cc2ced5f6",
+      "bytes": 221773,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "921d445f0321fe50122108874ad2583fe2246983325dcc04ee578716db04d486",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-beech.quarter-sawn.gloss-varnish"
+}

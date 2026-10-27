@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-basswood.end-grain.oiled",
+  "name": "American basswood / end-grain / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-basswood/end-grain",
+  "source_file_sha256": {
+    "base_color": "df9dae4f8bd57d61e7b79e5ebcf5ba5adf20d270e6f837a8c3625dac2db11f80",
+    "normal_opengl": "29eae377a34ad50d90c691d64e202f55d4788e99b2930ecfc0c1af1d154d18eb",
+    "roughness": "9b925f5d94e58f78f234cbd80096dc44c53916717d64235b1530534e4e2657e4"
+  },
+  "physical_profile_id": "wood.usda2021.american-basswood",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "69337df2c4a6808d281eb07443992e36c91adab99015b8e110079b3a2c823bed",
+      "bytes": 1321947,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "be54313502cd1cdd7a75949d726e1524e8f157f9c3986a1eb7c9c10112d803d0",
+      "bytes": 1189453,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "62726ebef9b186d7162dcf3b76b97ec0d490c84a03ffd581717823daf696ef1a",
+      "bytes": 1189539,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "034dcdd80f9d25d20d71924bcc6d77ff1cd40ea7a6ee4479e6ae55b68b4d7650",
+      "bytes": 423292,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "0d743f24ad011f71b0d85d6ae8cd7560d20e3f252c7c3e458db4fefe4c51615c",
+      "bytes": 542404,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "06dc2b3f1bd993ec7bd6a19f74a7f2e11723c8634307230b6be1df8d170727bd",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-basswood.end-grain.oiled"
+}

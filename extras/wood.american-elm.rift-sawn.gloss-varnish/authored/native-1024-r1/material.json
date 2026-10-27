@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-elm.rift-sawn.gloss-varnish",
+  "name": "American elm / rift-sawn / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-elm/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "55e07f0bffde37a0547d63022d1cf2bbf8155514795d65c24449603fb0ae03f3",
+    "normal_opengl": "028ec9b934c1927ddbe94e4efd41f844f4b0e85a637e945fc0660b4da80dc133",
+    "roughness": "533b58be32b3c458b39b188e2abae85b80b3fbf5b4ae612960c6eb881fecebe2"
+  },
+  "physical_profile_id": "wood.usda2021.american-elm",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "b52446559bc2cfe1c2036d28c4f80faf24b1d2936098051c084d3fbc0206179f",
+      "bytes": 891353,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "3d29f03992790f31d66a4f9fdbc779217e522789bb7e06c0a275e1847ecc5c7f",
+      "bytes": 389562,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "801df35bdccfb0f57864ea41e3dfe54eb82ae23626e9c5902f2d8b8ca551135c",
+      "bytes": 389770,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "6c46e9fbe7385542d948af6c36196e93b4e8b156db8557c192b753c4d6956800",
+      "bytes": 180426,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "7c9784c186567d7dce24b4b51ddea16497969a49478a438902d5900a9ff2d708",
+      "bytes": 239259,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "60dd7c2bec218240a500b6951b2b509827f710b74120dd109632482d935d53d1",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-elm.rift-sawn.gloss-varnish"
+}

@@ -32,8 +32,32 @@ def entries(ids=None, root=EXTRAS):
  if selected-set(x['id'] for x in items):raise ValueError('Unknown requested ID(s)')
  return [x for x in items if not selected or x['id'] in selected]
 
+def validate_authored(folder,identity,meta,original_paths):
+ count=0
+ for relative in (set(meta['entrypoints'])|set(meta['previews']))-original_paths:
+  if not relative.startswith('authored/') or not relative.endswith('.png'):
+   raise ValueError('Unresolved advertised file '+identity)
+  image=confined(folder,relative);receipt=read_json(image.with_name('receipt.json'))
+  if receipt.get('id')!=identity or not image.is_file() or sha(image)!=receipt.get('png_sha256'):
+   raise ValueError('Authored preview identity/integrity mismatch '+identity)
+  count+=1
+ active=meta.get('active_appearance')
+ if active is not None:
+  if not active.startswith('authored/') or not active.endswith('/material.json'):
+   raise ValueError('Invalid active per-extra appearance path')
+  path=confined(folder,active);appearance=read_json(path)
+  if appearance.get('id')!=identity:raise ValueError('Active appearance belongs to another extra')
+  if appearance.get('auto_assign_physical_material') is not False:
+   raise ValueError('An appearance may not auto-assign physical reference values')
+  for role,record in appearance['maps'].items():
+   source=confined(path.parent,record['path'])
+   if not source.is_file() or source.stat().st_size!=record['bytes'] or sha(source)!=record['sha256']:
+    raise ValueError('Authored map failed its own source receipt '+identity+' '+role)
+   count+=1
+ return count
+
 def validate(root=EXTRAS):
- items=entries(root=root); seen=set();known={x['id'] for x in items};files=0
+ items=entries(root=root); seen=set();known={x['id'] for x in items};files=0;authored_files=0
  archives={x['archive']:x for x in read_json(root/'ARCHIVE-SOURCES.json')['archives']}
  for item in items:
   identity=item['id']
@@ -56,8 +80,8 @@ def validate(root=EXTRAS):
    if member['archive'] not in archives:raise ValueError('Missing original archive receipt')
    if not re.fullmatch('[0-9a-f]{64}',member['sha256']):raise ValueError('Invalid SHA-256')
    if member['bytes']<0 or member['bytes']>512*1024*1024:raise ValueError('Invalid restored file size')
-  if set(meta['entrypoints'])-paths or set(meta['previews'])-paths:raise ValueError('Unresolved advertised file '+identity)
- return {'status':'PASS','extras':len(items),'file_entries':files,'scope':'identity/dependencies/paths/receipts; not native rendering quality'}
+  authored_files+=validate_authored(folder,identity,meta,paths)
+ return {'status':'PASS','extras':len(items),'file_entries':files,'authored_files_verified':authored_files,'scope':'identity/dependencies/paths/receipts and authored file hashes; not native rendering quality'}
 
 def verify(ids=None,root=EXTRAS):
  count=0;size=0;missing=[];changed=[]

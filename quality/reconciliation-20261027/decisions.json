@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-27",
+  "scope": "pending catalog/extras work only",
+  "decisions": [
+    {
+      "item": "PR #7 scanned source metadata and eight native-compatible profiles",
+      "decision": "integrate in existing scan.* extras; close obsolete aggregate PR as superseded",
+      "reason": "Original scan identities already present after #8; missing attribution/physical qualifiers and useful native reductions now accompany the same extras."
+    },
+    {
+      "item": "384 wood finish derivatives",
+      "decision": "integrate per extra",
+      "reason": "Bakes declared linear color, roughness and normal strength once, with explicit clearcoat; preserves original physical reference and source maps."
+    },
+    {
+      "item": "168 corrected earth/masonry software previews",
+      "decision": "integrate per extra",
+      "reason": "Fixes millimetres-per-texel/axis and linear-color errors; reproduced exactly; not a native render."
+    },
+    {
+      "item": "Eight coarse-morphology R2 replacement appearances",
+      "decision": "reject as active replacements",
+      "reason": "Native A/B images show conspicuous isolated convex polygons and a painted/confetti appearance; stronger contrast alone does not establish better stone realism. No accepted extra points to these maps."
+    },
+    {
+      "item": "Five recovered wood data files",
+      "decision": "retire duplicate pending copies into source recovery history",
+      "reason": "All five match published release data semantically; authoritative individual definitions and original restoration receipts already retain them."
+    },
+    {
+      "item": "Native QA channel math, client, receipt and metric tests",
+      "decision": "integrate useful reusable subset",
+      "reason": "Retains bounded computation, exact source identities, save/reopen and measurement checks, and supplies an individual-extra authoring entry point."
+    },
+    {
+      "item": "Old bulk catalog collector/builders, packaging publisher and new publication workflow",
+      "decision": "do not merge into active workflow",
+      "reason": "Superseded by individual-extra operation; old code remains recoverable in source history. No new pack/release or upstream CI change."
+    },
+    {
+      "item": "Prior native evidence",
+      "decision": "retain as historical, with scoped links",
+      "reason": "607 receipts were checked against exact PNG/model/input hashes. Earlier receipts lacking a whole-recipe fingerprint are NOT automatically reused as current cache hits or promoted to premium qualification."
+    },
+    {
+      "item": "stage01/stage02/stage03/stage03b/stage04/stage05 remote branches",
+      "decision": "already integrated; no new code to merge",
+      "reason": "Live comparisons against 1f747112 showed zero branch-only commits for each."
+    },
+    {
+      "item": "individual-extras branch #8",
+      "decision": "already integrated by squash",
+      "reason": "History differs but trees are identical; do not repeat import or inflate counts."
+    }
+  ],
+  "recovery_tag": "archive/native-qa-source-20261027",
+  "recovery_commit": "ed36f3d427cb203492cb3065ae3e7914a81390fd"
+}

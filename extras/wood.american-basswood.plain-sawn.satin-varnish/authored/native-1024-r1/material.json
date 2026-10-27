@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-basswood.plain-sawn.satin-varnish",
+  "name": "American basswood / plain-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-basswood/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "3056385440c85840c75866a07b3eb149541a9eed1e93287cd9d319e75d0eac92",
+    "normal_opengl": "9829119befda95d77f1aa92facc279e00e9caf9ec341b0d901ab203e69ab2414",
+    "roughness": "dbf5c979822bca3fe7d280e68ae28ecb36339e6d1ae4f5f5b1d30d23bf2f8802"
+  },
+  "physical_profile_id": "wood.usda2021.american-basswood",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "21c78317d32e3098a8ac850cf44e807c9fb78e13d491b75d2a3ad0e07c0f09d1",
+      "bytes": 1097348,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "63cc209be8e57cc92a2c616addafdfa1f0b57940ded3af9b56c4b4a4111b590f",
+      "bytes": 490415,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "0170e4bdb05cc37868fe5e9f18c7c9255e5e38981fa5c4d2aeb4508541264fcb",
+      "bytes": 490445,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "1286cc707bd1ec8cf09358e76b5f89e70d658d327969c53a472eef882fc86cc6",
+      "bytes": 282747,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "d0401e2cbe18348b358136bd3b05abc42d65eff361b4665478e8fb0bc2a6aacf",
+      "bytes": 365128,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "8a488ae804eb98303eb435e8a90eb559e8f6653455cf52378b45661af2c0b90f",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-basswood.plain-sawn.satin-varnish"
+}

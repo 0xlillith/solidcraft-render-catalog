@@ -1,0 +1,813 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -2.4,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 601.5376128494121,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -538.02,
+            -382.2,
+            96.0
+          ],
+          "u": [
+            111.72,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -60.0
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            538.02,
+            -411.59999999999997,
+            -30.0
+          ],
+          "u": [
+            111.72,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -60.0
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -294.0,
+            597.9959999999999
+          ],
+          "u": [
+            235.20000000000002,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -69.7662
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 earth.cement-paste.air-dried flat",
+          "frame": {
+            "origin": [
+              -294.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 earth.cement-paste.air-dried curved",
+          "frame": {
+            "origin": [
+              -294.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 earth.clay-slip.air-dried flat",
+          "frame": {
+            "origin": [
+              -138.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 earth.clay-slip.air-dried curved",
+          "frame": {
+            "origin": [
+              -138.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 4,
+          "body_name": "03 earth.earthenware-clay.air-dried flat",
+          "frame": {
+            "origin": [
+              18.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 5,
+          "body_name": "03 earth.earthenware-clay.air-dried curved",
+          "frame": {
+            "origin": [
+              18.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 6,
+          "body_name": "04 earth.ready-joint-compound.air-dried flat",
+          "frame": {
+            "origin": [
+              174.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 7,
+          "body_name": "04 earth.ready-joint-compound.air-dried curved",
+          "frame": {
+            "origin": [
+              174.0,
+              -0.001,
+              15.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/air-dried/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 8,
+          "body_name": "05 earth.cement-paste.fresh-smooth flat",
+          "frame": {
+            "origin": [
+              -294.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 9,
+          "body_name": "05 earth.cement-paste.fresh-smooth curved",
+          "frame": {
+            "origin": [
+              -294.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 10,
+          "body_name": "06 earth.clay-slip.fresh-smooth flat",
+          "frame": {
+            "origin": [
+              -138.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 11,
+          "body_name": "06 earth.clay-slip.fresh-smooth curved",
+          "frame": {
+            "origin": [
+              -138.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 12,
+          "body_name": "07 earth.earthenware-clay.fresh-smooth flat",
+          "frame": {
+            "origin": [
+              18.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 13,
+          "body_name": "07 earth.earthenware-clay.fresh-smooth curved",
+          "frame": {
+            "origin": [
+              18.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 14,
+          "body_name": "08 earth.ready-joint-compound.fresh-smooth flat",
+          "frame": {
+            "origin": [
+              174.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        },
+        {
+          "body_index": 15,
+          "body_name": "08 earth.ready-joint-compound.fresh-smooth curved",
+          "frame": {
+            "origin": [
+              174.0,
+              -0.001,
+              -135.0
+            ],
+            "u": [
+              120.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              120.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "modulate",
+          "flip_v": true,
+          "base_color_srgb": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/base_color.png",
+          "normal_opengl": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/normal_opengl.png",
+          "roughness_linear": "runtime/stage-04-earth-masonry/build/maps/paste/fresh-smooth/runtime-1024/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 563047456,
+      "face_appearances": 0,
+      "geometry_bytes": 14767564,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 548279868,
+      "triangles": 81888
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -538.02,
+              -382.2,
+              96.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              111.72,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -60.0
+            ]
+          },
+          {
+            "center": [
+              538.02,
+              -411.59999999999997,
+              -30.0
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              111.72,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -60.0
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -294.0,
+              597.9959999999999
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              235.20000000000002,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -69.7662
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 601.5376128494121,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -2.4,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 42,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 16,
+      "encoded_bytes": 7418556,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 172
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 548220,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 172
+      },
+      "png_bytes": 548220,
+      "png_sha256": "f573529cf86464f05c82301287519087043709178da8b9e3d44afd1336b40aa0",
+      "scene_generation": 42,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 172
+    },
+    "linear_master": null,
+    "path": "native-full-stages/0042-earth-masonry-stage04.png",
+    "presentation": null
+  },
+  "png_sha256": "f573529cf86464f05c82301287519087043709178da8b9e3d44afd1336b40aa0",
+  "elapsed_s": 1.593,
+  "ids": [
+    "earth.cement-paste.air-dried",
+    "earth.clay-slip.air-dried",
+    "earth.earthenware-clay.air-dried",
+    "earth.ready-joint-compound.air-dried",
+    "earth.cement-paste.fresh-smooth",
+    "earth.clay-slip.fresh-smooth",
+    "earth.earthenware-clay.fresh-smooth",
+    "earth.ready-joint-compound.fresh-smooth"
+  ],
+  "collection": "earth-masonry-stage04",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\paste\\air-dried\\runtime-1024\\base_color.png": "c580c9d0099a7749a20c31808aae8d80efa360c87cfc4002b2941e960cb6d55c",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\paste\\air-dried\\runtime-1024\\normal_opengl.png": "893cf49dc87dfe0e81a82f660e5a6388f7193dd648aa89b6850b3ed625dd2886",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\paste\\air-dried\\runtime-1024\\roughness.png": "620c776d7ac35ff3aa42c77f3611b150a4167a3c382060b561a353fb9012fd42",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\paste\\fresh-smooth\\runtime-1024\\base_color.png": "751ae229e750d78ea3fd460ad43f4f196ce8d4a0aba39758b4d9ed753ce51179",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\paste\\fresh-smooth\\runtime-1024\\normal_opengl.png": "c5b5d957606c7360a43dfd8c4e09e6c86b08a52fb9eb62de05ac2d73ab6bcc93",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\runtime\\stage-04-earth-masonry\\build\\maps\\paste\\fresh-smooth\\runtime-1024\\roughness.png": "4ec4e7739f385fd9a898633e43147bfc6e28a285eedd91747d909e073163bfbf"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "earth.cement-paste.air-dried",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.clay-slip.air-dried",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.earthenware-clay.air-dried",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.ready-joint-compound.air-dried",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.cement-paste.fresh-smooth",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.clay-slip.fresh-smooth",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.earthenware-clay.fresh-smooth",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "earth.ready-joint-compound.fresh-smooth",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "e52689e6dad99ea15c03db9a4dd86371cd16d19c46aef99edb06d592257a748c",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

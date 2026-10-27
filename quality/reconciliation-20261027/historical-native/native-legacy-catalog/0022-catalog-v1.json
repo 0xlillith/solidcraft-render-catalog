@@ -1,0 +1,453 @@
+{
+  "server": {
+    "name": "solidcraft",
+    "title": "SolidCraft",
+    "version": "0.24.0"
+  },
+  "request": {
+    "settings": {
+      "width": 1024,
+      "height": 768,
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "target": [
+          0,
+          -0.7000000000000001,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.085,
+        "distance": 82.35336366390761,
+        "fov": 0
+      },
+      "exposure_ev": 0
+    },
+    "progressive": true,
+    "samples": 16,
+    "max_depth": 6,
+    "seed": 270118,
+    "lighting": {
+      "environment": [
+        0.36,
+        0.39,
+        0.45
+      ],
+      "area_lights": [
+        {
+          "center": [
+            -73.6575,
+            -52.325,
+            28.0
+          ],
+          "u": [
+            15.295,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -17.5
+          ],
+          "radiance": [
+            20,
+            20,
+            20
+          ]
+        },
+        {
+          "center": [
+            73.6575,
+            -56.349999999999994,
+            -8.75
+          ],
+          "u": [
+            15.295,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -17.5
+          ],
+          "radiance": [
+            14,
+            12,
+            10
+          ]
+        },
+        {
+          "center": [
+            0,
+            -40.25,
+            81.8685
+          ],
+          "u": [
+            32.2,
+            0,
+            0
+          ],
+          "v": [
+            0,
+            0,
+            -9.551325
+          ],
+          "radiance": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    "tone_map": "aces_fitted",
+    "denoise": false,
+    "raytrace": {
+      "textures": [
+        {
+          "body_index": 0,
+          "body_name": "01 MAT-373 flat",
+          "frame": {
+            "origin": [
+              -40.25,
+              -0.001,
+              -17.5
+            ],
+            "u": [
+              35.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              35.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-373/maps/base_color.png",
+          "normal_opengl": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-373/maps/normal_gl.png",
+          "roughness_linear": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-373/maps/roughness.png"
+        },
+        {
+          "body_index": 1,
+          "body_name": "01 MAT-373 curved",
+          "frame": {
+            "origin": [
+              -40.25,
+              -0.001,
+              -17.5
+            ],
+            "u": [
+              35.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              35.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-373/maps/base_color.png",
+          "normal_opengl": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-373/maps/normal_gl.png",
+          "roughness_linear": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-373/maps/roughness.png"
+        },
+        {
+          "body_index": 2,
+          "body_name": "02 MAT-374 flat",
+          "frame": {
+            "origin": [
+              5.25,
+              -0.001,
+              -17.5
+            ],
+            "u": [
+              35.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              35.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-374/maps/base_color.png",
+          "normal_opengl": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-374/maps/normal_gl.png",
+          "roughness_linear": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-374/maps/roughness.png"
+        },
+        {
+          "body_index": 3,
+          "body_name": "02 MAT-374 curved",
+          "frame": {
+            "origin": [
+              5.25,
+              -0.001,
+              -17.5
+            ],
+            "u": [
+              35.0,
+              0,
+              0
+            ],
+            "v": [
+              0,
+              0,
+              35.0
+            ]
+          },
+          "normal_strength": 1,
+          "base_color_mode": "replace",
+          "flip_v": true,
+          "base_color_srgb": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-374/maps/base_color.png",
+          "normal_opengl": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-374/maps/normal_gl.png",
+          "roughness_linear": "baseline/Render-Catalog-Complete-20261024-v1/materials/MAT-374/maps/roughness.png"
+        }
+      ]
+    }
+  },
+  "preflight": {
+    "admission": {
+      "encoded_limit": 6356992,
+      "estimated_total_bytes": 532549761,
+      "face_appearances": 0,
+      "geometry_bytes": 3691792,
+      "pixel_scratch_bytes": 50331648,
+      "preparation_bytes": 528857945,
+      "triangles": 20472
+    },
+    "dielectric_boundaries": [
+      "thin_sheet",
+      "closed_box",
+      "closed_mesh"
+    ],
+    "environment": null,
+    "host": "native_worker",
+    "options": {
+      "denoise": false,
+      "exposure_ev": 0.0,
+      "lens": null,
+      "lighting": {
+        "area_lights": [
+          {
+            "center": [
+              -73.6575,
+              -52.325,
+              28.0
+            ],
+            "radiance": [
+              20.0,
+              20.0,
+              20.0
+            ],
+            "u": [
+              15.295,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -17.5
+            ]
+          },
+          {
+            "center": [
+              73.6575,
+              -56.349999999999994,
+              -8.75
+            ],
+            "radiance": [
+              14.0,
+              12.0,
+              10.0
+            ],
+            "u": [
+              15.295,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -17.5
+            ]
+          },
+          {
+            "center": [
+              0.0,
+              -40.25,
+              81.8685
+            ],
+            "radiance": [
+              12.0,
+              13.0,
+              15.0
+            ],
+            "u": [
+              32.2,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              -9.551325
+            ]
+          }
+        ],
+        "environment": [
+          0.36,
+          0.39,
+          0.45
+        ],
+        "sun": null
+      },
+      "linear_exr": false,
+      "max_depth": 6,
+      "nested_media": false,
+      "samples": 16,
+      "seed": 270118,
+      "tone_map": "aces_fitted",
+      "transmission_samples": 1
+    },
+    "refraction": false,
+    "request": {
+      "background": [
+        22,
+        25,
+        32
+      ],
+      "camera": {
+        "distance": 82.35336366390761,
+        "fov": 0.0,
+        "pitch": 0.085,
+        "roll": 0.0,
+        "target": [
+          0.0,
+          -0.7000000000000001,
+          0.0
+        ],
+        "up": "z",
+        "yaw": 0.0
+      },
+      "height": 768,
+      "integrator": "raster",
+      "transparent_background": false,
+      "width": 1024
+    },
+    "resolved": {
+      "backend": "builtin",
+      "estimated_scratch_bytes": 37748736,
+      "executor": "gpu-path",
+      "format": "png",
+      "height": 768,
+      "profile": {
+        "features": [
+          "hdri",
+          "pbr",
+          "refraction",
+          "progressive"
+        ],
+        "formats": [
+          "png"
+        ],
+        "mode": "preview",
+        "operation": "image"
+      },
+      "warnings": [],
+      "width": 1024
+    },
+    "scene_generation": 12,
+    "stage_panels": 0,
+    "textures": {
+      "bodies": 4,
+      "encoded_bytes": 1999481,
+      "linear_pixel_bytes": 100663296
+    },
+    "transparency": "opaque_only"
+  },
+  "job": {
+    "generation": 1,
+    "serial": 1,
+    "session": 92
+  },
+  "export": {
+    "alpha": "straight",
+    "bytes": 514522,
+    "encoding": "srgb",
+    "format": "png",
+    "frame": {
+      "alpha": "straight",
+      "backend": "builtin",
+      "encoding": "srgb",
+      "executor": "gpu-path",
+      "height": 768,
+      "job": {
+        "generation": 1,
+        "serial": 1,
+        "session": 92
+      },
+      "png_bytes": 514522,
+      "png_sha256": "d24f9d5136f74157143fd902cd6ef20baf87faca3fdd53131b02f066d86ac5ef",
+      "scene_generation": 12,
+      "width": 1024
+    },
+    "job": {
+      "generation": 1,
+      "serial": 1,
+      "session": 92
+    },
+    "linear_master": null,
+    "path": "native-legacy-catalog/0022-catalog-v1.png",
+    "presentation": null
+  },
+  "png_sha256": "d24f9d5136f74157143fd902cd6ef20baf87faca3fdd53131b02f066d86ac5ef",
+  "elapsed_s": 2.172,
+  "ids": [
+    "MAT-373",
+    "MAT-374"
+  ],
+  "collection": "catalog-v1",
+  "physical_measurements_unchanged": true,
+  "native_container_reopen": true,
+  "external_map_rebinding_preflight": true,
+  "native_texture_persistence_claimed": false,
+  "input_hashes": {
+    "D:\\codex-artifacts\\catalog-quality-20261027\\baseline\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-373\\maps\\base_color.png": "a88e2b2c72fd05b8d0cd3ed0b729f0c174f38bf265dd9d2e00e595899799dfed",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\baseline\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-373\\maps\\normal_gl.png": "fe309da9128bdb1c7a0597ab81269d326a41edbfbc2ac9327890829fbe6935b5",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\baseline\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-373\\maps\\roughness.png": "5e5da307603c31bcd7b71817d6fe2bf8ad6cc0e173f029a3a16ce10f6cca366e",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\baseline\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-374\\maps\\base_color.png": "b5585a83d785d0a7922f3514f666d093079cc39ff495e7b32c2b3742a4701459",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\baseline\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-374\\maps\\normal_gl.png": "4b8adcb5f7051676e83007aefe94ca3488e8b52e4dcf624897b2d53aacb6dc69",
+    "D:\\codex-artifacts\\catalog-quality-20261027\\baseline\\Render-Catalog-Complete-20261024-v1\\materials\\MAT-374\\maps\\roughness.png": "679326aba01300a6e7b50ccb8ea15ef25bcca0bbc23da3cf692966cb6e8565de"
+  },
+  "source_appearance_projections": [
+    {
+      "id": "MAT-373",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    },
+    {
+      "id": "MAT-374",
+      "full_optics_supported": true,
+      "declared_omissions": []
+    }
+  ],
+  "model_sha256": "89005c6dde9c0dabcbc94c78842f36f3bd9cf8f1c0b3df558387e8806a12a878",
+  "profile": "opaque flat and curved coupons; native runtime 1K maps; not calibrated optics or UI acceptance",
+  "premium_qualified": false
+}

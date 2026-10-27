@@ -1,0 +1,106 @@
+{
+  "id": "wood.white-oak.rift-sawn.oiled",
+  "name": "White oak / rift-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "white-oak/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "8dcd978e8256c3475098ba964cb4ddf6a6d66f5d9bdde7ea0775cf7590c037bf",
+    "normal_opengl": "3913c13fe18f4d18e3acc6891b27af05bc6c98ad6db83a060748115130f46f2d",
+    "roughness": "0c22779a52a44293ec8018fd157096077e7e81b8ed70a4e78f11032e050b5b20"
+  },
+  "physical_profile_id": "wood.usda2021.white-oak",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "50167dbc7e4c21cba428801dbe18c47bca4477ee1e889bd8407ed5e7482fecb3",
+      "bytes": 889500,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "f83bfdef3a84d7a44733897ff90215fb85af177c1be9240516e00b322d4ea59b",
+      "bytes": 783651,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "370efa2c39040e9f9ffb25246141b0a21572ccb810a7b79a44fd6fb637b2390f",
+      "bytes": 783621,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "06b7259d228862b55e2d463b940b538497c68917dd90430fb3415a21fcdefcb5",
+      "bytes": 298146,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "62dad60e9a0f76e5e6660f3efb2451e505276d287ef761bce84a18187f3688f8",
+      "bytes": 386663,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "846299ba3e9b6f08b5040dc08799396fc33f186596175376c685f1722f5d334b",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.white-oak.rift-sawn.oiled"
+}

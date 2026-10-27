@@ -60,4 +60,25 @@ class WorkspaceTests(unittest.TestCase):
   manage.restore([], [self.cache],False,self.root)
   self.assertEqual((self.folder/self.file['path']).stat().st_nlink,1)
 
+class AuthoredValidationTests(unittest.TestCase):
+ setUp=WorkspaceTests.setUp
+ tearDown=WorkspaceTests.tearDown
+ def install_authored(self):
+  relative='authored/r1/preview.png';p=self.folder/relative;p.parent.mkdir(parents=True);p.write_bytes(b'preview bytes')
+  put(p.with_name('receipt.json'),{'id':'test.extra','png_sha256':manage.sha(p)})
+  meta=manage.read_json(self.folder/'extra.json');meta['previews']=[relative];put(self.folder/'extra.json',meta)
+  return p
+ def test_authored_preview_with_exact_receipt(self):
+  self.install_authored();self.assertEqual(manage.validate(self.root)['authored_files_verified'],1)
+ def test_authored_preview_changed_is_rejected(self):
+  p=self.install_authored();p.write_bytes(b'changed preview')
+  with self.assertRaises(ValueError):manage.validate(self.root)
+ def test_unreceipted_new_path_is_rejected(self):
+  meta=manage.read_json(self.folder/'extra.json');meta['previews']=['elsewhere.png'];put(self.folder/'extra.json',meta)
+  with self.assertRaises(ValueError):manage.validate(self.root)
+ def test_active_material_identity_cannot_cross_extras(self):
+  path=self.folder/'authored/r1/material.json';put(path,{'id':'another.extra','auto_assign_physical_material':False,'maps':{}})
+  meta=manage.read_json(self.folder/'extra.json');meta['active_appearance']='authored/r1/material.json';put(self.folder/'extra.json',meta)
+  with self.assertRaises(ValueError):manage.validate(self.root)
+
 if __name__=='__main__':unittest.main(verbosity=2)

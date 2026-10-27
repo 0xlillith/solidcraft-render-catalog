@@ -1,0 +1,106 @@
+{
+  "id": "wood.eastern-white-pine.rift-sawn.fine-sanded",
+  "name": "Eastern white pine / rift-sawn / Fine-sanded",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "eastern-white-pine/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "c7f79311915e2c5dbed411536c304f5477fe796fcb4c50fe5644171900629dec",
+    "normal_opengl": "fc208ad3da512287a23009a0b53b7a4f415c9806fd486e2c1e8dd6ec170f4a69",
+    "roughness": "4d5f187246095516dead7a2149d59148f130c78b56a9075b7a5ae3c1daae6643"
+  },
+  "physical_profile_id": "wood.usda2021.eastern-white-pine",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "8a9d6888b2f62f8da3d466f9730ddf75bd4eaa0d622fe6ea721d579b22c57cea",
+      "bytes": 790089,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "c9e2888216f1228deb8d864576601f3ed7a6c7f706a3b33ac76cb94e4f8836b9",
+      "bytes": 424272,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "77e0db2449f1ffb8763e858520e55fcc19cfef65b55b3c7a1e2bebdcf14a16a8",
+      "bytes": 424192,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "45e5fa2d10deee209f5b4a60c5671c2f1c38c0c3a844688d494efe416d1633cc",
+      "bytes": 268188,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "afc29eae2b4f25b12070bc0d58c938fe4f71df6ec24a65fd266d77587c9c09f6",
+      "bytes": 347956,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.0,
+    "roughness": 0.4,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      1,
+      1,
+      1
+    ],
+    "roughness_factor": 0.83,
+    "normal_scale": 0.58
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "fdbee93426db3a832630b76c7488ff9de4204e77a96282326c088185b1675559",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.eastern-white-pine.rift-sawn.fine-sanded"
+}

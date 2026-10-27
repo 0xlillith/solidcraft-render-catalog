@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-elm.end-grain.satin-varnish",
+  "name": "American elm / end-grain / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-elm/end-grain",
+  "source_file_sha256": {
+    "base_color": "5b698cd7fa7e6849941d5b0c1a2cc1c186538b1138a5df9942b62c8d7b08791e",
+    "normal_opengl": "8087d55eb28f78c09a7f2b4d4809b55da56a402170cae1e9bad7e472cdb54fd7",
+    "roughness": "6411b7db55de8933dd35e4aa818388adbc02c7ca13b329a4af5b9322880cbf50"
+  },
+  "physical_profile_id": "wood.usda2021.american-elm",
+  "patch_mm": [
+    100,
+    100
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "67f676a5f5df43e9bf10604afd6075f2e35c9007a58cb9d0c8896d6d948c36e5",
+      "bytes": 1310063,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "3cac330eb96ae4cc47a742c597638428ed12826573eec3d66a7bef6b84019c01",
+      "bytes": 922391,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "1cdc5540f56e47d9256a6b3e9f584786baea9de83130d7e16a9d5d0019ade97c",
+      "bytes": 922375,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "a809d5e3703302f6339d6f134736a05a0ae668abb474103e5bb58dd66dc8b26d",
+      "bytes": 368858,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "c66ecd570f04cc407fb1c72d657e4382da8ea14e7986d23b986699dc51c79e9a",
+      "bytes": 474205,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "66f2f8f05b567576a50885d3b1c101fd163caf51d0158f8b41242fe0665519b5",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-elm.end-grain.satin-varnish"
+}

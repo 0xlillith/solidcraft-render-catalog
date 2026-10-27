@@ -1,0 +1,106 @@
+{
+  "id": "wood.northern-red-oak.quarter-sawn.satin-varnish",
+  "name": "Northern red oak / quarter-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "northern-red-oak/quarter-sawn",
+  "source_file_sha256": {
+    "base_color": "203548ec1a786aa91331d13d1db2fb081c7d269925dbad023e25e7686c7b29ed",
+    "normal_opengl": "85492414955e71237151af747fab519257122038aad6174ad5f5e458bc7e7ebb",
+    "roughness": "a44e2a2e85873b5e7e64e5718771d694945b3c672d1482e1037f748c09bd3ad3"
+  },
+  "physical_profile_id": "wood.usda2021.northern-red-oak",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "c22be9218c1f3018f7809d7e60622554995768107480d186ee7eaaf94d981ffc",
+      "bytes": 988394,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "0dc49ff676cc13bfb7be0afb873199ef60fdbcc14a91e7bf6a052655bcdbe563",
+      "bytes": 526324,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "fe0e68b7fbdf04e17a30073e53d3a737bc84bb0402162cd6f8df5b572494d3ec",
+      "bytes": 526349,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "dc238e0a684b45bf04f38a9066fa5771e9a6d3b4a2c7c8f433213f6fecc5081f",
+      "bytes": 270975,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "8ec38756b0c8326398ed3f248b8d07b0e25423cbed3548e701423f1e2ac6ca76",
+      "bytes": 347970,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "e40d63573cbf41f1471d9469ef0819ec23b16285e468984713f3504cce186726",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.northern-red-oak.quarter-sawn.satin-varnish"
+}

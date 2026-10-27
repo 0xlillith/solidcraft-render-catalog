@@ -1,0 +1,106 @@
+{
+  "id": "wood.black-cherry.rift-sawn.oiled",
+  "name": "Black cherry / rift-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "black-cherry/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "030d799171e327b9590cb456c53ef8006831e80fe15e9962166abbe6a04626dd",
+    "normal_opengl": "caf82742ddb8c4963ee08281d8770e3bdab1219f5ecc28e346037d79988d02de",
+    "roughness": "98a95cca59005d9d98080808d52b76c27a64129c48ce5e70a88a242982d814dd"
+  },
+  "physical_profile_id": "wood.usda2021.black-cherry",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "1fcb4695131e50446cdb19116a8a6c690de7c4715bdf6b62a258b57f38c6e5b8",
+      "bytes": 823331,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "13b902b1e72eede8547f9a9dfb14e7052f72b1e1716fcc9850bc77ef2b871919",
+      "bytes": 694100,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "1f783c43efdd395365f86f436c74ed245392b5d89734253b1f89aaa5c5935612",
+      "bytes": 693979,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "712483d32f86ada9c995ca61cb1ba51492c80fa433191988821da398ce43aa5f",
+      "bytes": 281944,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "3827f906435f39ad07c9e8cb8474579b47a83e66f7f677b330a63cda95026188",
+      "bytes": 368171,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "740f37fb6792f25475ba50d83dafb1410742404d10516fe4ddae462574c03417",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.black-cherry.rift-sawn.oiled"
+}

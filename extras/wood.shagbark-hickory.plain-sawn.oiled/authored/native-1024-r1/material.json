@@ -1,0 +1,106 @@
+{
+  "id": "wood.shagbark-hickory.plain-sawn.oiled",
+  "name": "Shagbark hickory / plain-sawn / Oiled appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "shagbark-hickory/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "b8a834a7bae8b0cde5e41b54af0a9fce59d21b120dea02d8320a67add3e8d825",
+    "normal_opengl": "ea938f82dc47a198869f75d106df04020ab7b79776268218a39779159d5d810c",
+    "roughness": "1b2895f340ffab555c721fe3eee0b8d92ce2ebe3dfe2df55e838d3f1fd047be6"
+  },
+  "physical_profile_id": "wood.usda2021.shagbark-hickory",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "fed2ed492c82de86049307b96f805113891189519a7efe4824ac0e101b6e0f07",
+      "bytes": 1141321,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "d8c483917e8c81fd45169faf2f8a14674c8cc3a62c9231ca2476b06cbc1993b3",
+      "bytes": 807443,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "e61be55feec2751deb3597a93355b40e23a7a62c7ac99e3d1020a9b5e5d7ec65",
+      "bytes": 807214,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "c6ae4f312eae9d952d2e710f00da5e91b6d9c2762676ff0d3b005b43c93beb07",
+      "bytes": 333651,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "66051e4196612b2df38fe477d3d7bafee6d8059703d37d40e38f45177df0657a",
+      "bytes": 427272,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.12,
+    "roughness": 0.32,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.82,
+      0.76,
+      0.68
+    ],
+    "roughness_factor": 0.62,
+    "normal_scale": 0.75
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "2c04fab8ea472bb834a71fa5b5b8a9968f803eadb86f40dd086296c970584aae",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.shagbark-hickory.plain-sawn.oiled"
+}

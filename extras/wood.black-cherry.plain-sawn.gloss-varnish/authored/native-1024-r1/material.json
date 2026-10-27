@@ -1,0 +1,106 @@
+{
+  "id": "wood.black-cherry.plain-sawn.gloss-varnish",
+  "name": "Black cherry / plain-sawn / Gloss clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "black-cherry/plain-sawn",
+  "source_file_sha256": {
+    "base_color": "a6c7bc76dc84a1c464b9573b1e099ad000e63145fca3cf02012dc22baf540b9d",
+    "normal_opengl": "eb54242c2992139f92206c7cbe254848f8910ef543ebd7b6337fddf84543325e",
+    "roughness": "5a8ec6e3d9d41d235d48d2a3c728080305b4b633c6c6dab9a24b5463b4130b6d"
+  },
+  "physical_profile_id": "wood.usda2021.black-cherry",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "dd8961a9428d487b986a2f04124ad9f849142bb2f67352f0696e3f0fe2bedbf3",
+      "bytes": 1041674,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "9f8aa3b5a45d3af65d27d1f82ebe2b1f21a5cb29cb0b5e3670e5bffdeaeabe7e",
+      "bytes": 366357,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "f3aa59bed0c17710e3b621f1aa050818482bdfa0b406a0abaeb5d109fb9d0c6c",
+      "bytes": 366377,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "9cfaf05866a5a1a4bd3b770979e37b7a12990c97d4e46eeaefa7dfbdc756ac50",
+      "bytes": 196322,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "b599d69effaf3c20c49dee680f21d3bceeae55dd425b1d37ebe44390d0e5bc53",
+      "bytes": 257570,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 1.0,
+    "roughness": 0.075,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.88,
+      0.83,
+      0.75
+    ],
+    "roughness_factor": 0.22,
+    "normal_scale": 0.15
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "ca9ec7b707ef3e849fb741ae312e925e954a7cf8cdf828263359427733b550e1",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.black-cherry.plain-sawn.gloss-varnish"
+}

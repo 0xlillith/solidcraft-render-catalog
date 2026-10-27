@@ -1,0 +1,106 @@
+{
+  "id": "wood.american-beech.rift-sawn.satin-varnish",
+  "name": "American beech / rift-sawn / Satin clear varnish appearance",
+  "source_collection": "wood-stage01-20261025",
+  "source_mapset": "american-beech/rift-sawn",
+  "source_file_sha256": {
+    "base_color": "d4b9c0823054def45bff8663cfe3c903d101742131ca07501c42b9bea4c32ebb",
+    "normal_opengl": "96645205ef55f3271f4ac82f311ca0a159841185485c7e30668ff76386d1dff6",
+    "roughness": "c5915117e84d046a587119a5964f6ea1a8ca3d2ac842f82207325d6517a79737"
+  },
+  "physical_profile_id": "wood.usda2021.american-beech",
+  "patch_mm": [
+    100,
+    250
+  ],
+  "native_profile_max_dimension": 1024,
+  "maps": {
+    "base_color": {
+      "path": "base_color.png",
+      "sha256": "9bc1aa18e136d875f95acaf3661a460f48d3f5c8b516f6cae5e49908be582946",
+      "bytes": 899301,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "srgb"
+    },
+    "normal_opengl": {
+      "path": "normal_opengl.png",
+      "sha256": "4c7a4b9ec4ebb0d67b844de14b020ec1d886ab5c48247eeb6eb4979759e882db",
+      "bytes": 469168,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "normal_directx": {
+      "path": "normal_directx.png",
+      "sha256": "779de91c4cd6bd3a16343397340ec01cbbdec8e1b6f4700e70c3b462bb1090b9",
+      "bytes": 469308,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "roughness": {
+      "path": "roughness.png",
+      "sha256": "660d1a4884a4bed3444208a1bf4579ee1f48fcec3cb94d902fee32d09dc7103b",
+      "bytes": 242012,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    },
+    "orm": {
+      "path": "orm.png",
+      "sha256": "af7740c6c9e7645422d80488e87931ad452ee733754683400c33f528cc044d17",
+      "bytes": 318658,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "linear_data"
+    }
+  },
+  "pbr": {
+    "base_color_srgb": [
+      255,
+      255,
+      255
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "normal_strength": 1,
+    "dielectric_ior": 1.5
+  },
+  "clearcoat": {
+    "weight": 0.7,
+    "roughness": 0.3,
+    "ior": 1.5,
+    "basis": "original authored coating approximation, not measured chemistry or thickness"
+  },
+  "finish_baked": {
+    "color_multiplier_linear": [
+      0.91,
+      0.86,
+      0.77
+    ],
+    "roughness_factor": 0.46,
+    "normal_scale": 0.3
+  },
+  "apply_factors_again": false,
+  "finite_patch_not_seamless": true,
+  "native_runtime_textures_not_persistent": true,
+  "auto_assign_physical_material": false,
+  "native_render_validation": "historical_coupon_evidence_verified",
+  "premium_qualified": false,
+  "version": "native-1024-r1",
+  "definition_sha256": "9930e10c284429f722542b5e2ddbb533f1c303aa154a6e72a2a0a9f1dd97d531",
+  "native_evidence_file": "../../validation/native-history.json",
+  "quality_scope": "finish factors baked once in linear data, correctly filtered 1K native compatibility; not a new measured texture or engineering material",
+  "single_extra_generator": "tools/extras/improve.py --id wood.american-beech.rift-sawn.satin-varnish"
+}
