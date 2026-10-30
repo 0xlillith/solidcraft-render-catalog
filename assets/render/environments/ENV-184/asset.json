@@ -1,0 +1,59 @@
+{
+  "id": "ENV-184",
+  "source_id": "ENV-184",
+  "name": "Separated cumulus sky",
+  "kind": "environment",
+  "depends_on": [],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "catalog-v1",
+    "tag": "catalog-v1-20261024",
+    "source_document": "catalog/Catalog.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "9e5aa5530d88bbc36d0e7e1e9724298f5696cc44454506d16323361663dc0297",
+  "entrypoints": [
+    "files/environments/ENV-184/environment.glb",
+    "files/environments/ENV-184/environment.gltf",
+    "files/environments/ENV-184/environment.solidcraft"
+  ],
+  "previews": [
+    "files/environments/ENV-184/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/environments/ENV-184/environment.json",
+    "recipes/environments/ENV-184/native-model-preview.json",
+    "recipes/environments/ENV-184/solidcraft-build.json"
+  ],
+  "historical_evidence": [
+    "provenance/environments/ENV-184/native-validation.json"
+  ],
+  "historical_readback_snapshots": [
+    "files/environments/ENV-184/reopened.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "environment",
+  "category": "render",
+  "family": "Skies and weather",
+  "method": "authored",
+  "legacy_kind": "environment",
+  "legacy_path": "extras/ENV-184",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "Skies and weather"
+  },
+  "relations": [],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

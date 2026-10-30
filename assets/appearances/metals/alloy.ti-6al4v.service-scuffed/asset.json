@@ -1,0 +1,61 @@
+{
+  "id": "alloy.ti-6al4v.service-scuffed",
+  "source_id": "alloy.ti-6al4v.service-scuffed",
+  "name": "Ti-6Al-4V / TIMETAL 6-4 / Scuffed bare metal",
+  "kind": "material_appearance",
+  "depends_on": [
+    "ti-6al4v"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-02-alloys",
+    "tag": "alloys-stage02-20261025",
+    "source_document": "authoring/stage-02-alloys/data/variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "69d7d8395a9c38a9f4129915047083334f9867ee510f07cbebc4c19bde1c22ec",
+  "entrypoints": [
+    "files/build/materials/alloy.ti-6al4v.service-scuffed/material.glb",
+    "files/build/materials/alloy.ti-6al4v.service-scuffed/material.gltf"
+  ],
+  "previews": [
+    "files/build/materials/alloy.ti-6al4v.service-scuffed/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/service-scuffed/map-contract.json",
+    "recipes/build/materials/alloy.ti-6al4v.service-scuffed/appearance.json",
+    "recipes/build/materials/alloy.ti-6al4v.service-scuffed/native-material-commands.json",
+    "recipes/build/materials/alloy.ti-6al4v.service-scuffed/physical-profile.json"
+  ],
+  "historical_evidence": [],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "metals",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/alloy.ti-6al4v.service-scuffed",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "finish_id": "service-scuffed"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "ti-6al4v"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

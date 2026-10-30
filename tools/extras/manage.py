@@ -6,11 +6,15 @@ Examples:
   python tools/extras/manage.py restore --id MAT-001 --cache-root /path/to/cache
 """
 from __future__ import annotations
-import argparse, hashlib, json, os, re, tempfile, urllib.request, zipfile
+import argparse, hashlib, json, os, re, sys, tempfile, urllib.request, zipfile
 from pathlib import Path, PurePosixPath
 
 ROOT=Path(__file__).resolve().parents[2]
-EXTRAS=ROOT/'extras'
+sys.path.insert(0,str(ROOT/'tools/library'))
+from common import archive_sources, asset_directory, metadata, path_map
+
+# Retain the old argument name for callers; the default is now the repository.
+EXTRAS=ROOT
 
 def read_json(path):
  def reject(value):raise ValueError('Nonfinite JSON number: '+value)
@@ -25,12 +29,31 @@ def confined(root: Path,relative: str) -> Path:
  if not result.resolve().is_relative_to(root.resolve()):raise ValueError('Path leaves its extra folder')
  return result
 
+def library_layout(root):
+ return (root/'catalog/paths.json').is_file() or (root/'assets').is_dir()
+
+def legacy_root(root):
+ if (root/'INDEX.json').is_file():return root
+ if (root/'extras/INDEX.json').is_file():return root/'extras'
+ raise FileNotFoundError('No asset catalog or legacy index at '+str(root))
+
+def archive_inventory(root):
+ root=Path(root)
+ return archive_sources(root) if library_layout(root) else legacy_root(root)/'ARCHIVE-SOURCES.json'
+
 def entries(ids=None, root=EXTRAS):
- index=read_json(root/'INDEX.json')
- items=index['items']; selected=set(ids or [])
+ root=Path(root);selected=set(ids or [])
+ if library_layout(root):
+  mapping=path_map(root)
+  if selected-set(mapping):raise ValueError('Unknown requested ID(s)')
+  # Read the catalog once, including when validating the full library.
+  return [{'id':identity,'folder':asset_directory(identity,root,mapping=mapping).relative_to(root).as_posix()}
+          for identity in sorted(mapping,key=str.casefold) if not selected or identity in selected]
+ original=legacy_root(root);index=read_json(original/'INDEX.json');items=index['items']
  if len(items)!=index['count']:raise ValueError('Index count mismatch')
  if selected-set(x['id'] for x in items):raise ValueError('Unknown requested ID(s)')
- return [x for x in items if not selected or x['id'] in selected]
+ return [dict(item,folder=confined(original,item['folder']).relative_to(root).as_posix())
+         for item in items if not selected or item['id'] in selected]
 
 def validate_authored(folder,identity,meta,original_paths):
  count=0
@@ -58,13 +81,13 @@ def validate_authored(folder,identity,meta,original_paths):
 
 def validate(root=EXTRAS):
  items=entries(root=root); seen=set();known={x['id'] for x in items};files=0;authored_files=0
- archives={x['archive']:x for x in read_json(root/'ARCHIVE-SOURCES.json')['archives']}
+ archives={x['archive']:x for x in read_json(archive_inventory(root))['archives']}
  for item in items:
   identity=item['id']
   if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]*',identity):raise ValueError('Unsafe ID '+identity)
   if identity.casefold() in seen:raise ValueError('Duplicate case-insensitive ID')
   seen.add(identity.casefold());folder=confined(root,item['folder'])
-  meta=read_json(folder/'extra.json');definition=read_json(folder/'definition.json')
+  meta=metadata(folder);definition=read_json(folder/'definition.json')
   if meta['id']!=identity or meta['source_id']!=definition['id']:raise ValueError('Definition identity mismatch '+identity)
   if set(meta['depends_on'])-known:raise ValueError('Unresolved physical reference '+identity)
   if meta['packaging_decision'] is not None:raise ValueError('Packaging was explicitly deferred')
@@ -99,7 +122,7 @@ def verify(ids=None,root=EXTRAS):
 def restore(ids, cache_roots, allow_download, root=EXTRAS):
  items=entries(ids,root)
  if not cache_roots:raise ValueError('Supply an explicit --cache-root')
- sources={x['archive']:x for x in read_json(root/'ARCHIVE-SOURCES.json')['archives']}
+ sources={x['archive']:x for x in read_json(archive_inventory(root))['archives']}
  needed=set()
  for item in items:
   needed.update(x['archive'] for x in read_json(confined(root,item['folder'])/'FILES.json')['files'])

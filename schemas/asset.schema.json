@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SolidCraft Library authoring descriptor",
+  "description": "Repository metadata only. This is not an installer, plugin or public application interchange contract.",
+  "type": "object",
+  "required": ["schema", "id", "name", "type", "category", "family", "method", "definition", "relations", "runtime_dependencies"],
+  "properties": {
+    "schema": {"const": "solidcraft-library-asset/1"},
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"},
+    "source_id": {"type": "string"},
+    "source_namespace": {"type": "string"},
+    "name": {"type": "string", "minLength": 1},
+    "type": {"type": "string", "minLength": 1, "description": "Functional type; new types require explicit semantics and validation."},
+    "category": {"enum": ["physical-materials", "appearances", "finishes", "scientific-references", "parts", "render", "drawings", "themes", "animation", "simulation", "examples"]},
+    "family": {"type": "string", "minLength": 1},
+    "method": {"type": "string", "minLength": 1},
+    "definition": {"type": "string", "minLength": 1},
+    "facets": {"type": "object"},
+    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "origin": {"type": "object"},
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["role", "id"],
+        "properties": {"role": {"enum": ["physical_reference", "element_reference", "derived_from", "related", "example"]}, "id": {"type": "string"}},
+        "additionalProperties": true
+      }
+    },
+    "runtime_dependencies": {"type": "array", "description": "Required runtime resource IDs only; scientific and attribution references belong in relations.", "items": {"oneOf": [{"type": "string"}, {"type": "object", "required": ["id"], "properties": {"id": {"type": "string"}}}]}},
+    "compatibility": {"type": "object"},
+    "evidence_baseline": {"type": "object", "properties": {"definition_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "active_appearance_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}
+  },
+  "additionalProperties": true
+}

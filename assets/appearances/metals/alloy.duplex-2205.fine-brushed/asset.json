@@ -1,0 +1,61 @@
+{
+  "id": "alloy.duplex-2205.fine-brushed",
+  "source_id": "alloy.duplex-2205.fine-brushed",
+  "name": "Duplex 2205 plate reference / Fine directional brush",
+  "kind": "material_appearance",
+  "depends_on": [
+    "duplex-2205"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-02-alloys",
+    "tag": "alloys-stage02-20261025",
+    "source_document": "authoring/stage-02-alloys/data/variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "b5ca2f85fe8b201a9fbc7b03c837ac35c887cea9b6d8d68a6a357bc2a5576c23",
+  "entrypoints": [
+    "files/build/materials/alloy.duplex-2205.fine-brushed/material.glb",
+    "files/build/materials/alloy.duplex-2205.fine-brushed/material.gltf"
+  ],
+  "previews": [
+    "files/build/materials/alloy.duplex-2205.fine-brushed/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/fine-brushed/map-contract.json",
+    "recipes/build/materials/alloy.duplex-2205.fine-brushed/appearance.json",
+    "recipes/build/materials/alloy.duplex-2205.fine-brushed/native-material-commands.json",
+    "recipes/build/materials/alloy.duplex-2205.fine-brushed/physical-profile.json"
+  ],
+  "historical_evidence": [],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "metals",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/alloy.duplex-2205.fine-brushed",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "finish_id": "fine-brushed"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "duplex-2205"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

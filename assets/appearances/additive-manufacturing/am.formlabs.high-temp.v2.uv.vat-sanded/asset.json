@@ -1,0 +1,64 @@
+{
+  "id": "am.formlabs.high-temp.v2.uv.vat-sanded",
+  "source_id": "am.formlabs.high-temp.v2.uv.vat-sanded",
+  "name": "Formlabs High Temp V2 / uv / vat-sanded",
+  "kind": "material_appearance",
+  "depends_on": [
+    "am.formlabs.high-temp.v2.uv"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-03b-additive",
+    "tag": "additive-stage03b-20261025",
+    "source_document": "authoring/stage-03b-additive/data/material-variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "bc541f76ef9bf5d740b6e529571877417e25052a1133c83920f1a669b7d82808",
+  "entrypoints": [
+    "files/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/material.glb",
+    "files/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/material.gltf",
+    "files/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/transmission-study.glb",
+    "files/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/transmission-study.gltf"
+  ],
+  "previews": [
+    "files/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/vat/vat-sanded/maps.json",
+    "recipes/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/appearance.json",
+    "recipes/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/physical.json"
+  ],
+  "historical_evidence": [
+    "provenance/build/materials/am.formlabs.high-temp.v2.uv.vat-sanded/preview-receipt.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "additive-manufacturing",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/am.formlabs.high-temp.v2.uv.vat-sanded",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "vat"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "am.formlabs.high-temp.v2.uv"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

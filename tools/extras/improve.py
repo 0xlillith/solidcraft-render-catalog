@@ -13,20 +13,32 @@ import argparse,hashlib,json,sys,os
 from pathlib import Path
 # Configure the bounded, hash-verified height decoder before cv2 is first imported.
 os.environ.setdefault('OPENCV_IO_ENABLE_OPENEXR','1')
-import numpy as np
-from PIL import Image
-
 ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/'tools/library'))
+from common import asset_directory, confined
 sys.path.insert(0,str(Path(__file__).parent/'quality/tools'))
-from channels import albedo,normals,roughness,orm,materialize
 
 def load(path):return json.loads(path.read_text(encoding='utf-8'))
 def digest(path):
  with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def put(path,data):path.write_bytes((json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False)+'\n').encode('utf-8'))
 def pixels(path,rgb=False):
+ import numpy as np
+ from PIL import Image
  with Image.open(path) as im:
   im.load();return np.asarray(im.convert('RGB') if rgb else im).copy()
+
+def asset_folder(identity: str, root=ROOT):
+ root=Path(root)
+ if (root/'catalog/paths.json').is_file() or (root/'assets').is_dir():
+  return asset_directory(identity,root)
+ # Old fixtures may pass either the repository or its extras directory.
+ original=root if (root/'INDEX.json').is_file() else root/'extras'
+ index=load(original/'INDEX.json');items=index['items']
+ if len(items)!=index['count']:raise ValueError('Index count mismatch')
+ rows={item['id']:item for item in items}
+ if identity not in rows:raise ValueError('Unknown extra identity '+identity)
+ return confined(original,rows[identity]['folder'])
 def checked_sources(folder, paths):
  receipt={x['path']:x for x in load(folder/'FILES.json')['files']}
  result={}
@@ -39,10 +51,11 @@ def checked_sources(folder, paths):
  return result
 
 def generate(identity: str, out: Path, *, metric_preview=False, root=ROOT):
- index=load(root/'extras/INDEX.json');rows={x['id']:x for x in index['items']}
- if identity not in rows:raise ValueError('Unknown extra identity '+identity)
- folder=root/'extras'/rows[identity]['folder'];definition=load(folder/'definition.json')
+ folder=asset_folder(identity,root);definition=load(folder/'definition.json')
  if out.exists():raise FileExistsError('Choose a new output directory; no existing derivative is overwritten')
+ import numpy as np
+ from PIL import Image
+ from channels import albedo,normals,roughness,orm,materialize
  kind='metric-preview' if metric_preview else 'native-1024'
  if metric_preview:
   if not identity.startswith('earth.') or 'mapset_id' not in definition:raise ValueError('Only a named earth surface supports this metric preview')
@@ -53,7 +66,7 @@ def generate(identity: str, out: Path, *, metric_preview=False, root=ROOT):
   source=folder/'files/build/maps'/definition['family']/definition['finish']/'runtime-1024'
   paths={'height':source/'height_mm.exr','base_color':source/'base_color.png','roughness':source/'roughness.png'}
   sources=checked_sources(folder,paths)
-  profile=load(root/'extras'/definition['physical_profile_id']/'definition.json')
+  profile=load(asset_folder(definition['physical_profile_id'],root)/'definition.json')
   resource=next((folder/'recipes').rglob('resource.json'))
   extent=load(resource)['finite_patch_mm']
   height=cv2.imread(str(paths['height']),cv2.IMREAD_UNCHANGED)

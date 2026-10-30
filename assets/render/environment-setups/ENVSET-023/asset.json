@@ -1,0 +1,54 @@
+{
+  "id": "ENVSET-023",
+  "source_id": "ENVSET-023",
+  "name": "SELENE container-transfer work region",
+  "kind": "setup",
+  "depends_on": [],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "catalog-v1",
+    "tag": "catalog-v1-20261024",
+    "source_document": "catalog/Catalog.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "c053e534a3112a6cd66923ef5f29b7db9898c46cb731c89a2080f11992355ee4",
+  "entrypoints": [
+    "files/setups/ENVSET-023/setup.solidcraft"
+  ],
+  "previews": [
+    "files/setups/ENVSET-023/native-render.png",
+    "files/setups/ENVSET-023/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/setups/ENVSET-023/setup.json",
+    "recipes/setups/ENVSET-023/solidcraft-build.json"
+  ],
+  "historical_evidence": [
+    "provenance/setups/ENVSET-023/native-render-receipt.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "environment-setup",
+  "category": "render",
+  "family": "environment-setups",
+  "method": "authored",
+  "legacy_kind": "setup",
+  "legacy_path": "extras/ENVSET-023",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "environment setup"
+  },
+  "relations": [],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

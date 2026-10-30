@@ -1,0 +1,59 @@
+{
+  "id": "ENV-232",
+  "source_id": "ENV-232",
+  "name": "Thermal-vacuum chamber presentation",
+  "kind": "environment",
+  "depends_on": [],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "catalog-v1",
+    "tag": "catalog-v1-20261024",
+    "source_document": "catalog/Catalog.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "d59b98ac149dc23c825550b5cd9c87838f0272145915043647ee20fdf88152ed",
+  "entrypoints": [
+    "files/environments/ENV-232/environment.glb",
+    "files/environments/ENV-232/environment.gltf",
+    "files/environments/ENV-232/environment.solidcraft"
+  ],
+  "previews": [
+    "files/environments/ENV-232/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/environments/ENV-232/environment.json",
+    "recipes/environments/ENV-232/native-model-preview.json",
+    "recipes/environments/ENV-232/solidcraft-build.json"
+  ],
+  "historical_evidence": [
+    "provenance/environments/ENV-232/native-validation.json"
+  ],
+  "historical_readback_snapshots": [
+    "files/environments/ENV-232/reopened.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "environment",
+  "category": "render",
+  "family": "Aerospace integration and test facilities",
+  "method": "authored",
+  "legacy_kind": "environment",
+  "legacy_path": "extras/ENV-232",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "Aerospace integration and test facilities"
+  },
+  "relations": [],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

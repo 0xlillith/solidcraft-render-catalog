@@ -1,0 +1,59 @@
+{
+  "id": "ENV-245",
+  "source_id": "ENV-245",
+  "name": "Rendezvous approach corridor",
+  "kind": "environment",
+  "depends_on": [],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "catalog-v1",
+    "tag": "catalog-v1-20261024",
+    "source_document": "catalog/Catalog.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "a6a1ce7194fbdb31aaecac36e6266a64175af9295fa767f1545032dd5c3d65cb",
+  "entrypoints": [
+    "files/environments/ENV-245/environment.glb",
+    "files/environments/ENV-245/environment.gltf",
+    "files/environments/ENV-245/environment.solidcraft"
+  ],
+  "previews": [
+    "files/environments/ENV-245/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/environments/ENV-245/environment.json",
+    "recipes/environments/ENV-245/native-model-preview.json",
+    "recipes/environments/ENV-245/solidcraft-build.json"
+  ],
+  "historical_evidence": [
+    "provenance/environments/ENV-245/native-validation.json"
+  ],
+  "historical_readback_snapshots": [
+    "files/environments/ENV-245/reopened.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "environment",
+  "category": "render",
+  "family": "Orbital and spacecraft surroundings",
+  "method": "authored",
+  "legacy_kind": "environment",
+  "legacy_path": "extras/ENV-245",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "Orbital and spacecraft surroundings"
+  },
+  "relations": [],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

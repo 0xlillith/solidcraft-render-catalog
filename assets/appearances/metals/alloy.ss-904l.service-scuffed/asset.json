@@ -1,0 +1,61 @@
+{
+  "id": "alloy.ss-904l.service-scuffed",
+  "source_id": "alloy.ss-904l.service-scuffed",
+  "name": "904L plate reference / Scuffed bare metal",
+  "kind": "material_appearance",
+  "depends_on": [
+    "ss-904l"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-02-alloys",
+    "tag": "alloys-stage02-20261025",
+    "source_document": "authoring/stage-02-alloys/data/variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "6826b8b79f3fd385b38eaee609f6adc8eec38f87d7e96123f63c473610aac489",
+  "entrypoints": [
+    "files/build/materials/alloy.ss-904l.service-scuffed/material.glb",
+    "files/build/materials/alloy.ss-904l.service-scuffed/material.gltf"
+  ],
+  "previews": [
+    "files/build/materials/alloy.ss-904l.service-scuffed/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/service-scuffed/map-contract.json",
+    "recipes/build/materials/alloy.ss-904l.service-scuffed/appearance.json",
+    "recipes/build/materials/alloy.ss-904l.service-scuffed/native-material-commands.json",
+    "recipes/build/materials/alloy.ss-904l.service-scuffed/physical-profile.json"
+  ],
+  "historical_evidence": [],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "metals",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/alloy.ss-904l.service-scuffed",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "finish_id": "service-scuffed"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "ss-904l"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

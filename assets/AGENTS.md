@@ -1,0 +1,3 @@
+# Resource editing
+
+The owner approved this semantic layout on 30 October 2026. Work through stable IDs and the generated path map. Edit asset.json, definition.json, recipes or credits.json; regenerate indexes and attribution pages. Preserve scientific qualifiers, provenance, original receipts and other worktrees. Keep physical references separate from appearances. New assets need attribution and meaningful type/representation metadata. Do not claim native or visual acceptance from index validation. Rebuild one resource at a time; no release packaging or repository transfer is implied. Repository documentation is in English.

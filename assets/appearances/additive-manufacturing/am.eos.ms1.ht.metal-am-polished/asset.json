@@ -1,0 +1,62 @@
+{
+  "id": "am.eos.ms1.ht.metal-am-polished",
+  "source_id": "am.eos.ms1.ht.metal-am-polished",
+  "name": "EOS MS1 M290 50 um / heat treated / metal-am-polished",
+  "kind": "material_appearance",
+  "depends_on": [
+    "am.eos.ms1.ht"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-03b-additive",
+    "tag": "additive-stage03b-20261025",
+    "source_document": "authoring/stage-03b-additive/data/material-variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "d9228c4e2e6ba130923c09e51992d7f82780508b60df838a8511c69aa30d4679",
+  "entrypoints": [
+    "files/build/materials/am.eos.ms1.ht.metal-am-polished/material.glb",
+    "files/build/materials/am.eos.ms1.ht.metal-am-polished/material.gltf"
+  ],
+  "previews": [
+    "files/build/materials/am.eos.ms1.ht.metal-am-polished/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/metal-am/metal-am-polished/maps.json",
+    "recipes/build/materials/am.eos.ms1.ht.metal-am-polished/appearance.json",
+    "recipes/build/materials/am.eos.ms1.ht.metal-am-polished/physical.json"
+  ],
+  "historical_evidence": [
+    "provenance/build/materials/am.eos.ms1.ht.metal-am-polished/preview-receipt.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "additive-manufacturing",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/am.eos.ms1.ht.metal-am-polished",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "metal-am"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "am.eos.ms1.ht"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "earth.urban-fill.lightly-tamped",
+  "source_id": "earth.urban-fill.lightly-tamped",
+  "name": "Urban fill / compacted reference / lightly-tamped",
+  "kind": "material_appearance",
+  "depends_on": [
+    "earth.urban-fill"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-04-earth-masonry",
+    "tag": "earth-masonry-stage04-20261026",
+    "source_document": "authoring/stage-04-earth-masonry/data/material-variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "c129b1d739677577415de17a9ee0a8dd0ea3c3ec41c2177ca70ebc5b1ab48b08",
+  "entrypoints": [
+    "files/build/materials/earth.urban-fill.lightly-tamped/material.glb",
+    "files/build/materials/earth.urban-fill.lightly-tamped/material.gltf"
+  ],
+  "previews": [
+    "authored/metric-preview-r1/preview.png",
+    "files/build/materials/earth.urban-fill.lightly-tamped/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/materials/earth.urban-fill.lightly-tamped/resource.json"
+  ],
+  "historical_evidence": [],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "earth-and-masonry",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/earth.urban-fill.lightly-tamped",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "soil",
+    "finish": "lightly-tamped"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "earth.urban-fill"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

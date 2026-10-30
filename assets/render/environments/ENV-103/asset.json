@@ -1,0 +1,59 @@
+{
+  "id": "ENV-103",
+  "source_id": "ENV-103",
+  "name": "Office-building entrance",
+  "kind": "environment",
+  "depends_on": [],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "catalog-v1",
+    "tag": "catalog-v1-20261024",
+    "source_document": "catalog/Catalog.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "80658cb4e95cea2a0b610aafcf688f4078ed01f296477354f154a481a00e0cd3",
+  "entrypoints": [
+    "files/environments/ENV-103/environment.glb",
+    "files/environments/ENV-103/environment.gltf",
+    "files/environments/ENV-103/environment.solidcraft"
+  ],
+  "previews": [
+    "files/environments/ENV-103/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/environments/ENV-103/environment.json",
+    "recipes/environments/ENV-103/native-model-preview.json",
+    "recipes/environments/ENV-103/solidcraft-build.json"
+  ],
+  "historical_evidence": [
+    "provenance/environments/ENV-103/native-validation.json"
+  ],
+  "historical_readback_snapshots": [
+    "files/environments/ENV-103/reopened.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "environment",
+  "category": "render",
+  "family": "Exterior architecture and courtyards",
+  "method": "authored",
+  "legacy_kind": "environment",
+  "legacy_path": "extras/ENV-103",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "Exterior architecture and courtyards"
+  },
+  "relations": [],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

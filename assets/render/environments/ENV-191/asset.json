@@ -1,0 +1,59 @@
+{
+  "id": "ENV-191",
+  "source_id": "ENV-191",
+  "name": "Dark night studio",
+  "kind": "environment",
+  "depends_on": [],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "catalog-v1",
+    "tag": "catalog-v1-20261024",
+    "source_document": "catalog/Catalog.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "68167ef48506d4a54c9010e2f879bb205c31ce51ff663903433bf33f12621674",
+  "entrypoints": [
+    "files/environments/ENV-191/environment.glb",
+    "files/environments/ENV-191/environment.gltf",
+    "files/environments/ENV-191/environment.solidcraft"
+  ],
+  "previews": [
+    "files/environments/ENV-191/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/environments/ENV-191/environment.json",
+    "recipes/environments/ENV-191/native-model-preview.json",
+    "recipes/environments/ENV-191/solidcraft-build.json"
+  ],
+  "historical_evidence": [
+    "provenance/environments/ENV-191/native-validation.json"
+  ],
+  "historical_readback_snapshots": [
+    "files/environments/ENV-191/reopened.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "environment",
+  "category": "render",
+  "family": "Night and low illumination",
+  "method": "authored",
+  "legacy_kind": "environment",
+  "legacy_path": "extras/ENV-191",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "Night and low illumination"
+  },
+  "relations": [],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

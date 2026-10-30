@@ -1,0 +1,61 @@
+{
+  "id": "alloy.ni-825.mirror-polished",
+  "source_id": "alloy.ni-825.mirror-polished",
+  "name": "Nickel-iron-chromium alloy 825 / Mirror polished",
+  "kind": "material_appearance",
+  "depends_on": [
+    "ni-825"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-02-alloys",
+    "tag": "alloys-stage02-20261025",
+    "source_document": "authoring/stage-02-alloys/data/variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "45099ca98bb742939775d379f8f5b952959fa2573eff08def3e7619a2e53c35f",
+  "entrypoints": [
+    "files/build/materials/alloy.ni-825.mirror-polished/material.glb",
+    "files/build/materials/alloy.ni-825.mirror-polished/material.gltf"
+  ],
+  "previews": [
+    "files/build/materials/alloy.ni-825.mirror-polished/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/mirror-polished/map-contract.json",
+    "recipes/build/materials/alloy.ni-825.mirror-polished/appearance.json",
+    "recipes/build/materials/alloy.ni-825.mirror-polished/native-material-commands.json",
+    "recipes/build/materials/alloy.ni-825.mirror-polished/physical-profile.json"
+  ],
+  "historical_evidence": [],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "metals",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/alloy.ni-825.mirror-polished",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "finish_id": "mirror-polished"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "ni-825"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

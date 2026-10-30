@@ -1,0 +1,62 @@
+{
+  "id": "am.eos.tpu1301.powder-polymer-tumbled",
+  "source_id": "am.eos.tpu1301.powder-polymer-tumbled",
+  "name": "EOS TPU1301 / powder-polymer-tumbled",
+  "kind": "material_appearance",
+  "depends_on": [
+    "am.eos.tpu1301"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-03b-additive",
+    "tag": "additive-stage03b-20261025",
+    "source_document": "authoring/stage-03b-additive/data/material-variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "c7ac49dd1e2ed3dcd8eeb68fa71e2d067ce73e04c695c0edfb9c880f3e3f11ee",
+  "entrypoints": [
+    "files/build/materials/am.eos.tpu1301.powder-polymer-tumbled/material.glb",
+    "files/build/materials/am.eos.tpu1301.powder-polymer-tumbled/material.gltf"
+  ],
+  "previews": [
+    "files/build/materials/am.eos.tpu1301.powder-polymer-tumbled/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/powder-polymer/powder-polymer-tumbled/maps.json",
+    "recipes/build/materials/am.eos.tpu1301.powder-polymer-tumbled/appearance.json",
+    "recipes/build/materials/am.eos.tpu1301.powder-polymer-tumbled/physical.json"
+  ],
+  "historical_evidence": [
+    "provenance/build/materials/am.eos.tpu1301.powder-polymer-tumbled/preview-receipt.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "additive-manufacturing",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/am.eos.tpu1301.powder-polymer-tumbled",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "powder-polymer"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "am.eos.tpu1301"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "earth.portland-cement-powder.as-cast",
+  "source_id": "earth.portland-cement-powder.as-cast",
+  "name": "Portland cement powder / typical / as-cast",
+  "kind": "material_appearance",
+  "depends_on": [
+    "earth.portland-cement-powder"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-04-earth-masonry",
+    "tag": "earth-masonry-stage04-20261026",
+    "source_document": "authoring/stage-04-earth-masonry/data/material-variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "6cc7c7bb74bbff904fc9d8ef4cc35e00d37d6c1452664992d71c20908489cd4c",
+  "entrypoints": [
+    "files/build/materials/earth.portland-cement-powder.as-cast/material.glb",
+    "files/build/materials/earth.portland-cement-powder.as-cast/material.gltf"
+  ],
+  "previews": [
+    "authored/metric-preview-r1/preview.png",
+    "files/build/materials/earth.portland-cement-powder.as-cast/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/materials/earth.portland-cement-powder.as-cast/resource.json"
+  ],
+  "historical_evidence": [],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "earth-and-masonry",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/earth.portland-cement-powder.as-cast",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "cement",
+    "finish": "as-cast"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "earth.portland-cement-powder"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}

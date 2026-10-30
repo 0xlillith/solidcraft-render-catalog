@@ -1,0 +1,62 @@
+{
+  "id": "am.eos.ti64.m29030.ht.metal-am-machined",
+  "source_id": "am.eos.ti64.m29030.ht.metal-am-machined",
+  "name": "EOS Ti64 M290 30 um / heat treated / metal-am-machined",
+  "kind": "material_appearance",
+  "depends_on": [
+    "am.eos.ti64.m29030.ht"
+  ],
+  "definition": "definition.json",
+  "files": "FILES.json",
+  "origin": {
+    "collection": "stage-03b-additive",
+    "tag": "additive-stage03b-20261025",
+    "source_document": "authoring/stage-03b-additive/data/material-variants.json",
+    "repository_snapshot": "df356e2f277b9bd0d1cc62553dac8208f1aae958"
+  },
+  "migration_definition_sha256": "1a8796ca979ddfdf6af511acbca916102da51919bec58f8df2c99dda0ea95f1b",
+  "entrypoints": [
+    "files/build/materials/am.eos.ti64.m29030.ht.metal-am-machined/material.glb",
+    "files/build/materials/am.eos.ti64.m29030.ht.metal-am-machined/material.gltf"
+  ],
+  "previews": [
+    "files/build/materials/am.eos.ti64.m29030.ht.metal-am-machined/preview.png"
+  ],
+  "quality_note": "Reorganization only. Source qualification is preserved; no new native, physical or premium acceptance is claimed.",
+  "packaging_decision": null,
+  "editable_recipes": [
+    "recipes/build/maps/metal-am/metal-am-machined/maps.json",
+    "recipes/build/materials/am.eos.ti64.m29030.ht.metal-am-machined/appearance.json",
+    "recipes/build/materials/am.eos.ti64.m29030.ht.metal-am-machined/physical.json"
+  ],
+  "historical_evidence": [
+    "provenance/build/materials/am.eos.ti64.m29030.ht.metal-am-machined/preview-receipt.json"
+  ],
+  "schema": "solidcraft-library-asset/1",
+  "type": "appearance",
+  "category": "appearances",
+  "family": "additive-manufacturing",
+  "method": "authored",
+  "legacy_kind": "material_appearance",
+  "legacy_path": "extras/am.eos.ti64.m29030.ht.metal-am-machined",
+  "source_namespace": "solidcraft-render-catalog",
+  "maintainer": "0xlillith",
+  "attribution": "attribution.json",
+  "credits": "credits.json",
+  "facets": {
+    "family": "metal-am"
+  },
+  "relations": [
+    {
+      "role": "physical_reference",
+      "id": "am.eos.ti64.m29030.ht"
+    }
+  ],
+  "runtime_dependencies": [],
+  "dependency_scope": "Legacy depends_on expresses semantic reference links, not package installation requirements. Payload dependency closure remains representation-specific.",
+  "compatibility": {
+    "contract": "authoring-data",
+    "installer_format": null,
+    "scope": "Use the declared representations and their source-pinned evidence; no universal importer is claimed."
+  }
+}
